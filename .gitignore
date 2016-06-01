@@ -1,0 +1,4 @@
+# ignore these guys
+vendor/
+composer.lock
+.idea
