@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}Php setup{% endblock %}
+    </title>
+    <style>
+        {% block style %}
+            @import '{{ asset('/css/main.css') }}';
+        {% endblock %}
+    </style>
+</head>
+<body>
+
+{# the header #}
+<header>
+    <h1>Php setup with silex and twig</h1>
+</header>
+{# the navbar #}
+<nav>
+
+</nav>
+{# the footer #}
+<footer>
+
+</footer>
+{# javascript functions #}
+{% block javascript %}
+{% endblock %}
+</body>
+</html>
