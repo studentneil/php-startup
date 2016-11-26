@@ -1,1 +1,8 @@
 {% extends 'base.html.twig' %}
+{% block content %}
+    <form action="/artist" method="get">
+        <h1>Discogs api experiment</h1>
+        <p>Enter a number: <input type="text" name="id"></p>
+        <p><input type="submit" value="submit"></p>
+    </form>
+{% endblock %}

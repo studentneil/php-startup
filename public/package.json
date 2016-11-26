@@ -1,0 +1,30 @@
+{
+  "name": "discogs-api",
+  "version": "1.0.0",
+  "description": "an experimental look into the discogs api",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studentneil/discogs-api.git"
+  },
+  "keywords": [
+    "discogs",
+    "api"
+  ],
+  "author": "neil",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/studentneil/discogs-api/issues"
+  },
+  "homepage": "https://github.com/studentneil/discogs-api#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}

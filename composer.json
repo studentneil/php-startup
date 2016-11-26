@@ -3,11 +3,14 @@
         "silex/silex": "~2.0",
         "twig/twig": "~1.0",
         "symfony/asset": "^3.1",
-        "symfony/twig-bridge": "^3.1"
+        "symfony/twig-bridge": "~2.8|3.0.*",
+        "silex/web-profiler": "2.0",
+        "monolog/monolog": "^1.21",
+        "ricbra/php-discogs-api": "^1.2"
     },
     "autoload": {
         "psr-4": {
-            "Art\\":"src/"
+            "DiscogsApi\\":"src/"
         }
     }
 }
