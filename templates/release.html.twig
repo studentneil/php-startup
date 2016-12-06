@@ -1,0 +1,40 @@
+{% extends 'base.html.twig' %}
+{% block content %}
+
+
+	<div class="row">
+
+
+        <div class="col s12 m3">
+          <div class="card">
+            <div class="card-image">
+              
+				<img src="/images/front.jpg">
+
+              <span class="card-title"></span>
+            </div>
+            <div class="card-content">
+              
+                  <p>{{ release.title }}</p>
+                  <p>{{ release.artist }}</p>
+                  
+        
+            </div>
+            <div class="card-action">
+              <a href="#">This is a link</a>
+            </div>
+          </div>
+        </div>
+      
+	
+
+</div>
+
+
+
+   
+
+    <a href="/">Home</a>
+    <a href="/collection">Collection</a>
+
+{% endblock %}

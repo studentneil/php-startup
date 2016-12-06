@@ -1,8 +1,39 @@
 {% extends 'base.html.twig' %}
 {% block content %}
-    <form action="/artist" method="get">
-        <h1>Discogs api experiment</h1>
-        <p>Enter a number: <input type="text" name="id"></p>
-        <p><input type="submit" value="submit"></p>
-    </form>
+
+   	<div class="row">
+	{% for release in collection %}
+
+        <div class="col s6 m2">
+          <div class="card medium z-depth-3">
+
+            <div class="card-image waves-effect waves-block waves-light">
+            	
+              <img class="activator" src="/images/front.png">
+          
+              
+            </div>
+            <div class="card-content">
+            	<p>{{ release.artist }}</p>
+           
+            	<p></p>
+            	<span class="card-title activator grey-text text-darken-4"><i class="material-icons left-align">more_vert</i></span>
+         
+             </div>
+              	 <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+  
+    </div>
+              
+           
+            <div class="card-action">
+              <a href="/release/{{ release.id }}">Details</a>
+            </div>
+          </div>
+        </div>
+      
+		
+		
+	{% endfor %}
+	</div>
 {% endblock %}

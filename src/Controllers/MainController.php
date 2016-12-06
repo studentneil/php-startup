@@ -1,43 +1,31 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 02/06/2016
- * Time: 00:35
- */
-namespace DiscogsApi\Controllers;
-use Silex\Application;
-use Symfony\Component\HttpFoundation\Request;
-use Discogs\ClientFactory;
 
+namespace VinylStore\Controllers;
+
+use Silex\Application;
 
 class MainController
 {
     public function indexAction(Application $app)
     {
-
+        $collection = $app['vinyl.repository']->findAll();
         $templateName = 'home';
-        $args_array = array();
+        $args_array = array(
+            'collection' => $collection,
+        );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-    public function artistByIdAction(Request $request, Application $app)
+    public function getReleaseByIdAction(Application $app, $id)
     {
-        $id = $request->get('id');
-//        var_dump($id);
-        $client = ClientFactory::factory([]);
-        $name = $client->getArtist([
-            'id' => $id
-        ]);
+    	$release = $app['vinyl.repository']->findOneById($id);
+    	$templateName = 'release';
+    	$args_array = array(
+    		'release' => $release,
+    	);
 
+    	return $app['twig']->render($templateName.'.html.twig', $args_array);
 
-//        var_dump($name);
-
-        $templateName = 'pictures';
-        $args_array = array(
-            'artist' => $name
-        );
-        return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 }
