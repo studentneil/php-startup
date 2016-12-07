@@ -4,45 +4,49 @@
     <title>
         {% block title %}Php setup{% endblock %}
     </title>
-    <style>
-        {% block style %}
-            @import '{{ asset('/css/main.css') }}';
-        {% endblock %}
-    </style>
+   
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->      
     <link type="text/css" rel="stylesheet" href="{{ asset('/css/materialize.min.css') }}"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="{{ asset('/css/main.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
 </head>
+{% block body %}
 <body>
-
+{% endblock %}
 {# the header #}
-<header>
-    
-</header>
-{# the navbar #}
 
-<nav>
- <div class="nav-wrapper blue-grey darken-4 z-depth-3">
-      <a href="#" class="brand-logo">Vinyl</a>
+<header>
+  {% block header %}
+ 
+  {% endblock %}
+</header>
+
+{# the navbar #}
+<div class="navbar-fixed">
+<nav class="z-depth-0 nav">
+
+ <div class="nav-wrapper z-depth-0">
+      <a href="/" class="brand-logo">Vinyl Store</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="/collection">Collection</a></li>
+        <li><a href="/">Home</a></li>
+        
       </ul>
       
 
       
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="/collection">Collection</a></li>
+        <li><a href="/">Home</a></li>
+        
       </ul>
   </div>
 </nav>
+</div>
+
 
 {% block content %}
 
