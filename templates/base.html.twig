@@ -1,75 +1,64 @@
 <!DOCTYPE html>
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        {% block title %}Php setup{% endblock %}
+        {% block title %}Vinyl Store{% endblock %}
     </title>
-   
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->      
-    <link type="text/css" rel="stylesheet" href="{{ asset('/css/materialize.min.css') }}"  media="screen,projection"/>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="{{ asset('/css/materialize.min.css') }}" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="{{ asset('/css/main.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
-</head>
-{% block body %}
-<body>
-{% endblock %}
-{# the header #}
-
-<header>
-  {% block header %}
- 
-  {% endblock %}
-</header>
-
-{# the navbar #}
-<div class="navbar-fixed">
-<nav class="z-depth-0 nav">
-
- <div class="nav-wrapper z-depth-0">
-      <a href="/" class="brand-logo">Vinyl Store</a>
-      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="/collection">Collection</a></li>
-        <li><a href="/">Home</a></li>
-        
-      </ul>
-      
-
-      
-      <ul class="side-nav" id="mobile-demo">
-        <li><a href="/collection">Collection</a></li>
-        <li><a href="/">Home</a></li>
-        
-      </ul>
-  </div>
-</nav>
-</div>
-
-
-{% block content %}
-
-{% endblock %}
-{# the footer #}
-<footer>
-
-</footer>
-{# javascript functions #}
-{% block javascript %}
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
+</head>
+{% block body %}
+
+<body>
+    {% endblock %} {# the header #}
+    <header>
+        {% include 'partials/navbar.html.twig' %}
+            {#
+            <ul id="slide-out" class="side-nav">
+                <li>
+                    <div class="userView">
+                        <div class="background">
+                            <img src="images/office.jpg">
+                        </div>
+                        <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+                        <a href="#!name"><span class="white-text name">John Doe</span></a>
+                        <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div>
+                </li>
+                <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+                <li><a href="#!">Second Link</a></li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li><a class="subheader">Subheader</a></li>
+                <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+            </ul>
+            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a> #}
+        </nav>
+    </header>
+    {% block content %} {% endblock %} {# the footer #}
+    <footer>
+    </footer>
+    {# javascript functions #}
+    
     <script>
-        $(document).ready(function(){
-            $(".button-collapse").sideNav({
-                  menuWidth: 200, // Default is 240
-                
-                  closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-                  draggable: true // Choose whether you can drag to open on touch screens
-            });
+    $(document).ready(function() {
+        $(".button-collapse").sideNav({
+            menuWidth: 200, // Default is 240
+
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
         });
+    });
     </script>
-{% endblock %}
 </body>
+
 </html>

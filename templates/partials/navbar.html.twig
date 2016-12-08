@@ -1,0 +1,30 @@
+{# the navbar #} 
+{# set up the names of the routes and links #}
+
+{% set navbar = [['home', 'Home'], ['collection', 'Collection']] %}
+<div class="navbar-fixed">
+    <nav class="nav-extended white">
+        <div class="nav-wrapper white">
+            <a href="/" class="brand-logo black-text">Vinyl Store</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="black-text material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+
+                {% for item in navbar %}
+                	<li{% if item[0]==active_page %} class="active" {% endif %}><a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }}</a></li>
+                {% endfor %}
+                    <li><a class="waves-effect waves-light btn" href="#">Log-in</a></li>
+            </ul>
+      
+        </div>
+</div>
+
+{# off-canvas nav on mobiles #}
+<ul class="side-nav" id="mobile-demo">
+   
+    {% for item in navbar %}
+    <li{% if item[0]==active_page %} class="active" {% endif %}><a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }}</a></li>
+        {% endfor %}
+     <li><a class="waves-effect waves-light btn" href="#">Log-in</a></li>
+
+</ul>
+
