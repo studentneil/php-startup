@@ -11,7 +11,11 @@ use Silex\Provider\AssetServiceProvider;
 use Silex\Provider\HttpFragmentServiceProvider;
 use Silex\Provider\ServiceControllerServiceProvider;
 use Silex\Provider\TwigServiceProvider;
+use Silex\Provider\SecurityServiceProvider;
+use Silex\Provider\SessionServiceProvider;
+
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
+use VinylStore\UserProvider;
 
 $config = parse_ini_file(realpath('../config/config.ini'), true);
 $app = new Application();
@@ -28,11 +32,25 @@ $app->extend('twig', function ($twig, Application $app) {
 $app->register(new AssetServiceProvider());
 $app->register(new HttpFragmentServiceProvider());
 $app->register(new ServiceControllerServiceProvider());
+$app->register(new SessionServiceProvider());
 $app->register(new Silex\Provider\VarDumperServiceProvider());
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => $config['database'],
 ));
-
+$app->register(new Silex\Provider\SecurityServiceProvider(), array(
+    'security.firewalls' => array(
+        'admin' => array(
+            'pattern' => '^/admin',
+            'form' => array('login_path' => '/login', 'check_path' => '/admin/login_check'),
+            'logout' => array('logout_path' => '/admin/logout', 'invalidate_session' => true),
+            'users' => function () use ($app) {
+                 return new UserProvider($app['db']);
+                    },
+            )
+        ),  
+    'security.encoder.bcrypt.cost' => 4
+    )
+);
 $app->register(new VinylRepositoryServiceProvider());
 
 return $app;

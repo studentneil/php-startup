@@ -8,17 +8,16 @@ class MainController
 {
     public function indexAction(Application $app)
     {
-        $templateName = 'home';
+        $templateName = 'frontend/home';
         $args_array = array();
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-
     public function getCollectionAction(Application $app)
     {
         $collection = $app['vinyl.repository']->findAll();
-        $templateName = 'collection';
+        $templateName = 'frontend/collection';
         $args_array = array(
             'collection' => $collection,
         );
@@ -26,16 +25,14 @@ class MainController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-
     public function getReleaseByIdAction(Application $app, $id)
     {
-    	$release = $app['vinyl.repository']->findOneById($id);
-    	$templateName = 'release';
-    	$args_array = array(
-    		'release' => $release,
-    	);
+        $release = $app['vinyl.repository']->findOneById($id);
+        $templateName = 'frontend/release';
+        $args_array = array(
+            'release' => $release,
+        );
 
-    	return $app['twig']->render($templateName.'.html.twig', $args_array);
-
+        return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 }

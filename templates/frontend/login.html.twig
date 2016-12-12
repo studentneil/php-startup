@@ -1,0 +1,27 @@
+{% extends 'frontend/base.html.twig' %}
+
+{% set active_page = 'home' %}
+
+{% block content %}
+	<div class="container">
+    <form action="{{ path('admin_login_check') }}" method="post">
+      <div class="row">
+        <div class="input-field col s12 m6">
+        	{{ error }}
+          <input id="username" type="text" name="_username" class="validate">
+          <label for="username">Username</label>
+        </div>   
+      </div>    
+      <div class="row">
+        <div class="input-field col s12 m6">
+          <input id="password" type="password" name="_password" class="validate">
+          <label for="password">Password</label>
+        </div>
+      </div>
+      <input type="hidden" name="_target_path" value="/admin/dashboard"/>
+      <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+   	      <i class="material-icons right">send</i>
+  	  </button>
+    </form>
+  </div>
+{% endblock %}

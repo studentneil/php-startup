@@ -1,0 +1,12 @@
+html {
+    height: 100%;
+    font-family: 'Catamaran', sans-serif;
+    color: black;
+}
+
+.fixed-action-btn {
+	position: relative;
+	right: 0px;
+	top: 0;
+
+}
