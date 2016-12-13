@@ -19,48 +19,9 @@
 
 <body>
     <header>
-        
-     {#    <nav class="cyan darken-4">
-            <div class="nav-wrapper cyan darken-4">
-                <a href="#!" class="brand-logo">Vinyl Store Admin</a>
-                <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons">menu</i></a>
-
-                <ul class="right hide-on-med-and-down">
-                    {% block user %}
-                    
-                    {% endblock %}
-                    <li><a href="#">Database</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Vinyl</a></li>
-                    <li><a href="#">Users</a></li>
-                    <li><a class="waves-effect waves-light btn" href="/admin/logout">Log-out</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile">
-                    <li><a href="#">Database</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Vinyl</a></li>
-                    <li><a href="#">Users</a></li>
-                    <li><a class="waves-effect waves-light btn" href="/admin/logout">Log-out</a></li>
-                </ul>
-            </div>
-        </nav> #}
-        <nav class="cyan darken-4">
-            <div class="nav-wrapper cyan darken-4">
-                <a href="#!" class="brand-logo">Vinyl Store Admin</a>
-            </div>
-        </nav>
-          <div class="fixed-action-btn toolbar left">
-    <a class="btn-floating btn-large teal darken-2">
-      <i class="large material-icons">mode_edit</i>
-    </a>
-    <ul>
-      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">insert_chart</i>Database</a></li>
-      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">format_quote</i></a></li>
-      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">publish</i></a></li>
-      <li class="waves-effect waves-light"><a href="#!"><i class="material-icons">attach_file</i></a></li>
-    </ul>
-  </div>
-    
+        {% block navbar %}
+            {% include 'backend/partials/navbar.html.twig' %}
+        {% endblock %}
     </header>
     <main>
         {% block content %}
@@ -68,14 +29,15 @@
     </main>
     <footer></footer>
     <script>
-    // $(document).ready(function() {
-    //     $(".button-collapse").sideNav({
-    //         menuWidth: 200, // Default is 240
+    $(document).ready(function() {
+        $(".button-collapse").sideNav({
+            menuWidth: 200, // Default is 240
 
-    //         closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-    //         draggable: true // Choose whether you can drag to open on touch screens
-    //     });
-    // });
+            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            draggable: true // Choose whether you can drag to open on touch screens
+        });
+
+    });
     </script>
 </body>
 

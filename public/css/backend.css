@@ -4,9 +4,6 @@ html {
     color: black;
 }
 
-.fixed-action-btn {
-	position: relative;
-	right: 0px;
-	top: 0;
-
+.brand-logo {
+    margin-left: 0.75rem;
 }

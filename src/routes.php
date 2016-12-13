@@ -12,3 +12,4 @@ $app->get('/login', 'VinylStore\\Controllers\\LoginController::loginAction');
 $app->get('/release/{id}', 'VinylStore\\Controllers\\MainController::getReleaseByIdAction');
 $app->get('/collection', 'VinylStore\\Controllers\\MainController::getCollectionAction');
 $app->get('/admin/dashboard' , 'VinylStore\\Controllers\\LoginController::dashboardAction');
+$app->get('/admin/database', 'VinylStore\\Controllers\\DatabaseController::indexAction');

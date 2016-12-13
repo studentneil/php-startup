@@ -22,10 +22,11 @@ class LoginController
     {
         $user = $app['security.token_storage']->getToken()->getUser()->getUsername();
         $app['session']->set('user', array('username' => $user));
-
+        $count = $app['vinyl.repository']->getCount();
         $templateName = 'backend/dashboard';
         $args_array = array(
-            'user' => $app['session']->get('user'),        
+            'user' => $app['session']->get('user'),
+            'count' => $count,        
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);

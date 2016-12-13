@@ -15,6 +15,7 @@ use Silex\Provider\SecurityServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
+use VinylStore\ServiceProviders\DatabaseManagerServiceProvider;
 use VinylStore\UserProvider;
 
 $config = parse_ini_file(realpath('../config/config.ini'), true);
@@ -47,10 +48,11 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
                  return new UserProvider($app['db']);
                     },
             )
-        ),  
+        ),
     'security.encoder.bcrypt.cost' => 4
     )
 );
 $app->register(new VinylRepositoryServiceProvider());
+$app->register(new DatabaseManagerServiceProvider());
 
 return $app;

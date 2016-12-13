@@ -29,12 +29,12 @@ module.exports = function(grunt) {
                           "../templates/backend/*.html.twig"]
                 },
                 options: {
-                    proxy: "http://127.0.0.1:8888"
+                    proxy: "localhost:8888"
                 }
             }
         }
     });
-    
+
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-browser-sync');
