@@ -10,18 +10,21 @@
             There are {{ size }} current tables:
         </p>
         <div class="collection">
+            {% for table in tables %}
+
+                <a href="/admin/view/{{ table }}" class="collection-item">{{ table }}</a>
 
 
-             <a href="#" class="collection-item">{{ tables[0] }}<span class="badge orange">{{ count }}</span></a>
-             <a href="#" class="collection-item">{{ tables[1] }}</a>
-
+             {% endfor %}
         </div>
+
         <p>Currently there are {{ count }} items in the vinylstore collection.</p>
       </div>
       <div class="card-action">
-        <a href="#">Collection</a>
-        <a href="#">Add an item</a>
+        <a href="#">Add a column</a>
+        <a href="#">Inspect table</a>
       </div>
     </div>
   </div>
+
 {% endblock %}

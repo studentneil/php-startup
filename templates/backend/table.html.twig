@@ -1,0 +1,28 @@
+{% extends 'backend/base.html.twig' %}
+
+{% block content %}
+<table class="bordered">
+        <thead>
+          <tr>
+              {% for columns in column %}
+                <th data-field="{{ columns }}">{{ columns }}</th>
+                      {% endfor %}
+
+
+          </tr>
+        </thead>
+        <tbody>
+             <tr>
+            {% for item in release %}
+
+
+                    <td>{{ item }}</td>
+
+
+
+                  {% endfor %}
+                    </tr>
+    </table>
+
+
+{% endblock %}

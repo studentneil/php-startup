@@ -13,3 +13,4 @@ $app->get('/release/{id}', 'VinylStore\\Controllers\\MainController::getReleaseB
 $app->get('/collection', 'VinylStore\\Controllers\\MainController::getCollectionAction');
 $app->get('/admin/dashboard' , 'VinylStore\\Controllers\\LoginController::dashboardAction');
 $app->get('/admin/database', 'VinylStore\\Controllers\\DatabaseController::indexAction');
+$app->get('/admin/view/{table}', 'VinylStore\\Controllers\\DatabaseController::viewTableAction');
