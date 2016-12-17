@@ -7,3 +7,4 @@ php-cs-fixer
 rrauss-collection-20161202-1640.csv
 config/config.ini
 public/adminer.php
+phinx.yml
