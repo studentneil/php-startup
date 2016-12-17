@@ -23,18 +23,14 @@ Class DatabaseController
 
     public function viewTableAction(Application $app, $table)
     {
-
-        $column = $app['database.manager']->viewTable($table);
-        $collection = $app['vinyl.repository']->findAll();
-        $item = array();
-        foreach ($collection as $release) {
-            $item = $release;
-        }
-        var_dump($item);
+        $columnNames  = $app['database.manager']->viewColumnNames($table);
+        $details = $app['database.manager']->viewTable($table);
+        
         $templateName = 'backend/table';
         $args_array = array(
-            'column' => $column,
-            'release' => $release,
+            'columnNames' => $columnNames,
+            'details' => $details,
+            'releases' => $release,
         );
 
         return $app['twig']->render($templateName .'.html.twig', $args_array);

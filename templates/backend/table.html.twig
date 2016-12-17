@@ -1,28 +1,41 @@
 {% extends 'backend/base.html.twig' %}
 
 {% block content %}
-<table class="bordered">
+<div class="row">
+    <div class="col m12 valign-wrapper">
+
+<div class="card white">
+
+
+
+
+<table class="bordered highlight responsive-table">
         <thead>
           <tr>
-              {% for columns in column %}
-                <th data-field="{{ columns }}">{{ columns }}</th>
-                      {% endfor %}
+            {% for names in columnNames %}
+            <th>{{ names }}</th>
 
+            {% endfor %}
 
           </tr>
         </thead>
         <tbody>
+                {% for release in details %}
              <tr>
-            {% for item in release %}
+
+{% for key,val in release %}
+<td>{{ val }}</td>
+{% endfor %}
 
 
-                    <td>{{ item }}</td>
 
 
 
-                  {% endfor %}
+
                     </tr>
+                    {% endfor %}
     </table>
-
-
+</div>
+</div>
+</div>
 {% endblock %}

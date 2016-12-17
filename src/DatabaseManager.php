@@ -19,24 +19,25 @@ Class DatabaseManager
         $sm = $this->conn->getSchemaManager();
         $tables= $sm->listTableNames();
 
-
         return $tables;
     }
 
     public function viewTable($table)
     {
+        $stmt = $this->conn->fetchAll('SELECT * FROM '.$this->conn->quoteIdentifier($table));
+
+        return $stmt;
+    }
+
+    public function viewColumnNames($table)
+    {
         $sm = $this->conn->getSchemaManager();
         $columns = $sm->listTableColumns($table);
-        $name = array();
-
+        $names = array();
         foreach ($columns as $column) {
-            $names = $column->getName();
-
-            array_push($name, $names);
-
-
+            $name = $column->getName();
+            array_push($names, $name);
         }
-        return $name;
-        // return $columns;
+        return $names;
     }
 }
