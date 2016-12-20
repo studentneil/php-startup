@@ -11,24 +11,27 @@
     <link type="text/css" rel="stylesheet" href="{{ asset('/css/materialize.min.css') }}" media="screen,projection" />
     <link type="text/css" rel="stylesheet" href="{{ asset('/css/main.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
+    <!-- snipcart css -->
+    <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
+    <!-- snipcart js -->
+    <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="OGJiNWViNTItYzFjOC00NjcwLTljYmMtZTc1MDk1ZWZjZWVmNjM2MTc3ODQwOTA5OTg3NjAz"></script>
+
 </head>
 {% block body %}
-
 <body>
-    {% endblock %} {# the header #}
+    {% endblock %}
+    {# the header #}
     <header>
         {% include 'frontend/partials/navbar.html.twig' %}
- 
-        
     </header>
-    {% block content %} {% endblock %} {# the footer #}
+    {% block content %} {% endblock %}
+    {# the footer #}
     <footer>
     </footer>
     {# javascript functions #}
-    
     <script>
     $(document).ready(function() {
         $(".button-collapse").sideNav({

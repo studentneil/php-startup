@@ -20,7 +20,7 @@ class VinylRepository implements RepositoryInterface
     }
     public function findAll()
     {
-        $stmt = $this->conn->prepare('SELECT * FROM collection');
+        $stmt = $this->conn->prepare('SELECT * FROM releases');
         $stmt->execute();
         $collection = $stmt->fetchAll();
 
@@ -28,7 +28,7 @@ class VinylRepository implements RepositoryInterface
     }
     public function findOneById($id)
     {
-        $stmt = $this->conn->prepare('SELECT * FROM collection WHERE id=:id');
+        $stmt = $this->conn->prepare('SELECT * FROM releases WHERE id=:id');
         $stmt->bindValue('id', $id);
         $stmt->execute();
         $release = $stmt->fetch();
@@ -37,12 +37,12 @@ class VinylRepository implements RepositoryInterface
     }
     public function deleteOneById($id)
     {
-        $count = $this->conn->delete('collection', array('id' => $id));
+        $count = $this->conn->delete('releases', array('id' => $id));
 
         return $count;
     }
     public function getCount()
     {
-        return $this->conn->fetchColumn('SELECT COUNT(id) FROM collection');
+        return $this->conn->fetchColumn('SELECT COUNT(id) FROM releases');
     }
 }
