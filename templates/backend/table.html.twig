@@ -3,39 +3,34 @@
 {% block content %}
 <div class="row">
     <div class="col m12 valign-wrapper">
-
-<div class="card white">
-
+        <div class="card white">
 
 
 
-<table class="bordered highlight responsive-table">
-        <thead>
-          <tr>
-            {% for names in columnNames %}
-            <th>{{ names }}</th>
-
-            {% endfor %}
-
-          </tr>
-        </thead>
-        <tbody>
-                {% for release in details %}
-             <tr>
-
-{% for key,val in release %}
-<td>{{ val }}</td>
-{% endfor %}
-
-
-
-
-
-
-                    </tr>
+            <table class="bordered highlight responsive-table">
+                <thead>
+                  <tr>
+                    {% for names in columnNames %}
+                        <th>{{ names }}</th>
                     {% endfor %}
-    </table>
-</div>
-</div>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for release in details %}
+
+                     <tr>
+                         {% for key,val in release %}
+                            <td>{{ val }}</td>
+
+                         {% endfor %}
+<td><a href="#" class="orange darken-4 waves-effect waves-light btn">Edit</a></td>
+<td><a href="#" class="red darken-4 waves-effect waves-light btn">Delete</a></td>
+                     </tr>
+
+                    {% endfor %}
+            </table>
+
+        </div>
+    </div>
 </div>
 {% endblock %}

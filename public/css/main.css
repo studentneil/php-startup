@@ -1,38 +1,67 @@
 html {
-    height: 100%;
-    font-family: 'Catamaran', sans-serif;
-    color: black;
+  height      : 100%;
+  color       : black;
+  font-family : 'Catamaran',
+                sans-serif;
 }
 
-
-
 .side-nav {
-    width: 30%;
+  width : 30%;
 }
 
 .lead-image {
-    background-image: url('../images/header-vinyl.jpg');
-    background-position: center center;
+  background-image      : url('../images/header-vinyl.jpg');
+  background-color      : #464646;
+  background-repeat     : no-repeat;
+  background-attachment : fixed;
+  background-position   : center center;
+  background-size       : cover;
     /* Background image doesn't tile */
-    background-repeat: no-repeat;
-    /* Background image is fixed in the viewport so that it doesn't move when 
-     the content's height is greater than the image's height */
-    background-attachment: fixed;
-    /* This is what makes the background image rescale based
-     on the container's size */
-    background-size: cover;
-    /* Set a background color that will be displayed
-     while the background image is loading */
-    background-color: #464646;
+    /*
+    Background image is fixed in the viewport so that it doesn't move when
+    the content's height is greater than the image's height
+  */
+    /*
+    This is what makes the background image rescale based
+    on the container's size
+  */
+    /*
+    Set a background color that will be displayed
+    while the background image is loading
+  */
 }
 
 .nav {
-	z-index: 999;
-	
+  z-index : 999;
+}
+.search-nav {
+    margin-left: 2%;
+}
+
+.spacer {
+  margin : 4%;
+}
+
+.controls>.mixitup-control-active {
+  background-color : teal;
+}
+.controls {
+    display: flex;
+
+    font-size: 0.8rem;
 }
 
 @media (min-width: 600px) {
-    .brand-logo {
-        margin-left: 1em;
-    }
+  .brand-logo {
+    margin-left : 1em;
+  }
+  .spacer {
+    margin : 2%;
+  }
+  .search-nav{
+      margin-left: 1%;
+  }
+  .controls {
+      font-size: 1rem;
+  }
 }
