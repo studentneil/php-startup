@@ -1,20 +1,33 @@
 {
-    "require": {
-        "silex/silex": "~2.0",
-        "twig/twig": "~1.0",
-        "symfony/asset": "^3.1",
-        "symfony/twig-bridge": "~2.8|3.0.*",
-        "silex/web-profiler": "2.0",
-        "monolog/monolog": "^1.21",
-        "ricbra/php-discogs-api": "^1.2",
-        "symfony/var-dumper": "^3.1",
-        "doctrine/dbal": "~2.2",
-        "symfony/security": "^3.2",
-        "robmorgan/phinx": "^0.6.5"
+  "require": {
+    "silex/silex": "~2.0",
+    "twig/twig": "~1.0",
+    "symfony/asset": "^3.1",
+    "symfony/twig-bridge": "~2.8|3.0.*",
+    "silex/web-profiler": "2.0",
+    "monolog/monolog": "^1.21",
+    "ricbra/php-discogs-api": "^1.2",
+    "symfony/var-dumper": "^3.1",
+    "doctrine/dbal": "~2.2",
+    "symfony/security": "^3.2",
+    "robmorgan/phinx": "^0.6.5",
+    "symfony/form": "^3.2",
+    "symfony/validator": "^3.2",
+    "symfony/config": "^3.2",
+    "symfony/translation": "^3.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "VinylStore\\": "src/"
     },
-    "autoload": {
-        "psr-4": {
-            "VinylStore\\":"src/"
-        }
+    "autoload-dev": {
+      "psr-4": {
+        "VinylStore\\Tests": "tests/"
+      }
     }
+  },
+  "require-dev": {
+    "symfony/browser-kit": "^3.2",
+    "symfony/css-selector": "^3.2"
+  }
 }

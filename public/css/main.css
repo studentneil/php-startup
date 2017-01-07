@@ -1,21 +1,21 @@
 html {
-  height      : 100%;
-  color       : black;
-  font-family : 'Catamaran',
-                sans-serif;
+    height: 100%;
+    color: black;
+    font-family: 'Catamaran',
+    sans-serif;
 }
 
 .side-nav {
-  width : 30%;
+    width: 30%;
 }
 
 .lead-image {
-  background-image      : url('../images/header-vinyl.jpg');
-  background-color      : #464646;
-  background-repeat     : no-repeat;
-  background-attachment : fixed;
-  background-position   : center center;
-  background-size       : cover;
+    background-image: url('../images/header-vinyl.jpg');
+    background-color: #464646;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
     /* Background image doesn't tile */
     /*
     Background image is fixed in the viewport so that it doesn't move when
@@ -32,36 +32,44 @@ html {
 }
 
 .nav {
-  z-index : 999;
+    z-index: 999;
 }
+
 .search-nav {
     margin-left: 2%;
 }
 
 .spacer {
-  margin : 4%;
+    margin: 4%;
+}
+button {
+    padding: 0px;
+}
+/* mixitup filter controls */
+/***************************/
+.controls > .mixitup-control-active {
+    background-color: teal;
 }
 
-.controls>.mixitup-control-active {
-  background-color : teal;
-}
 .controls {
     display: flex;
-
     font-size: 0.8rem;
 }
 
 @media (min-width: 600px) {
-  .brand-logo {
-    margin-left : 1em;
-  }
-  .spacer {
-    margin : 2%;
-  }
-  .search-nav{
-      margin-left: 1%;
-  }
-  .controls {
-      font-size: 1rem;
-  }
+    .brand-logo {
+        margin-left: 1em;
+    }
+
+    .spacer {
+        margin: 2%;
+    }
+
+    .search-nav {
+        margin-left: 1%;
+    }
+
+    .controls {
+        font-size: 1rem;
+    }
 }

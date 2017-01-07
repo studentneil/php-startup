@@ -12,9 +12,9 @@ class VinylRepository implements RepositoryInterface
     {
         $this->conn = $conn;
     }
-    public function save(array $array)
+    public function save(array $data)
     {
-        $count = $this->conn->insert('exhibition', $arr);
+        $count = $this->conn->insert('releases', $data);
 
         return $count;
     }

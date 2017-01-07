@@ -37,6 +37,8 @@
     <!-- https://www.kunkalabs.com -->
     <script type="text/javascript" src="{{ asset('js/mixitup.min.js') }}"></script>
     <script>
+
+
     $(document).ready(function() {
         $(".button-collapse").sideNav({
             menuWidth: 200, // Default is 240
@@ -45,14 +47,21 @@
             draggable: true // Choose whether you can drag to open on touch screens
         });
     });
+    var containerEl = document.querySelector('.mixitup-container');
+    var mixer = mixitup(containerEl, {
+        animation: {
+            animateResizeTargets: true
+        }
+    });
+
+    $('.carousel').carousel();
+
+
+
 
 
     </script>
-    <script>
-           var containerEl = document.querySelector('.mixitup-container');
 
-           var mixer = mixitup(containerEl);
-       </script>
 </body>
 
 </html>

@@ -14,7 +14,7 @@ class MainController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-    public function getCollectionAction(Application $app)
+    public function getVinylAction(Application $app)
     {
         $collection = $app['vinyl.repository']->findAll();
         $templateName = 'frontend/collection';

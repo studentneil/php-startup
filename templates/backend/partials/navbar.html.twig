@@ -1,24 +1,37 @@
-
 {% block navbar %}
     <nav>
-      <div class="nav-wrapper cyan darken-4">
-          <a href="#!" class="brand-logo left">Vinyl Store</a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="/admin/database">Database</a></li>
-          <li><a href="#">Images</a></li>
-          <li><a href="#!">Collection</a></li>
-          <li><button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button></li>
-          <li><a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a></li>
-        </ul>
-      </div>
+        <div class="nav-wrapper cyan darken-4">
+            <a href="#!" class="brand-logo left">Vinyl Store</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i
+                        class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                {# dropdown trigger #}
+                <li><a class="dropdown-button btn" href="#" data-activates="dropdown1">Database</a></li>
+                {# dropdown content#}
+                <ul id='dropdown1' class='dropdown-content'>
+                    <li><a href="/admin/database">Create a release</a></li>
+                    <li><a href="#!">two</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#!">three</a></li>
+                </ul>
+                <li><a href="#">Images</a></li>
+                <li><a href="#!">Collection</a></li>
+                <li>
+                    <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
+                </li>
+                <li><a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a>
+                </li>
+            </ul>
+        </div>
     </nav>
     <!-- Hidden side-nav for mobiles -->
     <ul class="side-nav" id="mobile-demo">
-      <li class="center-align"><button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button></li>
-      <li><a href="/admin/database">Database</a></li>
-      <li><a href="#">Images</a></li>
-      <li><a href="#!">Collection</a></li>
-      <li><a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a></li>
+        <li class="center-align">
+            <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
+        </li>
+        <li><a href="/admin/database">Database</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#!">Collection</a></li>
+        <li><a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a></li>
     </ul>
 {% endblock %}

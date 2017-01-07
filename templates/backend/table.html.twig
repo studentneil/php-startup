@@ -1,36 +1,79 @@
 {% extends 'backend/base.html.twig' %}
 
 {% block content %}
-<div class="row">
-    <div class="col m12 valign-wrapper">
-        <div class="card white">
 
+    <div class="row">
+        <div class="col m6 s12">
+            <div class="card-panel blue-grey darken-3">
+                <div class="card-content white-text">
+                    <span class="card-title">Create a new release for the database here</span>
+                    <div class="card-action">
+                        <a href="/admin/create-release" class="btn">Create New Release</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-
-            <table class="bordered highlight responsive-table">
-                <thead>
-                  <tr>
-                    {% for names in columnNames %}
-                        <th>{{ names }}</th>
-                    {% endfor %}
-                  </tr>
-                </thead>
-                <tbody>
-                    {% for release in details %}
-
-                     <tr>
-                         {% for key,val in release %}
-                            <td>{{ val }}</td>
-
-                         {% endfor %}
-<td><a href="#" class="orange darken-4 waves-effect waves-light btn">Edit</a></td>
-<td><a href="#" class="red darken-4 waves-effect waves-light btn">Delete</a></td>
-                     </tr>
-
-                    {% endfor %}
-            </table>
-
+        <div class="col m6 s12">
+            <div class="card-panel blue-grey darken-3">
+                <div class="card-content white-text">
+                    <div class="controls">
+                        <span class="card-title">Filters</span>
+                        <div class="card-action">
+                            <button class="waves-effect waves-light btn white-text control" data-filter="all">None
+                            </button>
+                            <button class="waves-effect waves-light btn white-text control"
+                                    data-filter=".electronic">
+                                Electronic
+                            </button>
+                            <button class="waves-effect waves-light btn white-text control" data-filter=".rock">
+                                rock
+                            </button>
+                            <button class="waves-effect waves-light btn white-text control"
+                                    data-filter=".classic-rock">Classic Rock
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
+
+
+    <div class="row mixitup-container">
+        <div class="col m12">
+
+                {% for release in details %}
+                    <div class="mix {{ release.genre }}">
+
+                            {#<div class="card-image waves-effect waves-block waves-light hoverable">#}
+                                {#<img class="activator" src="/images/front.png">#}
+                            {#</div>#}
+                            <ul class="collapsible popout" data-collapsible="accordion">
+                                <li>
+                                    <div class="collapsible-header">
+
+                                        <p>{{ release.artist }}</p>
+                                        <p>{{ release.title }}</p>
+
+
+
+                                        <a class="waves-effect waves-light btn" href="#}">Edit</a>
+                                        <a class="waves-effect waves-light btn-flat orange" href="">Delete</a>
+                                    </div>
+                                    <div class="collapsible-body">
+                                        <p>{{ release.format }}</p>
+                                        <p>{{ release.label }}</p>
+                                        <p>{{ release.released }}</p>
+                                        <p>{{ release.media_condition }}</p>
+                                        <p>{{ release.sleeve_condition }}</p>
+                                        <p>{{ release.notes }}</p>
+                                        <p>{{ release.genre }}</p>
+                                    </div>
+                                </li>
+                            </ul>
+                    </div>
+                {% endfor %}
+        </div>
+    </div>
 {% endblock %}
