@@ -19,11 +19,11 @@
   "autoload": {
     "psr-4": {
       "VinylStore\\": "src/"
-    },
-    "autoload-dev": {
-      "psr-4": {
-        "VinylStore\\Tests": "tests/"
-      }
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "VinylStore\\Tests\\": "tests/"
     }
   },
   "require-dev": {

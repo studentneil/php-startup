@@ -2,10 +2,9 @@
 
 namespace VinylStore;
 
-use Silex\Application;
 use Doctrine\DBAL\Connection;
 
-Class DatabaseManager
+class DatabaseManager
 {
     protected $conn;
 
@@ -17,7 +16,7 @@ Class DatabaseManager
     public function getTables()
     {
         $sm = $this->conn->getSchemaManager();
-        $tables= $sm->listTableNames();
+        $tables = $sm->listTableNames();
 
         return $tables;
     }
@@ -38,6 +37,7 @@ Class DatabaseManager
             $name = $column->getName();
             array_push($names, $name);
         }
+
         return $names;
     }
 }

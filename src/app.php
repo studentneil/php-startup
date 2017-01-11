@@ -14,9 +14,9 @@ use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\FormServiceProvider;
 
-
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
 use VinylStore\ServiceProviders\DatabaseManagerServiceProvider;
+use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
 use VinylStore\UserProvider;
 
 require_once __DIR__.'/../vendor/autoload.php';
@@ -52,20 +52,29 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
             'form' => array('login_path' => '/login', 'check_path' => '/admin/login_check'),
             'logout' => array('logout_path' => '/admin/logout', 'invalidate_session' => true),
             'users' => function () use ($app) {
-                 return new UserProvider($app['db']);
-                    },
-            )
+                return new UserProvider($app['db']);
+            },
+            ),
         ),
-    'security.encoder.bcrypt.cost' => 4
+    'security.encoder.bcrypt.cost' => 4,
     )
 );
 $app->register(new FormServiceProvider());
-# register custom forms
+// register custom forms here.
+// create a new release form
 $app->extend('form.types', function ($types) {
     $types[] = new VinylStore\Forms\CreateNewReleaseType();
+
+    return $types;
+});
+// upload image form
+$app->extend('form.types', function ($types) {
+    $types[] = new VinylStore\Forms\ImageUploadType();
+
     return $types;
 });
 $app->register(new VinylRepositoryServiceProvider());
+$app->register(new ImageRepositoryServiceProvider());
 $app->register(new DatabaseManagerServiceProvider());
 
 return $app;

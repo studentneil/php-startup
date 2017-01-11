@@ -26,7 +26,7 @@ class LoginController
         $templateName = 'backend/dashboard';
         $args_array = array(
             'user' => $app['session']->get('user'),
-            'count' => $count,        
+            'count' => $count,
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);

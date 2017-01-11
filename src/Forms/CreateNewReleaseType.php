@@ -3,16 +3,14 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 07/01/2017
- * Time: 00:53
+ * Time: 00:53.
  */
 
 namespace VinylStore\Forms;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
-use Symfony\Component\Form\Extension\Core\Type\IntegerType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
-use Symfony\Component\Form\Extension\Core\Type\FileType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -27,104 +25,103 @@ class CreateNewReleaseType extends AbstractType
                     new Assert\NotBlank(),
                     new Assert\Length(array(
                         'min' => 4,
-                        'max' => 9
-                    ))
+                        'max' => 9,
+                    )),
                 ),
                 'attr' => array(
-                    'placeholder' => 'eg 12 brw'
-                )
+                    'placeholder' => 'eg 12 brw',
+                ),
             ))
             ->add('artist', TextType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
                     new Assert\Length(array(
-                        'min' => 2
-                    ))
+                        'min' => 2,
+                    )),
                 ),
                 'attr' => array(
-                    'placeholder' => 'e.g. Tricky'
-                )
+                    'placeholder' => 'e.g. Tricky',
+                ),
             ))
             ->add('title', TextType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
                     new Assert\Length(array(
-                        'min' => 2
-                    ))
+                        'min' => 2,
+                    )),
                 ),
                 'attr' => array(
-                    'placeholder' => 'eg.tricky kid'
-                )
+                    'placeholder' => 'eg.tricky kid',
+                ),
             ))
             ->add('label', TextType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
                 ),
                 'attr' => array(
-                    'placeholder' => 'e.g. sony'
-                )
+                    'placeholder' => 'e.g. sony',
+                ),
             ))
             ->add('format', TextType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
                 ),
                 'attr' => array(
-                    'placeholder' => 'e.g. 12" LP'
-                )
+                    'placeholder' => 'e.g. 12" LP',
+                ),
             ))
             ->add('released', DateType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
-                    new Assert\DateValidator(array(
-
-                    ))
                 ),
+                'widget' => 'single_text',
+                'input' => 'string',
                 'attr' => array(
-                    'placeholder' => 'eg 11/12/1975'
-                )
+                    'class' => 'datepicker',
+                    'placeholder' => 'eg 11/12/1975',
+                ),
             ))
             ->add('date_added', DateType::class, array(
-
                 'constraints' => array(
                     new Assert\NotBlank(),
-                    new Assert\DateTime()
-
                 ),
+                'widget' => 'single_text',
+                'input' => 'string',
                 'attr' => array(
                     'placeholder' => 'eg. now',
-                    'class' => 'date'
-                )
+                    'class' => 'datepicker',
+                ),
             ))
             ->add('media_condition', TextType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
                     new Assert\Length(array(
-                        'min' => 3
-                    ))
+                        'min' => 3,
+                    )),
                 ),
                 'attr' => array(
-                    'placeholder' => 'e.g. VG'
-                )
+                    'placeholder' => 'e.g. VG',
+                ),
             ))
             ->add('sleeve_condition', TextType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
                     new Assert\Length(array(
-                        'min' => 3
-                    ))
+                        'min' => 3,
+                    )),
                 ),
                 'attr' => array(
-                    'placeholder' => 'e.g. mint'
-                )
+                    'placeholder' => 'e.g. mint',
+                ),
             ))
-            ->add('notes', TextAreaType::class, array(
+            ->add('notes', TextareaType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
-
                 ),
                 'attr' => array(
-                    'placeholder' => 'e.g. great album etc'
-                )
+                    'class' => 'materialize-textarea',
+                    'placeholder' => 'e.g. great album etc',
+                ),
             ))
             ->add('genre', TextType::class, array(
                 'constraints' => array(
@@ -132,18 +129,8 @@ class CreateNewReleaseType extends AbstractType
 
                 ),
                 'attr' => array(
-                    'placeholder' => 'eg rock'
-                )
-            ))
-            ->add('image', FileType::class, array(
-                'constraints' => array(
-                    new Assert\NotBlank(),
-
+                    'placeholder' => 'eg rock',
                 ),
-                'attr' => array(
-                    'placeholder' => 'image file'
-                )
             ));
     }
-
 }
