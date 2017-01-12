@@ -11,20 +11,26 @@ namespace VinylStore\Controllers;
 use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
 use VinylStore\Forms\ImageUploadType;
+use VinylStore\Entity\FileEntity;
 
 class ImageController
 {
     public function uploadImageAction(Request $request, Application $app)
     {
         $count = 0;
-        $data = array();
+        $file = new FileEntity();
         $form = $app['form.factory']
-            ->createBuilder(ImageUploadType::class, $data)
+            ->createBuilder(ImageUploadType::class, $file)
             ->getForm();
         $form->handleRequest($request);
         if ($form->isValid()) {
-            $data = $form->getData();
-            $count = $app['image.repository']->save($data);
+            $image = $file->getImage();
+            $fileName = md5(uniqid()) . '.' . $image->guessExtension();
+            $image->move('images/uploads/', $fileName);
+            $file->setImage($fileName);
+//            $imageData = $form->getData();
+
+            $count = $app['image.repository']->save($file);
         }
 
         $templateName = 'backend/uploadImageForm';

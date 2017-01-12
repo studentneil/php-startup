@@ -16,7 +16,7 @@ class ImageRepositoryServiceProvider implements ServiceProviderInterface
     public function register(Container $app)
     {
         $app['image.repository'] = function () use ($app) {
-            return new ImageRepository();
+            return new ImageRepository($app['db']);
         };
     }
 }

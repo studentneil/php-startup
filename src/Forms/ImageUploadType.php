@@ -18,16 +18,10 @@ class ImageUploadType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         return $builder
-            ->add('image', FileType::class, array(
-                'constraints' => array(
-                    new Assert\NotBlank(),
-                    new Assert\Image(array(
-                        'mimeTypes' => array('image/jpg', 'image/png'),
-                        'maxSize' => '3M',
-                            )
-                        ),
-                    ),
-                'multiple' => 'true',
-            ));
+            ->add('image', FileType::class);
     }
+    public function getName(){
+        return 'image';
+    }
+
 }

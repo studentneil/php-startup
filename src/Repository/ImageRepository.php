@@ -7,7 +7,7 @@
  */
 
 namespace VinylStore\Repository;
-use Doctrine\DBAL\Connection;
+use Doctrine\Dbal\Connection;
 
 class ImageRepository implements RepositoryInterface
 {
@@ -17,9 +17,14 @@ class ImageRepository implements RepositoryInterface
     {
         $this->conn = $conn;
     }
-    public function save($image)
+    public function save($file)
     {
-        $count = $this->conn->insert('images', $image);
+
+        $uploadedImage = array(
+            'image' => $file->getImage()
+        );
+
+        $count = $this->conn->insert('images', $uploadedImage);
 
         return $count;
     }
