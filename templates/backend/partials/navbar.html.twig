@@ -19,7 +19,7 @@
                 {# dropdown content #}
                 <ul id="dropdown2" class="dropdown-content">
                     <li><a href="/admin/upload-image">Upload Images</a></li>
-                    <li><a href="#">View Images</a></li>
+                    <li><a href="/admin/view-images">View Images</a></li>
                 </ul>
                 <li><a href="#!">Collection</a></li>
                 <li>
@@ -37,7 +37,13 @@
             <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
         </li>
         <li><a href="/admin/database">Database</a></li>
-        <li><a href="#">Images</a></li>
+        {# dropdown trigger for images menu #}
+        <li><a class="dropdown-button btn" href="#" data-activates="dropdown2">Images</a></li>
+        {# dropdown content #}
+        <ul id="dropdown2" class="dropdown-content">
+            <li><a href="/admin/upload-image">Upload Images</a></li>
+            <li><a href="/admin/view-images">View Images</a></li>
+        </ul>
         <li><a href="#!">Collection</a></li>
         <li><a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a></li>
     </ul>

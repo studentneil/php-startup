@@ -1,5 +1,5 @@
-{# the navbar #} 
-{# set up the names of the routes and links #} 
+{# the navbar #}
+{# set up the names of the routes and links #}
 {% set navbar = [['home', 'Home'], ['vinyl', 'Vinyl']] %}
 
 <div class="navbar-fixed">
@@ -11,7 +11,7 @@
                 {% for item in navbar %}
                 <li{% if item[0]==active_page %} class="active" {% endif %}><a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }}</a></li>
                     {% endfor %}
-                    <li><a class="waves-effect waves-light btn" href="/login">Log-in</a></li>
+                    <li><a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a></li>
             </ul>
         </div>
     </nav>
@@ -21,5 +21,5 @@
     {% for item in navbar %}
     <li{% if item[0]==active_page %} class="active" {% endif %}><a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }}</a></li>
         {% endfor %}
-        <li><a class="waves-effect waves-light btn" href="/login">Log-in</a></li>
+        <li><a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a></li>
 </ul>

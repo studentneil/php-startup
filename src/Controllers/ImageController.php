@@ -42,4 +42,14 @@ class ImageController
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
+
+    public function viewImagesAction(Application $app)
+    {
+        $allImages = $app['image.repository']->findAll();
+        $template = 'backend/viewImages';
+
+        return $app['twig']->render($template.'.html.twig', array(
+            'images' => $allImages
+        ));
+    }
 }

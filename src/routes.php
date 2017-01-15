@@ -16,3 +16,4 @@ $app->get('/admin/database', 'VinylStore\\Controllers\\DatabaseController::index
 $app->get('/admin/view/{table}', 'VinylStore\\Controllers\\DatabaseController::viewTableAction');
 $app->match('/admin/create-release', 'VinylStore\\Controllers\\DatabaseController::createReleaseAction');
 $app->match('/admin/upload-image', 'VinylStore\\Controllers\\ImageController::uploadImageAction');
+$app->get('/admin/view-images', 'VinylStore\\Controllers\\ImageController::viewImagesAction');
