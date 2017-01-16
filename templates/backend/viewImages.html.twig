@@ -1,15 +1,60 @@
 {% extends 'backend/base.html.twig' %}
 {% block content %}
-<div class="row">
-    <div class="col m6">
+    {% if count is defined %}
+<h4>Deleted</h4>
+{% endif %}
+    <div class="row">
         {% for image in images %}
-        <div class="card blue-grey darken-1">
+
+            <div class="col m3 s6">
+        <div class="card">
             <div class="card-image">
-                <img src="/images/uploads/{{ image.image|raw }}" alt="cover_picture_">
+                <img src="/uploads/{{ image.image|raw }}" alt="cover_picture_">
+                <span class="card-title">image name: {{ image.name }}</span>
+            </div>
+            <div class="card-content">
+                <p>id: {{ image.id }}</p>
+                <p>image: {{ image.image }}</p>
+                <p>release id: {{ image.release_id }}</p>
+            </div>
+            {# we store a reference to the images id in the data attribute below #}
+            {# this is used by jquery to pass the correct id to our delete function #}
+            <div class="card-action del-image" data-imageid="{{ image.id }}">
+                <a href="/admin/delete-image/{{ image.id }}">Delete</a>
             </div>
         </div>
-        {% endfor %}
-    </div>    
-</div>
+            </div>
 
+        {% endfor %}
+    </div>
+
+{% endblock %}
+{% block javascript %}
+    <script>
+        $(document).ready(function () {
+            $('.del-image').on('click', function (event) {
+                event.preventDefault();
+                // try to get the image id to pass to the url parameter below
+                var result = $(event.target).closest('div').data('imageid');
+                var block = $(this).parent();
+                console.log(result);
+                console.log(block);
+                $.ajax({
+                    url: '/admin/delete-image/' + result,
+                    type: "GET",
+
+                    error: function (response) {
+                        Materialize.toast(response, 4000);
+                    },
+                    success: function (response) {
+
+                        console.log(response);
+                        $(block).fadeOut(300);
+                        Materialize.toast(response, 4000);
+                    }
+                });
+            });
+        });
+
+    </script>
 {% endblock %}

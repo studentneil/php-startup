@@ -21,7 +21,9 @@ class ImageRepository implements RepositoryInterface
     {
 
         $uploadedImage = array(
-            'image' => $file->getImage()
+            'image' => $file->getImage(),
+            'name' => $file->getName(),
+            'release_id' => $file->getReleaseId(),
         );
 
         $count = $this->conn->insert('images', $uploadedImage);
@@ -54,5 +56,13 @@ class ImageRepository implements RepositoryInterface
     public function getCount()
     {
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM images');
+    }
+
+    public function getImageNameForDelete($id)
+    {
+        $image = $this->conn->fetchColumn('SELECT image FROM images WHERE id = ?', array($id), 0);
+
+
+        return $image;
     }
 }

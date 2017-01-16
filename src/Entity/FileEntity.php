@@ -14,8 +14,8 @@ class FileEntity
 
 
     private $image;
-
-
+    private $name;
+    private $release_id;
 
     /**
      * @return mixed
@@ -32,5 +32,38 @@ class FileEntity
     {
         $this->image = $image;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @param mixed $name
+     */
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getReleaseId()
+    {
+        return $this->release_id;
+    }
+
+    /**
+     * @param mixed $release_id
+     */
+    public function setReleaseId($release_id)
+    {
+        $this->release_id = $release_id;
+    }
+
 
 }

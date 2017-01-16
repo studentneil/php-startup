@@ -16,9 +16,9 @@
 
 
 </head>
-{% block body %}
+
 <body>
-    {% endblock %}
+
     {# the header #}
     <header>
         {% include 'frontend/partials/navbar.html.twig' %}
@@ -51,31 +51,20 @@
             closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
             draggable: true // Choose whether you can drag to open on touch screens
         });
+        var slider = $('.carousel');
+        slider.carousel();
+
+        var containerEl = document.querySelector('.mixitup-container');
+
+        var mixer = mixitup(containerEl, {
+
+            animation: {
+                animateResizeTargets: true,
+                nudge: true
+            }
+
+        });
     });
-    var slider = $('.carousel');
-
-    var containerEl = document.querySelector('.mixitup-container');
-
-    var mixer = mixitup(containerEl, {
-
-        animation: {
-            animateResizeTargets: true,
-            nudge: true
-        }
-
-    });
-    $(".control").on('click', function(){
-        if (slider.hasClass('initialized')){
-            slider.removeClass('initialized');
-
-            // slider.carousel();
-        }
-
-    });
-slider.carousel();
-
-
-
 
 
 

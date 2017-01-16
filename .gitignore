@@ -10,3 +10,4 @@ public/adminer.php
 phinx.yml
 coverage/
 phpunit.phar
+public/uploads/

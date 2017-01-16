@@ -77,4 +77,6 @@ $app->register(new VinylRepositoryServiceProvider());
 $app->register(new ImageRepositoryServiceProvider());
 $app->register(new DatabaseManagerServiceProvider());
 
+// set up the base dir for image uploads
+$app['uploads.dir'] = 'images/uploads/';
 return $app;
