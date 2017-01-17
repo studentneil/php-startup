@@ -60,10 +60,12 @@ class ImageController
     public function viewImagesAction(Application $app)
     {
         $allImages = $app['image.repository']->findAll();
+        $releases = $app['vinyl.repository']->findAll();
         $template = 'backend/viewImages';
 
         return $app['twig']->render($template.'.html.twig', array(
-            'images' => $allImages
+            'images' => $allImages,
+            'releases' => $releases
         ));
     }
 
@@ -98,5 +100,28 @@ class ImageController
             $response = 'Success! An image was deleted.';
             return $response;
         };
+    }
+
+    /**
+     * Attach an image to a release.
+     *
+     * Another ajax call.
+     * Gets the imageId and the releaseId from the template and updates the
+     * image table with the releaseId.
+     *
+     * @param Application $app
+     * @param $imageId
+     * @param $releaseId
+     */
+    public function attachImageAction(Application $app, $imageId, $releaseId)
+    {
+        $count = $app['image.repository']->attachImageToRelease($imageId, $releaseId);
+        if (!$count === 1) {
+            $response = 'Theres a problem with the response';
+            return $response;
+        } else {
+            $response = 'Success! You have attached the image';
+            return $response;
+        }
     }
 }

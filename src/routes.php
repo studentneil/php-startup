@@ -18,3 +18,4 @@ $app->match('/admin/create-release', 'VinylStore\\Controllers\\DatabaseControlle
 $app->match('/admin/upload-image', 'VinylStore\\Controllers\\ImageController::uploadImageAction');
 $app->get('/admin/view-images', 'VinylStore\\Controllers\\ImageController::viewImagesAction');
 $app->get('/admin/delete-image/{id}', 'VinylStore\\Controllers\\ImageController::deleteImageAction');
+$app->post('/admin/attach-image/{imageId}/{releaseId}', 'VinylStore\\Controllers\\ImageController::attachImageAction');

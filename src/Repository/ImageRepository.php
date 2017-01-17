@@ -65,4 +65,10 @@ class ImageRepository implements RepositoryInterface
 
         return $image;
     }
+    public function attachImageToRelease($imageId, $releaseId)
+    {
+        $count = $this->conn->executeUpdate('UPDATE images SET release_id = ? WHERE id = ?', array($releaseId, $imageId));
+
+        return $count;
+    }
 }

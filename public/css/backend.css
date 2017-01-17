@@ -12,4 +12,12 @@ html {
     font-size: 0.7rem;
 }
 
-
+.collapsible-header > p {
+    line-height: 1.5rem;
+    margin: 0;
+}
+.collapsible-body > p {
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0.5rem;
+}
