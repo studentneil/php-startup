@@ -16,7 +16,7 @@ class MainController
 
     public function getVinylAction(Application $app)
     {
-        $collection = $app['vinyl.repository']->findAll();
+        $collection = $app['vinyl.repository']->findAllWithImages();
         $templateName = 'frontend/collection';
         $args_array = array(
             'collection' => $collection,

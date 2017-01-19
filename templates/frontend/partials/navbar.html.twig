@@ -17,9 +17,13 @@
     </nav>
 </div>
 {# off-canvas nav on mobiles #}
-<ul class="side-nav" id="mobile-demo">
+<ul class="side-nav center-align" id="mobile-demo">
+    <div><i class="material-icons close-menu">close</i></div>
+
     {% for item in navbar %}
-    <li{% if item[0]==active_page %} class="active" {% endif %}><a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }}</a></li>
+    <li{% if item[0]==active_page %} class="active" {% endif %}><a href="{{ global.request.basepath }}/{{
+        (item[0]) }}"
+                                                                    class="black-text">{{ item[1] }}</a></li>
         {% endfor %}
-        <li><a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a></li>
+        <li><button class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</button></li>
 </ul>

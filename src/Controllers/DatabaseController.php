@@ -29,15 +29,15 @@ class DatabaseController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-    public function viewTableAction(Application $app, $table)
+    public function viewTableAction(Application $app)
     {
-        $details = $app['database.manager']->viewTable($table);
+        $releases = $app['vinyl.repository']->findAll();
 
-        $templateName = 'backend/table';
+        $templateName = 'backend/releases';
         $args_array = array(
-//            'columnNames' => $columnNames,
-            'details' => $details,
-//            'releases' => $release,
+
+            'releases' => $releases,
+
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);

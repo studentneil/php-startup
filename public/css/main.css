@@ -21,8 +21,10 @@ main {
 /* *********** */
 
 .side-nav {
-  width : 30%;
+  width : 100%;
+  padding-top: 4rem;
 }
+
 
 .nav {
   z-index : 999;
@@ -51,6 +53,7 @@ button {
 .controls {
   display   : flex;
   font-size : 0.8rem;
+  margin: 0;
 }
 
 /* collapsibles */
@@ -58,7 +61,10 @@ button {
 .collapsible-header {
   margin: 0;
 }
-
+.carousel .carousel-item {
+  position: absolute;
+  top: -70px;
+}
 @media (min-width: 600px) {
   .brand-logo {
     margin-left : 1em;

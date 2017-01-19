@@ -21,3 +21,8 @@ html {
     margin: 0;
     padding: 0.5rem;
 }
+
+.side-nav {
+    width : 100%;
+    padding-top: 4rem;
+}

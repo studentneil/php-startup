@@ -38,32 +38,27 @@
     <script type="text/javascript" src="{{ asset('js/materialize.js') }}"></script>
     <!-- snipcart js -->
     <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="OGJiNWViNTItYzFjOC00NjcwLTljYmMtZTc1MDk1ZWZjZWVmNjM2MTc3ODQwOTA5OTg3NjAz"></script>
-    <!-- Mixitup filtering and sorting js -->
-    <!-- https://www.kunkalabs.com -->
-    <script type="text/javascript" src="{{ asset('js/mixitup.min.js') }}"></script>
+
     <script>
 
 
     $(document).ready(function() {
         $(".button-collapse").sideNav({
-            menuWidth: 200, // Default is 240
-
             closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
             draggable: true // Choose whether you can drag to open on touch screens
         });
-        var slider = $('.carousel');
-        slider.carousel();
-
-        var containerEl = document.querySelector('.mixitup-container');
-
-        var mixer = mixitup(containerEl, {
-
-            animation: {
-                animateResizeTargets: true,
-                nudge: true
-            }
-
+        $('.close-menu').on('click', function(){
+            $(this).sideNav('hide');
         });
+
+
+
+        $('.carousel').carousel({
+            dist: -20,
+            padding: 4,
+            shift: 20
+        });
+
     });
 
 

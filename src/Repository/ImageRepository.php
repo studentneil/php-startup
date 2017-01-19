@@ -60,7 +60,7 @@ class ImageRepository implements RepositoryInterface
 
     public function getImageNameForDelete($id)
     {
-        $image = $this->conn->fetchColumn('SELECT image FROM images WHERE id = ?', array($id), 0);
+        $image = $this->conn->fetchColumn('SELECT image FROM images WHERE id = ?', array($id));
 
 
         return $image;

@@ -68,7 +68,7 @@ $app->extend('form.types', function ($types) {
     return $types;
 });
 // upload image form
-$app->extend('form.types', function ($types) {
+$app->extend('form.types', function ($types) use ($app) {
     $types[] = new VinylStore\Forms\ImageUploadType();
 
     return $types;

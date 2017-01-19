@@ -3,6 +3,7 @@
 namespace VinylStore\Repository;
 
 use Doctrine\Dbal\Connection;
+use VinylStore\Entity\ChoiceEntity;
 
 class VinylRepository implements RepositoryInterface
 {
@@ -44,5 +45,26 @@ class VinylRepository implements RepositoryInterface
     public function getCount()
     {
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM releases');
+    }
+    public function findAllWithImages()
+    {
+        $qb = $this->conn->createQueryBuilder();
+        $qb ->select('*')
+            ->from('releases', 'r')
+            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id');
+
+        $releases = $qb->execute()->fetchAll();
+
+        return $releases;
+    }
+    public function fillChoicesWithReleaseId()
+    {
+        $qb = $this->conn->createQueryBuilder();
+        $qb ->select('id', 'title')
+            ->from('releases', 'r')
+            ->where('r.image_id IS NULL');
+        $choices = $qb->execute()->fetchAll(\PDO::FETCH_OBJ);
+
+        return $choices;
     }
 }
