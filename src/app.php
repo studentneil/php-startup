@@ -45,20 +45,7 @@ $app->register(new Silex\Provider\LocaleServiceProvider());
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => $config['database'],
 ));
-$app->register(new Silex\Provider\SecurityServiceProvider(), array(
-    'security.firewalls' => array(
-        'admin' => array(
-            'pattern' => '^/admin',
-            'form' => array('login_path' => '/login', 'check_path' => '/admin/login_check'),
-            'logout' => array('logout_path' => '/admin/logout', 'invalidate_session' => true),
-            'users' => function () use ($app) {
-                return new UserProvider($app['db']);
-            },
-            ),
-        ),
-    'security.encoder.bcrypt.cost' => 4,
-    )
-);
+
 $app->register(new FormServiceProvider());
 // register custom forms here.
 // create a new release form
@@ -73,9 +60,7 @@ $app->extend('form.types', function ($types) use ($app) {
 
     return $types;
 });
-$app->register(new VinylRepositoryServiceProvider());
-$app->register(new ImageRepositoryServiceProvider());
-$app->register(new DatabaseManagerServiceProvider());
+
 
 // set up the base dir for image uploads
 $app['uploads.dir'] = 'images/uploads/';

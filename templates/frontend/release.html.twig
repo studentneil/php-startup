@@ -2,7 +2,7 @@
 {% set active_page = 'collection'%}
 {% block content %}
 
-
+{#{{ dump(release) }}#}
 	<div class="row">
 
 
@@ -10,15 +10,18 @@
           <div class="card">
             <div class="card-image">
 
-				<img src="/images/front.png">
+{% for image in release.images|slice(0,1) %}
+                <img src="{{ image.uri }}" alt="">
+                {% endfor %}
 
-              <span class="card-title"></span>
+              <span class="card-title">{{  release.title }}</span>
             </div>
             <div class="card-content">
 
-                  <p>{{ release.title }}</p>
-                  <p>{{ release.artist }}</p>
+                  {% for tracks in release.tracklist %}
+                <p>{{ tracks.title }}::{{ tracks.duration }}::{{ tracks.position }}</p>
 
+{% endfor %}
 
             </div>
             <div class="card-action">
@@ -26,6 +29,7 @@
             </div>
           </div>
     </div>
+
 </div>
 
 {% endblock %}

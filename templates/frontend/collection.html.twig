@@ -1,87 +1,28 @@
 {% extends 'frontend/base.html.twig' %}
 {% set active_page = 'collection' %}
+
+
 {% block content %}
-
-    <nav class="search-nav z-depth-0">
-        <div class="nav-wrapper white">
-            <form>
-                <div class="col s6 m6 input-field black-text">
-                    <input id="search" class="black-text" type="search" required>
-
-                    <label class="black-text" for="search"><i class="material-icons black-text">search</i></label>
-                    <i class="material-icons">close</i>
-
-                </div>
-
-            </form>
-
-        </div>
-    </nav>
-    <!-- <div class="spacer">
-
-    </div> -->
-    <!-- Modal Trigger -->
-
-
-
-    <div class="row controls">
-        <button class="waves-effect waves-light btn-flat control" data-filter="all">All</button>
-        <button class="waves-effect waves-light btn-flat control" data-filter=".electronic">Electronic</button>
-
-        <button class="waves-effect waves-light btn-flat control" data-filter=".rock">rock</button>
-        <button class="waves-effect waves-light btn-flat control" data-filter=".classic-rock">Classic Rock</button>
-
-
-    </div>
-
+{# the full response from the curl call to the api decoded from json to standard objects #}
+{#{{ dump(collection) }}#}
 
 <div class="row">
-    <div class="carousel">
 
-        {% for release in collection %}
-        <div class="carousel-item" href="#one!">
-            <div class="mix {{ release.genre }}">
-
-
-                <div class="card z-depth-3">
-
-
-                        <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator" src="/uploads/{{ release.image }}" alt="cover art">
-                        </div>
-
-
-
-
-                    <div class="card-content">
-                        <p>{{ release.artist }}</p>
-                        <p>{{ release.title }}</p>
-                        {#<div class="divider">#}
-
-                        {#</div>#}
-                        {#<a class="waves-effect waves-light" href="/release/{{ release.id }}">Details</a>#}
-                        {#<a class="snipcart-add-item waves-effect waves-teal btn-flat"#}
-                           {#data-item-id="2"#}
-                           {#data-item-name="Bacon"#}
-                           {#data-item-price="3.00"#}
-                           {#data-item-weight="20"#}
-                           {#data-item-url="http://bae81dd9.ngrok.io/collection"#}
-                           {#data-item-description="Some fresh bacon"><i class="material-icons">shopping_cart</i>#}
-                        {#</a>#}
-
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i
-                                    class="material-icons right">close</i></span>
-                        <p>{{ release.format }}</p>
-                        <p>{{ release.label }}</p>
-                    </div>
-                </div>
-</div>
+{% for release in collection %}
+    <div class="col m2">
+    <div class="card small">
+        <div class="card-image">
+            <img src="{{ release.basic_information.thumb }}">
+            <span class="card-title"></span>
         </div>
-        {% endfor %}
 
+        <div class="card-action">
+            <a href="/release/{{ release.basic_information.id }}">{{ release.basic_information.title }}</a>
+        </div>
     </div>
+    </div>
+{% endfor %}
+
 </div>
 
 {% endblock %}
