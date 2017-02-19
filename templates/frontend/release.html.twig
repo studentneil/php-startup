@@ -1,35 +1,35 @@
 {% extends 'frontend/base.html.twig' %}
-{% set active_page = 'collection'%}
+{% set active_page = 'collection' %}
 {% block content %}
 
-{#{{ dump(release) }}#}
-	<div class="row">
-
-
+    {#{{ dump(release) }}#}
+    <div class="row">
         <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image">
+            <div class="card">
+                <div class="card-image">
 
-{% for image in release.images|slice(0,1) %}
-                <img src="{{ image.uri }}" alt="">
-                {% endfor %}
+                    {% for image in release.images|slice(0,1) %}
+                        <img src="{{ image.uri }}" alt="">
+                    {% endfor %}
 
-              <span class="card-title">{{  release.title }}</span>
+                    <span class="card-title">{{ release.title }}</span>
+                </div>
+                <div class="card-content">
+
+                    {% for tracks in release.tracklist %}
+                        <p>{{ tracks.title }}::{{ tracks.duration }}::{{ tracks.position }}</p>
+                    {% endfor %}
+
+                </div>
+                <div class="card-action">
+                    <a href="/collection">Back to Collection</a>
+                    {% if saved is defined and saved > 0%}
+                    <p>release info saved to release.json</p>
+                    {% endif %}
+                </div>
             </div>
-            <div class="card-content">
+        </div>
 
-                  {% for tracks in release.tracklist %}
-                <p>{{ tracks.title }}::{{ tracks.duration }}::{{ tracks.position }}</p>
-
-{% endfor %}
-
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
     </div>
-
-</div>
 
 {% endblock %}

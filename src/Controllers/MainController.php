@@ -62,12 +62,20 @@ class MainController
             CURLOPT_URL => 'https://api.discogs.com/releases/'.urlencode($id).'?token=niKtmQLybGRjlyOlfXhuRxtNThyIjZnjQyrGltgs',
             CURLOPT_USERAGENT => 'Vinyl rug'
         ));
-        $response = json_decode(curl_exec($curl));
-//      var_dump($response);
+//      get the response, decode it and re-encode it to make it readable in the release.json file
+        $jsonResponse = json_encode(json_decode(curl_exec($curl)), JSON_PRETTY_PRINT);
+//      $numbytes holds the amount of characters saved to file
+        $numBytes = file_put_contents('release.json', $jsonResponse);
+//        var_dump($numBytes);
+        $decodedResponse = json_decode($jsonResponse);
+
 
         curl_close($curl);
 
-        return $app['twig']->render('frontend/release.html.twig', array('release' => $response));
+        return $app['twig']->render('frontend/release.html.twig', array(
+            'release' => $decodedResponse,
+            'saved' => $numBytes
+            ));
     }
 
     public function addToCollectionAction(Request $request, Application $app)

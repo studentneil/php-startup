@@ -1,0 +1,795 @@
+{
+    "status": "Accepted",
+    "videos": [
+        {
+            "duration": 198,
+            "embed": true,
+            "title": "Mark Lanegan - Methamphetamine Blues.",
+            "description": "Mark Lanegan - Methamphetamine Blues.",
+            "uri": "https:\/\/www.youtube.com\/watch?v=QEpR1AL4El8"
+        },
+        {
+            "duration": 279,
+            "embed": true,
+            "title": "Mark Lanegan - One Hundred Days.",
+            "description": "Mark Lanegan - One Hundred Days.",
+            "uri": "https:\/\/www.youtube.com\/watch?v=EYhzz4JQ6g4"
+        },
+        {
+            "duration": 321,
+            "embed": true,
+            "title": "Mark Lanegan - Come to Me.",
+            "description": "Mark Lanegan - Come to Me.",
+            "uri": "https:\/\/www.youtube.com\/watch?v=C1x5Q-9oN4I"
+        },
+        {
+            "duration": 366,
+            "embed": true,
+            "title": "Mark Lanegan Band - Methamphetamine Blues",
+            "description": "Mark Lanegan Band - Methamphetamine Blues",
+            "uri": "https:\/\/www.youtube.com\/watch?v=1zauhuZpEv8"
+        },
+        {
+            "duration": 165,
+            "embed": true,
+            "title": "Mark Lanegan - Out of Nowhere.",
+            "description": "Mark Lanegan - Out of Nowhere.",
+            "uri": "https:\/\/www.youtube.com\/watch?v=mGrMoKjGE1A"
+        }
+    ],
+    "series": [
+
+    ],
+    "labels": [
+        {
+            "name": "Beggars Banquet (2)",
+            "entity_type": "1",
+            "catno": "BBQLP 237",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/557991",
+            "id": 557991,
+            "entity_type_name": "Label"
+        }
+    ],
+    "year": 2010,
+    "community": {
+        "status": "Accepted",
+        "rating": {
+            "count": 3,
+            "average": 4.33
+        },
+        "want": 40,
+        "contributors": [
+            {
+                "username": "tummel",
+                "resource_url": "https:\/\/api.discogs.com\/users\/tummel"
+            },
+            {
+                "username": "trendkillar",
+                "resource_url": "https:\/\/api.discogs.com\/users\/trendkillar"
+            },
+            {
+                "username": "seppuku",
+                "resource_url": "https:\/\/api.discogs.com\/users\/seppuku"
+            },
+            {
+                "username": "jarijeff",
+                "resource_url": "https:\/\/api.discogs.com\/users\/jarijeff"
+            },
+            {
+                "username": "ivo6",
+                "resource_url": "https:\/\/api.discogs.com\/users\/ivo6"
+            },
+            {
+                "username": "DailyRecords",
+                "resource_url": "https:\/\/api.discogs.com\/users\/DailyRecords"
+            }
+        ],
+        "have": 38,
+        "submitter": {
+            "username": "tummel",
+            "resource_url": "https:\/\/api.discogs.com\/users\/tummel"
+        },
+        "data_quality": "Needs Vote"
+    },
+    "artists": [
+        {
+            "join": "",
+            "name": "Mark Lanegan Band",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/267397",
+            "id": 267397
+        }
+    ],
+    "images": [
+        {
+            "uri": "https:\/\/api-img.discogs.com\/SQs5pOY_Ah4TgU7mZGdfFTu2PGY=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4277828-1401118836-6601.jpeg.jpg",
+            "height": 400,
+            "width": 400,
+            "resource_url": "https:\/\/api-img.discogs.com\/SQs5pOY_Ah4TgU7mZGdfFTu2PGY=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4277828-1401118836-6601.jpeg.jpg",
+            "type": "primary",
+            "uri150": "https:\/\/api-img.discogs.com\/UsRA9LlfwF462QhWVVZeUtIsJzY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4277828-1401118836-6601.jpeg.jpg"
+        }
+    ],
+    "format_quantity": 1,
+    "id": 4277828,
+    "genres": [
+        "Rock"
+    ],
+    "thumb": "https:\/\/api-img.discogs.com\/UsRA9LlfwF462QhWVVZeUtIsJzY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4277828-1401118836-6601.jpeg.jpg",
+    "num_for_sale": 1,
+    "title": "Bubblegum",
+    "date_changed": "2014-05-26T08:40:56-07:00",
+    "master_id": 34766,
+    "lowest_price": 16,
+    "styles": [
+        "Alternative Rock",
+        "Folk Rock"
+    ],
+    "released_formatted": "2010",
+    "formats": [
+        {
+            "qty": "1",
+            "descriptions": [
+                "LP",
+                "Album",
+                "Limited Edition",
+                "Unofficial Release"
+            ],
+            "name": "Vinyl"
+        }
+    ],
+    "estimated_weight": 230,
+    "master_url": "https:\/\/api.discogs.com\/masters\/34766",
+    "released": "2010",
+    "date_added": "2013-02-10T04:24:01-08:00",
+    "extraartists": [
+        {
+            "join": "",
+            "name": "Susan McEowen",
+            "anv": "",
+            "tracks": "",
+            "role": "Art Direction, Design",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1851313",
+            "id": 1851313
+        },
+        {
+            "join": "",
+            "name": "Anna Hrnjak",
+            "anv": "",
+            "tracks": "",
+            "role": "Photography By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2301828",
+            "id": 2301828
+        },
+        {
+            "join": "",
+            "name": "Alain Johannes",
+            "anv": "",
+            "tracks": "B4 to B6",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
+            "id": 246473
+        },
+        {
+            "join": "",
+            "name": "Chris Goss",
+            "anv": "",
+            "tracks": "A1 to A6, B1, B2",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/250740",
+            "id": 250740
+        },
+        {
+            "join": "",
+            "name": "Mark Lanegan",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/190551",
+            "id": 190551
+        },
+        {
+            "join": "",
+            "name": "Aldo Struyf",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
+            "id": 345029
+        },
+        {
+            "join": "",
+            "name": "Brian Baker (2)",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/825127",
+            "id": 825127
+        },
+        {
+            "join": "",
+            "name": "David Catching",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
+            "id": 267400
+        },
+        {
+            "join": "",
+            "name": "Jonas G.",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/968126",
+            "id": 968126
+        },
+        {
+            "join": "",
+            "name": "Pete Martinez",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/378452",
+            "id": 378452
+        },
+        {
+            "join": "",
+            "name": "Rail Rogut",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/358741",
+            "id": 358741
+        },
+        {
+            "join": "",
+            "name": "Rick Miller",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/304778",
+            "id": 304778
+        },
+        {
+            "join": "",
+            "name": "Tracy Chisholm",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/277153",
+            "id": 277153
+        },
+        {
+            "join": "",
+            "name": "Alain Johannes",
+            "anv": "",
+            "tracks": "B4 to B6",
+            "role": "Recorded By, Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
+            "id": 246473
+        },
+        {
+            "join": "",
+            "name": "Mathias Scheeburger",
+            "anv": "",
+            "tracks": "A8, B7",
+            "role": "Recorded By, Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/267396",
+            "id": 267396
+        },
+        {
+            "join": "",
+            "name": "Rick Will",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By, Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/128785",
+            "id": 128785
+        }
+    ],
+    "tracklist": [
+        {
+            "duration": "3:01",
+            "position": "A1",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Molly McGuire",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267395",
+                    "id": 267395
+                },
+                {
+                    "join": "",
+                    "name": "Chris Goss",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/250740",
+                    "id": 250740
+                },
+                {
+                    "join": "",
+                    "name": "David Catching",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Organ",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
+                    "id": 267400
+                },
+                {
+                    "join": "",
+                    "name": "Wendy Rae Fowler",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Piano",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
+                    "id": 267393
+                }
+            ],
+            "title": "When Your Number Isn't Up"
+        },
+        {
+            "duration": "2:49",
+            "position": "A2",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Josh Homme",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Drums, Bass",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
+                    "id": 241002
+                },
+                {
+                    "join": "",
+                    "name": "David Catching",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
+                    "id": 267400
+                },
+                {
+                    "join": "",
+                    "name": "Mike Johnson (8)",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Lead Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/617608",
+                    "id": 617608
+                },
+                {
+                    "join": "",
+                    "name": "PJ Harvey",
+                    "anv": "Polly Harvey",
+                    "tracks": "",
+                    "role": "Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/36052",
+                    "id": 36052
+                }
+            ],
+            "title": "Hit The City"
+        },
+        {
+            "duration": "3:07",
+            "position": "A3",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Josh Homme",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass, Lead Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
+                    "id": 241002
+                },
+                {
+                    "join": "",
+                    "name": "David Catching",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
+                    "id": 267400
+                },
+                {
+                    "join": "",
+                    "name": "Wendy Rae Fowler",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
+                    "id": 267393
+                }
+            ],
+            "title": "Wedding Dress"
+        },
+        {
+            "duration": "3:16",
+            "position": "A4",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Molly McGuire",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Backing Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267395",
+                    "id": 267395
+                },
+                {
+                    "join": "",
+                    "name": "Natasha Shneider",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Backing Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/260874",
+                    "id": 260874
+                },
+                {
+                    "join": "",
+                    "name": "Nick Oliveri",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Backing Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/252692",
+                    "id": 252692
+                },
+                {
+                    "join": "",
+                    "name": "Wendy Rae Fowler",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Backing Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
+                    "id": 267393
+                },
+                {
+                    "join": "",
+                    "name": "Josh Homme",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass, Guitar, Drums",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
+                    "id": 241002
+                },
+                {
+                    "join": "",
+                    "name": "Alain Johannes",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Lead Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
+                    "id": 246473
+                },
+                {
+                    "join": "",
+                    "name": "David Catching",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Lead Guitar, Rhythm Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
+                    "id": 267400
+                }
+            ],
+            "title": "Methamphetamine Blues"
+        },
+        {
+            "duration": "4:36",
+            "position": "A5",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Josh Homme",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass, Drums",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
+                    "id": 241002
+                },
+                {
+                    "join": "",
+                    "name": "David Catching",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Lead Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
+                    "id": 267400
+                },
+                {
+                    "join": "",
+                    "name": "Chris Goss",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Vocals, Guitar, Piano",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/250740",
+                    "id": 250740
+                }
+            ],
+            "title": "One Hundred Days"
+        },
+        {
+            "duration": "1:09",
+            "position": "A6",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Wendy Rae Fowler",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
+                    "id": 267393
+                }
+            ],
+            "title": "Bombed"
+        },
+        {
+            "duration": "4:08",
+            "position": "A7",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Nick Oliveri",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass, Choir",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/252692",
+                    "id": 252692
+                },
+                {
+                    "join": "",
+                    "name": "Alain Johannes",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Choir",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
+                    "id": 246473
+                },
+                {
+                    "join": "",
+                    "name": "Wendy Rae Fowler",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Choir",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
+                    "id": 267393
+                },
+                {
+                    "join": "",
+                    "name": "Joey Castillo",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Drums",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267399",
+                    "id": 267399
+                },
+                {
+                    "join": "",
+                    "name": "Izzy Stradlin",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267394",
+                    "id": 267394
+                }
+            ],
+            "title": "Strange Religion"
+        },
+        {
+            "duration": "2:46",
+            "position": "A8",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Dimitri Coats",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Drums, Lead Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267392",
+                    "id": 267392
+                },
+                {
+                    "join": "",
+                    "name": "Mathias Scheeburger",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267396",
+                    "id": 267396
+                }
+            ],
+            "title": "Sideways In Reverse"
+        },
+        {
+            "duration": "3:45",
+            "position": "B1",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Josh Homme",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar, Bass, Drums",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
+                    "id": 241002
+                },
+                {
+                    "join": "",
+                    "name": "PJ Harvey",
+                    "anv": "Polly Harvey",
+                    "tracks": "",
+                    "role": "Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/36052",
+                    "id": 36052
+                }
+            ],
+            "title": "Come To Me"
+        },
+        {
+            "duration": "3:53",
+            "position": "B2",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Molly McGuire",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267395",
+                    "id": 267395
+                },
+                {
+                    "join": "",
+                    "name": "David Catching",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
+                    "id": 267400
+                }
+            ],
+            "title": "Like Little Willie John"
+        },
+        {
+            "duration": "3:37",
+            "position": "B3",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Alain Johannes",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass, Guitar, Drums",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
+                    "id": 246473
+                }
+            ],
+            "title": "Can't Come Down"
+        },
+        {
+            "duration": "4:27",
+            "position": "B4",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Alain Johannes",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass, Guitar, Drums, Backing Vocals",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
+                    "id": 246473
+                }
+            ],
+            "title": "Morning Glory Wine"
+        },
+        {
+            "duration": "3:05",
+            "position": "B5",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Alain Johannes",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass, Guitar, Drums, Keyboards",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
+                    "id": 246473
+                }
+            ],
+            "title": "Head"
+        },
+        {
+            "duration": "2:49",
+            "position": "B6",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Alain Johannes",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Bass, Guitar, Drums, Organ",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
+                    "id": 246473
+                }
+            ],
+            "title": "Driving Death Valley Blues"
+        },
+        {
+            "duration": "2:43",
+            "position": "B7",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Dimitri Coats",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Drums",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267392",
+                    "id": 267392
+                },
+                {
+                    "join": "",
+                    "name": "John Kastner",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267391",
+                    "id": 267391
+                },
+                {
+                    "join": "",
+                    "name": "David Catching",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Lead Guitar",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
+                    "id": 267400
+                },
+                {
+                    "join": "",
+                    "name": "Mathias Scheeburger",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Piano",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/267396",
+                    "id": 267396
+                }
+            ],
+            "title": "Out Of Nowhere"
+        }
+    ],
+    "notes": "Recorded at various locations 2003-2004 including:\r\nRancho de la Luna, Joshua Tree, CA; Sound City, Los Angeles, CA; Stagg Street, Los Angeles, CA;\r\nLethal, Los Angeles, CA; Donner and Blitzen, Arcadia, CA; 11 a.d., Hollywood, CA; Sound Arts, Houston, TX;\r\nKudzu Ranch, Mebane, NC; Del Boca Vista, South Pasadena, CA;\r\nP+C 2004 Beggars Banquet Records Ltd.\r\n\r\n\r\nBlack vinyl version with black insert\r\n",
+    "identifiers": [
+
+    ],
+    "companies": [
+
+    ],
+    "uri": "https:\/\/www.discogs.com\/Mark-Lanegan-Band-Bubblegum\/release\/4277828",
+    "country": "UK",
+    "resource_url": "https:\/\/api.discogs.com\/releases\/4277828",
+    "data_quality": "Needs Vote"
+}
