@@ -10,3 +10,6 @@ $app->get('/', 'VinylStore\\Controllers\\MainController::indexAction');
 $app->get('/home', 'VinylStore\\Controllers\\MainController::indexAction');
 $app->get('/collection', 'VinylStore\\Controllers\\MainController::collectionAction');
 $app->get('/release/{id}', 'VinylStore\\Controllers\\MainController::getReleaseAction');
+$app->get('/search-results', 'VinylStore\\Controllers\\SearchController::searchAction');
+$app->post('/add-to-collection', 'VinylStore\\Controllers\\MainController::addToCollectionAction');
+$app->match('/delete-from-collection', 'VinylStore\\Controllers\\MainController::deleteFromCollectionAction');

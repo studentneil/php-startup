@@ -1,0 +1,42 @@
+{% extends 'frontend/base.html.twig' %}
+{% set active_page = 'home' %}
+{% block header %}
+    <h2>search results page</h2>
+{% endblock %}
+{% block content %}
+    <div class="row">
+    {% for release in releases %}
+        <div class="col m4">
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img src="{{ release.thumb }}">
+
+                </div>
+                <div class="card-content">
+                    <p>{{ release.title }}</p>
+                    {% for label in release.label %}
+                    <p>{{ label }}</p>
+                    {% endfor %}
+                    <p>{{ release.country }}</p>
+                    <p>{{ release.catno }}</p>
+                    {% for format in release.format %}
+                    <p>{{ format }}</p>
+                    {% endfor %}
+                    {% for genre in release.genre %}
+                        <p>{{ genre }}</p>
+                    {% endfor %}
+                </div>
+                <div class="card-action">
+                    <form action="/add-to-collection" method="post">
+
+                        <input type="hidden" name="id" value="{{ release.id }}"/>
+                        <button class="btn waves-effect waves-light" type="submit"><i class="material-icons">playlist_add</i></button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+{% endblock %}

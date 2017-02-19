@@ -5,10 +5,14 @@
  <h1>Vinyl Store</h1>
 {% endblock %}
 {% block content %}
-<h1>My discogs collection</h1>
+    <h1>My discogs collection</h1>
     <p><a href="https://www.discogs.com/">Discogs</a> is a huge online music marketplace where people can buy and sell
         records. Its great. I have an account there and you can choose to add records you buy there to your discogs collection. I
         have around 30 records in my discogs collection and you can access the data from those records through the <a href="https://www.discogs.com/developers/#">discogs api</a>.</p>
     <p>You can also search for an individual release by an artist, update your collection, manage orders and loads of other stuff.</p>
- <a href="/collection">Collection</a>
+    <a href="/collection">Collection</a>
+    {% if message is defined %}
+        <p>Success: {{ message }} </p>
+
+{% endif %}
 {% endblock %}

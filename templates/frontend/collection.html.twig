@@ -18,6 +18,13 @@
 
         <div class="card-action">
             <a href="/release/{{ release.basic_information.id }}">{{ release.basic_information.title }}</a>
+            <form action="/delete-from-collection" method="post">
+
+                <input type="hidden" name="instanceId" value="{{ release.instance_id }}"/>
+                <input type="hidden" name="releaseId" value="{{ release.basic_information.id }}"/>
+                <input type="hidden" id="_method" name="_method" value="DELETE"/>
+                <button class="btn-flat waves-effect waves-light" type="submit"><i class="material-icons">close</i></button>
+            </form>
         </div>
     </div>
     </div>

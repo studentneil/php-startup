@@ -13,14 +13,14 @@ use Silex\Provider\ServiceControllerServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\FormServiceProvider;
+use Symfony\Component\HttpFoundation\Request;
 
-use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
-use VinylStore\ServiceProviders\DatabaseManagerServiceProvider;
-use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
-use VinylStore\UserProvider;
+
+
 
 require_once __DIR__.'/../vendor/autoload.php';
 $app = new Application();
+Request::enableHttpMethodParameterOverride();
 $config = parse_ini_file(__DIR__.'/../config/config.ini', true);
 $app->register(new TwigServiceProvider(array(
     'twig.options' => array(
