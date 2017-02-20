@@ -1,0 +1,685 @@
+{
+    "styles": [
+        "Soft Rock",
+        "Pop Rock",
+        "Ballad"
+    ],
+    "videos": [
+        {
+            "duration": 228,
+            "description": "Bruce Springsteen - Ain't Got You (Live 2005)",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=6zB5GtECXFY",
+            "title": "Bruce Springsteen - Ain't Got You (Live 2005)"
+        },
+        {
+            "duration": 301,
+            "description": "Bruce Springsteen - Tunnel of Love",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=WF2Y8umAyaI",
+            "title": "Bruce Springsteen - Tunnel of Love"
+        },
+        {
+            "duration": 255,
+            "description": "Bruce Springsteen - Brilliant Disguise",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=idnJnjV_8rg",
+            "title": "Bruce Springsteen - Brilliant Disguise"
+        },
+        {
+            "duration": 309,
+            "description": "Bruce Springsteen - Tunnel of Love",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=M4K7XZGeHTE",
+            "title": "Bruce Springsteen - Tunnel of Love"
+        }
+    ],
+    "series": [
+
+    ],
+    "labels": [
+        {
+            "name": "CBS",
+            "entity_type": "1",
+            "catno": "CBS 460270 1",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/3072",
+            "id": 3072,
+            "entity_type_name": "Label"
+        }
+    ],
+    "year": 1987,
+    "community": {
+        "status": "Accepted",
+        "rating": {
+            "count": 68,
+            "average": 3.79
+        },
+        "have": 647,
+        "contributors": [
+            {
+                "username": "bed_dweller",
+                "resource_url": "https:\/\/api.discogs.com\/users\/bed_dweller"
+            },
+            {
+                "username": "Dr.Rubberfunk",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Dr.Rubberfunk"
+            },
+            {
+                "username": "vokuhila",
+                "resource_url": "https:\/\/api.discogs.com\/users\/vokuhila"
+            },
+            {
+                "username": "KevinSanderson",
+                "resource_url": "https:\/\/api.discogs.com\/users\/KevinSanderson"
+            },
+            {
+                "username": "chillyboy64",
+                "resource_url": "https:\/\/api.discogs.com\/users\/chillyboy64"
+            },
+            {
+                "username": "Ioveless",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Ioveless"
+            }
+        ],
+        "want": 54,
+        "submitter": {
+            "username": "bed_dweller",
+            "resource_url": "https:\/\/api.discogs.com\/users\/bed_dweller"
+        },
+        "data_quality": "Needs Vote"
+    },
+    "artists": [
+        {
+            "join": ",",
+            "name": "Bruce Springsteen",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/219986",
+            "id": 219986
+        }
+    ],
+    "images": [
+        {
+            "uri": "https:\/\/api-img.discogs.com\/erV1R9UuQo83rNtspqTT41NuNJ4=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192258-8526.jpeg.jpg",
+            "height": 598,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/erV1R9UuQo83rNtspqTT41NuNJ4=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192258-8526.jpeg.jpg",
+            "type": "primary",
+            "uri150": "https:\/\/api-img.discogs.com\/src1MTjhjhUMOX1Lt4XQQQJ1Eiw=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-2202948-1477192258-8526.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/030w6xI8RUg6oiE2mGbQglH3Yp4=\/fit-in\/600x601\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192275-5773.jpeg.jpg",
+            "height": 601,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/030w6xI8RUg6oiE2mGbQglH3Yp4=\/fit-in\/600x601\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192275-5773.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/XA9pWLCWMKozeEmW_85P0tgw820=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-2202948-1477192275-5773.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/W_FexsRyYNW_-EkE7Cg_C228KVw=\/fit-in\/600x588\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192192-4272.jpeg.jpg",
+            "height": 588,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/W_FexsRyYNW_-EkE7Cg_C228KVw=\/fit-in\/600x588\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192192-4272.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/75MpEVd-apb72Kh1zvp21OZ5fJA=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-2202948-1477192192-4272.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/MPQ3PUXEV3qWRwGIBMJp0-mmKqE=\/fit-in\/600x597\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192169-6442.jpeg.jpg",
+            "height": 597,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/MPQ3PUXEV3qWRwGIBMJp0-mmKqE=\/fit-in\/600x597\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192169-6442.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/lyVSkpkBbB9IL5hCFF4-PDytl2c=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-2202948-1477192169-6442.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/cRx9_9TviYfQRhI8uuyWAztP-Ck=\/fit-in\/600x597\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192264-1075.jpeg.jpg",
+            "height": 597,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/cRx9_9TviYfQRhI8uuyWAztP-Ck=\/fit-in\/600x597\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192264-1075.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/DhVb5DDUfSTN-0-TLZZ_NwsjCUY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-2202948-1477192264-1075.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/BBDzCEXeLa1ge_PuyBgm0RbbzSA=\/fit-in\/600x601\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192265-7879.jpeg.jpg",
+            "height": 601,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/BBDzCEXeLa1ge_PuyBgm0RbbzSA=\/fit-in\/600x601\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2202948-1477192265-7879.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/2qj92yviqxYAzCqxjynTYklI1ug=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-2202948-1477192265-7879.jpeg.jpg"
+        }
+    ],
+    "format_quantity": 1,
+    "id": 2202948,
+    "genres": [
+        "Rock",
+        "Pop"
+    ],
+    "thumb": "https:\/\/api-img.discogs.com\/src1MTjhjhUMOX1Lt4XQQQJ1Eiw=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-2202948-1477192258-8526.jpeg.jpg",
+    "num_for_sale": 54,
+    "title": "Tunnel Of Love",
+    "date_changed": "2016-10-22T20:11:48-07:00",
+    "master_id": 27206,
+    "lowest_price": 2.5,
+    "status": "Accepted",
+    "released_formatted": "1987",
+    "estimated_weight": 230,
+    "master_url": "https:\/\/api.discogs.com\/masters\/27206",
+    "released": "1987",
+    "date_added": "2010-04-04T14:56:40-07:00",
+    "tracklist": [
+        {
+            "duration": "2:06",
+            "position": "A1",
+            "type_": "track",
+            "title": "Ain't Got You"
+        },
+        {
+            "duration": "4:35",
+            "position": "A2",
+            "type_": "track",
+            "title": "Tougher Than The Rest"
+        },
+        {
+            "duration": "2:38",
+            "position": "A3",
+            "type_": "track",
+            "title": "All That Heaven Will Allow"
+        },
+        {
+            "duration": "3:39",
+            "position": "A4",
+            "type_": "track",
+            "title": "Spare Parts"
+        },
+        {
+            "duration": "3:56",
+            "position": "A5",
+            "type_": "track",
+            "title": "Cautious Man"
+        },
+        {
+            "duration": "3:37",
+            "position": "A6",
+            "type_": "track",
+            "title": "Walk Like A Man"
+        },
+        {
+            "duration": "5:11",
+            "position": "B1",
+            "type_": "track",
+            "title": "Tunnel Of Love"
+        },
+        {
+            "duration": "3:00",
+            "position": "B2",
+            "type_": "track",
+            "title": "Two Faces"
+        },
+        {
+            "duration": "4:15",
+            "position": "B3",
+            "type_": "track",
+            "title": "Brilliant Disguise"
+        },
+        {
+            "duration": "4:21",
+            "position": "B4",
+            "type_": "track",
+            "title": "One Step Up"
+        },
+        {
+            "duration": "3:20",
+            "position": "B5",
+            "type_": "track",
+            "title": "When You're Alone"
+        },
+        {
+            "duration": "5:10",
+            "position": "B6",
+            "type_": "track",
+            "title": "Valentine's Day"
+        }
+    ],
+    "extraartists": [
+        {
+            "join": "",
+            "name": "Sandra Choron",
+            "anv": "",
+            "tracks": "",
+            "role": "Art Direction",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1870190",
+            "id": 1870190
+        },
+        {
+            "join": "",
+            "name": "Garry Tallent",
+            "anv": "Gary Tallent",
+            "tracks": "A5",
+            "role": "Bass",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/254874",
+            "id": 254874
+        },
+        {
+            "join": "",
+            "name": "Max Weinberg",
+            "anv": "",
+            "tracks": "A3, B2, B3, B5",
+            "role": "Drums",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/254876",
+            "id": 254876
+        },
+        {
+            "join": "",
+            "name": "Bruce Springsteen",
+            "anv": "",
+            "tracks": "B1",
+            "role": "Effects [Sound]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/219986",
+            "id": 219986
+        },
+        {
+            "join": "",
+            "name": "Nils Lofgren",
+            "anv": "",
+            "tracks": "B1",
+            "role": "Guitar [Solo]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/312673",
+            "id": 312673
+        },
+        {
+            "join": "",
+            "name": "Jimmie Wood",
+            "anv": "James Wood",
+            "tracks": "A5",
+            "role": "Harmonica",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/272798",
+            "id": 272798
+        },
+        {
+            "join": "",
+            "name": "Jon Landau",
+            "anv": "",
+            "tracks": "",
+            "role": "Management",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/219989",
+            "id": 219989
+        },
+        {
+            "join": "",
+            "name": "Barbara Carr (2)",
+            "anv": "",
+            "tracks": "",
+            "role": "Management [Associate]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1787489",
+            "id": 1787489
+        },
+        {
+            "join": "",
+            "name": "Denise Sileci",
+            "anv": "",
+            "tracks": "",
+            "role": "Management [Office Manager]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1783529",
+            "id": 1783529
+        },
+        {
+            "join": "",
+            "name": "Bob Ludwig",
+            "anv": "",
+            "tracks": "",
+            "role": "Mastered By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/271098",
+            "id": 271098
+        },
+        {
+            "join": "",
+            "name": "Heidi Cron",
+            "anv": "",
+            "tracks": "",
+            "role": "Mastered By [Assistant] [Assistant]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/627254",
+            "id": 627254
+        },
+        {
+            "join": "",
+            "name": "Bob Clearmountain",
+            "anv": "",
+            "tracks": "",
+            "role": "Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/11415",
+            "id": 11415
+        },
+        {
+            "join": "",
+            "name": "Jay Healy",
+            "anv": "",
+            "tracks": "B1",
+            "role": "Mixed By [Assistant]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/94949",
+            "id": 94949
+        },
+        {
+            "join": "",
+            "name": "Mark McKenna",
+            "anv": "",
+            "tracks": "A1 to A6, B2 to B6",
+            "role": "Mixed By [Assistant]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/261885",
+            "id": 261885
+        },
+        {
+            "join": "",
+            "name": "Danny Federici",
+            "anv": "",
+            "tracks": "A3, A5, B3",
+            "role": "Organ",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/254877",
+            "id": 254877
+        },
+        {
+            "join": "",
+            "name": "Schiffer Family, The",
+            "anv": "",
+            "tracks": "B1",
+            "role": "Other [Roller Coaster]",
+            "resource_url": "",
+            "id": 0
+        },
+        {
+            "join": "",
+            "name": "Max Weinberg",
+            "anv": "",
+            "tracks": "A2, A4, A6, B1",
+            "role": "Percussion",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/254876",
+            "id": 254876
+        },
+        {
+            "join": "",
+            "name": "Annie Leibovitz",
+            "anv": "",
+            "tracks": "",
+            "role": "Photography By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1906529",
+            "id": 1906529
+        },
+        {
+            "join": "",
+            "name": "Roy Bittan",
+            "anv": "",
+            "tracks": "B3",
+            "role": "Piano",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/254878",
+            "id": 254878
+        },
+        {
+            "join": "",
+            "name": "Bruce Springsteen",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/219986",
+            "id": 219986
+        },
+        {
+            "join": "",
+            "name": "Chuck Plotkin",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/219987",
+            "id": 219987
+        },
+        {
+            "join": "",
+            "name": "Jon Landau",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/219989",
+            "id": 219989
+        },
+        {
+            "join": "",
+            "name": "Rob Jacobs",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By [Additional - A&M Studios]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/255466",
+            "id": 255466
+        },
+        {
+            "join": "",
+            "name": "Squeek Stone",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By [Additional - Kren Studio]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1389094",
+            "id": 1389094
+        },
+        {
+            "join": "",
+            "name": "Roger Talkov",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By [Additional - The Hit Factory]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/527162",
+            "id": 527162
+        },
+        {
+            "join": "",
+            "name": "Tim Leitner",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By [Additional - The Hit Factory]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/353573",
+            "id": 353573
+        },
+        {
+            "join": "",
+            "name": "Bob Clearmountain",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By, Engineer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/11415",
+            "id": 11415
+        },
+        {
+            "join": "",
+            "name": "Toby Scott",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By, Engineer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/293630",
+            "id": 293630
+        },
+        {
+            "join": "",
+            "name": "Bruce Springsteen",
+            "anv": "",
+            "tracks": "",
+            "role": "Songwriter [Words And Music]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/219986",
+            "id": 219986
+        },
+        {
+            "join": "",
+            "name": "Roy Bittan",
+            "anv": "",
+            "tracks": "B1",
+            "role": "Synthesizer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/254878",
+            "id": 254878
+        },
+        {
+            "join": "",
+            "name": "Clarence Clemons",
+            "anv": "",
+            "tracks": "B5",
+            "role": "Vocals",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/154229",
+            "id": 154229
+        },
+        {
+            "join": "",
+            "name": "Nils Lofgren",
+            "anv": "",
+            "tracks": "B5",
+            "role": "Vocals",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/312673",
+            "id": 312673
+        },
+        {
+            "join": "",
+            "name": "Patti Scialfa",
+            "anv": "",
+            "tracks": "B1, B4, B5",
+            "role": "Vocals",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/314510",
+            "id": 314510
+        }
+    ],
+    "country": "UK",
+    "notes": "Recorded in New Jersey (\"One Step Up\" recorded at A&M Studios, Los Angles, California)\r\nMixed at A&M Studios, Los Angles, California (\"Tunnel of Love\" mixed at The Hit Factory, New York City).\r\nAdditional Recording: \r\nThe Hit Factory, New York City \r\nA&M Studios, Los Angles, California. \r\nKren Studio, Los Angles, California\r\nAll recording and mixing on Sony Digital.\r\nMastering at Masterdisk, New York (on Neve Digital Console).\r\nAll music performed by Bruce Springsteen except where noted.\r\n\u2117 1987 Bruce Springsteen\/ \/\u00a9 1987 Bruce Springsteen. \r\nMade in England. Shorepak by Shorewood Packaging.\r\nDirect Metal Mastering\r\nComes with a printed inner sleeve.",
+    "identifiers": [
+        {
+            "type": "Barcode",
+            "value": "5 099746 027018"
+        },
+        {
+            "type": "Matrix \/ Runout",
+            "description": "Side A runout stamped",
+            "value": "460270-1-A2-3"
+        },
+        {
+            "type": "Matrix \/ Runout",
+            "description": "Side A runout etched",
+            "value": "AL-40999-1B MASTERDISK-DMM"
+        },
+        {
+            "type": "Matrix \/ Runout",
+            "description": "Side B runout stamped",
+            "value": "460270-1-B2-3 DMM A C-01-460 270-20-B"
+        },
+        {
+            "type": "Rights Society",
+            "value": "MCPS \/ BIEM"
+        },
+        {
+            "type": "Label Code",
+            "value": "LC 0149"
+        }
+    ],
+    "companies": [
+        {
+            "name": "A&M Studios",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/265722",
+            "id": 265722,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "Kren Studio",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/403960",
+            "id": 403960,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "A&M Studios",
+            "entity_type": "27",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/265722",
+            "id": 265722,
+            "entity_type_name": "Mixed At"
+        },
+        {
+            "name": "The Hit Factory",
+            "entity_type": "27",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/266839",
+            "id": 266839,
+            "entity_type_name": "Mixed At"
+        },
+        {
+            "name": "Masterdisk",
+            "entity_type": "29",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/264111",
+            "id": 264111,
+            "entity_type_name": "Mastered At"
+        },
+        {
+            "name": "Zomba Music Publishing Ltd.",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/270768",
+            "id": 270768,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Bruce Springsteen",
+            "entity_type": "13",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/266838",
+            "id": 266838,
+            "entity_type_name": "Phonographic Copyright (p)"
+        },
+        {
+            "name": "Bruce Springsteen",
+            "entity_type": "14",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/266838",
+            "id": 266838,
+            "entity_type_name": "Copyright (c)"
+        },
+        {
+            "name": "CBS Records",
+            "entity_type": "9",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/19936",
+            "id": 19936,
+            "entity_type_name": "Distributed By"
+        },
+        {
+            "name": "CBS Disques S.A.",
+            "entity_type": "9",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/109547",
+            "id": 109547,
+            "entity_type_name": "Distributed By"
+        },
+        {
+            "name": "Shorewood Packaging",
+            "entity_type": "16",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/287560",
+            "id": 287560,
+            "entity_type_name": "Made By"
+        },
+        {
+            "name": "CBS Pressing Plant, Aston Clinton",
+            "entity_type": "17",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/553982",
+            "id": 553982,
+            "entity_type_name": "Pressed By"
+        }
+    ],
+    "uri": "https:\/\/www.discogs.com\/Bruce-Springsteen-Tunnel-Of-Love\/release\/2202948",
+    "formats": [
+        {
+            "descriptions": [
+                "LP",
+                "Album"
+            ],
+            "name": "Vinyl",
+            "qty": "1"
+        }
+    ],
+    "resource_url": "https:\/\/api.discogs.com\/releases\/2202948",
+    "data_quality": "Needs Vote"
+}

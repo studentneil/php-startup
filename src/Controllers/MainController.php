@@ -63,9 +63,10 @@ class MainController
             CURLOPT_USERAGENT => 'Vinyl rug'
         ));
 //      get the response, decode it and re-encode it to make it readable in the release.json file
-        $jsonResponse = json_encode(json_decode(curl_exec($curl)), JSON_PRETTY_PRINT);
+        $jsonResponse = curl_exec($curl);
+        $readableJson = json_encode(json_decode($jsonResponse), JSON_PRETTY_PRINT);
 //      $numbytes holds the amount of characters saved to file
-        $numBytes = file_put_contents('release.json', $jsonResponse);
+        $numBytes = file_put_contents('json/release.json', $readableJson);
 //        var_dump($numBytes);
         $decodedResponse = json_decode($jsonResponse);
 
