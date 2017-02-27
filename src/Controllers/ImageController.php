@@ -35,8 +35,8 @@ class ImageController
         $choices = $app['vinyl.repository']->fillChoicesWithReleaseId();
 
         foreach ($choices as $choice) {
-            $id[] = $choice->id;
-            $title[] = $choice->title;
+            $id[] = $choice->getId();
+            $title[] = $choice->getTitle();
 
     }
         $file = new FileEntity();
@@ -49,7 +49,7 @@ class ImageController
             $fileName = md5(uniqid()) . '.' . $image->guessExtension();
             $image->move('uploads/', $fileName);
             $file->setImage($fileName);
-//            $imageData = $form->getData();
+
 
             $count = $app['image.repository']->save($file);
         }

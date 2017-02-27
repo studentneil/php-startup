@@ -3,7 +3,7 @@
 namespace VinylStore\Repository;
 
 use Doctrine\Dbal\Connection;
-use VinylStore\Entity\ChoiceEntity;
+
 
 class VinylRepository implements RepositoryInterface
 {
@@ -61,9 +61,9 @@ class VinylRepository implements RepositoryInterface
     {
         $qb = $this->conn->createQueryBuilder();
         $qb ->select('id', 'title')
-            ->from('releases', 'r')
-            ->where('r.image_id IS NULL');
-        $choices = $qb->execute()->fetchAll(\PDO::FETCH_OBJ);
+            ->from('releases', 'r');
+
+        $choices = $qb->execute()->fetchAll(\PDO::FETCH_CLASS, 'VinylStore\\Entity\\ChoiceEntity');
 
         return $choices;
     }

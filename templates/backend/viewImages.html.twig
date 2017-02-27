@@ -47,12 +47,12 @@
             $('.del-image').on('click', function (event) {
                 event.preventDefault();
                 // try to get the image id to pass to the url parameter below
-                var result = $(this).data('image-id');
+                var imageId = $(event.target).closest('div').data('image-id');
                 var block = $(this).parent().parent().parent();
-                console.log(result);
+                console.log(imageId);
                 console.log(block);
                 $.ajax({
-                    url: '/admin/delete-image/' + result,
+                    url: '/admin/delete-image/' + imageId,
                     type: "GET",
 
                     error: function (response) {

@@ -9,7 +9,7 @@
 namespace VinylStore;
 
 use Silex\Application;
-use CMS\Image;
+
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
