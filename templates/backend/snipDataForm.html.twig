@@ -1,0 +1,57 @@
+{% extends 'backend/base.html.twig' %}
+
+{% block content %}
+    {% if count == 1 %}
+        <h5>Well done , images uploaded</h5>
+    {% else %}
+
+        {# upload image form #}
+        <form class="container col m6 s12" action="" method="post">
+            <h4>Set your data for snipcart here</h4>
+            {{ form_errors(form) }}
+            <div class="row">
+                <div class="input-field col s6">
+                    {{ form_errors(form.release_id) }}
+                    {{ form_widget(form.release_id) }}
+                    {{ form_label(form.release_id) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col m6 s12">
+                    {{ form_errors(form.release_name) }}
+                    {{ form_widget(form.release_name) }}
+                    {{ form_label(form.release_name) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    {{ form_errors(form.price) }}
+                    {{ form_widget(form.price) }}
+                    {{ form_label(form.price) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    {{ form_errors(form.url) }}
+                    {{ form_widget(form.url) }}
+                    {{ form_label(form.url) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s6">
+                    {{ form_errors(form.description) }}
+                    {{ form_widget(form.description) }}
+                    {{ form_label(form.description) }}
+                </div>
+            </div>
+
+
+
+
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+
+            {#{{ form_end(form) }}#}
+            {#{{ form_rest(form) }}#}
+        </form>
+    {% endif %}
+{% endblock %}

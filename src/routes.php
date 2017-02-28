@@ -19,3 +19,4 @@ $app->match('/admin/upload-image', 'VinylStore\\Controllers\\ImageController::up
 $app->get('/admin/view-images', 'VinylStore\\Controllers\\ImageController::viewImagesAction');
 $app->get('/admin/delete-image/{id}', 'VinylStore\\Controllers\\ImageController::deleteImageAction');
 $app->post('/admin/attach-image/{imageId}/{releaseId}', 'VinylStore\\Controllers\\ImageController::attachImageAction');
+$app->match('/admin/pricing', 'VinylStore\\Controllers\\PricingController::indexAction');
