@@ -46,7 +46,7 @@
                 <div class="card z-depth-3">
 
 
-                        <div class="card-image waves-effect waves-block waves-light">
+                        <div class="card-image waves-block waves-light">
                             <img class="activator" src="/uploads/{{ release.image }}" alt="cover art">
                         </div>
 
@@ -56,18 +56,12 @@
                     <div class="card-content">
                         <p>{{ release.artist }}</p>
                         <p>{{ release.title }}</p>
-                        {#<div class="divider">#}
+                        <p>&euro;{{ release.price }}</p>
+                        <div class="divider">
 
-                        {#</div>#}
-                        {#<a class="waves-effect waves-light" href="/release/{{ release.id }}">Details</a>#}
-                        {#<a class="snipcart-add-item waves-effect waves-teal btn-flat"#}
-                           {#data-item-id="2"#}
-                           {#data-item-name="Bacon"#}
-                           {#data-item-price="3.00"#}
-                           {#data-item-weight="20"#}
-                           {#data-item-url="http://bae81dd9.ngrok.io/collection"#}
-                           {#data-item-description="Some fresh bacon"><i class="material-icons">shopping_cart</i>#}
-                        {#</a>#}
+                        </div>
+                        <a class="waves-effect waves-light" href="/release/{{ release.id }}">Details</a>
+
 
                     </div>
                     <div class="card-reveal">

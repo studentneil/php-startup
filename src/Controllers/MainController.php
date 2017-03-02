@@ -16,7 +16,7 @@ class MainController
 
     public function getVinylAction(Application $app)
     {
-        $collection = $app['vinyl.repository']->findAllWithImages();
+        $collection = $app['vinyl.repository']->findEverything();
         $templateName = 'frontend/collection';
         $args_array = array(
             'collection' => $collection,
@@ -28,6 +28,7 @@ class MainController
     public function getReleaseByIdAction(Application $app, $id)
     {
         $release = $app['vinyl.repository']->findOneById($id);
+//        var_dump($release);
         $templateName = 'frontend/release';
         $args_array = array(
             'release' => $release,

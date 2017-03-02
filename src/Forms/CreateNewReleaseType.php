@@ -10,6 +10,7 @@ namespace VinylStore\Forms;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
+use Symfony\Component\Form\Extension\Core\Type\RangeType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
@@ -131,6 +132,20 @@ class CreateNewReleaseType extends AbstractType
                 'attr' => array(
                     'placeholder' => 'eg rock',
                 ),
+            ))
+            ->add('quantity', RangeType::class, array(
+                'constraints' => array(
+                    new Assert\NotBlank(),
+                    new Assert\Range(array(
+                        'min' => 1,
+                        'max' => 10,
+                    ))
+                ),
+                'attr' => array(
+                    'min' => 1,
+                    'max' => 10,
+                    'placeholder' => 'Between 1 and 10'
+                )
             ));
     }
 }

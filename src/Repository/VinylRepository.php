@@ -29,10 +29,16 @@ class VinylRepository implements RepositoryInterface
     }
     public function findOneById($id)
     {
-        $stmt = $this->conn->prepare('SELECT * FROM releases WHERE id=:id');
-        $stmt->bindValue('id', $id);
-        $stmt->execute();
-        $release = $stmt->fetch();
+//        $safeId = filter_var($id, FILTER_VALIDATE_INT);
+        $qb = $this->conn->createQueryBuilder();
+        $qb ->select('*')
+            ->from('releases', 'r')
+            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
+            ->innerJoin('r', 'snipdata', 's', 'r.id=s.release_id')
+            ->where('r.id = ?')
+            ->setParameter(0, $id);
+
+        $release = $qb->execute()->fetch();
 
         return $release;
     }
@@ -46,12 +52,13 @@ class VinylRepository implements RepositoryInterface
     {
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM releases');
     }
-    public function findAllWithImages()
+    public function findEverything()
     {
         $qb = $this->conn->createQueryBuilder();
         $qb ->select('*')
             ->from('releases', 'r')
-            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id');
+            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
+            ->innerJoin('r', 'snipdata', 's', 'r.id=s.release_id');
 
         $releases = $qb->execute()->fetchAll();
 

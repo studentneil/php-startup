@@ -13,6 +13,8 @@ use Silex\Provider\ServiceControllerServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\FormServiceProvider;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
 use VinylStore\ServiceProviders\DatabaseManagerServiceProvider;
@@ -84,7 +86,17 @@ $app->register(new VinylRepositoryServiceProvider());
 $app->register(new ImageRepositoryServiceProvider());
 $app->register(new DatabaseManagerServiceProvider());
 $app->register(new PricingRepositoryServiceProvider());
-
+// exception handling
+//$app->error(function (\Exception $e, Request $request, $code) use ($app) {
+//    switch($code) {
+//        case 404:
+//            $page = 'frontend/404.html.twig';
+//            break;
+//        default:
+//            $page = 'frontend/error.html.twig';
+//    }
+//    return new Response($app['twig']->render($page));
+//});
 // set up the base dir for image uploads
 $app['uploads.dir'] = 'images/uploads/';
 return $app;

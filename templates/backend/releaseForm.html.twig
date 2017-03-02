@@ -3,113 +3,111 @@
 {% block content %}
     {% if count == 1 %}
         <h5>Well done , new release created</h5>
-        {% else %}
-    {# create a new release form #}
-    <form enctype="multipart/form-data" class="col s12" action="" method="post">
-        {#{{ form_start(form) }}#}
-        {{ form_errors(form) }}
-        <div class="row">
+    {% else %}
+        {# create a new release form #}
+        <form class="col s12" action="" method="post">
 
-            <div class="input-field col m6 s12">
-                {{ form_label(form.catalog, 'catalog no.::') }}
-                {{ form_widget(form.catalog) }}
-                {{ form_errors(form.catalog) }}
+            {{ form_errors(form) }}
+            <div class="row">
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.catalog, 'catalog no.::') }}
+                    {{ form_widget(form.catalog) }}
+                    {{ form_errors(form.catalog) }}
+                </div>
+
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.artist, 'artist::') }}
+                    {{ form_widget(form.artist) }}
+                    {{ form_errors(form.artist) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.title, 'title::') }}
+                    {{ form_widget(form.title) }}
+                    {{ form_errors(form.title) }}
+                </div>
+
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.label, 'label::') }}
+                    {{ form_errors(form.label) }}
+                    {{ form_widget(form.label) }}
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.format, 'Format::') }}
+                    {{ form_errors(form.format) }}
+                    {{ form_widget(form.format) }}
+                </div>
+
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.released, 'Released::') }}
+                    {{ form_errors(form.released) }}
+                    {{ form_widget(form.released) }}
+
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.date_added, 'date added::') }}
+                    {{ form_errors(form.date_added) }}
+                    {{ form_widget(form.date_added) }}
+                </div>
+
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.media_condition, 'media condition::') }}
+                    {{ form_errors(form.media_condition) }}
+                    {{ form_widget(form.media_condition) }}
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.sleeve_condition, 'sleeve condition:') }}
+                    {{ form_errors(form.sleeve_condition) }}
+                    {{ form_widget(form.sleeve_condition) }}
+                </div>
+
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.notes, 'notes::') }}
+                    {{ form_errors(form.notes) }}
+                    {{ form_widget(form.notes) }}
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.genre, 'genre') }}
+                    {{ form_errors(form.genre) }}
+                    {{ form_widget(form.genre) }}
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="input-field col m6 s12">
+
+                    {{ form_label(form.quantity, 'quantity') }}
+                    <p class="range-field">
+                    {{ form_errors(form.quantity) }}
+                    {{ form_widget(form.quantity) }}
+                    </p>
+                </div>
             </div>
 
 
-            <div class="input-field col m6 s12">
-                {{ form_label(form.artist, 'artist::') }}
-                {{ form_widget(form.artist) }}
-                {{ form_errors(form.artist) }}
-            </div>
-        </div>
-        <div class="row">
-            <div class="input-field col m6 s12">
-                {{ form_label(form.title, 'title::') }}
-                {{ form_widget(form.title) }}
-                {{ form_errors(form.title) }}
-            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
 
 
-            <div class="input-field col m6 s12">
-                {{ form_label(form.label, 'label::') }}
-                {{ form_errors(form.label) }}
-                {{ form_widget(form.label) }}
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="input-field col m6 s12">
-                {{ form_label(form.format, 'Format::') }}
-                {{ form_errors(form.format) }}
-                {{ form_widget(form.format) }}
-            </div>
-
-
-            <div class="input-field col m6 s12">
-                {{ form_label(form.released, 'Released::') }}
-                {{ form_errors(form.released) }}
-                {{ form_widget(form.released) }}
-
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="input-field col m6 s12">
-                {{ form_label(form.date_added, 'date added::') }}
-                {{ form_errors(form.date_added) }}
-                {{ form_widget(form.date_added) }}
-            </div>
-
-
-            <div class="input-field col m6 s12">
-                {{ form_label(form.media_condition, 'media condition::') }}
-                {{ form_errors(form.media_condition) }}
-                {{ form_widget(form.media_condition) }}
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="input-field col m6 s12">
-                {{ form_label(form.sleeve_condition, 'sleeve condition:') }}
-                {{ form_errors(form.sleeve_condition) }}
-                {{ form_widget(form.sleeve_condition) }}
-            </div>
-
-
-            <div class="input-field col m6 s12">
-                {{ form_label(form.notes, 'notes::') }}
-                {{ form_errors(form.notes) }}
-                {{ form_widget(form.notes) }}
-            </div>
-        </div>
-        <div class="row">
-
-            <div class="input-field col m6 s12">
-                {{ form_label(form.genre, 'genre') }}
-                {{ form_errors(form.genre) }}
-                {{ form_widget(form.genre) }}
-            </div>
-
-
-            {#<div class="file-field input-field col m6 s12">#}
-                {#{{ form_label(form.image) }}#}
-                {#<div class="btn">#}
-                    {#<span>Image</span>#}
-                    {#{{ form_errors(form.image) }}#}
-                    {#{{ form_widget(form.image) }}#}
-                {#</div>#}
-                {#<div class="file-path-wrapper">#}
-                    {#<input class="file-path validate" type="text">#}
-                {#</div>#}
-            {#</div>#}
-        </div>
-        </div>
-
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
-
-        {#{{ form_end(form) }}#}
-        {{ form_rest(form) }}
-    </form>
+            {{ form_rest(form) }}
+        </form>
     {% endif %}
 {% endblock %}

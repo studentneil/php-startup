@@ -1,31 +1,38 @@
 {% extends 'frontend/base.html.twig' %}
-{% set active_page = 'collection'%}
+{% set active_page = 'collection' %}
 {% block content %}
 
 
-	<div class="row">
+    <div class="row">
 
 
-        <div class="col s12 m3">
-          <div class="card">
-            <div class="card-image">
+        <div class="col s12 m4">
+            <div class="card">
+                <div class="card-image">
 
-				<img src="/images/front.png">
+                    <img src="{{ global.request.basepath }}/uploads/{{ release.image }}">
 
-              <span class="card-title"></span>
+                    <span class="card-title"></span>
+                </div>
+                <div class="card-content">
+
+                    <p>{{ release.title }}</p>
+                    <p>{{ release.artist }}</p>
+                    <p>{{ release.genre }}</p>
+
+                </div>
+                <div class="card-action">
+                    <a class="snipcart-add-item waves-effect waves-teal btn"
+                       data-item-id="{{ release.id }}"
+                       data-item-name="{{ release.release_name }}"
+                       data-item-price="{{ release.price }}"
+                       data-item-url="{{ release.url }}"
+                       data-item-description="{{ release.description }}">Add to cart
+                    </a>
+                    <a href="/vinyl" class="waves-effect waves-teal btn">Keep Shopping</a>
+                </div>
             </div>
-            <div class="card-content">
-
-                  <p>{{ release.title }}</p>
-                  <p>{{ release.artist }}</p>
-
-
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-          </div>
+        </div>
     </div>
-</div>
 
 {% endblock %}
