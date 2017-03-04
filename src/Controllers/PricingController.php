@@ -10,6 +10,7 @@ namespace VinylStore\Controllers;
 
 use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
+use VinylStore\BoolFlag;
 use VinylStore\Forms\AddPricingDataType;
 
 class PricingController
@@ -24,6 +25,7 @@ class PricingController
     public function indexAction(Request $request, Application $app)
     {
         $count = 0;
+//        $message = BoolFlag::FAILURE;
         $data = array();
         $choices = $app['vinyl.repository']->fillChoicesWithReleaseId();
         foreach ($choices as $choice) {
@@ -37,14 +39,17 @@ class PricingController
         $form->handleRequest($request);
         if ($form->isValid()) {
             $data = $form->getData();
-            $count = $app['pricing.repository']->save($data);
+            if($count = $app['pricing.repository']->save($data)) {
+                $app['session']->getFlashBag()->add('success', BoolFlag::SUCCESS);
+            } else {
+                $app['session']->getFlashBag()->add('failure', BoolFlag::FAILURE);
+            }
         }
-
         $templateName = 'backend/snipDataForm';
         $args_array = array(
             'user' => $app['session']->get('user'),
             'form' => $form->createView(),
-            'count' => $count,
+//            'message' => $message,
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);

@@ -64,6 +64,14 @@ button {
   position: absolute;
   top: -70px;
 }
+
+.header-image {
+  background-image: url(/images/vinyl-spines.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+}
 @media (min-width: 600px) {
   .brand-logo {
     margin-left : 1em;
@@ -76,5 +84,10 @@ button {
   }
   .controls {
     font-size : 1rem;
+  }
+  .header-image {
+
+    height: 350px;
+
   }
 }

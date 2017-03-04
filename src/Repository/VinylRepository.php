@@ -34,7 +34,7 @@ class VinylRepository implements RepositoryInterface
         $qb ->select('*')
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->innerJoin('r', 'snipdata', 's', 'r.id=s.release_id')
+            ->rightJoin('r', 'snipdata', 's', 'r.id=s.release_id')
             ->where('r.id = ?')
             ->setParameter(0, $id);
 

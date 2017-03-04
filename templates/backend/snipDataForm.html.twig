@@ -1,10 +1,15 @@
 {% extends 'backend/base.html.twig' %}
 
-{% block content %}
-    {% if count == 1 %}
-        <h5>Alright, new pricing info added.</h5>
-    {% else %}
 
+{% block content %}
+{% set alertTypeAvaillable = [ 'info', 'success', 'warning', 'error'] %}
+    {% for alert in alertTypeAvaillable %}
+        {% for message in app.session.getFlashBag.get(alert) %}
+            <div class="card-panel teal lighten-2">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
         {# pricing info form for adding data fields for snipcart #}
         <form class="container col m6 s12" action="" method="post">
             <h4>Set your data for snipcart here</h4>
@@ -44,14 +49,8 @@
                     {{ form_label(form.description) }}
                 </div>
             </div>
-
-
-
-
             <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
 
-            {#{{ form_end(form) }}#}
-            {#{{ form_rest(form) }}#}
         </form>
-    {% endif %}
+
 {% endblock %}
