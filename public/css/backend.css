@@ -26,3 +26,16 @@ html {
     width : 100%;
     padding-top: 4rem;
 }
+
+.toolbar.active {
+    position: relative;
+    top: 0;
+}
+
+.links {
+    color: grey;
+}
+
+.backend {
+    height: 200px;
+}

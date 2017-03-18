@@ -24,8 +24,7 @@ class PricingController
      */
     public function indexAction(Request $request, Application $app)
     {
-        $count = 0;
-//        $message = BoolFlag::FAILURE;
+
         $data = array();
         $choices = $app['vinyl.repository']->fillChoicesWithReleaseId();
         foreach ($choices as $choice) {

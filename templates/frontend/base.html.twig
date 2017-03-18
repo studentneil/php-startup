@@ -55,6 +55,14 @@
             padding: 4,
             shift: 20
         });
+
+    });
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('nav').addClass('shrink');
+        } else {
+            $('nav').removeClass('shrink');
+        }
     });
 
 

@@ -1,9 +1,14 @@
 {% extends 'backend/base.html.twig' %}
 
 {% block content %}
-    {% if count == 1 %}
-        <h5>Well done , images uploaded</h5>
-    {% else %}
+    {% set alertTypeAvailable = ['success', 'failure'] %}
+    {% for alert in alertTypeAvailable %}
+        {% for message in app.session.getFlashBag.get(alert) %}
+            <div class="card-panel teal lighten-2">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
 
         {# upload image form #}
         <form enctype="multipart/form-data" class="container col m6 s12" action="" method="post">
@@ -44,5 +49,5 @@
             {#{{ form_end(form) }}#}
             {#{{ form_rest(form) }}#}
         </form>
-    {% endif %}
+
 {% endblock %}

@@ -12,9 +12,9 @@ use Symfony\Component\Filesystem\Exception\IOException;
 use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
 use Symfony\Component\Filesystem\Filesystem;
-use Symfony\Component\Filesystem\Exception\IOExceptionInterface;
 use VinylStore\Forms\ImageUploadType;
 use VinylStore\Entity\FileEntity;
+use VinylStore\BoolFlag;
 
 class ImageController
 {
@@ -50,8 +50,12 @@ class ImageController
             $image->move('uploads/', $fileName);
             $file->setImage($fileName);
 
+            if(!$count = $app['image.repository']->save($file)) {
+                $app['session']->getFlashBag()->add('failure', BoolFlag::FAILURE);
+            }
+            $app['session']->getFlashBag()->add('success', BoolFlag::SUCCESS);
 
-            $count = $app['image.repository']->save($file);
+//            $count = $app['image.repository']->save($file);
         }
 
         $templateName = 'backend/uploadImageForm';

@@ -13,14 +13,14 @@
                         <span class="card-title">image name: {{ image.name }}</span>
                     </div>
                     <div class="card-content">
-                        <p>id: {{ image.id }}</p>
+                        <p>id: {{ image.image_id }}</p>
                         <p>image: {{ image.image }}</p>
                         <p>release id: {{ image.release_id }}</p>
                     </div>
                     {# we store a reference to the images id in the data attribute below #}
                     {# this is used by jquery to pass the correct id to our delete and attach  functions #}
-                    <div class="card-action" data-image-id="{{ image.id }}">
-                        <a href="/admin/delete-image/{{ image.id }}" class="del-image">Delete</a>
+                    <div class="card-action" data-image-id="{{ image.image_id }}">
+                        <a href="/admin/delete-image/{{ image.image_id }}" class="del-image">Delete</a>
 
 
                         {# dropdown trigger for to get a list of releases #}
@@ -28,7 +28,7 @@
                         {# dropdown content #}
                         <ul id="dropdown3" class="dropdown-content">
                            {% for release in releases %}
-                               <li><a href="/admin/attach-image/{{ image.id }}/{{ release.id }}" class="attach-image"
+                               <li><a href="/admin/attach-image/{{ image.image_id }}/{{ release.id }}" class="attach-image"
                                       data-release-id="{{ release.id }}">{{ release.artist }} {{ release.title }}</a></li>
                             {% endfor %}
                         </ul>

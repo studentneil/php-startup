@@ -22,11 +22,16 @@ class LoginController
     {
         $user = $app['security.token_storage']->getToken()->getUser()->getUsername();
         $app['session']->set('user', array('username' => $user));
-        $count = $app['vinyl.repository']->getCount();
+        $releases = $app['vinyl.repository']->findAll();
+        $images = $app['image.repository']->findAll();
+        $pricing  = $app['pricing.repository']->findAll();
+
         $templateName = 'backend/dashboard';
         $args_array = array(
             'user' => $app['session']->get('user'),
-            'count' => $count,
+            'releases' => $releases,
+            'images' => $images,
+            'pricing' => $pricing
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);

@@ -1,44 +1,49 @@
 html {
-  height      : 100%;
-  color       : black;
-  font-family : 'Catamaran',
-                sans-serif;
+    height: 100%;
+    color: black;
+    font-family: 'Catamaran',
+    sans-serif;
 }
+
 /* footer rules */
 body {
-  display        : flex;
-  min-height     : 100vh;
-  flex-direction : column;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 main {
-  flex : 1 0 auto;
+    flex: 1 0 auto;
 }
-
 
 /* nav rules */
 
 /* *********** */
 
 .side-nav {
-  width : 100%;
-  padding-top: 4rem;
+    width: 100%;
+    padding-top: 4rem;
 }
 
 .nav {
-  z-index : 999;
+    z-index: 999;
 }
 
 .search-nav {
-  margin-left : 2%;
+    margin-left: 2%;
 }
 
 .spacer {
-  margin : 4%;
+    margin: 4%;
 }
 
 button {
-  padding : 0px;
+    padding: 0px;
+}
+
+.button-collapse {
+
+    border-right: thin solid lightgrey;
 }
 
 /* mixitup filter controls */
@@ -46,48 +51,67 @@ button {
 /* ************************* */
 
 .controls > .mixitup-control-active {
-  background-color : teal;
+    background-color: teal;
 }
 
 .controls {
-  display   : flex;
-  font-size : 0.8rem;
-  margin: 0;
+    display: flex;
+    font-size: 0.8rem;
+    margin: 0;
 }
 
 /* collapsibles */
 
 .collapsible-header {
-  margin: 0;
+    margin: 0;
 }
+
 .carousel .carousel-item {
-  position: absolute;
-  top: -70px;
+    position: absolute;
+    top: -70px;
 }
 
 .header-image {
-  background-image: url(/images/vinyl-spines.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  width: 100%;
+    background-image: url(/images/vinyl-spines.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
 }
+
 @media (min-width: 600px) {
-  .brand-logo {
-    margin-left : 1em;
-  }
-  .spacer {
-    margin : 2%;
-  }
-  .search-nav {
-    margin-left : 1%;
-  }
-  .controls {
-    font-size : 1rem;
-  }
-  .header-image {
+    .brand-logo {
+        margin-left: 1em;
+    }
 
-    height: 350px;
+    .spacer {
+        margin: 2%;
+    }
 
-  }
+    .search-nav {
+        margin-left: 1%;
+    }
+
+    .controls {
+        font-size: 1rem;
+    }
+
+    .header-image {
+        height: 350px;
+    }
+
+    nav.shrink {
+        padding: 10px;
+
+        background-color: #ccc;
+    / / Animation -webkit-transition: all 0.4 s ease;
+        transition: all 0.4s ease;
+    }
+
+    nav {
+        padding: inherit;
+        background-color: #ccc;
+    / / Animation -webkit-transition: all 0.4 s ease;
+        transition: all 0.4s ease;
+    }
 }
