@@ -41,11 +41,6 @@ button {
     padding: 0px;
 }
 
-.button-collapse {
-
-    border-right: thin solid lightgrey;
-}
-
 /* mixitup filter controls */
 
 /* ************************* */
@@ -100,18 +95,25 @@ button {
         height: 350px;
     }
 
+
     nav.shrink {
         padding: 10px;
+        background-color: white;
 
-        background-color: #ccc;
-    / / Animation -webkit-transition: all 0.4 s ease;
+
+    / / Animation
+        -webkit-transition: all 0.4 s ease;
         transition: all 0.4s ease;
+
     }
 
     nav {
         padding: inherit;
-        background-color: #ccc;
-    / / Animation -webkit-transition: all 0.4 s ease;
+        background-color: white;
+       // Animation:
+        -webkit-transition: all 0.4 s ease;
         transition: all 0.4s ease;
+
     }
+
 }

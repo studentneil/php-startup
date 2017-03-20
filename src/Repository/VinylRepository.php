@@ -74,4 +74,35 @@ class VinylRepository implements RepositoryInterface
 
         return $choices;
     }
+
+    public function findLatestRelease()
+    {
+        $qb = $this->conn->createQueryBuilder();
+        $qb ->select('*')
+            ->from('releases', 'r')
+            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
+            ->innerJoin('r', 'snipdata', 's', 'r.id=s.release_id')
+            ->orderBy('date_added', 'DESC LIMIT 4');
+
+        $latestReleases = $qb->execute()->fetchAll();
+
+        return $latestReleases;
+    }
+    public function findRandomRelease()
+    {
+        $qb = $this->conn->createQueryBuilder();
+        $count = $this->conn->fetchColumn('SELECT COUNT(id) FROM releases');
+        $randNum = rand(0, $count - 1);
+//var_dump($count);
+        $qb ->select('*')
+            ->from('releases', 'r')
+            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
+//            ->innerJoin('r', 'snipdata', 's', 'r.id=s.release_id')
+            ->where('r.id', $randNum);
+//            ->setMaxResults(1);
+
+        $randomRelease = $qb->execute()->fetch();
+//var_dump($randomRelease);
+        return $randomRelease;
+    }
 }

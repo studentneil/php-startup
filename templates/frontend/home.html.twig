@@ -2,16 +2,15 @@
 {% set active_page = 'home' %}
 
 {% block header %}
- <h1>Vinyl Store</h1>
+    <h1>Vinyl Store</h1>
 {% endblock %}
 {% block content %}
     <div class="row">
         <div class="col s12 m12">
 
-                <div class="header-image">
+            <div class="header-image">
 
-                </div>
-
+            </div>
 
 
         </div>
@@ -23,22 +22,48 @@
     </div>
 
 
-    <div class="row center-align">
-     <div class="col s12 m4 flow-text">
-        <div class="card-panel">
-         <h2 class="flow-text">Featured vinyls</h2>
-        </div>
-     </div>
-        <div class="col s12 m4">
+    <div class="row">
+        <div class="col s12 m3">
+            <h2 class="flow-text">Featured vinyls</h2>
             <div class="card-panel">
-            <h2 class="flow-text">New vinyl</h2>
-                </div>
-        </div>
-        <div class="col s12 m4">
-            <div class="card-panel">
-            <h2 class="flow-text">Random vinyl</h2>
-                </div>
+
+            </div>
         </div>
     </div>
+    <div class="row">
+        <h2 class="flow-text">New vinyl</h2>
+
+
+        {% for latest in latest_releases %}
+            <div class="col s6 m3">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="/uploads/{{ latest.image }}" alt="">
+                    </div>
+
+                    <div class="card-content">
+                        <strong>{{ latest.artist }}</strong>/<em>{{ latest.title }}</em>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+    <div class="row">
+        <div class="col s6 m3">
+            <h2 class="flow-text">Random vinyl</h2>
+            <div class="card">
+
+                <div class="card-image">
+                    <img src="/uploads/{{ random_release.image }}" alt="">
+                </div>
+                <div class="card-content">
+
+                    <strong>{{ random_release.artist }}</strong>/<em>{{ random_release.title }}</em>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 {% endblock %}

@@ -32,11 +32,26 @@ class MainControllerTest extends WebTestCase
         $client = $this->createClient();
         $client->followRedirects(true);
         $crawler = $client->request('GET', '/home');
-        $this->assertTrue($client->getResponse()->isOk());
+        $this->assertEquals(
+            200,
+            $client->getResponse()->getStatusCode()
+        );
         $this->assertGreaterThan(
             0,
             $crawler->filter('html:contains("Vinyl Store")')->count()
         );
 
     }
+
+    public function testLoginLink()
+    {
+        $client = $this->createClient();
+        $crawler = $client->request('GET', '/login');
+        $this->assertEquals(
+            200,
+            $client->getResponse()->getStatusCode()
+        );
+    }
+
+
 }
