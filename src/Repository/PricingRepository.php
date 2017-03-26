@@ -20,13 +20,13 @@ class PricingRepository implements RepositoryInterface
 
     public function save($data)
     {
-        $count = $this->conn->insert('snipdata', $data);
+        $count = $this->conn->insert('snipcart_data', $data);
 
         return $count;
     }
     public function findAll()
     {
-        $stmt = $this->conn->prepare('SELECT * FROM snipdata');
+        $stmt = $this->conn->prepare('SELECT * FROM snipcart_data');
         $stmt->execute();
         $priceData = $stmt->fetchAll();
 
@@ -34,7 +34,7 @@ class PricingRepository implements RepositoryInterface
     }
     public function findOneById($id)
     {
-        $stmt = $this->conn->prepare('SELECT * FROM snipdata WHERE id=:id');
+        $stmt = $this->conn->prepare('SELECT * FROM snipcart_data WHERE id=:id');
         $stmt->bindValue('id', $id);
         $stmt->execute();
         $priceData = $stmt->fetch();
@@ -43,12 +43,12 @@ class PricingRepository implements RepositoryInterface
     }
     public function deleteOneById($id)
     {
-        $count = $this->conn->delete('snipdata', array('id' => $id));
+        $count = $this->conn->delete('snipcart_data', array('id' => $id));
 
         return $count;
     }
     public function getCount()
     {
-        return $this->conn->fetchColumn('SELECT COUNT(id) FROM snipdata');
+        return $this->conn->fetchColumn('SELECT COUNT(id) FROM snipcart_data');
     }
 }

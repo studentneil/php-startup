@@ -33,7 +33,7 @@
     <div class="row">
         <h2 class="flow-text">New vinyl</h2>
 
-
+{% if latest_releases is defined %}
         {% for latest in latest_releases %}
             <div class="col s6 m3">
                 <div class="card">
@@ -42,28 +42,30 @@
                     </div>
 
                     <div class="card-content">
-                        <strong>{{ latest.artist }}</strong>/<em>{{ latest.title }}</em>
+                        <strong>{{ latest.artist }}</strong> / <em>{{ latest.title }}</em>
                     </div>
                 </div>
             </div>
         {% endfor %}
+{% endif %}
+
 
     </div>
-    <div class="row">
-        <div class="col s6 m3">
-            <h2 class="flow-text">Random vinyl</h2>
-            <div class="card">
+    {#<div class="row">#}
+        {#<div class="col s6 m3">#}
+            {#<h2 class="flow-text">Random vinyl</h2>#}
+            {#<div class="card">#}
 
-                <div class="card-image">
-                    <img src="/uploads/{{ random_release.image }}" alt="">
-                </div>
-                <div class="card-content">
+                {#<div class="card-image">#}
+                    {#<img src="/uploads/{{ random_release.image }}" alt="">#}
+                {#</div>#}
+                {#<div class="card-content">#}
 
-                    <strong>{{ random_release.artist }}</strong>/<em>{{ random_release.title }}</em>
-                </div>
-            </div>
-        </div>
-    </div>
+                    {#<strong>{{ random_release.artist }}</strong>/<em>{{ random_release.title }}</em>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+    {#</div>#}
 
 
 {% endblock %}

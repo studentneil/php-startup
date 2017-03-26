@@ -34,7 +34,7 @@ class VinylRepository implements RepositoryInterface
         $qb ->select('*')
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->rightJoin('r', 'snipdata', 's', 'r.id=s.release_id')
+            ->rightJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
             ->where('r.id = ?')
             ->setParameter(0, $id);
 
@@ -58,7 +58,7 @@ class VinylRepository implements RepositoryInterface
         $qb ->select('*')
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->innerJoin('r', 'snipdata', 's', 'r.id=s.release_id');
+            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
 
         $releases = $qb->execute()->fetchAll();
 
@@ -81,7 +81,7 @@ class VinylRepository implements RepositoryInterface
         $qb ->select('*')
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->innerJoin('r', 'snipdata', 's', 'r.id=s.release_id')
+            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
             ->orderBy('date_added', 'DESC LIMIT 4');
 
         $latestReleases = $qb->execute()->fetchAll();

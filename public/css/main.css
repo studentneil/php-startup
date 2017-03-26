@@ -74,6 +74,11 @@ button {
     width: 100%;
 }
 
+.footer-copyright {
+    margin: 0;
+
+}
+
 @media (min-width: 600px) {
     .brand-logo {
         margin-left: 1em;

@@ -9,12 +9,12 @@ class MainController
     public function indexAction(Application $app)
     {
         $latestReleases = $app['vinyl.repository']->findLatestRelease();
-        $randomRelease = $app['vinyl.repository']->findRandomRelease();
+//        $randomRelease = $app['vinyl.repository']->findRandomRelease();
 //        var_dump($randomRelease);
         $templateName = 'frontend/home';
         $args_array = array(
             'latest_releases' => $latestReleases,
-            'random_release' => $randomRelease
+//            'random_release' => $randomRelease
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
