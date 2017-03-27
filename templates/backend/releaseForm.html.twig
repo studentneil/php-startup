@@ -1,19 +1,24 @@
 {% extends 'backend/base.html.twig' %}
 
 {% block content %}
-    {% if count == 1 %}
-        <h5>Well done , new release created</h5>
-    {% else %}
+    {% set alertTypeAvailable = ['success', 'failure'] %}
+    {% for alert in alertTypeAvailable %}
+        {% for message in app.session.getFlashBag.get(alert) %}
+            <div class="card-panel teal lighten-2">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
         {# create a new release form #}
-        <form class="col s12" action="" method="post">
+        <form class="container col s12" action="" method="post">
 
             {{ form_errors(form) }}
             <div class="row">
 
                 <div class="input-field col m6 s12">
-                    {{ form_label(form.catalog, 'catalog no.::') }}
-                    {{ form_widget(form.catalog) }}
-                    {{ form_errors(form.catalog) }}
+                    {{ form_label(form.catno, 'catalog no.::') }}
+                    {{ form_widget(form.catno) }}
+                    {{ form_errors(form.catno) }}
                 </div>
 
 
@@ -47,9 +52,9 @@
 
 
                 <div class="input-field col m6 s12">
-                    {{ form_label(form.released, 'Released::') }}
-                    {{ form_errors(form.released) }}
-                    {{ form_widget(form.released) }}
+                    {{ form_label(form.released_on, 'Released::') }}
+                    {{ form_errors(form.released_on) }}
+                    {{ form_widget(form.released_on) }}
 
                 </div>
             </div>
@@ -109,5 +114,5 @@
 
             {{ form_rest(form) }}
         </form>
-    {% endif %}
+
 {% endblock %}

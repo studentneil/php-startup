@@ -15,6 +15,8 @@ use Symfony\Component\Filesystem\Filesystem;
 use VinylStore\Forms\ImageUploadType;
 use VinylStore\Entity\FileEntity;
 use VinylStore\BoolFlag;
+use VinylStore\FileUploader;
+use Spatie\Image\Image;
 
 class ImageController
 {
@@ -45,15 +47,18 @@ class ImageController
             ->getForm();
         $form->handleRequest($request);
         if ($form->isValid()) {
-            $image = $file->getImage();
-            $fileName = md5(uniqid()) . '.' . $image->guessExtension();
-            $image->move('uploads/', $fileName);
-            $file->setImage($fileName);
+            $image = new FileUploader('uploads');
+            $uploadedImage = $image->upload($file);
+
+//            $image = $file->getImage();
+//            $fileName = md5(uniqid()) . '.' . $image->guessExtension();
+//            $image->move('uploads/', $fileName);
+//            $file->setImage($fileName);
 
             if(!$count = $app['image.repository']->save($file)) {
-                $app['session']->getFlashBag()->add('failure', BoolFlag::FAILURE);
+                $app['session']->getFlashBag()->add('failure', $uploadedImage);
             }
-            $app['session']->getFlashBag()->add('success', BoolFlag::SUCCESS);
+            $app['session']->getFlashBag()->add('success', $uploadedImage);
 
 //            $count = $app['image.repository']->save($file);
         }

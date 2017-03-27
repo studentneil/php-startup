@@ -49,7 +49,7 @@ class ImageRepository implements RepositoryInterface
     }
     public function deleteOneById($id)
     {
-        $count = $this->conn->delete('images', array('id' => $id));
+        $count = $this->conn->delete('images', array('image_id' => $id));
 
         return $count;
     }
@@ -60,8 +60,7 @@ class ImageRepository implements RepositoryInterface
 
     public function getImageNameForDelete($id)
     {
-        $image = $this->conn->fetchColumn('SELECT image FROM images WHERE id = ?', array($id));
-
+        $image = $this->conn->fetchColumn('SELECT image FROM images WHERE image_id = ?', array($id));
 
         return $image;
     }

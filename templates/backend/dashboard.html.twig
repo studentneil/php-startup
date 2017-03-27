@@ -1,60 +1,44 @@
 {% extends 'backend/base.html.twig' %}
 
 {% block content %}
-<div class="row">
-    <div class="fixed-action-btn toolbar">
+    <div class="row">
 
-        <a class="btn-floating btn-large blue-grey click-to-toggle">
-            <i class="material-icons">menu</i>
-        </a>
-        <ul>
-            <li class="waves-effect waves-light"><a href="/admin/create-release">Create Release</a></li>
-            <li class="waves-effect waves-light"><a href="/admin/upload-image">Upload Image</a></li>
-            <li class="waves-effect waves-light"><a href="/admin/pricing">Add Pricing</a></li>
+        {% for release in releases %}
+            <div class="col s12 m2">
+                <div class="backend card">
+                    <div class="card-content">
+                        <p>{{ release.artist }}
+                            {% for image in images %}
+                                {% if release.id == image.release_id %}
+                                    <span class="new badge blue" data-badge-caption="Got image"></span>
 
-        </ul>
+                                {% endif %}
+                            {% endfor %}
+                        </p>
+                        <p>{{ release.title }}
+                            {% for price in pricing %}
+                                {% if release.id == price.release_id %}
+                                    <span class="new badge blue" data-badge-caption="Got pricing"></span>
+                                {% endif %}
+                            {% endfor %}
+                        </p>
+                        <p>{{ release.format }}</p>
+                        {#<p>{{ release.label }}</p>#}
+                        {#<p>{{ release.released }}</p>#}
+                        {#<p>{{ release.media_condition }}</p>#}
+                        {#<p>{{ release.sleeve_condition }}</p>#}
+                        {#<p>{{ release.notes }}</p>#}
+                        {#<p>{{ release.genre }}</p>#}
+                        <hr>
+
+                        <a class="waves-effect waves-light links" href="#">Edit</a>
+                        <a class="waves-effect waves-light links" href="">Delete</a>
+
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
     </div>
-
-       {% for release in releases %}
-
-
-    <div class="col s12 m2">
-      <div class="backend card">
-          <div class="card-content">
-                 <p>{{ release.artist }}
-                     {% for image in images %}
-                         {% if release.id == image.release_id %}
-                             <span class="new badge blue" data-badge-caption="Got image"></span>
-
-                         {% endif %}
-                     {% endfor %}
-                 </p>
-                 <p>{{ release.title }}
-                     {% for price in pricing %}
-                         {% if release.id == price.release_id %}
-                             <span class="new badge blue" data-badge-caption="Got pricing"></span>
-                         {% endif %}
-                     {% endfor %}
-                 </p>
-                 <p>{{ release.format }}</p>
-                 {#<p>{{ release.label }}</p>#}
-                 {#<p>{{ release.released }}</p>#}
-                 {#<p>{{ release.media_condition }}</p>#}
-                 {#<p>{{ release.sleeve_condition }}</p>#}
-                 {#<p>{{ release.notes }}</p>#}
-                 {#<p>{{ release.genre }}</p>#}
-<hr>
-
-                  <a class="waves-effect waves-light links" href="#">Edit</a>
-                  <a class="waves-effect waves-light links" href="">Delete</a>
-
-
-
-          </div>
-      </div>
-    </div>
-       {% endfor %}
-
-
-</div>
 {% endblock %}

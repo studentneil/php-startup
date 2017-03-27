@@ -39,9 +39,9 @@ class PricingController
         if ($form->isValid()) {
             $data = $form->getData();
             if($count = $app['pricing.repository']->save($data)) {
-                $app['session']->getFlashBag()->add('success', BoolFlag::SUCCESS);
+                $app['session']->getFlashBag()->add('success', BoolFlag::PRICING_ADDED);
             } else {
-                $app['session']->getFlashBag()->add('failure', BoolFlag::FAILURE);
+                $app['session']->getFlashBag()->add('failure', BoolFlag::PRICING_NOT_ADDED);
             }
         }
         $templateName = 'backend/snipDataForm';

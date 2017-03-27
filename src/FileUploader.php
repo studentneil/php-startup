@@ -8,53 +8,48 @@
 
 namespace VinylStore;
 
-use Silex\Application;
+
 
 use Symfony\Component\Validator\Constraints as Assert;
-use Symfony\Component\HttpFoundation\File\UploadedFile;
+use Spatie\Image\Image;
+use Spatie\Image\Manipulations;
 
 class FileUploader
 {
 
-    private $targetDir = 'images/uploads';
-    private $app;
+    private $targetDir;
 
-    public function __construct(Application $app)
+
+    public function __construct($targetDir)
     {
-        $this->app = $app;
+        $this->targetDir = $targetDir;
     }
 
-    public function upload(UploadedFile $file)
+    public function upload($file)
     {
+//        no file, return with error message
         if (!$file) {
-            $message = 'Sorry, theres no way to upload that file. check your php.ini directive.';
-            return $message;
+            return BoolFlag::IMAGE_UPLOAD_FAILURE;
         }
-        $fileName = md5(uniqid()) . '.' . $file->guessExtension();
-        $constraint = new Assert\Image(array(
-            'mimeTypes' => array('image/jpeg', 'image/png'),
-            'maxSize' => '2M'
-        ));
-        $errors = $this->app['validator']->validate($file, $constraint);
-        if (count($errors) > 0) {
-            foreach ($errors as $error) {
-                $message = $error->getPropertyPath() . ' ' . $error->getMessage() . "\n";
-                return $message;
-            }
-        }
+//        get the actual image from the file entity
+//        and create a unique name
+        $image = $file->getImage();
+        $fileName = md5(uniqid()) . '.' . $image->guessExtension();
+//        check if the file exists
         if (file_exists($this->targetDir . '/' . $fileName)) {
-            $message = 'Sorry, file already exists';
-            return $message;
+            return BoolFlag::IMAGE_ALREADY_EXISTS;
         }
-        $file->move($this->targetDir . '/', $fileName);
-        $newImage = new Image();
-        $newImage->setImagePath($fileName);
-        $image = $newImage->getImagePath();
-        $count = $this->app['image.repository']->uploadImage($image);
-        if (!$count === 1) {
-            return 'There was a problem with the upload.';
-        } else {
-            return 'Image file was successfully uploaded.';
+//        set the unique name on the image
+        $file->setImage($fileName);
+//        try to move the file to the directory passed in the constructor
+        if (!$image->move($this->targetDir . '/', $fileName)) {
+            return BoolFlag::IMAGE_UPLOAD_FAILURE;
         }
+//        crop the image to 500x500px and save
+        Image::load($this->targetDir.'/'.$fileName)
+            ->fit(Manipulations::FIT_STRETCH, 500, 500)
+            ->save();
+        return BoolFlag::IMAGE_UPLOAD_SUCCESS;
+
     }
 }

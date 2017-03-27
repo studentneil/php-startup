@@ -6,8 +6,8 @@
     <nav class="nav-extended white">
         <div class="nav-wrapper">
             <a href="/" class="brand-logo black-text">Vinyl Store</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
+            <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down menu__list">
                 {% for item in navbar %}
                     <li{% if item[0]==active_page %} class="active" {% endif %}>
                         <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }} </a>
@@ -21,7 +21,7 @@
 {# off-canvas nav on mobiles #}
 <ul class="side-nav center-align" id="mobile-demo" style="background-image: url({{ global.request.basepath }}/images/mobile-nav.jpg); background-size: cover;
         background">
-    <div><a href="#" class="btn"><i class="material-icons close-menu">close</i></a></div>
+    <div><a href="" class="btn"><i class="material-icons close-menu">close</i></a></div>
 
     {% for item in navbar %}
         <li{% if item[0]==active_page %} class="active" {% endif %}>
@@ -29,6 +29,6 @@
         </li>
     {% endfor %}
     <li>
-        <button class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</button>
+        <a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a>
     </li>
 </ul>

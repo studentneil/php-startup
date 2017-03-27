@@ -21,7 +21,7 @@ class CreateNewReleaseType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         return $builder
-            ->add('catalog', TextType::class, array(
+            ->add('catno', TextType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
                     new Assert\Length(array(
@@ -71,7 +71,7 @@ class CreateNewReleaseType extends AbstractType
                     'placeholder' => 'e.g. 12" LP',
                 ),
             ))
-            ->add('released', DateType::class, array(
+            ->add('released_on', DateType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
                 ),

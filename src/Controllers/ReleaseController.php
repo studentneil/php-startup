@@ -4,9 +4,10 @@ namespace VinylStore\Controllers;
 
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
+use VinylStore\BoolFlag;
 use VinylStore\Forms\CreateNewReleaseType;
 
-class DatabaseController
+class ReleaseController
 {
     /**
      * @param Application $app
@@ -45,7 +46,6 @@ class DatabaseController
 
     public function createReleaseAction(Request $request, Application $app)
     {
-        $count = 0;
         $data = array();
         $form = $app['form.factory']
             ->createBuilder(CreateNewReleaseType::class, $data)
@@ -53,14 +53,17 @@ class DatabaseController
         $form->handleRequest($request);
         if ($form->isValid()) {
             $data = $form->getData();
-            $count = $app['vinyl.repository']->save($data);
+            if (!$app['vinyl.repository']->save($data)) {
+                $app['session']->getFlashBag()->add('failure', BoolFlag::RELEASE_NOT_CREATED);
+            }
+            $app['session']->getFlashBag()->add('success', BoolFlag::RELEASE_CREATED);
         }
 
         $templateName = 'backend/releaseForm';
         $args_array = array(
             'user' => $app['session']->get('user'),
             'form' => $form->createView(),
-            'count' => $count,
+
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
