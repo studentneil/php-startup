@@ -47,14 +47,7 @@ class ImageController
             ->getForm();
         $form->handleRequest($request);
         if ($form->isValid()) {
-            $image = new FileUploader('uploads');
-            $uploadedImage = $image->upload($file);
-
-//            $image = $file->getImage();
-//            $fileName = md5(uniqid()) . '.' . $image->guessExtension();
-//            $image->move('uploads/', $fileName);
-//            $file->setImage($fileName);
-
+            $uploadedImage = $app['file.uploader']->upload($file);
             if(!$count = $app['image.repository']->save($file)) {
                 $app['session']->getFlashBag()->add('failure', $uploadedImage);
             }
@@ -98,22 +91,28 @@ class ImageController
     {
         $response = '';
 
-        // try to delete an image from the db.
-        // $count will be either a 1 on success or 0 on failure
-        // and as this is an ajax call, we can send a string back as a response.
-        $count = $app['image.repository']->deleteOneById($id);
-        // build a string to send to the remove function
+
+
+
+
+//        query the db for a file entity
+//        and get the actual image string
+//        to pass to the delete filesystem function
+//        note: do not delete from db first.
+//        correct order: filesystem first, db second.
         $image = $app['image.repository']->getImageNameForDelete($id);
-        $imagePath = 'uploads/'.$image;
+        $path = $image->getImage();
+        $imagePath = $image->setImagePath($path);
         $fs = new Filesystem();
         if($fs->exists($imagePath)) {
             try {
                 $fs->remove($imagePath);
-                $response .= 'Success. deleted from filesystem';
+                $response .= 'Success. deleted from filesystem<br>';
             } catch (IOException $e) {
                 return $e->getMessage();
             }
         }
+        $count = $app['image.repository']->deleteOneById($id);
         if (!$count === 1) {
             $response .= 'Theres a problem with the response.';
             return $response;

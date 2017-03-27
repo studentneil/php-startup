@@ -13,13 +13,13 @@ use Silex\Provider\ServiceControllerServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\FormServiceProvider;
-use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpFoundation\Request;
+
 
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
-use VinylStore\ServiceProviders\DatabaseManagerServiceProvider;
 use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
 use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;
+use VinylStore\ServiceProviders\UploadServiceProvider;
+use VinylStore\ServiceProviders\MessageServiceProvider;
 use VinylStore\UserProvider;
 
 require_once __DIR__.'/../vendor/autoload.php';
@@ -84,8 +84,9 @@ $app->extend('form.types', function($types) {
 });
 $app->register(new VinylRepositoryServiceProvider());
 $app->register(new ImageRepositoryServiceProvider());
-$app->register(new DatabaseManagerServiceProvider());
 $app->register(new PricingRepositoryServiceProvider());
+$app->register(new UploadServiceProvider());
+$app->register(new MessageServiceProvider());
 // exception handling
 //$app->error(function (\Exception $e, Request $request, $code) use ($app) {
 //    switch($code) {
@@ -97,6 +98,6 @@ $app->register(new PricingRepositoryServiceProvider());
 //    }
 //    return new Response($app['twig']->render($page));
 //});
-// set up the base dir for image uploads
-$app['uploads.dir'] = 'images/uploads/';
+
+
 return $app;

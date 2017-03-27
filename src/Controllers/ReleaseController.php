@@ -56,7 +56,7 @@ class ReleaseController
             if (!$app['vinyl.repository']->save($data)) {
                 $app['session']->getFlashBag()->add('failure', BoolFlag::RELEASE_NOT_CREATED);
             }
-            $app['session']->getFlashBag()->add('success', BoolFlag::RELEASE_CREATED);
+            $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseCreated());
         }
 
         $templateName = 'backend/releaseForm';

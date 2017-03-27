@@ -60,7 +60,16 @@ class ImageRepository implements RepositoryInterface
 
     public function getImageNameForDelete($id)
     {
-        $image = $this->conn->fetchColumn('SELECT image FROM images WHERE image_id = ?', array($id));
+        $qb = $this->conn->createQueryBuilder();
+        $qb ->select('*')
+            ->from('images', 'i')
+            ->where('i.image_id = ?')
+            ->setParameter(0, $id);
+//        $stmt = $this->conn->prepare('SELECT image, name, release_id FROM images WHERE image_id = :id');
+//        $stmt->bindValue('id', $id);
+//        $stmt->execute();
+//        $image = $stmt->fetch('VinylStore\\Entity\\FileEntity');
+        $image = $qb->execute()->fetchObject('VinylStore\\Entity\\FileEntity');
 
         return $image;
     }

@@ -64,6 +64,10 @@ class FileEntity
     {
         $this->release_id = $release_id;
     }
-
+    public function setImagePath($path)
+    {
+        $imagePath = 'uploads/'.$path;
+        return $imagePath;
+    }
 
 }
