@@ -12,7 +12,7 @@ $app->get('/login', 'VinylStore\\Controllers\\LoginController::loginAction');
 $app->get('/release/{id}', 'VinylStore\\Controllers\\MainController::getReleaseByIdAction');
 $app->get('/vinyl', 'VinylStore\\Controllers\\MainController::getVinylAction');
 $app->get('/admin/dashboard', 'VinylStore\\Controllers\\LoginController::dashboardAction');
-$app->get('/admin/database', 'VinylStore\\Controllers\\ReleaseController::indexAction');
+//$app->get('/admin/database', 'VinylStore\\Controllers\\ReleaseController::indexAction');
 $app->get('/admin/view/releases', 'VinylStore\\Controllers\\ReleaseController::viewTableAction');
 $app->match('/admin/create-release', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
 $app->match('/admin/upload-image', 'VinylStore\\Controllers\\ImageController::uploadImageAction');

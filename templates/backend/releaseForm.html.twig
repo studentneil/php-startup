@@ -45,9 +45,9 @@
             <div class="row">
 
                 <div class="input-field col m6 s12">
-                    {{ form_label(form.format, 'Format::') }}
                     {{ form_errors(form.format) }}
                     {{ form_widget(form.format) }}
+                    {{ form_label(form.format, 'Format::') }}
                 </div>
 
 
@@ -68,17 +68,17 @@
 
 
                 <div class="input-field col m6 s12">
-                    {{ form_label(form.media_condition, 'media condition::') }}
                     {{ form_errors(form.media_condition) }}
                     {{ form_widget(form.media_condition) }}
+                    {{ form_label(form.media_condition, 'media condition') }}
                 </div>
             </div>
             <div class="row">
 
                 <div class="input-field col m6 s12">
-                    {{ form_label(form.sleeve_condition, 'sleeve condition:') }}
                     {{ form_errors(form.sleeve_condition) }}
                     {{ form_widget(form.sleeve_condition) }}
+                    {{ form_label(form.sleeve_condition, 'sleeve condition::') }}
                 </div>
 
 
@@ -91,9 +91,10 @@
             <div class="row">
 
                 <div class="input-field col m6 s12">
-                    {{ form_label(form.genre, 'genre') }}
+
                     {{ form_errors(form.genre) }}
                     {{ form_widget(form.genre) }}
+                    {{ form_label(form.genre, 'genre::') }}
                 </div>
             </div>
             <div class="row">

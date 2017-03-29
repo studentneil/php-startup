@@ -9,6 +9,7 @@
 namespace VinylStore\Forms;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\Extension\Core\Type\RangeType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -63,13 +64,15 @@ class CreateNewReleaseType extends AbstractType
                     'placeholder' => 'e.g. sony',
                 ),
             ))
-            ->add('format', TextType::class, array(
-                'constraints' => array(
-                    new Assert\NotBlank(),
+            ->add('format', ChoiceType::class, array(
+                'choices' => array(
+                    '12" Lp' => '12 Lp',
+                    '12" E.p' => '12" E.p',
+                    '12" Double Lp' => '12" Double Lp',
+                    '12" Single' => '12" single',
+                    '7" single' => '7" single',
                 ),
-                'attr' => array(
-                    'placeholder' => 'e.g. 12" LP',
-                ),
+
             ))
             ->add('released_on', DateType::class, array(
                 'constraints' => array(
@@ -93,28 +96,24 @@ class CreateNewReleaseType extends AbstractType
                     'class' => 'datepicker',
                 ),
             ))
-            ->add('media_condition', TextType::class, array(
-                'constraints' => array(
-                    new Assert\NotBlank(),
-                    new Assert\Length(array(
-                        'min' => 3,
-                    )),
-                ),
-                'attr' => array(
-                    'placeholder' => 'e.g. VG',
-                ),
-            ))
-            ->add('sleeve_condition', TextType::class, array(
-                'constraints' => array(
-                    new Assert\NotBlank(),
-                    new Assert\Length(array(
-                        'min' => 3,
-                    )),
-                ),
-                'attr' => array(
-                    'placeholder' => 'e.g. mint',
-                ),
-            ))
+            ->add('media_condition', ChoiceType::class, array(
+                'choices' => array(
+                    'mint' => 'mint',
+                    'vg+' => 'vg+',
+                    'vg' => 'vg',
+                    'good' => 'good',
+                    'fair' => 'fair',
+                    'poor' => 'poor'
+                )))
+            ->add('sleeve_condition', ChoiceType::class, array(
+                'choices' => array(
+                    'mint' => 'mint',
+                    'vg+' => 'vg+',
+                    'vg' => 'vg',
+                    'good' => 'good',
+                    'fair' => 'fair',
+                    'poor' => 'poor'
+                )))
             ->add('notes', TextareaType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
@@ -124,14 +123,12 @@ class CreateNewReleaseType extends AbstractType
                     'placeholder' => 'e.g. great album etc',
                 ),
             ))
-            ->add('genre', TextType::class, array(
-                'constraints' => array(
-                    new Assert\NotBlank(),
-
-                ),
-                'attr' => array(
-                    'placeholder' => 'eg rock',
-                ),
+            ->add('genre', ChoiceType::class, array(
+                'choices' => array(
+                    'rock' => 'rock',
+                    'classic rock' => 'classic rock',
+                    'electronic' => 'electronic'
+                )
             ))
             ->add('quantity', RangeType::class, array(
                 'constraints' => array(

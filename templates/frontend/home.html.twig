@@ -21,7 +21,7 @@
         </div>
     </div>
 
-    <div class="divider"></div>
+    {#<div class="divider"></div>#}
     <div class="section card-panel">
         <div class="row center-align">
 
@@ -33,7 +33,7 @@
             </div>
         </div>
     </div>
-    <div class="divider"></div>
+    {#<div class="divider"></div>#}
     <div class="section card-panel">
         <div class="row center-align">
             <h1 class="flow-text">New vinyl</h1>
@@ -56,7 +56,7 @@
         </div>
     </div>
     </div>
-    <div class="divider"></div>
+    {#<div class="divider"></div>#}
     <div class="section card-panel">
         <div class="row center-align">
 
@@ -68,16 +68,19 @@
                         <div class="card">
 
                             <div class="card-image">
-                                <img src="/uploads/{{ random_release.image }}" alt="">
+                                <img src="/uploads/{{ random.image }}" alt="">
                             </div>
-                            <div class="card-content">
+                            <div class="card-content truncate">
+                                <strong>{{ random.artist }}</strong> / <em>{{ random.title }}</em>
+                            </div>
 
-                                <strong>{{ random_release.artist }}</strong>/<em>{{ random_release.title }}</em>
-                            </div>
+
                         </div>
                     </div>
                 {% endfor %}
             {% endif %}
+            <div class="divider"></div>
+            <a href="#">Randomize</a>
         </div>
     </div>
 {% endblock %}

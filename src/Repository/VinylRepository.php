@@ -82,7 +82,8 @@ class VinylRepository implements RepositoryInterface
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
             ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
-            ->orderBy('date_added', 'DESC LIMIT 4');
+            ->orderBy('date_added', 'DESC LIMIT 4')
+            ->andHaving('quantity >= 1');
 
         $latestReleases = $qb->execute()->fetchAll();
 
@@ -90,19 +91,10 @@ class VinylRepository implements RepositoryInterface
     }
     public function findRandomRelease()
     {
-        $qb = $this->conn->createQueryBuilder();
-        $count = $this->conn->fetchColumn('SELECT COUNT(id) FROM releases');
-        $randNum = rand(0, $count - 1);
-//var_dump($count);
-        $qb ->select('*')
-            ->from('releases', 'r')
-            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-//            ->innerJoin('r', 'snipdata', 's', 'r.id=s.release_id')
-            ->where('r.id', $randNum);
-//            ->setMaxResults(1);
+        $stmt = $this->conn->prepare('SELECT * FROM releases INNER JOIN images ON releases.id=images.release_id ORDER BY RAND() LIMIT 4');
+        $stmt->execute();
+        $randomRelease = $stmt->fetchAll();
 
-        $randomRelease = $qb->execute()->fetch();
-//var_dump($randomRelease);
         return $randomRelease;
     }
 }
