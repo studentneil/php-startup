@@ -13,8 +13,6 @@ use Silex\Provider\ServiceControllerServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\FormServiceProvider;
-
-
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
 use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
 use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;
@@ -65,19 +63,19 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
 $app->register(new FormServiceProvider());
 // register custom forms here.
 // create a new release form
-$app->extend('form.types', function($types) {
+$app->extend('form.types', function ($types) {
     $types[] = new VinylStore\Forms\CreateNewReleaseType();
 
     return $types;
 });
 // upload image form
-$app->extend('form.types', function($types) use ($app) {
+$app->extend('form.types', function ($types) use ($app) {
     $types[] = new VinylStore\Forms\ImageUploadType();
 
     return $types;
 });
 // pricing data form
-$app->extend('form.types', function($types) {
+$app->extend('form.types', function ($types) {
     $types[] = new VinylStore\Forms\AddPricingDataType();
 
     return $types;
@@ -98,6 +96,5 @@ $app->register(new MessageServiceProvider());
 //    }
 //    return new Response($app['twig']->render($page));
 //});
-
 
 return $app;

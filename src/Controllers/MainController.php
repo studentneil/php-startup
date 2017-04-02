@@ -14,7 +14,7 @@ class MainController
         $templateName = 'frontend/home';
         $args_array = array(
             'latest_releases' => $latestReleases,
-            'random_release' => $randomRelease
+            'random_release' => $randomRelease,
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);

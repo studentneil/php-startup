@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 28/02/2017
- * Time: 22:56
+ * Time: 22:56.
  */
 
 namespace VinylStore\Controllers;
@@ -15,16 +15,14 @@ use VinylStore\Forms\AddPricingDataType;
 
 class PricingController
 {
-
-
     /**
-     * @param Request $request
+     * @param Request     $request
      * @param Application $app
+     *
      * @return mixed
      */
     public function indexAction(Request $request, Application $app)
     {
-
         $data = array();
         $choices = $app['vinyl.repository']->fillChoicesWithReleaseId();
         foreach ($choices as $choice) {
@@ -38,7 +36,7 @@ class PricingController
         $form->handleRequest($request);
         if ($form->isValid()) {
             $data = $form->getData();
-            if($count = $app['pricing.repository']->save($data)) {
+            if ($count = $app['pricing.repository']->save($data)) {
                 $app['session']->getFlashBag()->add('success', BoolFlag::PRICING_ADDED);
             } else {
                 $app['session']->getFlashBag()->add('failure', BoolFlag::PRICING_NOT_ADDED);

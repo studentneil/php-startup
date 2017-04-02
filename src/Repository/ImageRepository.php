@@ -3,10 +3,11 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 10/01/2017
- * Time: 23:05
+ * Time: 23:05.
  */
 
 namespace VinylStore\Repository;
+
 use Doctrine\Dbal\Connection;
 
 class ImageRepository implements RepositoryInterface
@@ -19,7 +20,6 @@ class ImageRepository implements RepositoryInterface
     }
     public function save($file)
     {
-
         $uploadedImage = array(
             'image' => $file->getImage(),
             'name' => $file->getName(),
@@ -61,7 +61,7 @@ class ImageRepository implements RepositoryInterface
     public function getImageNameForDelete($id)
     {
         $qb = $this->conn->createQueryBuilder();
-        $qb ->select('*')
+        $qb->select('*')
             ->from('images', 'i')
             ->where('i.image_id = ?')
             ->setParameter(0, $id);

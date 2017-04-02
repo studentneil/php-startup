@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 18/01/2017
- * Time: 23:57
+ * Time: 23:57.
  */
 
 namespace VinylStore\Entity;
-
 
 class ChoiceEntity
 {
@@ -45,7 +44,4 @@ class ChoiceEntity
     {
         $this->title = $title;
     }
-
-
-
 }

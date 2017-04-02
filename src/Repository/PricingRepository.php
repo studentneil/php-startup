@@ -3,12 +3,13 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 28/02/2017
- * Time: 23:29
+ * Time: 23:29.
  */
 
 namespace VinylStore\Repository;
 
 use Doctrine\Dbal\Connection;
+
 class PricingRepository implements RepositoryInterface
 {
     private $conn;

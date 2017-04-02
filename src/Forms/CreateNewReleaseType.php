@@ -103,8 +103,8 @@ class CreateNewReleaseType extends AbstractType
                     'vg' => 'vg',
                     'good' => 'good',
                     'fair' => 'fair',
-                    'poor' => 'poor'
-                )))
+                    'poor' => 'poor',
+                ), ))
             ->add('sleeve_condition', ChoiceType::class, array(
                 'choices' => array(
                     'mint' => 'mint',
@@ -112,8 +112,8 @@ class CreateNewReleaseType extends AbstractType
                     'vg' => 'vg',
                     'good' => 'good',
                     'fair' => 'fair',
-                    'poor' => 'poor'
-                )))
+                    'poor' => 'poor',
+                ), ))
             ->add('notes', TextareaType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
@@ -127,8 +127,8 @@ class CreateNewReleaseType extends AbstractType
                 'choices' => array(
                     'rock' => 'rock',
                     'classic rock' => 'classic rock',
-                    'electronic' => 'electronic'
-                )
+                    'electronic' => 'electronic',
+                ),
             ))
             ->add('quantity', RangeType::class, array(
                 'constraints' => array(
@@ -136,13 +136,13 @@ class CreateNewReleaseType extends AbstractType
                     new Assert\Range(array(
                         'min' => 1,
                         'max' => 10,
-                    ))
+                    )),
                 ),
                 'attr' => array(
                     'min' => 1,
                     'max' => 10,
-                    'placeholder' => 'Between 1 and 10'
-                )
+                    'placeholder' => 'Between 1 and 10',
+                ),
             ));
     }
 }

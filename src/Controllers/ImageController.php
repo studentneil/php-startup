@@ -14,21 +14,19 @@ use Silex\Application;
 use Symfony\Component\Filesystem\Filesystem;
 use VinylStore\Forms\ImageUploadType;
 use VinylStore\Entity\FileEntity;
-use VinylStore\BoolFlag;
-use VinylStore\FileUploader;
 use Spatie\Image\Image;
 
 class ImageController
 {
-
     /**
      * Upload image form.
      *
      * renders the form as well as handling the upload.
      * route: match: admin/upload-image
      *
-     * @param Request $request
+     * @param Request     $request
      * @param Application $app
+     *
      * @return mixed
      */
     public function uploadImageAction(Request $request, Application $app)
@@ -39,8 +37,7 @@ class ImageController
         foreach ($choices as $choice) {
             $id[] = $choice->getId();
             $title[] = $choice->getTitle();
-
-    }
+        }
         $file = new FileEntity();
         $form = $app['form.factory']
             ->createBuilder(ImageUploadType::class, $file, array('id' => $id, 'title' => $title))
@@ -48,7 +45,7 @@ class ImageController
         $form->handleRequest($request);
         if ($form->isValid()) {
             $uploadedImage = $app['file.uploader']->upload($file);
-            if(!$count = $app['image.repository']->save($file)) {
+            if (!$count = $app['image.repository']->save($file)) {
                 $app['session']->getFlashBag()->add('failure', $uploadedImage);
             }
             $app['session']->getFlashBag()->add('success', $uploadedImage);
@@ -74,7 +71,7 @@ class ImageController
 
         return $app['twig']->render($template.'.html.twig', array(
             'images' => $allImages,
-            'releases' => $releases
+            'releases' => $releases,
         ));
     }
 
@@ -84,16 +81,13 @@ class ImageController
      * This will be done through an ajax call
      *
      * @param Application $app
-     * @param $id . The image id.
+     * @param $id . The image id
+     *
      * @return string
      */
     public function deleteImageAction(Application $app, $id)
     {
         $response = '';
-
-
-
-
 
 //        query the db for a file entity
 //        and get the actual image string
@@ -104,7 +98,7 @@ class ImageController
         $path = $image->getImage();
         $imagePath = $image->setImagePath($path);
         $fs = new Filesystem();
-        if($fs->exists($imagePath)) {
+        if ($fs->exists($imagePath)) {
             try {
                 $fs->remove($imagePath);
                 $response .= 'Success. deleted from filesystem<br>';
@@ -115,11 +109,13 @@ class ImageController
         $count = $app['image.repository']->deleteOneById($id);
         if (!$count === 1) {
             $response .= 'Theres a problem with the response.';
+
             return $response;
         } else {
             $response .= 'Success! An image was deleted from the database.';
+
             return $response;
-        };
+        }
     }
 
     /**
@@ -138,9 +134,11 @@ class ImageController
         $count = $app['image.repository']->attachImageToRelease($imageId, $releaseId);
         if (!$count === 1) {
             $response = 'Theres a problem with the response';
+
             return $response;
         } else {
             $response = 'Success! You have attached the image';
+
             return $response;
         }
     }

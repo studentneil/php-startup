@@ -24,14 +24,14 @@ class LoginController
         $app['session']->set('user', array('username' => $user));
         $releases = $app['vinyl.repository']->findAll();
         $images = $app['image.repository']->findAll();
-        $pricing  = $app['pricing.repository']->findAll();
+        $pricing = $app['pricing.repository']->findAll();
 
         $templateName = 'backend/dashboard';
         $args_array = array(
             'user' => $app['session']->get('user'),
             'releases' => $releases,
             'images' => $images,
-            'pricing' => $pricing
+            'pricing' => $pricing,
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);

@@ -3,16 +3,13 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 11/01/2017
- * Time: 21:52
+ * Time: 21:52.
  */
 
 namespace VinylStore\Entity;
 
-
 class FileEntity
 {
-
-
     private $image;
     private $name;
     private $release_id;
@@ -67,7 +64,7 @@ class FileEntity
     public function setImagePath($path)
     {
         $imagePath = 'uploads/'.$path;
+
         return $imagePath;
     }
-
 }

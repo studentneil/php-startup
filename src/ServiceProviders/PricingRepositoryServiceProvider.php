@@ -3,10 +3,11 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 28/02/2017
- * Time: 23:38
+ * Time: 23:38.
  */
 
 namespace VinylStore\ServiceProviders;
+
 use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use VinylStore\Repository\PricingRepository;

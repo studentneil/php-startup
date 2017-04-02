@@ -4,7 +4,6 @@ namespace VinylStore\Repository;
 
 use Doctrine\Dbal\Connection;
 
-
 class VinylRepository implements RepositoryInterface
 {
     protected $conn;
@@ -29,9 +28,9 @@ class VinylRepository implements RepositoryInterface
     }
     public function findOneById($id)
     {
-//        $safeId = filter_var($id, FILTER_VALIDATE_INT);
+        //        $safeId = filter_var($id, FILTER_VALIDATE_INT);
         $qb = $this->conn->createQueryBuilder();
-        $qb ->select('*')
+        $qb->select('*')
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
             ->rightJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
@@ -55,7 +54,7 @@ class VinylRepository implements RepositoryInterface
     public function findEverything()
     {
         $qb = $this->conn->createQueryBuilder();
-        $qb ->select('*')
+        $qb->select('*')
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
             ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
@@ -67,7 +66,7 @@ class VinylRepository implements RepositoryInterface
     public function fillChoicesWithReleaseId()
     {
         $qb = $this->conn->createQueryBuilder();
-        $qb ->select('id', 'title')
+        $qb->select('id', 'title')
             ->from('releases', 'r');
 
         $choices = $qb->execute()->fetchAll(\PDO::FETCH_CLASS, 'VinylStore\\Entity\\ChoiceEntity');
@@ -78,7 +77,7 @@ class VinylRepository implements RepositoryInterface
     public function findLatestRelease()
     {
         $qb = $this->conn->createQueryBuilder();
-        $qb ->select('*')
+        $qb->select('*')
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
             ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
