@@ -11,3 +11,4 @@ phinx.yml
 coverage/
 phpunit.phar
 public/uploads/
+phpunit.xml

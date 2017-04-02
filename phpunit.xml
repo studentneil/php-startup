@@ -16,8 +16,21 @@
     </testsuites>
     <filter>
         <whitelist processUncoveredFilesFromWhitelist="true">
-            <directory suffix=".php">/src/Controllers/</directory>
-            <file>src/Controllers/MainController</file>
+            <directory suffix=".php">./src/</directory>
+
+            <exclude>
+                <directory suffix=".php">/vendor/*</directory>
+                <file>/vendor/*</file>
+            </exclude>
         </whitelist>
     </filter>
+    <logging>
+        <log type="coverage-html" target="/coverage"/>
+    </logging>
+    <php>
+        <var name="DB_DSN" value="mysql:host=localhost;port=8889;dbname=test_vinyl_store"/>
+        <var name="DB_USER" value="root"/>
+        <var name="DB_PASS" value="root"/>
+        <var name="DB_NAME" value="test_vinyl_store"/>
+    </php>
 </phpunit>
