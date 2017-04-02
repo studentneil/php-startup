@@ -24,13 +24,14 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "VinylStore\\Tests\\": "tests/"
+      "VinylStoreTests\\": "tests/"
     }
   },
   "require-dev": {
     "symfony/browser-kit": "^3.2",
     "symfony/css-selector": "^3.2",
-    "phpunit/dbunit": "^3.0"
+    "phpunit/dbunit": "^3.0",
+    "mikey179/vfsStream": "^1.6"
   },
   "scripts": {
     "test": "php phpunit.phar tests",

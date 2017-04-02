@@ -8,11 +8,14 @@
 
 namespace VinylStoreTests;
 use Doctrine\DBAL\DriverManager;
-use VinylStore\Repository\ImageRepository;
+use PHPUnit\Framework\TestCase;
+use PHPUnit\DbUnit\TestCaseTrait;
+//use VinylStore\Repository\ImageRepository;
 
 
-class VinylStoreDatabaseTest extends \PHPUnit_Extensions_Database_TestCase
+class VinylStoreDatabaseTest extends TestCase
 {
+    use TestCaseTrait;
     // only instantiate pdo once for test clean-up/fixture load
     static private $pdo = null;
     static private $dbal = null;
@@ -48,35 +51,7 @@ class VinylStoreDatabaseTest extends \PHPUnit_Extensions_Database_TestCase
     {
         return $this->createXMLDataset(__DIR__.'/datasetXml/seed.xml');
     }
-    public function testRowCount()
-    {
-        $this->assertEquals(7, $this->getConnection()->getRowCount('images'));
-    }
-    public function testDeleteOneImage()
-    {
-        $numRowsAtStart = 7;
-        $this->assertEquals($numRowsAtStart, $this->getConnection()->getRowCount('images'), 'Pre-Condition');
-        $expectedRows = 6;
-        $imageRepository = new ImageRepository($this->getDbal());
-        $imageRepository->deleteOneById(4);
-        $result = $this->getConnection()->getRowCount('images');
-        $this->assertEquals($expectedRows, $result, 'rows at start: 7, deleted one and 6 rows remaining');
-    }
+
 }
 
-//    public function getDataSet()
-//    {
-//        $seedFilePath = __DIR__ . '/databaseXml/seed.xml';
-//        return $this->createXMLDataSet($seedFilePath);
-//    }
-//
-//    public function testDatasetMatchesSelectQuery()
-//    {
-//        $queryTable = $this->getConnection()->createQueryTable(
-//            'images', 'SELECT * FROM images'
-//        );
-//        $expectedTable = $this->createFlatXmlDataSet("seed.xml")
-//                              ->getTable("images");
-//        $this->assertTablesEqual($expectedTable, $queryTable);
-//    }
 
