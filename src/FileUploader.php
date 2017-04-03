@@ -41,9 +41,9 @@ class FileUploader
             return BoolFlag::IMAGE_UPLOAD_FAILURE;
         }
 //        crop the image to 500x500px and save
-        Image::load($this->targetDir.'/'.$fileName)
-            ->fit(Manipulations::FIT_STRETCH, 500, 500)
-            ->save();
+//        Image::load($this->targetDir.'/'.$fileName)
+//            ->fit(Manipulations::FIT_STRETCH, 500, 500)
+//            ->save();
 
         return BoolFlag::IMAGE_UPLOAD_SUCCESS;
     }
