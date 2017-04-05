@@ -14,6 +14,7 @@ use Spatie\Image\Manipulations;
 class FileUploader
 {
     private $targetDir;
+    private $fileName;
 
     public function __construct($targetDir)
     {
@@ -29,21 +30,21 @@ class FileUploader
 //        get the actual image from the file entity
 //        and create a unique name
         $image = $file->getImage();
-        $fileName = md5(uniqid()).'.'.$image->guessExtension();
+        $this->fileName = md5(uniqid()).'.'.$image->guessExtension();
 //        check if the file exists
-        if (file_exists($this->targetDir.'/'.$fileName)) {
+        if (file_exists($this->targetDir.'/'.$this->fileName)) {
             return BoolFlag::IMAGE_ALREADY_EXISTS;
         }
 //        set the unique name on the image
-        $file->setImage($fileName);
+        $file->setImage($this->fileName);
 //        try to move the file to the directory passed in the constructor
-        if (!$image->move($this->targetDir.'/', $fileName)) {
+        if (!$image->move($this->targetDir.'/', $this->fileName)) {
             return BoolFlag::IMAGE_UPLOAD_FAILURE;
         }
-//        crop the image to 500x500px and save
-//        Image::load($this->targetDir.'/'.$fileName)
-//            ->fit(Manipulations::FIT_STRETCH, 500, 500)
-//            ->save();
+//      crop the image to 500x500px and save
+        Image::load($this->targetDir.'/'.$this->fileName)
+            ->fit(Manipulations::FIT_STRETCH, 500, 500)
+            ->save();
 
         return BoolFlag::IMAGE_UPLOAD_SUCCESS;
     }
