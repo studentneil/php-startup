@@ -12,6 +12,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
 use VinylStore\BoolFlag;
 use VinylStore\Forms\AddPricingDataType;
+use VinylStore\Options;
 
 class PricingController
 {
@@ -25,13 +26,11 @@ class PricingController
     {
         $data = array();
         $choices = $app['vinyl.repository']->fillChoicesWithReleaseId();
-        foreach ($choices as $choice) {
-            $id[] = $choice->getId();
-            $title[] = $choice->getTitle();
-        }
+        $options = new Options($choices);
+        $mergedOptions = $options->mergeChoices();
 
         $form = $app['form.factory']
-            ->createBuilder(AddPricingDataType::class, $data, array('id' => $id, 'title' => $title))
+            ->createBuilder(AddPricingDataType::class, $data, array('choices' => $mergedOptions))
             ->getForm();
         $form->handleRequest($request);
         if ($form->isValid()) {

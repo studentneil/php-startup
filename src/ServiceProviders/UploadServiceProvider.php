@@ -10,14 +10,14 @@ namespace VinylStore\ServiceProviders;
 
 use Pimple\ServiceProviderInterface;
 use Pimple\Container;
-use VinylStore\FileUploader;
+use VinylStore\ImageUploader;
 
 class UploadServiceProvider implements ServiceProviderInterface
 {
     public function register(Container $app)
     {
         $app['file.uploader'] = function () use ($app) {
-            return new FileUploader('uploads');
+            return new ImageUploader('uploads');
         };
     }
 }

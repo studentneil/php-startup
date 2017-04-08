@@ -18,7 +18,7 @@ class BoolFlag
     const PRICING_ADDED = 'Success! Pricing data was added to a release';
     const PRICING_NOT_ADDED = 'Sorry, pricing data wasnt added';
 
-    public function getSuccessMessage()
+    public function getImageSuccessMessage()
     {
         return self::IMAGE_UPLOAD_SUCCESS;
     }

@@ -29,9 +29,7 @@ class ImageUploadType extends AbstractType
             )), ))
             ->add('name', TextType::class)
             ->add('release_id', ChoiceType::class, array(
-                'choices' => array(
-                    array_combine($options['title'], $options['id']),
-                ),
+                'choices' => $options['choices'],
             ));
     }
     public function getName()
@@ -41,8 +39,7 @@ class ImageUploadType extends AbstractType
 
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefined(array('id', 'title'));
-
+        $resolver->setDefined(array('choices'));
         return $resolver;
     }
 }

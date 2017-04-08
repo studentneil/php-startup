@@ -8,11 +8,12 @@
 
 namespace VinylStore\Entity;
 
-class FileEntity
+class ImageEntity
 {
     private $image;
     private $name;
     private $release_id;
+    private $imagePath;
 
     /**
      * @return mixed
@@ -61,10 +62,19 @@ class FileEntity
     {
         $this->release_id = $release_id;
     }
+
+    /**
+     * @param $path
+     * @return string
+     */
     public function setImagePath($path)
     {
         $imagePath = 'uploads/'.$path;
 
         return $imagePath;
+    }
+    public function getImagePath()
+    {
+        return $this->imagePath;
     }
 }

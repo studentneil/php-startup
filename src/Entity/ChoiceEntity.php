@@ -13,6 +13,7 @@ class ChoiceEntity
     private $id;
     private $title;
 
+
     /**
      * @return mixed
      */
@@ -44,4 +45,7 @@ class ChoiceEntity
     {
         $this->title = $title;
     }
+
+
+
 }

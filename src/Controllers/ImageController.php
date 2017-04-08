@@ -12,9 +12,14 @@ use Symfony\Component\Filesystem\Exception\IOException;
 use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
 use Symfony\Component\Filesystem\Filesystem;
+use VinylStore\BoolFlag;
 use VinylStore\Forms\ImageUploadType;
-use VinylStore\Entity\FileEntity;
+use VinylStore\Entity\ImageEntity;
+use VinylStore\Options;
+use Symfony\Component\HttpKernel\KernelEvents;
 use Spatie\Image\Image;
+use Spatie\Image\Manipulations;
+
 
 class ImageController
 {
@@ -33,24 +38,27 @@ class ImageController
     {
         $count = 0;
         $choices = $app['vinyl.repository']->fillChoicesWithReleaseId();
+        $options = new Options($choices);
+        $mergedOptions = $options->mergeChoices();
 
-        foreach ($choices as $choice) {
-            $id[] = $choice->getId();
-            $title[] = $choice->getTitle();
-        }
-        $file = new FileEntity();
+
+        $image = new ImageEntity();
         $form = $app['form.factory']
-            ->createBuilder(ImageUploadType::class, $file, array('id' => $id, 'title' => $title))
+            ->createBuilder(ImageUploadType::class, $image, array('choices' => $mergedOptions))
             ->getForm();
         $form->handleRequest($request);
         if ($form->isValid()) {
-            $uploadedImage = $app['file.uploader']->upload($file);
-            if (!$count = $app['image.repository']->save($file)) {
-                $app['session']->getFlashBag()->add('failure', $uploadedImage);
+            $uploadedImage = $app['file.uploader']->upload($image);
+            $app['dispatcher']->addListener(KernelEvents::TERMINATE, function() use ($uploadedImage) {
+                Image::load('uploads/' . $uploadedImage->getImage())
+                     ->fit(Manipulations::FIT_STRETCH, 500, 500)
+                     ->save();
+            });
+            if (!$count = $app['image.repository']->save($image)) {
+                $app['session']->getFlashBag()->add('failure', $app['message.service']->getImageSuccessMessage());
             }
-            $app['session']->getFlashBag()->add('success', $uploadedImage);
+            $app['session']->getFlashBag()->add('success', $app['message.service']->getImageSuccessMessage());
 
-//            $count = $app['image.repository']->save($file);
         }
 
         $templateName = 'backend/uploadImageForm';

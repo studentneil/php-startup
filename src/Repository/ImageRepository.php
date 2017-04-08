@@ -69,7 +69,7 @@ class ImageRepository implements RepositoryInterface
 //        $stmt->bindValue('id', $id);
 //        $stmt->execute();
 //        $image = $stmt->fetch('VinylStore\\Entity\\FileEntity');
-        $image = $qb->execute()->fetchObject('VinylStore\\Entity\\FileEntity');
+        $image = $qb->execute()->fetchObject('VinylStore\\Entity\\ImageEntity');
 
         return $image;
     }

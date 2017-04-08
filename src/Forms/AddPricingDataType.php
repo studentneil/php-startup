@@ -22,9 +22,8 @@ class AddPricingDataType extends AbstractType
     {
         return $builder
             ->add('release_id', ChoiceType::class, array(
-                'choices' => array(
-                    array_combine($options['title'], $options['id']),
-                ), ))
+                'choices' => $options['choices']
+                 ))
             ->add('release_name', TextType::class)
             ->add('price', MoneyType::class)
             ->add('url', UrlType::class, array(
@@ -40,7 +39,7 @@ class AddPricingDataType extends AbstractType
     }
     public function configureOptions(OptionsResolver $resolver)
     {
-        $resolver->setDefined(array('id', 'title'));
+        $resolver->setDefined(array('choices'));
 
         return $resolver;
     }
