@@ -35,22 +35,20 @@
     </div>
 
 
-<div class="row">
-    <div class="carousel">
 
-        {% for release in collection %}
-        <div class="carousel-item" href="#one!">
-            <div class="mix {{ release.genre }}">
+<div class="grid-4_sm-2-equalHeight mixContainer">
+    {% for release in collection %}
+        <div class="mix {{ release.genre }} col">
+        {#<div class="col">#}
+
 
 
                 <div class="card z-depth-3">
 
 
-                        <div class="card-image waves-block waves-light">
-                            <img class="activator" src="/uploads/{{ release.image }}" alt="cover art">
-                        </div>
-
-
+                    <div class="card-image waves-block waves-light">
+                        <img class="activator" src="/uploads/{{ release.image }}" alt="cover art">
+                    </div>
 
 
                     <div class="card-content">
@@ -71,11 +69,10 @@
                         <p>{{ release.label }}</p>
                     </div>
                 </div>
-</div>
+            {#</div>#}
         </div>
-        {% endfor %}
+    {% endfor %}
 
-    </div>
 </div>
 
 {% endblock %}

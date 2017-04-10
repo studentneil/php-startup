@@ -8,10 +8,10 @@
 
 namespace VinylStoreTests;
 
-use VinylStore\FileUploader;
+use VinylStore\ImageUploader;
 use org\bovigo\vfs\vfsStream;
-use VinylStore\Entity\FileEntity;
-use VinylStore\BoolFlag;
+use VinylStore\Entity\ImageEntity;
+use VinylStore\MessageService;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 /**
@@ -19,7 +19,7 @@ use Symfony\Component\HttpFoundation\File\UploadedFile;
  * @package VinylStoreTests
  *
  */
-class FileUploaderTest extends \PHPUnit_Framework_TestCase
+class ImageUploaderTest extends \PHPUnit_Framework_TestCase
 {
     protected $root;
     protected $uploadDir;
@@ -31,7 +31,7 @@ class FileUploaderTest extends \PHPUnit_Framework_TestCase
 
 
     /**
-     * @covers \VinylStore\FileUploader::upload()
+     * @covers \VinylStore\ImageUploader::upload()
      */
     public function testFileUploader()
     {
@@ -48,15 +48,15 @@ class FileUploaderTest extends \PHPUnit_Framework_TestCase
             true
         );
 
-        $file = new FileEntity();
+        $file = new ImageEntity();
         $file->setImage($uploadedFile);
         $file->setName('neils_picture');
         $file->setReleaseId('7');
 
-        $uploader = new FileUploader(vfsStream::url('photos/uploadDir'));
-        $message = $uploader->upload($file);
-
-        $this->assertSame($message, BoolFlag::IMAGE_UPLOAD_SUCCESS);
+        $uploader = new ImageUploader(vfsStream::url('photos/uploadDir'));
+        $uploadedImage = $uploader->upload($file);
+        var_dump($this->uploadDir->getChildren());
+        $this->assertInstanceOf(ImageEntity::class, $uploadedImage);
 
     }
 }

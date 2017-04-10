@@ -22,25 +22,30 @@
     </div>
 
     {#<div class="divider"></div>#}
+    <div class="container center-align section-headings">
+        <h1 class="flow-text">Featured Vinyls.</h1>
+    </div>
     <div class="section card-panel">
         <div class="row center-align">
 
-            <h1 class="flow-text">Featured vinyls</h1>
-            <div class="col s12 m3">
-                <div class="card-panel">
 
-                </div>
+            <div class="col s12 m3">
+
             </div>
         </div>
     </div>
     {#<div class="divider"></div>#}
+    <div class="container center-align section-headings">
+    <h1 class="flow-text">New vinyl</h1>
+    </div>
     <div class="section card-panel">
-        <div class="row center-align">
-            <h1 class="flow-text">New vinyl</h1>
+
+        <div class="grid-equalHeight-spaceAround_sm-2">
+
 
             {% if latest_releases is defined %}
                 {% for latest in latest_releases %}
-                    <div class="col s6 m3">
+                    <div class="col">
                         <div class="card">
                             <div class="card-image">
                                 <img src="/uploads/{{ latest.image }}" alt="">
@@ -57,20 +62,23 @@
     </div>
     </div>
     {#<div class="divider"></div>#}
+    <div class="container center-align section-headings">
+        <h1 class="flow-text">Random vinyl</h1>
+    </div>
     <div class="section card-panel">
-        <div class="row center-align">
+        <div class="grid-equalHeight_sm-2">
 
-            <h2 class="flow-text">Random vinyl</h2>
+
 
             {% if random_release is defined %}
                 {% for random in random_release %}
-                    <div class="col s6 m3">
+                    <div class="col">
                         <div class="card">
 
                             <div class="card-image">
                                 <img src="/uploads/{{ random.image }}" alt="">
                             </div>
-                            <div class="card-content truncate">
+                            <div class="card-content">
                                 <strong>{{ random.artist }}</strong> / <em>{{ random.title }}</em>
                             </div>
 
@@ -79,8 +87,8 @@
                     </div>
                 {% endfor %}
             {% endif %}
-            <div class="divider"></div>
-            <a href="#">Randomize</a>
+
+
         </div>
     </div>
 {% endblock %}

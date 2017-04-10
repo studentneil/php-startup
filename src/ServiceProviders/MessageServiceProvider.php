@@ -10,14 +10,14 @@ namespace VinylStore\ServiceProviders;
 
 use Pimple\ServiceProviderInterface;
 use Pimple\Container;
-use VinylStore\BoolFlag;
+use VinylStore\MessageService;
 
 class MessageServiceProvider implements ServiceProviderInterface
 {
     public function register(Container $app)
     {
         $app['message.service'] = function () use ($app) {
-            return new BoolFlag();
+            return new MessageService();
         };
     }
 }

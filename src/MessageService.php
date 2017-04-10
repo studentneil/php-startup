@@ -8,7 +8,7 @@
 
 namespace VinylStore;
 
-class BoolFlag
+class MessageService
 {
     const IMAGE_UPLOAD_SUCCESS = 'Success! An image was uploaded';
     const IMAGE_UPLOAD_FAILURE = 'Sorry! No luck with that.';
