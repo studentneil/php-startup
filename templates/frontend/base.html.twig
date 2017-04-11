@@ -9,13 +9,14 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
 
-    <link type="text/css" rel="stylesheet" href="{{ asset('/css/materialize.min.css') }}" media="screen,projection" />
-    <link type="text/css" rel="stylesheet" href="{{ asset('/css/main.css') }}">
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/materialize.css') }}" media="screen,projection">
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/main.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
     <!-- import gridlex -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.5/gridlex.min.css">
+    {#<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.2.5/gridlex.min.css">#}
     <!-- snipcart css -->
     <link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 
 </head>
@@ -71,6 +72,13 @@
     var containerEl = document.querySelector('.mixContainer');
 
     var mixer = mixitup(containerEl);
+
+    $('.controls').hide();
+        $(".filter-btn").click(function(){
+$('.controls').show();
+            $(".controls").addClass('animated slideInLeft');
+        });
+
 
 
     </script>

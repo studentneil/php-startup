@@ -2,27 +2,29 @@
 {% set active_page = 'collection' %}
 {% block content %}
 
-    <nav class="search-nav z-depth-0">
-        <div class="nav-wrapper white">
-            <form>
-                <div class="col s6 m6 input-field black-text">
-                    <input id="search" class="black-text" type="search" required>
+    {#<nav class="search-nav z-depth-0">#}
+        {#<div class="nav-wrapper white">#}
+            {#<form>#}
+                {#<div class="col s6 m6 input-field black-text">#}
+                    {#<input id="search" class="black-text" type="search" required>#}
 
-                    <label class="black-text" for="search"><i class="material-icons black-text">search</i></label>
-                    <i class="material-icons">close</i>
+                    {#<label class="black-text" for="search"><i class="material-icons black-text">search</i></label>#}
+                    {#<i class="material-icons">close</i>#}
 
-                </div>
+                {#</div>#}
 
-            </form>
+            {#</form>#}
 
-        </div>
-    </nav>
+        {#</div>#}
+    {#</nav>#}
     <!-- <div class="spacer">
 
     </div> -->
-    <!-- Modal Trigger -->
 
 
+
+
+<button class="btn filter-btn">filters</button>
 
     <div class="row controls">
         <button class="waves-effect waves-light btn-flat control" data-filter="all">All</button>
@@ -36,10 +38,11 @@
 
 
 
-<div class="grid-4_sm-2-equalHeight mixContainer">
+
+<div class="row mixContainer">
     {% for release in collection %}
-        <div class="mix {{ release.genre }} col">
-        {#<div class="col">#}
+        <div class="mix {{ release.genre }} col m3 s2">
+
 
 
 
@@ -51,25 +54,26 @@
                     </div>
 
 
-                    <div class="card-content">
-                        <p>{{ release.artist }}</p>
-                        <p>{{ release.title }}</p>
-                        <p>&euro;{{ release.price }}</p>
-                        <div class="divider">
+
+                    <div class="card-reveal">
+                        <span class="card-title grey-text text-darken-4">
+                            <i class="material-icons right">close</i>
+                        </span>
+                        <div class="card-content">
+                            <p>{{ release.artist }}</p>
+                            <p>{{ release.title }}</p>
+                            <p>{{ release.format }}</p>
+                            <p>{{ release.label }}</p>
+                            <p>&euro;{{ release.price }}</p>
+                            <div class="divider"></div>
+                            <a class="waves-effect waves-light" href="/release/{{ release.id }}">Details</a>
+
 
                         </div>
-                        <a class="waves-effect waves-light" href="/release/{{ release.id }}">Details</a>
 
-
-                    </div>
-                    <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4"><i
-                                    class="material-icons right">close</i></span>
-                        <p>{{ release.format }}</p>
-                        <p>{{ release.label }}</p>
                     </div>
                 </div>
-            {#</div>#}
+
         </div>
     {% endfor %}
 

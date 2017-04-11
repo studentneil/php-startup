@@ -15,19 +15,14 @@ body {
 main {
     flex: 1 0 auto;
 }
-.grid {
-    margin: auto;
-}
-.section {
-    padding: 1em;
-}
-.section-headings {
-    padding: 4rem;
-}
-/* nav rules */
+
+
 
 /* *********** */
-
+.grid>.col>.card{
+    margin: 0;
+    padding: 0;
+}
 .side-nav {
     width: 100%;
     padding-top: 4rem;
@@ -37,9 +32,7 @@ main {
     z-index: 999;
 }
 
-.search-nav {
-    margin-left: 2%;
-}
+
 
 .spacer {
     margin: 4%;
@@ -69,9 +62,10 @@ button {
     margin: 0;
 }
 
-.carousel .carousel-item {
-    position: absolute;
-    top: -70px;
+.fixed-action-btn {
+    position: relative;
+    top: 0;
+    left: 10px;
 }
 
 .header-image {
@@ -92,9 +86,7 @@ button {
         margin-left: 1em;
     }
 
-    .spacer {
-        margin: 2%;
-    }
+
 
     .search-nav {
         margin-left: 1%;
