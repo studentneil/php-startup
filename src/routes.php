@@ -11,6 +11,7 @@ $app->get('/home', 'VinylStore\\Controllers\\MainController::indexAction');
 $app->get('/login', 'VinylStore\\Controllers\\LoginController::loginAction');
 $app->get('/release/{id}', 'VinylStore\\Controllers\\MainController::getReleaseByIdAction');
 $app->get('/vinyl', 'VinylStore\\Controllers\\MainController::getVinylAction');
+//$app->get('/vinyl/page-{page}/', 'VinylStore\\Controllers\\MainController::getVinylAction')->value('page', '1');
 $app->get('/admin/dashboard', 'VinylStore\\Controllers\\LoginController::dashboardAction');
 //$app->get('/admin/database', 'VinylStore\\Controllers\\ReleaseController::indexAction');
 $app->get('/admin/view/releases', 'VinylStore\\Controllers\\ReleaseController::viewTableAction');

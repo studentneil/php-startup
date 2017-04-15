@@ -96,4 +96,20 @@ class VinylRepository implements RepositoryInterface
 
         return $randomRelease;
     }
+    public function findForPagination($limit, $offset = 0)
+    {
+        $qb = $this->conn->createQueryBuilder();
+        $qb->select('*')
+            ->from('releases', 'r')
+            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
+            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
+            ->setFirstResult($offset)
+            ->setMaxResults($limit)
+//            ->orderBy('date_added', 'DESC')
+            ->andHaving('quantity >= 1');
+
+        $paginatedReleases = $qb->execute()->fetchAll();
+
+        return $paginatedReleases;
+    }
 }

@@ -22,61 +22,67 @@
     </div> -->
 
 
-
-
-<button class="btn filter-btn">filters</button>
-
-    <div class="row controls">
-        <button class="waves-effect waves-light btn-flat control" data-filter="all">All</button>
-        <button class="waves-effect waves-light btn-flat control" data-filter=".electronic">Electronic</button>
-
-        <button class="waves-effect waves-light btn-flat control" data-filter=".rock">rock</button>
-        <button class="waves-effect waves-light btn-flat control" data-filter=".classic-rock">Classic Rock</button>
-
-
+<div class="spacer"></div>
+    <div class="row">
+        <div class="col m3 sm6">
+        <a href="#" data-activates="slide-out" class="btn button-collapse grey darken-3">Refine</a>
+        </div>
     </div>
 
+    <ul id="slide-out" class="side-nav">
+        <li><a class="flow-text">Refine</a></li>
+        <li><a class="subheader">Genre</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!">Rock</a></li>
+        <li><a href="#!">Electronic</a></li>
+        <li><a href="#">Classic Rock</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="subheader">Format</a></li>
+        <li><a href="#!">12" Lp</a></li>
+        <li><a href="#!">12" Single</a></li>
+        <li><a href="#!">7" Single</a></li>
+    </ul>
+
+
+{#<button class="btn filter-btn">filters</button>#}
+
+    {#<div class="row controls">#}
 
 
 
-<div class="row mixContainer">
-    {% for release in collection %}
-        <div class="mix {{ release.genre }} col m3 s2">
+    {#</div>#}
 
 
 
 
+<div class="row">
+    {% for release in paginatedReleases %}
+        <div class="mix {{ release.genre }} col m3 s6">
                 <div class="card z-depth-3">
-
 
                     <div class="card-image waves-block waves-light">
                         <img class="activator" src="/uploads/{{ release.image }}" alt="cover art">
                     </div>
 
-
-
                     <div class="card-reveal">
-                        <span class="card-title grey-text text-darken-4">
+                        <span class="card-title white-text">
                             <i class="material-icons right">close</i>
                         </span>
-                        <div class="card-content">
-                            <p>{{ release.artist }}</p>
-                            <p>{{ release.title }}</p>
-                            <p>{{ release.format }}</p>
-                            <p>{{ release.label }}</p>
-                            <p>&euro;{{ release.price }}</p>
+                        <div class="card-content white-text">
+                            {{ release.artist }} /
+                            <em>{{ release.title }}</em><br>
+                            {#<p>{{ release.format }}</p>#}
+                            {#<p>{{ release.label }}</p>#}
+                            &euro;{{ release.price }}
                             <div class="divider"></div>
                             <a class="waves-effect waves-light" href="/release/{{ release.id }}">Details</a>
-
-
                         </div>
-
                     </div>
-                </div>
 
+                </div>
         </div>
     {% endfor %}
 
 </div>
-
+    {% include "frontend/partials/pagination.html.twig" %}
 {% endblock %}

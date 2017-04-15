@@ -24,12 +24,14 @@ main {
     padding: 0;
 }
 .side-nav {
-    width: 100%;
-    padding-top: 4rem;
+    width: 50%;
+    padding-top: 2rem;
+
 }
 
 .nav {
     z-index: 999;
+
 }
 
 
@@ -41,7 +43,12 @@ main {
 button {
     padding: 0px;
 }
-
+.card .card-reveal {
+    background-color: #2e3436;
+}
+.card .card-content {
+    padding: 0;
+}
 /* mixitup filter controls */
 
 /* ************************* */
@@ -76,6 +83,9 @@ button {
     width: 100%;
 }
 
+.pagination li.active {
+    background-color: #99cb84;
+}
 .footer-copyright {
     margin: 0;
 
@@ -101,12 +111,11 @@ button {
     }
 
     nav.shrink {
-        padding: 10px;
-        background-color: white;
 
+        padding: 10px;
+        /*background-color: rgba(255,255,255,0.0);*/
     / / Animation -webkit-transition: all 0.4 s ease;
         transition: all 0.4s ease;
-
     }
 
     nav {
@@ -114,7 +123,14 @@ button {
         background-color: white;
     / / Animation: -webkit-transition: all 0.4 s ease;
         transition: all 0.4s ease;
-
+    }
+    nav ul li.active {
+        background: none;
+        border-bottom: thick solid #0D47A1;
+    }
+    .side-nav {
+        width: 50%;
+        padding-top: 4rem;
     }
 
 }

@@ -3,6 +3,7 @@
 namespace VinylStore\Controllers;
 
 use Silex\Application;
+use Symfony\Component\HttpFoundation\Request;
 
 class MainController
 {
@@ -20,13 +21,21 @@ class MainController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-    public function getVinylAction(Application $app)
+    public function getVinylAction(Request $request, Application $app)
     {
-        $collection = $app['vinyl.repository']->findEverything();
+        $limit = 5;
+        $total = $app['vinyl.repository']->getCount();
+        $numPages = ceil($total / $limit);
+        $currentPage = $request->get('page', 1);
+        $offset = ($currentPage - 1) * $limit;
+        $paginatedReleases = $app['vinyl.repository']->findForPagination($limit, $offset);
+//        $collection = $app['vinyl.repository']->findEverything();
 
         $templateName = 'frontend/collection';
         $args_array = array(
-            'collection' => $collection,
+            'numPages' => $numPages,
+            'paginatedReleases' => $paginatedReleases,
+            'currentPage' => $currentPage
 
         );
 
