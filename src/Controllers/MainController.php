@@ -4,6 +4,7 @@ namespace VinylStore\Controllers;
 
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
+use VinylStore\Forms\RefineType;
 
 class MainController
 {
@@ -29,14 +30,21 @@ class MainController
         $currentPage = $request->get('page', 1);
         $offset = ($currentPage - 1) * $limit;
         $paginatedReleases = $app['vinyl.repository']->findForPagination($limit, $offset);
-//        $collection = $app['vinyl.repository']->findEverything();
-
+        $data = array();
+        $form = $app['form.factory']
+            ->createBuilder(RefineType::class, $data)
+            ->getForm();
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $data = $form->getData();
+//
+        }
         $templateName = 'frontend/collection';
         $args_array = array(
             'numPages' => $numPages,
             'paginatedReleases' => $paginatedReleases,
-            'currentPage' => $currentPage
-
+            'currentPage' => $currentPage,
+            'form' => $form->createView()
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
@@ -51,6 +59,26 @@ class MainController
             'release' => $release,
         );
 
+        return $app['twig']->render($templateName.'.html.twig', $args_array);
+    }
+
+    public function refineAction(Request $request, Application $app)
+    {
+        $data = array();
+        $form = $app['form.factory']
+            ->createBuilder(RefineType::class, $data)
+            ->getForm();
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $data = $form->getData();
+            $refinedResults = $app['vinyl.repository']->refine($data);
+        }
+        $templateName = 'frontend/collectionRefined';
+        $args_array = array(
+            'form' => $form->createView(),
+            'refinedResults' => $refinedResults
+
+        );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 }

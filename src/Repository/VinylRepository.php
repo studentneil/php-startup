@@ -112,4 +112,26 @@ class VinylRepository implements RepositoryInterface
 
         return $paginatedReleases;
     }
+    public function refine($data)
+    {
+        $qb = $this->conn->createQueryBuilder();
+        $qb->select('*')
+            ->from('releases', 'r')
+            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
+            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
+            if ($data['genre']) {
+                $qb->where('genre = :genre')
+                    ->setParameter(':genre', $data['genre'][0]);
+            }
+
+          if ($data['format']) {
+              $qb->andWhere('format = :format')
+                  ->setParameter(':format', $data['format'][0]);
+          }
+
+        $refinedResults = $qb->execute()->fetchAll();
+
+        return $refinedResults;
+
+    }
 }

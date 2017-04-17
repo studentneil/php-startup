@@ -9,7 +9,7 @@
             <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down menu__list">
                 {% for item in navbar %}
-                    <li{% if item[0]==active_page %} class="active" {% endif %}>
+                    <li{% if item[0]==active_page %} class="active" {% endif %} data-hover="{{ item[1] }}">
                         <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }} </a>
                     </li>
                 {% endfor %}
@@ -19,12 +19,13 @@
     </nav>
 </div>
 {# off-canvas nav on mobiles #}
-<ul class="side-nav center-align" id="mobile-demo" style="background-image: url({{ global.request.basepath }}/images/mobile-nav.jpg); background-size: cover;">
-    <div><a href="" class="btn"><i class="material-icons close-menu">close</i></a></div>
 
+<ul class="side-nav center-align" id="mobile-demo">
+
+    <div><i class="material-icons close-menu right-align">close</i></div>
     {% for item in navbar %}
         <li{% if item[0]==active_page %} class="active" {% endif %}>
-            <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text btn">{{ item[1] }}</a>
+            <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }}</a>
         </li>
     {% endfor %}
     <li>

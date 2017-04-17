@@ -57,7 +57,7 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
             },
             ),
         ),
-    'security.encoder.bcrypt.cost' => 4,
+    'security.encoder.bcrypt.cost' => $config['login']['bcrypt'],
     )
 );
 $app->register(new FormServiceProvider());
@@ -77,6 +77,12 @@ $app->extend('form.types', function ($types) use ($app) {
 // pricing data form
 $app->extend('form.types', function ($types) {
     $types[] = new VinylStore\Forms\AddPricingDataType();
+
+    return $types;
+});
+// Refine slide-out form
+$app->extend('form.types', function ($types) use ($app) {
+    $types[] = new VinylStore\Forms\RefineType();
 
     return $types;
 });

@@ -16,13 +16,12 @@ main {
     flex: 1 0 auto;
 }
 
-
-
 /* *********** */
-.grid>.col>.card{
+.grid > .col > .card {
     margin: 0;
     padding: 0;
 }
+
 .side-nav {
     width: 50%;
     padding-top: 2rem;
@@ -34,8 +33,66 @@ main {
 
 }
 
+nav ul li>a:hover {
+    background: none;
+    background-color: white;
+}
+/* line effects on navbar */
+/* see http://littlesnippets.net/some-inspiration-for-menus-using-animated-lines/*/
+/*************************************************************/
+menu__list * {
+    box-sizing: border-box;
+}
+.menu__list li {
+    display: inline-block;
+    /*list-style: outside none none;*/
+    margin: 0 1.5em;
+    padding: 0;
+}
+.menu__list li {
+    padding: 0.5em 0;
+    color: rgba(255, 255, 255, 0.5);
+    position: relative;
 
-
+}
+.menu__list li:before,
+.menu__list li:after {
+    position: absolute;
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+.menu__list li:before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: "";
+    background-color: #2980b9;
+}
+.menu__list li:after {
+    left: 0;
+    top: 0;
+    padding: 0.5em 0;
+    position: absolute;
+    /*content: attr(data-hover);*/
+    color: #ffffff;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+}
+.menu__list li:hover:before,
+.menu__list .active li:before {
+    opacity: 1;
+    width: 100%;
+}
+/*.menu__list li:hover:after,*/
+/*.menu__list .active li:after {*/
+    /*max-width: 100%;*/
+/*}*/
+.menu__list li>a.active {
+    color: red;
+}
+/*****************************************************/
 .spacer {
     margin: 4%;
 }
@@ -43,12 +100,15 @@ main {
 button {
     padding: 0px;
 }
+
 .card .card-reveal {
     background-color: #2e3436;
 }
+
 .card .card-content {
     padding: 0;
 }
+
 /* mixitup filter controls */
 
 /* ************************* */
@@ -86,6 +146,7 @@ button {
 .pagination li.active {
     background-color: #99cb84;
 }
+
 .footer-copyright {
     margin: 0;
 
@@ -95,8 +156,6 @@ button {
     .brand-logo {
         margin-left: 1em;
     }
-
-
 
     .search-nav {
         margin-left: 1%;
@@ -124,12 +183,15 @@ button {
     / / Animation: -webkit-transition: all 0.4 s ease;
         transition: all 0.4s ease;
     }
+
     nav ul li.active {
-        background: none;
-        border-bottom: thick solid #0D47A1;
+        background-color: white;
+
     }
+
+
     .side-nav {
-        width: 50%;
+        width: 20%;
         padding-top: 4rem;
     }
 
