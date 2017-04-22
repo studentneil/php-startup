@@ -1,8 +1,7 @@
 html {
     height: 100%;
     color: black;
-    font-family: 'Catamaran',
-    sans-serif;
+    font-family: 'Catamaran', sans-serif;
 }
 
 /* footer rules */
@@ -27,7 +26,10 @@ main {
     padding-top: 2rem;
 
 }
+.brand-logo {
+    font-family: 'Permanent Marker', cursive;
 
+}
 .nav {
     z-index: 999;
 
@@ -46,11 +48,11 @@ menu__list * {
 .menu__list li {
     display: inline-block;
     /*list-style: outside none none;*/
-    margin: 0 1.5em;
+    margin: 0 1em;
     padding: 0;
 }
 .menu__list li {
-    padding: 0.5em 0;
+    /*padding: 0.5em 0;*/
     color: rgba(255, 255, 255, 0.5);
     position: relative;
 
@@ -110,6 +112,9 @@ menu__list * {
 .spacer {
     margin: 4%;
 }
+.spacer_large {
+    margin: 10%;
+}
 
 button {
     padding: 0px;
@@ -121,20 +126,6 @@ button {
 
 .card .card-content {
     padding: 0;
-}
-
-/* mixitup filter controls */
-
-/* ************************* */
-
-.controls > .mixitup-control-active {
-    background-color: teal;
-}
-
-.controls {
-    display: flex;
-    font-size: 0.8rem;
-    margin: 0;
 }
 
 /* collapsibles */
@@ -165,9 +156,12 @@ button {
     margin: 0;
 
 }
-
+h1 {
+    font-family: 'Permanent Marker', cursive;
+}
 @media (min-width: 600px) {
     .brand-logo {
+        font-family: 'Permanent Marker', cursive;
         margin-left: 1em;
     }
 

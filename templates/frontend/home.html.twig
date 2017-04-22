@@ -15,13 +15,19 @@
         <div class="section">
             <div class="row center-align">
                 <div class="col s12 m12">
-                    <h1 class="flow-text">Vinylstore for record enthusiasts</h1>
-                    <h2>Quality used vinyl at great prices.</h2>
+                    <h1 class="flow-text">Online Vinyl shop for record enthusiasts</h1>
+                    <p class="flow-text">Welcome to our site. We stock an eclectic range of records so something for everyone.
+                        Our philosophy is simple: If it sounds good, we listen to it! (or something like that)</p>
+                    <p>All our vinyl comes from our own private collections and is played regularly.
+                        We try and stick to the <a
+                                href="http://www.recordcollectorsguild.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=17&page=1">goldmine
+                            standard</a> when grading our records
+                        We also guarantee that shipping <em>wont</em> be more expensive than the music, a pet hate of ours!.</p>
                 </div>
             </div>
         </div>
     </div>
-
+    <div class="spacer_large"></div>
     {#<div class="divider"></div>#}
     <div class="container center-align section-headings">
         <h1 class="flow-text">Featured Vinyls.</h1>
@@ -35,78 +41,78 @@
             </div>
         </div>
     </div>
-    {#<div class="divider"></div>#}
+    <div class="spacer_large"></div>
     <div class="container center-align section-headings">
-    <h1 class="flow-text">New vinyl</h1>
+        <h1 class="flow-text">New vinyl</h1>
+        <p class="flow-text">Check out our newest vinyl.</p>
     </div>
 
 
-        <div class="row">
+    <div class="row">
 
 
-            {% if latest_releases is defined %}
-                {% for latest in latest_releases %}
-                    <div class="col m3 s6">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="activator" src="/uploads/{{ latest.image }}" alt="">
-                            </div>
-                            <div class="card-reveal">
+        {% if latest_releases is defined %}
+            {% for latest in latest_releases %}
+                <div class="col m3 s6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="activator" src="/uploads/{{ latest.image }}" alt="">
+                        </div>
+                        <div class="card-reveal">
                                  <span class="card-title white-text">
                                     <i class="material-icons right">close</i>
                                 </span>
-                                <div class="card-content white-text">
-                                    <strong>{{ latest.artist }}</strong> / <em>{{ latest.title }}</em>
-                                    <br>
-                                    &euro;{{ latest.price }}
-                                    <div class="divider"></div>
-                                    <a class="waves-effect waves-light" href="/release/{{ latest.id }}">Details</a>
-                                </div>
+                            <div class="card-content white-text">
+                                <strong>{{ latest.artist }}</strong> / <em>{{ latest.title }}</em>
+                                <br>
+                                &euro;{{ latest.price }}
+                                <div class="divider"></div>
+                                <a class="waves-effect waves-light" href="/release/{{ latest.id }}">Details</a>
                             </div>
                         </div>
                     </div>
-                {% endfor %}
-            {% endif %}
+                </div>
+            {% endfor %}
+        {% endif %}
 
-        </div>
+    </div>
 
 
-    {#<div class="divider"></div>#}
+    <div class="spacer_large"></div>
     <div class="container center-align section-headings">
         <h1 class="flow-text">Random vinyl</h1>
+        <p class="flow-text">Or try from a selection of randomers.</p>
     </div>
     <div class="row">
 
 
+        {% if random_release is defined %}
+            {% for random in random_release %}
+                <div class="col m3 s6">
+                    <div class="card">
 
-
-            {% if random_release is defined %}
-                {% for random in random_release %}
-                    <div class="col m3 s6">
-                        <div class="card">
-
-                            <div class="card-image">
-                                <img class="activator" src="/uploads/{{ random.image }}" alt="">
-                            </div>
-                            <div class="card-reveal">
+                        <div class="card-image">
+                            <img class="activator" src="/uploads/{{ random.image }}" alt="">
+                        </div>
+                        <div class="card-reveal">
                                 <span class="card-title white-text">
                                     <i class="material-icons right">close</i>
                                 </span>
-                                <div class="card-content white-text">
-                                    <strong>{{ random.artist }}</strong> / <em>{{ random.title }}</em>
-                                    <br>
+                            <div class="card-content white-text">
+                                <strong>{{ random.artist }}</strong> / <em>{{ random.title }}</em>
+                                <br>
 
-                                    <div class="divider"></div>
-                                    <a class="waves-effect waves-light" href="/release/{{ random.id }}">Details</a>
-                                </div>
+                                <div class="divider"></div>
+                                <a class="waves-effect waves-light" href="/release/{{ random.id }}">Details</a>
                             </div>
-
                         </div>
+
                     </div>
-                {% endfor %}
-            {% endif %}
+                </div>
+            {% endfor %}
+        {% endif %}
 
 
-        </div>
+    </div>
     </div>
 {% endblock %}

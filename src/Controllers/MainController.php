@@ -12,7 +12,6 @@ class MainController
     {
         $latestReleases = $app['vinyl.repository']->findLatestRelease();
         $randomRelease = $app['vinyl.repository']->findRandomRelease();
-//        var_dump($randomRelease);
         $templateName = 'frontend/home';
         $args_array = array(
             'latest_releases' => $latestReleases,

@@ -11,7 +11,7 @@ namespace VinylStoreTests;
 
 
 use Silex\WebTestCase;
-use Symfony\Component\HttpFoundation\Response;
+
 
 
 class MainControllerTest extends WebTestCase
@@ -31,11 +31,11 @@ class MainControllerTest extends WebTestCase
     public function testMainController()
     {
         $client = $this->createClient();
-        $client->followRedirects(true);
-        $crawler = $client->request('GET', '/');
+        $crawler = $client->request('GET', '/home');
 
-        $this->assertTrue($client->getResponse()->isOk());
-        $this->assertGreaterThan(0, $crawler->filter('html:contains("Vinylstore for record enthusiasts")')->count());
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+        $this->assertContains('Welcome', $crawler->filter('body')->text());
+
     }
 
     public function testLoginLink()

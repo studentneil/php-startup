@@ -63,8 +63,8 @@ class VinylRepository implements RepositoryInterface
         $qb->select('*')
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
-
+            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
+            ->andHaving('quantity >= 1');
         $releases = $qb->execute()->fetchAll();
 
         return $releases;
@@ -129,29 +129,25 @@ class VinylRepository implements RepositoryInterface
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
             ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
-            if ($data) {
-                foreach ($data['genre'] as $x => $genre) {
-                    $genreArr[] = $genre;
-                    $qb->orWhere('genre = ?');
-                }
+        if (!empty($data['genre'])) {
+            foreach ($data['genre'] as $x => $genre) {
+                $genreArr[] = $genre;
+                $qb->orWhere('genre = ?');
+            }
+            if (!empty($data['format'])) {
                 foreach ($data['format'] as $y => $format) {
                     $formatArr[] = $format;
                     $qb->orHaving('format = ?');
                 }
-                $dataArr = array_merge($genreArr, $formatArr);
-
-
-
-                    $qb->setParameters($dataArr);
-
-
-
             }
+            $dataArr = array_merge($genreArr, $formatArr);
+            $qb->setParameters($dataArr);
+        }
         $qb->andHaving('quantity >= 1');
-        $sql = $qb->getSQL();
-        $params = $qb->getParameters();
-        var_dump($params);
-        var_dump($sql);
+//        $sql = $qb->getSQL();
+//        $params = $qb->getParameters();
+//        var_dump($params);
+//        var_dump($sql);
         $refinedResults = $qb->execute()->fetchAll();
 //return $sql;
         return $refinedResults;
