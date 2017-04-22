@@ -93,6 +93,20 @@ menu__list * {
     color: red;
 }
 /*****************************************************/
+#refineForm {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+#refine_genre {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+#refine_format {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
 .spacer {
     margin: 4%;
 }

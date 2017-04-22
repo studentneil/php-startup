@@ -29,7 +29,8 @@ class RefineType extends AbstractType
                     'classic rock' => 'classic_rock'
                 ),
                 'multiple' => true,
-                'expanded' => true
+                'expanded' => true,
+                'empty_data' => null
             ))
             ->add('format', ChoiceType::class, array(
                 'choices' => array(
@@ -38,7 +39,8 @@ class RefineType extends AbstractType
                     '7" Single' => '7" Single'
                 ),
                 'multiple' => true,
-                'expanded' => true
+                'expanded' => true,
+                'empty_data' => null
             ));
     }
 

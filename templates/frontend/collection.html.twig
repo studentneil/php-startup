@@ -3,81 +3,64 @@
 {% block content %}
 
     {#<nav class="search-nav z-depth-0">#}
-        {#<div class="nav-wrapper white">#}
-            {#<form>#}
-                {#<div class="col s6 m6 input-field black-text">#}
-                    {#<input id="search" class="black-text" type="search" required>#}
+    {#<div class="nav-wrapper white">#}
+    {#<form>#}
+    {#<div class="col s6 m6 input-field black-text">#}
+    {#<input id="search" class="black-text" type="search" required>#}
 
-                    {#<label class="black-text" for="search"><i class="material-icons black-text">search</i></label>#}
-                    {#<i class="material-icons">close</i>#}
+    {#<label class="black-text" for="search"><i class="material-icons black-text">search</i></label>#}
+    {#<i class="material-icons">close</i>#}
 
-                {#</div>#}
+    {#</div>#}
 
-            {#</form>#}
+    {#</form>#}
 
-        {#</div>#}
+    {#</div>#}
     {#</nav>#}
     <!-- <div class="spacer">
 
     </div> -->
 
 
-<div class="spacer"></div>
+    <div class="spacer"></div>
     <div class="row">
         <div class="col m3 sm6">
-        <a href="#" data-activates="slide-out" class="btn button-collapse grey darken-3">Refine</a>
+            <a href="#" data-activates="slide-out" class="btn button-collapse grey darken-3">Refine</a>
         </div>
     </div>
 
     <ul id="slide-out" class="side-nav">
-        <form action="/refine" method="post">
-            <li>
+
+
+            <form action="/refine" method="post" id="refineForm">
+
+
             {{ form_errors(form) }}
-            <li>{{ form_label(form.genre, 'genre') }}</li>
-            <li><div class="divider"></div></li>
-            {{ form_widget(form.genre) }}<br>
-            {{ form_errors(form.genre) }}
-            </li>
-            <p>
+        {{ form_label(form.genre, 'genre') }}
+
+            <div class="divider"></div>
+
+        {{ form_widget(form.genre) }}
+        {{ form_errors(form.genre) }}
+
             {{ form_label(form.format, 'format') }}
+                <div class="divider"></div>
             {{ form_widget(form.format) }}
             {{ form_errors(form.format) }}
-            </p>
-
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
 
 
-            {{ form_rest(form) }}
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+
+
+        {{ form_rest(form) }}
         </form>
-        <li><i class="material-icons close-menu right-align">close</i></li>
-        <li><a class="flow-text">Refine</a></li>
-        <li><a class="subheader">Genre</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#!">Rock</a></li>
-        <li><a href="#!">Electronic</a></li>
-        <li><a href="#">Classic Rock</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Format</a></li>
-        <li><a href="#!">12" Lp</a></li>
-        <li><a href="#!">12" Single</a></li>
-        <li><a href="#!">7" Single</a></li>
+
     </ul>
 
 
-{#<button class="btn filter-btn">filters</button>#}
-
-    {#<div class="row controls">#}
-
-
-
-    {#</div>#}
-
-
-
-
-<div class="row">
-    {% for release in paginatedReleases %}
-        <div class="mix {{ release.genre }} col m3 s6">
+    <div class="row">
+        {% for release in paginatedReleases %}
+            <div class="mix {{ release.genre }} col m3 s6">
                 <div class="card z-depth-3">
 
                     <div class="card-image waves-block waves-light">
@@ -100,9 +83,9 @@
                     </div>
 
                 </div>
-        </div>
-    {% endfor %}
+            </div>
+        {% endfor %}
 
-</div>
+    </div>
     {% include "frontend/partials/pagination.html.twig" %}
 {% endblock %}

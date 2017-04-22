@@ -30,6 +30,7 @@
     </div>
 
     <ul id="slide-out" class="side-nav">
+        <li>
         <form action="/refine" method="post">
             <li>
                 {{ form_errors(form) }}
@@ -48,19 +49,20 @@
 
 
             {{ form_rest(form) }}
+        </li>
         </form>
-        <li><i class="material-icons close-menu right-align">close</i></li>
-        <li><a class="flow-text">Refine</a></li>
-        <li><a class="subheader">Genre</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#!">Rock</a></li>
-        <li><a href="#!">Electronic</a></li>
-        <li><a href="#">Classic Rock</a></li>
-        <li><div class="divider"></div></li>
-        <li><a class="subheader">Format</a></li>
-        <li><a href="#!">12" Lp</a></li>
-        <li><a href="#!">12" Single</a></li>
-        <li><a href="#!">7" Single</a></li>
+        {#<li><i class="material-icons close-menu right-align">close</i></li>#}
+        {#<li><a class="flow-text">Refine</a></li>#}
+        {#<li><a class="subheader">Genre</a></li>#}
+        {#<li><div class="divider"></div></li>#}
+        {#<li><a href="#!">Rock</a></li>#}
+        {#<li><a href="#!">Electronic</a></li>#}
+        {#<li><a href="#">Classic Rock</a></li>#}
+        {#<li><div class="divider"></div></li>#}
+        {#<li><a class="subheader">Format</a></li>#}
+        {#<li><a href="#!">12" Lp</a></li>#}
+        {#<li><a href="#!">12" Single</a></li>#}
+        {#<li><a href="#!">7" Single</a></li>#}
     </ul>
 
 

@@ -12,12 +12,14 @@ class VinylRepository implements RepositoryInterface
     {
         $this->conn = $conn;
     }
+
     public function save($release)
     {
         $count = $this->conn->insert('releases', $release);
 
         return $count;
     }
+
     public function findAll()
     {
         $stmt = $this->conn->prepare('SELECT * FROM releases');
@@ -26,6 +28,7 @@ class VinylRepository implements RepositoryInterface
 
         return $collection;
     }
+
     public function findOneById($id)
     {
         //        $safeId = filter_var($id, FILTER_VALIDATE_INT);
@@ -41,16 +44,19 @@ class VinylRepository implements RepositoryInterface
 
         return $release;
     }
+
     public function deleteOneById($id)
     {
         $count = $this->conn->delete('releases', array('id' => $id));
 
         return $count;
     }
+
     public function getCount()
     {
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM releases');
     }
+
     public function findEverything()
     {
         $qb = $this->conn->createQueryBuilder();
@@ -63,6 +69,7 @@ class VinylRepository implements RepositoryInterface
 
         return $releases;
     }
+
     public function fillChoicesWithReleaseId()
     {
         $qb = $this->conn->createQueryBuilder();
@@ -88,6 +95,7 @@ class VinylRepository implements RepositoryInterface
 
         return $latestReleases;
     }
+
     public function findRandomRelease()
     {
         $stmt = $this->conn->prepare('SELECT * FROM releases INNER JOIN images ON releases.id=images.release_id ORDER BY RAND() LIMIT 4');
@@ -96,6 +104,7 @@ class VinylRepository implements RepositoryInterface
 
         return $randomRelease;
     }
+
     public function findForPagination($limit, $offset = 0)
     {
         $qb = $this->conn->createQueryBuilder();
@@ -112,6 +121,7 @@ class VinylRepository implements RepositoryInterface
 
         return $paginatedReleases;
     }
+
     public function refine($data)
     {
         $qb = $this->conn->createQueryBuilder();
@@ -119,18 +129,31 @@ class VinylRepository implements RepositoryInterface
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
             ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
-            if ($data['genre']) {
-                $qb->where('genre = :genre')
-                    ->setParameter(':genre', $data['genre'][0]);
+            if ($data) {
+                foreach ($data['genre'] as $x => $genre) {
+                    $genreArr[] = $genre;
+                    $qb->orWhere('genre = ?');
+                }
+                foreach ($data['format'] as $y => $format) {
+                    $formatArr[] = $format;
+                    $qb->orHaving('format = ?');
+                }
+                $dataArr = array_merge($genreArr, $formatArr);
+
+
+
+                    $qb->setParameters($dataArr);
+
+
+
             }
-
-          if ($data['format']) {
-              $qb->andWhere('format = :format')
-                  ->setParameter(':format', $data['format'][0]);
-          }
-
+        $qb->andHaving('quantity >= 1');
+        $sql = $qb->getSQL();
+        $params = $qb->getParameters();
+        var_dump($params);
+        var_dump($sql);
         $refinedResults = $qb->execute()->fetchAll();
-
+//return $sql;
         return $refinedResults;
 
     }
