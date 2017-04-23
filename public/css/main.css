@@ -159,6 +159,17 @@ button {
 h1 {
     font-family: 'Permanent Marker', cursive;
 }
+.sideNav_title {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.tab_content {
+    margin-top: 2em;
+    padding: 2em;
+}
+.tabs > .tab > .a {
+    color: black;
+}
 @media (min-width: 600px) {
     .brand-logo {
         font-family: 'Permanent Marker', cursive;

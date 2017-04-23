@@ -34,9 +34,11 @@ class RefineType extends AbstractType
             ))
             ->add('format', ChoiceType::class, array(
                 'choices' => array(
+                    '12" double Lp' => '12" double Lp',
+                    '12" e.p' => '12" e.p',
                     '12" Lp' => '12" Lp',
-                    '12" Single' => '12" Single',
-                    '7" Single' => '7" Single'
+                    '12" single' => '12" single',
+                    '7" single' => '7" single'
                 ),
                 'multiple' => true,
                 'expanded' => true,

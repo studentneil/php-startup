@@ -2,26 +2,6 @@
 {% set active_page = 'vinyl' %}
 {% block content %}
 
-    {#<nav class="search-nav z-depth-0">#}
-    {#<div class="nav-wrapper white">#}
-    {#<form>#}
-    {#<div class="col s6 m6 input-field black-text">#}
-    {#<input id="search" class="black-text" type="search" required>#}
-
-    {#<label class="black-text" for="search"><i class="material-icons black-text">search</i></label>#}
-    {#<i class="material-icons">close</i>#}
-
-    {#</div>#}
-
-    {#</form>#}
-
-    {#</div>#}
-    {#</nav>#}
-    <!-- <div class="spacer">
-
-    </div> -->
-
-
     <div class="spacer"></div>
     <div class="row">
         <div class="col m3 sm6">
@@ -30,52 +10,30 @@
     </div>
 
     <ul id="slide-out" class="side-nav">
-        <li>
-        <form action="/refine" method="post">
-            <li>
+        <li><a href="/" class="brand-logo black-text">The Record Box</a></li>
+            <form action="/refine" method="post" id="refineForm">
+
                 {{ form_errors(form) }}
-            <li>{{ form_label(form.genre, 'genre') }}</li>
-            <li><div class="divider"></div></li>
-            {{ form_widget(form.genre) }}<br>
-            {{ form_errors(form.genre) }}
-            </li>
-            <p>
-                {{ form_label(form.format, 'format') }}
-                {{ form_widget(form.format) }}
-                {{ form_errors(form.format) }}
-            </p>
+                {{ form_label(form.genre, 'genre') }}
+            <div class="divider"></div>
 
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+        {{ form_widget(form.genre) }}
+        {{ form_errors(form.genre) }}
+
+        {{ form_label(form.format, 'format') }}
+                <div class="divider"></div>
+        {{ form_widget(form.format) }}
+        {{ form_errors(form.format) }}
 
 
-            {{ form_rest(form) }}
-        </li>
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+
+
+        {{ form_rest(form) }}
+
         </form>
-        {#<li><i class="material-icons close-menu right-align">close</i></li>#}
-        {#<li><a class="flow-text">Refine</a></li>#}
-        {#<li><a class="subheader">Genre</a></li>#}
-        {#<li><div class="divider"></div></li>#}
-        {#<li><a href="#!">Rock</a></li>#}
-        {#<li><a href="#!">Electronic</a></li>#}
-        {#<li><a href="#">Classic Rock</a></li>#}
-        {#<li><div class="divider"></div></li>#}
-        {#<li><a class="subheader">Format</a></li>#}
-        {#<li><a href="#!">12" Lp</a></li>#}
-        {#<li><a href="#!">12" Single</a></li>#}
-        {#<li><a href="#!">7" Single</a></li>#}
+
     </ul>
-
-
-    {#<button class="btn filter-btn">filters</button>#}
-
-    {#<div class="row controls">#}
-
-
-
-    {#</div>#}
-
-
-
 
     <div class="row">
         {% for release in refinedResults %}
@@ -106,5 +64,7 @@
         {% endfor %}
 
     </div>
-    {#{% include "frontend/partials/pagination.html.twig" %}#}
+
+
+
 {% endblock %}

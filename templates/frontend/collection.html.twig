@@ -2,24 +2,6 @@
 {% set active_page = 'vinyl' %}
 {% block content %}
 
-    {#<nav class="search-nav z-depth-0">#}
-    {#<div class="nav-wrapper white">#}
-    {#<form>#}
-    {#<div class="col s6 m6 input-field black-text">#}
-    {#<input id="search" class="black-text" type="search" required>#}
-
-    {#<label class="black-text" for="search"><i class="material-icons black-text">search</i></label>#}
-    {#<i class="material-icons">close</i>#}
-
-    {#</div>#}
-
-    {#</form>#}
-
-    {#</div>#}
-    {#</nav>#}
-    <!-- <div class="spacer">
-
-    </div> -->
 
 
     <div class="spacer"></div>
@@ -32,60 +14,61 @@
     <ul id="slide-out" class="side-nav">
 
 
-            <form action="/refine" method="post" id="refineForm">
+        <form action="/refine" method="post" id="refineForm">
 
-
+            <h1 class="flow-text sideNav_title">The Record Box</h1>
             {{ form_errors(form) }}
-        {{ form_label(form.genre, 'genre') }}
+            {{ form_label(form.genre, 'genre') }}
 
             <div class="divider"></div>
 
-        {{ form_widget(form.genre) }}
-        {{ form_errors(form.genre) }}
+            {{ form_widget(form.genre) }}
+            {{ form_errors(form.genre) }}
 
             {{ form_label(form.format, 'format') }}
-                <div class="divider"></div>
+            <div class="divider"></div>
             {{ form_widget(form.format) }}
             {{ form_errors(form.format) }}
 
 
-        <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
 
 
-        {{ form_rest(form) }}
+            {{ form_rest(form) }}
         </form>
 
     </ul>
 
 
     <div class="row">
-        {% for release in paginatedReleases %}
-            <div class="mix {{ release.genre }} col m3 s6">
-                <div class="card z-depth-3">
+        {% if paginatedReleases is defined %}
+            {% for release in paginatedReleases %}
+                <div class="mix {{ release.genre }} col m3 s6">
+                    <div class="card z-depth-3">
 
-                    <div class="card-image waves-block waves-light">
-                        <img class="activator" src="/uploads/{{ release.image }}" alt="cover art">
-                    </div>
+                        <div class="card-image waves-block waves-light">
+                            <img class="activator" src="/uploads/{{ release.image }}" alt="cover art">
+                        </div>
 
-                    <div class="card-reveal">
+                        <div class="card-reveal">
                         <span class="card-title white-text">
                             <i class="material-icons right">close</i>
                         </span>
-                        <div class="card-content white-text">
-                            {{ release.artist }} /
-                            <em>{{ release.title }}</em><br>
-                            {#<p>{{ release.format }}</p>#}
-                            {#<p>{{ release.label }}</p>#}
-                            &euro;{{ release.price }}
-                            <div class="divider"></div>
-                            <a class="waves-effect waves-light" href="/release/{{ release.id }}">Details</a>
+                            <div class="card-content white-text">
+                                {{ release.artist }} /
+                                <em>{{ release.title }}</em><br>
+                                {#<p>{{ release.format }}</p>#}
+                                {#<p>{{ release.label }}</p>#}
+                                &euro;{{ release.price }}
+                                <div class="divider"></div>
+                                <a class="waves-effect waves-light" href="/release/{{ release.id }}">Details</a>
+                            </div>
                         </div>
+
                     </div>
-
                 </div>
-            </div>
-        {% endfor %}
-
+            {% endfor %}
+        {% endif %}
     </div>
     {% include "frontend/partials/pagination.html.twig" %}
 {% endblock %}

@@ -23,25 +23,22 @@ class MainController
 
     public function getVinylAction(Request $request, Application $app)
     {
-        $limit = 5;
+        $limit = 8;
         $total = $app['vinyl.repository']->getCount();
         $numPages = ceil($total / $limit);
         $currentPage = $request->get('page', 1);
         $offset = ($currentPage - 1) * $limit;
         $paginatedReleases = $app['vinyl.repository']->findForPagination($limit, $offset);
-        $data = array();
+        $refineFormData = array();
         $form = $app['form.factory']
-            ->createBuilder(RefineType::class, $data)
+            ->createBuilder(RefineType::class, $refineFormData)
             ->getForm();
-        $form->handleRequest($request);
-        if ($form->isValid()) {
-            $data = $form->getData();
-//
-        }
+
         $templateName = 'frontend/collection';
         $args_array = array(
             'numPages' => $numPages,
             'paginatedReleases' => $paginatedReleases,
+
             'currentPage' => $currentPage,
             'form' => $form->createView()
         );
@@ -52,7 +49,6 @@ class MainController
     public function getReleaseByIdAction(Application $app, $id)
     {
         $release = $app['vinyl.repository']->findOneById($id);
-//        var_dump($release);
         $templateName = 'frontend/release';
         $args_array = array(
             'release' => $release,
@@ -63,19 +59,21 @@ class MainController
 
     public function refineAction(Request $request, Application $app)
     {
-        $data = array();
+
+        $refineFormData = array();
         $form = $app['form.factory']
-            ->createBuilder(RefineType::class, $data)
+            ->createBuilder(RefineType::class, $refineFormData)
             ->getForm();
         $form->handleRequest($request);
+
         if ($form->isValid()) {
-            $data = $form->getData();
-            $refinedResults = $app['vinyl.repository']->refine($data);
+            $refineFormData = $form->getData();
+            $refinedResults = $app['vinyl.repository']->refine($refineFormData);
         }
         $templateName = 'frontend/collectionRefined';
         $args_array = array(
             'form' => $form->createView(),
-            'refinedResults' => $refinedResults
+            'refinedResults' => $refinedResults,
 
         );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
