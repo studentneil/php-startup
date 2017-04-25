@@ -17,6 +17,8 @@ class MessageService
     const RELEASE_CREATED = 'Success! A new release was created';
     const PRICING_ADDED = 'Success! Pricing data was added to a release';
     const PRICING_NOT_ADDED = 'Sorry, pricing data wasnt added';
+    const RELEASE_EDITED = 'Succes! You have just edited a release';
+    const RELEASE_NOT_EDITED = 'Sorry, that didnt edit properly.';
 
     public function getImageSuccessMessage()
     {
@@ -45,5 +47,12 @@ class MessageService
     public function getPricingNotAdded()
     {
         return self::PRICING_NOT_ADDED;
+    }
+    public function getReleaseEdited()
+    {
+        return self::RELEASE_EDITED;
+    }
+    public function getReleaseNotEdited(){
+        return self::RELEASE_NOT_EDITED;
     }
 }

@@ -35,7 +35,7 @@ class PricingRepository implements RepositoryInterface
     }
     public function findOneById($id)
     {
-        $stmt = $this->conn->prepare('SELECT * FROM snipcart_data WHERE id=:id');
+        $stmt = $this->conn->prepare('SELECT * FROM snipcart_data WHERE release_id=:id');
         $stmt->bindValue('id', $id);
         $stmt->execute();
         $priceData = $stmt->fetch();
@@ -51,5 +51,12 @@ class PricingRepository implements RepositoryInterface
     public function getCount()
     {
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM snipcart_data');
+    }
+
+    public function editPricing(array $pricingData, $id)
+    {
+        $count = $this->conn->update('snipcart_data', $pricingData, array('release_id' => $id));
+
+        return $count;
     }
 }

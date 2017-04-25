@@ -14,12 +14,28 @@
 
                         <span class="card-title"></span>
                     </div>
-                    <div class="card-content">
+                    <div class="card-content release_content">
 
-                        <p>{{ release.title }}</p>
-                        <p>{{ release.artist }}</p>
-                        <p>{{ release.genre }}</p>
+                        <p>{{ release.artist|title }} / {{ release.title|title }}  </p>
+                        <p>{{ release.genre|capitalize }}</p>
+                        <p>{{ release.format|capitalize }}</p>
+                        <p>&euro;{{ release.price }}</p>
 
+
+                    </div>
+                    <div class="card-tabs">
+                        <ul class="tabs tabs-fixed-width">
+                            <li class="tab"><a href="#media">Media Condition</a></li>
+                            <li class="tab"><a href="#sleeve">Sleeve Condition</a></li>
+                            <li class="tab"><a class="active" href="#notes">Notes</a></li>
+                            <li class="tab"><a href="#label">Label</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-content grey lighten-4 tab_content">
+                        <div id="media">{{ release.media_condition }}</div>
+                        <div id="sleeve">{{ release.sleeve_condition }}</div>
+                        <div id="notes">{{ release.notes }}</div>
+                        <div id="label">{{ release.label }}</div>
                     </div>
                     <div class="card-action">
                         <a class="snipcart-add-item waves-effect blue darken-2 btn"
@@ -33,24 +49,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6">
-                <div class="card-panel white lighten-2">
-                    <div class="card-tabs">
-                        <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a href="#test1">Title</a></li>
-                            <li class="tab"><a href="#test4">Format</a></li>
-                            <li class="tab"><a class="active" href="#test5">Notes</a></li>
-                            <li class="tab"><a href="#test6">Label</a></li>
-                        </ul>
-                    </div>
-                    <div class="card-content grey lighten-4 tab_content">
-                        <div id="test1">{{ release.title }}</div>
-                        <div id="test4">{{ release.format }}</div>
-                        <div id="test5">{{ release.notes }}</div>
-                        <div id="test6">{{ release.label }}</div>
-                    </div>
-                </div>
-            </div>
+            {#<div class="col s12 m6">#}
+                {#<div class="card-panel white lighten-2">#}
+                    {#<h1>More Details</h1>#}
+
+                {#</div>#}
+            {#</div>#}
         </div>
     </div>
 {% endblock %}

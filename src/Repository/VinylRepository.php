@@ -152,4 +152,24 @@ class VinylRepository implements RepositoryInterface
         return $refinedResults;
 
     }
+    public function findReleaseForEdit($id)
+    {
+        //        $safeId = filter_var($id, FILTER_VALIDATE_INT);
+        $qb = $this->conn->createQueryBuilder();
+        $qb->select('*')
+            ->from('releases', 'r')
+            ->where('r.id = ?')
+            ->setParameter(0, $id);
+
+        $release = $qb->execute()->fetch();
+
+        return $release;
+    }
+
+    public function editRelease(array $releaseData, $id)
+    {
+        $count = $this->conn->update('releases', $releaseData, array('id' => $id));
+
+        return $count;
+    }
 }

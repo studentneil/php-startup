@@ -12,7 +12,7 @@
 
                 <li><a href="/admin/view-images">View Images</a></li>
 
-                <li><a href="/admin/pricing">Pricing</a></li>
+                <li><a href="/admin/view-pricing">View Pricing</a></li>
                 <li>
                     <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
                 </li>
@@ -28,13 +28,13 @@
         <li class="center-align">
             <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
         </li>
-        <li><a href="/admin/dashboard">Database</a></li>
+        <li><a href="/admin/dashboard">View Releases</a></li>
 
         <li>
-            <a href="/admin/view-images" data-activates="dropdown-mobile">Images</button>
+            <a href="/admin/view-images">View Images</a>
         </li>
 
-        <li><a href="/admin/pricing">Pricing</a></li>
+        <li><a href="/admin/view-pricing">View Pricing</a></li>
         <li><a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a></li>
     </ul>
 {% endblock %}
