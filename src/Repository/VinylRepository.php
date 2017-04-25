@@ -143,7 +143,10 @@ class VinylRepository implements RepositoryInterface
                 }
             }
             $dataArr = array_merge($genreArr, $formatArr);
-            $qb->setParameters($dataArr);
+            if (!empty($dataArr)){
+                $qb->setParameters($dataArr);
+            }
+
         }
 
         $qb->andHaving('quantity >= 1');

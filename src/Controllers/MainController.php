@@ -5,6 +5,7 @@ namespace VinylStore\Controllers;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use VinylStore\Forms\RefineType;
+use VinylStore\Paginator;
 
 class MainController
 {
@@ -23,11 +24,15 @@ class MainController
 
     public function getVinylAction(Request $request, Application $app)
     {
-        $limit = 8;
+//        $limit = 8;
         $total = $app['vinyl.repository']->getCount();
-        $numPages = ceil($total / $limit);
-        $currentPage = $request->get('page', 1);
-        $offset = ($currentPage - 1) * $limit;
+//        $numPages = ceil($total / $limit);
+//        $currentPage = $request->get('page', 1);
+//        $offset = ($currentPage - 1) * $limit;
+        $pager = new Paginator(8, $total);
+        $pager->setCurrentPage($request->get('page', 1));
+        $offset = $pager->getOffset();
+        $limit = $pager->getLimit();
         $paginatedReleases = $app['vinyl.repository']->findForPagination($limit, $offset);
         $refineFormData = array();
         $form = $app['form.factory']
@@ -36,10 +41,10 @@ class MainController
 
         $templateName = 'frontend/collection';
         $args_array = array(
-            'numPages' => $numPages,
+            'numPages' => $pager->getNumPages(),
             'paginatedReleases' => $paginatedReleases,
 
-            'currentPage' => $currentPage,
+            'currentPage' => $pager->getCurrentPage(),
             'form' => $form->createView()
         );
 
@@ -65,7 +70,9 @@ class MainController
             ->createBuilder(RefineType::class, $refineFormData)
             ->getForm();
         $form->handleRequest($request);
-
+        if (!$form->isSubmitted()) {
+            return $app->redirect('/vinyl');
+        }
         if ($form->isValid()) {
             $refineFormData = $form->getData();
             $refinedResults = $app['vinyl.repository']->refine($refineFormData);
