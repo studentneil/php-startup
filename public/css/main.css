@@ -123,10 +123,12 @@ button {
 .card .card-reveal {
     background-color: #2e3436;
 }
-
-/*.card .card-content {*/
-    /*padding: 0;*/
-/*}*/
+.container .card .release_content {
+    padding: 2em;
+}
+.card .card-content {
+    padding: 0;
+}
 
 /* collapsibles */
 
@@ -152,10 +154,10 @@ button {
     background-color: #99cb84;
 }
 
-.footer-copyright {
-    margin: 0;
+/*.footer-copyright {*/
+    /*margin: 0;*/
 
-}
+/*}*/
 h1 {
     font-family: 'Permanent Marker', cursive;
 }
@@ -163,16 +165,19 @@ h1 {
     font-family: 'Permanent Marker', cursive;
 }
 
-.tab_content {
+.card .tab_content {
     margin-top: 2em;
     padding: 2em;
 }
-.tabs > .tab > .a {
-    color: black;
+.card-tabs .tabs .tab a {
+    color: rgba(101,80,115,0.7);
+    transition: color .28s ease;
 }
-.release_content {
-    padding: 2em;
+.card-tabs .tabs .tab a:hover {
+    color: rgba(238,80,115,0.7);
+    transition: color .28s ease;
 }
+
 @media (min-width: 600px) {
     .brand-logo {
         font-family: 'Permanent Marker', cursive;

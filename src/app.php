@@ -60,6 +60,8 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
     'security.encoder.bcrypt.cost' => $config['login']['bcrypt'],
     )
 );
+// slugify strings for nice urls
+$app->register(new Cocur\Slugify\Bridge\Silex2\SlugifyServiceProvider());
 $app->register(new FormServiceProvider());
 // register custom forms here.
 // create a new release form
