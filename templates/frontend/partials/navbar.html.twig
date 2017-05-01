@@ -5,8 +5,8 @@
 <div class="navbar-fixed">
     <nav class="nav-extended shrink white">
         <div class="nav-wrapper">
-            <a href="/" class="brand-logo black-text">The Record Box</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse black-text"><i class="material-icons">menu</i></a>
+            <a href="/" class="brand-logo black-text left">The Record Box</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse black-text right"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down menu__list">
                 {% for item in navbar %}
                     <li{% if item[0]==active_page %} class="active" {% endif %} data-hover="{{ item[1] }}">
@@ -20,9 +20,10 @@
 </div>
 {# off-canvas nav on mobiles #}
 
-<ul class="side-nav center-align" id="mobile-demo">
-
-    <div><i class="material-icons close-menu right-align">close</i></div>
+<ul class="side-nav" id="mobile-nav">
+{#<li>#}
+    {#<i class="material-icons close-menu">close</i>#}
+{#</li>#}
     {% for item in navbar %}
         <li{% if item[0]==active_page %} class="active" {% endif %}>
             <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }}</a>
@@ -32,3 +33,5 @@
         <a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a>
     </li>
 </ul>
+
+

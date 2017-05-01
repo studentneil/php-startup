@@ -23,7 +23,7 @@ main {
 
 .side-nav {
     width: 50%;
-    padding-top: 2rem;
+    padding-top: 1em;
 
 }
 .brand-logo {
@@ -138,9 +138,12 @@ button {
 
 .fixed-action-btn {
     position: relative;
-    top: 0;
-    left: 10px;
+    top: 20px;
+    left: 0;
+    z-index: 900;
 }
+
+
 
 .header-image {
     background-image: url(/images/vinyl-spines.jpg);
@@ -178,6 +181,10 @@ h1 {
     transition: color .28s ease;
 }
 
+.btn-floating {
+    border-radius: 0;
+}
+
 @media (min-width: 600px) {
     .brand-logo {
         font-family: 'Permanent Marker', cursive;
@@ -211,15 +218,16 @@ h1 {
         transition: all 0.4s ease;
     }
 
-    nav ul li.active {
-        background-color: white;
 
-    }
 
 
     .side-nav {
         width: 20%;
         padding-top: 4rem;
+    }
+
+    .homepage_sections{
+        margin: 3em;
     }
 
 }

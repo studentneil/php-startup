@@ -3,8 +3,9 @@
  */
 // jquery code for initializing various frontend effects/plugins
 $(document).ready(function() {
-    $(".button-collapse").sideNav({
-        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+    $('.button-collapse').sideNav({
+        // closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        edge: 'right',
         draggable: true // Choose whether you can drag to open on touch screens
     });
     $('.close-menu').on('click', function(){

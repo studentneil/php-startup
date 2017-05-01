@@ -27,74 +27,65 @@
             </div>
         </div>
     </div>
-    <div class="spacer_large"></div>
-    {#<div class="divider"></div>#}
-    <div class="container center-align section-headings">
-        <h1 class="flow-text">Featured Vinyls.</h1>
-    </div>
-    <div class="section card-panel">
-        <div class="row center-align">
 
 
-            <div class="col s12 m3">
-
-            </div>
-        </div>
-    </div>
-    <div class="spacer_large"></div>
-    <div class="container center-align section-headings">
-        <h1 class="flow-text">New vinyl</h1>
-        <p class="flow-text">Check out our newest vinyl.</p>
-    </div>
 
 
-    <div class="row">
 
-<div class="col m6 s12">
-        {% if latest_releases is defined %}
-            {% for latest in latest_releases %}
-                <div class="col m6 s6">
-                    <div class="card">
-                        <div class="card-image">
-                            <img class="activator" src="/uploads/{{ latest.image }}" alt="">
-                        </div>
-                        <div class="card-reveal">
+
+
+    <div class="row homepage_sections">
+
+        <div class="col m6 s12">
+            {% if latest_releases is defined %}
+                {% for latest in latest_releases %}
+                    <div class="col m6 s6">
+                        <div class="card">
+                            <div class="card-image">
+                                <img class="activator" src="/uploads/{{ latest.image }}" alt="">
+                            </div>
+                            <div class="card-reveal">
                                  <span class="card-title white-text">
                                     <i class="material-icons right">close</i>
                                 </span>
-                            <div class="card-content white-text">
-                                <strong>{{ latest.artist }}</strong> / <em>{{ latest.title }}</em>
-                                <br>
-                                &euro;{{ latest.price }}
-                                <div class="divider"></div>
-                                <a class="waves-effect waves-light" href="/release/{{ latest.title|slugify }}/{{ latest.id }}">Details</a>
+                                <div class="card-content white-text">
+                                    <strong>{{ latest.artist }}</strong> / <em>{{ latest.title }}</em>
+                                    <br>
+                                    {{ latest.format }}
+                                    <br>
+                                    &euro;{{ latest.price }}
+                                    <div class="divider"></div>
+                                    <a class="waves-effect waves-light" href="/release/{{ latest.title|slugify }}/{{ latest.id }}">Details</a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-            {% endfor %}
-        {% endif %}
-</div>
+                {% endfor %}
+            {% endif %}
+        </div>
         <div class="col m6 s12">
-            <div class="card-panel">
-            <h2>more content</h2>
+            <div class="section">
+                <h1 class="flow-text">New In</h1>
+                <p>Check out our newest vinyl.</p>
             </div>
         </div>
     </div>
 
 
     <div class="spacer_large"></div>
-    <div class="container center-align section-headings">
-        <h1 class="flow-text">Random vinyl</h1>
-        <p class="flow-text">Or try from a selection of randomers.</p>
-    </div>
-    <div class="row">
 
-
+    <div class="row homepage_sections">
+        <div class="col m6 s12">
+            <div class="section">
+                <h1 class="flow-text">Random Vinyl</h1>
+                <p>Try from a selection of random vinyl</p>
+            </div>
+        </div>
+<div class="col m6 s12">
         {% if random_release is defined %}
             {% for random in random_release %}
-                <div class="col m3 s6">
+                <div class="col m6 s6">
                     <div class="card">
 
                         <div class="card-image">
@@ -107,7 +98,8 @@
                             <div class="card-content white-text">
                                 <strong>{{ random.artist }}</strong> / <em>{{ random.title }}</em>
                                 <br>
-
+                                {{ random.format }}
+                                <br>
                                 <div class="divider"></div>
                                 <a class="waves-effect waves-light" href="/release/{{ random.title|slugify }}/{{ random.id }}">Details</a>
                             </div>
@@ -118,7 +110,7 @@
             {% endfor %}
         {% endif %}
 
-
+</div>
     </div>
     </div>
 {% endblock %}
