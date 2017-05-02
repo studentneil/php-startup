@@ -70,6 +70,20 @@ class VinylRepository implements RepositoryInterface
         return $releases;
     }
 
+    public function getReleasesByGenre($genre)
+    {
+        $qb = $this->conn->createQueryBuilder();
+        $qb->select('*')
+            ->from('releases', 'r')
+            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
+            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
+            ->andWhere('genre = ?')
+            ->andHaving('quantity >= 1')
+            ->setParameter(0, $genre);
+        $genreReleases = $qb->execute()->fetchAll();
+
+        return $genreReleases;
+    }
     public function fillChoicesWithReleaseId()
     {
         $qb = $this->conn->createQueryBuilder();
@@ -136,19 +150,17 @@ class VinylRepository implements RepositoryInterface
                 $genreArr[] = $genre;
                 $qb->orWhere('genre = ?');
             }
-            if (!empty($refineFormData['format'])) {
-                foreach ($refineFormData['format'] as $y => $format) {
-                    $formatArr[] = $format;
-                    $qb->orHaving('format = ?');
-                }
-            }
-            $dataArr = array_merge($genreArr, $formatArr);
-            if (!empty($dataArr)){
-                $qb->setParameters($dataArr);
-            }
-
         }
-
+        if (!empty($refineFormData['format'])) {
+            foreach ($refineFormData['format'] as $y => $format) {
+                $formatArr[] = $format;
+                $qb->orHaving('format = ?');
+            }
+        }
+        $dataArr = array_merge($genreArr, $formatArr);
+        if (!empty($dataArr)){
+            $qb->setParameters($dataArr);
+        }
         $qb->andHaving('quantity >= 1');
         $refinedResults = $qb->execute()->fetchAll();
 

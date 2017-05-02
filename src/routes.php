@@ -9,8 +9,9 @@
 $app->get('/', 'VinylStore\\Controllers\\MainController::indexAction');
 $app->get('/home', 'VinylStore\\Controllers\\MainController::indexAction');
 $app->get('/login', 'VinylStore\\Controllers\\LoginController::loginAction');
-$app->get('/release/{title}/{id}', 'VinylStore\\Controllers\\MainController::getReleaseByIdAction');
+$app->get('/vinyl/{genre}/release/{title}/{id}', 'VinylStore\\Controllers\\MainController::getReleaseByIdAction');
 $app->get('/vinyl', 'VinylStore\\Controllers\\MainController::getVinylAction');
+$app->get('/vinyl/{genre}', 'VinylStore\\Controllers\\MainController::getGenreAction');
 $app->match('/refine', 'VinylStore\\Controllers\\MainController::refineAction');
 $app->get('/vinyl/page/{page}', 'VinylStore\\Controllers\\MainController::getVinylAction')->value('page', '1');
 $app->get('/admin/dashboard', 'VinylStore\\Controllers\\LoginController::dashboardAction');

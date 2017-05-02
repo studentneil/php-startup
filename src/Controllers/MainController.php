@@ -24,11 +24,7 @@ class MainController
 
     public function getVinylAction(Request $request, Application $app)
     {
-//        $limit = 8;
         $total = $app['vinyl.repository']->getCount();
-//        $numPages = ceil($total / $limit);
-//        $currentPage = $request->get('page', 1);
-//        $offset = ($currentPage - 1) * $limit;
         $pager = new Paginator(8, $total);
         $pager->setCurrentPage($request->get('page', 1));
         $offset = $pager->getOffset();
@@ -42,9 +38,25 @@ class MainController
         $templateName = 'frontend/collection';
         $args_array = array(
             'numPages' => $pager->getNumPages(),
-            'paginatedReleases' => $paginatedReleases,
-
+            'results' => $paginatedReleases,
             'currentPage' => $pager->getCurrentPage(),
+            'form' => $form->createView()
+        );
+
+        return $app['twig']->render($templateName.'.html.twig', $args_array);
+    }
+
+    public function getGenreAction(Request $request, Application $app, $genre)
+    {
+        $results = $app['vinyl.repository']->getReleasesByGenre($genre);
+        $refineFormData = array();
+        $form = $app['form.factory']
+            ->createBuilder(RefineType::class, $refineFormData)
+            ->getForm();
+
+        $templateName = 'frontend/collection';
+        $args_array = array(
+            'results' => $results,
             'form' => $form->createView()
         );
 
@@ -77,11 +89,11 @@ class MainController
             $refineFormData = $form->getData();
             $refinedResults = $app['vinyl.repository']->refine($refineFormData);
         }
-        $templateName = 'frontend/collectionRefined';
+
+        $templateName = 'frontend/collection';
         $args_array = array(
             'form' => $form->createView(),
-            'refinedResults' => $refinedResults,
-
+            'results' => $refinedResults,
         );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }

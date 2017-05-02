@@ -1,4 +1,4 @@
-{% if numPages > 1 %}
+{% if numPages is defined and numPages > 1 %}
     <div class="row pagination container center-align">
         <ul>
             <li {% if currentPage == 1 %}class="disabled"{% endif %}>
