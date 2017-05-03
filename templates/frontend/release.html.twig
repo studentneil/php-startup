@@ -42,7 +42,7 @@
                            data-item-id="{{ release.id }}"
                            data-item-name="{{ release.release_name }}"
                            data-item-price="{{ release.price }}"
-                           data-item-url="{{ release.url }}"
+                           data-item-url="https://76df3c8a.ngrok.io/vinyl/{{ release.genre }}/release/{{ release.release_name|slugify }}/{{ release.id }}"
                            data-item-description="{{ release.description }}">Cart
                         </a>
                         <a href="/vinyl" class="waves-effect btn-flat">Vinyl</a>

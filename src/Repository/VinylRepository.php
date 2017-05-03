@@ -112,7 +112,7 @@ class VinylRepository implements RepositoryInterface
 
     public function findRandomRelease()
     {
-        $stmt = $this->conn->prepare('SELECT * FROM releases INNER JOIN images ON releases.id=images.release_id ORDER BY RAND() LIMIT 4');
+        $stmt = $this->conn->prepare('SELECT * FROM releases INNER JOIN images ON releases.id=images.release_id AND releases.quantity >= 1 ORDER BY RAND() LIMIT 4 ');
         $stmt->execute();
         $randomRelease = $stmt->fetchAll();
 
@@ -185,6 +185,12 @@ class VinylRepository implements RepositoryInterface
     {
         $count = $this->conn->update('releases', $releaseData, array('id' => $id));
 
+        return $count;
+    }
+
+    public function orderCompleted($id)
+    {
+        $count = $this->conn->executeUpdate('UPDATE releases SET quantity = quantity-1 WHERE id = ?', array($id));
         return $count;
     }
 }
