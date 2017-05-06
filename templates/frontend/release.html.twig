@@ -16,7 +16,8 @@
                     </div>
                     <div class="card-content release_content">
 
-                        <p>{{ release.artist|title }} / {{ release.title|title }}  </p>
+                        <p>{{ release.artist|title }}</p>
+                        <p>{{ release.title|title }}  </p>
                         <p>{{ release.genre|capitalize }}</p>
                         <p>{{ release.format|capitalize }}</p>
                         <p>&euro;{{ release.price }}</p>
@@ -51,8 +52,8 @@
             </div>
             <div class="col s12 m6">
                 <div class="card-panel white lighten-2">
-                    <h2 class="flow-text">More Details</h2>
-
+                    <h2 class="flow-text grey lighten-4 track_header">TRACKLIST</h2>
+                        {{ render(controller('VinylStore\\Controllers\\TracklistController::getTracklistAction', {'catno': release.catno } )) }}
                 </div>
             </div>
         </div>

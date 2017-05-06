@@ -204,6 +204,16 @@ h1 {
     border-radius: 0;
 }
 
+.track_header {
+    margin: 0;
+    padding: 2rem;
+}
+.track_list-body {
+    padding: 2em;
+}
+.container .card-panel {
+    padding: 0;
+}
 @media (min-width: 600px) {
     .brand-logo {
         font-family: 'Permanent Marker', cursive;

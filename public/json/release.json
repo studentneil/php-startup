@@ -1,0 +1,699 @@
+{
+    "status": "Accepted",
+    "videos": [
+        {
+            "duration": 182,
+            "embed": true,
+            "title": "Arctic Monkeys - Brianstorm (2007)",
+            "description": "Arctic Monkeys - Brianstorm (2007)",
+            "uri": "https:\/\/www.youtube.com\/watch?v=30w8DyEJ__0"
+        },
+        {
+            "duration": 2258,
+            "embed": true,
+            "title": "Arctic Monkeys - Favourite Worst Nightmare (2007) Full Album",
+            "description": "Arctic Monkeys - Favourite Worst Nightmare (2007) Full Album",
+            "uri": "https:\/\/www.youtube.com\/watch?v=ErM84SRShI8"
+        },
+        {
+            "duration": 196,
+            "embed": true,
+            "title": "Arctic Monkeys - 'Fluorescent Adolescent' (2007)",
+            "description": "Arctic Monkeys - 'Fluorescent Adolescent' (2007)",
+            "uri": "https:\/\/www.youtube.com\/watch?v=ma9I9VBKPiw"
+        },
+        {
+            "duration": 164,
+            "embed": true,
+            "title": "Arctic Monkeys - Teddy Picker - Favourite Worst Nightmare",
+            "description": "Arctic Monkeys - Teddy Picker - Favourite Worst Nightmare",
+            "uri": "https:\/\/www.youtube.com\/watch?v=Ee4HTpght28"
+        }
+    ],
+    "series": [],
+    "labels": [
+        {
+            "name": "Domino",
+            "entity_type": "1",
+            "catno": "WIGLP188",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/26465",
+            "id": 26465,
+            "entity_type_name": "Label"
+        }
+    ],
+    "year": 2007,
+    "community": {
+        "status": "Accepted",
+        "rating": {
+            "count": 334,
+            "average": 4.32
+        },
+        "want": 1138,
+        "contributors": [
+            {
+                "username": "AbsoluteBodyControl",
+                "resource_url": "https:\/\/api.discogs.com\/users\/AbsoluteBodyControl"
+            },
+            {
+                "username": "rdwtrading",
+                "resource_url": "https:\/\/api.discogs.com\/users\/rdwtrading"
+            },
+            {
+                "username": "schwarz",
+                "resource_url": "https:\/\/api.discogs.com\/users\/schwarz"
+            },
+            {
+                "username": "skaface",
+                "resource_url": "https:\/\/api.discogs.com\/users\/skaface"
+            },
+            {
+                "username": "Rameille",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Rameille"
+            },
+            {
+                "username": "maxxyme",
+                "resource_url": "https:\/\/api.discogs.com\/users\/maxxyme"
+            },
+            {
+                "username": "juandaca",
+                "resource_url": "https:\/\/api.discogs.com\/users\/juandaca"
+            },
+            {
+                "username": "ZAQWS",
+                "resource_url": "https:\/\/api.discogs.com\/users\/ZAQWS"
+            },
+            {
+                "username": "coward",
+                "resource_url": "https:\/\/api.discogs.com\/users\/coward"
+            },
+            {
+                "username": "pano9000",
+                "resource_url": "https:\/\/api.discogs.com\/users\/pano9000"
+            },
+            {
+                "username": "Eviltoastman",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Eviltoastman"
+            },
+            {
+                "username": "A1fus",
+                "resource_url": "https:\/\/api.discogs.com\/users\/A1fus"
+            },
+            {
+                "username": "KevinSanderson",
+                "resource_url": "https:\/\/api.discogs.com\/users\/KevinSanderson"
+            },
+            {
+                "username": "Patti12",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Patti12"
+            }
+        ],
+        "have": 2664,
+        "submitter": {
+            "username": "AbsoluteBodyControl",
+            "resource_url": "https:\/\/api.discogs.com\/users\/AbsoluteBodyControl"
+        },
+        "data_quality": "Needs Vote"
+    },
+    "artists": [
+        {
+            "join": ",",
+            "name": "Arctic Monkeys",
+            "anv": "",
+            "tracks": "",
+            "role": "",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/391170",
+            "id": 391170
+        }
+    ],
+    "images": [
+        {
+            "uri": "https:\/\/api-img.discogs.com\/9zKGMi5OgsZ7PxAvVSPduNH7mEY=\/fit-in\/600x605\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364756025-9934.jpeg.jpg",
+            "height": 605,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/9zKGMi5OgsZ7PxAvVSPduNH7mEY=\/fit-in\/600x605\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364756025-9934.jpeg.jpg",
+            "type": "primary",
+            "uri150": "https:\/\/api-img.discogs.com\/tbbTVq5hPlfwDmzMDF2RCZK6sXg=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-958460-1364756025-9934.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/47xPBU1VdVPxFdRIxs5FjjjJlbc=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364755507-1046.jpeg.jpg",
+            "height": 598,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/47xPBU1VdVPxFdRIxs5FjjjJlbc=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364755507-1046.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/MKfULWBmMAplFpbZFpJARV-d4mM=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-958460-1364755507-1046.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/pbu6ZU_nRZitiGC2RpK1p8zBfzw=\/fit-in\/500x375\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1330119769.jpeg.jpg",
+            "height": 375,
+            "width": 500,
+            "resource_url": "https:\/\/api-img.discogs.com\/pbu6ZU_nRZitiGC2RpK1p8zBfzw=\/fit-in\/500x375\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1330119769.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/aWZOUI-xHwprJA573__t7xhKH-0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-958460-1330119769.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/k-jDM7GyQ5Ym9J1r2_o4WxhJzwM=\/fit-in\/500x375\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1330119831.jpeg.jpg",
+            "height": 375,
+            "width": 500,
+            "resource_url": "https:\/\/api-img.discogs.com\/k-jDM7GyQ5Ym9J1r2_o4WxhJzwM=\/fit-in\/500x375\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1330119831.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/z9-ZQYrYM8sQsgUVmfbQLWY24Uc=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-958460-1330119831.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/decO3AmqTC5HVcN-88aoKvq0yak=\/fit-in\/600x605\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364756297-3604.jpeg.jpg",
+            "height": 605,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/decO3AmqTC5HVcN-88aoKvq0yak=\/fit-in\/600x605\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364756297-3604.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/JMN4GTkDvZ1z0WVBVKh6Q8ywhZo=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-958460-1364756297-3604.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/9brNEnJS6XX-VVaWQbH6F_6MYc4=\/fit-in\/600x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364756183-4292.jpeg.jpg",
+            "height": 602,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/9brNEnJS6XX-VVaWQbH6F_6MYc4=\/fit-in\/600x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364756183-4292.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/1ze82HX__CAjF0uNhYEa4zsm34w=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-958460-1364756183-4292.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/yGLctPGB1KXUF2a4iJRE-2wkGZM=\/fit-in\/600x581\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364754701-7747.jpeg.jpg",
+            "height": 581,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/yGLctPGB1KXUF2a4iJRE-2wkGZM=\/fit-in\/600x581\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364754701-7747.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/emNAWYFjGYLSd9IA3rSS6BMxmYM=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-958460-1364754701-7747.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/HqyQnkEouW9QRWjbr6wooJJmuOo=\/fit-in\/600x449\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364754708-3083.jpeg.jpg",
+            "height": 449,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/HqyQnkEouW9QRWjbr6wooJJmuOo=\/fit-in\/600x449\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-958460-1364754708-3083.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/LzHYzvH4gksLyRMemxIZrLAwuMk=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-958460-1364754708-3083.jpeg.jpg"
+        }
+    ],
+    "format_quantity": 1,
+    "id": 958460,
+    "genres": [
+        "Rock"
+    ],
+    "thumb": "https:\/\/api-img.discogs.com\/tbbTVq5hPlfwDmzMDF2RCZK6sXg=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-958460-1364756025-9934.jpeg.jpg",
+    "num_for_sale": 64,
+    "title": "Favourite Worst Nightmare",
+    "date_changed": "2017-01-04T23:13:48-08:00",
+    "master_id": 69774,
+    "lowest_price": 17.5,
+    "styles": [
+        "Alternative Rock",
+        "Indie Rock"
+    ],
+    "released_formatted": "24 Apr 2007",
+    "formats": [
+        {
+            "qty": "1",
+            "descriptions": [
+                "LP",
+                "Album"
+            ],
+            "name": "Vinyl"
+        }
+    ],
+    "estimated_weight": 230,
+    "master_url": "https:\/\/api.discogs.com\/masters\/69774",
+    "released": "2007-04-24",
+    "date_added": "2007-04-25T16:13:57-07:00",
+    "extraartists": [
+        {
+            "join": "",
+            "name": "Juno (16)",
+            "anv": "",
+            "tracks": "",
+            "role": "Art Direction, Design",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1831510",
+            "id": 1831510
+        },
+        {
+            "join": "",
+            "name": "de5ign4",
+            "anv": "",
+            "tracks": "",
+            "role": "Artwork [Spray Can Murals]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/3195830",
+            "id": 3195830
+        },
+        {
+            "join": "",
+            "name": "Al Heighton",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264906",
+            "id": 2264906
+        },
+        {
+            "join": "",
+            "name": "Anne-Marie Moore",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264909",
+            "id": 2264909
+        },
+        {
+            "join": "",
+            "name": "Drew Millward",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264913",
+            "id": 2264913
+        },
+        {
+            "join": "",
+            "name": "Graphique Club",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264907",
+            "id": 2264907
+        },
+        {
+            "join": "",
+            "name": "Joseph Bramhall",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264911",
+            "id": 2264911
+        },
+        {
+            "join": "",
+            "name": "Juno (16)",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1831510",
+            "id": 1831510
+        },
+        {
+            "join": "",
+            "name": "Tobias Warwick Jones",
+            "anv": "Tobias",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1551367",
+            "id": 1551367
+        },
+        {
+            "join": "",
+            "name": "Peachy (2)",
+            "anv": "",
+            "tracks": "",
+            "role": "Lacquer Cut By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2494613",
+            "id": 2494613
+        },
+        {
+            "join": "",
+            "name": "Matthew Cooper (2)",
+            "anv": "",
+            "tracks": "",
+            "role": "Layout",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1831503",
+            "id": 1831503
+        },
+        {
+            "join": "",
+            "name": "Geoff Barradale",
+            "anv": "",
+            "tracks": "",
+            "role": "Management",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/246093",
+            "id": 246093
+        },
+        {
+            "join": "",
+            "name": "Ian McAndrew",
+            "anv": "",
+            "tracks": "",
+            "role": "Management",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1633844",
+            "id": 1633844
+        },
+        {
+            "join": "",
+            "name": "George Marino",
+            "anv": "",
+            "tracks": "",
+            "role": "Mastered By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/335003",
+            "id": 335003
+        },
+        {
+            "join": "",
+            "name": "Alan Moulder",
+            "anv": "",
+            "tracks": "A1, A3 to A5, B1 to B3, B6",
+            "role": "Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2768",
+            "id": 2768
+        },
+        {
+            "join": "",
+            "name": "James Ford",
+            "anv": "",
+            "tracks": "A2, A6, B4, B5",
+            "role": "Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/290084",
+            "id": 290084
+        },
+        {
+            "join": "",
+            "name": "Mike Crossey",
+            "anv": "",
+            "tracks": "A2, A6, B4, B5",
+            "role": "Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/329500",
+            "id": 329500
+        },
+        {
+            "join": "",
+            "name": "Arctic Monkeys",
+            "anv": "",
+            "tracks": "",
+            "role": "Music By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/391170",
+            "id": 391170
+        },
+        {
+            "join": "",
+            "name": "Matt Goodfellow",
+            "anv": "",
+            "tracks": "",
+            "role": "Photography By [At Mills Media]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264912",
+            "id": 2264912
+        },
+        {
+            "join": "",
+            "name": "Perou",
+            "anv": "",
+            "tracks": "",
+            "role": "Photography By [Band]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1955451",
+            "id": 1955451
+        },
+        {
+            "join": "",
+            "name": "Juno (16)",
+            "anv": "",
+            "tracks": "",
+            "role": "Photography By [Booklet]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1831510",
+            "id": 1831510
+        },
+        {
+            "join": "",
+            "name": "James Ford",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/290084",
+            "id": 290084
+        },
+        {
+            "join": "",
+            "name": "Mike Crossey",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/329500",
+            "id": 329500
+        },
+        {
+            "join": "",
+            "name": "Alex Turner",
+            "anv": "",
+            "tracks": "A1 to A4, A6 to B4, B6",
+            "role": "Words By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/408091",
+            "id": 408091
+        }
+    ],
+    "tracklist": [
+        {
+            "duration": "",
+            "position": "A1",
+            "type_": "track",
+            "title": "Brianstorm"
+        },
+        {
+            "duration": "",
+            "position": "A2",
+            "type_": "track",
+            "title": "Teddy Picker"
+        },
+        {
+            "duration": "",
+            "position": "A3",
+            "type_": "track",
+            "title": "D Is For Dangerous"
+        },
+        {
+            "duration": "",
+            "position": "A4",
+            "type_": "track",
+            "title": "Balaclava"
+        },
+        {
+            "duration": "",
+            "position": "A5",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Alex Turner",
+                    "anv": "Turner",
+                    "tracks": "",
+                    "role": "Words By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/408091",
+                    "id": 408091
+                },
+                {
+                    "join": "",
+                    "name": "Johanna Bennett",
+                    "anv": "Bennett",
+                    "tracks": "",
+                    "role": "Words By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/800327",
+                    "id": 800327
+                }
+            ],
+            "title": "Fluorescent Adolescent"
+        },
+        {
+            "duration": "",
+            "position": "A6",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "James Ford",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar [Additional]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/290084",
+                    "id": 290084
+                }
+            ],
+            "title": "Only Ones Who Know"
+        },
+        {
+            "duration": "",
+            "position": "B1",
+            "type_": "track",
+            "title": "Do Me A Favour"
+        },
+        {
+            "duration": "",
+            "position": "B2",
+            "type_": "track",
+            "title": "This House Is A Circus"
+        },
+        {
+            "duration": "",
+            "position": "B3",
+            "type_": "track",
+            "title": "If You Were There, Beware"
+        },
+        {
+            "duration": "",
+            "position": "B4",
+            "type_": "track",
+            "title": "The Bad Thing"
+        },
+        {
+            "duration": "",
+            "position": "B5",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Alex Turner",
+                    "anv": "Turner",
+                    "tracks": "",
+                    "role": "Words By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/408091",
+                    "id": 408091
+                },
+                {
+                    "join": "",
+                    "name": "Jon McClure",
+                    "anv": "McClure",
+                    "tracks": "",
+                    "role": "Words By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/897816",
+                    "id": 897816
+                }
+            ],
+            "title": "Old Yellow Bricks"
+        },
+        {
+            "duration": "",
+            "position": "B6",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Miles Kane",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar [Additional]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/799359",
+                    "id": 799359
+                }
+            ],
+            "title": "505"
+        }
+    ],
+    "notes": "Comes in a gatefold sleeve with a free digital version download code, a large colour printed photo\/info sheet and one or two extra 11\" coloured inserts. A very few with various stickers and extra poster. Black die cut inner sleeve.\n\nRecorded at Miloco Garden, London, Eastcote Studios, London, Motor Museum, Liverpool and Konk Studios, London\nMixed at Assault and Battery Studios, London\nMastered at Sterling Sound, New York\nManagement for Wildlife Entertainment Ltd\n\nAll tracks published by EMI Music Publishing\nExcept A5, B6 published by EMI Music Publishing\/Copyright Control\n\n\u2117&\u00a92007 Domino Recording Co Ltd\nMade in the EU",
+    "identifiers": [
+        {
+            "type": "Barcode",
+            "description": "Scanned",
+            "value": "5034202018810"
+        },
+        {
+            "type": "Barcode",
+            "description": "Text",
+            "value": "5 034202 018810"
+        },
+        {
+            "type": "Label Code",
+            "value": "LC10192"
+        },
+        {
+            "type": "Matrix \/ Runout",
+            "description": "Runout side A, etched",
+            "value": "WIGLP188 A-1 PEACHY ABBEY RD JACKIE PANTOMIME"
+        },
+        {
+            "type": "Matrix \/ Runout",
+            "description": "Runout side B, etched",
+            "value": "WIGLP188 B-1"
+        }
+    ],
+    "companies": [
+        {
+            "name": "Domino Recording Co. Ltd.",
+            "entity_type": "13",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/69345",
+            "id": 69345,
+            "entity_type_name": "Phonographic Copyright (p)"
+        },
+        {
+            "name": "Domino Recording Co. Ltd.",
+            "entity_type": "14",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/69345",
+            "id": 69345,
+            "entity_type_name": "Copyright (c)"
+        },
+        {
+            "name": "EMI Music Publishing",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/155248",
+            "id": 155248,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Copyright Control",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/48207",
+            "id": 48207,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Miloco Garden",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/295412",
+            "id": 295412,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "Eastcote Studios",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/265157",
+            "id": 265157,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "Motor Museum",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/295411",
+            "id": 295411,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "Konk Studios",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/271368",
+            "id": 271368,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "Assault And Battery Studios",
+            "entity_type": "27",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/274648",
+            "id": 274648,
+            "entity_type_name": "Mixed At"
+        },
+        {
+            "name": "Sterling Sound",
+            "entity_type": "29",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/264060",
+            "id": 264060,
+            "entity_type_name": "Mastered At"
+        },
+        {
+            "name": "Abbey Road Studios",
+            "entity_type": "30",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/217694",
+            "id": 217694,
+            "entity_type_name": "Lacquer Cut At"
+        }
+    ],
+    "uri": "https:\/\/www.discogs.com\/Arctic-Monkeys-Favourite-Worst-Nightmare\/release\/958460",
+    "country": "UK & Europe",
+    "resource_url": "https:\/\/api.discogs.com\/releases\/958460",
+    "data_quality": "Needs Vote"
+}
