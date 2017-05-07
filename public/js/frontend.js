@@ -11,6 +11,9 @@ $(document).ready(function() {
     $('.close-menu').on('click', function(){
         $(this).sideNav('hide');
     });
+    $('.snipcart-add-item').on('click', function(){
+
+    })
 
 });
 $(window).scroll(function() {

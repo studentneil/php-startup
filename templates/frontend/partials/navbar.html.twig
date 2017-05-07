@@ -7,14 +7,21 @@
         <div class="nav-wrapper">
             <a href="/" class="brand-logo black-text left">The Record Box</a>
             <a href="#" data-activates="mobile-nav" class="button-collapse black-text right"><i class="material-icons">menu</i></a>
+
+
+
             <ul class="right hide-on-med-and-down menu__list">
                 {% for item in navbar %}
                     <li{% if item[0]==active_page %} class="active" {% endif %} data-hover="{{ item[1] }}">
-                        <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }} </a>
+                        <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }} </a>
                     </li>
                 {% endfor %}
                 <li><a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a></li>
+                <li><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email black-text">LOGIN</span></a></li>
+                <li><a href="#" class="snipcart-user-logout black-text">Logout</a></li>
             </ul>
+            <a href="#" class="right snipcart-checkout"><i class="material-icons black-text">shopping_cart</i></a>
+
         </div>
     </nav>
 </div>
@@ -26,12 +33,14 @@
 {#</li>#}
     {% for item in navbar %}
         <li{% if item[0]==active_page %} class="active" {% endif %}>
-            <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1] }}</a>
+            <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }}</a>
         </li>
     {% endfor %}
     <li>
         <a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a>
     </li>
+    <li><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email black-text">LOGIN</span></a></li>
+    <li><a href="#" class="snipcart-user-logout black-text">Logout</a></li>
 </ul>
 
 

@@ -8,40 +8,20 @@ use VinylStore\Forms\CreateNewReleaseType;
 
 class ReleaseController
 {
-    /**
-     * @param Application $app
-     *
-     * @return mixed
-     */
-    public function indexAction(Application $app)
-    {
-        $tables = $app['database.manager']->getTables();
-        $size = sizeof($tables);
-        $count = $app['vinyl.repository']->getCount();
 
-        $templateName = 'backend/database';
-        $args_array = array(
-            'size' => $size,
-            'tables' => $tables,
-            'count' => $count,
-        );
-
-        return $app['twig']->render($templateName.'.html.twig', $args_array);
-    }
-
-    public function viewTableAction(Application $app)
-    {
-        $releases = $app['vinyl.repository']->findAll();
-
-        $templateName = 'backend/releases';
-        $args_array = array(
-
-            'releases' => $releases,
-
-        );
-
-        return $app['twig']->render($templateName.'.html.twig', $args_array);
-    }
+//    public function viewTableAction(Application $app)
+//    {
+//        $releases = $app['vinyl.repository']->findAll();
+//
+//        $templateName = 'backend/releases';
+//        $args_array = array(
+//
+//            'releases' => $releases,
+//
+//        );
+//
+//        return $app['twig']->render($templateName.'.html.twig', $args_array);
+//    }
 
     public function createReleaseAction(Request $request, Application $app)
     {

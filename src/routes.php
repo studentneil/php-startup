@@ -17,8 +17,7 @@ $app->get('/vinyl/page/{page}', 'VinylStore\\Controllers\\MainController::getVin
 $app->post('/snip-webhook', 'VinylStore\\Controllers\\SnipCartController::getWebHookAction');
 $app->get('/tracklist', 'VinylStore\\Controllers\\TracklistController::getTracklistAction');
 $app->get('/admin/dashboard', 'VinylStore\\Controllers\\LoginController::dashboardAction');
-//$app->get('/admin/database', 'VinylStore\\Controllers\\ReleaseController::indexAction');
-$app->get('/admin/view/releases', 'VinylStore\\Controllers\\ReleaseController::viewTableAction');
+//$app->get('/admin/view/releases', 'VinylStore\\Controllers\\ReleaseController::viewTableAction');
 $app->match('/admin/create-release', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
 $app->match('/admin/edit-release/{id}', 'VinylStore\\Controllers\\ReleaseController::editReleaseAction');
 $app->match('/admin/upload-image', 'VinylStore\\Controllers\\ImageController::uploadImageAction');

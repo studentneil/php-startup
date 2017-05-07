@@ -44,7 +44,9 @@
                            data-item-name="{{ release.release_name }}"
                            data-item-price="{{ release.price }}"
                            data-item-url="https://76df3c8a.ngrok.io/vinyl/{{ release.genre }}/release/{{ release.release_name|slugify }}/{{ release.id }}"
-                           data-item-description="{{ release.description }}">Cart
+                           data-item-description="{{ release.description }}"
+                           data-item-max-quantity="{{ release.quantity }}"
+                           onclick="Materialize.toast('You just added an item to your cart', 4000)">Cart
                         </a>
                         <a href="/vinyl" class="waves-effect btn-flat">Vinyl</a>
                     </div>
@@ -53,7 +55,12 @@
             <div class="col s12 m6">
                 <div class="card-panel white lighten-2">
                     <h2 class="flow-text grey lighten-4 track_header">TRACKLIST</h2>
-                        {{ render(controller('VinylStore\\Controllers\\TracklistController::getTracklistAction', {'catno': release.catno } )) }}
+                        {{ render(controller('VinylStore\\Controllers\\TracklistController::getTracklistAction',
+                            {'catno': release.catno,
+                            'artist': release.artist,
+                            'title': release.title}
+
+                        )) }}
                 </div>
             </div>
         </div>

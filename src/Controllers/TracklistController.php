@@ -12,18 +12,19 @@ use Silex\Application;
 
 class TracklistController
 {
-    public function getTracklistAction(Request $request, Application $app, $catno)
+    public function getTracklistAction(Application $app, $catno, $artist, $title)
     {
         $curl = curl_init();
         curl_setopt_array($curl, array(
             CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL => 'https://api.discogs.com/database/search?type=release&catno='.str_replace(' ', '', $catno).'&token=niKtmQLybGRjlyOlfXhuRxtNThyIjZnjQyrGltgs',
+            CURLOPT_URL => 'https://api.discogs.com/database/search?type=release&release_title='.urlencode($title).'&catno='
+                .str_replace(' ', '', $catno)
+            .'&token=niKtmQLybGRjlyOlfXhuRxtNThyIjZnjQyrGltgs',
             CURLOPT_USERAGENT => 'Vinyl rug'
         ));
         $response = json_decode(curl_exec($curl));
-//        var_dump($response);
+
         foreach($response->results as $release) {
-            $releaseArray[] = $release;
             $id = $release->id;
         }
         curl_setopt_array($curl, array(
