@@ -97,17 +97,22 @@ class VinylRepository implements RepositoryInterface
 
     public function findLatestRelease()
     {
-        $qb = $this->conn->createQueryBuilder();
-        $qb->select('*')
-            ->from('releases', 'r')
-            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
-            ->orderBy('date_added', 'DESC LIMIT 4')
+        $qb = $this->joinAll();
+        $qb->orderBy('date_added', 'DESC LIMIT 4')
             ->andHaving('quantity >= 1');
 
         $latestReleases = $qb->execute()->fetchAll();
 
         return $latestReleases;
+    }
+    public function joinAll()
+    {
+        $qb = $this->conn->createQueryBuilder();
+        $qb->select('*')
+            ->from('releases', 'r')
+            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
+            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
+        return $qb;
     }
 
     public function findRandomRelease()

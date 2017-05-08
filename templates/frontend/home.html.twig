@@ -11,9 +11,10 @@
 
             </div>
         </div>
-        <div class="divider"></div>
-        <div class="section">
-            <div class="row center-align">
+    </div>
+
+
+            <div class="row center-align homepage_sections">
                 <div class="col s12 m12">
                     <h1 class="flow-text">Online Vinyl shop for record enthusiasts</h1>
                     <p class="flow-text">Welcome to our site. We stock an eclectic range of records so something for everyone.
@@ -25,8 +26,8 @@
                         We also guarantee that shipping <em>wont</em> be more expensive than the music, a pet hate of ours!.</p>
                 </div>
             </div>
-        </div>
-    </div>
+
+
 
 
 
@@ -36,10 +37,11 @@
 
     <div class="row homepage_sections">
 
-        <div class="col m6 s12">
+        {#<div class="card-panel">#}
+            <h1 class="home_header flow-text grey lighten-4">New Vinyl</h1>
             {% if latest_releases is defined %}
                 {% for latest in latest_releases %}
-                    <div class="col m6 s6">
+                    <div class="col m3 s6">
                         <div class="card">
                             <div class="card-image">
                                 <img class="activator" src="/uploads/{{ latest.image }}" alt="">
@@ -49,11 +51,13 @@
                                     <i class="material-icons right">close</i>
                                 </span>
                                 <div class="card-content white-text">
-                                    <strong>{{ latest.artist }}</strong> / <em>{{ latest.title }}</em>
+                                    <p>{{ latest.artist }}</p>
+                                    <p>{{ latest.title }}</p>
+                                    <p>{{ latest.format }}</p>
+                                    <p class="hide-on-med-and-down">Media :{{ latest.media_condition }}</p>
+                                    <p class="hide-on-med-and-down">Sleeve :{{ latest.sleeve_condition }}</p>
+                                    <p>&euro;{{ latest.price }}</p>
                                     <br>
-                                    {{ latest.format }}
-                                    <br>
-                                    &euro;{{ latest.price }}
                                     <div class="divider"></div>
                                     <a class="waves-effect waves-light" href="/vinyl/{{ latest.genre }}/release/{{ latest.title|slugify }}/{{ latest.id
                                     }}">Details</a>
@@ -64,29 +68,19 @@
 
                 {% endfor %}
             {% endif %}
-        </div>
-        <div class="col m6 s12">
-            <div class="section">
-                <h1 class="flow-text">New In</h1>
-                <p>Check out our newest vinyl.</p>
-            </div>
-        </div>
+
+        {#</div>#}
     </div>
 
 
     <div class="spacer_large"></div>
 
     <div class="row homepage_sections">
-        <div class="col m6 s12">
-            <div class="section">
-                <h1 class="flow-text">Random Vinyl</h1>
-                <p>Try from a selection of random vinyl</p>
-            </div>
-        </div>
-        <div class="col m6 s12">
+
+            <h1 class="track_header flow-text grey lighten-4">Random Vinyl</h1>
             {% if random_release is defined %}
                 {% for random in random_release %}
-                    <div class="col m6 s6">
+                    <div class="col m3 s6">
                         <div class="card">
 
                             <div class="card-image">
@@ -97,9 +91,12 @@
                                     <i class="material-icons right">close</i>
                                 </span>
                                 <div class="card-content white-text">
-                                    <strong>{{ random.artist }}</strong> / <em>{{ random.title }}</em>
-                                    <br>
-                                    {{ random.format }}
+                                    <p>{{ random.artist }}</p>
+                                    <p>{{ random.title }}</p>
+                                    <p>{{ random.format }}</p>
+                                    <p class="hide-on-med-and-down">Media :{{ random.media_condition }}</p>
+                                    <p class="hide-on-med-and-down">Sleeve :{{ random.sleeve_condition }}</p>
+                                    {#<p>{{ random.price }}</p>#}
                                     <br>
                                     <div class="divider"></div>
                                     <a class="waves-effect waves-light" href="/vinyl/{{ random.genre }}/release/{{ random.title|slugify }}/{{ random.id }}">Details</a>
@@ -112,6 +109,6 @@
             {% endif %}
 
         </div>
-    </div>
+
     </div>
 {% endblock %}

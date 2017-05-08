@@ -1,251 +1,386 @@
 {
-    "styles": [
-        "Synth-pop"
-    ],
+    "status": "Accepted",
     "videos": [
         {
-            "duration": 225,
-            "description": "NEW ORDER   evil dust",
+            "duration": 158,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=1ZNe3tZnfIg",
-            "title": "NEW ORDER   evil dust"
+            "title": "Trentem\u00f8ller: The Last Resort: Pete Tong's Essential CD",
+            "description": "Trentem\u00f8ller: The Last Resort: Pete Tong's Essential CD",
+            "uri": "https:\/\/www.youtube.com\/watch?v=ZDkfyQY2jMw"
         },
         {
-            "duration": 253,
-            "description": "New Order - True Faith [7 mix]",
+            "duration": 300,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=y_KKhcZ6omM",
-            "title": "New Order - True Faith [7 mix]"
+            "title": "Trentem\u00f8ller: Evil Dub",
+            "description": "Trentem\u00f8ller: Evil Dub",
+            "uri": "https:\/\/www.youtube.com\/watch?v=97fuFZbVVnw"
         },
         {
-            "duration": 338,
-            "description": "New Order - True Faith",
+            "duration": 492,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=zzeNAUOp17c",
-            "title": "New Order - True Faith"
+            "title": "Trentem\u00f8ller: The Very Last Resort",
+            "description": "Trentem\u00f8ller: The Very Last Resort",
+            "uri": "https:\/\/www.youtube.com\/watch?v=2m9aZwQOFwM"
         },
         {
-            "duration": 336,
-            "description": "New Order-1963 (Instrumental)",
+            "duration": 213,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=EnpsgAb5DEw",
-            "title": "New Order-1963 (Instrumental)"
+            "title": "Trentem\u00f8ller: Moan",
+            "description": "Trentem\u00f8ller: Moan",
+            "uri": "https:\/\/www.youtube.com\/watch?v=5vkj-t1ytzo"
         },
         {
-            "duration": 277,
-            "description": "New Order - True Faith (1987) [OFFICIAL MUSIC VIDEO]",
+            "duration": 468,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=mfI1S0PKJR8",
-            "title": "New Order - True Faith (1987) [OFFICIAL MUSIC VIDEO]"
+            "title": "Trentem\u00f8ller - Take me into your Skin",
+            "description": "Trentem\u00f8ller - Take me into your Skin",
+            "uri": "https:\/\/www.youtube.com\/watch?v=6y-mzh7mvKE"
         },
         {
-            "duration": 264,
-            "description": "New Order - True Faith",
+            "duration": 351,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=og1HAkjOuL0",
-            "title": "New Order - True Faith"
+            "title": "Trentem\u00f8ller - Moan [The Last Resort]",
+            "description": "Trentem\u00f8ller - Moan [The Last Resort]",
+            "uri": "https:\/\/www.youtube.com\/watch?v=aan-X1gHTHg"
         },
         {
-            "duration": 545,
-            "description": "New Order - True Faith (The Morning Sun Extended Remix)",
+            "duration": 355,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=LA2Z3BhunRA",
-            "title": "New Order - True Faith (The Morning Sun Extended Remix)"
+            "title": "Trentem\u00f8ller - Nightwalker [HQ]",
+            "description": "Trentem\u00f8ller - Nightwalker [HQ]",
+            "uri": "https:\/\/www.youtube.com\/watch?v=BSkAqSmBkno"
         },
         {
-            "duration": 542,
-            "description": "New Order True Faith Shep Pettibone remix",
+            "duration": 447,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=VGcSiX4RtGI",
-            "title": "New Order True Faith Shep Pettibone remix"
+            "title": "Trentemoller - Into the Trees",
+            "description": "Trentemoller - Into the Trees",
+            "uri": "https:\/\/www.youtube.com\/watch?v=NrfGm_ju_D0"
         },
         {
-            "duration": 352,
-            "description": "New Order - True Faith-94 (Sexy Disco Dub)__London Rec..wmv",
+            "duration": 454,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=1qSI7bBKaBU",
-            "title": "New Order - True Faith-94 (Sexy Disco Dub)__London Rec..wmv"
+            "title": "Trentem\u00f8ller - Snowflake [The Last Resort]",
+            "description": "Trentem\u00f8ller - Snowflake [The Last Resort]",
+            "uri": "https:\/\/www.youtube.com\/watch?v=d2shb7utF5I"
         },
         {
-            "duration": 333,
-            "description": "New Order - 1963 ( with lyrics )",
+            "duration": 206,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=NOuScBpe1_0",
-            "title": "New Order - 1963 ( with lyrics )"
+            "title": "Trentem\u00f8ller - Like Two Strangers",
+            "description": "Trentem\u00f8ller - Like Two Strangers",
+            "uri": "https:\/\/www.youtube.com\/watch?v=9iA9kvRyamo"
         },
         {
-            "duration": 385,
-            "description": "New Order - True Faith-94 (Perfecto Mix)__London Rec..wmv",
+            "duration": 862,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=Uz1ZSeTV6h8",
-            "title": "New Order - True Faith-94 (Perfecto Mix)__London Rec..wmv"
+            "title": "Nightwalker - Snowflake",
+            "description": "Nightwalker - Snowflake",
+            "uri": "https:\/\/www.youtube.com\/watch?v=b_ihsrZaLvQ"
         },
         {
-            "duration": 353,
-            "description": "New Order- True Faith (Sexy Disco Dub)",
+            "duration": 243,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=LOEJ45zIg5M",
-            "title": "New Order- True Faith (Sexy Disco Dub)"
-        },
-        {
-            "duration": 646,
-            "description": "New Order - True Dub (1987)",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=fdvufEWRSCA",
-            "title": "New Order - True Dub (1987)"
-        },
-        {
-            "duration": 283,
-            "description": "New Order - True Faith-94",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=HmPK_IRk1Hk",
-            "title": "New Order - True Faith-94"
-        },
-        {
-            "duration": 372,
-            "description": "New Order - True Faith '94 (The TWA Grim Up North mix) HQ",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=6LoFfWeLYks",
-            "title": "New Order - True Faith '94 (The TWA Grim Up North mix) HQ"
+            "title": "Trentemoller - Miss You",
+            "description": "Trentemoller - Miss You",
+            "uri": "https:\/\/www.youtube.com\/watch?v=5DUCKGyojpE"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "Festival Records",
+            "name": "Poker Flat Recordings",
             "entity_type": "1",
-            "catno": "X 14848",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/2313",
-            "id": 2313,
-            "entity_type_name": "Label"
-        },
-        {
-            "name": "Factory",
-            "entity_type": "1",
-            "catno": "Fac 183R",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/857",
-            "id": 857,
-            "entity_type_name": "Label"
-        },
-        {
-            "name": "Festival Records",
-            "entity_type": "1",
-            "catno": "X14848",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/2313",
-            "id": 2313,
+            "catno": "PFRLP18",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
+            "id": 779,
             "entity_type_name": "Label"
         }
     ],
-    "year": 0,
+    "year": 2006,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 1,
-            "average": 5
+            "count": 432,
+            "average": 4.56
         },
-        "have": 6,
+        "want": 817,
         "contributors": [
             {
-                "username": "renegad",
-                "resource_url": "https:\/\/api.discogs.com\/users\/renegad"
+                "username": "mamba9",
+                "resource_url": "https:\/\/api.discogs.com\/users\/mamba9"
             },
             {
-                "username": "sebfact",
-                "resource_url": "https:\/\/api.discogs.com\/users\/sebfact"
+                "username": "mikkelhansen",
+                "resource_url": "https:\/\/api.discogs.com\/users\/mikkelhansen"
             },
             {
-                "username": "patric627",
-                "resource_url": "https:\/\/api.discogs.com\/users\/patric627"
+                "username": "z33k",
+                "resource_url": "https:\/\/api.discogs.com\/users\/z33k"
             },
             {
-                "username": "bertielego",
-                "resource_url": "https:\/\/api.discogs.com\/users\/bertielego"
+                "username": "mirkob",
+                "resource_url": "https:\/\/api.discogs.com\/users\/mirkob"
+            },
+            {
+                "username": "delysid",
+                "resource_url": "https:\/\/api.discogs.com\/users\/delysid"
+            },
+            {
+                "username": "thesub_jet",
+                "resource_url": "https:\/\/api.discogs.com\/users\/thesub_jet"
+            },
+            {
+                "username": "jonas45",
+                "resource_url": "https:\/\/api.discogs.com\/users\/jonas45"
+            },
+            {
+                "username": "NLK",
+                "resource_url": "https:\/\/api.discogs.com\/users\/NLK"
+            },
+            {
+                "username": "muntz",
+                "resource_url": "https:\/\/api.discogs.com\/users\/muntz"
+            },
+            {
+                "username": "maxxyme",
+                "resource_url": "https:\/\/api.discogs.com\/users\/maxxyme"
+            },
+            {
+                "username": "Mauep",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Mauep"
+            },
+            {
+                "username": "TheEvilGenius",
+                "resource_url": "https:\/\/api.discogs.com\/users\/TheEvilGenius"
+            },
+            {
+                "username": "abasheen",
+                "resource_url": "https:\/\/api.discogs.com\/users\/abasheen"
+            },
+            {
+                "username": "zaffa",
+                "resource_url": "https:\/\/api.discogs.com\/users\/zaffa"
             }
         ],
-        "want": 47,
+        "have": 2321,
         "submitter": {
-            "username": "renegad",
-            "resource_url": "https:\/\/api.discogs.com\/users\/renegad"
+            "username": "mamba9",
+            "resource_url": "https:\/\/api.discogs.com\/users\/mamba9"
         },
-        "data_quality": "Correct"
+        "data_quality": "Complete and Correct"
     },
     "artists": [
         {
             "join": ",",
-            "name": "New Order",
+            "name": "Trentem\u00f8ller",
             "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/3909",
-            "id": 3909
+            "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
+            "id": 117914
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/api-img.discogs.com\/6O1UrtZdhjDV9BGtYUOCAWGp9Gs=\/fit-in\/400x401\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787242-5986.jpeg.jpg",
-            "height": 401,
-            "width": 400,
-            "resource_url": "https:\/\/api-img.discogs.com\/6O1UrtZdhjDV9BGtYUOCAWGp9Gs=\/fit-in\/400x401\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787242-5986.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/ST_bJorts29yqJ7scfYKvKf-eAk=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787242-5986.jpeg.jpg"
+            "uri": "https:\/\/api-img.discogs.com\/ZPjXffo-D4G3TFcnVXZ2DsERsUU=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
+            "height": 590,
+            "width": 590,
+            "resource_url": "https:\/\/api-img.discogs.com\/ZPjXffo-D4G3TFcnVXZ2DsERsUU=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
+            "type": "primary",
+            "uri150": "https:\/\/api-img.discogs.com\/kn5OJf5fwNRDxB8SC0ZgRnA5jbY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889765.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/uQLl786wP8F68Jkrjl3amwJDsYs=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787256-2012.jpeg.jpg",
-            "height": 400,
-            "width": 400,
-            "resource_url": "https:\/\/api-img.discogs.com\/uQLl786wP8F68Jkrjl3amwJDsYs=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787256-2012.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/qE7FI7Un50V0AWQeWwta_UClLr0=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889807.jpeg.jpg",
+            "height": 590,
+            "width": 590,
+            "resource_url": "https:\/\/api-img.discogs.com\/qE7FI7Un50V0AWQeWwta_UClLr0=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889807.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/vyjx-AR4XEGKAvxpLYAZkSCjRiM=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787256-2012.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/4MP_xoHO9OFZKourlohMB4351bs=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889807.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/kfV6AMbJE3_vZbA3xTPX-jXJOAY=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787325-8255.jpeg.jpg",
-            "height": 400,
-            "width": 400,
-            "resource_url": "https:\/\/api-img.discogs.com\/kfV6AMbJE3_vZbA3xTPX-jXJOAY=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787325-8255.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/x17bK8YqbeYyB0sh9GtAi3ABg2U=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg",
+            "height": 600,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/x17bK8YqbeYyB0sh9GtAi3ABg2U=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/yYjUq96isbirZmc6EXAhSUVWKvQ=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787325-8255.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/CTls2tFyR8BwRzyla__nrnIT93o=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/wWzmIHNjYohiqURJChC-WQzFOzU=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787339-5592.jpeg.jpg",
-            "height": 400,
-            "width": 400,
-            "resource_url": "https:\/\/api-img.discogs.com\/wWzmIHNjYohiqURJChC-WQzFOzU=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787339-5592.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/xFXna1XtlZNtsbvx0DAS4ZQN2Xc=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg",
+            "height": 600,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/xFXna1XtlZNtsbvx0DAS4ZQN2Xc=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/h1v5UML-ZBTIqkHmeiqfU9UhqmE=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787339-5592.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/etEFfqVih9nIoBWWfuPnV6HpgtM=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/D5mB3A-rPm-b6LuhekCXseV6xKY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg",
+            "height": 600,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/D5mB3A-rPm-b6LuhekCXseV6xKY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/kb-MQQUHeOEHBA-phKUAiqv-uAU=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/YbgQTCPplabjND6WHIk40FoEuLY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg",
+            "height": 600,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/YbgQTCPplabjND6WHIk40FoEuLY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/OW2bGBetXsPvRhKSA8ZiKt1gOaQ=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg"
         }
     ],
-    "format_quantity": 1,
-    "id": 4640692,
+    "format_quantity": 2,
+    "id": 802115,
     "genres": [
         "Electronic"
     ],
-    "thumb": "https:\/\/api-img.discogs.com\/ST_bJorts29yqJ7scfYKvKf-eAk=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787242-5986.jpeg.jpg",
-    "num_for_sale": 0,
-    "title": "True Faith Remix",
-    "date_changed": "2016-11-11T13:44:39-08:00",
-    "master_id": 41131,
-    "lowest_price": null,
-    "status": "Accepted",
-    "estimated_weight": 230,
-    "master_url": "https:\/\/api.discogs.com\/masters\/41131",
-    "date_added": "2013-06-09T07:19:59-07:00",
+    "thumb": "https:\/\/api-img.discogs.com\/kn5OJf5fwNRDxB8SC0ZgRnA5jbY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
+    "num_for_sale": 45,
+    "title": "The Last Resort",
+    "date_changed": "2016-04-21T08:21:12-07:00",
+    "master_id": 23992,
+    "lowest_price": 14.78,
+    "styles": [
+        "Abstract",
+        "IDM",
+        "Minimal"
+    ],
+    "released_formatted": "09 Oct 2006",
+    "formats": [
+        {
+            "qty": "2",
+            "descriptions": [
+                "12\"",
+                "33 \u2153 RPM",
+                "Album",
+                "Remastered"
+            ],
+            "name": "Vinyl"
+        }
+    ],
+    "estimated_weight": 460,
+    "master_url": "https:\/\/api.discogs.com\/masters\/23992",
+    "released": "2006-10-09",
+    "date_added": "2006-10-09T23:33:16-07:00",
+    "extraartists": [
+        {
+            "join": "",
+            "name": "Weissraum",
+            "anv": "weissraum.de(sign)",
+            "tracks": "",
+            "role": "Artwork",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1827689",
+            "id": 1827689
+        },
+        {
+            "join": "",
+            "name": "Nulleinsbild",
+            "anv": "",
+            "tracks": "",
+            "role": "Artwork [3d Tree]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2065525",
+            "id": 2065525
+        },
+        {
+            "join": "",
+            "name": "Nilesh Patel",
+            "anv": "Nilz",
+            "tracks": "",
+            "role": "Mastered By [Cutting]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/386598",
+            "id": 386598
+        },
+        {
+            "join": "",
+            "name": "PhotoCase",
+            "anv": "Photocase.com",
+            "tracks": "",
+            "role": "Photography By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2243913",
+            "id": 2243913
+        },
+        {
+            "join": "",
+            "name": "Ossian Ryner",
+            "anv": "",
+            "tracks": "",
+            "role": "Technician",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/325188",
+            "id": 325188
+        },
+        {
+            "join": "",
+            "name": "Trentem\u00f8ller",
+            "anv": "Anders Trentem\u00f8ller",
+            "tracks": "",
+            "role": "Written-By, Producer, Performer [Played By], Programmed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
+            "id": 117914
+        }
+    ],
     "tracklist": [
         {
             "duration": "",
-            "position": "A",
+            "position": "A1",
             "type_": "track",
             "extraartists": [
                 {
                     "join": "",
-                    "name": "Shep Pettibone",
+                    "name": "Mikael Simpson",
                     "anv": "",
                     "tracks": "",
-                    "role": "Remix",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/2732",
-                    "id": 2732
+                    "role": "Bass [Distorted Bass]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/247991",
+                    "id": 247991
+                },
+                {
+                    "join": "",
+                    "name": "Henrik Vibskov",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Drums [Acc. Drums]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/598277",
+                    "id": 598277
+                },
+                {
+                    "join": "",
+                    "name": "Trentem\u00f8ller",
+                    "anv": "Anders Trentem\u00f8ller",
+                    "tracks": "",
+                    "role": "Guitar [Dreamy Guitars]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
+                    "id": 117914
                 }
             ],
-            "title": "True Faith (Remix)"
+            "title": "Take Me Into Your Skin"
+        },
+        {
+            "duration": "",
+            "position": "A2",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Mikael Simpson",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Acoustic Guitar [Acc. Guitar]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/247991",
+                    "id": 247991
+                },
+                {
+                    "join": "",
+                    "name": "Trentem\u00f8ller",
+                    "anv": "Anders Trentem\u00f8ller",
+                    "tracks": "",
+                    "role": "Guitar [Surf Guitar]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
+                    "id": 117914
+                }
+            ],
+            "title": "The Very Last Resort"
         },
         {
             "duration": "",
@@ -254,189 +389,177 @@
             "extraartists": [
                 {
                     "join": "",
-                    "name": "Nick Mainsbridge",
+                    "name": "Arnaud Donez",
                     "anv": "",
                     "tracks": "",
-                    "role": "Remix [Assisted By]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/288215",
-                    "id": 288215
-                },
-                {
-                    "join": "",
-                    "name": "Robert Racic",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Remix, Edited By",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/23678",
-                    "id": 23678
+                    "role": "Guitar, Bass",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/598276",
+                    "id": 598276
                 }
             ],
-            "title": "Paradise (Remix)"
+            "title": "Evil Dub"
         },
         {
             "duration": "",
             "position": "B2",
             "type_": "track",
+            "title": "Snowflake"
+        },
+        {
+            "duration": "",
+            "position": "C1",
+            "type_": "track",
+            "title": "Nightwalker"
+        },
+        {
+            "duration": "",
+            "position": "C2",
+            "type_": "track",
             "extraartists": [
                 {
                     "join": "",
-                    "name": "Shep Pettibone",
+                    "name": "Henrik Vibskov",
                     "anv": "",
                     "tracks": "",
-                    "role": "Remix",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/2732",
-                    "id": 2732
+                    "role": "Drums [Acc. Drums]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/598277",
+                    "id": 598277
                 }
             ],
-            "title": "True Dub"
+            "title": "Into The Trees (Serenetti Part 3)"
+        },
+        {
+            "duration": "",
+            "position": "D1",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Trentem\u00f8ller",
+                    "anv": "Anders Trentem\u00f8ller",
+                    "tracks": "",
+                    "role": "Celesta [Celeste Played By]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
+                    "id": 117914
+                },
+                {
+                    "join": "",
+                    "name": "Thomas Bertelsen",
+                    "anv": "Thomas 'DJ T.O.M.' Bertelsen",
+                    "tracks": "",
+                    "role": "Scratches [Scratch Solo]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/795019",
+                    "id": 795019
+                }
+            ],
+            "title": "Always Something Better"
+        },
+        {
+            "duration": "",
+            "position": "D2",
+            "type_": "track",
+            "title": "Moan"
+        },
+        {
+            "duration": "",
+            "position": "D3",
+            "type_": "track",
+            "title": "Miss You"
         }
     ],
-    "extraartists": [
-        {
-            "join": "",
-            "name": "Peter Saville Associates",
-            "anv": "",
-            "tracks": "",
-            "role": "Design [Sleeve]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/512290",
-            "id": 512290
-        },
-        {
-            "join": "",
-            "name": "Trevor Key",
-            "anv": "",
-            "tracks": "",
-            "role": "Design [Sleeve]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/512289",
-            "id": 512289
-        },
-        {
-            "join": "",
-            "name": "\u00c5 (3)",
-            "anv": "",
-            "tracks": "",
-            "role": "Mastered By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2980950",
-            "id": 2980950
-        },
-        {
-            "join": "",
-            "name": "New Order",
-            "anv": "",
-            "tracks": "",
-            "role": "Written-By, Producer",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/3909",
-            "id": 3909
-        },
-        {
-            "join": "",
-            "name": "Stephen Hague",
-            "anv": "",
-            "tracks": "A, B2",
-            "role": "Written-By, Producer",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/23029",
-            "id": 23029
-        }
-    ],
-    "country": "Australia",
-    "notes": "Factory and Festival Records logos only appear on back inlay.\n\nA and B or 1 and 2 aren't written on labels.\n\nNo tracks duration mentioned on this product.\n\nPrinted on this product :\n\n\"Published by Bemusic\/Warner\/Chappel\/MCA\" (for tracks A & B2) on back cover.\n\"(Bemusic\/Warner\/Chappel\/MCA)\" (for track A & B2) on both labels (A side + B side).\n\"Published by Bemusic\/Warner\/Chappel\/MCA\" (for track B1) on back cover.\n\"(Bemusic\/Warner Brothers Music)\" (for track B1) on one of the label (B side).\n\n\"\u2117 1987 Factory Communications Limited.\" (on labels)\n\nAlso printed on back cover :\nNew Order - True Faith Remix\/Paradise\/True Dub\n\"A Factory Record. (P)(C)1987 Factory Communications Ltd England.\nTrackmark owned by Factory Communications Ltd. and used by Festival Records Pty Ltd Australia under authorization.\nManufactured by Festival Records Pty Ltd Australia\" \n",
+    "notes": "Recorded in Copenhagen 2005\/2006. \r\nAcc. drums and celeste recorded in Denmarks Radio's Studio 9.\r\n\r\n(P)&(C) 2006 Poker Flat Recordings\r\nMade in EU.\r\nThis vinyl edition includes special versions of selected songs from the full length album: [r=830189] (PFRCD18).\r\n\r\nLimited Edition includes a poster.",
     "identifiers": [
         {
             "type": "Barcode",
-            "description": "Printed",
-            "value": "9 399601 484861"
+            "description": "Text",
+            "value": "8 27170 11311 4"
+        },
+        {
+            "type": "Barcode",
+            "description": "String",
+            "value": "827170113114"
+        },
+        {
+            "type": "Rights Society",
+            "value": "GEMA"
+        },
+        {
+            "type": "Label Code",
+            "value": "LC 00747"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Printed on A side label",
-            "value": "MX-74671"
+            "description": "Runout Side A",
+            "value": "PFRLP18 A' MPO NiLZ - THE EXCHANGE"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Printed on B side label",
-            "value": "MX-74672"
+            "description": "Runout Side B",
+            "value": "PFRLP18 B' MPO NiLZ - THE EXCHANGE"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Scratched on A side vinyl",
-            "value": "6A SMX 74671 FAC 183R - 1 MX 219773 \u00c5"
+            "description": "Runout Side C",
+            "value": "PFRLP18 C' MPO NiLZ - THE EXCHANGE"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Scratched on A side vinyl",
-            "value": "6A SMX 74672 FAC 183R - 2 MX 219774 \u00c5"
+            "description": "Runout Side D",
+            "value": "PFRLP18 D' MPO NiLZ - THE EXCHANGE"
         }
     ],
     "companies": [
         {
-            "name": "Factory Communications Ltd.",
+            "name": "The Exchange",
+            "entity_type": "29",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/158759",
+            "id": 158759,
+            "entity_type_name": "Mastered At"
+        },
+        {
+            "name": "MPO",
+            "entity_type": "17",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/56025",
+            "id": 56025,
+            "entity_type_name": "Pressed By"
+        },
+        {
+            "name": "Poker Flat Recordings",
             "entity_type": "13",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/264405",
-            "id": 264405,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
+            "id": 779,
             "entity_type_name": "Phonographic Copyright (p)"
         },
         {
-            "name": "Factory Communications Ltd.",
+            "name": "Poker Flat Recordings",
             "entity_type": "14",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/264405",
-            "id": 264405,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
+            "id": 779,
             "entity_type_name": "Copyright (c)"
         },
         {
-            "name": "Be Music (2)",
-            "entity_type": "21",
+            "name": "Wordandsound",
+            "entity_type": "9",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/266634",
-            "id": 266634,
-            "entity_type_name": "Published By"
+            "resource_url": "https:\/\/api.discogs.com\/labels\/264267",
+            "id": 264267,
+            "entity_type_name": "Distributed By"
         },
         {
-            "name": "Warner Bros. Music",
-            "entity_type": "21",
+            "name": "DR",
+            "entity_type": "23",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/41321",
-            "id": 41321,
-            "entity_type_name": "Published By"
-        },
-        {
-            "name": "Warner\/Chappell",
-            "entity_type": "21",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/138147",
-            "id": 138147,
-            "entity_type_name": "Published By"
-        },
-        {
-            "name": "MCA Music Inc.",
-            "entity_type": "21",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/270946",
-            "id": 270946,
-            "entity_type_name": "Published By"
-        },
-        {
-            "name": "Festival Records Pty. Ltd.",
-            "entity_type": "16",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/108138",
-            "id": 108138,
-            "entity_type_name": "Made By"
+            "resource_url": "https:\/\/api.discogs.com\/labels\/53886",
+            "id": 53886,
+            "entity_type_name": "Recorded At"
         }
     ],
-    "uri": "https:\/\/www.discogs.com\/New-Order-True-Faith-Remix\/release\/4640692",
-    "formats": [
-        {
-            "descriptions": [
-                "12\"",
-                "33 \u2153 RPM",
-                "Reissue"
-            ],
-            "name": "Vinyl",
-            "qty": "1"
-        }
-    ],
-    "resource_url": "https:\/\/api.discogs.com\/releases\/4640692",
-    "data_quality": "Correct"
+    "uri": "https:\/\/www.discogs.com\/Trentem%C3%B8ller-The-Last-Resort\/release\/802115",
+    "country": "Germany",
+    "resource_url": "https:\/\/api.discogs.com\/releases\/802115",
+    "data_quality": "Complete and Correct"
 }
