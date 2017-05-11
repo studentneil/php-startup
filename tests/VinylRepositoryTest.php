@@ -25,7 +25,13 @@ class VinylRepositoryTest extends VinylStoreDatabaseTest
         $vinylRepository = new VinylRepository($this->getDbal());
         $result = $vinylRepository->findLatestRelease();
         $this->assertEquals($expectedResult, count($result), 'expected 4 results::actual results were 4');
+    }
 
-
+    public function testJoinAllTables()
+    {
+        $expectedSQL = 'SELECT * FROM releases r INNER JOIN images i ON r.id=i.release_id INNER JOIN snipcart_data s ON r.id=s.release_id';
+        $vinylRepository = new VinylRepository($this->getDbal());
+        $qb = $vinylRepository->joinAll();
+        $this->assertSame($expectedSQL, $qb->getSQL());
     }
 }

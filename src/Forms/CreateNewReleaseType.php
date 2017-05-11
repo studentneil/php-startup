@@ -66,8 +66,8 @@ class CreateNewReleaseType extends AbstractType
             ))
             ->add('format', ChoiceType::class, array(
                 'choices' => array(
-                    '12" Lp' => '12 Lp',
-                    '12" E.p' => '12" E.p',
+                    '12" Lp' => '12" Lp',
+                    '12" Ep' => '12" Ep',
                     '12" Double Lp' => '12" Double Lp',
                     '12" Single' => '12" single',
                     '7" single' => '7" single',

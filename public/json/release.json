@@ -1,565 +1,176 @@
 {
-    "status": "Accepted",
+    "styles": [
+        "Downtempo"
+    ],
     "videos": [
         {
-            "duration": 158,
+            "duration": 150,
+            "description": "Tricky - Flynn",
             "embed": true,
-            "title": "Trentem\u00f8ller: The Last Resort: Pete Tong's Essential CD",
-            "description": "Trentem\u00f8ller: The Last Resort: Pete Tong's Essential CD",
-            "uri": "https:\/\/www.youtube.com\/watch?v=ZDkfyQY2jMw"
+            "uri": "https:\/\/www.youtube.com\/watch?v=JAZIH-pjA78",
+            "title": "Tricky - Flynn"
         },
         {
-            "duration": 300,
+            "duration": 344,
+            "description": "Tricky ghetto youth",
             "embed": true,
-            "title": "Trentem\u00f8ller: Evil Dub",
-            "description": "Trentem\u00f8ller: Evil Dub",
-            "uri": "https:\/\/www.youtube.com\/watch?v=97fuFZbVVnw"
+            "uri": "https:\/\/www.youtube.com\/watch?v=UL3dYghdzFo",
+            "title": "Tricky ghetto youth"
         },
         {
-            "duration": 492,
+            "duration": 196,
+            "description": "Christiansands (live) by Tricky and Martina Topley Bird",
             "embed": true,
-            "title": "Trentem\u00f8ller: The Very Last Resort",
-            "description": "Trentem\u00f8ller: The Very Last Resort",
-            "uri": "https:\/\/www.youtube.com\/watch?v=2m9aZwQOFwM"
+            "uri": "https:\/\/www.youtube.com\/watch?v=8gQz7ZYhRKA",
+            "title": "Christiansands (live) by Tricky and Martina Topley Bird"
         },
         {
-            "duration": 213,
+            "duration": 233,
+            "description": "Christiansands-Tricky (Pre-Millennium Tension).wmv",
             "embed": true,
-            "title": "Trentem\u00f8ller: Moan",
-            "description": "Trentem\u00f8ller: Moan",
-            "uri": "https:\/\/www.youtube.com\/watch?v=5vkj-t1ytzo"
+            "uri": "https:\/\/www.youtube.com\/watch?v=Te3-KmKhjpc",
+            "title": "Christiansands-Tricky (Pre-Millennium Tension).wmv"
         },
         {
-            "duration": 468,
+            "duration": 174,
+            "description": "Tricky - Christiansands (West 54th 1998)",
             "embed": true,
-            "title": "Trentem\u00f8ller - Take me into your Skin",
-            "description": "Trentem\u00f8ller - Take me into your Skin",
-            "uri": "https:\/\/www.youtube.com\/watch?v=6y-mzh7mvKE"
+            "uri": "https:\/\/www.youtube.com\/watch?v=hBpSJ-Lt94A",
+            "title": "Tricky - Christiansands (West 54th 1998)"
         },
         {
-            "duration": 351,
+            "duration": 425,
+            "description": "Tricky - Christiansands (Imposter's Mix)",
             "embed": true,
-            "title": "Trentem\u00f8ller - Moan [The Last Resort]",
-            "description": "Trentem\u00f8ller - Moan [The Last Resort]",
-            "uri": "https:\/\/www.youtube.com\/watch?v=aan-X1gHTHg"
-        },
-        {
-            "duration": 355,
-            "embed": true,
-            "title": "Trentem\u00f8ller - Nightwalker [HQ]",
-            "description": "Trentem\u00f8ller - Nightwalker [HQ]",
-            "uri": "https:\/\/www.youtube.com\/watch?v=BSkAqSmBkno"
-        },
-        {
-            "duration": 447,
-            "embed": true,
-            "title": "Trentemoller - Into the Trees",
-            "description": "Trentemoller - Into the Trees",
-            "uri": "https:\/\/www.youtube.com\/watch?v=NrfGm_ju_D0"
-        },
-        {
-            "duration": 454,
-            "embed": true,
-            "title": "Trentem\u00f8ller - Snowflake [The Last Resort]",
-            "description": "Trentem\u00f8ller - Snowflake [The Last Resort]",
-            "uri": "https:\/\/www.youtube.com\/watch?v=d2shb7utF5I"
-        },
-        {
-            "duration": 206,
-            "embed": true,
-            "title": "Trentem\u00f8ller - Like Two Strangers",
-            "description": "Trentem\u00f8ller - Like Two Strangers",
-            "uri": "https:\/\/www.youtube.com\/watch?v=9iA9kvRyamo"
-        },
-        {
-            "duration": 862,
-            "embed": true,
-            "title": "Nightwalker - Snowflake",
-            "description": "Nightwalker - Snowflake",
-            "uri": "https:\/\/www.youtube.com\/watch?v=b_ihsrZaLvQ"
-        },
-        {
-            "duration": 243,
-            "embed": true,
-            "title": "Trentemoller - Miss You",
-            "description": "Trentemoller - Miss You",
-            "uri": "https:\/\/www.youtube.com\/watch?v=5DUCKGyojpE"
+            "uri": "https:\/\/www.youtube.com\/watch?v=jUoXtyLXVQU",
+            "title": "Tricky - Christiansands (Imposter's Mix)"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "Poker Flat Recordings",
+            "name": "4th & Broadway",
             "entity_type": "1",
-            "catno": "PFRLP18",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
-            "id": 779,
+            "catno": "12 BRW 340",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/158452",
+            "id": 158452,
             "entity_type_name": "Label"
         }
     ],
-    "year": 2006,
+    "year": 1996,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 432,
-            "average": 4.56
+            "count": 46,
+            "average": 4.2
         },
-        "want": 817,
+        "have": 339,
         "contributors": [
             {
-                "username": "mamba9",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mamba9"
+                "username": "nfit",
+                "resource_url": "https:\/\/api.discogs.com\/users\/nfit"
             },
             {
-                "username": "mikkelhansen",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mikkelhansen"
+                "username": "trance_floor",
+                "resource_url": "https:\/\/api.discogs.com\/users\/trance_floor"
             },
             {
-                "username": "z33k",
-                "resource_url": "https:\/\/api.discogs.com\/users\/z33k"
+                "username": "jweijde",
+                "resource_url": "https:\/\/api.discogs.com\/users\/jweijde"
             },
             {
-                "username": "mirkob",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mirkob"
-            },
-            {
-                "username": "delysid",
-                "resource_url": "https:\/\/api.discogs.com\/users\/delysid"
-            },
-            {
-                "username": "thesub_jet",
-                "resource_url": "https:\/\/api.discogs.com\/users\/thesub_jet"
-            },
-            {
-                "username": "jonas45",
-                "resource_url": "https:\/\/api.discogs.com\/users\/jonas45"
-            },
-            {
-                "username": "NLK",
-                "resource_url": "https:\/\/api.discogs.com\/users\/NLK"
-            },
-            {
-                "username": "muntz",
-                "resource_url": "https:\/\/api.discogs.com\/users\/muntz"
-            },
-            {
-                "username": "maxxyme",
-                "resource_url": "https:\/\/api.discogs.com\/users\/maxxyme"
-            },
-            {
-                "username": "Mauep",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Mauep"
-            },
-            {
-                "username": "TheEvilGenius",
-                "resource_url": "https:\/\/api.discogs.com\/users\/TheEvilGenius"
-            },
-            {
-                "username": "abasheen",
-                "resource_url": "https:\/\/api.discogs.com\/users\/abasheen"
-            },
-            {
-                "username": "zaffa",
-                "resource_url": "https:\/\/api.discogs.com\/users\/zaffa"
+                "username": "lootje",
+                "resource_url": "https:\/\/api.discogs.com\/users\/lootje"
             }
         ],
-        "have": 2321,
+        "want": 79,
         "submitter": {
-            "username": "mamba9",
-            "resource_url": "https:\/\/api.discogs.com\/users\/mamba9"
+            "username": "nfit",
+            "resource_url": "https:\/\/api.discogs.com\/users\/nfit"
         },
-        "data_quality": "Complete and Correct"
+        "data_quality": "Needs Vote"
     },
     "artists": [
         {
-            "join": ",",
-            "name": "Trentem\u00f8ller",
+            "join": "",
+            "name": "Tricky",
             "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-            "id": 117914
+            "resource_url": "https:\/\/api.discogs.com\/artists\/3140",
+            "id": 3140
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/api-img.discogs.com\/ZPjXffo-D4G3TFcnVXZ2DsERsUU=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
-            "height": 590,
-            "width": 590,
-            "resource_url": "https:\/\/api-img.discogs.com\/ZPjXffo-D4G3TFcnVXZ2DsERsUU=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
-            "type": "primary",
-            "uri150": "https:\/\/api-img.discogs.com\/kn5OJf5fwNRDxB8SC0ZgRnA5jbY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889765.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/qE7FI7Un50V0AWQeWwta_UClLr0=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889807.jpeg.jpg",
-            "height": 590,
-            "width": 590,
-            "resource_url": "https:\/\/api-img.discogs.com\/qE7FI7Un50V0AWQeWwta_UClLr0=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889807.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/oc_5da8wUopsR6szMTIY-8qzDI4=\/fit-in\/350x350\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-143942-1131634377.jpeg.jpg",
+            "height": 350,
+            "width": 350,
+            "resource_url": "https:\/\/api-img.discogs.com\/oc_5da8wUopsR6szMTIY-8qzDI4=\/fit-in\/350x350\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-143942-1131634377.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/4MP_xoHO9OFZKourlohMB4351bs=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889807.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/x17bK8YqbeYyB0sh9GtAi3ABg2U=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/x17bK8YqbeYyB0sh9GtAi3ABg2U=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/CTls2tFyR8BwRzyla__nrnIT93o=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/xFXna1XtlZNtsbvx0DAS4ZQN2Xc=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/xFXna1XtlZNtsbvx0DAS4ZQN2Xc=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/etEFfqVih9nIoBWWfuPnV6HpgtM=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/D5mB3A-rPm-b6LuhekCXseV6xKY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/D5mB3A-rPm-b6LuhekCXseV6xKY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/kb-MQQUHeOEHBA-phKUAiqv-uAU=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/YbgQTCPplabjND6WHIk40FoEuLY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/YbgQTCPplabjND6WHIk40FoEuLY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/OW2bGBetXsPvRhKSA8ZiKt1gOaQ=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/mopj_58okUOJzXHbne-n4bbizs0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-143942-1131634377.jpeg.jpg"
         }
     ],
-    "format_quantity": 2,
-    "id": 802115,
+    "format_quantity": 1,
+    "id": 143942,
     "genres": [
         "Electronic"
     ],
-    "thumb": "https:\/\/api-img.discogs.com\/kn5OJf5fwNRDxB8SC0ZgRnA5jbY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
-    "num_for_sale": 45,
-    "title": "The Last Resort",
-    "date_changed": "2016-04-21T08:21:12-07:00",
-    "master_id": 23992,
-    "lowest_price": 14.78,
-    "styles": [
-        "Abstract",
-        "IDM",
-        "Minimal"
-    ],
-    "released_formatted": "09 Oct 2006",
-    "formats": [
-        {
-            "qty": "2",
-            "descriptions": [
-                "12\"",
-                "33 \u2153 RPM",
-                "Album",
-                "Remastered"
-            ],
-            "name": "Vinyl"
-        }
-    ],
-    "estimated_weight": 460,
-    "master_url": "https:\/\/api.discogs.com\/masters\/23992",
-    "released": "2006-10-09",
-    "date_added": "2006-10-09T23:33:16-07:00",
-    "extraartists": [
-        {
-            "join": "",
-            "name": "Weissraum",
-            "anv": "weissraum.de(sign)",
-            "tracks": "",
-            "role": "Artwork",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1827689",
-            "id": 1827689
-        },
-        {
-            "join": "",
-            "name": "Nulleinsbild",
-            "anv": "",
-            "tracks": "",
-            "role": "Artwork [3d Tree]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2065525",
-            "id": 2065525
-        },
-        {
-            "join": "",
-            "name": "Nilesh Patel",
-            "anv": "Nilz",
-            "tracks": "",
-            "role": "Mastered By [Cutting]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/386598",
-            "id": 386598
-        },
-        {
-            "join": "",
-            "name": "PhotoCase",
-            "anv": "Photocase.com",
-            "tracks": "",
-            "role": "Photography By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2243913",
-            "id": 2243913
-        },
-        {
-            "join": "",
-            "name": "Ossian Ryner",
-            "anv": "",
-            "tracks": "",
-            "role": "Technician",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/325188",
-            "id": 325188
-        },
-        {
-            "join": "",
-            "name": "Trentem\u00f8ller",
-            "anv": "Anders Trentem\u00f8ller",
-            "tracks": "",
-            "role": "Written-By, Producer, Performer [Played By], Programmed By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-            "id": 117914
-        }
-    ],
+    "thumb": "https:\/\/api-img.discogs.com\/mopj_58okUOJzXHbne-n4bbizs0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-143942-1131634377.jpeg.jpg",
+    "num_for_sale": 20,
+    "title": "Christiansands",
+    "date_changed": "2014-10-20T17:35:13-07:00",
+    "master_id": 50248,
+    "lowest_price": 1.9,
+    "status": "Accepted",
+    "released_formatted": "1996",
+    "estimated_weight": 230,
+    "master_url": "https:\/\/api.discogs.com\/masters\/50248",
+    "released": "1996",
+    "date_added": "2003-05-21T13:25:24-07:00",
     "tracklist": [
         {
             "duration": "",
             "position": "A1",
             "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Mikael Simpson",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass [Distorted Bass]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/247991",
-                    "id": 247991
-                },
-                {
-                    "join": "",
-                    "name": "Henrik Vibskov",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drums [Acc. Drums]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/598277",
-                    "id": 598277
-                },
-                {
-                    "join": "",
-                    "name": "Trentem\u00f8ller",
-                    "anv": "Anders Trentem\u00f8ller",
-                    "tracks": "",
-                    "role": "Guitar [Dreamy Guitars]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-                    "id": 117914
-                }
-            ],
-            "title": "Take Me Into Your Skin"
+            "title": "Christiansands (Album Version)"
         },
         {
             "duration": "",
             "position": "A2",
             "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Mikael Simpson",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Acoustic Guitar [Acc. Guitar]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/247991",
-                    "id": 247991
-                },
-                {
-                    "join": "",
-                    "name": "Trentem\u00f8ller",
-                    "anv": "Anders Trentem\u00f8ller",
-                    "tracks": "",
-                    "role": "Guitar [Surf Guitar]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-                    "id": 117914
-                }
-            ],
-            "title": "The Very Last Resort"
+            "title": "Christiansands (The Imposter's Mix)"
         },
         {
             "duration": "",
             "position": "B1",
             "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Arnaud Donez",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Guitar, Bass",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/598276",
-                    "id": 598276
-                }
-            ],
-            "title": "Evil Dub"
+            "title": "Ghetto Youth"
         },
         {
             "duration": "",
             "position": "B2",
             "type_": "track",
-            "title": "Snowflake"
-        },
+            "title": "Flynn"
+        }
+    ],
+    "extraartists": [],
+    "country": "UK",
+    "notes": "Illustrated inner sleeve.",
+    "identifiers": [],
+    "companies": [],
+    "uri": "https:\/\/www.discogs.com\/Tricky-Christiansands\/release\/143942",
+    "formats": [
         {
-            "duration": "",
-            "position": "C1",
-            "type_": "track",
-            "title": "Nightwalker"
-        },
-        {
-            "duration": "",
-            "position": "C2",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Henrik Vibskov",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drums [Acc. Drums]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/598277",
-                    "id": 598277
-                }
+            "descriptions": [
+                "12\"",
+                "45 RPM",
+                "EP"
             ],
-            "title": "Into The Trees (Serenetti Part 3)"
-        },
-        {
-            "duration": "",
-            "position": "D1",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Trentem\u00f8ller",
-                    "anv": "Anders Trentem\u00f8ller",
-                    "tracks": "",
-                    "role": "Celesta [Celeste Played By]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-                    "id": 117914
-                },
-                {
-                    "join": "",
-                    "name": "Thomas Bertelsen",
-                    "anv": "Thomas 'DJ T.O.M.' Bertelsen",
-                    "tracks": "",
-                    "role": "Scratches [Scratch Solo]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/795019",
-                    "id": 795019
-                }
-            ],
-            "title": "Always Something Better"
-        },
-        {
-            "duration": "",
-            "position": "D2",
-            "type_": "track",
-            "title": "Moan"
-        },
-        {
-            "duration": "",
-            "position": "D3",
-            "type_": "track",
-            "title": "Miss You"
+            "name": "Vinyl",
+            "qty": "1"
         }
     ],
-    "notes": "Recorded in Copenhagen 2005\/2006. \r\nAcc. drums and celeste recorded in Denmarks Radio's Studio 9.\r\n\r\n(P)&(C) 2006 Poker Flat Recordings\r\nMade in EU.\r\nThis vinyl edition includes special versions of selected songs from the full length album: [r=830189] (PFRCD18).\r\n\r\nLimited Edition includes a poster.",
-    "identifiers": [
-        {
-            "type": "Barcode",
-            "description": "Text",
-            "value": "8 27170 11311 4"
-        },
-        {
-            "type": "Barcode",
-            "description": "String",
-            "value": "827170113114"
-        },
-        {
-            "type": "Rights Society",
-            "value": "GEMA"
-        },
-        {
-            "type": "Label Code",
-            "value": "LC 00747"
-        },
-        {
-            "type": "Matrix \/ Runout",
-            "description": "Runout Side A",
-            "value": "PFRLP18 A' MPO NiLZ - THE EXCHANGE"
-        },
-        {
-            "type": "Matrix \/ Runout",
-            "description": "Runout Side B",
-            "value": "PFRLP18 B' MPO NiLZ - THE EXCHANGE"
-        },
-        {
-            "type": "Matrix \/ Runout",
-            "description": "Runout Side C",
-            "value": "PFRLP18 C' MPO NiLZ - THE EXCHANGE"
-        },
-        {
-            "type": "Matrix \/ Runout",
-            "description": "Runout Side D",
-            "value": "PFRLP18 D' MPO NiLZ - THE EXCHANGE"
-        }
-    ],
-    "companies": [
-        {
-            "name": "The Exchange",
-            "entity_type": "29",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/158759",
-            "id": 158759,
-            "entity_type_name": "Mastered At"
-        },
-        {
-            "name": "MPO",
-            "entity_type": "17",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/56025",
-            "id": 56025,
-            "entity_type_name": "Pressed By"
-        },
-        {
-            "name": "Poker Flat Recordings",
-            "entity_type": "13",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
-            "id": 779,
-            "entity_type_name": "Phonographic Copyright (p)"
-        },
-        {
-            "name": "Poker Flat Recordings",
-            "entity_type": "14",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
-            "id": 779,
-            "entity_type_name": "Copyright (c)"
-        },
-        {
-            "name": "Wordandsound",
-            "entity_type": "9",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/264267",
-            "id": 264267,
-            "entity_type_name": "Distributed By"
-        },
-        {
-            "name": "DR",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/53886",
-            "id": 53886,
-            "entity_type_name": "Recorded At"
-        }
-    ],
-    "uri": "https:\/\/www.discogs.com\/Trentem%C3%B8ller-The-Last-Resort\/release\/802115",
-    "country": "Germany",
-    "resource_url": "https:\/\/api.discogs.com\/releases\/802115",
-    "data_quality": "Complete and Correct"
+    "resource_url": "https:\/\/api.discogs.com\/releases\/143942",
+    "data_quality": "Needs Vote"
 }

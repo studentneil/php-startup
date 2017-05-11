@@ -32,12 +32,8 @@ class VinylRepository implements RepositoryInterface
     public function findOneById($id)
     {
         //        $safeId = filter_var($id, FILTER_VALIDATE_INT);
-        $qb = $this->conn->createQueryBuilder();
-        $qb->select('*')
-            ->from('releases', 'r')
-            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->rightJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
-            ->where('r.id = ?')
+        $qb = $this->joinAll();
+        $qb->where('r.id = ?')
             ->setParameter(0, $id);
 
         $release = $qb->execute()->fetch();
@@ -57,14 +53,20 @@ class VinylRepository implements RepositoryInterface
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM releases');
     }
 
-    public function findEverything()
+    public function joinAll()
     {
         $qb = $this->conn->createQueryBuilder();
         $qb->select('*')
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
-            ->andHaving('quantity >= 1');
+            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
+        return $qb;
+    }
+
+    public function findEverything()
+    {
+        $qb = $this->joinAll();
+        $qb->andHaving('quantity >= 1');
         $releases = $qb->execute()->fetchAll();
 
         return $releases;
@@ -72,12 +74,8 @@ class VinylRepository implements RepositoryInterface
 
     public function getReleasesByGenre($genre)
     {
-        $qb = $this->conn->createQueryBuilder();
-        $qb->select('*')
-            ->from('releases', 'r')
-            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
-            ->andWhere('genre = ?')
+        $qb = $this->joinAll();
+        $qb->andWhere('genre = ?')
             ->andHaving('quantity >= 1')
             ->setParameter(0, $genre);
         $genreReleases = $qb->execute()->fetchAll();
@@ -105,15 +103,7 @@ class VinylRepository implements RepositoryInterface
 
         return $latestReleases;
     }
-    public function joinAll()
-    {
-        $qb = $this->conn->createQueryBuilder();
-        $qb->select('*')
-            ->from('releases', 'r')
-            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
-        return $qb;
-    }
+
 
     public function findRandomRelease()
     {
@@ -126,14 +116,9 @@ class VinylRepository implements RepositoryInterface
 
     public function findForPagination($limit, $offset = 0)
     {
-        $qb = $this->conn->createQueryBuilder();
-        $qb->select('*')
-            ->from('releases', 'r')
-            ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
-            ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id')
-            ->setFirstResult($offset)
+        $qb = $this->joinAll();
+        $qb->setFirstResult($offset)
             ->setMaxResults($limit)
-//            ->orderBy('date_added', 'DESC')
             ->andHaving('quantity >= 1');
 
         $paginatedReleases = $qb->execute()->fetchAll();
@@ -162,10 +147,12 @@ class VinylRepository implements RepositoryInterface
                 $qb->orHaving('format = ?');
             }
         }
+
         $dataArr = array_merge($genreArr, $formatArr);
         if (!empty($dataArr)){
             $qb->setParameters($dataArr);
         }
+//        var_dump($qb->getSQL());
         $qb->andHaving('quantity >= 1');
         $refinedResults = $qb->execute()->fetchAll();
 
