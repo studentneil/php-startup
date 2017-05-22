@@ -7,4 +7,4 @@ before_script:
   - composer install
   - cat "$TRAVIS_BUILD_DIR/config/my.cnf" | sudo tee -a /etc/mysql/my.cnf
   - sudo service mysql restart
-script: phpunit
+script: php phpunit.phar tests

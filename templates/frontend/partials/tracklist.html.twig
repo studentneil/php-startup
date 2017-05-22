@@ -4,3 +4,15 @@
     {#<span class="right">{{ tracks.duration }}</span>#}
 {% endfor %}
 </div>
+</div>
+</div>
+<div class="col s12 m6">
+    <div class="card-panel white lighten-2">
+        <h2 class="flow-text grey lighten-4 track_header">MORE DETAILS</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/{% for video in release.videos|slice(0,1) %}{{ video.uri|slice(32,43) }}{% endfor %}" frameborder="0"
+                    allowfullscreen="true"></iframe>
+        </div>
+
+    </div>
+</div>
