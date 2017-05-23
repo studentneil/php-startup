@@ -1,8 +1,10 @@
 <div class="track_list-body">
-{% for tracks in release.tracklist %}
-    {{ tracks.position }} {{ tracks.title }}<br>
-    {#<span class="right">{{ tracks.duration }}</span>#}
-{% endfor %}
+    {% if release is defined %}
+        {% for tracks in release.tracklist %}
+            {{ tracks.position }} {{ tracks.title }}<br>
+            {#<span class="right">{{ tracks.duration }}</span>#}
+        {% endfor %}
+    {% endif %}
 </div>
 </div>
 </div>

@@ -1,565 +1,545 @@
 {
-    "styles": [
-        "Abstract",
-        "IDM",
-        "Minimal"
-    ],
+    "status": "Accepted",
     "videos": [
         {
-            "duration": 158,
-            "description": "Trentem\u00f8ller: The Last Resort: Pete Tong's Essential CD",
+            "duration": 182,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=ZDkfyQY2jMw",
-            "title": "Trentem\u00f8ller: The Last Resort: Pete Tong's Essential CD"
+            "title": "Arctic Monkeys - Brianstorm (2007)",
+            "description": "Arctic Monkeys - Brianstorm (2007)",
+            "uri": "https:\/\/www.youtube.com\/watch?v=30w8DyEJ__0"
         },
         {
-            "duration": 300,
-            "description": "Trentem\u00f8ller: Evil Dub",
+            "duration": 2258,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=97fuFZbVVnw",
-            "title": "Trentem\u00f8ller: Evil Dub"
+            "title": "Arctic Monkeys - Favourite Worst Nightmare (2007) Full Album",
+            "description": "Arctic Monkeys - Favourite Worst Nightmare (2007) Full Album",
+            "uri": "https:\/\/www.youtube.com\/watch?v=ErM84SRShI8"
         },
         {
-            "duration": 492,
-            "description": "Trentem\u00f8ller: The Very Last Resort",
+            "duration": 196,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=2m9aZwQOFwM",
-            "title": "Trentem\u00f8ller: The Very Last Resort"
+            "title": "Arctic Monkeys - 'Fluorescent Adolescent' (2007)",
+            "description": "Arctic Monkeys - 'Fluorescent Adolescent' (2007)",
+            "uri": "https:\/\/www.youtube.com\/watch?v=ma9I9VBKPiw"
         },
         {
-            "duration": 213,
-            "description": "Trentem\u00f8ller: Moan",
+            "duration": 164,
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=5vkj-t1ytzo",
-            "title": "Trentem\u00f8ller: Moan"
-        },
-        {
-            "duration": 468,
-            "description": "Trentem\u00f8ller - Take me into your Skin",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=6y-mzh7mvKE",
-            "title": "Trentem\u00f8ller - Take me into your Skin"
-        },
-        {
-            "duration": 351,
-            "description": "Trentem\u00f8ller - Moan [The Last Resort]",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=aan-X1gHTHg",
-            "title": "Trentem\u00f8ller - Moan [The Last Resort]"
-        },
-        {
-            "duration": 355,
-            "description": "Trentem\u00f8ller - Nightwalker [HQ]",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=BSkAqSmBkno",
-            "title": "Trentem\u00f8ller - Nightwalker [HQ]"
-        },
-        {
-            "duration": 447,
-            "description": "Trentemoller - Into the Trees",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=NrfGm_ju_D0",
-            "title": "Trentemoller - Into the Trees"
-        },
-        {
-            "duration": 454,
-            "description": "Trentem\u00f8ller - Snowflake [The Last Resort]",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=d2shb7utF5I",
-            "title": "Trentem\u00f8ller - Snowflake [The Last Resort]"
-        },
-        {
-            "duration": 206,
-            "description": "Trentem\u00f8ller - Like Two Strangers",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=9iA9kvRyamo",
-            "title": "Trentem\u00f8ller - Like Two Strangers"
-        },
-        {
-            "duration": 862,
-            "description": "Nightwalker - Snowflake",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=b_ihsrZaLvQ",
-            "title": "Nightwalker - Snowflake"
-        },
-        {
-            "duration": 243,
-            "description": "Trentemoller - Miss You",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=5DUCKGyojpE",
-            "title": "Trentemoller - Miss You"
+            "title": "Arctic Monkeys - Teddy Picker - Favourite Worst Nightmare",
+            "description": "Arctic Monkeys - Teddy Picker - Favourite Worst Nightmare",
+            "uri": "https:\/\/www.youtube.com\/watch?v=Ee4HTpght28"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "Poker Flat Recordings",
+            "name": "Domino",
             "entity_type": "1",
-            "catno": "PFRLP18",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
-            "id": 779,
+            "catno": "WIGLP188",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/26465",
+            "id": 26465,
             "entity_type_name": "Label"
         }
     ],
-    "year": 2006,
+    "year": 2013,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 433,
-            "average": 4.57
+            "count": 48,
+            "average": 4.44
         },
-        "have": 2335,
+        "want": 278,
         "contributors": [
             {
-                "username": "mamba9",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mamba9"
+                "username": "lionel-vice",
+                "resource_url": "https:\/\/api.discogs.com\/users\/lionel-vice"
             },
             {
-                "username": "mikkelhansen",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mikkelhansen"
+                "username": "depassage",
+                "resource_url": "https:\/\/api.discogs.com\/users\/depassage"
             },
             {
-                "username": "z33k",
-                "resource_url": "https:\/\/api.discogs.com\/users\/z33k"
+                "username": "ruben_be",
+                "resource_url": "https:\/\/api.discogs.com\/users\/ruben_be"
             },
             {
-                "username": "mirkob",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mirkob"
+                "username": "j-ost",
+                "resource_url": "https:\/\/api.discogs.com\/users\/j-ost"
             },
             {
-                "username": "delysid",
-                "resource_url": "https:\/\/api.discogs.com\/users\/delysid"
+                "username": "Silver-Tentacle",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Silver-Tentacle"
             },
             {
-                "username": "thesub_jet",
-                "resource_url": "https:\/\/api.discogs.com\/users\/thesub_jet"
-            },
-            {
-                "username": "jonas45",
-                "resource_url": "https:\/\/api.discogs.com\/users\/jonas45"
-            },
-            {
-                "username": "NLK",
-                "resource_url": "https:\/\/api.discogs.com\/users\/NLK"
-            },
-            {
-                "username": "muntz",
-                "resource_url": "https:\/\/api.discogs.com\/users\/muntz"
-            },
-            {
-                "username": "maxxyme",
-                "resource_url": "https:\/\/api.discogs.com\/users\/maxxyme"
-            },
-            {
-                "username": "Mauep",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Mauep"
-            },
-            {
-                "username": "TheEvilGenius",
-                "resource_url": "https:\/\/api.discogs.com\/users\/TheEvilGenius"
-            },
-            {
-                "username": "abasheen",
-                "resource_url": "https:\/\/api.discogs.com\/users\/abasheen"
-            },
-            {
-                "username": "zaffa",
-                "resource_url": "https:\/\/api.discogs.com\/users\/zaffa"
+                "username": "Dr.Graham",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Dr.Graham"
             }
         ],
-        "want": 818,
+        "have": 519,
         "submitter": {
-            "username": "mamba9",
-            "resource_url": "https:\/\/api.discogs.com\/users\/mamba9"
+            "username": "lionel-vice",
+            "resource_url": "https:\/\/api.discogs.com\/users\/lionel-vice"
         },
-        "data_quality": "Complete and Correct"
+        "data_quality": "Correct"
     },
     "artists": [
         {
             "join": ",",
-            "name": "Trentem\u00f8ller",
+            "name": "Arctic Monkeys",
             "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-            "id": 117914
+            "resource_url": "https:\/\/api.discogs.com\/artists\/391170",
+            "id": 391170
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/api-img.discogs.com\/ZPjXffo-D4G3TFcnVXZ2DsERsUU=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
-            "height": 590,
-            "width": 590,
-            "resource_url": "https:\/\/api-img.discogs.com\/ZPjXffo-D4G3TFcnVXZ2DsERsUU=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/M82Qu83-F0Tgr6p-xf-cUzxMGlc=\/fit-in\/500x500\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-6985823-1431718928-4832.jpeg.jpg",
+            "height": 500,
+            "width": 500,
+            "resource_url": "https:\/\/api-img.discogs.com\/M82Qu83-F0Tgr6p-xf-cUzxMGlc=\/fit-in\/500x500\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-6985823-1431718928-4832.jpeg.jpg",
             "type": "primary",
-            "uri150": "https:\/\/api-img.discogs.com\/kn5OJf5fwNRDxB8SC0ZgRnA5jbY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889765.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/qE7FI7Un50V0AWQeWwta_UClLr0=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889807.jpeg.jpg",
-            "height": 590,
-            "width": 590,
-            "resource_url": "https:\/\/api-img.discogs.com\/qE7FI7Un50V0AWQeWwta_UClLr0=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889807.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/4MP_xoHO9OFZKourlohMB4351bs=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889807.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/x17bK8YqbeYyB0sh9GtAi3ABg2U=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/x17bK8YqbeYyB0sh9GtAi3ABg2U=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/CTls2tFyR8BwRzyla__nrnIT93o=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/xFXna1XtlZNtsbvx0DAS4ZQN2Xc=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/xFXna1XtlZNtsbvx0DAS4ZQN2Xc=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/etEFfqVih9nIoBWWfuPnV6HpgtM=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/D5mB3A-rPm-b6LuhekCXseV6xKY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/D5mB3A-rPm-b6LuhekCXseV6xKY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/kb-MQQUHeOEHBA-phKUAiqv-uAU=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/YbgQTCPplabjND6WHIk40FoEuLY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/YbgQTCPplabjND6WHIk40FoEuLY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/OW2bGBetXsPvRhKSA8ZiKt1gOaQ=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/WsSFenc49SDo6Lm39DdMNZbpTns=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-6985823-1431718928-4832.jpeg.jpg"
         }
     ],
-    "format_quantity": 2,
-    "id": 802115,
+    "format_quantity": 1,
+    "id": 6985823,
     "genres": [
-        "Electronic"
+        "Rock"
     ],
-    "thumb": "https:\/\/api-img.discogs.com\/kn5OJf5fwNRDxB8SC0ZgRnA5jbY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
-    "num_for_sale": 42,
-    "title": "The Last Resort",
-    "date_changed": "2016-04-21T08:21:12-07:00",
-    "master_id": 23992,
-    "lowest_price": 14.5,
-    "status": "Accepted",
-    "released_formatted": "09 Oct 2006",
-    "estimated_weight": 460,
-    "master_url": "https:\/\/api.discogs.com\/masters\/23992",
-    "released": "2006-10-09",
-    "date_added": "2006-10-09T23:33:16-07:00",
-    "tracklist": [
+    "thumb": "https:\/\/api-img.discogs.com\/WsSFenc49SDo6Lm39DdMNZbpTns=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-6985823-1431718928-4832.jpeg.jpg",
+    "num_for_sale": 32,
+    "title": "Favourite Worst Nightmare",
+    "date_changed": "2017-01-09T00:35:11-08:00",
+    "master_id": 69774,
+    "lowest_price": 19.5,
+    "styles": [
+        "Alternative Rock",
+        "Indie Rock"
+    ],
+    "released_formatted": "2013",
+    "formats": [
         {
-            "duration": "",
-            "position": "A1",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Mikael Simpson",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass [Distorted Bass]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/247991",
-                    "id": 247991
-                },
-                {
-                    "join": "",
-                    "name": "Henrik Vibskov",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drums [Acc. Drums]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/598277",
-                    "id": 598277
-                },
-                {
-                    "join": "",
-                    "name": "Trentem\u00f8ller",
-                    "anv": "Anders Trentem\u00f8ller",
-                    "tracks": "",
-                    "role": "Guitar [Dreamy Guitars]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-                    "id": 117914
-                }
+            "qty": "1",
+            "descriptions": [
+                "LP",
+                "Album",
+                "Reissue"
             ],
-            "title": "Take Me Into Your Skin"
-        },
-        {
-            "duration": "",
-            "position": "A2",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Mikael Simpson",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Acoustic Guitar [Acc. Guitar]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/247991",
-                    "id": 247991
-                },
-                {
-                    "join": "",
-                    "name": "Trentem\u00f8ller",
-                    "anv": "Anders Trentem\u00f8ller",
-                    "tracks": "",
-                    "role": "Guitar [Surf Guitar]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-                    "id": 117914
-                }
-            ],
-            "title": "The Very Last Resort"
-        },
-        {
-            "duration": "",
-            "position": "B1",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Arnaud Donez",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Guitar, Bass",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/598276",
-                    "id": 598276
-                }
-            ],
-            "title": "Evil Dub"
-        },
-        {
-            "duration": "",
-            "position": "B2",
-            "type_": "track",
-            "title": "Snowflake"
-        },
-        {
-            "duration": "",
-            "position": "C1",
-            "type_": "track",
-            "title": "Nightwalker"
-        },
-        {
-            "duration": "",
-            "position": "C2",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Henrik Vibskov",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drums [Acc. Drums]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/598277",
-                    "id": 598277
-                }
-            ],
-            "title": "Into The Trees (Serenetti Part 3)"
-        },
-        {
-            "duration": "",
-            "position": "D1",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Trentem\u00f8ller",
-                    "anv": "Anders Trentem\u00f8ller",
-                    "tracks": "",
-                    "role": "Celesta [Celeste Played By]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-                    "id": 117914
-                },
-                {
-                    "join": "",
-                    "name": "Thomas Bertelsen",
-                    "anv": "Thomas 'DJ T.O.M.' Bertelsen",
-                    "tracks": "",
-                    "role": "Scratches [Scratch Solo]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/795019",
-                    "id": 795019
-                }
-            ],
-            "title": "Always Something Better"
-        },
-        {
-            "duration": "",
-            "position": "D2",
-            "type_": "track",
-            "title": "Moan"
-        },
-        {
-            "duration": "",
-            "position": "D3",
-            "type_": "track",
-            "title": "Miss You"
+            "name": "Vinyl"
         }
     ],
+    "estimated_weight": 230,
+    "master_url": "https:\/\/api.discogs.com\/masters\/69774",
+    "released": "2013",
+    "date_added": "2015-05-07T12:52:18-07:00",
     "extraartists": [
         {
             "join": "",
-            "name": "Weissraum",
-            "anv": "weissraum.de(sign)",
-            "tracks": "",
-            "role": "Artwork",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1827689",
-            "id": 1827689
-        },
-        {
-            "join": "",
-            "name": "Nulleinsbild",
+            "name": "Juno (16)",
             "anv": "",
             "tracks": "",
-            "role": "Artwork [3d Tree]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2065525",
-            "id": 2065525
+            "role": "Art Direction, Design, Photography By [Booklet]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1831510",
+            "id": 1831510
         },
         {
             "join": "",
-            "name": "Nilesh Patel",
-            "anv": "Nilz",
-            "tracks": "",
-            "role": "Mastered By [Cutting]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/386598",
-            "id": 386598
-        },
-        {
-            "join": "",
-            "name": "PhotoCase",
-            "anv": "Photocase.com",
-            "tracks": "",
-            "role": "Photography By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2243913",
-            "id": 2243913
-        },
-        {
-            "join": "",
-            "name": "Ossian Ryner",
+            "name": "54 Crew",
             "anv": "",
             "tracks": "",
-            "role": "Technician",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/325188",
-            "id": 325188
+            "role": "Artwork [Spray Can Murals]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264908",
+            "id": 2264908
         },
         {
             "join": "",
-            "name": "Trentem\u00f8ller",
-            "anv": "Anders Trentem\u00f8ller",
+            "name": "Anne-Marie Moore",
+            "anv": "",
             "tracks": "",
-            "role": "Written-By, Producer, Performer [Played By], Programmed By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-            "id": 117914
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264909",
+            "id": 2264909
+        },
+        {
+            "join": "",
+            "name": "Drew Millward",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264913",
+            "id": 2264913
+        },
+        {
+            "join": "",
+            "name": "Graphique Club",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264907",
+            "id": 2264907
+        },
+        {
+            "join": "",
+            "name": "Joseph Bramhall",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264911",
+            "id": 2264911
+        },
+        {
+            "join": "",
+            "name": "Juno (16)",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1831510",
+            "id": 1831510
+        },
+        {
+            "join": "",
+            "name": "Tobias Warwick Jones",
+            "anv": "Tobias",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1551367",
+            "id": 1551367
+        },
+        {
+            "join": "",
+            "name": "Matthew Cooper (2)",
+            "anv": "",
+            "tracks": "",
+            "role": "Layout",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1831503",
+            "id": 1831503
+        },
+        {
+            "join": "",
+            "name": "Geoff Baradale",
+            "anv": "",
+            "tracks": "",
+            "role": "Management",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1709735",
+            "id": 1709735
+        },
+        {
+            "join": "",
+            "name": "Ian McAndrew",
+            "anv": "",
+            "tracks": "",
+            "role": "Management",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1633844",
+            "id": 1633844
+        },
+        {
+            "join": "",
+            "name": "George Marino",
+            "anv": "",
+            "tracks": "",
+            "role": "Mastered By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/335003",
+            "id": 335003
+        },
+        {
+            "join": "",
+            "name": "Alan Moulder",
+            "anv": "",
+            "tracks": "A1, A3 to A5, B2 to B3, B6",
+            "role": "Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2768",
+            "id": 2768
+        },
+        {
+            "join": "",
+            "name": "James Ford",
+            "anv": "",
+            "tracks": "A2, A6, B4, B5",
+            "role": "Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/290084",
+            "id": 290084
+        },
+        {
+            "join": "",
+            "name": "Mike Crossey",
+            "anv": "",
+            "tracks": "A2, A6, B4, B5",
+            "role": "Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/329500",
+            "id": 329500
+        },
+        {
+            "join": "",
+            "name": "Arctic Monkeys",
+            "anv": "",
+            "tracks": "",
+            "role": "Music By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/391170",
+            "id": 391170
+        },
+        {
+            "join": "",
+            "name": "Matt Goodfellow",
+            "anv": "",
+            "tracks": "",
+            "role": "Photography By [Except Booklet]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2264912",
+            "id": 2264912
+        },
+        {
+            "join": "",
+            "name": "James Ford",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/290084",
+            "id": 290084
+        },
+        {
+            "join": "",
+            "name": "Mike Crossey",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/329500",
+            "id": 329500
+        },
+        {
+            "join": "",
+            "name": "Alex Turner",
+            "anv": "",
+            "tracks": "",
+            "role": "Words By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/408091",
+            "id": 408091
         }
     ],
-    "country": "Germany",
-    "notes": "Recorded in Copenhagen 2005\/2006. \r\nAcc. drums and celeste recorded in Denmarks Radio's Studio 9.\r\n\r\n(P)&(C) 2006 Poker Flat Recordings\r\nMade in EU.\r\nThis vinyl edition includes special versions of selected songs from the full length album: [r=830189] (PFRCD18).\r\n\r\nLimited Edition includes a poster.",
+    "tracklist": [
+        {
+            "duration": "2:50",
+            "position": "A1",
+            "type_": "track",
+            "title": "Brianstorm"
+        },
+        {
+            "duration": "2:43",
+            "position": "A2",
+            "type_": "track",
+            "title": "Teddy Picker"
+        },
+        {
+            "duration": "2:16",
+            "position": "A3",
+            "type_": "track",
+            "title": "D Is For Dangerous"
+        },
+        {
+            "duration": "2:49",
+            "position": "A4",
+            "type_": "track",
+            "title": "Balaclava"
+        },
+        {
+            "duration": "2:57",
+            "position": "A5",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Johanna Bennett",
+                    "anv": "Bennett",
+                    "tracks": "",
+                    "role": "Lyrics By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/800327",
+                    "id": 800327
+                }
+            ],
+            "title": "Fluorescent Adolescent"
+        },
+        {
+            "duration": "3:02",
+            "position": "A6",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "James Ford",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar [Additional]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/290084",
+                    "id": 290084
+                }
+            ],
+            "title": "Only Ones Who Know"
+        },
+        {
+            "duration": "3:27",
+            "position": "B1",
+            "type_": "track",
+            "title": "Do Me A Favour"
+        },
+        {
+            "duration": "3:09",
+            "position": "B2",
+            "type_": "track",
+            "title": "This House Is A Circus"
+        },
+        {
+            "duration": "4:34",
+            "position": "B3",
+            "type_": "track",
+            "title": "If You Were There, Beware"
+        },
+        {
+            "duration": "2:23",
+            "position": "B4",
+            "type_": "track",
+            "title": "The Bad Thing"
+        },
+        {
+            "duration": "3:11",
+            "position": "B5",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Jon McClure",
+                    "anv": "McClure",
+                    "tracks": "",
+                    "role": "Lyrics By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/897816",
+                    "id": 897816
+                }
+            ],
+            "title": "Old Yellow Bricks"
+        },
+        {
+            "duration": "4:13",
+            "position": "B6",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Miles Kane",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Guitar [Additional]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/799359",
+                    "id": 799359
+                }
+            ],
+            "title": "505"
+        }
+    ],
+    "notes": "\u2117&\u00a9 2007 Domino Recording Co Ltd\nMade in the EU.\nGatefold sleeve.\n\nAll tracks published by EMI Music Publishing.\nExcept tracks 5\/11: Published by EMI Music Publishing\/Copyright Control.\n\nMixed at Assault and Battery Studios, London.\nRecorded at Miloco Garden, London, Eastcote Studios, London, Motor Museum, Liverpool and Konk Studios, London.\nMastered at Sterling Sound, New York.\nPhotography at Mills Media.",
     "identifiers": [
         {
             "type": "Barcode",
-            "description": "Text",
-            "value": "8 27170 11311 4"
+            "value": "5 034202018810"
         },
         {
             "type": "Barcode",
-            "description": "String",
-            "value": "827170113114"
-        },
-        {
-            "type": "Rights Society",
-            "value": "GEMA"
-        },
-        {
-            "type": "Label Code",
-            "value": "LC 00747"
+            "description": "Scanned",
+            "value": "5034202018810"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Runout Side A",
-            "value": "PFRLP18 A' MPO NiLZ - THE EXCHANGE"
+            "description": "side A",
+            "value": "WIGLP188 BD33961-01 A1"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Runout Side B",
-            "value": "PFRLP18 B' MPO NiLZ - THE EXCHANGE"
-        },
-        {
-            "type": "Matrix \/ Runout",
-            "description": "Runout Side C",
-            "value": "PFRLP18 C' MPO NiLZ - THE EXCHANGE"
-        },
-        {
-            "type": "Matrix \/ Runout",
-            "description": "Runout Side D",
-            "value": "PFRLP18 D' MPO NiLZ - THE EXCHANGE"
+            "description": "side B",
+            "value": "WIGLP188 BD33961-01 B1"
         }
     ],
     "companies": [
         {
-            "name": "The Exchange",
-            "entity_type": "29",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/158759",
-            "id": 158759,
-            "entity_type_name": "Mastered At"
-        },
-        {
-            "name": "MPO",
-            "entity_type": "17",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/56025",
-            "id": 56025,
-            "entity_type_name": "Pressed By"
-        },
-        {
-            "name": "Poker Flat Recordings",
+            "name": "Domino Recording Co. Ltd.",
             "entity_type": "13",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
-            "id": 779,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/69345",
+            "id": 69345,
             "entity_type_name": "Phonographic Copyright (p)"
         },
         {
-            "name": "Poker Flat Recordings",
+            "name": "Domino Recording Co. Ltd.",
             "entity_type": "14",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
-            "id": 779,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/69345",
+            "id": 69345,
             "entity_type_name": "Copyright (c)"
         },
         {
-            "name": "Wordandsound",
-            "entity_type": "9",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/264267",
-            "id": 264267,
-            "entity_type_name": "Distributed By"
-        },
-        {
-            "name": "DR",
+            "name": "Miloco Garden",
             "entity_type": "23",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/53886",
-            "id": 53886,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/295412",
+            "id": 295412,
             "entity_type_name": "Recorded At"
-        }
-    ],
-    "uri": "https:\/\/www.discogs.com\/Trentem%C3%B8ller-The-Last-Resort\/release\/802115",
-    "formats": [
+        },
         {
-            "descriptions": [
-                "12\"",
-                "33 \u2153 RPM",
-                "Album",
-                "Remastered"
-            ],
-            "name": "Vinyl",
-            "qty": "2"
+            "name": "Eastcote Studios",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/265157",
+            "id": 265157,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "Motor Museum",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/295411",
+            "id": 295411,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "Konk Studios",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/271368",
+            "id": 271368,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "Battery Studios, London",
+            "entity_type": "27",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/266498",
+            "id": 266498,
+            "entity_type_name": "Mixed At"
+        },
+        {
+            "name": "Sterling Sound",
+            "entity_type": "29",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/264060",
+            "id": 264060,
+            "entity_type_name": "Mastered At"
+        },
+        {
+            "name": "EMI Music Publishing",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/155248",
+            "id": 155248,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Optimal Media GmbH",
+            "entity_type": "17",
+            "catno": "BD33961",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/313190",
+            "id": 313190,
+            "entity_type_name": "Pressed By"
         }
     ],
-    "resource_url": "https:\/\/api.discogs.com\/releases\/802115",
-    "data_quality": "Complete and Correct"
+    "uri": "https:\/\/www.discogs.com\/Arctic-Monkeys-Favourite-Worst-Nightmare\/release\/6985823",
+    "country": "Europe",
+    "resource_url": "https:\/\/api.discogs.com\/releases\/6985823",
+    "data_quality": "Correct"
 }

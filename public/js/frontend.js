@@ -14,10 +14,10 @@ $(document).ready(function() {
 
 
 });
-$(window).scroll(function() {
-    if ($(document).scrollTop() > 50) {
-        $('nav').removeClass('shrink');
-    } else {
-        $('nav').addClass('shrink');
-    }
-});
+// $(window).scroll(function() {
+//     if ($(document).scrollTop() > 50) {
+//         $('nav').removeClass('shrink');
+//     } else {
+//         $('nav').addClass('shrink');
+//     }
+// });

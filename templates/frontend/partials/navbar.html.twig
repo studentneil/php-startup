@@ -16,11 +16,13 @@
                         <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }} </a>
                     </li>
                 {% endfor %}
-                <li><a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a></li>
-                <li><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email black-text">LOGIN</span></a></li>
-                <li><a href="#" class="snipcart-user-logout black-text">Logout</a></li>
+                {#<li><a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a></li>#}
+                <li><a href="#" class="snipcart-user-profile waves-effect waves-light btn blue darken-3"><span class="snipcart-user-email">LOGIN</span></a></li>
+                <li><a href="#" class="snipcart-user-logout waves-effect waves-light btn blue darken-3">Logout</a></li>
+                <li><a href="#" class="right snipcart-checkout"><i class="material-icons black-text">shopping_cart</i></a></li>
             </ul>
-            <a href="#" class="right snipcart-checkout"><i class="material-icons black-text">shopping_cart</i></a>
+            <li><a href="#" class="right hide-on-med-and-up snipcart-checkout"><i class="material-icons
+            black-text">shopping_cart</i></a></li>
 
         </div>
     </nav>
@@ -36,11 +38,11 @@
             <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }}</a>
         </li>
     {% endfor %}
-    <li>
-        <a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a>
-    </li>
-    <li><a href="#" class="snipcart-user-profile"><span class="snipcart-user-email black-text">LOGIN</span></a></li>
-    <li><a href="#" class="snipcart-user-logout black-text">Logout</a></li>
+    {#<li>#}
+        {#<a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a>#}
+    {#</li>#}
+    <li><a href="#" class="snipcart-user-profile waves-effect waves-light btn blue darken-3"><span class="snipcart-user-email">LOGIN</span></a></li>
+    <li><a href="#" class="snipcart-user-logout waves-effect waves-light btn blue darken-3">Logout</a></li>
 </ul>
 
 
