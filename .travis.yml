@@ -8,4 +8,7 @@ before_script:
   - cat "$TRAVIS_BUILD_DIR/config/my.cnf" | sudo tee -a /etc/mysql/my.cnf
   - sudo service mysql restart
   - wget https://phar.phpunit.de/phpunit.phar
-script: composer test
+  - chmod +x phpunit.phar
+  - sudo mv phpunit.phar /usr/local/bin/phpunit
+  - phpunit --version
+script: phpunit
