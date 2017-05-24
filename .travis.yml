@@ -6,7 +6,7 @@ php:
 before_script:
   - composer install
   - cat "$TRAVIS_BUILD_DIR/config/my.cnf" | sudo tee -a /etc/mysql/my.cnf
-  - cat <<'EOF' > "$TRAVIS_BUILD_DIR/config/config.ini"
+  - cat << EOF > "$TRAVIS_BUILD_DIR/config/config.ini"
       [database]
       driver = pdo_mysql
       dbname = vinyl_store_test
