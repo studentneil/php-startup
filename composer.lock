@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5cdbac7e7af61bd89172996c30a6e43e",
+    "content-hash": "908cf78f68e71900b49b996a08cb9666",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -1474,16 +1474,16 @@
         },
         {
             "name": "silex/silex",
-            "version": "v2.1.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silexphp/Silex.git",
-                "reference": "d5a9d9af14a1424ddecc3da481769cf64e7d3b34"
+                "reference": "541d590f2f8bdd26a5473f3e42593fffda83923b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silexphp/Silex/zipball/d5a9d9af14a1424ddecc3da481769cf64e7d3b34",
-                "reference": "d5a9d9af14a1424ddecc3da481769cf64e7d3b34",
+                "url": "https://api.github.com/repos/silexphp/Silex/zipball/541d590f2f8bdd26a5473f3e42593fffda83923b",
+                "reference": "541d590f2f8bdd26a5473f3e42593fffda83923b",
                 "shasum": ""
             },
             "require": {
@@ -1493,6 +1493,9 @@
                 "symfony/http-foundation": "~2.8|^3.0",
                 "symfony/http-kernel": "~2.8|^3.0",
                 "symfony/routing": "~2.8|^3.0"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<4.8.35 || >= 5.0, <5.4.3"
             },
             "replace": {
                 "silex/api": "self.version",
@@ -1556,7 +1559,7 @@
             "keywords": [
                 "microframework"
             ],
-            "time": "2017-05-03T15:21:42+00:00"
+            "time": "2017-05-19 06:02:49"
         },
         {
             "name": "silex/web-profiler",
@@ -5066,7 +5069,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "silex/silex": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
