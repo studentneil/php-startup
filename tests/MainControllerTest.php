@@ -28,15 +28,15 @@ class MainControllerTest extends WebTestCase
         return $this->app = $app;
     }
 
-    public function testMainController()
-    {
-        $client = $this->createClient();
-        $crawler = $client->request('GET', '/home');
-
-        $this->assertEquals(200, $client->getResponse()->getStatusCode());
-        $this->assertContains('Welcome', $crawler->filter('body')->text());
-
-    }
+//    public function testMainController()
+//    {
+//        $client = $this->createClient();
+//        $crawler = $client->request('GET', '/home');
+//
+//        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+//        $this->assertContains('Welcome', $crawler->filter('body')->text());
+//
+//    }
 
     public function testLoginLink()
     {

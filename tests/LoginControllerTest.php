@@ -8,8 +8,6 @@
 
 namespace VinylStoreTests;
 
-
-use VinylStore\Controllers\LoginController;
 use Silex\WebTestCase;
 
 

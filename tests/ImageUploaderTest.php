@@ -11,15 +11,15 @@ namespace VinylStoreTests;
 use VinylStore\ImageUploader;
 use org\bovigo\vfs\vfsStream;
 use VinylStore\Entity\ImageEntity;
-use VinylStore\MessageService;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
+use PHPUnit\Framework\TestCase;
 
 /**
- * Class FileUploaderTest
+ * Class ImageUploaderTest
  * @package VinylStoreTests
  *
  */
-class ImageUploaderTest extends \PHPUnit_Framework_TestCase
+class ImageUploaderTest extends TestCase
 {
     protected $root;
     protected $uploadDir;

@@ -11,8 +11,9 @@ namespace VinylStoreTests;
 
 use VinylStore\Options;
 use VinylStore\Entity\ChoiceEntity;
+use PHPUnit\Framework\TestCase;
 
-class OptionsTest extends \PHPUnit_Framework_TestCase
+class OptionsTest extends TestCase
 {
     public function setUp()
     {
