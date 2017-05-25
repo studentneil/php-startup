@@ -7,7 +7,4 @@ before_script:
   - composer install
   - cat "$TRAVIS_BUILD_DIR/config/my.cnf" | sudo tee -a /etc/mysql/my.cnf
   - sudo service mysql restart
-  - echo '[database]\ndriver = pdo_mysql\ndbname = vinyl_store_test\nhost = 127.0.0.1\nuser = travis\npassword = travis\ncharset = utf8mb4\nport = 3306' >>
-  £TRAVIS_BUILD_DIR/config/config.ini
-
 script: phpunit

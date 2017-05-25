@@ -5,7 +5,7 @@ public/node_modules/
 var/
 php-cs-fixer
 rrauss-collection-20161202-1640.csv
-config/config.ini
+config/config.dev.ini
 public/adminer.php
 
 coverage/

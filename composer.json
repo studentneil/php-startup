@@ -16,7 +16,8 @@
     "symfony/translation": "^3.2",
     "symfony/intl": "^3.2",
     "spatie/image": "^1.1",
-    "cocur/slugify": "^2.5"
+    "cocur/slugify": "^2.5",
+    "vlucas/phpdotenv": "^2.4"
   },
   "autoload": {
     "psr-4": {
