@@ -146,4 +146,12 @@ class MainController
         );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
+
+
+    public function faqAction(Application $app)
+    {
+        $args_array = array();
+        $templateName = 'frontend/faq';
+        return $app['twig']->render($templateName.'.html.twig', $args_array);
+    }
 }

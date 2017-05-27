@@ -219,6 +219,9 @@ h1 {
 .container .card-panel {
     padding: 0;
 }
+.collapsible.popout>li {
+    margin: 0;
+}
 
 @media (min-width: 600px) {
     .brand-logo {

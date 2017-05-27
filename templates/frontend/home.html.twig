@@ -14,18 +14,18 @@
     </div>
 
 
-            <div class="row center-align homepage_sections">
-                <div class="col s12 m12">
-                    <h1 class="flow-text">Online Vinyl shop for record enthusiasts</h1>
-                    <p class="flow-text">Welcome to our site. We stock an eclectic range of records so something for everyone.
-                        Our philosophy is simple: If it sounds good, we listen to it! (or something like that)</p>
-                    <p>All our vinyl comes from our own private collections and is played regularly.
-                        We try and stick to the <a
-                                href="http://www.recordcollectorsguild.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=17&page=1">goldmine
-                            standard</a> when grading our records
-                        We also guarantee that shipping <em>wont</em> be more expensive than the music, a pet hate of ours!.</p>
-                </div>
-            </div>
+    <div class="row homepage_sections">
+        <div class="col s12 m12">
+            <h1 class="flow-text">Online Vinyl shop for record enthusiasts</h1>
+            <p class="flow-text">Welcome to our site. We stock an eclectic range of records so something for everyone.
+                Our philosophy is simple: If it sounds good, we listen to it! (or something like that)</p>
+            <p>All our vinyl comes from our own private collections and is played regularly.
+                We try and stick to the <a
+                        href="http://www.recordcollectorsguild.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=17&page=1">goldmine
+                    standard</a> when grading our records
+                We also guarantee that shipping <em>wont</em> be more expensive than the music, a pet hate of ours!.</p>
+        </div>
+    </div>
 
 
 
@@ -37,77 +37,87 @@
 
     <div class="row homepage_sections">
 
-        {#<div class="card-panel">#}
-            <h1 class="home_header flow-text grey lighten-4">New Vinyl</h1>
-            {% if latest_releases is defined %}
-                {% for latest in latest_releases %}
-                    <div class="col m3 s6">
-                        <div class="card">
-                            <div class="card-image">
-                                <img class="activator" src="/uploads/{{ latest.image }}" alt="">
-                            </div>
-                            <div class="card-reveal">
+        <div class="col m12 s12">
+            <h1 class="flow-text">New Vinyl</h1>
+        </div>
+        {% if latest_releases is defined %}
+            {% for latest in latest_releases %}
+                <div class="col m3 s6">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="activator" src="/uploads/{{ latest.image }}" alt="">
+                        </div>
+                        <div class="card-reveal">
                                  <span class="card-title white-text">
                                     <i class="material-icons right">close</i>
                                 </span>
-                                <div class="card-content white-text">
-                                    <p>{{ latest.artist }}</p>
-                                    <p>{{ latest.title }}</p>
-                                    <p>{{ latest.format }}</p>
-                                    <p class="hide-on-med-and-down">Media :{{ latest.media_condition }}</p>
-                                    <p class="hide-on-med-and-down">Sleeve :{{ latest.sleeve_condition }}</p>
-                                    <p>&euro;{{ latest.price }}</p>
-                                    <br>
-                                    <div class="divider"></div>
-                                    <a class="waves-effect waves-light" href="/vinyl/{{ latest.genre }}/release/{{ latest.title|slugify }}/{{ latest.id
-                                    }}">Details</a>
-                                </div>
+                            <div class="card-content white-text">
+                                <p>{{ latest.artist }}</p>
+                                <p>{{ latest.title }}</p>
+                                <p>{{ latest.format }}</p>
+                                <p class="hide-on-med-and-down">Media :{{ latest.media_condition }}</p>
+                                <p class="hide-on-med-and-down">Sleeve :{{ latest.sleeve_condition }}</p>
+                                <p>&euro;{{ latest.price }}</p>
+                                <br>
+                                <div class="divider"></div>
+                                <a class="waves-effect waves-light"
+                                   href="/vinyl/{{ latest.genre }}/release/{{ latest.title|slugify }}/{{ latest.id }}">Details</a>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                {% endfor %}
-            {% endif %}
+            {% endfor %}
+        {% endif %}
 
-        {#</div>#}
+
     </div>
 
 
     <div class="spacer"></div>
 
     <div class="row homepage_sections">
+        <div class="col m12 s12">
+            <h1 class="flow-text">Random Vinyl</h1>
+        </div>
+        {% if random_release is defined %}
+            {% for random in random_release %}
+                <div class="col m3 s6">
+                    <div class="card">
 
-            <h1 class="track_header flow-text grey lighten-4">Random Vinyl</h1>
-            {% if random_release is defined %}
-                {% for random in random_release %}
-                    <div class="col m3 s6">
-                        <div class="card">
-
-                            <div class="card-image">
-                                <img class="activator" src="/uploads/{{ random.image }}" alt="">
-                            </div>
-                            <div class="card-reveal">
+                        <div class="card-image">
+                            <img class="activator" src="/uploads/{{ random.image }}" alt="">
+                        </div>
+                        <div class="card-reveal">
                                 <span class="card-title white-text">
                                     <i class="material-icons right">close</i>
                                 </span>
-                                <div class="card-content white-text">
-                                    <p>{{ random.artist }}</p>
-                                    <p>{{ random.title }}</p>
-                                    <p>{{ random.format }}</p>
-                                    <p class="hide-on-med-and-down">Media :{{ random.media_condition }}</p>
-                                    <p class="hide-on-med-and-down">Sleeve :{{ random.sleeve_condition }}</p>
-                                    {#<p>{{ random.price }}</p>#}
-                                    <br>
-                                    <div class="divider"></div>
-                                    <a class="waves-effect waves-light" href="/vinyl/{{ random.genre }}/release/{{ random.title|slugify }}/{{ random.id }}">Details</a>
-                                </div>
+                            <div class="card-content white-text">
+                                <p>{{ random.artist }}</p>
+                                <p>{{ random.title }}</p>
+                                <p>{{ random.format }}</p>
+                                <p class="hide-on-med-and-down">Media :{{ random.media_condition }}</p>
+                                <p class="hide-on-med-and-down">Sleeve :{{ random.sleeve_condition }}</p>
+                                {#<p>{{ random.price }}</p>#}
+                                <br>
+                                <div class="divider"></div>
+                                <a class="waves-effect waves-light"
+                                   href="/vinyl/{{ random.genre }}/release/{{ random.title|slugify }}/{{ random.id }}">Details</a>
                             </div>
-
                         </div>
-                    </div>
-                {% endfor %}
-            {% endif %}
 
+                    </div>
+                </div>
+            {% endfor %}
+        {% endif %}
+
+    </div>
+    <div class="spacer"></div>
+
+    <div class="row homepage_sections">
+        <div class="col m12 s12">
+            <h1 class="flow-text">Irish Artists</h1>
+            <p class="flow-text">Got an album you'd like to sell? Get in touch to find out how we can stock your vinyl.</p>
         </div>
 
     </div>
