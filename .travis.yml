@@ -3,6 +3,8 @@ language: php
 php:
   - 7.0
   - 7.1
+before_install:
+  - mysql -e 'CREATE DATABASE test_vinyl_store;'
 before_script:
   - composer install
   - cat "$TRAVIS_BUILD_DIR/config/my.cnf" | sudo tee -a /etc/mysql/my.cnf
