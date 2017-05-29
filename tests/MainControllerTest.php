@@ -42,10 +42,14 @@ class MainControllerTest extends WebTestCase
     {
         $client = $this->createClient();
         $crawler = $client->request('GET', '/login');
-        $this->assertEquals(
-            200,
-            $client->getResponse()->getStatusCode()
-        );
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
+    }
+
+    public function testFaqLink()
+    {
+        $client = $this->createClient();
+        $client->request('GET', '/faq');
+        $this->assertEquals(200, $client->getResponse()->getStatusCode());
     }
 
 

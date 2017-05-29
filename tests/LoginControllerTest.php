@@ -35,7 +35,7 @@ class LoginControllerTest extends WebTestCase
         $form['_username'] = 'neil';
         $form['_password'] = 'Heythere!';
         // submit the form
-        var_dump($form->getValues());
+//        var_dump($form->getValues());
         $crawler = $client->submit($form);
         $crawler = $client->followRedirect(true);
         $this->assertTrue($crawler->filter('html:contains("Username")')->count() > 0);

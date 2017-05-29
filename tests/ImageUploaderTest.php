@@ -13,6 +13,7 @@ use org\bovigo\vfs\vfsStream;
 use VinylStore\Entity\ImageEntity;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 use PHPUnit\Framework\TestCase;
+use VinylStore\MessageService;
 
 /**
  * Class ImageUploaderTest
@@ -33,7 +34,7 @@ class ImageUploaderTest extends TestCase
     /**
      * @covers \VinylStore\ImageUploader::upload()
      */
-    public function testFileUploader()
+    public function testFileUploaderWithImage()
     {
         vfsStream::newFile('testFile.jpg', 0777)->at($this->root);
 
@@ -55,8 +56,18 @@ class ImageUploaderTest extends TestCase
 
         $uploader = new ImageUploader(vfsStream::url('photos/uploadDir'));
         $uploadedImage = $uploader->upload($file);
-        var_dump($this->uploadDir->getChildren());
+//        var_dump($this->uploadDir->getChildren());
         $this->assertInstanceOf(ImageEntity::class, $uploadedImage);
 
     }
+
+    /**
+     * @covers \VinylStore\ImageUploader::__construct()
+     */
+    public function testImageUploaderConstructor()
+    {
+        $uploader = new ImageUploader(vfsStream::url('photos/uploadDir'));
+        $this->assertEquals($uploader->getTargetDir(), vfsStream::url('photos/uploadDir'));
+    }
+
 }
