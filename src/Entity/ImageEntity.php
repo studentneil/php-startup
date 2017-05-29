@@ -65,6 +65,7 @@ class ImageEntity
 
     /**
      * @param $path
+     *
      * @return string
      */
     public function setImagePath($path)

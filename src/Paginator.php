@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 25/04/2017
- * Time: 23:24
+ * Time: 23:24.
  */
 
 namespace VinylStore;
-
 
 class Paginator
 {
@@ -45,7 +44,8 @@ class Paginator
      */
     public function getOffset()
     {
-        $this->offset = ($this->currentPage-1) * $this->limit;
+        $this->offset = ($this->currentPage - 1) * $this->limit;
+
         return $this->offset;
     }
 
@@ -104,7 +104,4 @@ class Paginator
     {
         $this->currentPage = $currentPage;
     }
-
-
-
 }

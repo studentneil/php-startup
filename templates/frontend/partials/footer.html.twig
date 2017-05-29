@@ -1,11 +1,38 @@
 <div class="row">
     <div class="col s12 m6">
         <h1 class="white-text flow-text">The Record Box</h1>
-        <ul>
-            <li><a class="grey-text text-lighten-3" href="#!">Home</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Vinyl</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Shipping</a></li>
-            <li><a class="grey-text text-lighten-3" href="/faq">FAQ</a></li>
+        <ul class="footer_nav">
+            <li><a class="grey-text text-lighten-3 waves-effect waves-green" href="#!">Home</a></li>
+            <li><a class="grey-text text-lighten-3 waves-effect waves-green" href="#!">Vinyl</a></li>
+            <li><a class="grey-text text-lighten-3 waves-effect waves-green" href="#shippingModal">Shipping Rates</a></li>
+            {# shipping rates modal #}
+            <div id="shippingModal" class="modal">
+                <div class="modal-content">
+                    <h4>Shipping Rates</h4>
+                    <p>1 x Lp : 3.00</p>
+                    <p>1 x Double Lp or 2 x Lp: 4.50</p>
+                    <p>3-5 x Lp : 7.00</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+            </div>
+            <li><a class="grey-text text-lighten-3 waves-effect waves-green" href="#gradingModal">Record Grading Guide</a></li>
+            {# shipping rates modal #}
+            <div id="gradingModal" class="modal modal-fixed-footer">
+                <div class="modal-content">
+                    <h4>Record Grading Guide</h4>
+                    <p>New/Sealed - Brand new, still sealed.</p>
+                    <p>Mint - Opened but in as new condition. Plays beautifully and sleeve and vinyl without a scratch.</p>
+                    <p>Near Mint - Sleeve and vinyl in excellent condition, plays through without any scratching/noise. Been played a few times though and
+                        if examined closely, will find marks/scuffs to sleeve or vinyl.</p>
+                    <p>Very Good (VG) - Shows signs of being well played, albeit well looked after.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                </div>
+            </div>
+            <li><a class="grey-text text-lighten-3 waves-effect waves-green" href="/faq">FAQ</a></li>
         </ul>
     </div>
 </div>

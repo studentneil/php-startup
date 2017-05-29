@@ -22,7 +22,7 @@ class AddPricingDataType extends AbstractType
     {
         return $builder
             ->add('release_id', ChoiceType::class, array(
-                'choices' => $options['choices']
+                'choices' => $options['choices'],
                  ))
             ->add('release_name', TextType::class)
             ->add('price', MoneyType::class)

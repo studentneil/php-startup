@@ -8,18 +8,17 @@ use VinylStore\Forms\CreateNewReleaseType;
 
 class ReleaseController
 {
-
-//    public function viewTableAction(Application $app)
+    //    public function viewTableAction(Application $app)
 //    {
 //        $releases = $app['vinyl.repository']->findAll();
-//
+
 //        $templateName = 'backend/releases';
 //        $args_array = array(
-//
+
 //            'releases' => $releases,
-//
+
 //        );
-//
+
 //        return $app['twig']->render($templateName.'.html.twig', $args_array);
 //    }
 

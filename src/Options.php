@@ -3,11 +3,10 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 07/04/2017
- * Time: 23:21
+ * Time: 23:21.
  */
 
 namespace VinylStore;
-
 
 class Options
 {
@@ -20,6 +19,7 @@ class Options
 
     /**
      * @param $choices
+     *
      * @return mixed
      */
     public function mergeChoices()
@@ -29,7 +29,7 @@ class Options
             $title[] = $choice->getTitle();
         }
         $this->mergedChoicesArray = array_combine($title, $id);
+
         return $this->mergedChoicesArray;
     }
-
 }

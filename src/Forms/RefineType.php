@@ -3,19 +3,14 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 17/04/2017
- * Time: 00:13
+ * Time: 00:13.
  */
 
 namespace VinylStore\Forms;
 
 use Symfony\Component\Form\AbstractType;
-
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
-
 use Symfony\Component\Form\FormBuilderInterface;
-
-use Symfony\Component\Validator\Constraints as Assert;
-
 
 class RefineType extends AbstractType
 {
@@ -26,11 +21,11 @@ class RefineType extends AbstractType
                 'choices' => array(
                     'rock' => 'rock',
                     'electronic' => 'electronic',
-                    'classic rock' => 'classic_rock'
+                    'classic rock' => 'classic_rock',
                 ),
                 'multiple' => true,
                 'expanded' => true,
-                'empty_data' => null
+                'empty_data' => null,
             ))
             ->add('format', ChoiceType::class, array(
                 'choices' => array(
@@ -38,11 +33,11 @@ class RefineType extends AbstractType
                     '12" e.p' => '12" e.p',
                     '12" Lp' => '12" Lp',
                     '12" single' => '12" single',
-                    '7" single' => '7" single'
+                    '7" single' => '7" single',
                 ),
                 'multiple' => true,
                 'expanded' => true,
-                'empty_data' => null
+                'empty_data' => null,
             ));
     }
 
@@ -50,5 +45,4 @@ class RefineType extends AbstractType
     {
         return 'refine';
     }
-
 }

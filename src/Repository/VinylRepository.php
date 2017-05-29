@@ -60,6 +60,7 @@ class VinylRepository implements RepositoryInterface
             ->from('releases', 'r')
             ->innerJoin('r', 'images', 'i', 'r.id=i.release_id')
             ->innerJoin('r', 'snipcart_data', 's', 'r.id=s.release_id');
+
         return $qb;
     }
 
@@ -103,7 +104,6 @@ class VinylRepository implements RepositoryInterface
 
         return $latestReleases;
     }
-
 
     public function findRandomRelease()
     {
@@ -149,7 +149,7 @@ class VinylRepository implements RepositoryInterface
         }
 
         $dataArr = array_merge($genreArr, $formatArr);
-        if (!empty($dataArr)){
+        if (!empty($dataArr)) {
             $qb->setParameters($dataArr);
         }
 //        var_dump($qb->getSQL());
@@ -157,7 +157,6 @@ class VinylRepository implements RepositoryInterface
         $refinedResults = $qb->execute()->fetchAll();
 
         return $refinedResults;
-
     }
     public function findReleaseForEdit($id)
     {
@@ -183,6 +182,7 @@ class VinylRepository implements RepositoryInterface
     public function orderCompleted($id)
     {
         $count = $this->conn->executeUpdate('UPDATE releases SET quantity = quantity-1 WHERE id = ?', array($id));
+
         return $count;
     }
 }

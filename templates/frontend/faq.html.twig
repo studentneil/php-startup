@@ -8,33 +8,61 @@
 
                 <li>
                     <div class="collapsible-header"><i class="material-icons">view_headline</i>How much is shipping?</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-body"><span>That depends on how many vinyls you buy! Generally the more you buy, the cheaper the
+                            shipping. Check out our <a href="#shippingModal">shipping rates chart</a> for exact rates.</span></div>
+                    {# shipping rates modal #}
+                    <div id="shippingModal" class="modal">
+                        <div class="modal-content">
+                            <h4>Shipping Rates</h4>
+                            <p>1 x Lp : 3.00</p>
+                            <p>1 x Double Lp or 2 x Lp: 4.50</p>
+                            <p>3-5 x Lp : 7.00</p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+                        </div>
+                    </div>
                 </li>
                 <li>
                     <div class="collapsible-header"><i class="material-icons">view_headline</i>I cant see the album information!</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-body"><span>Try clicking on a cover to discover more details about a vinyl.</span></div>
                 </li>
                 <li>
                     <div class="collapsible-header"><i class="material-icons">view_headline</i>Where is my order?</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-body"><span>I try and post as quickly as possible after payment is recieved. Get in touch if you're
+                            vinyl hasnt arrived within 5 working days of posting.</span></div>
                 </li>
                 <li>
                     <div class="collapsible-header"><i class="material-icons">view_headline</i>Can i view my previous orders?</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-body"><span>Yes. Use the log-in button to view previous orders.</span></div>
                 </li>
                 <li>
                     <div class="collapsible-header"><i class="material-icons">view_headline</i>Can i pre-order an album?</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-body"><span>Yes, but get in touch with me first and i'll see what i can do.</span></div>
                 </li>
                 <li>
                     <div class="collapsible-header"><i class="material-icons">view_headline</i>Is my vinyl safe in transit?</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-body"><span>We try and use the best packaging and mailers around so your vinyl is safe in the post.
+                            While this is all we can do on our end, sometimes packages can get damaged. I recommend you get insurance for bigger
+                            orders (and its probably a good idea for all orders) but its ultimately up to you.</span></div>
                 </li>
                 <li>
                     <div class="collapsible-header"><i class="material-icons">view_headline</i>How can i pay?</div>
-                    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                    <div class="collapsible-body"><span>At the moment i support paypal and credit/debit card payments. </span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">view_headline</i>How secure is your site?</div>
+                    <div class="collapsible-body"><span>The shopping cart is powered by a third party, Snipcart, and all communications with the
+                            cart is carried out over https, which is encrypted for better security. If you pay with paypal (recommended), you get the added
+                            benefit of paypals expert security settings.</span></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">view_headline</i>My vinyl is damaged/not in advertised condition, i want a
+                        refund!</div>
+                    <div class="collapsible-body"><span>No Problem, send it back to me and we can arrange a refund on reciept of the vinyl.</span></div>
                 </li>
             </ul>
         </div>
     </div>
+
 {% endblock %}

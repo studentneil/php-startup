@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: neil
  * Date: 03/05/2017
- * Time: 23:24
+ * Time: 23:24.
  */
 
 namespace VinylStore\Controllers;
@@ -28,7 +28,5 @@ class SnipCartController
                 echo $count;
             }
         }
-
-
     }
 }

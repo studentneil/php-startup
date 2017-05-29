@@ -16,11 +16,10 @@ use VinylStore\Options;
 class PricingController
 {
     /**
-     *
      * @param Request     $request
      * @param Application $app
      *
-     * @return Pricing form template.
+     * @return Pricing form template
      */
     public function indexAction(Request $request, Application $app)
     {
@@ -44,7 +43,7 @@ class PricingController
         $templateName = 'backend/snipDataForm';
         $args_array = array(
             'user' => $app['session']->get('user'),
-            'form' => $form->createView()
+            'form' => $form->createView(),
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
@@ -55,7 +54,7 @@ class PricingController
         $allPricing = $app['pricing.repository']->findAll();
         $templateName = 'backend/viewPricing';
         $args_array = array(
-            'allPricing' => $allPricing
+            'allPricing' => $allPricing,
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
@@ -78,7 +77,7 @@ class PricingController
         $templateName = 'backend/snipDataForm';
         $args_array = array(
             'user' => $app['session']->get('user'),
-            'form' => $form->createView()
+            'form' => $form->createView(),
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);

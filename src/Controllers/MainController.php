@@ -7,20 +7,18 @@ use Symfony\Component\HttpFoundation\Request;
 use VinylStore\Forms\RefineType;
 use VinylStore\Paginator;
 
-
 /**
  * Handles all the frontend actions and rendering templates.
  *
  * Class MainController
- * @package VinylStore\Controllers
  */
 class MainController
 {
-
     /**
      * Renders the homepage with 4 latest releases and 4 random releases.
      *
      * @param Application $app
+     *
      * @return template: home
      */
     public function indexAction(Application $app)
@@ -36,15 +34,15 @@ class MainController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-
     /**
      * The 'main' page for viewing vinyls.
      *
      * Retrieves all releases from the database and paginates.
      * Also renders the refine form so can be accessed from the vinyl page.
      *
-     * @param Request $request
+     * @param Request     $request
      * @param Application $app
+     *
      * @return template: collection.html.twig
      */
     public function getVinylAction(Request $request, Application $app)
@@ -65,17 +63,18 @@ class MainController
             'numPages' => $pager->getNumPages(),
             'results' => $paginatedReleases,
             'currentPage' => $pager->getCurrentPage(),
-            'form' => $form->createView()
+            'form' => $form->createView(),
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-
     /**
      * Retrieves and sorts a list of vinyls by genres.
+     *
      * @param Application $app
      * @param $genre one of {rock, electronic, classic rock}
+     *
      * @return template: collection.html.twig
      */
     public function getGenreAction(Application $app, $genre)
@@ -89,18 +88,18 @@ class MainController
         $templateName = 'frontend/collection';
         $args_array = array(
             'results' => $results,
-            'form' => $form->createView()
+            'form' => $form->createView(),
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-
     /**
      * Gets an individual vinyl release by its id.
      *
      * @param Application $app
-     * @param int $id
+     * @param int         $id
+     *
      * @return template: release.html.twig
      */
     public function getReleaseByIdAction(Application $app, $id)
@@ -114,18 +113,17 @@ class MainController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-
     /**
      * Processes the refine form and retrieves the refined results.
-     * If the form isnt filled in, it redirects back to getVinylAction
+     * If the form isnt filled in, it redirects back to getVinylAction.
      *
-     * @param Request $request
+     * @param Request     $request
      * @param Application $app
+     *
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
     public function refineAction(Request $request, Application $app)
     {
-
         $refineFormData = array();
         $form = $app['form.factory']
             ->createBuilder(RefineType::class, $refineFormData)
@@ -144,14 +142,15 @@ class MainController
             'form' => $form->createView(),
             'results' => $refinedResults,
         );
+
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
-
 
     public function faqAction(Application $app)
     {
         $args_array = array();
         $templateName = 'frontend/faq';
+
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 }

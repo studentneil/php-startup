@@ -9,7 +9,6 @@
 namespace VinylStore;
 
 use VinylStore\Entity\ImageEntity;
-use VinylStore\MessageService;
 
 class ImageUploader
 {
@@ -23,10 +22,6 @@ class ImageUploader
 
     public function upload(ImageEntity $image)
     {
-        //        no file, return with error message
-//        if (!$image) {
-//            return MessageService::IMAGE_UPLOAD_FAILURE;
-//        }
 //        get the actual image from the file entity
 //        and create a unique name
         $imageFile = $image->getImage();

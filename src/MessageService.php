@@ -52,7 +52,8 @@ class MessageService
     {
         return self::RELEASE_EDITED;
     }
-    public function getReleaseNotEdited(){
+    public function getReleaseNotEdited()
+    {
         return self::RELEASE_NOT_EDITED;
     }
 }

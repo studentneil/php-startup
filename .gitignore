@@ -7,7 +7,7 @@ php-cs-fixer
 rrauss-collection-20161202-1640.csv
 config/config.dev.ini
 public/adminer.php
-
+src/.env
 coverage/
 phpunit.phar
 public/uploads/

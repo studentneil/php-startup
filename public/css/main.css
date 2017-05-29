@@ -222,7 +222,9 @@ h1 {
 .collapsible.popout>li {
     margin: 0;
 }
-
+.footer_nav>li {
+    padding-top: 1em;
+}
 @media (min-width: 600px) {
     .brand-logo {
         font-family: 'Permanent Marker', cursive;

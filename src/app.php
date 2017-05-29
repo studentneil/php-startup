@@ -50,13 +50,13 @@ $app->register(new Silex\Provider\TranslationServiceProvider(), array(
 $app->register(new Silex\Provider\LocaleServiceProvider());
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => array(
-        'driver' => getEnv('DRIVER'),
+        'driver' => getenv('DRIVER'),
         'dbname' => getenv('DBNAME'),
         'host' => getenv('HOST'),
         'user' => getenv('USER'),
         'password' => getenv('PASSWORD'),
         'charset' => getenv('CHARSET'),
-        'port' => getenv('PORT')
+        'port' => getenv('PORT'),
     ),
 ));
 $app->register(new Silex\Provider\SecurityServiceProvider(), array(

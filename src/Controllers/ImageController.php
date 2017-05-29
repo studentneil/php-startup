@@ -12,14 +12,12 @@ use Symfony\Component\Filesystem\Exception\IOException;
 use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
 use Symfony\Component\Filesystem\Filesystem;
-use VinylStore\BoolFlag;
 use VinylStore\Forms\ImageUploadType;
 use VinylStore\Entity\ImageEntity;
 use VinylStore\Options;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Spatie\Image\Image;
 use Spatie\Image\Manipulations;
-
 
 class ImageController
 {
@@ -41,7 +39,6 @@ class ImageController
         $options = new Options($choices);
         $mergedOptions = $options->mergeChoices();
 
-
         $image = new ImageEntity();
         $form = $app['form.factory']
             ->createBuilder(ImageUploadType::class, $image, array('choices' => $mergedOptions))
@@ -49,8 +46,8 @@ class ImageController
         $form->handleRequest($request);
         if ($form->isValid()) {
             $uploadedImage = $app['file.uploader']->upload($image);
-            $app['dispatcher']->addListener(KernelEvents::TERMINATE, function() use ($uploadedImage) {
-                Image::load('uploads/' . $uploadedImage->getImage())
+            $app['dispatcher']->addListener(KernelEvents::TERMINATE, function () use ($uploadedImage) {
+                Image::load('uploads/'.$uploadedImage->getImage())
                      ->fit(Manipulations::FIT_STRETCH, 500, 500)
                      ->save();
             });
@@ -58,7 +55,6 @@ class ImageController
                 $app['session']->getFlashBag()->add('failure', $app['message.service']->getImageSuccessMessage());
             }
             $app['session']->getFlashBag()->add('success', $app['message.service']->getImageSuccessMessage());
-
         }
 
         $templateName = 'backend/uploadImageForm';
