@@ -10,7 +10,7 @@
                 <div class="card">
                     <div class="card-image">
 
-                        <img src="{{ global.request.basepath }}/uploads/{{ release.image }}">
+                        <img src="{{ global.request.basepath }}/uploads/{{ release.image }}" alt="{{ release.name }}_pic">
 
                         <span class="card-title"></span>
                     </div>
@@ -60,14 +60,7 @@
                             'artist': release.artist,
                             'title': release.title}
                         )) }}
-                {#</div>#}
-            {#</div>#}
-            {#<div class="col s12 m6">#}
-                {#<div class="card-panel white lighten-2">#}
-                    {#<h2 class="flow-text grey lighten-4 track_header">MORE DETAILS</h2>#}
 
-                {#</div>#}
-            {#</div>#}
         </div>
     </div>
 {% endblock %}

@@ -26,8 +26,8 @@ class CreateNewReleaseType extends AbstractType
                 'constraints' => array(
                     new Assert\NotBlank(),
                     new Assert\Length(array(
-                        'min' => 4,
-                        'max' => 9,
+                        'min' => 3,
+                        'max' => 15,
                     )),
                 ),
                 'attr' => array(

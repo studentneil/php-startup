@@ -31,53 +31,10 @@
     <footer></footer>
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="{{ asset('js/materialize.min.js') }}"></script>
-    <!-- Mixitup filtering and sorting js -->
-    <!-- https://www.kunkalabs.com -->
-    <script type="text/javascript" src="{{ asset('js/mixitup.min.js') }}"></script>
-    <script>
-    $(document).ready(function() {
-        $(".button-collapse").sideNav({
-            closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-            draggable: true // Choose whether you can drag to open on touch screens
-        });
-        $('.close-menu').on('click', function(){
-            $(this).sideNav('hide');
-        });
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js" integrity="sha256-GzgzLo/c1kTNP/m6EvfAaqGLLuvLicxoYs4s6qFRocI=" crossorigin="anonymous"></script>
+    <!-- Import custom functions for various components -->
+    <script src="{{ asset('/js/backend.js') }}"></script>
 
-        $('.collapsible').collapsible();
-
-        $('.dropdown-button').dropdown({
-                inDuration: 300,
-                outDuration: 400,
-                constrain_width: false, // Does not change width of dropdown to that of the activator
-                hover: false, // Activate on hover
-                gutter: 0, // Spacing from edge
-                belowOrigin: true, // Displays dropdown below the button
-                alignment: 'left' // Displays dropdown with edge aligned to the left of button
-            }
-        );
-
-        $('select').material_select();
-
-        $('.datepicker').pickadate({
-            selectMonths: true, // Creates a dropdown to control month
-            selectYears: 40, // Creates a dropdown of 15 years to control year
-            format: 'yyyy-dd-mm'
-
-        });
-
-    });
-    </script>
-    <script>
-        var containerEl = document.querySelector('.mixitup-container');
-
-        var mixer = mixitup(containerEl, {
-            animation: {
-                animateResizeTargets: true
-            }
-        });
-    </script>
     {% block javascript %}{% endblock %}
 </body>
 

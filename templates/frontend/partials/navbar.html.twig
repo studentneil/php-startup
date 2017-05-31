@@ -17,8 +17,8 @@
                     </li>
                 {% endfor %}
                 {#<li><a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a></li>#}
-                <li><a href="#" class="snipcart-user-profile waves-effect waves-light btn blue darken-3"><span class="snipcart-user-email">LOGIN</span></a></li>
-                <li><a href="#" class="snipcart-user-logout waves-effect waves-light btn blue darken-3">Logout</a></li>
+                <li><a href="#" class="snipcart-user-profile black-text"><span class="snipcart-user-email">LOGIN</span></a></li>
+                <li><a href="#" class="snipcart-user-logout black-text">Logout</a></li>
                 <li><a href="#" class="right snipcart-checkout"><i class="material-icons black-text">shopping_cart</i></a></li>
             </ul>
             <li><a href="#" class="right hide-on-med-and-up snipcart-checkout"><i class="material-icons
@@ -28,21 +28,18 @@
     </nav>
 </div>
 {# off-canvas nav on mobiles #}
-
 <ul class="side-nav" id="mobile-nav">
-{#<li>#}
-    {#<i class="material-icons close-menu">close</i>#}
-{#</li>#}
+    <h1 class="flow-text sideNav_title center-align">The Record Box</h1>
+    <li><div class="divider"></div></li>
     {% for item in navbar %}
         <li{% if item[0]==active_page %} class="active" {% endif %}>
             <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }}</a>
         </li>
+        <li><div class="divider"></div></li>
     {% endfor %}
-    {#<li>#}
-        {#<a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a>#}
-    {#</li>#}
-    <li><a href="#" class="snipcart-user-profile waves-effect waves-light btn blue darken-3"><span class="snipcart-user-email">LOGIN</span></a></li>
-    <li><a href="#" class="snipcart-user-logout waves-effect waves-light btn blue darken-3">Logout</a></li>
+    <li><div class="divider"></div></li>
+    <li><a href="#" class="snipcart-user-profile black-text"><span class="snipcart-user-email email">LOGIN</span></a></li>
+    <li><a href="#" class="snipcart-user-logout black-text">Logout</a></li>
 </ul>
 
 
