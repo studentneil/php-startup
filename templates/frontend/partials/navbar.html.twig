@@ -35,7 +35,7 @@
         <li{% if item[0]==active_page %} class="active" {% endif %}>
             <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }}</a>
         </li>
-        <li><div class="divider"></div></li>
+
     {% endfor %}
     <li><div class="divider"></div></li>
     <li><a href="#" class="snipcart-user-profile black-text"><span class="snipcart-user-email email">LOGIN</span></a></li>

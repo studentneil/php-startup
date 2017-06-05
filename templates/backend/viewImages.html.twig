@@ -21,7 +21,8 @@
                     {# this is used by jquery to pass the correct id to our delete and attach  functions #}
                     <div class="divider"></div>
                     <a href="/admin/delete-image/{{ image.image_id }}" class="del-image waves-effect waves-light links" data-image-id="{{ image.image_id }}">Delete</a>
-
+                    {#<a href="/admin/attach-image/{{ image.image_id }}/{{ image.release_id }}" class="attach_image waves-effect waves-light links"#}
+                       {#data-image-id="{{ image.image_id }}">Attach</a>#}
                 </div>
             </div>
 
@@ -54,28 +55,28 @@
                     }
                 });
             });
-//            $('.attach-image').on('click', function (event) {
-//                event.preventDefault();
-//                // try to get the image id and release id to pass to the url parameter below
-//                var imageId = $(event.target).closest('div').data('image-id');
-//                var releaseId = $(event.target).closest('a').data('release-id');
-//                var block = $(this).parent();
-//                console.log(imageId);
-//                console.log(releaseId);
-//                console.log(block);
-//                $.ajax({
-//                    url: '/admin/attach-image/'+imageId+'/'+releaseId,
-//                    type: "POST",
-//
-//                    error: function (response) {
-//                        Materialize.toast(response, 4000);
-//                    },
-//                    success: function (response) {
-//                        console.log(response);
-//                        Materialize.toast(response, 4000);
-//                    }
-//                });
-//            });
+            $('.attach-image').on('click', function (event) {
+                event.preventDefault();
+                // try to get the image id and release id to pass to the url parameter below
+                var imageId = $(event.target).closest('div').data('image-id');
+                var releaseId = $(event.target).closest('a').data('release-id');
+                var block = $(this).parent();
+                console.log(imageId);
+                console.log(releaseId);
+                console.log(block);
+                $.ajax({
+                    url: '/admin/attach-image/'+imageId+'/'+releaseId,
+                    type: "POST",
+
+                    error: function (response) {
+                        Materialize.toast(response, 4000);
+                    },
+                    success: function (response) {
+                        console.log(response);
+                        Materialize.toast(response, 4000);
+                    }
+                });
+            });
         });
 
     </script>

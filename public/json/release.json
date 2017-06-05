@@ -1,176 +1,132 @@
 {
-    "status": "Accepted",
+    "styles": [
+        "Techno",
+        "Minimal"
+    ],
     "videos": [
         {
-            "duration": 150,
+            "duration": 361,
+            "description": "Gaetano Parisio - Untitled ( Suprema - A1 )",
             "embed": true,
-            "title": "Tricky - Flynn",
-            "description": "Tricky - Flynn",
-            "uri": "https:\/\/www.youtube.com\/watch?v=JAZIH-pjA78"
+            "uri": "https:\/\/www.youtube.com\/watch?v=Il1Hv5Um3Q0",
+            "title": "Gaetano Parisio - Untitled ( Suprema - A1 )"
         },
         {
-            "duration": 344,
+            "duration": 391,
+            "description": "Gaetano Parisio - Untitled ( Suprema - B1 )",
             "embed": true,
-            "title": "Tricky ghetto youth",
-            "description": "Tricky ghetto youth",
-            "uri": "https:\/\/www.youtube.com\/watch?v=UL3dYghdzFo"
-        },
-        {
-            "duration": 196,
-            "embed": true,
-            "title": "Christiansands (live) by Tricky and Martina Topley Bird",
-            "description": "Christiansands (live) by Tricky and Martina Topley Bird",
-            "uri": "https:\/\/www.youtube.com\/watch?v=8gQz7ZYhRKA"
-        },
-        {
-            "duration": 233,
-            "embed": true,
-            "title": "Christiansands-Tricky (Pre-Millennium Tension).wmv",
-            "description": "Christiansands-Tricky (Pre-Millennium Tension).wmv",
-            "uri": "https:\/\/www.youtube.com\/watch?v=Te3-KmKhjpc"
-        },
-        {
-            "duration": 174,
-            "embed": true,
-            "title": "Tricky - Christiansands (West 54th 1998)",
-            "description": "Tricky - Christiansands (West 54th 1998)",
-            "uri": "https:\/\/www.youtube.com\/watch?v=hBpSJ-Lt94A"
-        },
-        {
-            "duration": 425,
-            "embed": true,
-            "title": "Tricky - Christiansands (Imposter's Mix)",
-            "description": "Tricky - Christiansands (Imposter's Mix)",
-            "uri": "https:\/\/www.youtube.com\/watch?v=jUoXtyLXVQU"
+            "uri": "https:\/\/www.youtube.com\/watch?v=0xIsPPPvhK8",
+            "title": "Gaetano Parisio - Untitled ( Suprema - B1 )"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "4th & Broadway",
+            "name": "Conform",
             "entity_type": "1",
-            "catno": "12 BRW 340",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/158452",
-            "id": 158452,
+            "catno": "CNFR017",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/831",
+            "id": 831,
             "entity_type_name": "Label"
         }
     ],
-    "year": 1996,
+    "year": 2002,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 46,
-            "average": 4.2
+            "count": 6,
+            "average": 4.5
         },
-        "want": 81,
+        "have": 0,
         "contributors": [
             {
-                "username": "nfit",
-                "resource_url": "https:\/\/api.discogs.com\/users\/nfit"
+                "username": "TANMUSHIMUSHI",
+                "resource_url": "https:\/\/api.discogs.com\/users\/TANMUSHIMUSHI"
             },
             {
-                "username": "trance_floor",
-                "resource_url": "https:\/\/api.discogs.com\/users\/trance_floor"
+                "username": "asernarios",
+                "resource_url": "https:\/\/api.discogs.com\/users\/asernarios"
             },
             {
-                "username": "jweijde",
-                "resource_url": "https:\/\/api.discogs.com\/users\/jweijde"
-            },
-            {
-                "username": "lootje",
-                "resource_url": "https:\/\/api.discogs.com\/users\/lootje"
+                "username": "bleclair8281",
+                "resource_url": "https:\/\/api.discogs.com\/users\/bleclair8281"
             }
         ],
-        "have": 341,
+        "want": 0,
         "submitter": {
-            "username": "nfit",
-            "resource_url": "https:\/\/api.discogs.com\/users\/nfit"
+            "username": "TANMUSHIMUSHI",
+            "resource_url": "https:\/\/api.discogs.com\/users\/TANMUSHIMUSHI"
         },
         "data_quality": "Needs Vote"
     },
     "artists": [
         {
             "join": "",
-            "name": "Tricky",
+            "name": "Gaetano Parisio",
             "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/3140",
-            "id": 3140
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1383",
+            "id": 1383
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/api-img.discogs.com\/oc_5da8wUopsR6szMTIY-8qzDI4=\/fit-in\/350x350\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-143942-1131634377.jpeg.jpg",
-            "height": 350,
-            "width": 350,
-            "resource_url": "https:\/\/api-img.discogs.com\/oc_5da8wUopsR6szMTIY-8qzDI4=\/fit-in\/350x350\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-143942-1131634377.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/mopj_58okUOJzXHbne-n4bbizs0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-143942-1131634377.jpeg.jpg"
+            "uri": "https:\/\/api-img.discogs.com\/TIADDowzGpd2McjQGiyNx__xfIo=\/fit-in\/600x599\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2005784-1328630827.jpeg.jpg",
+            "height": 599,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/TIADDowzGpd2McjQGiyNx__xfIo=\/fit-in\/600x599\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-2005784-1328630827.jpeg.jpg",
+            "type": "primary",
+            "uri150": "https:\/\/api-img.discogs.com\/1wc_qp6Uoc2fDUuy-nBq1lboGyw=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-2005784-1328630827.jpeg.jpg"
         }
     ],
     "format_quantity": 1,
-    "id": 143942,
+    "id": 2005784,
     "genres": [
         "Electronic"
     ],
-    "thumb": "https:\/\/api-img.discogs.com\/mopj_58okUOJzXHbne-n4bbizs0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-143942-1131634377.jpeg.jpg",
-    "num_for_sale": 21,
-    "title": "Christiansands",
-    "date_changed": "2014-10-20T17:35:13-07:00",
-    "master_id": 50248,
-    "lowest_price": 1.83,
-    "styles": [
-        "Downtempo"
-    ],
-    "released_formatted": "1996",
-    "formats": [
-        {
-            "qty": "1",
-            "descriptions": [
-                "12\"",
-                "45 RPM",
-                "EP"
-            ],
-            "name": "Vinyl"
-        }
-    ],
+    "thumb": "https:\/\/api-img.discogs.com\/1wc_qp6Uoc2fDUuy-nBq1lboGyw=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-2005784-1328630827.jpeg.jpg",
+    "num_for_sale": 4,
+    "title": "Suprema",
+    "date_changed": "2012-02-07T08:07:16-08:00",
+    "master_id": 211447,
+    "lowest_price": 2.28,
+    "status": "Accepted",
+    "released_formatted": "2002",
     "estimated_weight": 230,
-    "master_url": "https:\/\/api.discogs.com\/masters\/50248",
-    "released": "1996",
-    "date_added": "2003-05-21T13:25:24-07:00",
-    "extraartists": [],
+    "master_url": "https:\/\/api.discogs.com\/masters\/211447",
+    "released": "2002-00-00",
+    "date_added": "2009-11-12T16:58:04-08:00",
     "tracklist": [
         {
-            "duration": "",
-            "position": "A1",
+            "duration": "5:54",
+            "position": "A",
             "type_": "track",
-            "title": "Christiansands (Album Version)"
+            "title": "Untitled"
         },
         {
-            "duration": "",
-            "position": "A2",
+            "duration": "6:18",
+            "position": "B",
             "type_": "track",
-            "title": "Christiansands (The Imposter's Mix)"
-        },
-        {
-            "duration": "",
-            "position": "B1",
-            "type_": "track",
-            "title": "Ghetto Youth"
-        },
-        {
-            "duration": "",
-            "position": "B2",
-            "type_": "track",
-            "title": "Flynn"
+            "title": "Untitled"
         }
     ],
-    "notes": "Illustrated inner sleeve.",
+    "extraartists": [],
+    "country": "Italy",
     "identifiers": [],
     "companies": [],
-    "uri": "https:\/\/www.discogs.com\/Tricky-Christiansands\/release\/143942",
-    "country": "UK",
-    "resource_url": "https:\/\/api.discogs.com\/releases\/143942",
+    "uri": "https:\/\/www.discogs.com\/Gaetano-Parisio-Suprema\/release\/2005784",
+    "formats": [
+        {
+            "descriptions": [
+                "12\"",
+                "White Label",
+                "45 RPM"
+            ],
+            "name": "Vinyl",
+            "qty": "1"
+        }
+    ],
+    "resource_url": "https:\/\/api.discogs.com\/releases\/2005784",
     "data_quality": "Needs Vote"
 }

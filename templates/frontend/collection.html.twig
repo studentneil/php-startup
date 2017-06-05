@@ -30,15 +30,12 @@
             <h1 class="flow-text sideNav_title center-align">The Record Box</h1>
             <li><div class="divider"></div></li>
             {{ form_errors(form) }}
+
             {{ form_label(form.genre, 'genre') }}
-
-            <div class="divider"></div>
-
             {{ form_widget(form.genre) }}
             {{ form_errors(form.genre) }}
 
             {{ form_label(form.format, 'format') }}
-            <div class="divider"></div>
             {{ form_widget(form.format) }}
             {{ form_errors(form.format) }}
 

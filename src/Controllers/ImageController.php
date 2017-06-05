@@ -91,14 +91,14 @@ class ImageController
      */
     public function deleteImageAction(Application $app, $id)
     {
+        $safeId = trim(filter_var($id, FILTER_SANITIZE_NUMBER_INT));
         $response = '';
-
 //        query the db for a file entity
 //        and get the actual image string
 //        to pass to the delete filesystem function
 //        note: do not delete from db first.
 //        correct order: filesystem first, db second.
-        $image = $app['image.repository']->getImageNameForDelete($id);
+        $image = $app['image.repository']->getImageNameForDelete($safeId);
         $path = $image->getImage();
         $imagePath = $image->setImagePath($path);
         $fs = new Filesystem();
@@ -110,7 +110,7 @@ class ImageController
                 return $e->getMessage();
             }
         }
-        $count = $app['image.repository']->deleteOneById($id);
+        $count = $app['image.repository']->deleteOneById($safeId);
         if (!$count === 1) {
             $response .= 'Theres a problem with the response.';
 

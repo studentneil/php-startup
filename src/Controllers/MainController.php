@@ -104,7 +104,8 @@ class MainController
      */
     public function getReleaseByIdAction(Application $app, $id)
     {
-        $release = $app['vinyl.repository']->findOneById($id);
+        $safeId = trim(filter_var($id, FILTER_SANITIZE_NUMBER_INT));
+        $release = $app['vinyl.repository']->findOneById($safeId);
         $templateName = 'frontend/release';
         $args_array = array(
             'release' => $release,
