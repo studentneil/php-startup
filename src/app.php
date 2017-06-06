@@ -24,7 +24,7 @@ use Dotenv\Dotenv;
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
-$app['env'] = 'prod';
+$app['env'] = 'dev';
 $dotenv = new Dotenv(__DIR__);
 $dotenv->load();
 
