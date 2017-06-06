@@ -25,9 +25,9 @@ require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
 $app['env'] = 'dev';
-$dotenv = new Dotenv(__DIR__);
-$dotenv->load();
-
+//$dotenv = new Dotenv(__DIR__);
+//$dotenv->load();
+$config = parse_ini_file('/config/config.ini');
 $app->register(new TwigServiceProvider(array(
     'twig.options' => array(
         'debug' => true,
@@ -49,16 +49,9 @@ $app->register(new Silex\Provider\TranslationServiceProvider(), array(
 ));
 $app->register(new Silex\Provider\LocaleServiceProvider());
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
-    'db.options' => array(
-        'driver' => getenv('DRIVER'),
-        'dbname' => getenv('DBNAME'),
-        'host' => getenv('HOST'),
-        'user' => getenv('USER'),
-        'password' => getenv('PASSWORD'),
-        'charset' => getenv('CHARSET'),
-        'port' => getenv('PORT'),
-    ),
-));
+    'db.options' => $config['database']
+    )
+);
 $app->register(new Silex\Provider\SecurityServiceProvider(), array(
     'security.firewalls' => array(
         'admin' => array(
@@ -70,7 +63,7 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
             },
             ),
         ),
-    'security.encoder.bcrypt.cost' => getenv('BCRYPT'),
+    'security.encoder.bcrypt.cost' => $config['login']['bcrypt'],
     )
 );
 // slugify strings for nice urls
