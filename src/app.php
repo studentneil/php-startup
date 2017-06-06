@@ -27,7 +27,7 @@ $app = new Application();
 $app['env'] = 'dev';
 //$dotenv = new Dotenv(__DIR__);
 //$dotenv->load();
-$config = parse_ini_file('/config/config.ini');
+$config = parse_ini_file(__DIR__.'/../config/config.ini', true);
 $app->register(new TwigServiceProvider(array(
     'twig.options' => array(
         'debug' => true,
