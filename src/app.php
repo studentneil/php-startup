@@ -24,7 +24,7 @@ use Dotenv\Dotenv;
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
-$app['env'] = 'dev';
+$app['env'] = 'prod';
 //$dotenv = new Dotenv(__DIR__);
 //$dotenv->load();
 $config = parse_ini_file(__DIR__.'/../config/config.ini', true);
