@@ -18,7 +18,7 @@
                         <p>{{ release.title }}
                             {% for price in pricing %}
                                 {% if release.id == price.release_id %}
-                                    <span class="new badge blue" data-badge-caption="Got pricing"></span>
+                                    <span class="new badge blue right-align" data-badge-caption="Got pricing"></span>
                                 {% endif %}
                             {% endfor %}
                         </p>

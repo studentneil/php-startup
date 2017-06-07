@@ -18,16 +18,18 @@ use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
 use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;
 use VinylStore\ServiceProviders\UploadServiceProvider;
 use VinylStore\ServiceProviders\MessageServiceProvider;
+use VinylStore\ServiceProviders\ConfigServiceProvider;
 use VinylStore\UserProvider;
 use Dotenv\Dotenv;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
-$app['env'] = 'prod';
+$app['env'] = 'dev';
 //$dotenv = new Dotenv(__DIR__);
 //$dotenv->load();
-$config = parse_ini_file(__DIR__.'/../config/config.ini', true);
+//$config = parse_ini_file(__DIR__.'/../config/config.ini', true);
+$app->register(new ConfigServiceProvider());
 $app->register(new TwigServiceProvider(array(
     'twig.options' => array(
         'debug' => true,
@@ -49,7 +51,7 @@ $app->register(new Silex\Provider\TranslationServiceProvider(), array(
 ));
 $app->register(new Silex\Provider\LocaleServiceProvider());
 $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
-    'db.options' => $config['database']
+    'db.options' => $app['config']['database']
     )
 );
 $app->register(new Silex\Provider\SecurityServiceProvider(), array(
@@ -63,7 +65,7 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
             },
             ),
         ),
-    'security.encoder.bcrypt.cost' => $config['login']['bcrypt'],
+    'security.encoder.bcrypt.cost' => $app['config']['login']['bcrypt'],
     )
 );
 // slugify strings for nice urls
