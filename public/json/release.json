@@ -1,565 +1,352 @@
 {
-    "status": "Accepted",
+    "styles": [
+        "House",
+        "Techno"
+    ],
     "videos": [
         {
-            "duration": 158,
+            "duration": 427,
+            "description": "Primal Scream - Swastika Eyes",
             "embed": true,
-            "title": "Trentem\u00f8ller: The Last Resort: Pete Tong's Essential CD",
-            "description": "Trentem\u00f8ller: The Last Resort: Pete Tong's Essential CD",
-            "uri": "https:\/\/www.youtube.com\/watch?v=ZDkfyQY2jMw"
+            "uri": "https:\/\/www.youtube.com\/watch?v=DtAnM8YegF0",
+            "title": "Primal Scream - Swastika Eyes"
         },
         {
-            "duration": 300,
+            "duration": 427,
+            "description": "Primal Scream - Swastika Eyes [Chemical Brothers Remix]",
             "embed": true,
-            "title": "Trentem\u00f8ller: Evil Dub",
-            "description": "Trentem\u00f8ller: Evil Dub",
-            "uri": "https:\/\/www.youtube.com\/watch?v=97fuFZbVVnw"
+            "uri": "https:\/\/www.youtube.com\/watch?v=e0LTKUsVMuw",
+            "title": "Primal Scream - Swastika Eyes [Chemical Brothers Remix]"
         },
         {
-            "duration": 492,
+            "duration": 364,
+            "description": "Primal Scream - Swastika Eyes (David Holmes Mix)",
             "embed": true,
-            "title": "Trentem\u00f8ller: The Very Last Resort",
-            "description": "Trentem\u00f8ller: The Very Last Resort",
-            "uri": "https:\/\/www.youtube.com\/watch?v=2m9aZwQOFwM"
+            "uri": "https:\/\/www.youtube.com\/watch?v=8jdV2X_A85M",
+            "title": "Primal Scream - Swastika Eyes (David Holmes Mix)"
         },
         {
-            "duration": 213,
+            "duration": 426,
+            "description": "Primal Scream - Swastika Eyes (Jagz Kooner Mix) (audio only)",
             "embed": true,
-            "title": "Trentem\u00f8ller: Moan",
-            "description": "Trentem\u00f8ller: Moan",
-            "uri": "https:\/\/www.youtube.com\/watch?v=5vkj-t1ytzo"
+            "uri": "https:\/\/www.youtube.com\/watch?v=xlFA3uc-JLI",
+            "title": "Primal Scream - Swastika Eyes (Jagz Kooner Mix) (audio only)"
         },
         {
-            "duration": 468,
+            "duration": 346,
+            "description": "Primal Scream - Swastika Eyes (David Holmes remix)",
             "embed": true,
-            "title": "Trentem\u00f8ller - Take me into your Skin",
-            "description": "Trentem\u00f8ller - Take me into your Skin",
-            "uri": "https:\/\/www.youtube.com\/watch?v=6y-mzh7mvKE"
-        },
-        {
-            "duration": 351,
-            "embed": true,
-            "title": "Trentem\u00f8ller - Moan [The Last Resort]",
-            "description": "Trentem\u00f8ller - Moan [The Last Resort]",
-            "uri": "https:\/\/www.youtube.com\/watch?v=aan-X1gHTHg"
-        },
-        {
-            "duration": 355,
-            "embed": true,
-            "title": "Trentem\u00f8ller - Nightwalker [HQ]",
-            "description": "Trentem\u00f8ller - Nightwalker [HQ]",
-            "uri": "https:\/\/www.youtube.com\/watch?v=BSkAqSmBkno"
-        },
-        {
-            "duration": 447,
-            "embed": true,
-            "title": "Trentemoller - Into the Trees",
-            "description": "Trentemoller - Into the Trees",
-            "uri": "https:\/\/www.youtube.com\/watch?v=NrfGm_ju_D0"
-        },
-        {
-            "duration": 454,
-            "embed": true,
-            "title": "Trentem\u00f8ller - Snowflake [The Last Resort]",
-            "description": "Trentem\u00f8ller - Snowflake [The Last Resort]",
-            "uri": "https:\/\/www.youtube.com\/watch?v=d2shb7utF5I"
-        },
-        {
-            "duration": 206,
-            "embed": true,
-            "title": "Trentem\u00f8ller - Like Two Strangers",
-            "description": "Trentem\u00f8ller - Like Two Strangers",
-            "uri": "https:\/\/www.youtube.com\/watch?v=9iA9kvRyamo"
-        },
-        {
-            "duration": 862,
-            "embed": true,
-            "title": "Nightwalker - Snowflake",
-            "description": "Nightwalker - Snowflake",
-            "uri": "https:\/\/www.youtube.com\/watch?v=b_ihsrZaLvQ"
-        },
-        {
-            "duration": 243,
-            "embed": true,
-            "title": "Trentemoller - Miss You",
-            "description": "Trentemoller - Miss You",
-            "uri": "https:\/\/www.youtube.com\/watch?v=5DUCKGyojpE"
+            "uri": "https:\/\/www.youtube.com\/watch?v=5aHOJnPCiiU",
+            "title": "Primal Scream - Swastika Eyes (David Holmes remix)"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "Poker Flat Recordings",
+            "name": "Creation Records",
             "entity_type": "1",
-            "catno": "PFRLP18",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
-            "id": 779,
+            "catno": "CRE326T",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/1658",
+            "id": 1658,
             "entity_type_name": "Label"
         }
     ],
-    "year": 2006,
+    "year": 1999,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 434,
-            "average": 4.57
+            "count": 43,
+            "average": 4.23
         },
-        "want": 820,
+        "have": 308,
         "contributors": [
             {
-                "username": "mamba9",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mamba9"
+                "username": "mayday",
+                "resource_url": "https:\/\/api.discogs.com\/users\/mayday"
             },
             {
-                "username": "mikkelhansen",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mikkelhansen"
+                "username": "greenwoodgm",
+                "resource_url": "https:\/\/api.discogs.com\/users\/greenwoodgm"
             },
             {
-                "username": "z33k",
-                "resource_url": "https:\/\/api.discogs.com\/users\/z33k"
+                "username": "Mr.Mystery",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Mr.Mystery"
             },
             {
-                "username": "mirkob",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mirkob"
+                "username": "ksdfjsldfj",
+                "resource_url": "https:\/\/api.discogs.com\/users\/ksdfjsldfj"
             },
             {
-                "username": "delysid",
-                "resource_url": "https:\/\/api.discogs.com\/users\/delysid"
-            },
-            {
-                "username": "thesub_jet",
-                "resource_url": "https:\/\/api.discogs.com\/users\/thesub_jet"
-            },
-            {
-                "username": "jonas45",
-                "resource_url": "https:\/\/api.discogs.com\/users\/jonas45"
-            },
-            {
-                "username": "NLK",
-                "resource_url": "https:\/\/api.discogs.com\/users\/NLK"
-            },
-            {
-                "username": "muntz",
-                "resource_url": "https:\/\/api.discogs.com\/users\/muntz"
-            },
-            {
-                "username": "maxxyme",
-                "resource_url": "https:\/\/api.discogs.com\/users\/maxxyme"
-            },
-            {
-                "username": "Mauep",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Mauep"
-            },
-            {
-                "username": "TheEvilGenius",
-                "resource_url": "https:\/\/api.discogs.com\/users\/TheEvilGenius"
-            },
-            {
-                "username": "abasheen",
-                "resource_url": "https:\/\/api.discogs.com\/users\/abasheen"
-            },
-            {
-                "username": "zaffa",
-                "resource_url": "https:\/\/api.discogs.com\/users\/zaffa"
+                "username": "DiscogsUpdateBot",
+                "resource_url": "https:\/\/api.discogs.com\/users\/DiscogsUpdateBot"
             }
         ],
-        "have": 2348,
+        "want": 68,
         "submitter": {
-            "username": "mamba9",
-            "resource_url": "https:\/\/api.discogs.com\/users\/mamba9"
+            "username": "mayday",
+            "resource_url": "https:\/\/api.discogs.com\/users\/mayday"
         },
-        "data_quality": "Complete and Correct"
+        "data_quality": "Needs Vote"
     },
     "artists": [
         {
-            "join": ",",
-            "name": "Trentem\u00f8ller",
+            "join": "",
+            "name": "Primal Scream",
             "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-            "id": 117914
+            "resource_url": "https:\/\/api.discogs.com\/artists\/3852",
+            "id": 3852
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/api-img.discogs.com\/ZPjXffo-D4G3TFcnVXZ2DsERsUU=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
-            "height": 590,
-            "width": 590,
-            "resource_url": "https:\/\/api-img.discogs.com\/ZPjXffo-D4G3TFcnVXZ2DsERsUU=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/essrZrqmVpv27okTbpChM_V_Tiw=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320350.jpeg.jpg",
+            "height": 598,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/essrZrqmVpv27okTbpChM_V_Tiw=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320350.jpeg.jpg",
             "type": "primary",
-            "uri150": "https:\/\/api-img.discogs.com\/kn5OJf5fwNRDxB8SC0ZgRnA5jbY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889765.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/pun9vvWNWEhjKuGhfht0BEycNmA=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320350.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/qE7FI7Un50V0AWQeWwta_UClLr0=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889807.jpeg.jpg",
-            "height": 590,
-            "width": 590,
-            "resource_url": "https:\/\/api-img.discogs.com\/qE7FI7Un50V0AWQeWwta_UClLr0=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1160889807.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/tbCnGJrzR_bOjvtCKOXTmc957uo=\/fit-in\/599x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320364.jpeg.jpg",
+            "height": 602,
+            "width": 599,
+            "resource_url": "https:\/\/api-img.discogs.com\/tbCnGJrzR_bOjvtCKOXTmc957uo=\/fit-in\/599x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320364.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/4MP_xoHO9OFZKourlohMB4351bs=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889807.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/pA0pZ7w2ML4vroSOmRwrg2zOO1o=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320364.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/x17bK8YqbeYyB0sh9GtAi3ABg2U=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg",
-            "height": 600,
+            "uri": "https:\/\/api-img.discogs.com\/6aCyWa8HtHlaiHIJbFfka3DL1x8=\/fit-in\/600x594\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320382.jpeg.jpg",
+            "height": 594,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/x17bK8YqbeYyB0sh9GtAi3ABg2U=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg",
+            "resource_url": "https:\/\/api-img.discogs.com\/6aCyWa8HtHlaiHIJbFfka3DL1x8=\/fit-in\/600x594\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320382.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/CTls2tFyR8BwRzyla__nrnIT93o=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962010-3104.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/REIHl2QVQj9-i-cM1K1UAAqT_54=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320382.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/xFXna1XtlZNtsbvx0DAS4ZQN2Xc=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/79kAWbb0m5exzFBILy1J9VjwQm8=\/fit-in\/597x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420876.jpeg.jpg",
             "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/xFXna1XtlZNtsbvx0DAS4ZQN2Xc=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg",
+            "width": 597,
+            "resource_url": "https:\/\/api-img.discogs.com\/79kAWbb0m5exzFBILy1J9VjwQm8=\/fit-in\/597x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420876.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/etEFfqVih9nIoBWWfuPnV6HpgtM=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-4060.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/VUVOyYG1B1tJ2FTw6hB-Aur8UoU=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1148420876.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/D5mB3A-rPm-b6LuhekCXseV6xKY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/miOS9vJr0R0w35Aq_cbnYOKoJNg=\/fit-in\/588x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420890.jpeg.jpg",
             "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/D5mB3A-rPm-b6LuhekCXseV6xKY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg",
+            "width": 588,
+            "resource_url": "https:\/\/api-img.discogs.com\/miOS9vJr0R0w35Aq_cbnYOKoJNg=\/fit-in\/588x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420890.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/kb-MQQUHeOEHBA-phKUAiqv-uAU=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-5598.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/YbgQTCPplabjND6WHIk40FoEuLY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/YbgQTCPplabjND6WHIk40FoEuLY=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/OW2bGBetXsPvRhKSA8ZiKt1gOaQ=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1429962009-7349.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/PLKm8Sctdwd7vas-zySHEnDpOI4=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1148420890.jpeg.jpg"
         }
     ],
-    "format_quantity": 2,
-    "id": 802115,
+    "format_quantity": 1,
+    "id": 9145,
     "genres": [
         "Electronic"
     ],
-    "thumb": "https:\/\/api-img.discogs.com\/kn5OJf5fwNRDxB8SC0ZgRnA5jbY=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-802115-1160889765.jpeg.jpg",
-    "num_for_sale": 46,
-    "title": "The Last Resort",
-    "date_changed": "2016-04-21T08:21:12-07:00",
-    "master_id": 23992,
-    "lowest_price": 11.54,
-    "styles": [
-        "Abstract",
-        "IDM",
-        "Minimal"
-    ],
-    "released_formatted": "09 Oct 2006",
-    "formats": [
+    "thumb": "https:\/\/api-img.discogs.com\/pun9vvWNWEhjKuGhfht0BEycNmA=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320350.jpeg.jpg",
+    "num_for_sale": 10,
+    "title": "Swastika Eyes",
+    "date_changed": "2013-03-17T10:31:07-07:00",
+    "master_id": 123417,
+    "lowest_price": 1.71,
+    "status": "Accepted",
+    "released_formatted": "15 Nov 1999",
+    "estimated_weight": 230,
+    "master_url": "https:\/\/api.discogs.com\/masters\/123417",
+    "released": "1999-11-15",
+    "date_added": "2001-08-23T00:50:01-07:00",
+    "tracklist": [
         {
-            "qty": "2",
-            "descriptions": [
-                "12\"",
-                "33 \u2153 RPM",
-                "Album",
-                "Remastered"
+            "duration": "7:09",
+            "position": "A",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Cheeky Paul",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Edited By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/251222",
+                    "id": 251222
+                },
+                {
+                    "join": "",
+                    "name": "Steve Dub",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Engineer",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/45017",
+                    "id": 45017
+                },
+                {
+                    "join": "",
+                    "name": "The Chemical Brothers",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Producer [Additional Production]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/2290",
+                    "id": 2290
+                },
+                {
+                    "join": "",
+                    "name": "The Chemical Brothers",
+                    "anv": "Chemical Brothers",
+                    "tracks": "",
+                    "role": "Remix",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/2290",
+                    "id": 2290
+                }
             ],
-            "name": "Vinyl"
+            "title": "Swastika Eyes (Chemical Brothers Mix)"
+        },
+        {
+            "duration": "8:10",
+            "position": "B",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Jagz Kooner",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Producer [Additional Production], Mixed By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/9660",
+                    "id": 9660
+                },
+                {
+                    "join": "",
+                    "name": "Jagz Kooner",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Remix",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/9660",
+                    "id": 9660
+                }
+            ],
+            "title": "Swastika Eyes (Spectre Mix)"
         }
     ],
-    "estimated_weight": 460,
-    "master_url": "https:\/\/api.discogs.com\/masters\/23992",
-    "released": "2006-10-09",
-    "date_added": "2006-10-09T23:33:16-07:00",
     "extraartists": [
         {
             "join": "",
-            "name": "Weissraum",
-            "anv": "weissraum.de(sign)",
+            "name": "Julian House",
+            "anv": "House",
             "tracks": "",
-            "role": "Artwork",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1827689",
-            "id": 1827689
+            "role": "Design [Sleeve]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/665965",
+            "id": 665965
         },
         {
             "join": "",
-            "name": "Nulleinsbild",
+            "name": "Miles Showell",
             "anv": "",
             "tracks": "",
-            "role": "Artwork [3d Tree]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2065525",
-            "id": 2065525
+            "role": "Mastered By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/383408",
+            "id": 383408
         },
         {
             "join": "",
-            "name": "Nilesh Patel",
-            "anv": "Nilz",
-            "tracks": "",
-            "role": "Mastered By [Cutting]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/386598",
-            "id": 386598
-        },
-        {
-            "join": "",
-            "name": "PhotoCase",
-            "anv": "Photocase.com",
-            "tracks": "",
-            "role": "Photography By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2243913",
-            "id": 2243913
-        },
-        {
-            "join": "",
-            "name": "Ossian Ryner",
+            "name": "Primal Scream",
             "anv": "",
             "tracks": "",
-            "role": "Technician",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/325188",
-            "id": 325188
-        },
-        {
-            "join": "",
-            "name": "Trentem\u00f8ller",
-            "anv": "Anders Trentem\u00f8ller",
-            "tracks": "",
-            "role": "Written-By, Producer, Performer [Played By], Programmed By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-            "id": 117914
+            "role": "Written-By, Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/3852",
+            "id": 3852
         }
     ],
-    "tracklist": [
-        {
-            "duration": "",
-            "position": "A1",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Mikael Simpson",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass [Distorted Bass]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/247991",
-                    "id": 247991
-                },
-                {
-                    "join": "",
-                    "name": "Henrik Vibskov",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drums [Acc. Drums]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/598277",
-                    "id": 598277
-                },
-                {
-                    "join": "",
-                    "name": "Trentem\u00f8ller",
-                    "anv": "Anders Trentem\u00f8ller",
-                    "tracks": "",
-                    "role": "Guitar [Dreamy Guitars]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-                    "id": 117914
-                }
-            ],
-            "title": "Take Me Into Your Skin"
-        },
-        {
-            "duration": "",
-            "position": "A2",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Mikael Simpson",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Acoustic Guitar [Acc. Guitar]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/247991",
-                    "id": 247991
-                },
-                {
-                    "join": "",
-                    "name": "Trentem\u00f8ller",
-                    "anv": "Anders Trentem\u00f8ller",
-                    "tracks": "",
-                    "role": "Guitar [Surf Guitar]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-                    "id": 117914
-                }
-            ],
-            "title": "The Very Last Resort"
-        },
-        {
-            "duration": "",
-            "position": "B1",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Arnaud Donez",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Guitar, Bass",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/598276",
-                    "id": 598276
-                }
-            ],
-            "title": "Evil Dub"
-        },
-        {
-            "duration": "",
-            "position": "B2",
-            "type_": "track",
-            "title": "Snowflake"
-        },
-        {
-            "duration": "",
-            "position": "C1",
-            "type_": "track",
-            "title": "Nightwalker"
-        },
-        {
-            "duration": "",
-            "position": "C2",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Henrik Vibskov",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drums [Acc. Drums]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/598277",
-                    "id": 598277
-                }
-            ],
-            "title": "Into The Trees (Serenetti Part 3)"
-        },
-        {
-            "duration": "",
-            "position": "D1",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Trentem\u00f8ller",
-                    "anv": "Anders Trentem\u00f8ller",
-                    "tracks": "",
-                    "role": "Celesta [Celeste Played By]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/117914",
-                    "id": 117914
-                },
-                {
-                    "join": "",
-                    "name": "Thomas Bertelsen",
-                    "anv": "Thomas 'DJ T.O.M.' Bertelsen",
-                    "tracks": "",
-                    "role": "Scratches [Scratch Solo]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/795019",
-                    "id": 795019
-                }
-            ],
-            "title": "Always Something Better"
-        },
-        {
-            "duration": "",
-            "position": "D2",
-            "type_": "track",
-            "title": "Moan"
-        },
-        {
-            "duration": "",
-            "position": "D3",
-            "type_": "track",
-            "title": "Miss You"
-        }
-    ],
-    "notes": "Recorded in Copenhagen 2005\/2006. \r\nAcc. drums and celeste recorded in Denmarks Radio's Studio 9.\r\n\r\n(P)&(C) 2006 Poker Flat Recordings\r\nMade in EU.\r\nThis vinyl edition includes special versions of selected songs from the full length album: [r=830189] (PFRCD18).\r\n\r\nLimited Edition includes a poster.",
+    "country": "UK",
+    "notes": "Published by EMI\/Copyright Control\/Complete Music\r\n\u2117 & \u00a9 1999 Creation Records Ltd\r\n\r\n",
     "identifiers": [
         {
             "type": "Barcode",
-            "description": "Text",
-            "value": "8 27170 11311 4"
-        },
-        {
-            "type": "Barcode",
-            "description": "String",
-            "value": "827170113114"
-        },
-        {
-            "type": "Rights Society",
-            "value": "GEMA"
-        },
-        {
-            "type": "Label Code",
-            "value": "LC 00747"
+            "description": "Printed",
+            "value": "5 017556 203262"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Runout Side A",
-            "value": "PFRLP18 A' MPO NiLZ - THE EXCHANGE"
+            "description": "Run-out Side A",
+            "value": "CRE 326 T A-01-1-1 | USUAL RUBBISH ? | Miles."
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Runout Side B",
-            "value": "PFRLP18 B' MPO NiLZ - THE EXCHANGE"
-        },
-        {
-            "type": "Matrix \/ Runout",
-            "description": "Runout Side C",
-            "value": "PFRLP18 C' MPO NiLZ - THE EXCHANGE"
-        },
-        {
-            "type": "Matrix \/ Runout",
-            "description": "Runout Side D",
-            "value": "PFRLP18 D' MPO NiLZ - THE EXCHANGE"
+            "description": "Run-out Side B",
+            "value": "CRE 326 T B-01-1-1 | IT'LL ROT YOUR BOOTS. | MILES."
         }
     ],
     "companies": [
         {
-            "name": "The Exchange",
-            "entity_type": "29",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/158759",
-            "id": 158759,
-            "entity_type_name": "Mastered At"
-        },
-        {
-            "name": "MPO",
-            "entity_type": "17",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/56025",
-            "id": 56025,
-            "entity_type_name": "Pressed By"
-        },
-        {
-            "name": "Poker Flat Recordings",
+            "name": "Creation Records Ltd.",
             "entity_type": "13",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
-            "id": 779,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/105755",
+            "id": 105755,
             "entity_type_name": "Phonographic Copyright (p)"
         },
         {
-            "name": "Poker Flat Recordings",
+            "name": "Creation Records Ltd.",
             "entity_type": "14",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/779",
-            "id": 779,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/105755",
+            "id": 105755,
             "entity_type_name": "Copyright (c)"
         },
         {
-            "name": "Wordandsound",
-            "entity_type": "9",
+            "name": "EMI Music Publishing",
+            "entity_type": "21",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/264267",
-            "id": 264267,
-            "entity_type_name": "Distributed By"
+            "resource_url": "https:\/\/api.discogs.com\/labels\/155248",
+            "id": 155248,
+            "entity_type_name": "Published By"
         },
         {
-            "name": "DR",
-            "entity_type": "23",
+            "name": "Copyright Control",
+            "entity_type": "21",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/53886",
-            "id": 53886,
-            "entity_type_name": "Recorded At"
+            "resource_url": "https:\/\/api.discogs.com\/labels\/48207",
+            "id": 48207,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Complete Music Ltd.",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/266936",
+            "id": 266936,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Metropolis Mastering",
+            "entity_type": "29",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/181778",
+            "id": 181778,
+            "entity_type_name": "Mastered At"
+        },
+        {
+            "name": "Intro (11)",
+            "entity_type": "33",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/290391",
+            "id": 290391,
+            "entity_type_name": "Designed At"
         }
     ],
-    "uri": "https:\/\/www.discogs.com\/Trentem%C3%B8ller-The-Last-Resort\/release\/802115",
-    "country": "Germany",
-    "resource_url": "https:\/\/api.discogs.com\/releases\/802115",
-    "data_quality": "Complete and Correct"
+    "uri": "https:\/\/www.discogs.com\/Primal-Scream-Swastika-Eyes\/release\/9145",
+    "formats": [
+        {
+            "descriptions": [
+                "12\"",
+                "Single"
+            ],
+            "name": "Vinyl",
+            "qty": "1"
+        }
+    ],
+    "resource_url": "https:\/\/api.discogs.com\/releases\/9145",
+    "data_quality": "Needs Vote"
 }
