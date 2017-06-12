@@ -4,6 +4,7 @@ namespace VinylStore\Controllers;
 
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
+use VinylStore\Forms\ContactFormType;
 use VinylStore\Forms\RefineType;
 use VinylStore\Paginator;
 
@@ -152,6 +153,20 @@ class MainController
         $args_array = array();
         $templateName = 'frontend/faq';
 
+        return $app['twig']->render($templateName.'.html.twig', $args_array);
+    }
+
+    public function contactAction(Request $request, Application $app)
+    {
+        $contactFormData = array();
+        $form = $app['form.factory']
+            ->createBuilder(ContactFormType::class, $contactFormData)
+            ->getForm();
+
+        $templateName = 'frontend/contact';
+        $args_array = array(
+            'form' => $form->createView()
+        );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 }

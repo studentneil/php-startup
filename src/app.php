@@ -19,6 +19,7 @@ use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;
 use VinylStore\ServiceProviders\UploadServiceProvider;
 use VinylStore\ServiceProviders\MessageServiceProvider;
 use VinylStore\ServiceProviders\ConfigServiceProvider;
+use VinylStore\ServiceProviders\ShippingRatesServiceProvider;
 use VinylStore\UserProvider;
 use Dotenv\Dotenv;
 
@@ -96,11 +97,18 @@ $app->extend('form.types', function ($types) use ($app) {
 
     return $types;
 });
+// contact form
+$app->extend('form.types', function ($types) use ($app) {
+    $types[] = new VinylStore\Forms\ContactFormType();
+
+    return $types;
+});
 $app->register(new VinylRepositoryServiceProvider());
 $app->register(new ImageRepositoryServiceProvider());
 $app->register(new PricingRepositoryServiceProvider());
 $app->register(new UploadServiceProvider());
 $app->register(new MessageServiceProvider());
+$app->register(new ShippingRatesServiceProvider());
 // exception handling
 //$app->error(function (\Exception $e, Request $request, $code) use ($app) {
 //    switch($code) {

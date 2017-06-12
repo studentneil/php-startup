@@ -1,352 +1,227 @@
 {
     "styles": [
-        "House",
-        "Techno"
+        "Breaks",
+        "Dub Techno"
     ],
     "videos": [
         {
-            "duration": 427,
-            "description": "Primal Scream - Swastika Eyes",
+            "duration": 517,
+            "description": "Tantakatan (The Drunken Shed Mix)",
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=DtAnM8YegF0",
-            "title": "Primal Scream - Swastika Eyes"
+            "uri": "https:\/\/www.youtube.com\/watch?v=LYKbdXjBG0Q",
+            "title": "Tantakatan (The Drunken Shed Mix)"
         },
         {
-            "duration": 427,
-            "description": "Primal Scream - Swastika Eyes [Chemical Brothers Remix]",
+            "duration": 603,
+            "description": "Tantakatan (Mr. G's Nightwatch Dub)",
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=e0LTKUsVMuw",
-            "title": "Primal Scream - Swastika Eyes [Chemical Brothers Remix]"
+            "uri": "https:\/\/www.youtube.com\/watch?v=LgRukY7_ch8",
+            "title": "Tantakatan (Mr. G's Nightwatch Dub)"
         },
         {
-            "duration": 364,
-            "description": "Primal Scream - Swastika Eyes (David Holmes Mix)",
+            "duration": 517,
+            "description": "Radio Slave - Tantakatan (The Drunken Shed Mix)",
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=8jdV2X_A85M",
-            "title": "Primal Scream - Swastika Eyes (David Holmes Mix)"
+            "uri": "https:\/\/www.youtube.com\/watch?v=k07juCMYD6A",
+            "title": "Radio Slave - Tantakatan (The Drunken Shed Mix)"
         },
         {
-            "duration": 426,
-            "description": "Primal Scream - Swastika Eyes (Jagz Kooner Mix) (audio only)",
+            "duration": 569,
+            "description": "Tantakatan (Prins Thomas Diskomiks)",
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=xlFA3uc-JLI",
-            "title": "Primal Scream - Swastika Eyes (Jagz Kooner Mix) (audio only)"
-        },
-        {
-            "duration": 346,
-            "description": "Primal Scream - Swastika Eyes (David Holmes remix)",
-            "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=5aHOJnPCiiU",
-            "title": "Primal Scream - Swastika Eyes (David Holmes remix)"
+            "uri": "https:\/\/www.youtube.com\/watch?v=FJvUubEVwaw",
+            "title": "Tantakatan (Prins Thomas Diskomiks)"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "Creation Records",
+            "name": "REKIDS",
             "entity_type": "1",
-            "catno": "CRE326T",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/1658",
-            "id": 1658,
+            "catno": "REKIDS 031",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/58500",
+            "id": 58500,
             "entity_type_name": "Label"
         }
     ],
-    "year": 1999,
+    "year": 2008,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 43,
-            "average": 4.23
+            "count": 39,
+            "average": 4.36
         },
-        "have": 308,
+        "have": 204,
         "contributors": [
             {
-                "username": "mayday",
-                "resource_url": "https:\/\/api.discogs.com\/users\/mayday"
+                "username": "maobeat",
+                "resource_url": "https:\/\/api.discogs.com\/users\/maobeat"
             },
             {
-                "username": "greenwoodgm",
-                "resource_url": "https:\/\/api.discogs.com\/users\/greenwoodgm"
+                "username": "Grap",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Grap"
             },
             {
-                "username": "Mr.Mystery",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Mr.Mystery"
+                "username": "LostInVinyl",
+                "resource_url": "https:\/\/api.discogs.com\/users\/LostInVinyl"
             },
             {
-                "username": "ksdfjsldfj",
-                "resource_url": "https:\/\/api.discogs.com\/users\/ksdfjsldfj"
+                "username": "zevulon",
+                "resource_url": "https:\/\/api.discogs.com\/users\/zevulon"
             },
             {
-                "username": "DiscogsUpdateBot",
-                "resource_url": "https:\/\/api.discogs.com\/users\/DiscogsUpdateBot"
+                "username": "hermanito",
+                "resource_url": "https:\/\/api.discogs.com\/users\/hermanito"
             }
         ],
-        "want": 68,
+        "want": 66,
         "submitter": {
-            "username": "mayday",
-            "resource_url": "https:\/\/api.discogs.com\/users\/mayday"
+            "username": "maobeat",
+            "resource_url": "https:\/\/api.discogs.com\/users\/maobeat"
         },
-        "data_quality": "Needs Vote"
+        "data_quality": "Correct"
     },
     "artists": [
         {
             "join": "",
-            "name": "Primal Scream",
+            "name": "Radio Slave",
             "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/3852",
-            "id": 3852
+            "resource_url": "https:\/\/api.discogs.com\/artists\/29782",
+            "id": 29782
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/api-img.discogs.com\/essrZrqmVpv27okTbpChM_V_Tiw=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320350.jpeg.jpg",
-            "height": 598,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/essrZrqmVpv27okTbpChM_V_Tiw=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320350.jpeg.jpg",
-            "type": "primary",
-            "uri150": "https:\/\/api-img.discogs.com\/pun9vvWNWEhjKuGhfht0BEycNmA=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320350.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/tbCnGJrzR_bOjvtCKOXTmc957uo=\/fit-in\/599x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320364.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/AyfYgS5ZVsCbbRBb_5VEwV39Cwk=\/fit-in\/600x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1489965-1459710680-9011.jpeg.jpg",
             "height": 602,
-            "width": 599,
-            "resource_url": "https:\/\/api-img.discogs.com\/tbCnGJrzR_bOjvtCKOXTmc957uo=\/fit-in\/599x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320364.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/pA0pZ7w2ML4vroSOmRwrg2zOO1o=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320364.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/6aCyWa8HtHlaiHIJbFfka3DL1x8=\/fit-in\/600x594\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320382.jpeg.jpg",
-            "height": 594,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/6aCyWa8HtHlaiHIJbFfka3DL1x8=\/fit-in\/600x594\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320382.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/REIHl2QVQj9-i-cM1K1UAAqT_54=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320382.jpeg.jpg"
+            "resource_url": "https:\/\/api-img.discogs.com\/AyfYgS5ZVsCbbRBb_5VEwV39Cwk=\/fit-in\/600x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1489965-1459710680-9011.jpeg.jpg",
+            "type": "primary",
+            "uri150": "https:\/\/api-img.discogs.com\/SmbRramOsihAwrlvaJb0YkyLH9Q=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1489965-1459710680-9011.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/79kAWbb0m5exzFBILy1J9VjwQm8=\/fit-in\/597x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420876.jpeg.jpg",
-            "height": 600,
-            "width": 597,
-            "resource_url": "https:\/\/api-img.discogs.com\/79kAWbb0m5exzFBILy1J9VjwQm8=\/fit-in\/597x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420876.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/vE2s_yVeXAUbqelH7GjfwKzvQI4=\/fit-in\/600x610\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1489965-1459710681-8997.jpeg.jpg",
+            "height": 610,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/vE2s_yVeXAUbqelH7GjfwKzvQI4=\/fit-in\/600x610\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1489965-1459710681-8997.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/VUVOyYG1B1tJ2FTw6hB-Aur8UoU=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1148420876.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/miOS9vJr0R0w35Aq_cbnYOKoJNg=\/fit-in\/588x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420890.jpeg.jpg",
-            "height": 600,
-            "width": 588,
-            "resource_url": "https:\/\/api-img.discogs.com\/miOS9vJr0R0w35Aq_cbnYOKoJNg=\/fit-in\/588x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420890.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/PLKm8Sctdwd7vas-zySHEnDpOI4=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1148420890.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/uhTdiLvwwIeFyivv3r0HEExq4P0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1489965-1459710681-8997.jpeg.jpg"
         }
     ],
     "format_quantity": 1,
-    "id": 9145,
+    "id": 1489965,
     "genres": [
         "Electronic"
     ],
-    "thumb": "https:\/\/api-img.discogs.com\/pun9vvWNWEhjKuGhfht0BEycNmA=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320350.jpeg.jpg",
-    "num_for_sale": 10,
-    "title": "Swastika Eyes",
-    "date_changed": "2013-03-17T10:31:07-07:00",
-    "master_id": 123417,
-    "lowest_price": 1.71,
+    "thumb": "https:\/\/api-img.discogs.com\/SmbRramOsihAwrlvaJb0YkyLH9Q=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1489965-1459710680-9011.jpeg.jpg",
+    "num_for_sale": 23,
+    "title": "Tantakatan (The Drunken Shed Mix)",
+    "date_changed": "2016-04-03T12:11:25-07:00",
+    "master_id": 916600,
+    "lowest_price": 1.14,
     "status": "Accepted",
-    "released_formatted": "15 Nov 1999",
+    "released_formatted": "Oct 2008",
     "estimated_weight": 230,
-    "master_url": "https:\/\/api.discogs.com\/masters\/123417",
-    "released": "1999-11-15",
-    "date_added": "2001-08-23T00:50:01-07:00",
+    "master_url": "https:\/\/api.discogs.com\/masters\/916600",
+    "released": "2008-10-00",
+    "date_added": "2008-10-09T07:02:26-07:00",
     "tracklist": [
         {
-            "duration": "7:09",
+            "duration": "8:35",
             "position": "A",
             "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Cheeky Paul",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Edited By",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/251222",
-                    "id": 251222
-                },
-                {
-                    "join": "",
-                    "name": "Steve Dub",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Engineer",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/45017",
-                    "id": 45017
-                },
-                {
-                    "join": "",
-                    "name": "The Chemical Brothers",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Producer [Additional Production]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/2290",
-                    "id": 2290
-                },
-                {
-                    "join": "",
-                    "name": "The Chemical Brothers",
-                    "anv": "Chemical Brothers",
-                    "tracks": "",
-                    "role": "Remix",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/2290",
-                    "id": 2290
-                }
-            ],
-            "title": "Swastika Eyes (Chemical Brothers Mix)"
-        },
-        {
-            "duration": "8:10",
-            "position": "B",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Jagz Kooner",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Producer [Additional Production], Mixed By",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/9660",
-                    "id": 9660
-                },
-                {
-                    "join": "",
-                    "name": "Jagz Kooner",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Remix",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/9660",
-                    "id": 9660
-                }
-            ],
-            "title": "Swastika Eyes (Spectre Mix)"
+            "title": "Tantakatan (The Drunken Shed Mix)"
         }
     ],
     "extraartists": [
         {
             "join": "",
-            "name": "Julian House",
-            "anv": "House",
-            "tracks": "",
-            "role": "Design [Sleeve]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/665965",
-            "id": 665965
-        },
-        {
-            "join": "",
-            "name": "Miles Showell",
+            "name": "Matt Colton",
             "anv": "",
             "tracks": "",
             "role": "Mastered By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/383408",
-            "id": 383408
+            "resource_url": "https:\/\/api.discogs.com\/artists\/393350",
+            "id": 393350
         },
         {
             "join": "",
-            "name": "Primal Scream",
+            "name": "Shed",
             "anv": "",
             "tracks": "",
-            "role": "Written-By, Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/3852",
-            "id": 3852
+            "role": "Remix, Producer [Additional]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/97364",
+            "id": 97364
+        },
+        {
+            "join": "",
+            "name": "Matt Edwards",
+            "anv": "",
+            "tracks": "",
+            "role": "Written-By, Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/86183",
+            "id": 86183
         }
     ],
     "country": "UK",
-    "notes": "Published by EMI\/Copyright Control\/Complete Music\r\n\u2117 & \u00a9 1999 Creation Records Ltd\r\n\r\n",
+    "notes": "\u2117&\u00a9 REKIDS LTD 2008.\r\nMade in EU.\r\n\r\n\r\n",
     "identifiers": [
         {
             "type": "Barcode",
-            "description": "Printed",
-            "value": "5 017556 203262"
+            "value": "5060124903163"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Run-out Side A",
-            "value": "CRE 326 T A-01-1-1 | USUAL RUBBISH ? | Miles."
-        },
-        {
-            "type": "Matrix \/ Runout",
-            "description": "Run-out Side B",
-            "value": "CRE 326 T B-01-1-1 | IT'LL ROT YOUR BOOTS. | MILES."
+            "value": "MATT COLTON MASTERING MPO REKIDS 031 A1"
         }
     ],
     "companies": [
         {
-            "name": "Creation Records Ltd.",
+            "name": "Rekids Publishing",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/273288",
+            "id": 273288,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Rekids Ltd.",
             "entity_type": "13",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/105755",
-            "id": 105755,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/273287",
+            "id": 273287,
             "entity_type_name": "Phonographic Copyright (p)"
         },
         {
-            "name": "Creation Records Ltd.",
+            "name": "Rekids Ltd.",
             "entity_type": "14",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/105755",
-            "id": 105755,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/273287",
+            "id": 273287,
             "entity_type_name": "Copyright (c)"
         },
         {
-            "name": "EMI Music Publishing",
-            "entity_type": "21",
+            "name": "MPO",
+            "entity_type": "17",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/155248",
-            "id": 155248,
-            "entity_type_name": "Published By"
-        },
-        {
-            "name": "Copyright Control",
-            "entity_type": "21",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/48207",
-            "id": 48207,
-            "entity_type_name": "Published By"
-        },
-        {
-            "name": "Complete Music Ltd.",
-            "entity_type": "21",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/266936",
-            "id": 266936,
-            "entity_type_name": "Published By"
-        },
-        {
-            "name": "Metropolis Mastering",
-            "entity_type": "29",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/181778",
-            "id": 181778,
-            "entity_type_name": "Mastered At"
-        },
-        {
-            "name": "Intro (11)",
-            "entity_type": "33",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/290391",
-            "id": 290391,
-            "entity_type_name": "Designed At"
+            "resource_url": "https:\/\/api.discogs.com\/labels\/56025",
+            "id": 56025,
+            "entity_type_name": "Pressed By"
         }
     ],
-    "uri": "https:\/\/www.discogs.com\/Primal-Scream-Swastika-Eyes\/release\/9145",
+    "uri": "https:\/\/www.discogs.com\/Radio-Slave-Tantakatan-The-Drunken-Shed-Mix\/release\/1489965",
     "formats": [
         {
             "descriptions": [
                 "12\"",
-                "Single"
+                "Single Sided",
+                "33 \u2153 RPM"
             ],
             "name": "Vinyl",
             "qty": "1"
         }
     ],
-    "resource_url": "https:\/\/api.discogs.com\/releases\/9145",
-    "data_quality": "Needs Vote"
+    "resource_url": "https:\/\/api.discogs.com\/releases\/1489965",
+    "data_quality": "Correct"
 }

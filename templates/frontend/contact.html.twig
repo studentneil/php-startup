@@ -1,0 +1,40 @@
+{% extends 'frontend/base.html.twig' %}
+{% set active_page = 'contact' %}
+{% block content %}
+    <div class="row">
+        <div class="container">
+            <h1 class="flow-text grey lighten-4 track_header">CONTACT</h1>
+            <div>
+                <form class="container col s12" action="" method="post">
+
+                    {{ form_errors(form) }}
+                    <div class="row">
+
+                        <div class="input-field col m6 s12">
+                            {{ form_label(form.name, 'name') }}
+                            {{ form_widget(form.name) }}
+                            {{ form_errors(form.name) }}
+                        </div>
+
+
+                        <div class="input-field col m6 s12">
+                            {{ form_label(form.email, 'email') }}
+                            {{ form_widget(form.email) }}
+                            {{ form_errors(form.email) }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col m6 s12">
+                            {{ form_label(form.message, 'message') }}
+                            {{ form_widget(form.message, {'attr':{'class':'materialize-textarea'}}) }}
+                            {{ form_errors(form.message) }}
+                        </div>
+
+                    </div>
+                    <button class="btn waves-effect waves-light blue darken-2" type="submit" name="action">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
