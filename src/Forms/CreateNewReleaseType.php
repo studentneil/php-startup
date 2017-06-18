@@ -99,20 +99,20 @@ class CreateNewReleaseType extends AbstractType
             ->add('media_condition', ChoiceType::class, array(
                 'choices' => array(
                     'mint' => 'mint',
+                    'ex' => 'ex',
                     'vg+' => 'vg+',
                     'vg' => 'vg',
                     'good' => 'good',
                     'fair' => 'fair',
-                    'poor' => 'poor',
                 ), ))
             ->add('sleeve_condition', ChoiceType::class, array(
                 'choices' => array(
                     'mint' => 'mint',
+                    'ex' => 'ex',
                     'vg+' => 'vg+',
                     'vg' => 'vg',
                     'good' => 'good',
                     'fair' => 'fair',
-                    'poor' => 'poor',
                 ), ))
             ->add('notes', TextareaType::class, array(
                 'constraints' => array(

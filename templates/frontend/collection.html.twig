@@ -56,7 +56,7 @@
                     <div class="card z-depth-3">
 
                         <div class="card-image waves-block waves-light">
-                            <img class="activator" src="/uploads/{{ release.image }}" alt="cover art">
+                            <img class="activator" src="/uploads/{{ release.image }}" alt="{{ release.title|replace({' ':'_'}) }}">
                         </div>
 
                         <div class="card-reveal">
@@ -67,8 +67,8 @@
                                 <p>{{ release.artist }}</p>
                                 <p>{{ release.title }}</p>
                                 <p>{{ release.format }}</p>
-                                <p class="hide-on-med-and-down">Media :{{ release.media_condition }}</p>
-                                <p class="hide-on-med-and-down">Sleeve :{{ release.sleeve_condition }}</p>
+                                <p class="hide-on-med-and-down">Media : {{ release.media_condition|upper }}</p>
+                                <p class="hide-on-med-and-down">Sleeve : {{ release.sleeve_condition|upper }}</p>
                                 <p>&euro;{{ release.price }}</p>
                                 <br>
                                 <div class="divider"></div>

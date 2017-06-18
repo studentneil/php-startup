@@ -35,6 +35,9 @@ html {
 .links {
     color: grey;
 }
+a.links:hover {
+    color: rgba(238, 80, 115, 0.7);
+}
 
 .backend {
     height: 200px;

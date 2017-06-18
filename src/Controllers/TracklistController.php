@@ -12,7 +12,7 @@ use Silex\Application;
 
 class TracklistController
 {
-    public function getTracklistAction(Application $app, $catno, $artist, $title)
+    public function getTracklistAction(Application $app, $catno, $title)
     {
         $curl = curl_init();
         curl_setopt_array($curl, array(

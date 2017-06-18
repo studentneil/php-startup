@@ -13,6 +13,8 @@ use Silex\Provider\ServiceControllerServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\FormServiceProvider;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
 use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
 use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;
@@ -21,15 +23,13 @@ use VinylStore\ServiceProviders\MessageServiceProvider;
 use VinylStore\ServiceProviders\ConfigServiceProvider;
 use VinylStore\ServiceProviders\ShippingRatesServiceProvider;
 use VinylStore\UserProvider;
-use Dotenv\Dotenv;
+
 
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
 $app['env'] = 'prod';
-//$dotenv = new Dotenv(__DIR__);
-//$dotenv->load();
-//$config = parse_ini_file(__DIR__.'/../config/config.ini', true);
+
 $app->register(new ConfigServiceProvider());
 $app->register(new TwigServiceProvider(array(
     'twig.options' => array(
@@ -109,16 +109,16 @@ $app->register(new PricingRepositoryServiceProvider());
 $app->register(new UploadServiceProvider());
 $app->register(new MessageServiceProvider());
 $app->register(new ShippingRatesServiceProvider());
-// exception handling
-//$app->error(function (\Exception $e, Request $request, $code) use ($app) {
-//    switch($code) {
-//        case 404:
-//            $page = 'frontend/404.html.twig';
-//            break;
-//        default:
-//            $page = 'frontend/error.html.twig';
-//    }
-//    return new Response($app['twig']->render($page));
-//});
+// exception handling pages
+$app->error(function (\Exception $e, Request $request, $code) use ($app) {
+    switch($code) {
+        case 404:
+            $page = 'frontend/404.html.twig';
+            break;
+        default:
+            $page = 'frontend/error.html.twig';
+    }
+    return new Response($app['twig']->render($page));
+});
 
 return $app;

@@ -107,7 +107,10 @@ class VinylRepository implements RepositoryInterface
 
     public function findRandomRelease()
     {
-        $stmt = $this->conn->prepare('SELECT * FROM releases INNER JOIN images ON releases.id=images.release_id AND releases.quantity >= 1 ORDER BY RAND() LIMIT 4 ');
+        $stmt = $this->conn->prepare('SELECT * FROM releases INNER JOIN images ON releases.id=images.release_id INNER JOIN snipcart_data ON releases.id=snipcart_data.release_id AND releases
+.quantity >= 1 ORDER BY 
+RAND() 
+LIMIT 4 ');
         $stmt->execute();
         $randomRelease = $stmt->fetchAll();
 

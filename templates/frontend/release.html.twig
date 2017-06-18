@@ -10,7 +10,7 @@
                 <div class="card">
                     <div class="card-image">
 
-                        <img src="{{ global.request.basepath }}/uploads/{{ release.image }}" alt="{{ release.name }}_pic">
+                        <img src="{{ global.request.basepath }}/uploads/{{ release.image }}" alt="{{ release.title|replace({' ':'_'}) }}_pic">
 
                         <span class="card-title"></span>
                     </div>
@@ -26,9 +26,9 @@
                     </div>
                     <div class="card-tabs">
                         <ul class="tabs tabs-fixed-width">
-                            <li class="tab"><a href="#media">Media Condition</a></li>
+                            <li class="tab"><a class="active" href="#media">Media Condition</a></li>
                             <li class="tab"><a href="#sleeve">Sleeve Condition</a></li>
-                            <li class="tab"><a class="active" href="#notes">Notes</a></li>
+                            <li class="tab"><a href="#notes">Notes</a></li>
                             <li class="tab"><a href="#label">Label</a></li>
                         </ul>
                     </div>
@@ -41,9 +41,9 @@
                     <div class="card-action">
                         <a class="snipcart-add-item waves-effect blue darken-2 btn"
                            data-item-id="{{ release.id }}"
-                           data-item-name="{{ release.release_name }}"
+                           data-item-name="{{ release.title }}"
                            data-item-price="{{ release.price }}"
-                           data-item-url="http://46.101.9.27/vinyl/{{ release.genre }}/release/{{ release.release_name|slugify }}/{{ release.id }}"
+                           data-item-url="http://46.101.9.27/vinyl/{{ release.genre }}/release/{{ release.title|slugify }}/{{ release.id }}"
                            data-item-description="{{ release.description }}"
                            data-item-max-quantity="{{ release.quantity }}"
                            onclick="Materialize.toast('You just added an item to your cart', 4000)">Cart

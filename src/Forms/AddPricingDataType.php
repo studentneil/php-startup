@@ -24,11 +24,9 @@ class AddPricingDataType extends AbstractType
             ->add('release_id', ChoiceType::class, array(
                 'choices' => $options['choices'],
                  ))
-            ->add('release_name', TextType::class)
+
             ->add('price', MoneyType::class)
-            ->add('url', UrlType::class, array(
-                'default_protocol' => 'https',
-            ))
+
             ->add('description', TextType::class)
             ;
     }

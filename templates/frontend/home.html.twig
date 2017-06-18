@@ -45,7 +45,7 @@
                 <div class="col m3 s6">
                     <div class="card">
                         <div class="card-image">
-                            <img class="activator" src="/uploads/{{ latest.image }}" alt="{{ latest.name }}_cover">
+                            <img class="activator" src="/uploads/{{ latest.image }}" alt="{{ latest.title|replace({' ':'_'}) }}_cover">
                         </div>
                         <div class="card-reveal">
                                  <span class="card-title white-text">
@@ -86,7 +86,7 @@
                     <div class="card">
 
                         <div class="card-image">
-                            <img class="activator" src="/uploads/{{ random.image }}" alt="{{ random.name }}_cover">
+                            <img class="activator" src="/uploads/{{ random.image }}" alt="{{ random.title|replace({' ':'_'}) }}_cover">
                         </div>
                         <div class="card-reveal">
                                 <span class="card-title white-text">
@@ -96,9 +96,9 @@
                                 <p>{{ random.artist }}</p>
                                 <p>{{ random.title }}</p>
                                 <p>{{ random.format }}</p>
-                                <p class="hide-on-med-and-down">Media :{{ random.media_condition }}</p>
-                                <p class="hide-on-med-and-down">Sleeve :{{ random.sleeve_condition }}</p>
-                                {#<p>{{ random.price }}</p>#}
+                                <p class="hide-on-med-and-down">Media :{{ random.media_condition|upper }}</p>
+                                <p class="hide-on-med-and-down">Sleeve :{{ random.sleeve_condition|upper }}</p>
+                                <p>&euro;{{ random.price }}</p>
                                 <br>
                                 <div class="divider"></div>
                                 <a class="waves-effect waves-light"

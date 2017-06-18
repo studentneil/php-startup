@@ -1,3 +1,5 @@
+
+
 <div class="row">
     <div class="col s12 m6">
         <h1 class="white-text flow-text">The Record Box</h1>
@@ -24,12 +26,13 @@
             <div id="gradingModal" class="modal modal-fixed-footer">
                 <div class="modal-content">
                     <h4>Record Grading Guide</h4>
-                    <p>Mint/New - Brand new, still sealed.</p>
+                    <p>New - Brand new, still sealed.</p>
                     <p>Mint - Opened but in as new condition. Plays beautifully and sleeve and vinyl without a scratch.</p>
-                    <p>Near Mint - Sleeve and vinyl in excellent condition, plays through without any scratching/noise. Been played a few times though and
+                    <p>Ex - Sleeve and vinyl in excellent condition, plays through without any scratching/noise. Been played a few times though and
                         if examined closely, will find marks/scuffs to sleeve or vinyl.</p>
-                    <p>Excellent/VG+ - Really excellent quality, just misses out on near mint by a few scuffs or hairline scratches. </p>
-                    <p>Very Good (VG) - Shows signs of being well played, albeit well looked after.</p>
+                    <p>Vg+ - Really good quality, scuffs or scratches may be obvious at a glance.</p>
+                    <p>Vg - Shows signs of being well played, albeit well looked after.</p>
+                    <p>Fair - Not great condition at all. Vinyl may be scuffed and scratched, might also skip.</p>
                 </div>
                 <div class="modal-footer">
                     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -38,6 +41,9 @@
             <li><a class="grey-text text-lighten-3 waves-effect waves-green" href="/faq">FAQ</a></li>
         </ul>
     </div>
+
+        {{ render(controller('VinylStore\\Controllers\\ContactFormController::contactFormAction')) }}
+
 </div>
 
 
