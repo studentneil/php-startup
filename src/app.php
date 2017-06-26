@@ -13,8 +13,10 @@ use Silex\Provider\ServiceControllerServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\FormServiceProvider;
+
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
 use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
 use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;

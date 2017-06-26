@@ -11,7 +11,6 @@ namespace VinylStore\Entity;
 class ImageEntity
 {
     private $image;
-    private $name;
     private $release_id;
     private $imagePath;
 
@@ -29,22 +28,6 @@ class ImageEntity
     public function setImage($image)
     {
         $this->image = $image;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getName()
-    {
-        return $this->name;
-    }
-
-    /**
-     * @param mixed $name
-     */
-    public function setName($name)
-    {
-        $this->name = $name;
     }
 
     /**

@@ -35,9 +35,8 @@ class ContactFormType extends AbstractType
             ->add('message', TextareaType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
-                    new Assert\Length(array(
-                        'min' => 20,
-                    )))));
+                    )
+            ));
 
     }
 

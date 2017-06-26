@@ -20,5 +20,36 @@ $(document).ready(function() {
             endingTop: '10%', // Ending top style attribute
         }
     );
+    $('#preLoader').hide();
+    $('#contactForm').submit( function(e) {
+        e.preventDefault();
+        var url = $(this).attr('action');
+        var formSerialize = $(this).serializeArray();
+        $('#preLoader').show();
+        $('#contactSubmit').hide();
+        $.ajax({
+            type: $(this).attr('method'),
+            url: url,
+            data: formSerialize,
+
+            success: function (response)
+            {
+                $('#preLoader').hide();
+                $('#contactSubmit').show();
+                $('#contactForm')[0].reset();
+                console.log(response)
+                $('#message').html('<p>' + response + '</p>')
+            },
+            error: function(response)
+            {
+                $('#preLoader').hide();
+                $('#contactSubmit').show();
+               console.log(response);
+                $('#message').html('<p>' + response + '</p>');
+            }
+        })
+        }
+        )
+
 });
 

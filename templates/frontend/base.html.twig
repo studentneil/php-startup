@@ -1,13 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="{% block description %}{% endblock %}">
+    <meta name="author" content="web dev by neil mcmahon.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- theme color for mobile browsers -->
+    <meta name="theme-color" content="#242E38">
     <title>
-        {% block title %}Vinyl Store{% endblock %}
+        {% block title %}TheRecordBox.ie online Vinyl Shop - Quality second-hand and new vinyl records.{% endblock %}
     </title>
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+    {#<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">#}
+    {#<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Bangers" rel="stylesheet">#}
+    {#<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">#}
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Bangers|Source+Code+Pro" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
     <link type="text/css" rel="stylesheet" href="{{ asset('/css/main.css') }}">
@@ -18,7 +27,9 @@
 </head>
 
 <body>
-
+<!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
     {# the header #}
     <header>
         {% include 'frontend/partials/navbar.html.twig' %}
@@ -28,7 +39,7 @@
     </main>
     <div class="spacer"></div>
     {# the footer #}
-    <footer class="page-footer grey darken-3">
+    <footer class="page-footer">
         {% include 'frontend/partials/footer.html.twig' %}
 
     </footer>

@@ -1,6 +1,8 @@
 {% extends 'frontend/base.html.twig' %}
 {% set active_page = 'home' %}
-
+{% block description %}
+    The home page for therecordbox . Quality second hand and new vinyl records.
+{% endblock %}
 {% block header %}
     <h1>Vinyl Store</h1>
 {% endblock %}
@@ -13,27 +15,28 @@
         </div>
     </div>
 
+    {# the intro #}
 
     <div class="row homepage_sections">
         <div class="col s12 m12">
-            <h1 class="flow-text">Online Vinyl shop for record enthusiasts</h1>
-            <p class="flow-text">Welcome to our site. We stock an eclectic range of records so something for everyone.
-                Our philosophy is simple: If it sounds good, we listen to it! (or something like that)</p>
-            <p>All our vinyl comes from our own private collections and is played regularly.
-                We try and stick to the <a
-                        href="http://www.recordcollectorsguild.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=17&page=1">goldmine
-                    standard</a> when grading our records
-                We also guarantee that shipping <em>wont</em> be more expensive than the music, a pet hate of ours!.</p>
+            <h1 class="flow-text">Online Vinyl shop for record enthusiasts.</h1>
+            <p class="flow-text">Hello and welcome to my site. I stock an eclectic range of second hand and new records, hopefully you find something you
+                like.</p>
+            <p>I try and stick to the
+                <a href="http://www.recordcollectorsguild.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=17&page=1"
+                   target="_blank">goldmine standard</a>
+                when grading records however we have a grade for excellent similarly to
+                <a href="https://thevinylfactory.com/features/a-comprehensive-guide-to-grading-vinyl-records/" target="_blank">this.</a>
+                I also try to ensure that shipping rates <em>wont</em> be more expensive than the music you're buying.
+            </p>
+            <p>
+                I use top quality mailers for packaging and enclose all sold vinyl in a plastic re-sealable sleeve so your vinyl will be well protected in
+                transit.
+            </p>
         </div>
     </div>
 
-
-
-
-
-
-
-
+    {# the just added section #}
 
     <div class="row homepage_sections">
 
@@ -69,12 +72,12 @@
 
             {% endfor %}
         {% endif %}
-
-
     </div>
 
 
     <div class="spacer"></div>
+
+    {# the random vinyl section #}
 
     <div class="row homepage_sections">
         <div class="col m12 s12">

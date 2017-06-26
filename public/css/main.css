@@ -27,14 +27,16 @@ main {
 
 }
 
-.brand-logo, .genre_title {
-    font-family: 'Permanent Marker', cursive;
-
+.brand-logo {
+    font-family: 'Bangers', cursive;
 }
 
-
+nav ul a {
+    font-family: 'Source Code Pro', monospace;
+}
 .nav {
     z-index: 999;
+
 
 }
 
@@ -42,7 +44,9 @@ nav ul li > a:hover {
     background: none;
     background-color: white;
 }
-
+.side-nav{
+    font-family: 'Source Code Pro', monospace;
+}
 /* line effects on navbar */
 /* see http://littlesnippets.net/some-inspiration-for-menus-using-animated-lines/*/
 /*************************************************************/
@@ -174,16 +178,12 @@ button {
     background-color: #99cb84;
 }
 
-/*.footer-copyright {*/
-/*margin: 0;*/
-
-/*}*/
 h1 {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Bangers', cursive;
 }
 
 .sideNav_title {
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Bangers', cursive;
 }
 
 .card .tab_content {
@@ -232,9 +232,16 @@ h1 {
 .input-field.col label {
     left: 0;
 }
+.modal .modal-content {
+    padding: 0;
+}
+.page-footer {
+    background-color: #242E38;
+}
 @media (min-width: 600px) {
     .brand-logo {
-        font-family: 'Permanent Marker', cursive;
+        font-family: 'Bangers', cursive;
+        font-size: x-large;
         margin-left: 1em;
     }
 

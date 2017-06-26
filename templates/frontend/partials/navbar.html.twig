@@ -1,6 +1,6 @@
 {# the navbar #}
 {# set up the names of the routes and links #}
-{% set navbar = [['home', 'Home'], ['vinyl', 'Vinyl'], ['faq', 'FAQ'], ['contact', 'Contact']] %}
+{% set navbar = [['home', 'Home'], ['vinyl', 'Vinyl'], ['faq', 'FAQ']] %}
 
 <div class="navbar-fixed">
     <nav class="nav-extended shrink white">
@@ -11,19 +11,20 @@
 
 
             <ul class="right hide-on-med-and-down menu__list">
+
                 {% for item in navbar %}
                     <li{% if item[0]==active_page %} class="active" {% endif %} data-hover="{{ item[1] }}">
                         <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }} </a>
                     </li>
                 {% endfor %}
-                {#<li><a class="waves-effect waves-light btn blue darken-3" href="/login">Log-in</a></li>#}
+
                 <li><a href="#" class="snipcart-user-profile black-text"><span class="snipcart-user-email">LOGIN</span></a></li>
                 <li><a href="#" class="snipcart-user-logout black-text">Logout</a></li>
                 <li><a href="#" class="right snipcart-checkout"><i class="material-icons black-text">shopping_cart</i></a></li>
-            </ul>
-            <li><a href="#" class="right hide-on-med-and-up snipcart-checkout"><i class="material-icons
-            black-text">shopping_cart</i></a></li>
 
+
+            </ul>
+            <a href="#" class="right hide-on-med-and-up snipcart-checkout"><i class="material-icons black-text">shopping_cart</i></a>
         </div>
     </nav>
 </div>

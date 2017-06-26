@@ -1,9 +1,12 @@
 {% extends 'frontend/base.html.twig' %}
 {% set active_page = 'faq' %}
+{% block description %}
+    The FAQ page. All questions and info here.
+{% endblock %}
 {% block content %}
     <div class="row">
         <div class="container">
-            <h1 class="flow-text grey lighten-4 track_header">FAQ</h1>
+            <h2 class="flow-text grey lighten-4 track_header">FAQ</h2>
             <ul class="collapsible popout" data-collapsible="expandable">
 
                 <li>

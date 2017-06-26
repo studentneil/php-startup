@@ -1,5 +1,3 @@
-
-
 <div class="row">
     <div class="col s12 m6">
         <h1 class="white-text flow-text">The Record Box</h1>
@@ -10,12 +8,14 @@
             {# shipping rates modal #}
             <div id="shippingModal" class="modal">
                 <div class="modal-content">
-                    <h4>Shipping Rates</h4>
-                    <p>1 x Lp : 4.00</p>
-                    <p>1 x Double Lp or 2 x Lp: 6.00</p>
-                    <p>3 x Lp : 6.00</p>
-                    <p>4-5 x Lp : 7.00</p>
-                    <p>7 and up : 10.00</p>
+                    <h2 class="track_header grey lighten-4 flow-text">Shipping Rates</h2>
+                    <div class="col s12 m12">
+                        <p>1 x Lp : 4.00</p>
+                        <p>1 x Double Lp or 2 x Lp: 6.00</p>
+                        <p>3 x Lp : 6.00</p>
+                        <p>4-5 x Lp : 7.00</p>
+                        <p>7 and up : 10.00</p>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -25,14 +25,16 @@
             {# shipping rates modal #}
             <div id="gradingModal" class="modal modal-fixed-footer">
                 <div class="modal-content">
-                    <h4>Record Grading Guide</h4>
-                    <p>New - Brand new, still sealed.</p>
-                    <p>Mint - Opened but in as new condition. Plays beautifully and sleeve and vinyl without a scratch.</p>
-                    <p>Ex - Sleeve and vinyl in excellent condition, plays through without any scratching/noise. Been played a few times though and
-                        if examined closely, will find marks/scuffs to sleeve or vinyl.</p>
-                    <p>Vg+ - Really good quality, scuffs or scratches may be obvious at a glance.</p>
-                    <p>Vg - Shows signs of being well played, albeit well looked after.</p>
-                    <p>Fair - Not great condition at all. Vinyl may be scuffed and scratched, might also skip.</p>
+                    <h2 class="track_header grey lighten-4 flow-text">Record Grading Guide</h2>
+                    <div class="col s12 m12">
+                        <p>New - Brand new, still sealed.</p>
+                        <p>Mint - Opened but in as new condition. Plays beautifully and sleeve and vinyl without a scratch.</p>
+                        <p>Ex - Sleeve and vinyl in excellent condition, plays through without any scratching/noise. Been played a few times though and
+                            if examined closely, will find marks/scuffs to sleeve or vinyl.</p>
+                        <p>Vg+ - Really good quality, scuffs or scratches may be obvious at a glance.</p>
+                        <p>Vg - Shows signs of being well played, albeit well looked after.</p>
+                        <p>Fair - Not great condition at all. Vinyl may be scuffed and scratched, might also skip.</p>
+                    </div>
                 </div>
                 <div class="modal-footer">
                     <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
@@ -41,15 +43,26 @@
             <li><a class="grey-text text-lighten-3 waves-effect waves-green" href="/faq">FAQ</a></li>
         </ul>
     </div>
+    <div class="col s12 m6">
+        <a href="#contactModal" class="waves-light waves-effect btn">Get in touch</a>
+    </div>
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            {{ render(controller('VinylStore\\Controllers\\ContactFormController::contactFormAction')) }}
+        </div>
+        <div class="modal-footer">
+            <a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+    </div>
 
-        {{ render(controller('VinylStore\\Controllers\\ContactFormController::contactFormAction')) }}
 
 </div>
 
 
-<div class="footer-copyright grey darken-2">
+<div class="footer-copyright">
     <div class="container">
-        © 2014 Copyright Text
+        &copy {{ "now"|date('Y', timezone="Europe/Dublin") }}
+        Have a nice {{ "now"|date('l') }}
         <a class="grey-text text-lighten-4 right" href="#!">Website by neil</a>
     </div>
 </div>

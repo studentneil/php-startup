@@ -9,8 +9,11 @@
             <div class="col s6 m2">
                 <div class="card">
                     <div class="card-image">
-                        <img src="/uploads/{{ image.image|raw }}" alt="cover_picture_{{ image.name }}">
-
+                        {% for release in releases %}
+                            {% if image.release_id == release.id %}
+                                 <img src="/uploads/{{ image.image|raw }}" alt="{{ release.title|replace({' ':'_'}) }}_pic">
+                            {% endif %}
+                        {% endfor %}
                     </div>
                     <div class="card-content">
                         <p>id: {{ image.image_id }}</p>

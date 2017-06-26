@@ -1,9 +1,9 @@
 
 
-        <div class="col s12 m6">
-            <h1 class="white-text flow-text">CONTACT</h1>
 
-                <form class="footer_form white-text" action="" method="post">
+            <h2 class="track_header grey lighten-4 flow-text">CONTACT</h2>
+            <div class="col s12 m12">
+                <form id="contactForm" class="footer_form" action="/contact" method="post">
 
                     {{ form_errors(form) }}
                     <div class="row">
@@ -29,7 +29,12 @@
                         </div>
 
                     </div>
-                    <button class="btn waves-effect waves-light teal" type="submit" name="action">Submit</button>
+                    <button id="contactSubmit" class="btn waves-effect waves-light teal" type="submit" name="action">Submit</button>
+                    <input type="reset" class="btn">
+                    <div id="preLoader" class="progress">
+                        <div class="indeterminate"></div>
+                    </div>
+                    <div id="message"></div>
                 </form>
 
         </div>
