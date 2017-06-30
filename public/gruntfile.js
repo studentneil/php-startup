@@ -29,7 +29,8 @@ module.exports = function(grunt) {
                           "../templates/backend/*.html.twig"]
                 },
                 options: {
-                    proxy: "localhost:8888"
+                    proxy: "http://localhost:8888",
+                    // browser: ["chrome", "firefox"]
                 }
             }
         }

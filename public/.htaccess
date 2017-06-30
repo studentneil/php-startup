@@ -86,8 +86,10 @@
 
  <IfModule mod_rewrite.c>
     RewriteEngine On
+    RewriteCond %{HTTP_HOST} ^(www\.)?therecordbox\.ie$ [NC]
     RewriteCond %{HTTPS} !=on
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+   RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+#    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,NE,R=301]
  </IfModule>
 # ----------------------------------------------------------------------
 # | File access                                                        |
@@ -117,21 +119,21 @@
 # include: configuration files, files that contain metadata about the
 # project (e.g.: project dependencies), build scripts, etc..
 
-<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
-
-    # Apache < 2.3
-    #<IfModule !mod_authz_core.c>
-    #    Order allow,deny
-    #    Deny from all
-    #    Satisfy All
-    #</IfModule>
-
-    # Apache ≥ 2.3
-    <IfModule mod_authz_core.c>
-        Require all denied
-    </IfModule>
-
-</FilesMatch>
+#<FilesMatch "(^#.*#|\.(bak|conf|dist|fla|in[ci]|log|psd|sh|sql|sw[op])|~)$">
+#
+#    # Apache < 2.3
+#    #<IfModule !mod_authz_core.c>
+#    #    Order allow,deny
+#    #    Deny from all
+#    #    Satisfy All
+#    #</IfModule>
+#
+#    # Apache ≥ 2.3
+#    <IfModule mod_authz_core.c>
+#        Require all denied
+#    </IfModule>
+#
+#</FilesMatch>
 
 # unset the powered by header
 

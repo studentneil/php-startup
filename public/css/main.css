@@ -175,7 +175,7 @@ button {
 }
 
 .pagination li.active {
-    background-color: #99cb84;
+    background-color: #26a69a;
 }
 
 h1 {
@@ -238,6 +238,10 @@ h1 {
 .page-footer {
     background-color: #242E38;
 }
+#contactModal {
+    max-height: 98%;
+    width: 96%;
+}
 @media (min-width: 600px) {
     .brand-logo {
         font-family: 'Bangers', cursive;
@@ -279,6 +283,10 @@ h1 {
 
     .homepage_sections {
         margin: 0em;
+    }
+    #contactModal {
+        max-height: 70%;
+        width: 50%;
     }
 
 }

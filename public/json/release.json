@@ -1,255 +1,380 @@
 {
-    "status": "Accepted",
+    "styles": [
+        "Alternative Rock",
+        "New Wave",
+        "Downtempo",
+        "Synth-pop"
+    ],
     "videos": [
         {
-            "duration": 261,
+            "duration": 250,
+            "description": "The Cure - Lullaby",
             "embed": true,
-            "title": "Black Rebel Motorcycle Club- Took Out a Loan",
-            "description": "Black Rebel Motorcycle Club- Took Out a Loan",
-            "uri": "https:\/\/www.youtube.com\/watch?v=Day6N6DD8XA"
+            "uri": "https:\/\/www.youtube.com\/watch?v=sS6t56U9tBg",
+            "title": "The Cure - Lullaby"
+        },
+        {
+            "duration": 466,
+            "description": "The Cure - Lullaby (Extended Remix)",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=U7BYeT1pe_k",
+            "title": "The Cure - Lullaby (Extended Remix)"
+        },
+        {
+            "duration": 259,
+            "description": "CURE - Babble [1989 Lullaby]",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=iGEoSqKXK_k",
+            "title": "CURE - Babble [1989 Lullaby]"
+        },
+        {
+            "duration": 248,
+            "description": "The Cure - Lullaby [Music Video]",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=oOHQs405XcU",
+            "title": "The Cure - Lullaby [Music Video]"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "Abstract Dragon",
+            "name": "Fiction Records",
             "entity_type": "1",
-            "catno": "CSDLP 1159",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/75331",
-            "id": 75331,
+            "catno": "FICS29",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/5810",
+            "id": 5810,
+            "entity_type_name": "Label"
+        },
+        {
+            "name": "Fiction Records",
+            "entity_type": "1",
+            "catno": "Fics29",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/5810",
+            "id": 5810,
+            "entity_type_name": "Label"
+        },
+        {
+            "name": "Polydor",
+            "entity_type": "1",
+            "catno": "871-990-7",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/1610",
+            "id": 1610,
             "entity_type_name": "Label"
         }
     ],
-    "year": 2011,
+    "year": 1989,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 5,
-            "average": 4.8
+            "count": 2,
+            "average": 5
         },
-        "want": 154,
+        "have": 0,
         "contributors": [
             {
-                "username": "RobertCarlArmin",
-                "resource_url": "https:\/\/api.discogs.com\/users\/RobertCarlArmin"
+                "username": "Plastic_Demons_4_U",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Plastic_Demons_4_U"
             },
             {
-                "username": "recordvanguard",
-                "resource_url": "https:\/\/api.discogs.com\/users\/recordvanguard"
+                "username": "DiscogsUpdateBot",
+                "resource_url": "https:\/\/api.discogs.com\/users\/DiscogsUpdateBot"
             },
             {
-                "username": "HighlandGreen",
-                "resource_url": "https:\/\/api.discogs.com\/users\/HighlandGreen"
+                "username": "siamuerte",
+                "resource_url": "https:\/\/api.discogs.com\/users\/siamuerte"
             },
             {
-                "username": "punkergott",
-                "resource_url": "https:\/\/api.discogs.com\/users\/punkergott"
-            },
-            {
-                "username": "Lorenzo15",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Lorenzo15"
+                "username": "spiritwalker3",
+                "resource_url": "https:\/\/api.discogs.com\/users\/spiritwalker3"
             }
         ],
-        "have": 36,
+        "want": 51,
         "submitter": {
-            "username": "RobertCarlArmin",
-            "resource_url": "https:\/\/api.discogs.com\/users\/RobertCarlArmin"
+            "username": "Plastic_Demons_4_U",
+            "resource_url": "https:\/\/api.discogs.com\/users\/Plastic_Demons_4_U"
         },
         "data_quality": "Needs Vote"
     },
     "artists": [
         {
             "join": ",",
-            "name": "Black Rebel Motorcycle Club",
-            "anv": "BRMC",
+            "name": "The Cure",
+            "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/62807",
-            "id": 62807
+            "resource_url": "https:\/\/api.discogs.com\/artists\/28972",
+            "id": 28972
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/api-img.discogs.com\/ZPOH3y806hTdxUA_AjTcgdGPpoU=\/fit-in\/239x211\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4553935-1368200380-8348.jpeg.jpg",
-            "height": 211,
-            "width": 239,
-            "resource_url": "https:\/\/api-img.discogs.com\/ZPOH3y806hTdxUA_AjTcgdGPpoU=\/fit-in\/239x211\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4553935-1368200380-8348.jpeg.jpg",
-            "type": "primary",
-            "uri150": "https:\/\/api-img.discogs.com\/oL9JKxqUcRktir33BjXr_syYbKk=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4553935-1368200380-8348.jpeg.jpg"
+            "uri": "https:\/\/api-img.discogs.com\/omeSvSsww2Ngg39U6wBka2tPo5w=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-5668483-1399425032-8682.jpeg.jpg",
+            "height": 590,
+            "width": 590,
+            "resource_url": "https:\/\/api-img.discogs.com\/omeSvSsww2Ngg39U6wBka2tPo5w=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-5668483-1399425032-8682.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/bELIrHjJpB_gdLNyJwS3RrZkPTc=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-5668483-1399425032-8682.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/716OqlLn8NfYEIQKePpk7zyDQnQ=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-5668483-1399425043-9346.jpeg.jpg",
+            "height": 590,
+            "width": 590,
+            "resource_url": "https:\/\/api-img.discogs.com\/716OqlLn8NfYEIQKePpk7zyDQnQ=\/fit-in\/590x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-5668483-1399425043-9346.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/5t4lrKBxpwFemm-meDQXhspOYSw=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-5668483-1399425043-9346.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/wUmlHFd734XkGv-25lJbr-iIMsc=\/fit-in\/550x550\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-5668483-1399425057-6974.jpeg.jpg",
+            "height": 550,
+            "width": 550,
+            "resource_url": "https:\/\/api-img.discogs.com\/wUmlHFd734XkGv-25lJbr-iIMsc=\/fit-in\/550x550\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-5668483-1399425057-6974.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/dDCGjVJRc8fy3WSDiPXQ-NHGa_Q=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-5668483-1399425057-6974.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/-WoqFK5jd9y8GUcBs0bwYoXr1qY=\/fit-in\/550x550\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-5668483-1399425066-4332.jpeg.jpg",
+            "height": 550,
+            "width": 550,
+            "resource_url": "https:\/\/api-img.discogs.com\/-WoqFK5jd9y8GUcBs0bwYoXr1qY=\/fit-in\/550x550\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-5668483-1399425066-4332.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/CG9jyTk6Bd9XNbYRi7M9Nff_q8M=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-5668483-1399425066-4332.jpeg.jpg"
         }
     ],
-    "format_quantity": 2,
-    "id": 4553935,
+    "format_quantity": 1,
+    "id": 5668483,
     "genres": [
+        "Electronic",
         "Rock"
     ],
-    "thumb": "https:\/\/api-img.discogs.com\/oL9JKxqUcRktir33BjXr_syYbKk=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4553935-1368200380-8348.jpeg.jpg",
-    "num_for_sale": 0,
-    "title": "Baby 81",
-    "date_changed": "2016-11-16T16:27:09-08:00",
-    "master_id": 80429,
-    "lowest_price": null,
-    "styles": [
-        "Indie Rock"
-    ],
-    "released_formatted": "25 Nov 2011",
-    "formats": [
-        {
-            "text": "Aqua Blue Marbled Transparent, Gatefold",
-            "qty": "2",
-            "descriptions": [
-                "LP",
-                "Limited Edition"
-            ],
-            "name": "Vinyl"
-        }
-    ],
-    "estimated_weight": 460,
-    "master_url": "https:\/\/api.discogs.com\/masters\/80429",
-    "released": "2011-11-25",
-    "date_added": "2013-05-10T08:38:07-07:00",
-    "extraartists": [
-        {
-            "join": "",
-            "name": "Black Rebel Motorcycle Club",
-            "anv": "B.R.M.C.",
-            "tracks": "",
-            "role": "Written-By, Producer, Performer",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/62807",
-            "id": 62807
-        }
-    ],
+    "thumb": "https:\/\/api-img.discogs.com\/bELIrHjJpB_gdLNyJwS3RrZkPTc=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-5668483-1399425032-8682.jpeg.jpg",
+    "num_for_sale": 4,
+    "title": "Lullaby",
+    "date_changed": "2017-01-23T15:46:41-08:00",
+    "master_id": 31913,
+    "lowest_price": 0.57,
+    "status": "Accepted",
+    "released_formatted": "1989",
+    "estimated_weight": 60,
+    "master_url": "https:\/\/api.discogs.com\/masters\/31913",
+    "released": "1989",
+    "date_added": "2014-05-06T18:05:14-07:00",
     "tracklist": [
         {
             "duration": "",
-            "position": "A1",
+            "position": "A",
             "type_": "track",
-            "title": "Took Out A Loan"
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Chris Parry",
+                    "anv": "Parry",
+                    "tracks": "",
+                    "role": "Producer [Remix]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/81563",
+                    "id": 81563
+                },
+                {
+                    "join": "",
+                    "name": "Mark Saunders",
+                    "anv": "Saunders",
+                    "tracks": "",
+                    "role": "Producer [Remix]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/2729",
+                    "id": 2729
+                },
+                {
+                    "join": "",
+                    "name": "Robert Smith",
+                    "anv": "Smith",
+                    "tracks": "",
+                    "role": "Producer [Remix]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/73783",
+                    "id": 73783
+                }
+            ],
+            "title": "Lullaby (Remix)"
         },
         {
             "duration": "",
-            "position": "A2",
+            "position": "B",
             "type_": "track",
-            "title": "Berlin"
-        },
-        {
-            "duration": "",
-            "position": "A3",
-            "type_": "track",
-            "title": "Weapon Of Choice"
-        },
-        {
-            "duration": "",
-            "position": "A4",
-            "type_": "track",
-            "title": "Windows"
-        },
-        {
-            "duration": "",
-            "position": "B1",
-            "type_": "track",
-            "title": "Cold Wind"
-        },
-        {
-            "duration": "",
-            "position": "B2",
-            "type_": "track",
-            "title": "Not What You Wanted"
-        },
-        {
-            "duration": "",
-            "position": "B3",
-            "type_": "track",
-            "title": "666 Conducer"
-        },
-        {
-            "duration": "",
-            "position": "B4",
-            "type_": "track",
-            "title": "All You Do Is Talk"
-        },
-        {
-            "duration": "",
-            "position": "C1",
-            "type_": "track",
-            "title": "Lien On Your Dreams"
-        },
-        {
-            "duration": "",
-            "position": "C2",
-            "type_": "track",
-            "title": "Need Some Air"
-        },
-        {
-            "duration": "",
-            "position": "C3",
-            "type_": "track",
-            "title": "Killing The Light"
-        },
-        {
-            "duration": "",
-            "position": "C4",
-            "type_": "track",
-            "title": "American X"
-        },
-        {
-            "duration": "",
-            "position": "D1",
-            "type_": "track",
-            "title": "Am I Only"
-        },
-        {
-            "duration": "",
-            "position": "D2",
-            "type_": "track",
-            "title": "666 Conducer (Remix)"
-        },
-        {
-            "duration": "",
-            "position": "D3",
-            "type_": "track",
-            "title": "Am I Only (Remix)"
+            "title": "Babble"
         }
     ],
-    "notes": "Embossed cover",
+    "extraartists": [
+        {
+            "join": "",
+            "name": "Parched Art",
+            "anv": "",
+            "tracks": "",
+            "role": "Design, Artwork",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1831977",
+            "id": 1831977
+        },
+        {
+            "join": "",
+            "name": "David M. Allen",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/93936",
+            "id": 93936
+        },
+        {
+            "join": "",
+            "name": "Robert Smith",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/73783",
+            "id": 73783
+        },
+        {
+            "join": "",
+            "name": "Boris Williams",
+            "anv": "Williams",
+            "tracks": "",
+            "role": "Written-By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/412943",
+            "id": 412943
+        },
+        {
+            "join": "",
+            "name": "Laurence Tolhurst",
+            "anv": "Tolhurst",
+            "tracks": "",
+            "role": "Written-By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/309134",
+            "id": 309134
+        },
+        {
+            "join": "",
+            "name": "Porl Thompson",
+            "anv": "Thompson",
+            "tracks": "",
+            "role": "Written-By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/285585",
+            "id": 285585
+        },
+        {
+            "join": "",
+            "name": "Robert Smith",
+            "anv": "Smith",
+            "tracks": "",
+            "role": "Written-By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/73783",
+            "id": 73783
+        },
+        {
+            "join": "",
+            "name": "Roger O'Donnell",
+            "anv": "O'Donnell",
+            "tracks": "",
+            "role": "Written-By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/246984",
+            "id": 246984
+        },
+        {
+            "join": "",
+            "name": "Simon Gallup",
+            "anv": "Gallup",
+            "tracks": "",
+            "role": "Written-By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/412942",
+            "id": 412942
+        }
+    ],
+    "country": "UK",
+    "notes": "Silver Injection labels with a large hole and the band's name in block capital letters.\n\n",
     "identifiers": [
         {
             "type": "Barcode",
-            "value": "829707955914"
+            "description": "Text",
+            "value": "0 42287 19907 7"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "A",
-            "value": "CSDLP-1159-A"
+            "description": "Stamped A side",
+            "value": "FICS 29 A-1U-1-Q2"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "B",
-            "value": "CSDLP-1159-B"
+            "description": "Stamped B side",
+            "value": "FICS 29 B-1U-1-Q2"
         },
         {
-            "type": "Matrix \/ Runout",
-            "description": "C",
-            "value": "CSDLP-1159-C"
+            "type": "Label Code",
+            "value": "LC 0309"
         },
         {
-            "type": "Matrix \/ Runout",
-            "description": "D",
-            "value": "CSDLP-1159-D"
+            "type": "Other",
+            "description": "Distribution code",
+            "value": "POL 102"
         }
     ],
     "companies": [
         {
-            "name": "Cobraside Distribution Inc.",
+            "name": "Fiction Records",
+            "entity_type": "13",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/5810",
+            "id": 5810,
+            "entity_type_name": "Phonographic Copyright (p)"
+        },
+        {
+            "name": "Fiction Records",
+            "entity_type": "14",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/5810",
+            "id": 5810,
+            "entity_type_name": "Copyright (c)"
+        },
+        {
+            "name": "Polydor Ltd. (UK)",
+            "entity_type": "8",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/100642",
+            "id": 100642,
+            "entity_type_name": "Marketed By"
+        },
+        {
+            "name": "Polydor Ltd. (UK)",
             "entity_type": "9",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/84308",
-            "id": 84308,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/100642",
+            "id": 100642,
             "entity_type_name": "Distributed By"
+        },
+        {
+            "name": "Fiction Songs Ltd.",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/267224",
+            "id": 267224,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "EMI Records",
+            "entity_type": "17",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/754",
+            "id": 754,
+            "entity_type_name": "Pressed By"
         }
     ],
-    "uri": "https:\/\/www.discogs.com\/BRMC-Baby-81\/release\/4553935",
-    "country": "US",
-    "resource_url": "https:\/\/api.discogs.com\/releases\/4553935",
+    "uri": "https:\/\/www.discogs.com\/The-Cure-Lullaby\/release\/5668483",
+    "formats": [
+        {
+            "descriptions": [
+                "7\"",
+                "45 RPM",
+                "Single"
+            ],
+            "text": "Silver Injection Labels, Large Hole",
+            "name": "Vinyl",
+            "qty": "1"
+        }
+    ],
+    "resource_url": "https:\/\/api.discogs.com\/releases\/5668483",
     "data_quality": "Needs Vote"
 }
