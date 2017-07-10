@@ -27,7 +27,7 @@ class ImageUploadType extends AbstractType
                     'maxSize' => '3M',
                 )
             )), ))
-            ->add('name', TextType::class)
+//            ->add('name', TextType::class)
             ->add('release_id', ChoiceType::class, array(
                 'choices' => $options['choices'],
             ));
