@@ -22,7 +22,6 @@ class ImageRepository implements RepositoryInterface
     {
         $uploadedImage = array(
             'image' => $file->getImage(),
-            'name' => $file->getName(),
             'release_id' => $file->getReleaseId(),
         );
 
