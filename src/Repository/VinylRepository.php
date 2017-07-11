@@ -57,6 +57,7 @@ class VinylRepository implements RepositoryInterface
     {
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM releases WHERE quantity >= 1');
     }
+
     public function joinAll()
     {
         $qb = $this->conn->createQueryBuilder();

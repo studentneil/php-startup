@@ -5,10 +5,7 @@
 {% endblock %}
 {% block content %}
 
-
-
-    <div class="spacer"></div>
-    <div class="row">
+    <div class="action_button row">
         <div class="col m6 s12">
 
 
@@ -55,7 +52,7 @@
     <div class="row">
         {% if results is defined %}
             {% for release in results %}
-                <div class="mix {{ release.genre }} col m3 s6">
+                <div class="col m3 s6">
                     <div class="card z-depth-3">
 
                         <div class="card-image waves-block waves-light">

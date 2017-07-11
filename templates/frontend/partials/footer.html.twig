@@ -10,11 +10,9 @@
                 <div class="modal-content">
                     <h2 class="track_header grey lighten-4 flow-text waves-effect waves-light">Shipping Rates</h2>
                     <div class="col s12 m12">
-                        <p>1 x Lp : 4.00</p>
-                        <p>1 x Double Lp or 2 x Lp: 6.00</p>
-                        <p>3 x Lp : 6.00</p>
-                        <p>4-5 x Lp : 7.00</p>
-                        <p>7 and up : 10.00</p>
+                        <p>1 x Lp : Standard an Post - &euro;4.00</p>
+                        <p>2 up to a max weight of 3kg : nightline direct &euro;6.00</p>
+                        <p>3 - 5kg : nightline direct &euro;8.00</p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -31,9 +29,11 @@
                         <p>Mint - Opened but in as new condition. Plays beautifully and sleeve and vinyl without a scratch.</p>
                         <p>Ex - Sleeve and vinyl in excellent condition, plays through without any scratching/noise. Been played a few times though and
                             if examined closely, will find marks/scuffs to sleeve or vinyl.</p>
-                        <p>Vg+ - Really good quality, scuffs or scratches may be obvious at a glance.</p>
-                        <p>Vg - Shows signs of being well played, albeit well looked after.</p>
-                        <p>Fair - Not great condition at all. Vinyl may be scuffed and scratched, might also skip.</p>
+                        <p>Vg+ - Really good quality but scuffs or scratches may be obvious at a glance.</p>
+                        <p>Vg - Shows signs of being well used, vinyl may be scuffed or scratched all over and the sleeve may be looking a liitle the worse
+                            for wear
+                        </p>
+                        <p>Fair - Not great condition at all. Vinyl will be definitely scuffed and scratched, lots of surface noise and might also skip.</p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -46,7 +46,7 @@
     <div class="col s12 m6">
         <a href="#contactModal" class="waves-light waves-effect btn">Get in touch</a>
     </div>
-    <div id="contactModal" class="modal modal-fixed-footer">
+    <div id="contactModal" class="modal">
         <div class="modal-content">
             {{ render(controller('VinylStore\\Controllers\\ContactFormController::contactFormAction')) }}
         </div>
@@ -61,7 +61,7 @@
 
 <div class="footer-copyright">
     <div class="container">
-        &copy {{ "now"|date('Y', timezone="Europe/Dublin") }}
+        &copy; {{ "now"|date('Y', timezone="Europe/Dublin") }}
         Have a nice {{ "now"|date('l') }}
         <a class="grey-text text-lighten-4 right" href="#!">Website by neil</a>
     </div>
