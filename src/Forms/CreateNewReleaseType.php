@@ -126,7 +126,7 @@ class CreateNewReleaseType extends AbstractType
             ->add('genre', ChoiceType::class, array(
                 'choices' => array(
                     'rock' => 'rock',
-                    'classic rock' => 'classic rock',
+                    'classic rock' => 'classic-rock',
                     'electronic' => 'electronic',
                 ),
             ))

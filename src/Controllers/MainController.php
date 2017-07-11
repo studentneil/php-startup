@@ -48,7 +48,7 @@ class MainController
      */
     public function getVinylAction(Request $request, Application $app)
     {
-        $total = $app['vinyl.repository']->getCount();
+        $total = $app['vinyl.repository']->getActiveReleasesCount();
         $pager = new Paginator(10, $total);
         $pager->setCurrentPage($request->get('page', 1));
         $offset = $pager->getOffset();
