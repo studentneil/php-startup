@@ -33,12 +33,12 @@ class ShippingRatesRepository implements RepositoryInterface
         return $priceData;
     }
 
-    public function findOneById($id)
+    public function findOneById($quantity)
     {
-        $stmt = $this->conn->prepare('SELECT cost, description FROM shipping_rates WHERE id=:id');
-        $stmt->bindValue('id', $id);
+        $stmt = $this->conn->prepare('SELECT cost, description FROM shipping_rates WHERE quantity=:quantity');
+        $stmt->bindValue('quantity', $quantity);
         $stmt->execute();
-        $priceData = $stmt->fetch();
+        $priceData = $stmt->fetchAll();
 
         return $priceData;
     }
