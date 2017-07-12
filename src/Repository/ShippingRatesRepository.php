@@ -38,7 +38,7 @@ class ShippingRatesRepository implements RepositoryInterface
         $stmt = $this->conn->prepare('SELECT cost, description FROM shipping_rates WHERE quantity=:quantity');
         $stmt->bindValue('quantity', $quantity);
         $stmt->execute();
-        $priceData = $stmt->fetchAll();
+        $priceData = $stmt->fetch();
 
         return $priceData;
     }
