@@ -261,6 +261,14 @@ h1 {
 .genre_toolbar {
     font-family: 'Source Code Pro', monospace;
 }
+.footer_nav > ul > li {
+    margin-top: 20px;
+}
+.icon {
+    font-size: 21px;
+    padding-right: 17px;
+
+}
 @media (min-width: 600px) {
     .brand-logo {
         font-family: 'Bangers', cursive;
@@ -296,6 +304,11 @@ h1 {
 
     .action_button {
         padding-top: 2%;
+    }
+
+    .icon {
+        font-size: 32px;
+
     }
 
 }
