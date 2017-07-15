@@ -2,258 +2,158 @@
     "status": "Accepted",
     "videos": [
         {
-            "duration": 148,
+            "duration": 271,
             "embed": true,
-            "title": "Fleet Foxes - White Winter Hymnal [OFFICIAL VIDEO]",
-            "description": "Fleet Foxes - White Winter Hymnal [OFFICIAL VIDEO]",
-            "uri": "https:\/\/www.youtube.com\/watch?v=DrQRS40OKNE"
-        },
-        {
-            "duration": 2361,
-            "embed": true,
-            "title": "Fleet Foxes - Fleet Foxes (Full Album)",
-            "description": "Fleet Foxes - Fleet Foxes (Full Album)",
-            "uri": "https:\/\/www.youtube.com\/watch?v=J2h5i1w6NA8"
-        },
-        {
-            "duration": 229,
-            "embed": true,
-            "title": "Fleet Foxes - Mykonos (OFFICIAL VIDEO)",
-            "description": "Fleet Foxes - Mykonos (OFFICIAL VIDEO)",
-            "uri": "https:\/\/www.youtube.com\/watch?v=DT-dxG4WWf4"
-        },
-        {
-            "duration": 202,
-            "embed": true,
-            "title": "Fleet Foxes - He Doesn't Know Why (OFFICIAL VIDEO)",
-            "description": "Fleet Foxes - He Doesn't Know Why (OFFICIAL VIDEO)",
-            "uri": "https:\/\/www.youtube.com\/watch?v=brZTvGIzeGg"
-        },
-        {
-            "duration": 148,
-            "embed": true,
-            "title": "Fleet Foxes - White Winter Hymnal (vinyl)",
-            "description": "Fleet Foxes - White Winter Hymnal (vinyl)",
-            "uri": "https:\/\/www.youtube.com\/watch?v=eHZk8l4DmTg"
+            "title": "Steve Earle - Copperhead Road",
+            "description": "Steve Earle - Copperhead Road",
+            "uri": "https:\/\/www.youtube.com\/watch?v=uhMO9azmKNU"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "Sub Pop",
+            "name": "MCA Records",
             "entity_type": "1",
-            "catno": "SP 777",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/77343",
-            "id": 77343,
-            "entity_type_name": "Label"
-        },
-        {
-            "name": "Sub Pop",
-            "entity_type": "1",
-            "catno": "SP 781",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/77343",
-            "id": 77343,
+            "catno": "MCF 3426",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/878",
+            "id": 878,
             "entity_type_name": "Label"
         }
     ],
-    "year": 2008,
+    "year": 1988,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 1059,
-            "average": 4.41
+            "count": 23,
+            "average": 4.26
         },
-        "want": 2202,
+        "want": 0,
         "contributors": [
             {
-                "username": "drij",
-                "resource_url": "https:\/\/api.discogs.com\/users\/drij"
+                "username": "lobster5",
+                "resource_url": "https:\/\/api.discogs.com\/users\/lobster5"
             },
             {
-                "username": "ec",
-                "resource_url": "https:\/\/api.discogs.com\/users\/ec"
+                "username": "nocure",
+                "resource_url": "https:\/\/api.discogs.com\/users\/nocure"
             },
             {
-                "username": "SunnymoonSteff",
-                "resource_url": "https:\/\/api.discogs.com\/users\/SunnymoonSteff"
-            },
-            {
-                "username": "suchpower",
-                "resource_url": "https:\/\/api.discogs.com\/users\/suchpower"
-            },
-            {
-                "username": "Redscroll",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Redscroll"
-            },
-            {
-                "username": "Root_Beer",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Root_Beer"
-            },
-            {
-                "username": "dlemee",
-                "resource_url": "https:\/\/api.discogs.com\/users\/dlemee"
-            },
-            {
-                "username": "betonarme",
-                "resource_url": "https:\/\/api.discogs.com\/users\/betonarme"
-            },
-            {
-                "username": "Ktrump5",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Ktrump5"
-            },
-            {
-                "username": "enginedown",
-                "resource_url": "https:\/\/api.discogs.com\/users\/enginedown"
-            },
-            {
-                "username": "jladeur",
-                "resource_url": "https:\/\/api.discogs.com\/users\/jladeur"
-            },
-            {
-                "username": "wotareweherefor",
-                "resource_url": "https:\/\/api.discogs.com\/users\/wotareweherefor"
-            },
-            {
-                "username": "brycemillerbryce",
-                "resource_url": "https:\/\/api.discogs.com\/users\/brycemillerbryce"
+                "username": "mrsifter63",
+                "resource_url": "https:\/\/api.discogs.com\/users\/mrsifter63"
             },
             {
                 "username": "KevinSanderson",
                 "resource_url": "https:\/\/api.discogs.com\/users\/KevinSanderson"
             },
             {
-                "username": "hedonismheffner",
-                "resource_url": "https:\/\/api.discogs.com\/users\/hedonismheffner"
+                "username": "ShireenPeaches",
+                "resource_url": "https:\/\/api.discogs.com\/users\/ShireenPeaches"
             },
             {
-                "username": "michael_c",
-                "resource_url": "https:\/\/api.discogs.com\/users\/michael_c"
+                "username": "yuhann",
+                "resource_url": "https:\/\/api.discogs.com\/users\/yuhann"
+            },
+            {
+                "username": "Alton2",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Alton2"
+            },
+            {
+                "username": "swbostoncd",
+                "resource_url": "https:\/\/api.discogs.com\/users\/swbostoncd"
             }
         ],
-        "have": 10304,
+        "have": 276,
         "submitter": {
-            "username": "drij",
-            "resource_url": "https:\/\/api.discogs.com\/users\/drij"
+            "username": "lobster5",
+            "resource_url": "https:\/\/api.discogs.com\/users\/lobster5"
         },
-        "data_quality": "Correct"
+        "data_quality": "Needs Vote"
     },
     "artists": [
         {
             "join": ",",
-            "name": "Fleet Foxes",
+            "name": "Steve Earle",
             "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1105843",
-            "id": 1105843
+            "resource_url": "https:\/\/api.discogs.com\/artists\/252097",
+            "id": 252097
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/api-img.discogs.com\/GXFHRO1rWI_JBVCtkRqZksTbzpI=\/fit-in\/600x594\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1375142172-3703.jpeg.jpg",
-            "height": 594,
+            "uri": "https:\/\/api-img.discogs.com\/PqTeuaAzVcw5FF_SFaMqTwYvIuc=\/fit-in\/600x593\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335610-3560.jpeg.jpg",
+            "height": 593,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/GXFHRO1rWI_JBVCtkRqZksTbzpI=\/fit-in\/600x594\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1375142172-3703.jpeg.jpg",
+            "resource_url": "https:\/\/api-img.discogs.com\/PqTeuaAzVcw5FF_SFaMqTwYvIuc=\/fit-in\/600x593\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335610-3560.jpeg.jpg",
             "type": "primary",
-            "uri150": "https:\/\/api-img.discogs.com\/UwWjwyDdL5EkAg655y_s9uX64Yc=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1375142172-3703.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/docHPP2PZ6fotgJrfKaKxk9rMoI=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1753416-1440335610-3560.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/zPG599QaIWFNwsFrDMcS5Tl8tFg=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578540.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/BXVb1CJo3RPkbr43Lrl7wnKV6t0=\/fit-in\/600x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335605-3181.jpeg.jpg",
+            "height": 590,
+            "width": 600,
+            "resource_url": "https:\/\/api-img.discogs.com\/BXVb1CJo3RPkbr43Lrl7wnKV6t0=\/fit-in\/600x590\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335605-3181.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/bXOHjlvK6oEdEk-tOuGO97KNqYk=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1753416-1440335605-3181.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/ahYNbZzAQzHZHsDZkkwq-DshEbg=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335610-3070.jpeg.jpg",
             "height": 600,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/zPG599QaIWFNwsFrDMcS5Tl8tFg=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578540.jpeg.jpg",
+            "resource_url": "https:\/\/api-img.discogs.com\/ahYNbZzAQzHZHsDZkkwq-DshEbg=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335610-3070.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/A5qLuZ4ZLz0pVIqUA-iX3ZPSOck=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1316578540.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/bzKF0mD4NGV5MRL4JoN4aDz25J8=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1753416-1440335610-3070.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/rInRDmIftrhyZSZ1VxHpZHUF2B4=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578549.jpeg.jpg",
-            "height": 600,
+            "uri": "https:\/\/api-img.discogs.com\/4NchIL-OxpdgCtGjLhjh9lWI9Ro=\/fit-in\/600x599\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335608-6771.jpeg.jpg",
+            "height": 599,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/rInRDmIftrhyZSZ1VxHpZHUF2B4=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578549.jpeg.jpg",
+            "resource_url": "https:\/\/api-img.discogs.com\/4NchIL-OxpdgCtGjLhjh9lWI9Ro=\/fit-in\/600x599\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335608-6771.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/25ktxG-4zxVCWbVlYBawcSwpmNk=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1316578549.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/vB13_2ikgsXNgzQFjPtS9LtSI3I=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1753416-1440335608-6771.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/6gZZhtym7SyHhlGfdFSzW55FkmQ=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578561.jpeg.jpg",
-            "height": 600,
+            "uri": "https:\/\/api-img.discogs.com\/5T4U3kq2oDURRTmdl9WnM3n2LlQ=\/fit-in\/600x595\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335609-9826.jpeg.jpg",
+            "height": 595,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/6gZZhtym7SyHhlGfdFSzW55FkmQ=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578561.jpeg.jpg",
+            "resource_url": "https:\/\/api-img.discogs.com\/5T4U3kq2oDURRTmdl9WnM3n2LlQ=\/fit-in\/600x595\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335609-9826.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/MkEyZmd_dCQ_ankbgqkrPD_41H4=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1316578561.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/8VpJZ8OkGrVMsS3ckRTor9Y-FlA=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1753416-1440335609-9826.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/Tqk4e7jaFVtJQEu1jH6ta6AunoI=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578569.jpeg.jpg",
-            "height": 600,
+            "uri": "https:\/\/api-img.discogs.com\/-QqZ0KAfVJnWEj-SjmwRVCTQ-8o=\/fit-in\/600x609\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335606-1832.jpeg.jpg",
+            "height": 609,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/Tqk4e7jaFVtJQEu1jH6ta6AunoI=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578569.jpeg.jpg",
+            "resource_url": "https:\/\/api-img.discogs.com\/-QqZ0KAfVJnWEj-SjmwRVCTQ-8o=\/fit-in\/600x609\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335606-1832.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/54wnkfY143ySXY9_7p1qTk1MJx8=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1316578569.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/lOvrL8gLxN9sTvLgtFsxgUXsofE=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1753416-1440335606-1832.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/RBTLgqbTEOTUpzadj-MAYjfllrg=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578576.jpeg.jpg",
-            "height": 600,
+            "uri": "https:\/\/api-img.discogs.com\/vC4bx98tIeBvxNx-fhQ3si0ti3U=\/fit-in\/600x515\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335607-9668.jpeg.jpg",
+            "height": 515,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/RBTLgqbTEOTUpzadj-MAYjfllrg=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578576.jpeg.jpg",
+            "resource_url": "https:\/\/api-img.discogs.com\/vC4bx98tIeBvxNx-fhQ3si0ti3U=\/fit-in\/600x515\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1753416-1440335607-9668.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/Z8tCx6rfvvXbEzN0ZTZ51X4hBrs=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1316578576.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/333ZglimkIJU_0h-SjX1BXIREdA=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578583.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/333ZglimkIJU_0h-SjX1BXIREdA=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578583.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/Jp9CBmr04u7RNrPn1h1sWismAtw=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1316578583.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/dAG76YzDBBNbK3bDAHhMrhaGK-s=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578592.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/dAG76YzDBBNbK3bDAHhMrhaGK-s=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1316578592.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/iFTUg_jHm0q-lJ7zVDTZuxLWlGc=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1316578592.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/I94lplYmnm3kDPXxP4c9gw3-9Jo=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1372624455-8951.jpeg.jpg",
-            "height": 600,
-            "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/I94lplYmnm3kDPXxP4c9gw3-9Jo=\/fit-in\/600x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1372624455-8951.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/Y6-pACmhyJwoIJeZimTYY9GtQH0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1372624455-8951.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/f4UN2YADF9b6VipwqDwT1IgeSzY=\/fit-in\/571x575\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1372624501-9122.jpeg.jpg",
-            "height": 575,
-            "width": 571,
-            "resource_url": "https:\/\/api-img.discogs.com\/f4UN2YADF9b6VipwqDwT1IgeSzY=\/fit-in\/571x575\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1372624501-9122.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/xyPZQQHVuNQ83VlSQy1nr9WtxyQ=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1372624501-9122.jpeg.jpg"
-        },
-        {
-            "uri": "https:\/\/api-img.discogs.com\/ERPz_cE2vqjBhuywfbvMAXrW_VE=\/fit-in\/500x402\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1372624510-5590.jpeg.jpg",
-            "height": 402,
-            "width": 500,
-            "resource_url": "https:\/\/api-img.discogs.com\/ERPz_cE2vqjBhuywfbvMAXrW_VE=\/fit-in\/500x402\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1359927-1372624510-5590.jpeg.jpg",
-            "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/gdZPY3B-Ba-xD0aE5ywlJ09mOXU=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1372624510-5590.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/cdlNmvNNFZWaS5sUPrGSzXx7N70=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1753416-1440335607-9668.jpeg.jpg"
         }
     ],
-    "format_quantity": 2,
-    "id": 1359927,
+    "format_quantity": 1,
+    "id": 1753416,
     "genres": [
         "Rock"
     ],
-    "thumb": "https:\/\/api-img.discogs.com\/UwWjwyDdL5EkAg655y_s9uX64Yc=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1359927-1375142172-3703.jpeg.jpg",
-    "num_for_sale": 70,
-    "title": "Fleet Foxes",
-    "date_changed": "2017-04-05T06:44:30-07:00",
-    "master_id": 72463,
-    "lowest_price": 8.78,
+    "thumb": "https:\/\/api-img.discogs.com\/docHPP2PZ6fotgJrfKaKxk9rMoI=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1753416-1440335610-3560.jpeg.jpg",
+    "num_for_sale": 16,
+    "title": "Copperhead Road",
+    "date_changed": "2017-07-14T01:02:06-07:00",
+    "master_id": 113560,
+    "lowest_price": 6.53,
     "styles": [
         "Folk Rock",
-        "Indie Rock"
+        "Country Rock"
     ],
-    "released_formatted": "03 Jun 2008",
+    "released_formatted": "1988",
     "formats": [
         {
             "qty": "1",
@@ -262,477 +162,668 @@
                 "Album"
             ],
             "name": "Vinyl"
-        },
-        {
-            "qty": "1",
-            "descriptions": [
-                "12\"",
-                "EP"
-            ],
-            "name": "Vinyl"
         }
     ],
-    "estimated_weight": 460,
-    "master_url": "https:\/\/api.discogs.com\/masters\/72463",
-    "released": "2008-06-03",
-    "date_added": "2008-06-05T15:36:31-07:00",
+    "estimated_weight": 230,
+    "master_url": "https:\/\/api.discogs.com\/masters\/113560",
+    "released": "1988",
+    "date_added": "2009-04-30T14:15:03-07:00",
     "extraartists": [
         {
             "join": "",
-            "name": "Casey Wescott",
-            "anv": "Wescott",
-            "tracks": "A1 to B5",
-            "role": "Arranged By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135512",
-            "id": 1135512
-        },
-        {
-            "join": "",
-            "name": "Craig Curran",
-            "anv": "Curran",
-            "tracks": "A1 to B5",
-            "role": "Arranged By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/844847",
-            "id": 844847
-        },
-        {
-            "join": "",
-            "name": "Fleet Foxes",
+            "name": "Teresa Ensenat",
             "anv": "",
-            "tracks": "C1 to D2",
-            "role": "Arranged By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1105843",
-            "id": 1105843
+            "tracks": "",
+            "role": "A&R [Undercover]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1855414",
+            "id": 1855414
         },
         {
             "join": "",
-            "name": "Nicholas Peterson",
-            "anv": "Peterson",
-            "tracks": "A1 to B5",
-            "role": "Arranged By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135513",
-            "id": 1135513
+            "name": "James Fearnley",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Accordion",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/535356",
+            "id": 535356
         },
         {
             "join": "",
-            "name": "Robin Pecknold",
-            "anv": "Pecknold",
-            "tracks": "A1 to B5",
-            "role": "Arranged By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135514",
-            "id": 1135514
+            "name": "Bill Lloyd (3)",
+            "anv": "",
+            "tracks": "",
+            "role": "Acoustic Guitar, Twelve-String Guitar [Electric]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/652734",
+            "id": 652734
         },
         {
             "join": "",
-            "name": "Skyler Skjelset",
-            "anv": "Skjelset",
-            "tracks": "A1 to B5",
+            "name": "Garry Tallent",
+            "anv": "Gary W. Tallent",
+            "tracks": "A4",
             "role": "Arranged By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135515",
-            "id": 1135515
+            "resource_url": "https:\/\/api.discogs.com\/artists\/254874",
+            "id": 254874
         },
         {
             "join": "",
-            "name": "Dusty Summers",
+            "name": "Simon Levy",
+            "anv": "",
+            "tracks": "",
+            "role": "Art Direction",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1832067",
+            "id": 1832067
+        },
+        {
+            "join": "",
+            "name": "June Beard",
+            "anv": "",
+            "tracks": "",
+            "role": "Artwork [Patch]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2917471",
+            "id": 2917471
+        },
+        {
+            "join": "",
+            "name": "John Cowan",
+            "anv": "",
+            "tracks": "",
+            "role": "Backing Vocals",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1088486",
+            "id": 1088486
+        },
+        {
+            "join": "",
+            "name": "Maria McKee",
+            "anv": "",
+            "tracks": "",
+            "role": "Backing Vocals",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/94241",
+            "id": 94241
+        },
+        {
+            "join": "",
+            "name": "Radney Foster",
+            "anv": "",
+            "tracks": "",
+            "role": "Backing Vocals",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/722970",
+            "id": 722970
+        },
+        {
+            "join": "",
+            "name": "Jem Finer",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Banjo",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/207924",
+            "id": 207924
+        },
+        {
+            "join": "",
+            "name": "Shane MacGowan",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Banjo, Bodhr\u00e1n",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/257024",
+            "id": 257024
+        },
+        {
+            "join": "",
+            "name": "Darryl Hunt",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Bass",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/293297",
+            "id": 293297
+        },
+        {
+            "join": "",
+            "name": "Kelley Looney",
+            "anv": "Kelly Looney",
+            "tracks": "",
+            "role": "Bass",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1937763",
+            "id": 1937763
+        },
+        {
+            "join": "",
+            "name": "Terry Woods",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Cittern",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/417666",
+            "id": 417666
+        },
+        {
+            "join": "",
+            "name": "Jessie Noble",
+            "anv": "",
+            "tracks": "",
+            "role": "Coordinator [Project]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1732887",
+            "id": 1732887
+        },
+        {
+            "join": "",
+            "name": "Jeff Morris (3)",
             "anv": "",
             "tracks": "",
             "role": "Design",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1144988",
-            "id": 1144988
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2081112",
+            "id": 2081112
         },
         {
             "join": "",
-            "name": "Robin Pecknold",
+            "name": "Chris Birkett",
+            "anv": "",
+            "tracks": "B2",
+            "role": "Drum Programming",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/142386",
+            "id": 142386
+        },
+        {
+            "join": "",
+            "name": "Andrew Ranken",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Drums",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/535355",
+            "id": 535355
+        },
+        {
+            "join": "",
+            "name": "Kurt Custer",
+            "anv": "Custer",
+            "tracks": "",
+            "role": "Drums",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1338191",
+            "id": 1338191
+        },
+        {
+            "join": "",
+            "name": "Mark Coddington",
+            "anv": "Mark J. Coddington",
+            "tracks": "",
+            "role": "Engineer [2nd, Ardent]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/776805",
+            "id": 776805
+        },
+        {
+            "join": "",
+            "name": "Tom Luane",
             "anv": "",
             "tracks": "",
-            "role": "Design",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135514",
-            "id": 1135514
+            "role": "Engineer [2nd, Ardent]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1338192",
+            "id": 1338192
         },
         {
             "join": "",
-            "name": "Sasha Barr",
+            "name": "George Shilling",
             "anv": "",
             "tracks": "",
-            "role": "Design",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1144986",
-            "id": 1144986
+            "role": "Engineer [2nd, Livingstone]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/55808",
+            "id": 55808
         },
         {
             "join": "",
-            "name": "Fleet Foxes",
+            "name": "Julius Croaol",
             "anv": "",
             "tracks": "",
-            "role": "Instruments",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1105843",
-            "id": 1105843
+            "role": "Engineer [2nd, Livingstone]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1338189",
+            "id": 1338189
         },
         {
             "join": "",
-            "name": "Warren Gamaliel Bancroft Winnipeg Harding",
+            "name": "Andy Byrd",
+            "anv": "Andy Bird",
+            "tracks": "",
+            "role": "Engineer [Pre-production]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1022204",
+            "id": 1022204
+        },
+        {
+            "join": "",
+            "name": "Dale Brown (6)",
             "anv": "",
             "tracks": "",
-            "role": "Liner Notes",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2290825",
-            "id": 2290825
+            "role": "Engineer [Pre-production]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2917475",
+            "id": 2917475
         },
         {
             "join": "",
-            "name": "Ed Brooks",
+            "name": "Jack Burke",
+            "anv": "",
+            "tracks": "",
+            "role": "Engineer [Pre-production]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2917473",
+            "id": 2917473
+        },
+        {
+            "join": "",
+            "name": "Donny Roberts",
+            "anv": "",
+            "tracks": "",
+            "role": "Guitar, Bass [6 String]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1338187",
+            "id": 1338187
+        },
+        {
+            "join": "",
+            "name": "Philip Chevron",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Guitar, Vocals",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/417664",
+            "id": 417664
+        },
+        {
+            "join": "",
+            "name": "Jim O'Connor (3)",
+            "anv": "",
+            "tracks": "",
+            "role": "Illustration",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2917472",
+            "id": 2917472
+        },
+        {
+            "join": "",
+            "name": "Side One Management",
+            "anv": "",
+            "tracks": "",
+            "role": "Management",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2626710",
+            "id": 2626710
+        },
+        {
+            "join": "",
+            "name": "Will Botwin",
+            "anv": "",
+            "tracks": "",
+            "role": "Management",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/1644674",
+            "id": 1644674
+        },
+        {
+            "join": "",
+            "name": "Neil MacColl",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Mandolin",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/394199",
+            "id": 394199
+        },
+        {
+            "join": "",
+            "name": "Sam Bush",
+            "anv": "",
+            "tracks": "B5",
+            "role": "Mandolin",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/577062",
+            "id": 577062
+        },
+        {
+            "join": "",
+            "name": "Bob Ludwig",
             "anv": "",
             "tracks": "",
             "role": "Mastered By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/39276",
-            "id": 39276
+            "resource_url": "https:\/\/api.discogs.com\/artists\/271098",
+            "id": 271098
         },
         {
             "join": "",
-            "name": "John Golden",
-            "anv": "J.G.",
-            "tracks": "",
-            "role": "Mastered By [Vinyl]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/265502",
-            "id": 265502
-        },
-        {
-            "join": "",
-            "name": "Pieter Bruegel the Elder",
-            "anv": "Pieter The Elder Bruegel",
-            "tracks": "",
-            "role": "Painting [Cover Painting \"The Blue Cloak\"]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2248715",
-            "id": 2248715
-        },
-        {
-            "join": "",
-            "name": "Casey Wescott",
+            "name": "Bucky Baxter",
             "anv": "",
             "tracks": "",
-            "role": "Performer [Fleet Foxes As Recorded Herein]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135512",
-            "id": 1135512
+            "role": "Pedal Steel Guitar, Lap Steel Guitar, Dobro",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/217325",
+            "id": 217325
         },
         {
             "join": "",
-            "name": "Christian Lee Wargo",
-            "anv": "Christian Wargo",
-            "tracks": "C1 to D2",
-            "role": "Performer [Fleet Foxes As Recorded Herein]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/613541",
-            "id": 613541
+            "name": "Empire Studio",
+            "anv": "",
+            "tracks": "",
+            "role": "Photography By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2917474",
+            "id": 2917474
         },
         {
             "join": "",
-            "name": "Craig Curran",
+            "name": "John Jarvis",
+            "anv": "",
+            "tracks": "",
+            "role": "Piano",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/336053",
+            "id": 336053
+        },
+        {
+            "join": "",
+            "name": "Steve Earle",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/252097",
+            "id": 252097
+        },
+        {
+            "join": "",
+            "name": "Tony Brown (4)",
+            "anv": "",
+            "tracks": "",
+            "role": "Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/316990",
+            "id": 316990
+        },
+        {
+            "join": "",
+            "name": "Joe Hardy",
+            "anv": "",
+            "tracks": "",
+            "role": "Recorded By [Digitally, Ardent Studios], Mixed By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/267598",
+            "id": 267598
+        },
+        {
+            "join": "",
+            "name": "Chris Birkett",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Recorded By [Livingstone Studios]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/142386",
+            "id": 142386
+        },
+        {
+            "join": "",
+            "name": "Jerry Douglas",
+            "anv": "",
+            "tracks": "B5",
+            "role": "Resonator Guitar [Dobro]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/305847",
+            "id": 305847
+        },
+        {
+            "join": "",
+            "name": "Ken Moore",
+            "anv": "",
+            "tracks": "",
+            "role": "Synthesizer, Organ",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/371508",
+            "id": 371508
+        },
+        {
+            "join": "",
+            "name": "Spider Stacy",
+            "anv": "",
+            "tracks": "A5",
+            "role": "Tin Whistle, Vocals",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/444186",
+            "id": 444186
+        },
+        {
+            "join": "",
+            "name": "Mark O'Connor",
+            "anv": "",
+            "tracks": "B5",
+            "role": "Violin",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/274736",
+            "id": 274736
+        },
+        {
+            "join": "",
+            "name": "Edgar Meyer",
+            "anv": "",
+            "tracks": "B5",
+            "role": "Violin [Bass]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/561465",
+            "id": 561465
+        },
+        {
+            "join": "",
+            "name": "Steve Earle",
+            "anv": "",
+            "tracks": "",
+            "role": "Vocals, Guitar, Harmonica, Bass [6 String], Mandolin",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/252097",
+            "id": 252097
+        },
+        {
+            "join": "",
+            "name": "Larry Crane",
+            "anv": "",
+            "tracks": "B4",
+            "role": "Written-By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/273555",
+            "id": 273555
+        },
+        {
+            "join": "",
+            "name": "Richard Bennett",
+            "anv": "",
+            "tracks": "B3",
+            "role": "Written-By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/255390",
+            "id": 255390
+        },
+        {
+            "join": "",
+            "name": "Steve Earle",
             "anv": "",
             "tracks": "A1 to B5",
-            "role": "Performer [Fleet Foxes As Recorded Herein]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/844847",
-            "id": 844847
-        },
-        {
-            "join": "",
-            "name": "Nicholas Peterson",
-            "anv": "",
-            "tracks": "",
-            "role": "Performer [Fleet Foxes As Recorded Herein]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135513",
-            "id": 1135513
-        },
-        {
-            "join": "",
-            "name": "Robin Pecknold",
-            "anv": "",
-            "tracks": "",
-            "role": "Performer [Fleet Foxes As Recorded Herein]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135514",
-            "id": 1135514
-        },
-        {
-            "join": "",
-            "name": "Skyler Skjelset",
-            "anv": "",
-            "tracks": "",
-            "role": "Performer [Fleet Foxes As Recorded Herein]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135515",
-            "id": 1135515
-        },
-        {
-            "join": "",
-            "name": "Phil Ek",
-            "anv": "",
-            "tracks": "",
-            "role": "Producer, Engineer, Mixed By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/254426",
-            "id": 254426
-        },
-        {
-            "join": "",
-            "name": "Robin Pecknold",
-            "anv": "Pecknold",
-            "tracks": "",
             "role": "Written-By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1135514",
-            "id": 1135514
+            "resource_url": "https:\/\/api.discogs.com\/artists\/252097",
+            "id": 252097
         }
     ],
     "tracklist": [
         {
-            "duration": "",
-            "position": "",
-            "type_": "heading",
-            "title": "Fleet Foxes"
-        },
-        {
-            "duration": "",
+            "duration": "4:28",
             "position": "A1",
             "type_": "track",
-            "title": "Sun It Rises"
+            "title": "Copperhead Road"
         },
         {
-            "duration": "",
+            "duration": "3:29",
             "position": "A2",
             "type_": "track",
-            "title": "White Winter Hymnal"
+            "title": "Snake Oil"
         },
         {
-            "duration": "",
+            "duration": "5:25",
             "position": "A3",
             "type_": "track",
-            "title": "Ragged Wood"
+            "title": "Back To The Wall"
         },
         {
-            "duration": "",
+            "duration": "2:59",
             "position": "A4",
             "type_": "track",
-            "title": "Tiger Mountain Peasant Song"
+            "title": "The Devil's Right Hand"
         },
         {
-            "duration": "",
+            "duration": "4:06",
             "position": "A5",
             "type_": "track",
-            "title": "Quiet Houses"
+            "title": "Johnny Come Lately"
         },
         {
-            "duration": "",
-            "position": "A6",
-            "type_": "track",
-            "title": "He Doesn't Know Why"
-        },
-        {
-            "duration": "",
+            "duration": "4:11",
             "position": "B1",
             "type_": "track",
-            "title": "Heard Them Stirring"
+            "title": "Even When I'm Blue"
         },
         {
-            "duration": "",
+            "duration": "4:21",
             "position": "B2",
             "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Gwen Owen",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Flute",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/1144987",
-                    "id": 1144987
-                }
-            ],
-            "title": "Your Protector"
+            "title": "You Belong To Me"
         },
         {
-            "duration": "",
+            "duration": "5:07",
             "position": "B3",
             "type_": "track",
-            "title": "Meadowlarks"
+            "title": "Waiting On You"
         },
         {
-            "duration": "",
+            "duration": "4:42",
             "position": "B4",
             "type_": "track",
-            "title": "Blue Ridge Mountains"
+            "title": "Once You Love"
         },
         {
-            "duration": "",
+            "duration": "4:27",
             "position": "B5",
             "type_": "track",
-            "title": "Oliver James"
-        },
-        {
-            "duration": "",
-            "position": "",
-            "type_": "heading",
-            "title": "Sun Giant EP"
-        },
-        {
-            "duration": "",
-            "position": "C1",
-            "type_": "track",
-            "title": "Sun Giant"
-        },
-        {
-            "duration": "",
-            "position": "C2",
-            "type_": "track",
-            "title": "Drops In The River"
-        },
-        {
-            "duration": "",
-            "position": "C3",
-            "type_": "track",
-            "title": "English House"
-        },
-        {
-            "duration": "",
-            "position": "D1",
-            "type_": "track",
-            "title": "Mykonos"
-        },
-        {
-            "duration": "",
-            "position": "D2",
-            "type_": "track",
-            "title": "Innocent Son"
+            "title": "Nothing But A Child"
         }
     ],
-    "notes": "\u2117 & \u00a9 2008 Sub Pop Records\n\nReleased in a gatefold sleeve with the \"Sun Giant\" EP as a bonus. Also included is a coupon to download 192kbps MP3s of both records.\nPrinted insert included.\n\nFleet Foxes (LP):\nRecorded at our homes, our friends' homes, our parents' homes, at London Bridge Studio, and at Avast Studio in Seattle, Washington, through the Summer and Fall of 2007.  Phil Ek produced, engineered, and mixed, except when we were flailing around at home, recording ourselves poorly for him to clean up later.  This happened often. [...] Mastered, at RFI in Seattle.  \n\nSun Giant (EP):\nWe all played many an instrument.  An itemized and individualized list would be egotistical and tiresome.  \nIt was mostly recorded in early January of 2008 at Bear Creek Studios in Woodinville, Washington.  We did additional recording at both our house and at Stuart Hollerman's Avast! Studio, where the EP was also mixed.  The handsome Philip M. Ek was the producer, engineer, and mixer.  All hate mail may be directed to him.  Except mastering hate mail, which can be sent to Ed Brooks at RFI in Seattle, WA.\n\nCover painting \"The Blue Cloak\" (De Blauwe Huik) by Pieter The Elder Bruegel.\n\u00a9 Staatliche Gemaldegaleria, Berlin, Germany \/ The Bridgman Art Library.",
+    "notes": "\u2117 & \u00a9 1988 UNI Records, Inc.\r\nOriginal sound recordings made by UNI Records, Inc. MCA Records Ltd. are the exclusive licensees for the U.K.\r\nMade in England\r\nAll tracks Pub. BMG Music Pub. Ltd except B4 Chappell Music Ltd.",
     "identifiers": [
         {
             "type": "Barcode",
-            "value": "098787077711"
+            "description": "Text",
+            "value": "5 011781 342611"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Side A Etching, LP",
-            "value": "SP-777-A 17591.1(3) JG"
+            "description": "Label A side",
+            "value": "MCF 3426A"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Side B Etching, LP",
-            "value": "SP-777-B 17591.2(3)"
+            "description": "Label B side",
+            "value": "MCF 3426B"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Side A Etching, EP",
-            "value": "SP-781-A 17523.1(3)"
+            "description": "Inner sleeve",
+            "value": "MCF 3426 AL"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "Side B Etching, EP",
-            "value": "SP-781-B 17523.2(3)"
+            "description": "Variant 1 Side A runout, stamped",
+            "value": "MCF 3426 A-1U-1-4"
         },
         {
             "type": "Matrix \/ Runout",
-            "description": "All Sides, Stamp",
-            "value": "Golden"
+            "description": "Variant 1 Side B runout, stamped",
+            "value": "MCF 3426 B-1U-1-1"
         },
         {
-            "type": "Rights Society",
-            "value": "ASCAP"
+            "type": "Matrix \/ Runout",
+            "description": "Variant 2 Side A runout, stamped",
+            "value": "MCF 3426 A-1U-1-1"
+        },
+        {
+            "type": "Matrix \/ Runout",
+            "description": "Variant 2 Side B runout, stamped",
+            "value": "MCF 3426 B-1U-1-1"
+        },
+        {
+            "type": "Other",
+            "description": "U.S.",
+            "value": "UNI 7"
+        },
+        {
+            "type": "Other",
+            "description": "INTL.",
+            "value": "255 935-1"
+        },
+        {
+            "type": "Other",
+            "description": "Label",
+            "value": "SHFD"
         }
     ],
     "companies": [
         {
-            "name": "Sub Pop Records",
+            "name": "MCA Records Ltd.",
+            "entity_type": "5",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/40176",
+            "id": 40176,
+            "entity_type_name": "Licensed To"
+        },
+        {
+            "name": "UNI Records, Inc.",
+            "entity_type": "6",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/317968",
+            "id": 317968,
+            "entity_type_name": "Licensed From"
+        },
+        {
+            "name": "UNI Records, Inc.",
             "entity_type": "13",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/5131",
-            "id": 5131,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/317968",
+            "id": 317968,
             "entity_type_name": "Phonographic Copyright (p)"
         },
         {
-            "name": "Sub Pop Records",
+            "name": "UNI Records, Inc.",
             "entity_type": "14",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/5131",
-            "id": 5131,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/317968",
+            "id": 317968,
             "entity_type_name": "Copyright (c)"
         },
         {
-            "name": "London Bridge Studio",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/276911",
-            "id": 276911,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Avast! Recording Co.",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/276755",
-            "id": 276755,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Bear Creek Studios",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/274542",
-            "id": 274542,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "RFI Mastering",
-            "entity_type": "29",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/264668",
-            "id": 264668,
-            "entity_type_name": "Mastered At"
-        },
-        {
-            "name": "Record Technology Incorporated",
-            "entity_type": "29",
-            "catno": "17591",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/66254",
-            "id": 66254,
-            "entity_type_name": "Mastered At"
-        },
-        {
-            "name": "Record Technology Incorporated",
-            "entity_type": "29",
-            "catno": "17523",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/66254",
-            "id": 66254,
-            "entity_type_name": "Mastered At"
-        },
-        {
-            "name": "Xachua'bsh",
+            "name": "BMG Music Publishing Ltd.",
             "entity_type": "21",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/712325",
-            "id": 712325,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/266870",
+            "id": 266870,
             "entity_type_name": "Published By"
         },
         {
-            "name": "Record Technology Incorporated",
-            "entity_type": "30",
-            "catno": "17591",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/66254",
-            "id": 66254,
-            "entity_type_name": "Lacquer Cut At"
+            "name": "Chappell Music Ltd.",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/268244",
+            "id": 268244,
+            "entity_type_name": "Published By"
         },
         {
-            "name": "Record Technology Incorporated",
-            "entity_type": "30",
-            "catno": "17591",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/66254",
-            "id": 66254,
-            "entity_type_name": "Lacquer Cut At"
+            "name": "Ardent Studios",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/268426",
+            "id": 268426,
+            "entity_type_name": "Recorded At"
         },
         {
-            "name": "Golden Mastering",
+            "name": "Livingston Studios",
+            "entity_type": "23",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/268488",
+            "id": 268488,
+            "entity_type_name": "Recorded At"
+        },
+        {
+            "name": "Ardent Studios",
+            "entity_type": "27",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/268426",
+            "id": 268426,
+            "entity_type_name": "Mixed At"
+        },
+        {
+            "name": "Masterdisk",
             "entity_type": "29",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/267039",
-            "id": 267039,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/264111",
+            "id": 264111,
             "entity_type_name": "Mastered At"
         }
     ],
-    "uri": "https:\/\/www.discogs.com\/Fleet-Foxes-Fleet-Foxes\/release\/1359927",
-    "country": "US",
-    "resource_url": "https:\/\/api.discogs.com\/releases\/1359927",
-    "data_quality": "Correct"
+    "uri": "https:\/\/www.discogs.com\/Steve-Earle-Copperhead-Road\/release\/1753416",
+    "country": "UK",
+    "resource_url": "https:\/\/api.discogs.com\/releases\/1753416",
+    "data_quality": "Needs Vote"
 }

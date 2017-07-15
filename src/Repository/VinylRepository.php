@@ -102,7 +102,7 @@ class VinylRepository implements RepositoryInterface
     public function findLatestRelease()
     {
         $qb = $this->joinAll();
-        $qb->orderBy('date_added', 'DESC LIMIT 4')
+        $qb->orderBy('date_added', 'DESC LIMIT 6')
             ->andHaving('quantity >= 1');
 
         $latestReleases = $qb->execute()->fetchAll();
@@ -115,7 +115,7 @@ class VinylRepository implements RepositoryInterface
         $stmt = $this->conn->prepare('SELECT * FROM releases INNER JOIN images ON releases.id=images.release_id INNER JOIN snipcart_data ON releases.id=snipcart_data.release_id AND releases
 .quantity >= 1 ORDER BY 
 RAND() 
-LIMIT 4 ');
+LIMIT 6 ');
         $stmt->execute();
         $randomRelease = $stmt->fetchAll();
 

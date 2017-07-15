@@ -3,7 +3,6 @@
         {% if release.tracklist is defined %}
             {% for tracks in release.tracklist %}
                 {{ tracks.position }} {{ tracks.title }}<br>
-                {#<span class="right">{{ tracks.duration }}</span>#}
         {% endfor %}
             {% else %}
                 <p>No tracklist is available</p>
@@ -17,7 +16,8 @@
         <h2 class="flow-text grey lighten-4 track_header">VIDEOS</h2>
         <div class="video-container">
         {% if release.videos is defined %}
-            <iframe src="https://www.youtube.com/embed/{% for video in release.videos|slice(0,1) %}{{ video.uri|slice(32,43) }}{% endfor %}" frameborder="0" allowfullscreen="true">
+            <iframe src="https://www.youtube.com/embed/{% for video in release.videos|slice(0,1) %}{{ video.uri|slice(32,43) }}{% endfor %}" frameborder="0"
+                    allowfullscreen="true">
             </iframe>
             {% else %}
                 <p>No videos available at the moment.</p>

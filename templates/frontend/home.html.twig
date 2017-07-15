@@ -1,51 +1,82 @@
 {% extends 'frontend/base.html.twig' %}
 {% set active_page = 'home' %}
 {% block description %}
-    The home page for therecordbox . Quality second hand and new vinyl records.
+    Home page for the recordbox.ie Browse new and used vinyl.
 {% endblock %}
-{% block header %}
-    <h1>Vinyl Store</h1>
-{% endblock %}
+{% block title %}Home{% endblock %}
+{#{% block header %}#}
+    {#<h1>Vinyl Store</h1>#}
+{#{% endblock %}#}
 {% block content %}
     <div class="row">
-        <div class="col s12 m12">
-            <div class="header-image">
+        {#<div class="col s12 m12">#}
+            <div class="header-image hero_text">
+                <h1 class="flow-text white-text">Online Vinyl shop for record collectors, selectors and enthusiasts.<br>
+                    Shop for your next vinyl
+                </h1>
 
             </div>
-        </div>
+        {#</div>#}
     </div>
 
     {# the intro #}
 
-    <div class="row homepage_sections">
-        <div class="col s12 m12">
-            <h1 class="flow-text">Online Vinyl shop for record enthusiasts.</h1>
-            <p class="flow-text">Hello and welcome to my site. I stock an eclectic range of second hand and new records, hopefully you can find something you
-                like.</p>
-            <p>I try and stick to the
-                <a href="http://www.recordcollectorsguild.org/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=17&page=1"
-                   target="_blank">goldmine standard</a>
-                when grading records however i have a grade for excellent similarly to
-                <a href="https://thevinylfactory.com/features/a-comprehensive-guide-to-grading-vinyl-records/" target="_blank">this.</a>
-                I also try to ensure that shipping rates <em>wont</em> be more expensive than the music you're buying.
-            </p>
-            <p>
-                I use top quality mailers for packaging and enclose all sold vinyl in a plastic re-sealable sleeve so your vinyl will be well protected in
-                transit.
-            </p>
-        </div>
-    </div>
+    {#<div class="row homepage_sections">#}
+        {#<div class="col s12 m12">#}
+
+            {#<h2 class="flow-text">Featured Vinyl</h2>#}
+        {#</div>#}
+        {#<div class="col s12 m6">#}
+            {#<div class="card horizontal">#}
+                {#<div class="card-image">#}
+
+                    {#<img src="{{ global.request.basepath }}/uploads/7c9ced597abea2ae8f370def8dd7da28.jpeg" alt="the_last_resort_pic">#}
+
+
+                {#</div>#}
+                {#<div class="card-stacked">#}
+                    {#<div class="card-content featured_content">#}
+                        {#<p>Trentemoller</p>#}
+                        {#<p>The Last Resort</p>#}
+
+                    {#</div>#}
+                    {#<div class="card-action">#}
+                        {#<a class="waves-effect waves-light" href="#">Details</a>#}
+                    {#</div>#}
+                {#</div>#}
+            {#</div>#}
+        {#</div>#}
+        {#<div class="container">#}
+        {#<div class="col s12 m12">#}
+
+            {#<h2 class="flow-text">Welcome</h2>#}
+        {#</div>#}
+        {#<div class="col s12 m12">#}
+            {#<p>Hello and welcome to The Record Box. I stock a pretty eclectic range of second hand and new records so hopefully you can find something you#}
+                {#like.#}
+            {#</p>#}
+            {#<p>I try and stick to the goldmine standard when <a href="#gradingModal">grading records</a> and I also try to ensure that shipping rates <em>wont</em> be more expensive#}
+                {#than the music you're buying.#}
+            {#</p>#}
+            {#<p>#}
+                {#I also use top quality mailers for packaging and enclose all sold vinyl in a plastic re-sealable sleeve so your vinyl will be well protected in#}
+                {#transit.#}
+            {#</p>#}
+        {#</div>#}
+        {#</div>#}
+    {#</div>#}
+
 
     {# the just added section #}
 
     <div class="row homepage_sections">
 
         <div class="col m12 s12">
-            <h1 class="flow-text">Just added</h1>
+            <h2 class="flow-text">Recently added</h2>
         </div>
         {% if latest_releases is defined %}
             {% for latest in latest_releases %}
-                <div class="col m3 s6">
+                <div class="col m2 s6">
                     <div class="card">
                         <div class="card-image">
                             <img class="activator" src="/uploads/{{ latest.image }}" alt="{{ latest.title|replace({' ':'_'}) }}_cover">
@@ -81,11 +112,11 @@
 
     <div class="row homepage_sections">
         <div class="col m12 s12">
-            <h1 class="flow-text">Random Vinyl</h1>
+            <h2 class="flow-text">Random Vinyl</h2>
         </div>
         {% if random_release is defined %}
             {% for random in random_release %}
-                <div class="col m3 s6">
+                <div class="col m2 s6">
                     <div class="card">
 
                         <div class="card-image">
@@ -119,7 +150,7 @@
 
     <div class="row homepage_sections">
         <div class="col m12 s12">
-            <h1 class="flow-text">Irish Artists</h1>
+            <h2 class="flow-text">Irish Artists</h2>
             <p class="flow-text">Got an album you'd like to sell? Get in touch to find out how we can stock your vinyl.</p>
         </div>
 

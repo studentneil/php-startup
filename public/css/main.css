@@ -155,6 +155,10 @@ button {
     padding: 0;
 }
 
+.featured_content > p {
+    padding: 1em;
+}
+
 /* collapsibles */
 
 .collapsible-header {
@@ -169,18 +173,26 @@ button {
 }
 
 .header-image {
-    background-image: url(/images/header-alt.jpeg);
+    background-image: url(/images/vinyl-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 200px;
     width: 100%;
+
 }
+.hero_text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
 
 .pagination li.active {
     background-color: #26a69a;
 }
 
-h1 {
+h1,h2 {
     font-family: 'Bangers', cursive;
 }
 
