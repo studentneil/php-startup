@@ -281,6 +281,9 @@ h1,h2 {
     padding-right: 17px;
 
 }
+.row .home_sections {
+    padding: 0;
+}
 @media (min-width: 600px) {
     .brand-logo {
         font-family: 'Bangers', cursive;
@@ -305,9 +308,7 @@ h1,h2 {
         padding-top: 4rem;
     }
 
-    .homepage_sections {
-        margin: 0em;
-    }
+
 
     #contactModal {
         max-height: 70%;
@@ -321,6 +322,9 @@ h1,h2 {
     .icon {
         font-size: 32px;
 
+    }
+    .row .home_sections {
+        padding: 0;
     }
 
 }

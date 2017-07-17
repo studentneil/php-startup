@@ -26,10 +26,14 @@ class MainController
     {
         $latestReleases = $app['vinyl.repository']->findLatestRelease();
         $randomRelease = $app['vinyl.repository']->findRandomRelease();
+        $rockReleases = $app['vinyl.repository']->getReleasesByGenre('rock');
+        $elecReleases = $app['vinyl.repository']->getReleasesByGenre('electronic');
         $templateName = 'frontend/home';
         $args_array = array(
             'latest_releases' => $latestReleases,
             'random_release' => $randomRelease,
+            'rock_releases' => $rockReleases,
+            'elec_releases' => $elecReleases
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);

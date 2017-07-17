@@ -115,7 +115,7 @@ class VinylRepository implements RepositoryInterface
         $stmt = $this->conn->prepare('SELECT * FROM releases INNER JOIN images ON releases.id=images.release_id INNER JOIN snipcart_data ON releases.id=snipcart_data.release_id AND releases
 .quantity >= 1 ORDER BY 
 RAND() 
-LIMIT 6 ');
+LIMIT 1 ');
         $stmt->execute();
         $randomRelease = $stmt->fetchAll();
 

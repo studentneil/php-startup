@@ -26,7 +26,10 @@ module.exports = function(grunt) {
                     src: ["css/main.css",
                           "css/backend.css",
                           "../templates/frontend/*.html.twig",
-                          "../templates/backend/*.html.twig"]
+                          "../templates/backend/*.html.twig",
+                          "../templates/frontend/partials/*.html.twig",
+                          "../templates/backend/partials/*.html.twig"
+                    ]
                 },
                 options: {
                     proxy: "http://localhost:8888",
