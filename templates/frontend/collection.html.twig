@@ -5,82 +5,31 @@
 {% endblock %}
 {% block title %}Vinyl{% endblock %}
 {% block content %}
-
+    {# genre toolbar links #}
     <div class="action_button row">
         <div class="col m6 s12">
-
-
-            <a href="#" data-activates="slide-out" class="btn button-collapse grey darken-3">Refine</a>
-            <div class="fixed-action-btn toolbar click-to-toggle">
-                <a class="btn waves-effect waves-light blue-grey lighten-3">Genres</a>
-                <ul class="genre_toolbar">
-                    <li><a href="/vinyl/rock" class="btn-floating grey lighten-4 black-text">{{ 'rock'|upper }}</a></li>
-                    <li><a href="/vinyl/electronic" class="btn-floating grey lighten-3 black-text">{{ 'electronic'|upper }}</a></li>
-                    <li><a href="/vinyl/classic-rock" class="btn-floating grey lighten-2 black-text">{{ 'classic rock'|upper }}</a></li>
-                </ul>
-            </div>
+            {% include 'frontend/partials/actionButtons.html.twig' %}
         </div>
-
     </div>
 
+    {# slide out refine form #}
     <ul id="slide-out" class="side-nav">
-
-
-        <form action="/refine" method="post" id="refineForm">
-
-            <h1 class="flow-text sideNav_title center-align">The Record Box</h1>
-            <li><div class="divider"></div></li>
-            {{ form_errors(form) }}
-
-            {{ form_label(form.genre, 'genre') }}
-            {{ form_widget(form.genre) }}
-            {{ form_errors(form.genre) }}
-
-            {{ form_label(form.format, 'format') }}
-            {{ form_widget(form.format) }}
-            {{ form_errors(form.format) }}
-
-
-            <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
-
-
-            {{ form_rest(form) }}
-        </form>
-
+        {{ render(controller('VinylStore\\Controllers\\MainController::renderRefineFormAction')) }}
+        {#{% include 'frontend/partials/refineForm.html.twig' %}#}
     </ul>
 
-
+    {# releases #}
     <div class="row">
+
         {% if results is defined %}
             {% for release in results %}
                 <div class="col m3 s6">
-                    <div class="card z-depth-3">
-
-                        <div class="card-image waves-block waves-light">
-                            <img class="activator" src="/uploads/{{ release.image }}" alt="{{ release.title|replace({' ':'_'}) }}_cover">
-                        </div>
-
-                        <div class="card-reveal">
-                        <span class="card-title white-text">
-                            <i class="material-icons right">close</i>
-                        </span>
-                            <div class="card-content white-text">
-                                <p>{{ release.artist }}</p>
-                                <p>{{ release.title }}</p>
-                                <p>{{ release.format }}</p>
-                                <p class="hide-on-med-and-down">Media : {{ release.media_condition|upper }}</p>
-                                <p class="hide-on-med-and-down">Sleeve : {{ release.sleeve_condition|upper }}</p>
-                                <p>&euro;{{ release.price }}</p>
-                                <br>
-                                <div class="divider"></div>
-                                <a class="waves-effect waves-light" href="/vinyl/{{ release.genre }}/release/{{ release.title|slugify }}/{{ release.id }}">Details</a>
-                            </div>
-                        </div>
-
-                    </div>
+                    {% include 'frontend/partials/releaseView.html.twig' %}
                 </div>
             {% endfor %}
         {% endif %}
+
     </div>
+    {# pagination links #}
     {% include "frontend/partials/pagination.html.twig" %}
 {% endblock %}

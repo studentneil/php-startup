@@ -2,15 +2,15 @@
     <div class="row pagination container center-align">
         <ul>
             <li {% if currentPage == 1 %}class="disabled"{% endif %}>
-                <a href="/vinyl/page/{{ currentPage - 1 }}">{{ 'Prev'|trans }}</a>
+                <a href="/vinyl/{% if genre is defined %}{{ genre }}/{% endif %}page/{{ currentPage - 1 }}">{{ 'Prev'|trans }}</a>
             </li>
             {% for i in 1..numPages %}
                 <li {% if currentPage == i %}class="active"{% else %}class="waves-effect"{% endif %}>
-                    <a href="/vinyl/page/{{ i }}">{{ i }}</a>
+                    <a href="/vinyl/{% if genre is defined %}{{ genre }}/{% endif %}page/{{ i }}">{{ i }}</a>
                 </li>
             {% endfor %}
             <li {% if currentPage == numPages %}class="disabled"{% endif %}>
-                <a href="/vinyl/page/{{ currentPage + 1 }}">{{ 'Next'|trans }}</a>
+                <a href="/vinyl/{% if genre is defined %}{{ genre }}/{% endif %}page/{{ currentPage + 1 }}">{{ 'Next'|trans }}</a>
             </li>
         </ul>
     </div>

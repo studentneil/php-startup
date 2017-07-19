@@ -12,19 +12,19 @@ use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use VinylStore\Forms\ContactFormType;
 
+
 class ContactFormController
 {
     public function contactFormAction(Request $request, Application $app)
     {
-        $result = 0;
+
         $contactFormData = array();
         $form = $app['form.factory']
             ->createBuilder(ContactFormType::class, $contactFormData)
             ->getForm();
         $templateName = 'frontend/contact';
         $args_array = array(
-            'form' => $form->createView(),
-            'result' => $result
+            'form' => $form->createView()
         );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }

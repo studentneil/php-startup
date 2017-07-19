@@ -24,16 +24,16 @@ class MainController
      */
     public function indexAction(Application $app)
     {
-        $latestReleases = $app['vinyl.repository']->findLatestRelease();
+        $rockReleases = $app['vinyl.repository']->getReleasesByGenre('rock', '2', '0');
+        $elecReleases = $app['vinyl.repository']->getReleasesByGenre('electronic', '2', '0');
+        $clasRockReleases = $app['vinyl.repository']->getReleasesByGenre('classic-rock', '2', 0);
         $randomRelease = $app['vinyl.repository']->findRandomRelease();
-        $rockReleases = $app['vinyl.repository']->getReleasesByGenre('rock');
-        $elecReleases = $app['vinyl.repository']->getReleasesByGenre('electronic');
         $templateName = 'frontend/home';
         $args_array = array(
-            'latest_releases' => $latestReleases,
-            'random_release' => $randomRelease,
             'rock_releases' => $rockReleases,
-            'elec_releases' => $elecReleases
+            'elec_releases' => $elecReleases,
+            'classic_releases' => $clasRockReleases,
+            'random_release' => $randomRelease
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
@@ -77,14 +77,20 @@ class MainController
     /**
      * Retrieves and sorts a list of vinyls by genres.
      *
+     * @param Request $request
      * @param Application $app
      * @param $genre one of {rock, electronic, classic rock}
      *
      * @return template: collection.html.twig
      */
-    public function getGenreAction(Application $app, $genre)
+    public function getGenreAction(Request $request, Application $app, $genre)
     {
-        $results = $app['vinyl.repository']->getReleasesByGenre($genre);
+        $total = $app['vinyl.repository']->getActiveReleaseByGenre($genre);
+        $pager = new Paginator(12, $total);
+        $pager->setCurrentPage($request->get('page', 1));
+        $offset = $pager->getOffset();
+        $limit = $pager->getLimit();
+        $results = $app['vinyl.repository']->getReleasesByGenre($genre, $limit, $offset);
         $refineFormData = array();
         $form = $app['form.factory']
             ->createBuilder(RefineType::class, $refineFormData)
@@ -92,6 +98,9 @@ class MainController
 
         $templateName = 'frontend/collection';
         $args_array = array(
+            'numPages' => $pager->getNumPages(),
+            'currentPage' => $pager->getCurrentPage(),
+            'genre' => $genre,
             'results' => $results,
             'form' => $form->createView(),
         );
@@ -172,5 +181,14 @@ class MainController
             'form' => $form->createView()
         );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
+    }
+    public function renderRefineFormAction(Request $request, Application $app)
+    {
+        $formData = array();
+        $form = $app['form.factory']
+            ->createBuilder(RefineType::class, $formData)
+            ->getForm();
+
+        return $app['twig']->render('frontend/partials/refineForm.html.twig', array('form' => $form->createView()));
     }
 }

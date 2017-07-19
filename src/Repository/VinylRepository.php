@@ -58,6 +58,16 @@ class VinylRepository implements RepositoryInterface
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM releases WHERE quantity >= 1');
     }
 
+    public function getActiveReleaseByGenre($genre)
+    {
+        $stmt = $this->conn->prepare('SELECT COUNT(id) FROM releases WHERE genre=:genre');
+        $stmt->bindValue('genre', $genre);
+        $stmt->execute();
+
+        return $total = $stmt->fetchColumn();
+
+    }
+
     public function joinAll()
     {
         $qb = $this->conn->createQueryBuilder();
@@ -78,10 +88,12 @@ class VinylRepository implements RepositoryInterface
         return $releases;
     }
 
-    public function getReleasesByGenre($genre)
+    public function getReleasesByGenre($genre, $limit, $offset)
     {
         $qb = $this->joinAll();
-        $qb->andWhere('genre = ?')
+        $qb->setFirstResult($offset)
+            ->setMaxResults($limit)
+            ->andWhere('genre = ?')
             ->andHaving('quantity >= 1')
             ->setParameter(0, $genre);
         $genreReleases = $qb->execute()->fetchAll();
@@ -131,6 +143,15 @@ LIMIT 1 ');
 
         $paginatedReleases = $qb->execute()->fetchAll();
 
+        return $paginatedReleases;
+    }
+    public function paginate($limit, $offset)
+    {
+        $qb = $this->conn->createQueryBuilder();
+        $qb->setFirstResult($offset)
+            ->setMaxResults($limit)
+            ->andHaving('quantity >= 1');
+        $paginatedReleases = $qb->execute()->fetchAll();
         return $paginatedReleases;
     }
 

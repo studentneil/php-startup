@@ -12,6 +12,7 @@ $app->get('/login', 'VinylStore\\Controllers\\LoginController::loginAction');
 $app->get('/vinyl/{genre}/release/{title}/{id}', 'VinylStore\\Controllers\\MainController::getReleaseByIdAction');
 $app->get('/vinyl', 'VinylStore\\Controllers\\MainController::getVinylAction');
 $app->get('/vinyl/{genre}', 'VinylStore\\Controllers\\MainController::getGenreAction');
+$app->get('/vinyl/{genre}/page/{page}', 'VinylStore\\Controllers\\MainController::getGenreAction')->value('page', 1);
 $app->match('/refine', 'VinylStore\\Controllers\\MainController::refineAction');
 $app->get('/faq', 'VinylStore\\Controllers\\MainController::faqAction');
 $app->post('/contact', 'VinylStore\\Controllers\\ContactFormController::sendContactFormAction');
