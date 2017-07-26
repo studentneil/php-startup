@@ -48,8 +48,8 @@ $(document).ready(function() {
                 $('#message').html('<p>' + response + '</p>');
             }
         })
-        }
-        )
+    }
+    )
 
 });
 

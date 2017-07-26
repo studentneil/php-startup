@@ -21,7 +21,7 @@ class RefineType extends AbstractType
                 'choices' => array(
                     'rock' => 'rock',
                     'electronic' => 'electronic',
-                    'classic rock' => 'classic_rock',
+                    'classic rock' => 'classic-rock',
                 ),
                 'multiple' => true,
                 'expanded' => true,

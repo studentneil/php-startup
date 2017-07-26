@@ -18,7 +18,6 @@ class SnipCartController
     {
         $webHook = $request->getContent();
         $requestBody = json_decode($webHook, true);
-        var_dump($requestBody);
         $content = $requestBody['content'];
         if ($requestBody['eventName'] == 'order.completed') {
             foreach ($content['items'] as $item) {
@@ -40,16 +39,14 @@ class SnipCartController
         $requestBody = json_decode($snipWebHook, true);
         $content = $requestBody['content'];
         if ($requestBody['eventName'] == 'shippingrates.fetch') {
+            if ($content['shippingAddressCountry'] !== 'IE') {
+                $error = array('errors' => ['key' => 'invalid_postal_code', 'message' => 'Sorry, I cant ship to your Country. Get in touch via the contact form if youd like to discuss further']);
+                $errorMessage = json_encode($error);
+                return new Response($errorMessage, Response::HTTP_OK, array('Content-Type' => 'application/json'));
+            }
             $quantity = $content['itemsCount'];
             $rates = $app['shipping.repository']->findOneById($quantity);
             $shippingRates = array('rates' => [$rates]);
-//            if ($content['itemsCount'] >= 2 && $content['itemsCount'] < 3) {
-//                $rates = array('rates' => [array('cost' => 6, 'description' => 'standard post')]);
-//            } elseif ($content['itemsCount'] >= 3 && $content['itemsCount'] < 5){
-//                $rates = array('rates' => [array('cost' => 8, 'description' => 'standard post')]);
-//            }else {
-//                $rates = array('rates' => [array('cost' => 4, 'description' => 'standard post')]);
-//            }
 
             $responseMessage = json_encode($shippingRates);
             if ($app['env'] == 'dev') {

@@ -11,17 +11,17 @@ namespace VinylStore;
 
 class Config
 {
-    protected $configFile;
+    protected $file;
 
 
-    public function __construct($configFile)
+    public function __construct($file)
     {
-        $this->configFile = $configFile;
+        $this->file = $file;
     }
 
     public function parse()
     {
-        $config = parse_ini_file($this->configFile, true);
+        $config = parse_ini_file($this->file, true);
         return $config;
     }
 }

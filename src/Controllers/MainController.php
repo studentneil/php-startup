@@ -58,17 +58,12 @@ class MainController
         $offset = $pager->getOffset();
         $limit = $pager->getLimit();
         $paginatedReleases = $app['vinyl.repository']->findForPagination($limit, $offset);
-        $refineFormData = array();
-        $form = $app['form.factory']
-            ->createBuilder(RefineType::class, $refineFormData)
-            ->getForm();
 
         $templateName = 'frontend/collection';
         $args_array = array(
             'numPages' => $pager->getNumPages(),
             'results' => $paginatedReleases,
-            'currentPage' => $pager->getCurrentPage(),
-            'form' => $form->createView(),
+            'currentPage' => $pager->getCurrentPage()
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
@@ -91,18 +86,13 @@ class MainController
         $offset = $pager->getOffset();
         $limit = $pager->getLimit();
         $results = $app['vinyl.repository']->getReleasesByGenre($genre, $limit, $offset);
-        $refineFormData = array();
-        $form = $app['form.factory']
-            ->createBuilder(RefineType::class, $refineFormData)
-            ->getForm();
 
         $templateName = 'frontend/collection';
         $args_array = array(
             'numPages' => $pager->getNumPages(),
             'currentPage' => $pager->getCurrentPage(),
             'genre' => $genre,
-            'results' => $results,
-            'form' => $form->createView(),
+            'results' => $results
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
@@ -182,7 +172,7 @@ class MainController
         );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
-    public function renderRefineFormAction(Request $request, Application $app)
+    public function renderRefineFormAction(Application $app)
     {
         $formData = array();
         $form = $app['form.factory']

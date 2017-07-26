@@ -32,7 +32,9 @@ require_once __DIR__.'/../vendor/autoload.php';
 $app = new Application();
 $app['env'] = 'prod';
 
-$app->register(new ConfigServiceProvider());
+$app->register(new ConfigServiceProvider(array(
+    'config.dir' => '/../../config/'
+)));
 $app->register(new TwigServiceProvider(array(
     'twig.options' => array(
         'debug' => true,
