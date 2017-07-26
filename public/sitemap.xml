@@ -23,39 +23,15 @@
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/tantakatan-the-drunken-shed-mix/15</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/rock/arctic-monkeys/favourite-worst-nightmare/3
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/it-began-in-afrika/16</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/tai-nasha-no-karosha-the-album-remixes/18</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://therecordbox.ie/vinyl/rock/release/bubblegum/11</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/suprema/10</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://therecordbox.ie/vinyl/rock/release/true-faith-remix/9</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/eye-for-an-eye/14</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://therecordbox.ie/vinyl/classic%20rock/release/revolver/25</loc>
-        <changefreq>weekly</changefreq>
-    </url>
-    <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/the-last-resort/13</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/rock/steve-earle/copperhead-road/6
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
@@ -63,7 +39,31 @@
         <changefreq>weekly</changefreq>
     </url>
     <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/tricky/christiansands/1
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/primal-scream/swastika-eyes/2
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
         <loc>https://therecordbox.ie/vinyl/electronic</loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/classic-rock/the-beatles/revolver/25
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/classic-rock/pink-floyd/wish-you-were-here/27
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
@@ -71,19 +71,69 @@
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/christiansands/1</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/rock/fleet-foxes/fleet-foxes/8
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/swastika-eyes/2</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/rock/the-charlatans/the-only-one-i-know/26
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/rock/release/favourite-worst-nightmare/3</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/rock/new-order/true-faith-remix/9
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/def-beat-remixes-vol-5/7</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/rock/mark-lanegan-band/bubblegum/11
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/u-n-k-l-e/def-beat-remixes-vol-5/7
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/gaetano-parisio/suprema/10
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/trentemoller/the-last-resort/13
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/u-n-k-l-e/eye-for-an-eye/14
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/radioslave/tantakatan-the-drunken-shed-mix/15
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/the-chemical-brothers/it-began-in-afrika/16
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/gabriel-ananda/tai-nasha-no-karosha-the-album-remixes/18
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
@@ -99,23 +149,45 @@
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/rock/release/sidewalking/23</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/rock/the-jesus-and-mary-chain/sidewalking/23
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/rock/release/the-queen-is-dead/24</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/rock/the-smiths/the-queen-is-dead/24
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/no-matter-what-i-do/20</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/rock/queens-of-the-stone-age/go-with-the-flow/30
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/setting-sun/21</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/donnacha-costello/no-matter-what-i-do/20
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
     <url>
-        <loc>https://therecordbox.ie/vinyl/electronic/release/blue-monday/22</loc>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/the-chemical-brothers/setting-sun/21
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/new-order/blue-monday/22
+        </loc>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>
+            https://therecordbox.ie/vinyl/electronic/primal-scream/higher-than-the-sun-remix/28
+        </loc>
         <changefreq>weekly</changefreq>
     </url>
 </urlset>
