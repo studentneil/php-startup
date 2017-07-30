@@ -70,7 +70,7 @@
                 <div class="input-field col m6 s12">
                     {{ form_errors(form.media_condition) }}
                     {{ form_widget(form.media_condition) }}
-                    {{ form_label(form.media_condition, 'media condition') }}
+                    {{ form_label(form.media_condition, 'media condition::') }}
                 </div>
             </div>
             <div class="row">
@@ -98,14 +98,19 @@
                 </div>
             </div>
             <div class="row">
-
                 <div class="input-field col m6 s12">
-
-                    {{ form_label(form.quantity, 'quantity') }}
+                    {{ form_label(form.quantity, 'quantity::') }}
                     <p class="range-field">
                     {{ form_errors(form.quantity) }}
                     {{ form_widget(form.quantity) }}
                     </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col m6 s12">
+                    {{ form_label(form.barcode, 'barcode::') }}
+                    {{ form_errors(form.barcode) }}
+                    {{ form_widget(form.barcode) }}
                 </div>
             </div>
 

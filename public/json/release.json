@@ -2,1331 +2,351 @@
     "status": "Accepted",
     "videos": [
         {
-            "duration": 198,
+            "duration": 427,
             "embed": true,
-            "title": "Mark Lanegan - Methamphetamine Blues.",
-            "description": "Mark Lanegan - Methamphetamine Blues.",
-            "uri": "https:\/\/www.youtube.com\/watch?v=QEpR1AL4El8"
+            "title": "Primal Scream - Swastika Eyes [Chemical Brothers Remix]",
+            "description": "Primal Scream - Swastika Eyes [Chemical Brothers Remix]",
+            "uri": "https:\/\/www.youtube.com\/watch?v=e0LTKUsVMuw"
         },
         {
-            "duration": 279,
+            "duration": 426,
             "embed": true,
-            "title": "Mark Lanegan - One Hundred Days.",
-            "description": "Mark Lanegan - One Hundred Days.",
-            "uri": "https:\/\/www.youtube.com\/watch?v=EYhzz4JQ6g4"
+            "title": "Primal Scream - Swastika Eyes (Jagz Kooner Mix) (audio only)",
+            "description": "Primal Scream - Swastika Eyes (Jagz Kooner Mix) (audio only)",
+            "uri": "https:\/\/www.youtube.com\/watch?v=xlFA3uc-JLI"
         },
         {
-            "duration": 321,
+            "duration": 427,
             "embed": true,
-            "title": "Mark Lanegan - Come to Me.",
-            "description": "Mark Lanegan - Come to Me.",
-            "uri": "https:\/\/www.youtube.com\/watch?v=C1x5Q-9oN4I"
+            "title": "Primal Scream - Swastika Eyes",
+            "description": "Primal Scream - Swastika Eyes",
+            "uri": "https:\/\/www.youtube.com\/watch?v=DtAnM8YegF0"
         },
         {
-            "duration": 366,
+            "duration": 364,
             "embed": true,
-            "title": "Mark Lanegan Band - Methamphetamine Blues",
-            "description": "Mark Lanegan Band - Methamphetamine Blues",
-            "uri": "https:\/\/www.youtube.com\/watch?v=1zauhuZpEv8"
+            "title": "Primal Scream - Swastika Eyes (David Holmes Mix)",
+            "description": "Primal Scream - Swastika Eyes (David Holmes Mix)",
+            "uri": "https:\/\/www.youtube.com\/watch?v=8jdV2X_A85M"
         },
         {
-            "duration": 165,
+            "duration": 346,
             "embed": true,
-            "title": "Mark Lanegan - Out of Nowhere.",
-            "description": "Mark Lanegan - Out of Nowhere.",
-            "uri": "https:\/\/www.youtube.com\/watch?v=mGrMoKjGE1A"
+            "title": "Primal Scream - Swastika Eyes (David Holmes remix)",
+            "description": "Primal Scream - Swastika Eyes (David Holmes remix)",
+            "uri": "https:\/\/www.youtube.com\/watch?v=5aHOJnPCiiU"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "Beggars Banquet",
+            "name": "Creation Records",
             "entity_type": "1",
-            "catno": "BBQCD237",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/2056",
-            "id": 2056,
+            "catno": "CRE326T",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/1658",
+            "id": 1658,
             "entity_type_name": "Label"
         }
     ],
-    "year": 0,
+    "year": 1999,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 3,
-            "average": 5
+            "count": 44,
+            "average": 4.25
         },
-        "want": 3,
+        "want": 70,
         "contributors": [
             {
-                "username": "ivo6",
-                "resource_url": "https:\/\/api.discogs.com\/users\/ivo6"
+                "username": "mayday",
+                "resource_url": "https:\/\/api.discogs.com\/users\/mayday"
             },
             {
-                "username": "Ekdrm2d1",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Ekdrm2d1"
+                "username": "greenwoodgm",
+                "resource_url": "https:\/\/api.discogs.com\/users\/greenwoodgm"
             },
             {
-                "username": "bobpitman",
-                "resource_url": "https:\/\/api.discogs.com\/users\/bobpitman"
+                "username": "Mr.Mystery",
+                "resource_url": "https:\/\/api.discogs.com\/users\/Mr.Mystery"
+            },
+            {
+                "username": "ksdfjsldfj",
+                "resource_url": "https:\/\/api.discogs.com\/users\/ksdfjsldfj"
+            },
+            {
+                "username": "DiscogsUpdateBot",
+                "resource_url": "https:\/\/api.discogs.com\/users\/DiscogsUpdateBot"
             }
         ],
-        "have": 10,
+        "have": 317,
         "submitter": {
-            "username": "ivo6",
-            "resource_url": "https:\/\/api.discogs.com\/users\/ivo6"
+            "username": "mayday",
+            "resource_url": "https:\/\/api.discogs.com\/users\/mayday"
         },
         "data_quality": "Needs Vote"
     },
     "artists": [
         {
-            "join": ",",
-            "name": "Mark Lanegan Band",
+            "join": "",
+            "name": "Primal Scream",
             "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/267397",
-            "id": 267397
+            "resource_url": "https:\/\/api.discogs.com\/artists\/3852",
+            "id": 3852
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/api-img.discogs.com\/9AyQx2iQ38VnP6BElVZQfWwL0KU=\/fit-in\/600x592\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9947345-1494164346-1465.jpeg.jpg",
-            "height": 592,
+            "uri": "https:\/\/api-img.discogs.com\/essrZrqmVpv27okTbpChM_V_Tiw=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320350.jpeg.jpg",
+            "height": 598,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/9AyQx2iQ38VnP6BElVZQfWwL0KU=\/fit-in\/600x592\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9947345-1494164346-1465.jpeg.jpg",
+            "resource_url": "https:\/\/api-img.discogs.com\/essrZrqmVpv27okTbpChM_V_Tiw=\/fit-in\/600x598\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320350.jpeg.jpg",
             "type": "primary",
-            "uri150": "https:\/\/api-img.discogs.com\/C6tSok7SqFgygjbkBWfvosH1mfI=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9947345-1494164346-1465.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/pun9vvWNWEhjKuGhfht0BEycNmA=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320350.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/UmXsWd4vFs8m2SFCAyxgaCFfepw=\/fit-in\/600x468\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9947345-1494164346-5514.jpeg.jpg",
-            "height": 468,
+            "uri": "https:\/\/api-img.discogs.com\/tbCnGJrzR_bOjvtCKOXTmc957uo=\/fit-in\/599x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320364.jpeg.jpg",
+            "height": 602,
+            "width": 599,
+            "resource_url": "https:\/\/api-img.discogs.com\/tbCnGJrzR_bOjvtCKOXTmc957uo=\/fit-in\/599x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320364.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/pA0pZ7w2ML4vroSOmRwrg2zOO1o=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320364.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/6aCyWa8HtHlaiHIJbFfka3DL1x8=\/fit-in\/600x594\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320382.jpeg.jpg",
+            "height": 594,
             "width": 600,
-            "resource_url": "https:\/\/api-img.discogs.com\/UmXsWd4vFs8m2SFCAyxgaCFfepw=\/fit-in\/600x468\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9947345-1494164346-5514.jpeg.jpg",
+            "resource_url": "https:\/\/api-img.discogs.com\/6aCyWa8HtHlaiHIJbFfka3DL1x8=\/fit-in\/600x594\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1284320382.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/_zsv_NRKR02PsHyNmgz61_ckIYs=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9947345-1494164346-5514.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/REIHl2QVQj9-i-cM1K1UAAqT_54=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320382.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/api-img.discogs.com\/Ry9YK3HeNNJ5SXXYip9SWIfEzcc=\/fit-in\/596x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9947345-1494164345-1376.jpeg.jpg",
+            "uri": "https:\/\/api-img.discogs.com\/79kAWbb0m5exzFBILy1J9VjwQm8=\/fit-in\/597x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420876.jpeg.jpg",
             "height": 600,
-            "width": 596,
-            "resource_url": "https:\/\/api-img.discogs.com\/Ry9YK3HeNNJ5SXXYip9SWIfEzcc=\/fit-in\/596x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9947345-1494164345-1376.jpeg.jpg",
+            "width": 597,
+            "resource_url": "https:\/\/api-img.discogs.com\/79kAWbb0m5exzFBILy1J9VjwQm8=\/fit-in\/597x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420876.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/api-img.discogs.com\/LVGbOGY8rCH8E4ccIedoIWq6oqc=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9947345-1494164345-1376.jpeg.jpg"
+            "uri150": "https:\/\/api-img.discogs.com\/VUVOyYG1B1tJ2FTw6hB-Aur8UoU=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1148420876.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/api-img.discogs.com\/miOS9vJr0R0w35Aq_cbnYOKoJNg=\/fit-in\/588x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420890.jpeg.jpg",
+            "height": 600,
+            "width": 588,
+            "resource_url": "https:\/\/api-img.discogs.com\/miOS9vJr0R0w35Aq_cbnYOKoJNg=\/fit-in\/588x600\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-9145-1148420890.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/api-img.discogs.com\/PLKm8Sctdwd7vas-zySHEnDpOI4=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1148420890.jpeg.jpg"
         }
     ],
     "format_quantity": 1,
-    "id": 9947345,
+    "id": 9145,
     "genres": [
-        "Rock"
+        "Electronic"
     ],
-    "thumb": "https:\/\/api-img.discogs.com\/C6tSok7SqFgygjbkBWfvosH1mfI=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9947345-1494164346-1465.jpeg.jpg",
-    "num_for_sale": 0,
-    "title": "Bubblegum",
-    "date_changed": "2017-06-21T05:10:20-07:00",
-    "master_id": 34766,
-    "lowest_price": null,
+    "thumb": "https:\/\/api-img.discogs.com\/pun9vvWNWEhjKuGhfht0BEycNmA=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-9145-1284320350.jpeg.jpg",
+    "num_for_sale": 16,
+    "title": "Swastika Eyes",
+    "date_changed": "2013-03-17T10:31:07-07:00",
+    "master_id": 123417,
+    "lowest_price": 1.68,
     "styles": [
-        "Alternative Rock",
-        "Folk Rock"
+        "House",
+        "Techno"
     ],
+    "released_formatted": "15 Nov 1999",
     "formats": [
         {
             "qty": "1",
             "descriptions": [
-                "Album",
-                "Reissue",
-                "Repress"
+                "12\"",
+                "Single"
             ],
-            "name": "CD"
+            "name": "Vinyl"
         }
     ],
-    "estimated_weight": 85,
-    "master_url": "https:\/\/api.discogs.com\/masters\/34766",
-    "date_added": "2017-03-09T00:12:58-08:00",
+    "estimated_weight": 230,
+    "master_url": "https:\/\/api.discogs.com\/masters\/123417",
+    "released": "1999-11-15",
+    "date_added": "2001-08-23T00:50:01-07:00",
     "extraartists": [
         {
             "join": "",
-            "name": "Roger Trust",
+            "name": "Julian House",
+            "anv": "House",
+            "tracks": "",
+            "role": "Design [Sleeve]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/665965",
+            "id": 665965
+        },
+        {
+            "join": "",
+            "name": "Miles Showell",
             "anv": "",
             "tracks": "",
-            "role": "A&R",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/635162",
-            "id": 635162
+            "role": "Mastered By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/383408",
+            "id": 383408
         },
         {
             "join": "",
-            "name": "Susan McEowen",
+            "name": "Primal Scream",
             "anv": "",
             "tracks": "",
-            "role": "Art Direction, Design",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1851313",
-            "id": 1851313
-        },
-        {
-            "join": "",
-            "name": "Helter Skelter Agency",
-            "anv": "",
-            "tracks": "",
-            "role": "Booking [Rest Of The World]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2972684",
-            "id": 2972684
-        },
-        {
-            "join": "",
-            "name": "Steve Strange (2)",
-            "anv": "",
-            "tracks": "",
-            "role": "Booking [Rest Of The World]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/1687004",
-            "id": 1687004
-        },
-        {
-            "join": "",
-            "name": "Robby Fraser",
-            "anv": "",
-            "tracks": "",
-            "role": "Booking [US]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/923258",
-            "id": 923258
-        },
-        {
-            "join": "",
-            "name": "William Morris (6)",
-            "anv": "",
-            "tracks": "",
-            "role": "Booking [US]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2048892",
-            "id": 2048892
-        },
-        {
-            "join": "",
-            "name": "Davis, Shapiro, Lewit, Montone & Hayes, LLP",
-            "anv": "",
-            "tracks": "",
-            "role": "Legal",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/3856236",
-            "id": 3856236
-        },
-        {
-            "join": "",
-            "name": "Ian Montone",
-            "anv": "",
-            "tracks": "",
-            "role": "Legal",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/513222",
-            "id": 513222
-        },
-        {
-            "join": "",
-            "name": "Mae Ho",
-            "anv": "",
-            "tracks": "",
-            "role": "Legal",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2982825",
-            "id": 2982825
-        },
-        {
-            "join": "",
-            "name": "Benchmark Entertainment",
-            "anv": "",
-            "tracks": "",
-            "role": "Management",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2018672",
-            "id": 2018672
-        },
-        {
-            "join": "",
-            "name": "Beth Sabbagh",
-            "anv": "",
-            "tracks": "",
-            "role": "Management [Business]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2002004",
-            "id": 2002004
-        },
-        {
-            "join": "",
-            "name": "Laurie Davis (2)",
-            "anv": "",
-            "tracks": "",
-            "role": "Management [Business]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2615916",
-            "id": 2615916
-        },
-        {
-            "join": "",
-            "name": "VWC",
-            "anv": "VWC Management",
-            "tracks": "",
-            "role": "Management [Business]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/3770023",
-            "id": 3770023
-        },
-        {
-            "join": "",
-            "name": "Alain Johannes",
-            "anv": "",
-            "tracks": "11 to 14",
-            "role": "Mixed By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
-            "id": 246473
-        },
-        {
-            "join": "",
-            "name": "Mathias Schneeberger",
-            "anv": "Mathias Schneeburger",
-            "tracks": "8, 15",
-            "role": "Mixed By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/354128",
-            "id": 354128
-        },
-        {
-            "join": "",
-            "name": "Rick Will",
-            "anv": "",
-            "tracks": "1 to 7, 9, 10",
-            "role": "Mixed By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/128785",
-            "id": 128785
-        },
-        {
-            "join": "",
-            "name": "Anna Hrnjak",
-            "anv": "",
-            "tracks": "",
-            "role": "Photography By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/2301828",
-            "id": 2301828
-        },
-        {
-            "join": "",
-            "name": "Alain Johannes",
-            "anv": "",
-            "tracks": "11 to 14",
-            "role": "Producer",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
-            "id": 246473
-        },
-        {
-            "join": "",
-            "name": "Chris Goss",
-            "anv": "",
-            "tracks": "1 to 6, 9, 10",
-            "role": "Producer",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/250740",
-            "id": 250740
-        },
-        {
-            "join": "",
-            "name": "Mark Lanegan",
-            "anv": "",
-            "tracks": "",
-            "role": "Producer",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/190551",
-            "id": 190551
-        },
-        {
-            "join": "",
-            "name": "Alain Johannes",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
-            "id": 246473
-        },
-        {
-            "join": "",
-            "name": "Aldo Struyf",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
-            "id": 345029
-        },
-        {
-            "join": "",
-            "name": "Brian Baker (2)",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/825127",
-            "id": 825127
-        },
-        {
-            "join": "",
-            "name": "David Catching",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
-            "id": 267400
-        },
-        {
-            "join": "",
-            "name": "Jonas G.",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/968126",
-            "id": 968126
-        },
-        {
-            "join": "",
-            "name": "Mathias Schneeberger",
-            "anv": "Mathias Schneeburger",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/354128",
-            "id": 354128
-        },
-        {
-            "join": "",
-            "name": "Pete Martinez",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/378452",
-            "id": 378452
-        },
-        {
-            "join": "",
-            "name": "Rail Rogut",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/358741",
-            "id": 358741
-        },
-        {
-            "join": "",
-            "name": "Rick Miller",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/304778",
-            "id": 304778
-        },
-        {
-            "join": "",
-            "name": "Rick Will",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/128785",
-            "id": 128785
-        },
-        {
-            "join": "",
-            "name": "Tracy Chisholm",
-            "anv": "",
-            "tracks": "",
-            "role": "Recorded By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/277153",
-            "id": 277153
-        },
-        {
-            "join": "",
-            "name": "Mark Lanegan",
-            "anv": "",
-            "tracks": "",
-            "role": "Written-By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/190551",
-            "id": 190551
+            "role": "Written-By, Recorded By",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/3852",
+            "id": 3852
         }
     ],
     "tracklist": [
         {
-            "duration": "3:01",
-            "position": "1",
+            "duration": "7:09",
+            "position": "A",
             "type_": "track",
             "extraartists": [
                 {
                     "join": "",
-                    "name": "Molly McGuire",
+                    "name": "Cheeky Paul",
                     "anv": "",
                     "tracks": "",
-                    "role": "Bass",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267395",
-                    "id": 267395
+                    "role": "Edited By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/251222",
+                    "id": 251222
                 },
                 {
                     "join": "",
-                    "name": "Aldo Struyf",
+                    "name": "Steve Dub",
                     "anv": "",
                     "tracks": "",
-                    "role": "Effects [Feedback]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
-                    "id": 345029
+                    "role": "Engineer",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/45017",
+                    "id": 45017
                 },
                 {
                     "join": "",
-                    "name": "Chris Goss",
+                    "name": "The Chemical Brothers",
                     "anv": "",
                     "tracks": "",
-                    "role": "Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/250740",
-                    "id": 250740
+                    "role": "Producer [Additional Production]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/2290",
+                    "id": 2290
                 },
                 {
                     "join": "",
-                    "name": "David Catching",
-                    "anv": "",
+                    "name": "The Chemical Brothers",
+                    "anv": "Chemical Brothers",
                     "tracks": "",
-                    "role": "Organ",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
-                    "id": 267400
-                },
-                {
-                    "join": "",
-                    "name": "Wendy Rae Fowler",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Piano",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
-                    "id": 267393
-                },
-                {
-                    "join": "",
-                    "name": "Tracy Chisholm",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Tape [Manipulation]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/277153",
-                    "id": 277153
+                    "role": "Remix",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/2290",
+                    "id": 2290
                 }
             ],
-            "title": "When Your Number Isn't Up"
+            "title": "Swastika Eyes (Chemical Brothers Mix)"
         },
         {
-            "duration": "2:49",
-            "position": "2",
+            "duration": "8:10",
+            "position": "B",
             "type_": "track",
             "extraartists": [
                 {
                     "join": "",
-                    "name": "Ian Moore",
+                    "name": "Jagz Kooner",
                     "anv": "",
                     "tracks": "",
-                    "role": "Backing Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/325118",
-                    "id": 325118
+                    "role": "Producer [Additional Production], Mixed By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/9660",
+                    "id": 9660
                 },
                 {
                     "join": "",
-                    "name": "Keni Richards",
+                    "name": "Jagz Kooner",
                     "anv": "",
                     "tracks": "",
-                    "role": "Drums",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/710141",
-                    "id": 710141
-                },
-                {
-                    "join": "",
-                    "name": "Josh Homme",
-                    "anv": "Joshua Homme",
-                    "tracks": "",
-                    "role": "Drums, Bass",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
-                    "id": 241002
-                },
-                {
-                    "join": "",
-                    "name": "Jim Vincent (2)",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Electronic Drums",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/1170178",
-                    "id": 1170178
-                },
-                {
-                    "join": "",
-                    "name": "David Catching",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
-                    "id": 267400
-                },
-                {
-                    "join": "",
-                    "name": "Mike Johnson (8)",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Lead Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/617608",
-                    "id": 617608
-                },
-                {
-                    "join": "",
-                    "name": "Bukka Allen",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Organ",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/686393",
-                    "id": 686393
-                },
-                {
-                    "join": "",
-                    "name": "PJ Harvey",
-                    "anv": "Polly Harvey",
-                    "tracks": "",
-                    "role": "Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/36052",
-                    "id": 36052
+                    "role": "Remix",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/9660",
+                    "id": 9660
                 }
             ],
-            "title": "Hit The City"
-        },
-        {
-            "duration": "3:07",
-            "position": "3",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Josh Homme",
-                    "anv": "Joshua Homme",
-                    "tracks": "",
-                    "role": "Bass, Lead Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
-                    "id": 241002
-                },
-                {
-                    "join": "",
-                    "name": "Tracy Chisholm",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drum Machine",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/277153",
-                    "id": 277153
-                },
-                {
-                    "join": "",
-                    "name": "David Catching",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
-                    "id": 267400
-                },
-                {
-                    "join": "",
-                    "name": "Aldo Struyf",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Synthesizer",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
-                    "id": 345029
-                },
-                {
-                    "join": "",
-                    "name": "Wendy Rae Fowler",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
-                    "id": 267393
-                }
-            ],
-            "title": "Wedding Dress"
-        },
-        {
-            "duration": "3:16",
-            "position": "4",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Brett Netson",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Backing Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/335202",
-                    "id": 335202
-                },
-                {
-                    "join": "",
-                    "name": "Greg Dulli",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Backing Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/24071",
-                    "id": 24071
-                },
-                {
-                    "join": "",
-                    "name": "Molly McGuire",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Backing Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267395",
-                    "id": 267395
-                },
-                {
-                    "join": "",
-                    "name": "Natasha Shneider",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Backing Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/260874",
-                    "id": 260874
-                },
-                {
-                    "join": "",
-                    "name": "Nick Oliveri",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Backing Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/252692",
-                    "id": 252692
-                },
-                {
-                    "join": "",
-                    "name": "Wendy Rae Fowler",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Backing Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
-                    "id": 267393
-                },
-                {
-                    "join": "",
-                    "name": "Jonathan Russo",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/937681",
-                    "id": 937681
-                },
-                {
-                    "join": "",
-                    "name": "Josh Homme",
-                    "anv": "Joshua Homme",
-                    "tracks": "",
-                    "role": "Bass, Guitar, Drums",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
-                    "id": 241002
-                },
-                {
-                    "join": "",
-                    "name": "Alain Johannes",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Lead Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
-                    "id": 246473
-                },
-                {
-                    "join": "",
-                    "name": "David Catching",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Lead Guitar, Rhythm Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
-                    "id": 267400
-                },
-                {
-                    "join": "",
-                    "name": "Aldo Struyf",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Synthesizer",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
-                    "id": 345029
-                },
-                {
-                    "join": "",
-                    "name": "Tracy Chisholm",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Tape [Manipulation]",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/277153",
-                    "id": 277153
-                }
-            ],
-            "title": "Methamphetamine Blues"
-        },
-        {
-            "duration": "4:36",
-            "position": "5",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Josh Homme",
-                    "anv": "Joshua Homme",
-                    "tracks": "",
-                    "role": "Bass, Drums",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
-                    "id": 241002
-                },
-                {
-                    "join": "",
-                    "name": "David Catching",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Lead Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
-                    "id": 267400
-                },
-                {
-                    "join": "",
-                    "name": "Aldo Struyf",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Synthesizer, Piano, Organ",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
-                    "id": 345029
-                },
-                {
-                    "join": "",
-                    "name": "Chris Goss",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Vocals, Guitar, Piano",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/250740",
-                    "id": 250740
-                }
-            ],
-            "title": "One Hundred Days"
-        },
-        {
-            "duration": "1:09",
-            "position": "6",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Mark Lanegan",
-                    "anv": "Lanegan",
-                    "tracks": "",
-                    "role": "Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/190551",
-                    "id": 190551
-                },
-                {
-                    "join": "",
-                    "name": "Wendy Rae Fowler",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
-                    "id": 267393
-                }
-            ],
-            "title": "Bombed"
-        },
-        {
-            "duration": "4:08",
-            "position": "7",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Nick Oliveri",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass, Choir",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/252692",
-                    "id": 252692
-                },
-                {
-                    "join": "",
-                    "name": "Chris Goss",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Choir",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/250740",
-                    "id": 250740
-                },
-                {
-                    "join": "",
-                    "name": "Wendy Rae Fowler",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Choir",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267393",
-                    "id": 267393
-                },
-                {
-                    "join": "",
-                    "name": "Joey Castillo",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drums",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267399",
-                    "id": 267399
-                },
-                {
-                    "join": "",
-                    "name": "Troy Van Leeuwen",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Piano, Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/242801",
-                    "id": 242801
-                },
-                {
-                    "join": "",
-                    "name": "Aldo Struyf",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Tape [Manipulation], Synthesizer",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
-                    "id": 345029
-                },
-                {
-                    "join": "",
-                    "name": "Duff McKagan",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/304414",
-                    "id": 304414
-                },
-                {
-                    "join": "",
-                    "name": "Izzy Stradlin",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267394",
-                    "id": 267394
-                }
-            ],
-            "title": "Strange Religion"
-        },
-        {
-            "duration": "2:46",
-            "position": "8",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Eddi Nappi",
-                    "anv": "Eddie Nappi",
-                    "tracks": "",
-                    "role": "Bass",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/643952",
-                    "id": 643952
-                },
-                {
-                    "join": "",
-                    "name": "Dimitri Coats",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drums, Lead Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267392",
-                    "id": 267392
-                },
-                {
-                    "join": "",
-                    "name": "John Kastner",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Guitar, Backing Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267391",
-                    "id": 267391
-                },
-                {
-                    "join": "",
-                    "name": "Mathias Schneeberger",
-                    "anv": "Mathias Schneeburger",
-                    "tracks": "",
-                    "role": "Guitar, Backing Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/354128",
-                    "id": 354128
-                }
-            ],
-            "title": "Sideways In Reverse"
-        },
-        {
-            "duration": "3:45",
-            "position": "9",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Troy Van Leeuwen",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/242801",
-                    "id": 242801
-                },
-                {
-                    "join": "",
-                    "name": "Josh Homme",
-                    "anv": "Joshua Homme",
-                    "tracks": "",
-                    "role": "Guitar, Lead Guitar, Bass, Drums",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/241002",
-                    "id": 241002
-                },
-                {
-                    "join": "",
-                    "name": "Aldo Struyf",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Synthesizer",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
-                    "id": 345029
-                },
-                {
-                    "join": "",
-                    "name": "PJ Harvey",
-                    "anv": "Polly Harvey",
-                    "tracks": "",
-                    "role": "Vocals",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/36052",
-                    "id": 36052
-                }
-            ],
-            "title": "Come To Me"
-        },
-        {
-            "duration": "3:53",
-            "position": "10",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Molly McGuire",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267395",
-                    "id": 267395
-                },
-                {
-                    "join": "",
-                    "name": "Tracy Chisholm",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drum Machine",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/277153",
-                    "id": 277153
-                },
-                {
-                    "join": "",
-                    "name": "David Catching",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Guitar, Lead Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
-                    "id": 267400
-                },
-                {
-                    "join": "",
-                    "name": "Aldo Struyf",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Organ, Synthesizer",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
-                    "id": 345029
-                }
-            ],
-            "title": "Like Little Willie John"
-        },
-        {
-            "duration": "3:37",
-            "position": "11",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Alain Johannes",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass, Guitar, Drums, Electronic Drums, Strings, Synthesizer",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
-                    "id": 246473
-                }
-            ],
-            "title": "Can't Come Down"
-        },
-        {
-            "duration": "4:27",
-            "position": "12",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Alain Johannes",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass, Guitar, Drums, Backing Vocals, Keyboards",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
-                    "id": 246473
-                }
-            ],
-            "title": "Morning Glory Wine"
-        },
-        {
-            "duration": "3:05",
-            "position": "13",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Alain Johannes",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass, Guitar, Drums, Keyboards",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
-                    "id": 246473
-                },
-                {
-                    "join": "",
-                    "name": "Aldo Struyf",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Synthesizer",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/345029",
-                    "id": 345029
-                }
-            ],
-            "title": "Head"
-        },
-        {
-            "duration": "2:49",
-            "position": "14",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Alain Johannes",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass, Guitar, Drums, Organ, Electronic Drums",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/246473",
-                    "id": 246473
-                }
-            ],
-            "title": "Driving Death Valley Blues"
-        },
-        {
-            "duration": "2:43",
-            "position": "15",
-            "type_": "track",
-            "extraartists": [
-                {
-                    "join": "",
-                    "name": "Melanie Campbell",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Bass",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/634755",
-                    "id": 634755
-                },
-                {
-                    "join": "",
-                    "name": "Dimitri Coats",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Drums, Lead Guitar, Piano",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267392",
-                    "id": 267392
-                },
-                {
-                    "join": "",
-                    "name": "John Kastner",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267391",
-                    "id": 267391
-                },
-                {
-                    "join": "",
-                    "name": "David Catching",
-                    "anv": "",
-                    "tracks": "",
-                    "role": "Lead Guitar",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/267400",
-                    "id": 267400
-                },
-                {
-                    "join": "",
-                    "name": "Mathias Schneeberger",
-                    "anv": "Mathias Schneeburger",
-                    "tracks": "",
-                    "role": "Piano",
-                    "resource_url": "https:\/\/api.discogs.com\/artists\/354128",
-                    "id": 354128
-                }
-            ],
-            "title": "Out Of Nowhere"
+            "title": "Swastika Eyes (Spectre Mix)"
         }
     ],
-    "notes": "This release has \"Made in the UK\" printed on back cover, rear booklet and disc.\nThis release is pressed by [l504648] NOT [l265781] but otherwise is the same as [r9850874] with minor BAOI differences.\nAlso similar to [r389427] which is pressed by [l95728].\n\nRecorded at various locations 2003-2004 including: Rancho de la Luna, Joshua Tree, CA; Sound City, Los Angeles, CA; Stagg Street, Los Angeles, CA; Lethal, Los Angeles, CA; Donner and Blitzen, Arcadia, CA; 11 a.d., Hollywood, CA; Sound Arts, Houston, TX; Kudzu Ranch, Mebane, NC; Del Boca Vista, South Pasadena, CA.\n\nDemo version of \"Hit The City\" from which elements of Track 2 were taken, was produced by [a322795].\n\nAll songs: Ripplestick Music BMI\/Heavenly Songs\/EMI Music except tracks 2 & 4 Ripplestick Music BMI\/Justice Artists Music BMI administered by Windswept\/Heavenly Songs\/EMI Music.\n\n\u2117 2004 Beggars Banquet Records Ltd\n\u00a9 2004 Beggars Banquet Records Ltd\n",
+    "notes": "Published by EMI\/Copyright Control\/Complete Music\r\n\u2117 & \u00a9 1999 Creation Records Ltd\r\n\r\n",
     "identifiers": [
         {
             "type": "Barcode",
-            "description": "Text",
-            "value": "6 07618 02372 0"
-        },
-        {
-            "type": "Barcode",
-            "description": "Scanned",
-            "value": "607618023720"
+            "description": "Printed",
+            "value": "5 017556 203262"
         },
         {
             "type": "Matrix \/ Runout",
-            "value": "[arvato logo] 51130810\/BBQCD237 23"
+            "description": "Run-out Side A",
+            "value": "CRE 326 T A-01-1-1 | USUAL RUBBISH ? | Miles."
         },
         {
-            "type": "Mastering SID Code",
-            "value": "IFPI LP 73"
-        },
-        {
-            "type": "Mould SID Code",
-            "value": "IFPI 0776"
-        },
-        {
-            "type": "Label Code",
-            "value": "LC05485"
+            "type": "Matrix \/ Runout",
+            "description": "Run-out Side B",
+            "value": "CRE 326 T B-01-1-1 | IT'LL ROT YOUR BOOTS. | MILES."
         }
     ],
     "companies": [
         {
-            "name": "Beggars Banquet Records Ltd.",
-            "entity_type": "14",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/264262",
-            "id": 264262,
-            "entity_type_name": "Copyright (c)"
-        },
-        {
-            "name": "Beggars Banquet Records Ltd.",
+            "name": "Creation Records Ltd.",
             "entity_type": "13",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/264262",
-            "id": 264262,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/105755",
+            "id": 105755,
             "entity_type_name": "Phonographic Copyright (p)"
         },
         {
-            "name": "Ripplestick Music",
+            "name": "Creation Records Ltd.",
+            "entity_type": "14",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/105755",
+            "id": 105755,
+            "entity_type_name": "Copyright (c)"
+        },
+        {
+            "name": "EMI Music Publishing",
             "entity_type": "21",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/288281",
-            "id": 288281,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/155248",
+            "id": 155248,
             "entity_type_name": "Published By"
         },
         {
-            "name": "Heavenly Songs",
+            "name": "Copyright Control",
             "entity_type": "21",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/384228",
-            "id": 384228,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/48207",
+            "id": 48207,
             "entity_type_name": "Published By"
         },
         {
-            "name": "EMI Music",
+            "name": "Complete Music Ltd.",
             "entity_type": "21",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/45746",
-            "id": 45746,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/266936",
+            "id": 266936,
             "entity_type_name": "Published By"
         },
         {
-            "name": "Justice Artists Music",
-            "entity_type": "21",
+            "name": "Metropolis Mastering",
+            "entity_type": "29",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/330762",
-            "id": 330762,
-            "entity_type_name": "Published By"
+            "resource_url": "https:\/\/api.discogs.com\/labels\/181778",
+            "id": 181778,
+            "entity_type_name": "Mastered At"
         },
         {
-            "name": "Windswept",
-            "entity_type": "21",
+            "name": "Intro (11)",
+            "entity_type": "33",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/124865",
-            "id": 124865,
-            "entity_type_name": "Published By"
-        },
-        {
-            "name": "Rancho De La Luna",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/264304",
-            "id": 264304,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Sound City Studios",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/269124",
-            "id": 269124,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Stagg Street Studio",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/333251",
-            "id": 333251,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Lethal Studios (3)",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/340987",
-            "id": 340987,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Donner & Blitzen Studios",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/279292",
-            "id": 279292,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "11AD",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/315959",
-            "id": 315959,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Sound Arts Recording Studio",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/289090",
-            "id": 289090,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Kudzu Ranch",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/329400",
-            "id": 329400,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Del Boca Vista",
-            "entity_type": "23",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/340988",
-            "id": 340988,
-            "entity_type_name": "Recorded At"
-        },
-        {
-            "name": "Arvato",
-            "entity_type": "17",
-            "catno": "51130810",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/504648",
-            "id": 504648,
-            "entity_type_name": "Pressed By"
+            "resource_url": "https:\/\/api.discogs.com\/labels\/290391",
+            "id": 290391,
+            "entity_type_name": "Designed At"
         }
     ],
-    "uri": "https:\/\/www.discogs.com\/Mark-Lanegan-Band-Bubblegum\/release\/9947345",
-    "country": "Europe",
-    "resource_url": "https:\/\/api.discogs.com\/releases\/9947345",
+    "uri": "https:\/\/www.discogs.com\/Primal-Scream-Swastika-Eyes\/release\/9145",
+    "country": "UK",
+    "resource_url": "https:\/\/api.discogs.com\/releases\/9145",
     "data_quality": "Needs Vote"
 }

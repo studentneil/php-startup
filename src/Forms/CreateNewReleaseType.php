@@ -143,6 +143,11 @@ class CreateNewReleaseType extends AbstractType
                     'max' => 10,
                     'placeholder' => 'Between 1 and 10',
                 ),
+            ))
+            ->add('barcode', TextType::class, array(
+                'constraints' => array(
+                    new Assert\NotBlank()
+                )
             ));
     }
 }

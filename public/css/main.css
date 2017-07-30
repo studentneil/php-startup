@@ -261,10 +261,10 @@ h1,h2 {
     background-color: #242E38;
 }
 
-#contactModal {
-    max-height: 98%;
-    width: 96%;
-}
+/*#contactModal {*/
+    /*max-height: 98%;*/
+    /*width: 96%;*/
+/*}*/
 
 .action_button {
     padding-top: 4%;
@@ -283,6 +283,12 @@ h1,h2 {
 }
 .row .home_sections {
     padding: 0;
+}
+
+.card .card-image .card-title {
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 @media (min-width: 600px) {
     .brand-logo {
@@ -310,10 +316,10 @@ h1,h2 {
 
 
 
-    #contactModal {
-        max-height: 70%;
-        width: 50%;
-    }
+    /*#contactModal {*/
+        /*max-height: 70%;*/
+        /*width: 50%;*/
+    /*}*/
 
     .action_button {
         padding-top: 2%;

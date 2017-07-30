@@ -1,19 +1,19 @@
 <div class="row">
     <div class="col s12 m6">
-        <h1 class="white-text flow-text">The Record Box</h1>
+        <h1 class="flow-text">The Record Box</h1>
         <ul class="footer_nav">
             <li><a class="grey-text text-lighten-3 waves-effect waves-light" href="/home">Home</a></li>
             <li><a class="grey-text text-lighten-3 waves-effect waves-light" href="/vinyl">Vinyl</a></li>
-            <li><a class="grey-text text-lighten-3 waves-effect waves-light" href="#shippingModal">Shipping Rates</a></li>
+            <li><a class="grey-text text-lighten-3 waves-effect waves-light modal-trigger" href="#shippingModal">Shipping Rates</a></li>
 
-            <li><a class="grey-text text-lighten-3 waves-effect waves-light" href="#gradingModal">Record Grading Guide</a></li>
+            <li><a class="grey-text text-lighten-3 waves-effect waves-light modal-trigger" href="#gradingModal">Record Grading Guide</a></li>
 
             <li><a class="grey-text text-lighten-3 waves-effect waves-green" href="/faq">FAQ</a></li>
         </ul>
     </div>
     <div class="col s12 m6 footer_nav">
         <ul>
-            <li><a href="#contactModal" class="waves-light waves-effect btn">Get in touch</a></li>
+            <li><a href="#contactModal" class="waves-light waves-effect btn modal-trigger">Get in touch</a></li>
             <li><a href="https://twitter.com/TherecordboxIE?lang=en"><i class="icon ion-social-twitter"></i></a>
                 <a href="https://www.facebook.com/The-recordboxie-1385859948162045/"><i class="icon ion-social-facebook"></i></a>
             </li>
@@ -24,7 +24,7 @@
 
     {# shipping rates modal #}
     <div id="shippingModal" class="modal modal-fixed-footer">
-        <div class="modal-content">
+        <div class="modal-content black-text">
             <h2 class="track_header grey lighten-4 flow-text">Shipping Rates</h2>
             <div class="col s12 m12">
                 <h4 class="flow-text">Ireland</h4>
@@ -43,7 +43,7 @@
 
     {# record grading guide modal #}
     <div id="gradingModal" class="modal modal-fixed-footer">
-        <div class="modal-content">
+        <div class="modal-content black-text">
             <h2 class="track_header grey lighten-4 flow-text">Record Grading Guide</h2>
             <div class="col s12 m12">
                 <p>New - Brand new, still sealed.</p>
@@ -64,8 +64,8 @@
     </div>
 
     {# contact form modal #}
-    <div id="contactModal" class="modal">
-        <div class="modal-content">
+    <div id="contactModal" class="modal modal-fixed-footer">
+        <div class="modal-content black-text">
             {{ render(controller('VinylStore\\Controllers\\ContactFormController::contactFormAction')) }}
         </div>
         <div class="modal-footer">
