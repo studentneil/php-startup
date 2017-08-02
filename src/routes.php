@@ -16,6 +16,7 @@ $app->get('/vinyl/{genre}/page/{page}', 'VinylStore\\Controllers\\MainController
 $app->match('/refine', 'VinylStore\\Controllers\\MainController::refineAction');
 $app->get('/faq', 'VinylStore\\Controllers\\MainController::faqAction');
 $app->post('/contact', 'VinylStore\\Controllers\\ContactFormController::sendContactFormAction');
+$app->get('/randomise', 'VinylStore\\Controllers\\RandomiseController::randomiseAction');
 $app->get('/vinyl/page/{page}', 'VinylStore\\Controllers\\MainController::getVinylAction')->value('page', '1');
 $app->post('/snip-webhook', 'VinylStore\\Controllers\\SnipCartController::getWebHookAction');
 $app->post('/snip-shippingRates-webhook', 'VinylStore\\Controllers\\SnipCartController::getShippingRatesAction');

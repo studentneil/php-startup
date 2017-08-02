@@ -12,7 +12,6 @@ use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use VinylStore\Forms\ContactFormType;
 
-
 class ContactFormController
 {
     public function contactFormAction(Request $request, Application $app)

@@ -47,9 +47,30 @@ $(document).ready(function() {
                console.log(response);
                 $('#message').html('<p>' + response + '</p>');
             }
-        })
-    }
+            })
+        }
     )
+    $('#randomiser').on('click', function (e) {
+        e.preventDefault();
+        // alternative way to call the randomise function
+        // $.get( '/randomise', function( data ) {
+        //     $( '#randomRelease' ).html( data );
+        // });
+
+        var success = function( resp ) {
+                console.log(resp);
+                $('#randomRelease').html(resp);
+        };
+        var err = function( req, status, err ) {
+            console.log(status);
+            $('#randomRelease').html(status);
+        };
+        $.ajax({
+            type: 'get',
+            url: '/randomise',
+            // dataType: 'json'
+        }).done(success).fail(err);
+    })
 
 });
 

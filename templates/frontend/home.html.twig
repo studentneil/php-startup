@@ -72,7 +72,7 @@
             {% endif %}
 
             <div class="col m4 s12">
-                <a href="/vinyl/rock" class="waves-effect btn">rock</a>
+                <a href="/vinyl/rock" class="waves-effect btn white black-text">rock</a>
             </div>
         </div>
 
@@ -93,7 +93,7 @@
             {% endif %}
 
             <div class="col m4 s12">
-                <a href="/vinyl/electronic" class="waves-effect btn">Electronic</a>
+                <a href="/vinyl/electronic" class="waves-effect btn white black-text">electronic</a>
             </div>
         </div>
     </div>
@@ -115,7 +115,7 @@
             {% endif %}
 
             <div class="col m4 s12">
-                <a href="/vinyl/classic-rock" class="waves-effect btn">Classic Rock</a>
+                <a href="/vinyl/classic-rock" class="waves-effect btn white black-text">Classic Rock</a>
             </div>
         </div>
         {# the random vinyl section #}
@@ -124,14 +124,17 @@
                 <h2 class="flow-text">Random Vinyl</h2>
             </div>
 
-            {% if random_release is defined %}
-                {% for release in random_release %}
+            {#{% if random_release is defined %}#}
+                {#{% for release in random_release %}#}
                     <div class="col m6 s6">
-                        {% include 'frontend/partials/releaseView.html.twig' %}
+                        {{ render(controller('VinylStore\\Controllers\\RandomiseController::randomiseAction')) }}
+                        {#{% include 'frontend/partials/releaseView.html.twig' %}#}
                     </div>
-                {% endfor %}
-            {% endif %}
-
+                {#{% endfor %}#}
+            {#{% endif %}#}
+            <div class="col m4 s12">
+                <a id="randomiser" href="#" class="waves-effect btn white black-text">Randomise</a>
+            </div>
         </div>
     </div>
     <div class="spacer"></div>

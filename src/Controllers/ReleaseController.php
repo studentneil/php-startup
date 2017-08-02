@@ -40,6 +40,8 @@ class ReleaseController
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
+
+
     public function editReleaseAction(Request $request, Application $app, $id)
     {
         $releaseData = $app['vinyl.repository']->findReleaseForEdit($id);

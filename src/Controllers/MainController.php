@@ -181,4 +181,9 @@ class MainController
 
         return $app['twig']->render('frontend/partials/refineForm.html.twig', array('form' => $form->createView()));
     }
+
+    public function randomiseAction(Request $request, Application $app)
+    {
+
+    }
 }
