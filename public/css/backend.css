@@ -51,6 +51,11 @@ span.badge {
     float: none;
 
 }
+.picker__select--year.browser-default {
+    opacity: 1;
+    height: 30px;
+    left: 50px;
+}
 @media (min-width: 600px) {
     span.badge {
         /*margin-left: 0;*/

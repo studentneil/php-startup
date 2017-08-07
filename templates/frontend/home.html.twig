@@ -6,143 +6,162 @@
 {% block title %}{% endblock %}
 
 {% block content %}
-    <div class="row">
-        {#<div class="col s12 m12">#}
-        <div class="header-image hero_text">
-            <h1 class="flow-text white-text">Online vinyl shop for record collectors, selectors and enthusiasts.<br>
-                Shop for your next vinyl..
-            </h1>
+<div class="row">
+    {#<div class="col s12 m12">#}
+    <div class="header-image hero_text">
+        <h1 class="flow-text white-text">Online vinyl shop for record collectors, selectors and enthusiasts.<br>
+            Shop for your next vinyl..
+        </h1>
+    </div>
+</div>
+
+{# the intro #}
+
+<div class="row">
+    {# intro and welcome panel #}
+    <div class="col s12 m10">
+        <div class="card-panel grey lighten-4">
+            <div class="card-content">
+                <h2 class="flow-text">Welcome</h2>
+                <p>Hello and welcome to The Record Box, Ireland's newest online vinyl shop. I stock a pretty eclectic range of used and new records so dig
+                    in and
+                    hopefully you can find a vinyl you like. I also try to ensure that <a href="#shippingModal" class="modal-trigger">shipping rates</a>
+                    <em>wont</em> be more
+                    expensive than the music
+                    you're buying.
+                </p>
+                <h2 class="flow-text">Packaging</h2>
+                <p>
+                    I use top quality record mailers for packaging and enclose all sold vinyl in a plastic re-sealable sleeve so your vinyl will be
+                    well
+                    protected in transit and protected from dust when it does arrive..
+                </p>
+            </div>
+        </div>
+    </div>
+    {# utility panel to provide info on an aspect of the site #}
+    <div class="col s12 m2">
+        <div class="card-panel black">
+            <div class="card-content white-text">
+                <h2 class="flow-text white-text">New Shipping Rates</h2>
+                <p>
+                    I've dropped shipping rates by 1 euro all across the board. Check out the <a href="#shippingModal" class="modal-trigger">new rates.</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="spacer"></div>
+
+
+{# the genre section #}
+
+<div class="row home_sections">
+    {# rock genre #}
+    <div class="col m6 s12 home_sections">
+        <div class="col m12 s12">
+            <h2 class="flow-text">Rock</h2>
+        </div>
+
+        {% if rock_releases is defined %}
+            {% for release in rock_releases %}
+                <div class="col m6 s6">
+                    {% include 'frontend/partials/releaseView.html.twig' %}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <div class="col m4 s12">
+            <a href="/vinyl/rock" class="waves-effect btn white black-text">rock</a>
         </div>
     </div>
 
-    {# the intro #}
 
-    <div class="row">
-        {# intro and welcome panel #}
-        <div class="col s12 m10">
-            <div class="card-panel grey lighten-4">
-                <div class="card-content">
-                    <h2 class="flow-text">Welcome</h2>
-                    <p>Hello and welcome to The Record Box, Ireland's newest online vinyl shop. I stock a pretty eclectic range of used and new records so dig
-                        in and
-                        hopefully you can find a vinyl you like. I also try to ensure that <a href="#shippingModal">shipping rates</a> <em>wont</em> be more
-                        expensive than the music
-                        you're buying.
-                    </p>
-                    <h2 class="flow-text">Packaging</h2>
-                    <p>
-                        I use top quality record mailers for packaging and enclose all sold vinyl in a plastic re-sealable sleeve so your vinyl will be
-                        well
-                        protected in transit.
-                    </p>
+    {##################################}
+    {# electronic genre #}
+    <div class="col m6 s12 home_sections">
+        <div class="col m12 s12">
+            <h2 class="flow-text">Electronic</h2>
+        </div>
+
+        {% if elec_releases is defined %}
+            {% for release in elec_releases %}
+                <div class="col m6 s6">
+                    {% include 'frontend/partials/releaseView.html.twig' %}
                 </div>
+            {% endfor %}
+        {% endif %}
+
+        <div class="col m4 s12">
+            <a href="/vinyl/electronic" class="waves-effect btn white black-text">electronic</a>
+        </div>
+    </div>
+</div>
+
+
+<div class="row home_sections">
+    {# classic rock genre #}
+    <div class="col m6 s12 home_sections">
+        <div class="col m12 s12">
+            <h2 class="flow-text">Classic Rock</h2>
+        </div>
+
+        {% if classic_releases is defined %}
+            {% for release in classic_releases %}
+                <div class="col m6 s6">
+                    {% include 'frontend/partials/releaseView.html.twig' %}
+                </div>
+            {% endfor %}
+        {% endif %}
+
+        <div class="col m4 s12">
+            <a href="/vinyl/classic-rock" class="waves-effect btn white black-text">Classic Rock</a>
+        </div>
+    </div>
+    {# the random vinyl section #}
+    <div class="col m6 s12 home_sections">
+        <div class="col m12 s12">
+            <h2 class="flow-text">Random Vinyl</h2>
+        </div>
+
+        {#{% if random_release is defined %}#}
+        {#{% for release in random_release %}#}
+        <div class="col m6 s6">
+            {{ render(controller('VinylStore\\Controllers\\RandomiseController::randomiseAction')) }}
+            {#{% include 'frontend/partials/releaseView.html.twig' %}#}
+        </div>
+        {#{% endfor %}#}
+        {#{% endif %}#}
+        <div class="col m4 s12">
+            <a id="randomiser" href="#" class="waves-effect btn white black-text">Randomise</a>
+        </div>
+    </div>
+</div>
+<div class="spacer"></div>
+
+<div class="row homepage_sections">
+    <div class="col m12 s12">
+    <div class="col m8 s12">
+        <div class="card-panel grey lighten-4">
+            <div class="card-content">
+                <h2 class="flow-text">Irish Artists</h2>
+                <p>Got an album you'd like to sell? Get in touch to find out how we can stock your vinyl.</p>
             </div>
         </div>
-        {# utility panel to provide info on an aspect of the site #}
-        <div class="col s12 m2">
+    </div>
+        <div class="col s12 m4">
             <div class="card-panel black">
                 <div class="card-content white-text">
                     <h2 class="flow-text white-text">Record Grading</h2>
-                    <p>Its tricky! And open to interpretation but I try and stick to the goldmine standard when <a href="#gradingModal">grading records.</a>
+                    <p>Its tricky! And open to interpretation but I try and stick to the goldmine standard when <a href="#gradingModal"
+                                                                                                                   class="modal-trigger">grading records
+                            .</a>
                         If theres a doubt, i grade downwards.
                     </p>
                 </div>
             </div>
         </div>
     </div>
-
-    <div class="spacer"></div>
-
-
-    {# the genre section #}
-
-    <div class="row home_sections">
-        {# rock genre #}
-        <div class="col m6 s12 home_sections">
-            <div class="col m12 s12">
-                <h2 class="flow-text">Rock</h2>
-            </div>
-
-            {% if rock_releases is defined %}
-                {% for release in rock_releases %}
-                    <div class="col m6 s6">
-                        {% include 'frontend/partials/releaseView.html.twig' %}
-                    </div>
-                {% endfor %}
-            {% endif %}
-
-            <div class="col m4 s12">
-                <a href="/vinyl/rock" class="waves-effect btn white black-text">rock</a>
-            </div>
-        </div>
-
-
-        {##################################}
-        {# electronic genre #}
-        <div class="col m6 s12 home_sections">
-            <div class="col m12 s12">
-                <h2 class="flow-text">Electronic</h2>
-            </div>
-
-            {% if elec_releases is defined %}
-                {% for release in elec_releases %}
-                    <div class="col m6 s6">
-                       {% include 'frontend/partials/releaseView.html.twig' %}
-                    </div>
-                {% endfor %}
-            {% endif %}
-
-            <div class="col m4 s12">
-                <a href="/vinyl/electronic" class="waves-effect btn white black-text">electronic</a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="row home_sections">
-        {# classic rock genre #}
-        <div class="col m6 s12 home_sections">
-            <div class="col m12 s12">
-                <h2 class="flow-text">Classic Rock</h2>
-            </div>
-
-            {% if classic_releases is defined %}
-                {% for release in classic_releases %}
-                    <div class="col m6 s6">
-                        {% include 'frontend/partials/releaseView.html.twig' %}
-                    </div>
-                {% endfor %}
-            {% endif %}
-
-            <div class="col m4 s12">
-                <a href="/vinyl/classic-rock" class="waves-effect btn white black-text">Classic Rock</a>
-            </div>
-        </div>
-        {# the random vinyl section #}
-        <div class="col m6 s12 home_sections">
-            <div class="col m12 s12">
-                <h2 class="flow-text">Random Vinyl</h2>
-            </div>
-
-            {#{% if random_release is defined %}#}
-                {#{% for release in random_release %}#}
-                    <div class="col m6 s6">
-                        {{ render(controller('VinylStore\\Controllers\\RandomiseController::randomiseAction')) }}
-                        {#{% include 'frontend/partials/releaseView.html.twig' %}#}
-                    </div>
-                {#{% endfor %}#}
-            {#{% endif %}#}
-            <div class="col m4 s12">
-                <a id="randomiser" href="#" class="waves-effect btn white black-text">Randomise</a>
-            </div>
-        </div>
-    </div>
-    <div class="spacer"></div>
-
-    <div class="row homepage_sections">
-        <div class="col m12 s12">
-            <h2 class="flow-text">Irish Artists</h2>
-            <p class="flow-text">Got an album you'd like to sell? Get in touch to find out how we can stock your vinyl.</p>
-        </div>
-    </div>
-{% endblock %}
+</div>
+    {% endblock %}

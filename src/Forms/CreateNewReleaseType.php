@@ -79,10 +79,11 @@ class CreateNewReleaseType extends AbstractType
                     new Assert\NotBlank(),
                 ),
                 'widget' => 'single_text',
+                'html5' => false,
                 'input' => 'string',
+                'format' => 'yyyy-MM-dd',
                 'attr' => array(
-                    'class' => 'datepicker',
-                    'placeholder' => 'eg 11/12/1975',
+                    'data-toggle' => 'datepicker'
                 ),
             ))
             ->add('date_added', DateType::class, array(
@@ -90,10 +91,11 @@ class CreateNewReleaseType extends AbstractType
                     new Assert\NotBlank(),
                 ),
                 'widget' => 'single_text',
+                'html5' => false,
                 'input' => 'string',
+                'format' => 'yyyy-MM-dd',
                 'attr' => array(
-                    'placeholder' => 'eg. now',
-                    'class' => 'datepicker',
+                    'data-toggle' => 'datepicker',
                 ),
             ))
             ->add('media_condition', ChoiceType::class, array(
