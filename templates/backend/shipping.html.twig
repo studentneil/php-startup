@@ -1,0 +1,45 @@
+{% extends 'backend/base.html.twig' %}
+
+{% block content %}
+    {% set alertTypeAvailable = ['success', 'failure'] %}
+    {% for alert in alertTypeAvailable %}
+        {% for message in app.session.getFlashBag.get(alert) %}
+            <div class="card-panel teal lighten-2">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+
+<form class="container col s12" action="" method="post">
+
+    {{ form_errors(form) }}
+    <div class="row">
+
+        <div class="input-field col m6 s12">
+            {{ form_label(form.quantity, 'quantity:') }}
+            {{ form_widget(form.quantity) }}
+            {{ form_errors(form.quantity) }}
+        </div>
+
+
+        <div class="input-field col m6 s12">
+            {{ form_label(form.cost, 'cost:') }}
+            {{ form_widget(form.cost) }}
+            {{ form_errors(form.cost) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col m6 s12">
+            {{ form_label(form.description, 'description:') }}
+            {{ form_widget(form.description) }}
+            {{ form_errors(form.description) }}
+        </div>
+    </div>
+
+
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+
+
+    {{ form_rest(form) }}
+</form>
+{% endblock %}

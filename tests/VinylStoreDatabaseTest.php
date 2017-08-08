@@ -7,11 +7,10 @@
  */
 
 namespace VinylStoreTests;
+
 use Doctrine\DBAL\DriverManager;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\DbUnit\TestCaseTrait;
-
-
 
 class VinylStoreDatabaseTest extends TestCase
 {

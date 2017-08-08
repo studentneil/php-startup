@@ -123,105 +123,81 @@
     <table name="images">
         <column>image_id</column>
         <column>image</column>
-        <column>name</column>
         <column>release_id</column>
         <row>
             <value name="image_id">4</value>
             <value name="image">8c3b2d3ea1b58682c5893608727e2c61.jpeg</value>
-            <value name="name">copperhead_road</value>
             <value name="release_id">6</value>
         </row>
         <row>
             <value name="image_id">6</value>
             <value name="image">72cde3ac79a49611e1380b9cbf6f8cd7.jpeg</value>
-            <value name="name">favorite_worst_nightmare</value>
             <value name="release_id">3</value>
         </row>
         <row>
             <value name="image_id">7</value>
             <value name="image">236ddb0a1f00fdb775feccc68fdbe0fb.jpeg</value>
-            <value name="name">christiansands</value>
             <value name="release_id">1</value>
         </row>
         <row>
             <value name="image_id">8</value>
             <value name="image">cb23e0e4e4e2629378f1a430a2d75723.jpeg</value>
-            <value name="name">swastika eyes</value>
             <value name="release_id">2</value>
         </row>
         <row>
             <value name="image_id">9</value>
             <value name="image">462efb16c1cbcc3a5e9db7b545105d9a.jpeg</value>
-            <value name="name">fleet_foxes</value>
             <value name="release_id">8</value>
         </row>
         <row>
             <value name="image_id">10</value>
             <value name="image">ffe6a6c9c29621415ff25052f056836c.jpeg</value>
-            <value name="name">true_faith</value>
             <value name="release_id">9</value>
         </row>
         <row>
             <value name="image_id">11</value>
             <value name="image">3517b2ccd39b56d7f76a09cdab8bacdf.jpeg</value>
-            <value name="name">def beat vol 5 remixes</value>
             <value name="release_id">7</value>
         </row>
     </table>
 
     <table name="snipcart_data">
         <column>release_id</column>
-        <column>release_name</column>
         <column>price</column>
-        <column>url</column>
         <column>description</column>
         <row>
             <value name="release_id">1</value>
-            <value name="release_name">christiansands</value>
             <value name="price">10.00</value>
-            <value name="url">http://vinyl-store.ie/vinyl</value>
             <value name="description">dark beats from tricky</value>
         </row>
         <row>
             <value name="release_id">2</value>
-            <value name="release_name">swastika eyes</value>
             <value name="price">8.00</value>
-            <value name="url">http://vinyl-store.ie/vinyl</value>
             <value name="description">classic single from the exterminator album</value>
         </row>
         <row>
             <value name="release_id">3</value>
-            <value name="release_name">favourite worst nightmare</value>
             <value name="price">20.00</value>
-            <value name="url">http://vinyl-store.ie/vinyl</value>
             <value name="description">great arctic monkeys album</value>
         </row>
         <row>
             <value name="release_id">6</value>
-            <value name="release_name">copperhead road</value>
             <value name="price">20.00</value>
-            <value name="url">http://vinyl-store.ie/vinyl</value>
             <value name="description">absolute classic from steve earle</value>
         </row>
         <row>
             <value name="release_id">7</value>
-            <value name="release_name">Def Beat Remixes Vol 5 Presents...Men From U.N.K.L.E.</value>
             <value name="price">15.00</value>
-            <value name="url">http://vinyl-store.ie/vinyl</value>
             <value name="description">smashing remix album from the men from unkle</value>
         </row>
         <row>
             <value name="release_id">8</value>
-            <value name="release_name">fleet foxes</value>
             <value name="price">25.00</value>
-            <value name="url">http://vinyl-store.ie/vinyl</value>
             <value name="description">Debut fleet foxes album. Mint.</value>
         </row>
         <row>
             <value name="release_id">9</value>
-            <value name="release_name">true faith remix</value>
             <value name="price">10.00</value>
-            <value name="url">http://vinyl-store.ie/vinyl</value>
             <value name="description">great new order remix of a classic tune</value>
         </row>
     </table>

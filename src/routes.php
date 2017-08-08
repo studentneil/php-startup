@@ -32,3 +32,6 @@ $app->post('/admin/attach-image/{imageId}/{releaseId}', 'VinylStore\\Controllers
 $app->match('/admin/create-pricing', 'VinylStore\\Controllers\\PricingController::indexAction');
 $app->get('/admin/view-pricing', 'VinylStore\\Controllers\\PricingController::viewPricingAction');
 $app->match('/admin/edit-pricing/{id}', 'VinylStore\\Controllers\\PricingController::editPricingAction');
+$app->get('/admin/view-shippingRates', 'VinylStore\\Controllers\\ShippingController::viewShippingRatesAction');
+$app->match('/admin/shippingRates', 'VinylStore\\Controllers\\ShippingController::shippingRatesAction');
+$app->match('/admin/edit-shippingRates/{quantity}', 'VinylStore\\Controllers\\ShippingController::editShippingRatesAction');

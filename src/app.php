@@ -30,7 +30,7 @@ use VinylStore\UserProvider;
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
-$app['env'] = 'prod';
+$app['env'] = 'dev';
 
 $app->register(new ConfigServiceProvider(array(
     'config.dir' => '/../../config/'
@@ -76,6 +76,7 @@ $app->register(new Silex\Provider\SecurityServiceProvider(), array(
 // slugify strings for nice urls
 $app->register(new Cocur\Slugify\Bridge\Silex2\SlugifyServiceProvider());
 $app->register(new FormServiceProvider());
+
 // register custom forms here.
 // create a new release form
 $app->extend('form.types', function ($types) {
@@ -107,6 +108,13 @@ $app->extend('form.types', function ($types) use ($app) {
 
     return $types;
 });
+// shipping rates form
+$app->extend('form.types', function ($types) use ($app) {
+    $types[] = new VinylStore\Forms\ShippingRatesType();
+
+    return $types;
+});
+
 $app->register(new VinylRepositoryServiceProvider());
 $app->register(new ImageRepositoryServiceProvider());
 $app->register(new PricingRepositoryServiceProvider());

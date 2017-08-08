@@ -33,6 +33,15 @@ class ShippingRatesRepository implements RepositoryInterface
         return $priceData;
     }
 
+    public function viewAll()
+    {
+        $stmt = $this->conn->prepare('SELECT * FROM shipping_rates');
+        $stmt->execute();
+        $ratesData = $stmt->fetchAll();
+
+        return $ratesData;
+    }
+
     public function findOneById($quantity)
     {
         $stmt = $this->conn->prepare('SELECT cost, description FROM shipping_rates WHERE quantity=:quantity');

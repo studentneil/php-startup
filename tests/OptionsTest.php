@@ -8,7 +8,6 @@
 
 namespace VinylStoreTests;
 
-
 use VinylStore\Options;
 use VinylStore\Entity\ChoiceEntity;
 use PHPUnit\Framework\TestCase;

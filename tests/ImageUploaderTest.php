@@ -51,7 +51,6 @@ class ImageUploaderTest extends TestCase
 
         $file = new ImageEntity();
         $file->setImage($uploadedFile);
-        $file->setName('neils_picture');
         $file->setReleaseId('7');
 
         $uploader = new ImageUploader(vfsStream::url('photos/uploadDir'));

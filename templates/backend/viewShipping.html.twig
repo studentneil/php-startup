@@ -1,0 +1,31 @@
+{% extends 'backend/base.html.twig' %}
+
+{% block content %}
+    <div class="row">
+
+        {% for rates in allRates %}
+            <div class="col s12 m2">
+                <div class="backend card">
+                    <div class="card-content">
+                        <p>
+                            {{ rates.quantity}}
+                        </p>
+                        <p>
+                            {{ rates.cost }}
+                        </p>
+                        <p>
+                            {{ rates.description }}
+                        </p>
+                        <hr>
+
+                        <a class="waves-effect waves-light links" href="/admin/edit-shippingRates/{{ rates.quantity }}">Edit</a>
+                        <a class="waves-effect waves-light links" href="">Delete</a>
+
+
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}
