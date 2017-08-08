@@ -30,7 +30,7 @@ use VinylStore\UserProvider;
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
-$app['env'] = 'dev';
+$app['env'] = 'prod';
 
 $app->register(new ConfigServiceProvider(array(
     'config.dir' => '/../../config/'
