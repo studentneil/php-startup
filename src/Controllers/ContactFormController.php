@@ -1,9 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: neil
  * Date: 18/06/2017
- * Time: 00:00
  */
 
 namespace VinylStore\Controllers;
@@ -14,7 +12,7 @@ use VinylStore\Forms\ContactFormType;
 
 class ContactFormController
 {
-    public function contactFormAction(Request $request, Application $app)
+    public function contactFormAction(Application $app)
     {
 
         $contactFormData = array();
@@ -58,7 +56,7 @@ class ContactFormController
             $result = $mailer->send($message);
 
             if ($result === 0) {
-                $response = 'oops, theres a problem with your php';
+                $response = 'oops, theres a problem with your email system.';
                 return $response;
             }else{
                 $response = 'Thanks for getting in touch. Ill get back to you as soon as humanly possible.';

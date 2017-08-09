@@ -16,17 +16,17 @@ use VinylStore\Paginator;
 class MainController
 {
     /**
-     * Renders the homepage with 4 latest releases and 4 random releases.
+     * Renders the homepage.
      *
      * @param Application $app
      *
      * @return template: home
      */
-    public function indexAction(Application $app)
+    public function indexAction(Request $request, Application $app)
     {
         $rockReleases = $app['vinyl.repository']->getReleasesByGenre('rock', '2', '0');
         $elecReleases = $app['vinyl.repository']->getReleasesByGenre('electronic', '2', '0');
-        $clasRockReleases = $app['vinyl.repository']->getReleasesByGenre('classic-rock', '2', 0);
+        $clasRockReleases = $app['vinyl.repository']->getReleasesByGenre('classic-rock', '2', '0');
         $randomRelease = $app['vinyl.repository']->findRandomRelease();
         $templateName = 'frontend/home';
         $args_array = array(
@@ -43,7 +43,6 @@ class MainController
      * The 'main' page for viewing vinyls.
      *
      * Retrieves all releases from the database and paginates.
-     * Also renders the refine form so can be accessed from the vinyl page.
      *
      * @param Request     $request
      * @param Application $app

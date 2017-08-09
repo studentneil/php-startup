@@ -95,6 +95,7 @@ class VinylRepository implements RepositoryInterface
             ->setMaxResults($limit)
             ->andWhere('genre = ?')
             ->andHaving('quantity >= 1')
+            ->orderBy('date_added', 'DESC')
             ->setParameter(0, $genre);
         $genreReleases = $qb->execute()->fetchAll();
 
@@ -139,7 +140,8 @@ LIMIT 1 ');
         $qb = $this->joinAll();
         $qb->setFirstResult($offset)
             ->setMaxResults($limit)
-            ->andHaving('quantity >= 1');
+            ->andHaving('quantity >= 1')
+            ->orderBy('date_added', 'DESC');
 
         $paginatedReleases = $qb->execute()->fetchAll();
 
