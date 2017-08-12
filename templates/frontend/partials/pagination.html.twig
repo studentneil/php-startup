@@ -2,7 +2,8 @@
     <div class="row pagination container center-align">
         <ul>
             <li {% if currentPage == 1 %}class="disabled"{% endif %}>
-                <a href="/vinyl/{% if genre is defined %}{{ genre }}/{% endif %}page/{{ currentPage - 1 }}">{{ 'Prev'|trans }}</a>
+                <a {% if currentPage == 1 %}href="#" {% else %}href="/vinyl/{% if genre is defined %}{{ genre }}/{% endif %}page/{{ currentPage - 1
+}}"{% endif %}>{{ 'Prev'|trans }}</a>
             </li>
             {% for i in 1..numPages %}
                 <li {% if currentPage == i %}class="active"{% else %}class="waves-effect"{% endif %}>
@@ -10,7 +11,8 @@
                 </li>
             {% endfor %}
             <li {% if currentPage == numPages %}class="disabled"{% endif %}>
-                <a href="/vinyl/{% if genre is defined %}{{ genre }}/{% endif %}page/{{ currentPage + 1 }}">{{ 'Next'|trans }}</a>
+                <a {% if currentPage == numPages %}href="#" {% else %}href="/vinyl/{% if genre is defined %}{{ genre }}/{% endif %}page/{{ currentPage + 1
+}}"{% endif %}>{{ 'Next'|trans }}</a>
             </li>
         </ul>
     </div>
