@@ -100,6 +100,7 @@ class CreateNewReleaseType extends AbstractType
             ))
             ->add('media_condition', ChoiceType::class, array(
                 'choices' => array(
+                    'new' => 'new',
                     'mint' => 'mint',
                     'ex' => 'ex',
                     'vg+' => 'vg+',
@@ -109,6 +110,7 @@ class CreateNewReleaseType extends AbstractType
                 ), ))
             ->add('sleeve_condition', ChoiceType::class, array(
                 'choices' => array(
+                    'new' => 'new',
                     'mint' => 'mint',
                     'ex' => 'ex',
                     'vg+' => 'vg+',

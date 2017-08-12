@@ -104,10 +104,6 @@ menu__list * {
     width: 100%;
 }
 
-/*.menu__list li:hover:after,*/
-/*.menu__list .active li:after {*/
-/*max-width: 100%;*/
-/*}*/
 .menu__list li > a.active {
     color: red;
 }
@@ -141,7 +137,11 @@ menu__list * {
 button {
     padding: 0px;
 }
-
+/************************************
+*
+* all card styles here
+*
+ */
 .card .card-reveal {
     background-color: #2e3436;
     padding: 0.5em;
@@ -151,12 +151,12 @@ button {
     padding: 2em;
 }
 
-.card .card-content {
-    padding: 0;
-}
-
 .featured_content > p {
     padding: 1em;
+}
+
+.card-action > p {
+    margin: 0;
 }
 
 /* collapsibles */
@@ -261,11 +261,6 @@ h1,h2 {
     background-color: #242E38;
 }
 
-/*#contactModal {*/
-    /*max-height: 98%;*/
-    /*width: 96%;*/
-/*}*/
-
 .action_button {
     padding-top: 4%;
 }
@@ -313,13 +308,6 @@ h1,h2 {
         width: 30%;
         padding-top: 4rem;
     }
-
-
-
-    /*#contactModal {*/
-        /*max-height: 70%;*/
-        /*width: 50%;*/
-    /*}*/
 
     .action_button {
         padding-top: 2%;
