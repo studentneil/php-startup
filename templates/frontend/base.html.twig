@@ -9,10 +9,10 @@
     <!-- theme color for mobile browsers -->
     <meta name="theme-color" content="#242E38">
     <!-- google verification tag -->
-    <meta name="google-site-verification" content="W5iw1CgOsikdXGOVNB3Rc6XWI9CEqkkRtlatBpxzq3g" />
+    <meta name="google-site-verification" content="W5iw1CgOsikdXGOVNB3Rc6XWI9CEqkkRtlatBpxzq3g"/>
 
     <title>
-       {% block title %}{% endblock %}The Record Box | Vinyl Online Ireland.
+       {% block title %}{% endblock %}The Record Box | Vinyl Records Online Ireland.
     </title>
 
     <!--Import Google Icon Font-->
@@ -54,7 +54,7 @@
     <!-- snipcart js -->
     <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js"
             id="snipcart"
-            data-api-key="NTE2ZTMzODQtN2M1MC00YjExLTlkZTktNzdjOTViOGZjNGQwNjM2MTc3ODQwOTA5OTg3NjAz">
+            data-api-key="{{ app.config.snipcart.apikey }}">
     </script>
     <!-- custom js -->
     <script
