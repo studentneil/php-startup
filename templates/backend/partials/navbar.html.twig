@@ -1,41 +1,88 @@
 {% block navbar %}
     <nav>
         <div class="nav-wrapper cyan darken-4">
-            <a href="#!" class="brand-logo left">Vinyl Store</a>
-            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i
+            <a href="#!" class="brand-logo left">The Record Box</a>
+            <a href="#" data-activates="mobile-nav" class="button-collapse right"><i
                         class="material-icons">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-
-
-                <li><a href="/admin/dashboard">View releases</a></li>
-
-
-                <li><a href="/admin/view-images">View Images</a></li>
-
-                <li><a href="/admin/view-pricing">View Pricing</a></li>
-                <li><a href="/admin/view-shippingRates">View Shipping</a></li>
-                <li>
-                    <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
+            <ul id="mobile-nav" class="side-nav fixed">
+                <div class="card-panel">
+                    <li>
+                        <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
+                    </li>
+                </div>
+                <li class="no-padding">
+                    <ul class="collapsible">
+                        <li>
+                            <a class="collapsible-header">Releases</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="/admin/view-releases">View releases</a></li>
+                                    <li><a href="/admin/create-release">Create new release</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </li>
+                <li class="no-padding">
+                    <ul class="collapsible">
+                        <li>
+                            <a class="collapsible-header">Images</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="/admin/view-images">View images</a></li>
+                                    <li><a href="/admin/upload-image">Upload image</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="no-padding">
+                    <ul class="collapsible">
+                        <li>
+                            <a class="collapsible-header">Pricing</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="/admin/view-pricing">View pricing</a></li>
+                                    <li><a href="/admin/create-pricing">Create pricing</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li class="no-padding">
+                    <ul class="collapsible">
+                        <li>
+                            <a class="collapsible-header">Shipping</a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="/admin/view-shippingRates">View shipping rates</a></li>
+                                    <li><a href="/admin/shippingRates">Create a new shipping rate</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+
                 <li>
                     <a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a>
+                </li>
                 </li>
             </ul>
         </div>
     </nav>
-    <!-- Hidden side-nav for mobiles -->
-    <ul class="side-nav center-align" id="mobile-demo">
-        <div class="center-align"><i class="material-icons close-menu">close</i></div>
-        <li class="center-align">
-            <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
-        </li>
-        <li><a href="/admin/dashboard">View Releases</a></li>
+    {#<!-- Hidden side-nav for mobiles -->#}
+    {#<ul class="side-nav center-align" id="mobile-demo">#}
+    {#<div class="center-align"><i class="material-icons close-menu">close</i></div>#}
+    {#<li class="center-align">#}
+    {#<button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>#}
+    {#</li>#}
+    {#<li><a href="/admin/dashboard">View Releases</a></li>#}
 
-        <li>
-            <a href="/admin/view-images">View Images</a>
-        </li>
+    {#<li>#}
+    {#<a href="/admin/view-images">View Images</a>#}
+    {#</li>#}
 
-        <li><a href="/admin/view-pricing">View Pricing</a></li>
-        <li><a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a></li>
-    </ul>
+    {#<li><a href="/admin/view-pricing">View Pricing</a></li>#}
+    {#<li><a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a></li>#}
+    {#</ul>#}
 {% endblock %}

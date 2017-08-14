@@ -10,7 +10,13 @@
         {% endfor %}
     {% endfor %}
         {# create a new release form #}
-        <form class="container col s12" action="" method="post">
+    <div class="row">
+        <div class="col s12 m12">
+            <h5>Create/edit a release</h5>
+        </div>
+    </div>
+    <div class="divider"></div>
+        <form class="col s12 m6" action="" method="post">
 
             {{ form_errors(form) }}
             <div class="row">
@@ -99,11 +105,10 @@
             </div>
             <div class="row">
                 <div class="input-field col m6 s12">
-                    {{ form_label(form.quantity, 'quantity::') }}
-                    <p class="range-field">
+
                     {{ form_errors(form.quantity) }}
                     {{ form_widget(form.quantity) }}
-                    </p>
+                    {{ form_label(form.quantity, 'quantity::') }}
                 </div>
             </div>
             <div class="row">

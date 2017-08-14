@@ -134,19 +134,12 @@ class CreateNewReleaseType extends AbstractType
                     'electronic' => 'electronic',
                 ),
             ))
-            ->add('quantity', RangeType::class, array(
-                'constraints' => array(
-                    new Assert\NotBlank(),
-                    new Assert\Range(array(
-                        'min' => 1,
-                        'max' => 10,
-                    )),
-                ),
-                'attr' => array(
-                    'min' => 1,
-                    'max' => 10,
-                    'placeholder' => 'Between 1 and 10',
-                ),
+            ->add('quantity', ChoiceType::class, array(
+                'choices' => array(
+                    '0' => 0,
+                    '1' => 1,
+                    '2' => 2
+                )
             ))
             ->add('barcode', TextType::class, array(
                 'constraints' => array(

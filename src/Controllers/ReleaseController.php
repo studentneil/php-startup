@@ -8,6 +8,15 @@ use VinylStore\Forms\CreateNewReleaseType;
 
 class ReleaseController
 {
+    public function getReleasesAction(Request $request, Application $app)
+    {
+        $releases = $app['vinyl.repository']->findAll();
+        $template = 'backend/releases';
+        $args = array(
+            'releases' => $releases
+        );
+        return $app['twig']->render($template .'.html.twig', $args);
+    }
 
     /**
      * Create a new release and save to the db.

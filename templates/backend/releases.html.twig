@@ -23,12 +23,13 @@
                             {% endfor %}
                         </p>
                         <p>{{ release.format }}</p>
-                        {#<p>{{ release.label }}</p>#}
-                        {#<p>{{ release.released }}</p>#}
-                        {#<p>{{ release.media_condition }}</p>#}
-                        {#<p>{{ release.sleeve_condition }}</p>#}
+                        <p>{{ release.label }}</p>
+                        <p>{{ release.released }}</p>
+                        <p>{{ release.media_condition }}</p>
+                        <p>{{ release.sleeve_condition }}</p>
                         {#<p>{{ release.notes }}</p>#}
-                        {#<p>{{ release.genre }}</p>#}
+                        <p>{{ release.genre }}</p>
+                        <p>{{ release.quantity }}</p>
                         <hr>
 
                         <a class="waves-effect waves-light links" href="/admin/edit-release/{{ release.id }}">Edit</a>

@@ -18,7 +18,13 @@
                     <div class="card-content">
                         <p>id: {{ image.image_id }}</p>
 
-                        <p>release id: {{ image.release_id }}</p>
+                        <p>
+                            release : {% for release in releases %}
+                                        {% if image.release_id == release.id %}
+                                            {{ release.title }}
+                            {% endif %}
+                            {% endfor %}
+                        </p>
                     </div>
                     {# we store a reference to the images id in the data attribute below #}
                     {# this is used by jquery to pass the correct id to our delete and attach  functions #}

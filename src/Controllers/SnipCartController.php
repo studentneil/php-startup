@@ -14,6 +14,14 @@ use Silex\Application;
 
 class SnipCartController
 {
+
+    /**
+     * handle the order completed event by decreasing the quantity of the product by 1.
+     *
+     * @param Request $request
+     * @param Application $app
+     * @return Response
+     */
     public function getWebHookAction(Request $request, Application $app)
     {
         $webHook = $request->getContent();
@@ -31,8 +39,17 @@ class SnipCartController
                 echo $count;
             }
         }
+        $responseMessage = json_encode(array('message' => 'Im silently ignoring this for now.'));
+        return new Response($responseMessage, Response::HTTP_OK, array('Content-Type' => 'application/json'));
     }
 
+    /**
+     * Fetch shipping rates from the db when the shippingrates fetch webhook is fired.
+     *
+     * @param Request $request
+     * @param Application $app
+     * @return Response
+     */
     public function getShippingRatesAction(Request $request, Application $app)
     {
         $snipWebHook = $request->getContent();

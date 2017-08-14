@@ -4,6 +4,7 @@ html {
     color: black;
 }
 
+
 .brand-logo {
     margin-left: 0.75rem;
 }
@@ -22,10 +23,7 @@ html {
     padding: 0.5rem;
 }
 
-.side-nav {
-    width : 100%;
-    padding-top: 4rem;
-}
+
 
 .toolbar.active {
     position: relative;
@@ -39,9 +37,9 @@ a.links:hover {
     color: rgba(238, 80, 115, 0.7);
 }
 
-.backend {
-    height: 200px;
-}
+/*.backend {*/
+    /*height: 200px;*/
+/*}*/
 .del-image {
     padding: 10px;
 }
@@ -62,5 +60,14 @@ span.badge {
         float: right;
 
     }
+    header, main, footer {
+        padding-left: 300px;
+    }
 }
+@media only screen and (max-width : 992px) {
+    header, main, footer {
+        padding-left: 0;
+    }
+}
+
 

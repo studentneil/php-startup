@@ -22,7 +22,7 @@ $app->post('/snip-webhook', 'VinylStore\\Controllers\\SnipCartController::getWeb
 $app->post('/snip-shippingRates-webhook', 'VinylStore\\Controllers\\SnipCartController::getShippingRatesAction');
 $app->get('/tracklist', 'VinylStore\\Controllers\\TracklistController::getTracklistAction');
 $app->get('/admin/dashboard', 'VinylStore\\Controllers\\LoginController::dashboardAction');
-//$app->get('/admin/view/releases', 'VinylStore\\Controllers\\ReleaseController::viewTableAction');
+$app->get('/admin/view-releases', 'VinylStore\\Controllers\\ReleaseController::getReleasesAction');
 $app->match('/admin/create-release', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
 $app->match('/admin/edit-release/{id}', 'VinylStore\\Controllers\\ReleaseController::editReleaseAction');
 $app->match('/admin/upload-image', 'VinylStore\\Controllers\\ImageController::uploadImageAction');
