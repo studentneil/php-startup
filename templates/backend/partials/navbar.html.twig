@@ -1,5 +1,5 @@
 {% block navbar %}
-    <nav>
+    <nav class="admin-nav">
         <div class="nav-wrapper cyan darken-4">
             <a href="#!" class="brand-logo left">The Record Box</a>
             <a href="#" data-activates="mobile-nav" class="button-collapse right"><i
@@ -11,9 +11,9 @@
                     </li>
                 </div>
                 <li class="no-padding">
-                    <ul class="collapsible">
+                    <ul class="collapsible collapsible-accordion">
                         <li>
-                            <a class="collapsible-header">Releases</a>
+                            <a id="header" class="collapsible-header">Releases</a>
                             <div class="collapsible-body">
                                 <ul>
                                     <li><a href="/admin/view-releases">View releases</a></li>
@@ -24,7 +24,7 @@
                     </ul>
                 </li>
                 <li class="no-padding">
-                    <ul class="collapsible">
+                    <ul class="collapsible collapsible-accordion">
                         <li>
                             <a class="collapsible-header">Images</a>
                             <div class="collapsible-body">
@@ -37,7 +37,7 @@
                     </ul>
                 </li>
                 <li class="no-padding">
-                    <ul class="collapsible">
+                    <ul class="collapsible collapsible-accordion">
                         <li>
                             <a class="collapsible-header">Pricing</a>
                             <div class="collapsible-body">

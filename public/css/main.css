@@ -249,9 +249,9 @@ h1,h2 {
     padding-left: 0;
 }
 
-.input-field.col label {
-    left: 0;
-}
+/*.input-field.col label {*/
+    /*left: 0;*/
+/*}*/
 
 .modal .modal-content {
     padding: 0;
