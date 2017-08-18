@@ -31,7 +31,7 @@ class ImageRepository implements RepositoryInterface
     }
     public function findAll()
     {
-        $stmt = $this->conn->prepare('SELECT * FROM images');
+        $stmt = $this->conn->prepare('SELECT * FROM images ORDER BY "date_added" DESC');
         $stmt->execute();
         $images = $stmt->fetchAll();
 

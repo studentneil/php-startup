@@ -1,4 +1,5 @@
 {% extends 'backend/base.html.twig' %}
+{% set active_page = 'view-images' %}
 {% block content %}
     {% if count is defined %}
         <h4>Deleted</h4>
@@ -11,7 +12,7 @@
                     <div class="card-image">
                         {% for release in releases %}
                             {% if image.release_id == release.id %}
-                                 <img src="/uploads/{{ image.image|raw }}" alt="{{ release.title|replace({' ':'_'}) }}_pic">
+                                <img src="/uploads/{{ image.image|raw }}" alt="{{ release.title|replace({' ':'_'}) }}_pic">
                             {% endif %}
                         {% endfor %}
                     </div>
@@ -20,9 +21,9 @@
 
                         <p>
                             release : {% for release in releases %}
-                                        {% if image.release_id == release.id %}
-                                            {{ release.title }}
-                            {% endif %}
+                                {% if image.release_id == release.id %}
+                                    {{ release.title }}
+                                {% endif %}
                             {% endfor %}
                         </p>
                     </div>
@@ -31,7 +32,7 @@
                     <div class="divider"></div>
                     <a href="/admin/delete-image/{{ image.image_id }}" class="del-image waves-effect waves-light links" data-image-id="{{ image.image_id }}">Delete</a>
                     {#<a href="/admin/attach-image/{{ image.image_id }}/{{ image.release_id }}" class="attach_image waves-effect waves-light links"#}
-                       {#data-image-id="{{ image.image_id }}">Attach</a>#}
+                    {#data-image-id="{{ image.image_id }}">Attach</a>#}
                 </div>
             </div>
 
@@ -74,7 +75,7 @@
                 console.log(releaseId);
                 console.log(block);
                 $.ajax({
-                    url: '/admin/attach-image/'+imageId+'/'+releaseId,
+                    url: '/admin/attach-image/' + imageId + '/' + releaseId,
                     type: "POST",
 
                     error: function (response) {

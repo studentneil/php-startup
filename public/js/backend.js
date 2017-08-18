@@ -28,17 +28,17 @@ $(document).ready(function() {
         format: 'yyyy-mm-dd',
 
     });
-    var selector = 'ul .collapsible ul > li';
-    $(selector).on('click', function(e){
-        // e.preventDefault();
-        // $(selector).removeClass('active')
-        $(this).addClass('active');
-        $(this).parent().addClass('active');
-    });
+    // var selector = 'ul .collapsible ul > li';
+    // $(selector).on('click', function(e){
+    //     // e.preventDefault();
+    //     // $(selector).removeClass('active')
+    //     $(this).addClass('active');
+    //     $(this).parent().addClass('active');
+    // });
 
-    // Will only work if string in href matches with location
-    if ($('div .collapsible-body ul > li > a[href^="/' + location.pathname.split("/")[1] + '"]') === window.location) {
-        $('ul .collapsible ul > li > a').addClass('active');
-    }
+    // // Will only work if string in href matches with location
+    // if ($('div .collapsible-body ul > li > a[href^="/' + location.pathname.split("/")[1] + '"]') === window.location) {
+    //     $('ul .collapsible ul > li > a').addClass('active');
+    // }
 
 });

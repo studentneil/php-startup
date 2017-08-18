@@ -1,5 +1,5 @@
 {% extends 'backend/base.html.twig' %}
-
+{% set active_page = 'upload-image' %}
 {% block content %}
     {% set alertTypeAvailable = ['success', 'failure'] %}
     {% for alert in alertTypeAvailable %}

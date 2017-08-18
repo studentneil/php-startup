@@ -10,14 +10,22 @@
                         <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
                     </li>
                 </div>
-                <li class="no-padding">
+                <li>
+                    <a href="/admin/dashboard">Dashboard</a>
+                </li>
+                <li>
                     <ul class="collapsible collapsible-accordion">
                         <li>
-                            <a id="header" class="collapsible-header">Releases</a>
+                            <a {% if active_page in ['view-releases', 'create-release'] %}class="collapsible-header active"{% else
+                            %}class="collapsible-header"{% endif %}>Releases</a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="/admin/view-releases">View releases</a></li>
-                                    <li><a href="/admin/create-release">Create new release</a></li>
+                                    <li {% if active_page == 'view-releases' %}class="active"{% endif %}>
+                                        <a href="/admin/view-releases">View releases</a>
+                                    </li>
+                                    <li {% if active_page == 'create-release' %}class="active"{% endif %}>
+                                        <a href="/admin/create-release">Create new release</a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -26,11 +34,16 @@
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
                         <li>
-                            <a class="collapsible-header">Images</a>
+                            <a {% if active_page in ['view-images', 'upload-image'] %}class="collapsible-header active"{% else
+                            %}class="collapsible-header"{% endif %}>Images</a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="/admin/view-images">View images</a></li>
-                                    <li><a href="/admin/upload-image">Upload image</a></li>
+                                    <li {% if active_page == 'view-images' %}class="active"{% endif %}>
+                                        <a href="/admin/view-images">View images</a>
+                                    </li>
+                                    <li {% if active_page == 'upload-image' %}class="active"{% endif %}>
+                                        <a href="/admin/upload-image">Upload image</a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -39,11 +52,16 @@
                 <li class="no-padding">
                     <ul class="collapsible collapsible-accordion">
                         <li>
-                            <a class="collapsible-header">Pricing</a>
+                            <a {% if active_page in ['view-pricing', 'create-pricing'] %}class="collapsible-header active"{% else
+                            %}class="collapsible-header"{% endif %}>Pricing</a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="/admin/view-pricing">View pricing</a></li>
-                                    <li><a href="/admin/create-pricing">Create pricing</a></li>
+                                    <li {% if active_page == 'view-pricing' %}class="active"{% endif %}>
+                                        <a href="/admin/view-pricing">View pricing</a>
+                                    </li>
+                                    <li {% if active_page == 'create-pricing' %}class="active"{% endif %}>
+                                        <a href="/admin/create-pricing">Create pricing</a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -52,11 +70,16 @@
                 <li class="no-padding">
                     <ul class="collapsible">
                         <li>
-                            <a class="collapsible-header">Shipping</a>
+                            <a {% if active_page in ['view-shipping', 'create-shipping'] %}class="collapsible-header active"{% else
+                            %}class="collapsible-header"{% endif %}>Shipping</a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="/admin/view-shippingRates">View shipping rates</a></li>
-                                    <li><a href="/admin/shippingRates">Create a new shipping rate</a></li>
+                                    <li {% if active_page == 'view-shipping' %}class="active"{% endif %}>
+                                        <a href="/admin/view-shippingRates">View shipping rates</a>
+                                    </li>
+                                    <li {% if active_page == 'create-shipping' %}class="active"{% endif %}>
+                                        <a href="/admin/shippingRates">Create a new shipping rate</a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>

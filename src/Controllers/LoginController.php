@@ -22,7 +22,7 @@ class LoginController
     {
         $user = $app['security.token_storage']->getToken()->getUser()->getUsername();
         $app['session']->set('user', array('username' => $user));
-        $releases = $app['vinyl.repository']->findAll();
+        $releases = $app['vinyl.repository']->findLatestRelease();
         $images = $app['image.repository']->findAll();
         $pricing = $app['pricing.repository']->findAll();
 
