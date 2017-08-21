@@ -20,6 +20,7 @@ $app->get('/randomise', 'VinylStore\\Controllers\\RandomiseController::randomise
 $app->get('/vinyl/page/{page}', 'VinylStore\\Controllers\\MainController::getVinylAction')->value('page', '1');
 $app->post('/snip-webhook', 'VinylStore\\Controllers\\SnipCartController::getWebHookAction');
 $app->post('/snip-shippingRates-webhook', 'VinylStore\\Controllers\\SnipCartController::getShippingRatesAction');
+$app->post('/events/item-added', 'VinylStore\\Controllers\\SnipCartController::eventItemAddedAction');
 $app->get('/tracklist', 'VinylStore\\Controllers\\TracklistController::getTracklistAction');
 $app->get('/admin/dashboard', 'VinylStore\\Controllers\\LoginController::dashboardAction');
 $app->get('/admin/view-releases', 'VinylStore\\Controllers\\ReleaseController::getReleasesAction');

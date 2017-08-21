@@ -4,27 +4,21 @@
     <div class="row">
 
         {% for release in releases %}
-            <div class="col s12 m3 l4">
+            <div class="col s12 m3 l3">
                 <div class="backend card">
                     <div class="card-content">
-                        <p><i class="light-text">artist : </i>{{ release.artist }}
-                            {% for image in images %}
-                                {% if release.id == image.release_id %}
-                                    <span class="new badge blue" data-badge-caption="Got image"></span>
-
-                                {% endif %}
-                            {% endfor %}
+                        <p><i class="light-text">id : </i>{{ release.id }}</p>
+                        <p>
+                            <i class="light-text">artist : </i>{{ release.artist }}
                         </p>
-                        <p><i class="light-text">title : </i>{{ release.title }}
-                            {% for price in pricing %}
-                                {% if release.id == price.release_id %}
-                                    <span class="new badge blue right-align" data-badge-caption="Got pricing"></span>
-                                {% endif %}
-                            {% endfor %}
+                        <p>
+                            <i class="light-text">title : </i>{{ release.title }}
                         </p>
+                        <p><i class="light-text">catalogue no. : </i>{{ release.catno }}</p>
                         <p><i class="light-text">format : </i>{{ release.format }}</p>
                         <p><i class="light-text">label : </i>{{ release.label }}</p>
-                        <p><i class="light-text">released on : </i>{{ release.released }}</p>
+                        <p><i class="light-text">released on : </i>{{ release.released_on }}</p>
+                        <p><i class="light-text">date added : </i>{{ release.date_added }}</p>
                         <p><i class="light-text">media : </i>{{ release.media_condition }}</p>
                         <p><i class="light-text">sleeve : </i>{{ release.sleeve_condition }}</p>
                         {#<p>{{ release.notes }}</p>#}

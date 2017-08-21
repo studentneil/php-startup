@@ -22,6 +22,7 @@ use VinylStore\ServiceProviders\UploadServiceProvider;
 use VinylStore\ServiceProviders\MessageServiceProvider;
 use VinylStore\ServiceProviders\ConfigServiceProvider;
 use VinylStore\ServiceProviders\ShippingRatesServiceProvider;
+use VinylStore\ServiceProviders\EventsRepositoryServiceProvider;
 use VinylStore\UserProvider;
 
 
@@ -112,13 +113,15 @@ $app->extend('form.types', function ($types) use ($app) {
 
     return $types;
 });
-
+// register the custom service providers with $app
 $app->register(new VinylRepositoryServiceProvider());
 $app->register(new ImageRepositoryServiceProvider());
 $app->register(new PricingRepositoryServiceProvider());
 $app->register(new UploadServiceProvider());
 $app->register(new MessageServiceProvider());
 $app->register(new ShippingRatesServiceProvider());
+$app->register(new EventsRepositoryServiceProvider());
+
 // exception handling pages
 $app->error(function (\Exception $e, Request $request, $code) use ($app) {
     switch($code) {

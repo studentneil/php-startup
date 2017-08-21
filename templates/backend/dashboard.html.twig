@@ -1,5 +1,5 @@
 {% extends 'backend/base.html.twig' %}
-
+{% set active_page = 'dashboard' %}
 {% block content %}
     <div class="row">
         <div class="col s12 m12">
@@ -25,12 +25,7 @@
                                 {% endfor %}
                             </p>
                             <p>{{ release.format }}</p>
-                            {#<p>{{ release.label }}</p>#}
                             <p>{{ release.date_added }}</p>
-                            {#<p>{{ release.media_condition }}</p>#}
-                            {#<p>{{ release.sleeve_condition }}</p>#}
-                            {#<p>{{ release.notes }}</p>#}
-                            {#<p>{{ release.genre }}</p>#}
                         </div>
                     </div>
                 </div>
@@ -48,7 +43,7 @@
             <h5>Latest Images</h5>
             <div class="divider"></div>
             {% for image in images|slice(0,6) %}
-                <div class="col s12 m4 l2">
+                <div class="col s6 m4 l2">
                     <div class="backend card">
                         <div class="card-content">
                             <div class="card-image">
@@ -66,6 +61,72 @@
 
             <a href="/admin/view-images" class="btn">Images</a>
 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+            <h5>Latest Prices</h5>
+            <div class="divider"></div>
+            {% for price in pricing|slice(0,6) %}
+                <div class="col s12 m4 l4">
+                    <div class="backend card">
+                        <div class="card-content">
+                            <p>release id : {{ price.release_id}}</p>
+                            <p>price : {{ price.price }}</p>
+                            <p>desc. : {{ price.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+
+            <a href="/admin/view-pricing" class="btn">Pricing</a>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+            <h5>Latest Shipping Rates</h5>
+            <div class="divider"></div>
+            {% for rate in shippingRates|slice(0,6) %}
+                <div class="col s12 m4 l4">
+                    <div class="backend card">
+                        <div class="card-content">
+                            <p>id : {{ rate.id }}</p>
+                            <p>quantity : {{ rate.quantity }}</p>
+                            <p>cost : {{ rate.cost }}</p>
+                            <p>desc. : {{ rate.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+
+            <a href="/admin/view-shippingRates" class="btn">Shipping</a>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12 m12">
+            <h5>Latest Items added to cart</h5>
+            <div class="divider"></div>
+            {% for event in events|slice(0,6) %}
+                <div class="col s12 m4 l4">
+                    <div class="backend card">
+                        <div class="card-content">
+                            <p>id : {{ event.id }}</p>
+                            <p>quantity : {{ event.name }}</p>
+                            <p>description : {{ event.description }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 {% endblock %}

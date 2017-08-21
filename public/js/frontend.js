@@ -71,6 +71,21 @@ $(document).ready(function() {
             // dataType: 'json'
         }).done(success).fail(err);
     })
+    Snipcart.subscribe('item.added', function (item) {
+        console.log(item);
+
+        var success = function(resp) {
+            console.log(resp);
+        };
+        var err = function (req, status, err) {
+            console.log(status);
+        };
+        $.ajax({
+            type: 'post',
+            url: '/events/item-added',
+            data: item
+        }).done(success).fail(err);
+    })
 
 });
 

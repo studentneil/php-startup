@@ -73,4 +73,20 @@ class SnipCartController
             return new Response($responseMessage, Response::HTTP_OK, array('Content-Type' => 'application/json'));
         }
     }
+
+    public function eventItemAddedAction(Request $request, Application $app)
+    {
+        $id = $request->get('id');
+        $name = $request->get('name');
+        $desc = $request->get('description');
+        $eventData = array(
+            'id' => $id,
+            'name' => $name,
+            'description' => $desc
+        );
+        if (!$count = $app['events.repository']->save($eventData)) {
+            return 'Failure to communicate';
+        };
+        return 'Nice job!';
+    }
 }

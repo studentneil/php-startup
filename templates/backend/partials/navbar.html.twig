@@ -10,11 +10,12 @@
                         <button class="waves-effect waves-light btn orange">Welcome {{ app.user.username }}</button>
                     </li>
                 </div>
-                <li>
-                    <a href="/admin/dashboard">Dashboard</a>
-                </li>
+
                 <li>
                     <ul class="collapsible collapsible-accordion">
+                        <li {% if active_page == 'dashboard' %}class="active"{% endif %}>
+                            <a href="/admin/dashboard" class="collapsible-header">Dashboard</a>
+                        </li>
                         <li>
                             <a {% if active_page in ['view-releases', 'create-release'] %}class="collapsible-header active"{% else
                             %}class="collapsible-header"{% endif %}>Releases</a>

@@ -25,6 +25,8 @@ class LoginController
         $releases = $app['vinyl.repository']->findLatestRelease();
         $images = $app['image.repository']->findAll();
         $pricing = $app['pricing.repository']->findAll();
+        $shippingRates = $app['shipping.repository']->viewAll();
+        $events = $app['events.repository']->findAll();
 
         $templateName = 'backend/dashboard';
         $args_array = array(
@@ -32,6 +34,8 @@ class LoginController
             'releases' => $releases,
             'images' => $images,
             'pricing' => $pricing,
+            'shippingRates' => $shippingRates,
+            'events' => $events
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
