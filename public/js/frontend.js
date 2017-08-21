@@ -72,8 +72,7 @@ $(document).ready(function() {
         }).done(success).fail(err);
     })
     Snipcart.subscribe('item.added', function (item) {
-        console.log(item);
-
+        
         var success = function(resp) {
             console.log(resp);
         };
