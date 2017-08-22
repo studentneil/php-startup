@@ -72,7 +72,7 @@ $(document).ready(function() {
         }).done(success).fail(err);
     })
     Snipcart.subscribe('item.added', function (item) {
-        
+
         var success = function(resp) {
             console.log(resp);
         };
@@ -85,6 +85,22 @@ $(document).ready(function() {
             data: item
         }).done(success).fail(err);
     })
+    $('.details').on('click', function(e) {
+        // e.preventDefault();
+        var item = $(this).closest('.details').attr('href');
+        // var link = $('<a href="'+item+'"');
+        // var id = $(e.target).closest('a').data('id');
+        var title = $(e.target).closest('a').data('title');
+        // console.log(link);
+        // console.log(title);
+        sessionStorage.setItem('item', item);
+        sessionStorage.setItem('title', title);
+    });
 
+    $('.recent-item').html($('<a>', {href: sessionStorage.getItem('item'), text: sessionStorage.getItem('title'), class: 'collection-item'}));
+
+    var barcode = $('#barcode').text();
+    console.log(barcode);
+    $('#barcode').JsBarcode(barcode);
 });
 

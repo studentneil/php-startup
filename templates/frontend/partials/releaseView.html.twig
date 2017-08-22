@@ -9,8 +9,8 @@
             <p>&euro;{{ release.price }}</p>
         </div>
         <div class="card-action">
-            <a class="waves-effect waves-light"
-               href="/vinyl/{{ release.genre }}/{{ release.artist|slugify }}/{{ release.title|slugify }}/{{ release.id }}">Details</a>
+            <a class="waves-effect waves-light details" href="/vinyl/{{ release.genre }}/{{ release.artist|slugify }}/{{ release.title|slugify }}/{{ release.id }}"
+               data-id="{{ release.id }}" data-title="{{ release.title }}" data-artist="{{ release.artist }}" data-genre="{{ release.genre }}" >Details</a>
         </div>
 
 

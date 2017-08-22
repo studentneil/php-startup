@@ -38,7 +38,10 @@
     <main>
         {% block content %} {% endblock %}
     </main>
-    <div class="spacer"></div>
+    {#<div class="spacer"></div>#}
+    <div class="recent-items">
+        {% include 'frontend/partials/recentItems.html.twig' %}
+    </div>
     {# the footer #}
     <footer class="page-footer">
         {% include 'frontend/partials/footer.html.twig' %}
@@ -60,6 +63,7 @@
     <script
             src="{{ asset('/js/frontend.js') }}">
     </script>
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.5.8/JsBarcode.all.min.js"></script>
     <!-- google analytics tracking ID -->
     <script>
         <!-- turn off tracking hits from localhost -->
