@@ -116,13 +116,12 @@
         <div class="col s12 m12">
             <h5>Latest Items added to cart</h5>
             <div class="divider"></div>
-            {% for event in events|slice(0,6) %}
-                <div class="col s12 m4 l4">
+            {% for event in events %}
+                <div class="col s12 m4 l3">
                     <div class="backend card">
                         <div class="card-content">
                             <p>id : {{ event.id }}</p>
-                            <p>quantity : {{ event.name }}</p>
-                            <p>description : {{ event.description }}</p>
+                            <p>name : {{ event.name }}</p>
                         </div>
                     </div>
                 </div>

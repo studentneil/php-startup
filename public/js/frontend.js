@@ -5,7 +5,7 @@
 $(document).ready(function() {
     $('.button-collapse').sideNav({
         // closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-        draggable: true, // Choose whether you can drag to open on touch screens
+        draggable: true // Choose whether you can drag to open on touch screens
 
     });
     $('.close-menu').on('click', function(){
@@ -17,7 +17,7 @@ $(document).ready(function() {
             inDuration: 300, // Transition in duration
             outDuration: 200, // Transition out duration
             startingTop: '4%', // Starting top style attribute
-            endingTop: '10%', // Ending top style attribute
+            endingTop: '10%' // Ending top style attribute
         }
     );
     $('#preLoader').hide();
@@ -37,7 +37,7 @@ $(document).ready(function() {
                 $('#preLoader').hide();
                 $('#contactSubmit').show();
                 $('#contactForm')[0].reset();
-                console.log(response)
+                console.log(response);
                 $('#message').html('<p>' + response + '</p>')
             },
             error: function(response)
@@ -49,7 +49,7 @@ $(document).ready(function() {
             }
             })
         }
-    )
+    );
     $('#randomiser').on('click', function (e) {
         e.preventDefault();
         // alternative way to call the randomise function
@@ -67,10 +67,10 @@ $(document).ready(function() {
         };
         $.ajax({
             type: 'get',
-            url: '/randomise',
+            url: '/randomise'
             // dataType: 'json'
         }).done(success).fail(err);
-    })
+    });
     Snipcart.subscribe('item.added', function (item) {
 
         var success = function(resp) {
@@ -84,23 +84,20 @@ $(document).ready(function() {
             url: '/events/item-added',
             data: item
         }).done(success).fail(err);
-    })
-    $('.details').on('click', function(e) {
-        // e.preventDefault();
-        var item = $(this).closest('.details').attr('href');
-        // var link = $('<a href="'+item+'"');
-        // var id = $(e.target).closest('a').data('id');
-        var title = $(e.target).closest('a').data('title');
-        // console.log(link);
-        // console.log(title);
-        sessionStorage.setItem('item', item);
-        sessionStorage.setItem('title', title);
     });
 
-    $('.recent-item').html($('<a>', {href: sessionStorage.getItem('item'), text: sessionStorage.getItem('title'), class: 'collection-item'}));
+    $('.details').on('click', function () {
+
+        var item = $(this).closest('.details').attr('href');
+        var title = $(e.target).closest('a').data('title');
+        sessionStorage.setItem('link', item);
+        sessionStorage.setItem('anchor', title);
+    });
+
+    $('.recent-item').html($('<a>', {href: sessionStorage.getItem('link'), text: sessionStorage.getItem('anchor'), class: 'collection-item'}));
 
     var barcode = $('#barcode').text();
-    console.log(barcode);
+    // console.log(barcode);
     $('#barcode').JsBarcode(barcode);
 });
 
