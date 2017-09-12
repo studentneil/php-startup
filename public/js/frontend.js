@@ -89,7 +89,7 @@ $(document).ready(function() {
     $('.details').on('click', function () {
 
         var item = $(this).closest('.details').attr('href');
-        var title = $(e.target).closest('a').data('title');
+        var title = $(this).closest('a').data('title');
         sessionStorage.setItem('link', item);
         sessionStorage.setItem('anchor', title);
     });

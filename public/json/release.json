@@ -1,227 +1,442 @@
 {
     "styles": [
-        "Breaks",
-        "Dub Techno"
+        "Synth-pop"
     ],
     "videos": [
         {
-            "duration": 517,
-            "description": "Tantakatan (The Drunken Shed Mix)",
+            "duration": 379,
+            "description": "New Order - True Faith 87 (12 Inch Maxi Single)",
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=LYKbdXjBG0Q",
-            "title": "Tantakatan (The Drunken Shed Mix)"
+            "uri": "https:\/\/www.youtube.com\/watch?v=C0zd989ZPPw",
+            "title": "New Order - True Faith 87 (12 Inch Maxi Single)"
         },
         {
-            "duration": 603,
-            "description": "Tantakatan (Mr. G's Nightwatch Dub)",
+            "duration": 352,
+            "description": "New Order - True Faith-94 (Sexy Disco Dub)__London Rec..wmv",
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=LgRukY7_ch8",
-            "title": "Tantakatan (Mr. G's Nightwatch Dub)"
+            "uri": "https:\/\/www.youtube.com\/watch?v=1qSI7bBKaBU",
+            "title": "New Order - True Faith-94 (Sexy Disco Dub)__London Rec..wmv"
         },
         {
-            "duration": 517,
-            "description": "Radio Slave - Tantakatan (The Drunken Shed Mix)",
+            "duration": 336,
+            "description": "New Order-1963 (Instrumental)",
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=k07juCMYD6A",
-            "title": "Radio Slave - Tantakatan (The Drunken Shed Mix)"
+            "uri": "https:\/\/www.youtube.com\/watch?v=EnpsgAb5DEw",
+            "title": "New Order-1963 (Instrumental)"
         },
         {
-            "duration": 569,
-            "description": "Tantakatan (Prins Thomas Diskomiks)",
+            "duration": 385,
+            "description": "New Order - True Faith-94 (Perfecto Mix)__London Rec..wmv",
             "embed": true,
-            "uri": "https:\/\/www.youtube.com\/watch?v=FJvUubEVwaw",
-            "title": "Tantakatan (Prins Thomas Diskomiks)"
+            "uri": "https:\/\/www.youtube.com\/watch?v=Uz1ZSeTV6h8",
+            "title": "New Order - True Faith-94 (Perfecto Mix)__London Rec..wmv"
+        },
+        {
+            "duration": 545,
+            "description": "New Order - True Faith (The Morning Sun Extended Remix)",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=LA2Z3BhunRA",
+            "title": "New Order - True Faith (The Morning Sun Extended Remix)"
+        },
+        {
+            "duration": 277,
+            "description": "New Order - True Faith (1987) [OFFICIAL MUSIC VIDEO]",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=mfI1S0PKJR8",
+            "title": "New Order - True Faith (1987) [OFFICIAL MUSIC VIDEO]"
+        },
+        {
+            "duration": 225,
+            "description": "NEW ORDER   evil dust",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=1ZNe3tZnfIg",
+            "title": "NEW ORDER   evil dust"
+        },
+        {
+            "duration": 253,
+            "description": "New Order - True Faith [7 mix]",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=y_KKhcZ6omM",
+            "title": "New Order - True Faith [7 mix]"
+        },
+        {
+            "duration": 264,
+            "description": "New Order - True Faith",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=og1HAkjOuL0",
+            "title": "New Order - True Faith"
+        },
+        {
+            "duration": 542,
+            "description": "New Order True Faith Shep Pettibone remix",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=VGcSiX4RtGI",
+            "title": "New Order True Faith Shep Pettibone remix"
+        },
+        {
+            "duration": 333,
+            "description": "New Order - 1963 ( with lyrics )",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=NOuScBpe1_0",
+            "title": "New Order - 1963 ( with lyrics )"
+        },
+        {
+            "duration": 353,
+            "description": "New Order- True Faith (Sexy Disco Dub)",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=LOEJ45zIg5M",
+            "title": "New Order- True Faith (Sexy Disco Dub)"
+        },
+        {
+            "duration": 646,
+            "description": "New Order - True Dub (1987)",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=fdvufEWRSCA",
+            "title": "New Order - True Dub (1987)"
+        },
+        {
+            "duration": 283,
+            "description": "New Order - True Faith-94",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=HmPK_IRk1Hk",
+            "title": "New Order - True Faith-94"
+        },
+        {
+            "duration": 372,
+            "description": "New Order - True Faith '94 (The TWA Grim Up North mix) HQ",
+            "embed": true,
+            "uri": "https:\/\/www.youtube.com\/watch?v=6LoFfWeLYks",
+            "title": "New Order - True Faith '94 (The TWA Grim Up North mix) HQ"
         }
     ],
     "series": [],
     "labels": [
         {
-            "name": "REKIDS",
+            "name": "Festival Records",
             "entity_type": "1",
-            "catno": "REKIDS 031",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/58500",
-            "id": 58500,
+            "catno": "X 14848",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/2313",
+            "id": 2313,
+            "entity_type_name": "Label"
+        },
+        {
+            "name": "Factory",
+            "entity_type": "1",
+            "catno": "Fac 183R",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/857",
+            "id": 857,
+            "entity_type_name": "Label"
+        },
+        {
+            "name": "Festival Records",
+            "entity_type": "1",
+            "catno": "X14848",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/2313",
+            "id": 2313,
             "entity_type_name": "Label"
         }
     ],
-    "year": 2008,
+    "year": 0,
     "community": {
         "status": "Accepted",
         "rating": {
-            "count": 39,
-            "average": 4.36
+            "count": 2,
+            "average": 5
         },
-        "have": 207,
+        "have": 8,
         "contributors": [
             {
-                "username": "maobeat",
-                "resource_url": "https:\/\/api.discogs.com\/users\/maobeat"
+                "username": "renegad",
+                "resource_url": "https:\/\/api.discogs.com\/users\/renegad"
             },
             {
-                "username": "Grap",
-                "resource_url": "https:\/\/api.discogs.com\/users\/Grap"
+                "username": "sebfact",
+                "resource_url": "https:\/\/api.discogs.com\/users\/sebfact"
             },
             {
-                "username": "LostInVinyl",
-                "resource_url": "https:\/\/api.discogs.com\/users\/LostInVinyl"
+                "username": "patric627",
+                "resource_url": "https:\/\/api.discogs.com\/users\/patric627"
             },
             {
-                "username": "zevulon",
-                "resource_url": "https:\/\/api.discogs.com\/users\/zevulon"
-            },
-            {
-                "username": "hermanito",
-                "resource_url": "https:\/\/api.discogs.com\/users\/hermanito"
+                "username": "bertielego",
+                "resource_url": "https:\/\/api.discogs.com\/users\/bertielego"
             }
         ],
-        "want": 68,
+        "want": 54,
         "submitter": {
-            "username": "maobeat",
-            "resource_url": "https:\/\/api.discogs.com\/users\/maobeat"
+            "username": "renegad",
+            "resource_url": "https:\/\/api.discogs.com\/users\/renegad"
         },
         "data_quality": "Correct"
     },
     "artists": [
         {
-            "join": "",
-            "name": "Radio Slave",
+            "join": ",",
+            "name": "New Order",
             "anv": "",
             "tracks": "",
             "role": "",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/29782",
-            "id": 29782
+            "resource_url": "https:\/\/api.discogs.com\/artists\/3909",
+            "id": 3909
         }
     ],
     "images": [
         {
-            "uri": "https:\/\/img.discogs.com\/LKTpQuI-dw2OPXXVReNfzrnppXQ=\/fit-in\/600x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1489965-1459710680-9011.jpeg.jpg",
-            "height": 602,
-            "width": 600,
-            "resource_url": "https:\/\/img.discogs.com\/LKTpQuI-dw2OPXXVReNfzrnppXQ=\/fit-in\/600x602\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1489965-1459710680-9011.jpeg.jpg",
-            "type": "primary",
-            "uri150": "https:\/\/img.discogs.com\/M90Q0VR9QQMvALl2tSJlSEsJzv0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1489965-1459710680-9011.jpeg.jpg"
+            "uri": "https:\/\/img.discogs.com\/HAnvo0gMcLE1TtvNdgYI13XooXQ=\/fit-in\/400x401\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787242-5986.jpeg.jpg",
+            "height": 401,
+            "width": 400,
+            "resource_url": "https:\/\/img.discogs.com\/HAnvo0gMcLE1TtvNdgYI13XooXQ=\/fit-in\/400x401\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787242-5986.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/img.discogs.com\/CHvzVLVyD2b2NH7829QYT7yHR3k=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787242-5986.jpeg.jpg"
         },
         {
-            "uri": "https:\/\/img.discogs.com\/ZiKOpqHkcKAtWBIQP7ob-Tpbw_4=\/fit-in\/600x610\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1489965-1459710681-8997.jpeg.jpg",
-            "height": 610,
-            "width": 600,
-            "resource_url": "https:\/\/img.discogs.com\/ZiKOpqHkcKAtWBIQP7ob-Tpbw_4=\/fit-in\/600x610\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-1489965-1459710681-8997.jpeg.jpg",
+            "uri": "https:\/\/img.discogs.com\/jK-gR_tDTdroT2jSEAgmI-GWwA0=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787256-2012.jpeg.jpg",
+            "height": 400,
+            "width": 400,
+            "resource_url": "https:\/\/img.discogs.com\/jK-gR_tDTdroT2jSEAgmI-GWwA0=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787256-2012.jpeg.jpg",
             "type": "secondary",
-            "uri150": "https:\/\/img.discogs.com\/NPZm6pEAXyH2qgghVMuNTkAq15E=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1489965-1459710681-8997.jpeg.jpg"
+            "uri150": "https:\/\/img.discogs.com\/BDAOagkiL97n9B4B73DPNYgD4n0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787256-2012.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/img.discogs.com\/oPOj0ZdtR-RMN8XEBskh06Hw2y0=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787325-8255.jpeg.jpg",
+            "height": 400,
+            "width": 400,
+            "resource_url": "https:\/\/img.discogs.com\/oPOj0ZdtR-RMN8XEBskh06Hw2y0=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787325-8255.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/img.discogs.com\/iUb0v6NQh8JiCRJpbntZQIyjVKg=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787325-8255.jpeg.jpg"
+        },
+        {
+            "uri": "https:\/\/img.discogs.com\/Yevv8cm8Z6FcSoRrQMYwmHp9pok=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787339-5592.jpeg.jpg",
+            "height": 400,
+            "width": 400,
+            "resource_url": "https:\/\/img.discogs.com\/Yevv8cm8Z6FcSoRrQMYwmHp9pok=\/fit-in\/400x400\/filters:strip_icc():format(jpeg):mode_rgb():quality(90)\/discogs-images\/R-4640692-1370787339-5592.jpeg.jpg",
+            "type": "secondary",
+            "uri150": "https:\/\/img.discogs.com\/NBZ_baTKBQm1gETD3P9dJYSe7Ps=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787339-5592.jpeg.jpg"
         }
     ],
     "format_quantity": 1,
-    "id": 1489965,
+    "id": 4640692,
     "genres": [
         "Electronic"
     ],
-    "thumb": "https:\/\/img.discogs.com\/M90Q0VR9QQMvALl2tSJlSEsJzv0=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-1489965-1459710680-9011.jpeg.jpg",
-    "num_for_sale": 24,
-    "title": "Tantakatan (The Drunken Shed Mix)",
-    "date_changed": "2016-04-03T12:11:25-07:00",
-    "master_id": 916600,
-    "lowest_price": 1.08,
+    "thumb": "https:\/\/img.discogs.com\/CHvzVLVyD2b2NH7829QYT7yHR3k=\/fit-in\/150x150\/filters:strip_icc():format(jpeg):mode_rgb():quality(40)\/discogs-images\/R-4640692-1370787242-5986.jpeg.jpg",
+    "num_for_sale": 1,
+    "title": "True Faith Remix",
+    "date_changed": "2016-11-11T13:44:39-08:00",
+    "master_id": 41131,
+    "lowest_price": 335.26,
     "status": "Accepted",
-    "released_formatted": "Oct 2008",
     "estimated_weight": 230,
-    "master_url": "https:\/\/api.discogs.com\/masters\/916600",
-    "released": "2008-10-00",
-    "date_added": "2008-10-09T07:02:26-07:00",
+    "master_url": "https:\/\/api.discogs.com\/masters\/41131",
+    "date_added": "2013-06-09T07:19:59-07:00",
     "tracklist": [
         {
-            "duration": "8:35",
+            "duration": "",
             "position": "A",
             "type_": "track",
-            "title": "Tantakatan (The Drunken Shed Mix)"
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Shep Pettibone",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Remix",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/2732",
+                    "id": 2732
+                }
+            ],
+            "title": "True Faith (Remix)"
+        },
+        {
+            "duration": "",
+            "position": "B1",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Nick Mainsbridge",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Remix [Assisted By]",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/288215",
+                    "id": 288215
+                },
+                {
+                    "join": "",
+                    "name": "Robert Racic",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Remix, Edited By",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/23678",
+                    "id": 23678
+                }
+            ],
+            "title": "Paradise (Remix)"
+        },
+        {
+            "duration": "",
+            "position": "B2",
+            "type_": "track",
+            "extraartists": [
+                {
+                    "join": "",
+                    "name": "Shep Pettibone",
+                    "anv": "",
+                    "tracks": "",
+                    "role": "Remix",
+                    "resource_url": "https:\/\/api.discogs.com\/artists\/2732",
+                    "id": 2732
+                }
+            ],
+            "title": "True Dub"
         }
     ],
     "extraartists": [
         {
             "join": "",
-            "name": "Matt Colton",
+            "name": "Peter Saville Associates",
+            "anv": "",
+            "tracks": "",
+            "role": "Design [Sleeve]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/512290",
+            "id": 512290
+        },
+        {
+            "join": "",
+            "name": "Trevor Key",
+            "anv": "",
+            "tracks": "",
+            "role": "Design [Sleeve]",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/512289",
+            "id": 512289
+        },
+        {
+            "join": "",
+            "name": "\u00c5 (3)",
             "anv": "",
             "tracks": "",
             "role": "Mastered By",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/393350",
-            "id": 393350
+            "resource_url": "https:\/\/api.discogs.com\/artists\/2980950",
+            "id": 2980950
         },
         {
             "join": "",
-            "name": "Shed",
-            "anv": "",
-            "tracks": "",
-            "role": "Remix, Producer [Additional]",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/97364",
-            "id": 97364
-        },
-        {
-            "join": "",
-            "name": "Matt Edwards",
+            "name": "New Order",
             "anv": "",
             "tracks": "",
             "role": "Written-By, Producer",
-            "resource_url": "https:\/\/api.discogs.com\/artists\/86183",
-            "id": 86183
+            "resource_url": "https:\/\/api.discogs.com\/artists\/3909",
+            "id": 3909
+        },
+        {
+            "join": "",
+            "name": "Stephen Hague",
+            "anv": "",
+            "tracks": "A, B2",
+            "role": "Written-By, Producer",
+            "resource_url": "https:\/\/api.discogs.com\/artists\/23029",
+            "id": 23029
         }
     ],
-    "country": "UK",
-    "notes": "\u2117&\u00a9 REKIDS LTD 2008.\r\nMade in EU.\r\n\r\n\r\n",
+    "country": "Australia",
+    "notes": "Factory and Festival Records logos only appear on back inlay.\n\nA and B or 1 and 2 aren't written on labels.\n\nNo tracks duration mentioned on this product.\n\nPrinted on this product :\n\n\"Published by Bemusic\/Warner\/Chappel\/MCA\" (for tracks A & B2) on back cover.\n\"(Bemusic\/Warner\/Chappel\/MCA)\" (for track A & B2) on both labels (A side + B side).\n\"Published by Bemusic\/Warner\/Chappel\/MCA\" (for track B1) on back cover.\n\"(Bemusic\/Warner Brothers Music)\" (for track B1) on one of the label (B side).\n\n\"\u2117 1987 Factory Communications Limited.\" (on labels)\n\nAlso printed on back cover :\nNew Order - True Faith Remix\/Paradise\/True Dub\n\"A Factory Record. (P)(C)1987 Factory Communications Ltd England.\nTrackmark owned by Factory Communications Ltd. and used by Festival Records Pty Ltd Australia under authorization.\nManufactured by Festival Records Pty Ltd Australia\" \n",
     "identifiers": [
         {
             "type": "Barcode",
-            "value": "5060124903163"
+            "description": "Printed",
+            "value": "9 399601 484861"
         },
         {
             "type": "Matrix \/ Runout",
-            "value": "MATT COLTON MASTERING MPO REKIDS 031 A1"
+            "description": "Printed on A side label",
+            "value": "MX-74671"
+        },
+        {
+            "type": "Matrix \/ Runout",
+            "description": "Printed on B side label",
+            "value": "MX-74672"
+        },
+        {
+            "type": "Matrix \/ Runout",
+            "description": "Scratched on A side vinyl",
+            "value": "6A SMX 74671 FAC 183R - 1 MX 219773 \u00c5"
+        },
+        {
+            "type": "Matrix \/ Runout",
+            "description": "Scratched on A side vinyl",
+            "value": "6A SMX 74672 FAC 183R - 2 MX 219774 \u00c5"
         }
     ],
     "companies": [
         {
-            "name": "Rekids Publishing",
-            "entity_type": "21",
-            "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/273288",
-            "id": 273288,
-            "entity_type_name": "Published By"
-        },
-        {
-            "name": "Rekids Ltd.",
+            "name": "Factory Communications Ltd.",
             "entity_type": "13",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/273287",
-            "id": 273287,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/264405",
+            "id": 264405,
             "entity_type_name": "Phonographic Copyright (p)"
         },
         {
-            "name": "Rekids Ltd.",
+            "name": "Factory Communications Ltd.",
             "entity_type": "14",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/273287",
-            "id": 273287,
+            "resource_url": "https:\/\/api.discogs.com\/labels\/264405",
+            "id": 264405,
             "entity_type_name": "Copyright (c)"
         },
         {
-            "name": "MPO",
-            "entity_type": "17",
+            "name": "Be Music (2)",
+            "entity_type": "21",
             "catno": "",
-            "resource_url": "https:\/\/api.discogs.com\/labels\/56025",
-            "id": 56025,
-            "entity_type_name": "Pressed By"
+            "resource_url": "https:\/\/api.discogs.com\/labels\/266634",
+            "id": 266634,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Warner Bros. Music",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/41321",
+            "id": 41321,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Warner\/Chappell",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/138147",
+            "id": 138147,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "MCA Music Inc.",
+            "entity_type": "21",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/270946",
+            "id": 270946,
+            "entity_type_name": "Published By"
+        },
+        {
+            "name": "Festival Records Pty. Ltd.",
+            "entity_type": "16",
+            "catno": "",
+            "resource_url": "https:\/\/api.discogs.com\/labels\/108138",
+            "id": 108138,
+            "entity_type_name": "Made By"
         }
     ],
-    "uri": "https:\/\/www.discogs.com\/Radio-Slave-Tantakatan-The-Drunken-Shed-Mix\/release\/1489965",
+    "uri": "https:\/\/www.discogs.com\/New-Order-True-Faith-Remix\/release\/4640692",
     "formats": [
         {
             "descriptions": [
                 "12\"",
-                "Single Sided",
-                "33 \u2153 RPM"
+                "33 \u2153 RPM",
+                "Reissue"
             ],
             "name": "Vinyl",
             "qty": "1"
         }
     ],
-    "resource_url": "https:\/\/api.discogs.com\/releases\/1489965",
+    "resource_url": "https:\/\/api.discogs.com\/releases\/4640692",
     "data_quality": "Correct"
 }
