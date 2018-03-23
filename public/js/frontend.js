@@ -2,13 +2,14 @@
  * Created by neil on 25/04/2017.
  */
 // jquery code for initializing various frontend effects/plugins
-$(document).ready(function() {
+$(document).ready(function () {
+    $('.dont-show').css('display', 'none');
     $('.button-collapse').sideNav({
         // closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
         draggable: true // Choose whether you can drag to open on touch screens
 
     });
-    $('.close-menu').on('click', function(){
+    $('.close-menu').on('click', function () {
         $(this).sideNav('hide');
     });
     $('.modal').modal({
@@ -21,35 +22,40 @@ $(document).ready(function() {
         }
     );
     $('#preLoader').hide();
-    $('#contactForm').submit( function(e) {
+    $('#contactForm').submit(function (e) {
         e.preventDefault();
         var url = $(this).attr('action');
         var formSerialize = $(this).serializeArray();
+
+        var success = function (response, status, jqxhr) {
+            $('#preLoader').hide();
+            $('#contactSubmit').show();
+            $('#contactForm')[0].reset();
+            console.log(response);
+            $('#message').html('<p>' + response + '</p>')
+        };
+
+        var error = function (request, status, error) {
+            $('#preLoader').hide();
+            $('#contactSubmit').show();
+            console.log(status);
+        };
+
         $('#preLoader').show();
         $('#contactSubmit').hide();
+
         $.ajax({
             type: $(this).attr('method'),
             url: url,
             data: formSerialize,
-
-            success: function (response)
-            {
-                $('#preLoader').hide();
-                $('#contactSubmit').show();
-                $('#contactForm')[0].reset();
-                console.log(response);
-                $('#message').html('<p>' + response + '</p>')
-            },
-            error: function(response)
-            {
-                $('#preLoader').hide();
-                $('#contactSubmit').show();
-               console.log(response);
-                $('#message').html('<p>' + response + '</p>');
+            statusCode: {
+                500: function () {
+                    $('#message').html('<p>Gotcha!</p>');
+                    $('#contactForm').trigger('reset')
+                }
             }
-            })
-        }
-    );
+        }).done(success).fail(error);
+    });
     $('#randomiser').on('click', function (e) {
         e.preventDefault();
         // alternative way to call the randomise function
@@ -57,11 +63,11 @@ $(document).ready(function() {
         //     $( '#randomRelease' ).html( data );
         // });
 
-        var success = function( resp ) {
-                console.log(resp);
-                $('#randomRelease').html(resp);
+        var success = function (resp) {
+            console.log(resp);
+            $('#randomRelease').html(resp);
         };
-        var err = function( req, status, err ) {
+        var err = function (req, status, err) {
             console.log(status);
             $('#randomRelease').html(status);
         };
@@ -73,7 +79,7 @@ $(document).ready(function() {
     });
     Snipcart.subscribe('item.added', function (item) {
 
-        var success = function(resp) {
+        var success = function (resp) {
             console.log(resp);
         };
         var err = function (req, status, err) {
@@ -94,7 +100,11 @@ $(document).ready(function() {
         sessionStorage.setItem('anchor', title);
     });
 
-    $('.recent-item').html($('<a>', {href: sessionStorage.getItem('link'), text: sessionStorage.getItem('anchor'), class: 'collection-item'}));
+    $('.recent-item').html($('<a>', {
+        href: sessionStorage.getItem('link'),
+        text: sessionStorage.getItem('anchor'),
+        class: 'collection-item'
+    }));
 
     var barcode = $('#barcode').text();
     // console.log(barcode);

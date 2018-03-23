@@ -29,6 +29,13 @@
                         </div>
 
                     </div>
+                    <div class="row dont-show">
+                        <div class="input-field">
+                            {{ form_label(form.field, 'field') }}
+                            {{ form_widget(form.field, {'attr':{'class':'dont-show'}}) }}
+                            {{ form_errors(form.field) }}
+                        </div>
+                    </div>
                     <button id="contactSubmit" class="btn waves-effect waves-light teal" type="submit" name="action">Submit</button>
                     <input type="reset" class="btn">
                     <div id="preLoader" class="progress">

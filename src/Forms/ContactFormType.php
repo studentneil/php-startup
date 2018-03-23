@@ -10,7 +10,6 @@ namespace VinylStore\Forms;
 
 
 use Symfony\Component\Form\AbstractType;
-
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\Extension\Core\Type\EmailType;
 use Symfony\Component\Form\Extension\Core\Type\TextareaType;
@@ -28,14 +27,22 @@ class ContactFormType extends AbstractType
                     new Assert\NotBlank(),
                     new Assert\Length(array(
                         'min' => 3,
-                    )))))
+                    ))
+                )
+            ))
             ->add('email', EmailType::class, array(
                 'constraints' => new Assert\Email()
             ))
             ->add('message', TextareaType::class, array(
                 'constraints' => array(
                     new Assert\NotBlank(),
-                    )
+                )
+            ))
+            ->add('field', TextType::class, array(
+                'required' => false,
+                'constraints' => array(
+                    new Assert\Blank()
+                )
             ));
 
     }
