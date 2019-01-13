@@ -6,9 +6,6 @@ use Pimple\Container;
 use Pimple\ServiceProviderInterface;
 use VinylStore\Repository\VinylRepository;
 
-/**
- * Class VinylRepositoryServiceProvider.
- */
 class VinylRepositoryServiceProvider implements ServiceProviderInterface
 {
     /**

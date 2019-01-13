@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 28/02/2017
- * Time: 22:56.
- */
 
 namespace VinylStore\Controllers;
 
@@ -16,10 +10,9 @@ use VinylStore\Options;
 class PricingController
 {
     /**
-     * @param Request     $request
-     * @param Application $app
-     *
-     * @return Pricing form template
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \Silex\Application $app
+     * @return mixed
      */
     public function indexAction(Request $request, Application $app)
     {
@@ -49,6 +42,10 @@ class PricingController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
+    /**
+     * @param \Silex\Application $app
+     * @return mixed
+     */
     public function viewPricingAction(Application $app)
     {
         $allPricing = $app['pricing.repository']->findAll();
@@ -59,6 +56,13 @@ class PricingController
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
+
+    /**
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \Silex\Application $app
+     * @param $id
+     * @return mixed
+     */
     public function editPricingAction(Request $request, Application $app, $id)
     {
         $pricingData = $app['pricing.repository']->findOneById($id);

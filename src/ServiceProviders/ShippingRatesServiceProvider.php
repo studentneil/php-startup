@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 12/06/2017
- * Time: 22:36
- */
 
 namespace VinylStore\ServiceProviders;
 
@@ -14,6 +8,9 @@ use VinylStore\Repository\ShippingRatesRepository;
 
 class ShippingRatesServiceProvider implements ServiceProviderInterface
 {
+    /**
+     * @param \Pimple\Container $app
+     */
     public function register(Container $app)
     {
         $app['shipping.repository'] = function () use ($app) {
