@@ -11,7 +11,7 @@ use VinylStore\Paginator;
 
 class MainController
 {
-    const RELEASES_PER_PAGE = 4;
+    const RELEASES_PER_PAGE = 12;
 
     /**
      * @param Application $app
@@ -181,7 +181,7 @@ class MainController
         $pager->setCurrentPage($request->get('page', 1));
         $offset = $pager->getOffset();
         $limit = $pager->getLimit();
-        
+
         return array($pager, $offset, $limit);
     }
 }
