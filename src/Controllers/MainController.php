@@ -4,35 +4,30 @@ namespace VinylStore\Controllers;
 
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 use VinylStore\Forms\ContactFormType;
 use VinylStore\Forms\RefineType;
 use VinylStore\Paginator;
 
-/**
- * Handles all the frontend actions and rendering templates.
- *
- * Class MainController
- */
 class MainController
 {
+    const RELEASES_PER_PAGE = 4;
+
     /**
-     * Renders the homepage.
-     *
      * @param Application $app
-     *
-     * @return template: home
+     * @return Response
      */
-    public function indexAction(Request $request, Application $app)
+    public function indexAction(Application $app)
     {
         $rockReleases = $app['vinyl.repository']->getReleasesByGenre('rock', '2', '0');
-        $elecReleases = $app['vinyl.repository']->getReleasesByGenre('electronic', '2', '0');
-        $clasRockReleases = $app['vinyl.repository']->getReleasesByGenre('classic-rock', '2', '0');
+        $electronicReleases = $app['vinyl.repository']->getReleasesByGenre('electronic', '2', '0');
+        $classicRockReleases = $app['vinyl.repository']->getReleasesByGenre('classic-rock', '2', '0');
         $randomRelease = $app['vinyl.repository']->findRandomRelease();
         $templateName = 'frontend/home';
         $args_array = array(
             'rock_releases' => $rockReleases,
-            'elec_releases' => $elecReleases,
-            'classic_releases' => $clasRockReleases,
+            'elec_releases' => $electronicReleases,
+            'classic_releases' => $classicRockReleases,
             'random_release' => $randomRelease
         );
 
@@ -40,22 +35,14 @@ class MainController
     }
 
     /**
-     * The 'main' page for viewing vinyls.
-     *
-     * Retrieves all releases from the database and paginates.
-     *
-     * @param Request     $request
+     * @param Request $request
      * @param Application $app
-     *
-     * @return template: collection.html.twig
+     * @return Response
      */
     public function getVinylAction(Request $request, Application $app)
     {
         $total = $app['vinyl.repository']->getActiveReleasesCount();
-        $pager = new Paginator(12, $total);
-        $pager->setCurrentPage($request->get('page', 1));
-        $offset = $pager->getOffset();
-        $limit = $pager->getLimit();
+        list($pager, $offset, $limit) = $this->configurePagination($request, $total);
         $paginatedReleases = $app['vinyl.repository']->findForPagination($limit, $offset);
 
         $templateName = 'frontend/collection';
@@ -80,10 +67,7 @@ class MainController
     public function getGenreAction(Request $request, Application $app, $genre)
     {
         $total = $app['vinyl.repository']->getActiveReleaseByGenre($genre);
-        $pager = new Paginator(12, $total);
-        $pager->setCurrentPage($request->get('page', 1));
-        $offset = $pager->getOffset();
-        $limit = $pager->getLimit();
+        list($pager, $offset, $limit) = $this->configurePagination($request, $total);
         $results = $app['vinyl.repository']->getReleasesByGenre($genre, $limit, $offset);
 
         $templateName = 'frontend/collection';
@@ -184,5 +168,20 @@ class MainController
     public function randomiseAction(Request $request, Application $app)
     {
 
+    }
+
+    /**
+     * @param Request $request
+     * @param $total
+     * @return array
+     */
+    private function configurePagination(Request $request, $total): array
+    {
+        $pager = new Paginator(self::RELEASES_PER_PAGE, $total);
+        $pager->setCurrentPage($request->get('page', 1));
+        $offset = $pager->getOffset();
+        $limit = $pager->getLimit();
+        
+        return array($pager, $offset, $limit);
     }
 }

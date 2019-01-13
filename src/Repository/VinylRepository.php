@@ -6,13 +6,21 @@ use Doctrine\Dbal\Connection;
 
 class VinylRepository implements RepositoryInterface
 {
+    /** @var Connection */
     protected $conn;
 
+    /**
+     * @param Connection $conn
+     */
     public function __construct(Connection $conn)
     {
         $this->conn = $conn;
     }
 
+    /**
+     * @param array $release
+     * @return int
+     */
     public function save($release)
     {
         $count = $this->conn->insert('releases', $release);
@@ -20,6 +28,10 @@ class VinylRepository implements RepositoryInterface
         return $count;
     }
 
+    /**
+     * @return array
+     * @throws \Doctrine\DBAL\DBALException
+     */
     public function findAll()
     {
         $stmt = $this->conn->prepare('SELECT * FROM releases');
@@ -29,6 +41,10 @@ class VinylRepository implements RepositoryInterface
         return $collection;
     }
 
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function findOneById($id)
     {
         //        $safeId = filter_var($id, FILTER_VALIDATE_INT);
@@ -41,6 +57,11 @@ class VinylRepository implements RepositoryInterface
         return $release;
     }
 
+    /**
+     * @param $id
+     * @return int
+     * @throws \Doctrine\DBAL\Exception\InvalidArgumentException
+     */
     public function deleteOneById($id)
     {
         $count = $this->conn->delete('releases', array('id' => $id));
@@ -48,26 +69,42 @@ class VinylRepository implements RepositoryInterface
         return $count;
     }
 
+    /**
+     * @return mixed
+     */
     public function getCount()
     {
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM releases');
     }
 
+    /**
+     * @return mixed
+     */
     public function getActiveReleasesCount()
     {
         return $this->conn->fetchColumn('SELECT COUNT(id) FROM releases WHERE quantity >= 1');
     }
 
+    /**
+     * @param string $genre
+     * @return bool|string
+     */
     public function getActiveReleaseByGenre($genre)
     {
-        $stmt = $this->conn->prepare('SELECT COUNT(id) FROM releases WHERE genre=:genre');
-        $stmt->bindValue('genre', $genre);
-        $stmt->execute();
+        $qb = $this->conn->createQueryBuilder();
+        $qb->select('COUNT(id) as count')
+            ->from('releases', 'r')
+            ->where('genre = ?')
+            ->andWhere('quantity >= 1')
+            ->setParameter(0, $genre);
+        $count = $qb->execute()->fetchColumn();
 
-        return $total = $stmt->fetchColumn();
-
+        return $count;
     }
 
+    /**
+     * @return \Doctrine\DBAL\Query\QueryBuilder
+     */
     public function joinAll()
     {
         $qb = $this->conn->createQueryBuilder();
@@ -79,6 +116,9 @@ class VinylRepository implements RepositoryInterface
         return $qb;
     }
 
+    /**
+     * @return array
+     */
     public function findEverything()
     {
         $qb = $this->joinAll();
@@ -88,6 +128,12 @@ class VinylRepository implements RepositoryInterface
         return $releases;
     }
 
+    /**
+     * @param $genre
+     * @param $limit
+     * @param $offset
+     * @return array
+     */
     public function getReleasesByGenre($genre, $limit, $offset)
     {
         $qb = $this->joinAll();
@@ -101,6 +147,10 @@ class VinylRepository implements RepositoryInterface
 
         return $genreReleases;
     }
+
+    /**
+     * @return array
+     */
     public function fillChoicesWithReleaseId()
     {
         $qb = $this->conn->createQueryBuilder();
@@ -112,6 +162,9 @@ class VinylRepository implements RepositoryInterface
         return $choices;
     }
 
+    /**
+     * @return array
+     */
     public function findLatestRelease()
     {
         $qb = $this->joinAll();
@@ -123,6 +176,10 @@ class VinylRepository implements RepositoryInterface
         return $latestReleases;
     }
 
+    /**
+     * @return array
+     * @throws \Doctrine\DBAL\DBALException
+     */
     public function findRandomRelease()
     {
         $stmt = $this->conn->prepare('SELECT * FROM releases INNER JOIN images ON releases.id=images.release_id INNER JOIN snipcart_data ON releases.id=snipcart_data.release_id AND releases
@@ -135,6 +192,11 @@ LIMIT 1 ');
         return $randomRelease;
     }
 
+    /**
+     * @param $limit
+     * @param int $offset
+     * @return array
+     */
     public function findForPagination($limit, $offset = 0)
     {
         $qb = $this->joinAll();
@@ -147,6 +209,12 @@ LIMIT 1 ');
 
         return $paginatedReleases;
     }
+
+    /**
+     * @param $limit
+     * @param $offset
+     * @return array
+     */
     public function paginate($limit, $offset)
     {
         $qb = $this->conn->createQueryBuilder();
@@ -157,6 +225,10 @@ LIMIT 1 ');
         return $paginatedReleases;
     }
 
+    /**
+     * @param array $refineFormData
+     * @return array
+     */
     public function refine(array $refineFormData)
     {
         $genreArr = array();
@@ -189,6 +261,11 @@ LIMIT 1 ');
 
         return $refinedResults;
     }
+
+    /**
+     * @param $id
+     * @return mixed
+     */
     public function findReleaseForEdit($id)
     {
         //        $safeId = filter_var($id, FILTER_VALIDATE_INT);
@@ -203,6 +280,11 @@ LIMIT 1 ');
         return $release;
     }
 
+    /**
+     * @param array $releaseData
+     * @param $id
+     * @return int
+     */
     public function editRelease(array $releaseData, $id)
     {
         $count = $this->conn->update('releases', $releaseData, array('id' => $id));
@@ -210,6 +292,11 @@ LIMIT 1 ');
         return $count;
     }
 
+    /**
+     * @param $id
+     * @return int
+     * @throws \Doctrine\DBAL\DBALException
+     */
     public function orderCompleted($id)
     {
         $count = $this->conn->executeUpdate('UPDATE releases SET quantity = quantity-1 WHERE id = ?', array($id));

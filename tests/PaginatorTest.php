@@ -1,13 +1,6 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 08/08/2017
- * Time: 22:31
- */
 
 namespace VinylStoreTests;
-
 
 use VinylStore\Paginator;
 use PHPUnit\Framework\TestCase;
