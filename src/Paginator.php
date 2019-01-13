@@ -1,21 +1,28 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 25/04/2017
- * Time: 23:24.
- */
 
 namespace VinylStore;
 
 class Paginator
 {
+    /** @var int  */
     private $limit;
+
+    /** @var int */
     private $offset;
+
+    /** @var float  */
     private $numPages;
+
+    /** @var int  */
     private $total;
+
+    /** @var int */
     private $currentPage;
 
+    /**
+     * @param int $limit
+     * @param int $total
+     */
     public function __construct(int $limit, int $total)
     {
         $this->limit = $limit;
@@ -24,7 +31,7 @@ class Paginator
     }
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getLimit()
     {
@@ -32,7 +39,7 @@ class Paginator
     }
 
     /**
-     * @param mixed $limit
+     * @param int $limit
      */
     public function setLimit($limit)
     {
@@ -82,7 +89,7 @@ class Paginator
     }
 
     /**
-     * @param mixed $total
+     * @param int $total
      */
     public function setTotal($total)
     {
