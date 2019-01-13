@@ -35,7 +35,8 @@
     "symfony/css-selector": "^3.2",
     "phpunit/dbunit": "^3.0",
     "mikey179/vfsStream": "^1.6",
-    "phpunit/phpunit": "6.1"
+    "phpunit/phpunit": "6.1",
+    "phpstan/phpstan": "^0.10.8"
   },
   "scripts": {
     "test": ".\\vendor\\bin\\phpunit tests",

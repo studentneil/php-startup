@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * Date: 26/11/2016
- */
 use Silex\Application;
 use Silex\Provider\AssetServiceProvider;
 use Silex\Provider\HttpFragmentServiceProvider;
@@ -15,6 +11,8 @@ use Silex\Provider\FormServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+use VinylStore\Controllers\MainController;
+use VinylStore\Repository\VinylRepository;
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
 use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
 use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;
@@ -24,7 +22,6 @@ use VinylStore\ServiceProviders\ConfigServiceProvider;
 use VinylStore\ServiceProviders\ShippingRatesServiceProvider;
 use VinylStore\ServiceProviders\EventsRepositoryServiceProvider;
 use VinylStore\UserProvider;
-
 
 require_once __DIR__.'/../vendor/autoload.php';
 
