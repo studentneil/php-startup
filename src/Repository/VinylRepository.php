@@ -2,15 +2,15 @@
 
 namespace VinylStore\Repository;
 
-use Doctrine\Dbal\Connection;
+use Doctrine\DBAL\Driver\Connection;
 
 class VinylRepository implements RepositoryInterface
 {
-    /** @var Connection */
+    /** @var \Doctrine\DBAL\Driver\Connection  */
     protected $conn;
 
     /**
-     * @param Connection $conn
+     * @param \Doctrine\DBAL\Driver\Connection $conn
      */
     public function __construct(Connection $conn)
     {

@@ -1,9 +1,5 @@
 <?php
 
-/**
- * Created by PhpStorm.
- * Date: 26/11/2016
- */
 use Silex\Application;
 use Silex\Provider\AssetServiceProvider;
 use Silex\Provider\HttpFragmentServiceProvider;
@@ -15,6 +11,8 @@ use Silex\Provider\FormServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
+use VinylStore\Controllers\MainController;
+use VinylStore\Repository\VinylRepository;
 use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
 use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
 use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;
@@ -25,19 +23,13 @@ use VinylStore\ServiceProviders\ShippingRatesServiceProvider;
 use VinylStore\ServiceProviders\EventsRepositoryServiceProvider;
 use VinylStore\UserProvider;
 
-
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
 $app['env'] = 'prod';
 
-$app->register(new ConfigServiceProvider(array(
-    'config.dir' => '/../../config/'
-)));
-$app->register(new TwigServiceProvider(array(
-    'twig.options' => array(
-        'debug' => true,
-    ), )));
+$app->register(new ConfigServiceProvider());
+$app->register(new TwigServiceProvider());
 $app->extend('twig', function ($twig, Application $app) {
     $twig->addExtension(new Twig_Extension_Debug());
 
@@ -84,7 +76,7 @@ $app->extend('form.types', function ($types) {
     return $types;
 });
 // upload image form
-$app->extend('form.types', function ($types) use ($app) {
+$app->extend('form.types', function ($types) {
     $types[] = new VinylStore\Forms\ImageUploadType();
 
     return $types;
@@ -96,19 +88,19 @@ $app->extend('form.types', function ($types) {
     return $types;
 });
 // Refine slide-out form
-$app->extend('form.types', function ($types) use ($app) {
+$app->extend('form.types', function ($types) {
     $types[] = new VinylStore\Forms\RefineType();
 
     return $types;
 });
 // contact form
-$app->extend('form.types', function ($types) use ($app) {
+$app->extend('form.types', function ($types) {
     $types[] = new VinylStore\Forms\ContactFormType();
 
     return $types;
 });
 // shipping rates form
-$app->extend('form.types', function ($types) use ($app) {
+$app->extend('form.types', function ($types) {
     $types[] = new VinylStore\Forms\ShippingRatesType();
 
     return $types;

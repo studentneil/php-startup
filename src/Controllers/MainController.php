@@ -56,13 +56,10 @@ class MainController
     }
 
     /**
-     * Retrieves and sorts a list of vinyls by genres.
-     *
-     * @param Request $request
-     * @param Application $app
-     * @param $genre one of {rock, electronic, classic rock}
-     *
-     * @return template: collection.html.twig
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \Silex\Application $app
+     * @param string $genre
+     * @return Response
      */
     public function getGenreAction(Request $request, Application $app, $genre)
     {
@@ -82,12 +79,9 @@ class MainController
     }
 
     /**
-     * Gets an individual vinyl release by its id.
-     *
-     * @param Application $app
-     * @param int         $id
-     *
-     * @return template: release.html.twig
+     * @param \Silex\Application $app
+     * @param int $id
+     * @return Response
      */
     public function getReleaseByIdAction(Application $app, $id)
     {
@@ -102,13 +96,9 @@ class MainController
     }
 
     /**
-     * Processes the refine form and retrieves the refined results.
-     * If the form isnt filled in, it redirects back to getVinylAction.
-     *
-     * @param Request     $request
-     * @param Application $app
-     *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \Silex\Application $app
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse|Response
      */
     public function refineAction(Request $request, Application $app)
     {
@@ -134,6 +124,10 @@ class MainController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
+    /**
+     * @param \Silex\Application $app
+     * @return Response
+     */
     public function faqAction(Application $app)
     {
         $args_array = array();
@@ -142,6 +136,11 @@ class MainController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
+    /**
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \Silex\Application $app
+     * @return Response
+     */
     public function contactAction(Request $request, Application $app)
     {
         $contactFormData = array();
@@ -155,6 +154,11 @@ class MainController
         );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
+
+    /**
+     * @param \Silex\Application $app
+     * @return Response
+     */
     public function renderRefineFormAction(Application $app)
     {
         $formData = array();
@@ -163,11 +167,6 @@ class MainController
             ->getForm();
 
         return $app['twig']->render('frontend/partials/refineForm.html.twig', array('form' => $form->createView()));
-    }
-
-    public function randomiseAction(Request $request, Application $app)
-    {
-
     }
 
     /**
