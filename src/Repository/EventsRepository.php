@@ -1,54 +1,58 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 20/08/2017
- * Time: 22:58
- */
 
 namespace VinylStore\Repository;
 
-use Doctrine\Dbal\Connection;
+use Doctrine\DBAL\DBALException;
 
-class EventsRepository implements RepositoryInterface
+class EventsRepository extends AbstractRepository
 {
-    protected $conn;
+    const TABLE = 'events';
 
-    public function __construct(Connection $conn)
+    /**
+     * @param array $data
+     * @return int
+     */
+    public function save($data)
     {
-        $this->conn = $conn;
+        $count = $this->connection->insert(self::TABLE, $data);
+
+        return $count;
     }
+
     public function findAll()
     {
-        $stmt = $this->conn->prepare('SELECT * FROM events');
+        $stmt = $this->connection->prepare('SELECT * FROM events');
         $stmt->execute();
         $events = $stmt->fetchAll();
 
         return $events;
     }
-    public function save($data)
-    {
-        $count = $this->conn->insert('events', $data);
 
-        return $count;
-    }
+    /**
+     * @param int $id
+     * @return bool|array
+     */
     public function findOneById($id)
     {
-        $stmt = $this->conn->prepare('SELECT * FROM events WHERE release_id=:id');
-        $stmt->bindValue('id', $id);
-        $stmt->execute();
-        $eventData = $stmt->fetch();
+        try {
+            $stmt = $this->connection->prepare('SELECT * FROM events WHERE release_id=:id');
+            $stmt->bindValue('id', $id);
+            $stmt->execute();
+            $eventData = $stmt->fetch();
+        } catch (DBALException $e) {
+            $eventData = false;
+        }
 
         return $eventData;
     }
     public function deleteOneById($id)
     {
-        $count = $this->conn->delete('events', array('id' => $id));
+        $count = $this->connection->delete('events', array('id' => $id));
 
         return $count;
     }
     public function getCount()
     {
-        return $this->conn->fetchColumn('SELECT COUNT(id) FROM events');
+        return $this->connection->fetchColumn('SELECT COUNT(id) FROM events');
     }
 }

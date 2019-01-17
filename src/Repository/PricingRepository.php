@@ -1,33 +1,25 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 28/02/2017
- * Time: 23:29.
- */
 
 namespace VinylStore\Repository;
 
-use Doctrine\Dbal\Connection;
-
-class PricingRepository implements RepositoryInterface
+class PricingRepository extends AbstractRepository
 {
-    private $conn;
+    const TABLE = 'snipcart_data';
 
-    public function __construct(Connection $conn)
-    {
-        $this->conn = $conn;
-    }
-
+    /**
+     * @param array $data
+     * @return int
+     */
     public function save($data)
     {
-        $count = $this->conn->insert('snipcart_data', $data);
+        $count = $this->connection->insert(self::TABLE, $data);
 
         return $count;
     }
+
     public function findAll()
     {
-        $stmt = $this->conn->prepare('SELECT * FROM snipcart_data');
+        $stmt = $this->connection->prepare('SELECT * FROM snipcart_data');
         $stmt->execute();
         $priceData = $stmt->fetchAll();
 
@@ -35,7 +27,7 @@ class PricingRepository implements RepositoryInterface
     }
     public function findOneById($id)
     {
-        $stmt = $this->conn->prepare('SELECT * FROM snipcart_data WHERE release_id=:id');
+        $stmt = $this->connection->prepare('SELECT * FROM snipcart_data WHERE release_id=:id');
         $stmt->bindValue('id', $id);
         $stmt->execute();
         $priceData = $stmt->fetch();
@@ -44,18 +36,18 @@ class PricingRepository implements RepositoryInterface
     }
     public function deleteOneById($id)
     {
-        $count = $this->conn->delete('snipcart_data', array('id' => $id));
+        $count = $this->connection->delete('snipcart_data', array('id' => $id));
 
         return $count;
     }
     public function getCount()
     {
-        return $this->conn->fetchColumn('SELECT COUNT(id) FROM snipcart_data');
+        return $this->connection->fetchColumn('SELECT COUNT(id) FROM snipcart_data');
     }
 
     public function editPricing(array $pricingData, $id)
     {
-        $count = $this->conn->update('snipcart_data', $pricingData, array('release_id' => $id));
+        $count = $this->connection->update('snipcart_data', $pricingData, array('release_id' => $id));
 
         return $count;
     }
