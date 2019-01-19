@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace VinylStore\Controllers;
 
@@ -42,7 +43,7 @@ class MainController
     public function getVinylAction(Request $request, Application $app)
     {
         $total = $app['vinyl.repository']->getActiveReleasesCount();
-        list($pager, $offset, $limit) = $this->configurePagination($request, $total);
+        list($pager, $offset, $limit) = $this->configurePagination($request, (int)$total);
         $paginatedReleases = $app['vinyl.repository']->findForPagination($limit, $offset);
 
         $templateName = 'frontend/collection';
@@ -64,7 +65,7 @@ class MainController
     public function getGenreAction(Request $request, Application $app, $genre)
     {
         $total = $app['vinyl.repository']->getActiveReleaseByGenre($genre);
-        list($pager, $offset, $limit) = $this->configurePagination($request, $total);
+        list($pager, $offset, $limit) = $this->configurePagination($request, (int)$total);
         $results = $app['vinyl.repository']->getReleasesByGenre($genre, $limit, $offset);
 
         $templateName = 'frontend/collection';
@@ -171,10 +172,10 @@ class MainController
 
     /**
      * @param Request $request
-     * @param $total
+     * @param int $total
      * @return array
      */
-    private function configurePagination(Request $request, $total): array
+    private function configurePagination(Request $request, int $total): array
     {
         $pager = new Paginator(self::RELEASES_PER_PAGE, $total);
         $pager->setCurrentPage($request->get('page', 1));

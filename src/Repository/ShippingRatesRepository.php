@@ -1,32 +1,25 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 12/06/2017
- * Time: 22:25
- */
 
 namespace VinylStore\Repository;
-use Doctrine\Dbal\Connection;
 
-class ShippingRatesRepository implements RepositoryInterface
+class ShippingRatesRepository extends AbstractRepository
 {
-    protected $conn;
+    const TABLE = 'shipping_rates';
 
-    public function __construct(Connection $conn)
-    {
-        $this->conn = $conn;
-    }
-
+    /**
+     * @param array $data
+     * @return int
+     */
     public function save($data)
     {
-        $count = $this->conn->insert('shipping_rates', $data);
+        $count = $this->connection->insert(self::TABLE, $data);
 
         return $count;
     }
+
     public function findAll()
     {
-        $stmt = $this->conn->prepare('SELECT cost, description FROM shipping_rates');
+        $stmt = $this->connection->prepare('SELECT cost, description FROM shipping_rates');
         $stmt->execute();
         $priceData = $stmt->fetchAll();
 
@@ -35,7 +28,7 @@ class ShippingRatesRepository implements RepositoryInterface
 
     public function viewAll()
     {
-        $stmt = $this->conn->prepare('SELECT * FROM shipping_rates');
+        $stmt = $this->connection->prepare('SELECT * FROM shipping_rates');
         $stmt->execute();
         $ratesData = $stmt->fetchAll();
 
@@ -44,7 +37,7 @@ class ShippingRatesRepository implements RepositoryInterface
 
     public function findOneById($quantity)
     {
-        $stmt = $this->conn->prepare('SELECT cost, description FROM shipping_rates WHERE quantity=:quantity');
+        $stmt = $this->connection->prepare('SELECT cost, description FROM shipping_rates WHERE quantity=:quantity');
         $stmt->bindValue('quantity', $quantity);
         $stmt->execute();
         $priceData = $stmt->fetch();
@@ -55,20 +48,20 @@ class ShippingRatesRepository implements RepositoryInterface
     public function deleteOneById($id)
     {
         $safeId = trim(filter_var($id, FILTER_SANITIZE_NUMBER_INT));
-        $count = $this->conn->delete('shipping_rates', array('id' => $safeId));
+        $count = $this->connection->delete('shipping_rates', array('id' => $safeId));
 
         return $count;
     }
 
     public function getCount()
     {
-        return $this->conn->fetchColumn('SELECT COUNT(id) FROM shipping_rates');
+        return $this->connection->fetchColumn('SELECT COUNT(id) FROM shipping_rates');
     }
 
     public function editRates(array $ratesData, $id)
     {
         $safeId = trim(filter_var($id, FILTER_SANITIZE_NUMBER_INT));
-        $count = $this->conn->update('shipping_rates', $ratesData, array('id' => $safeId));
+        $count = $this->connection->update('shipping_rates', $ratesData, array('id' => $safeId));
 
         return $count;
     }
