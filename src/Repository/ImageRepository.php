@@ -2,18 +2,20 @@
 
 namespace VinylStore\Repository;
 
+use VinylStore\Entity\ImageEntity;
+
 class ImageRepository extends AbstractRepository
 {
 
     /**
-     * @param \Symfony\Component\HttpFoundation\File\UploadedFile $file
+     * @param ImageEntity $image
      * @return int
      */
-    public function save($file)
+    public function save($image)
     {
         $uploadedImage = array(
-            'image' => $file->getImage(),
-            'release_id' => $file->getReleaseId(),
+            'image' => $image->getImage(),
+            'release_id' => $image->getReleaseId(),
         );
 
         $count = $this->connection->insert('images', $uploadedImage);

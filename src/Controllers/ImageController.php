@@ -1,23 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 10/01/2017
- * Time: 22:30.
- */
+declare(strict_types=1);
 
 namespace VinylStore\Controllers;
 
-use Symfony\Component\Filesystem\Exception\IOException;
-use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
-use Symfony\Component\Filesystem\Filesystem;
-use VinylStore\Forms\ImageUploadType;
-use VinylStore\Entity\ImageEntity;
-use VinylStore\Options;
-use Symfony\Component\HttpKernel\KernelEvents;
 use Spatie\Image\Image;
 use Spatie\Image\Manipulations;
+use Symfony\Component\Filesystem\Exception\IOException;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\KernelEvents;
+use VinylStore\Entity\ImageEntity;
+use VinylStore\Forms\ImageUploadType;
+use VinylStore\Options;
 
 class ImageController
 {

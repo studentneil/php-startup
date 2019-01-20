@@ -1,37 +1,34 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 11/01/2017
- * Time: 21:52.
- */
 
 namespace VinylStore\Entity;
+
+use Symfony\Component\HttpFoundation\File\UploadedFile;
 
 class ImageEntity
 {
     private $image;
+
+    /** @var int */
     private $release_id;
+
+    /** @var string */
     private $imagePath;
 
     /**
-     * @return mixed
+     *@return mixed
      */
     public function getImage()
     {
         return $this->image;
     }
 
-    /**
-     * @param mixed $image
-     */
     public function setImage($image)
     {
         $this->image = $image;
     }
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getReleaseId()
     {
@@ -39,16 +36,15 @@ class ImageEntity
     }
 
     /**
-     * @param mixed $release_id
+     * @param int $release_id
      */
-    public function setReleaseId($release_id)
+    public function setReleaseId(int $release_id)
     {
         $this->release_id = $release_id;
     }
 
     /**
-     * @param $path
-     *
+     * @param string $path
      * @return string
      */
     public function setImagePath($path)
@@ -57,6 +53,10 @@ class ImageEntity
 
         return $imagePath;
     }
+
+    /**
+     * @return string
+     */
     public function getImagePath()
     {
         return $this->imagePath;

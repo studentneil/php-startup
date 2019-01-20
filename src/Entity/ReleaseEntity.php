@@ -1,285 +1,272 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 10/01/2017
- * Time: 00:09.
- */
 
 namespace VinylStore\Entity;
 
 class ReleaseEntity
 {
-    /**
-     * @var
-     */
+    /** @var int */
     private $id;
 
-    /**
-     * @var
-     */
+    /** @var string */
     private $artist;
 
-    /**
-     * @var
-     */
+    /** @var string */
     private $title;
 
-    /**
-     * @var
-     */
-    private $catalog;
+    /** @var string */
+    private $catalogNumber;
 
-    /**
-     * @var
-     */
+    /** @var string */
     private $label;
 
-    /**
-     * @var
-     */
+    /** @var string */
     private $format;
 
-    /**
-     * @var
-     */
+    /** @var \DateTime */
     private $released;
 
-    /**
-     * @var
-     */
+    /** @var \DateTime*/
     private $added;
 
-    /**
-     * @var
-     */
+    /** @var string */
     private $mediaCondition;
 
-    /**
-     * @var
-     */
+    /** @var string */
     private $sleeveCondition;
 
-    /**
-     * @var
-     */
+    /** @var string */
     private $notes;
 
-    /**
-     * @var
-     */
+    /** @var string */
     private $genre;
 
-    /**
-     * @var
-     */
-    private $imageFile;
+    /** @var int */
+    private $quantity;
+
+    /** @var int */
+    private $barcode;
 
     /**
-     * @return mixed
+     * @return int
      */
-    public function getId()
+    public function getId(): int
     {
         return $this->id;
     }
 
     /**
-     * @param mixed $id
+     * @param int $id
      */
-    public function setId($id)
+    public function setId(int $id): void
     {
         $this->id = $id;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getArtist()
+    public function getArtist(): string
     {
         return $this->artist;
     }
 
     /**
-     * @param mixed $name
+     * @param string $artist
      */
-    public function setArtist($artist)
+    public function setArtist(string $artist): void
     {
         $this->artist = $artist;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getTitle()
+    public function getTitle(): string
     {
         return $this->title;
     }
 
     /**
-     * @param mixed $title
+     * @param string $title
      */
-    public function setTitle($title)
+    public function setTitle(string $title): void
     {
         $this->title = $title;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getCatalog()
+    public function getCatalogNumber(): string
     {
-        return $this->catalog;
+        return $this->catalogNumber;
     }
 
     /**
-     * @param mixed $catalog
+     * @param string $catalogNumber
      */
-    public function setCatalog($catalog)
+    public function setCatalogNumber(string $catalogNumber): void
     {
-        $this->catalog = $catalog;
+        $this->catalogNumber = $catalogNumber;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getLabel()
+    public function getLabel(): string
     {
         return $this->label;
     }
 
     /**
-     * @param mixed $label
+     * @param string $label
      */
-    public function setLabel($label)
+    public function setLabel(string $label): void
     {
         $this->label = $label;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getFormat()
+    public function getFormat(): string
     {
         return $this->format;
     }
 
     /**
-     * @param mixed $format
+     * @param string $format
      */
-    public function setFormat($format)
+    public function setFormat(string $format): void
     {
         $this->format = $format;
     }
 
     /**
-     * @return mixed
+     * @return \DateTime
      */
-    public function getReleased()
+    public function getReleased(): \DateTime
     {
         return $this->released;
     }
 
     /**
-     * @param mixed $released
+     * @param \DateTime $released
      */
-    public function setReleased($released)
+    public function setReleased(\DateTime $released): void
     {
         $this->released = $released;
     }
 
     /**
-     * @return mixed
+     * @return \DateTime
      */
-    public function getAdded()
+    public function getAdded(): \DateTime
     {
         return $this->added;
     }
 
     /**
-     * @param mixed $added
+     * @param \DateTime $added
      */
-    public function setAdded($added)
+    public function setAdded(\DateTime $added): void
     {
         $this->added = $added;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getMediaCondition()
+    public function getMediaCondition(): string
     {
         return $this->mediaCondition;
     }
 
     /**
-     * @param mixed $mediaCondition
+     * @param string $mediaCondition
      */
-    public function setMediaCondition($mediaCondition)
+    public function setMediaCondition(string $mediaCondition): void
     {
         $this->mediaCondition = $mediaCondition;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getSleeveCondition()
+    public function getSleeveCondition(): string
     {
         return $this->sleeveCondition;
     }
 
     /**
-     * @param mixed $sleeveCondition
+     * @param string $sleeveCondition
      */
-    public function setSleeveCondition($sleeveCondition)
+    public function setSleeveCondition(string $sleeveCondition): void
     {
         $this->sleeveCondition = $sleeveCondition;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getNotes()
+    public function getNotes(): string
     {
         return $this->notes;
     }
 
     /**
-     * @param mixed $notes
+     * @param string $notes
      */
-    public function setNotes($notes)
+    public function setNotes(string $notes): void
     {
         $this->notes = $notes;
     }
 
     /**
-     * @return mixed
+     * @return string
      */
-    public function getGenre()
+    public function getGenre(): string
     {
         return $this->genre;
     }
 
     /**
-     * @param mixed $genre
+     * @param string $genre
      */
-    public function setGenre($genre)
+    public function setGenre(string $genre): void
     {
         $this->genre = $genre;
     }
 
     /**
-     * @return mixed
+     * @return int
      */
-    public function getImageFile()
+    public function getQuantity(): int
     {
-        return $this->imageFile;
+        return $this->quantity;
     }
 
     /**
-     * @param mixed $imageFile
+     * @param int $quantity
      */
-    public function setImageFile($imageFile)
+    public function setQuantity(int $quantity): void
     {
-        $this->imageFile = $imageFile;
+        $this->quantity = $quantity;
+    }
+
+    /**
+     * @return int
+     */
+    public function getBarcode(): int
+    {
+        return $this->barcode;
+    }
+
+    /**
+     * @param int $barcode
+     */
+    public function setBarcode(int $barcode): void
+    {
+        $this->barcode = $barcode;
     }
 }

@@ -12,19 +12,28 @@ use VinylStore\Entity\ImageEntity;
 
 class ImageUploader
 {
+
+    /** @var string */
     private $targetDir;
+
+    /** @var string */
     private $fileName;
 
-    public function __construct($targetDir)
+    public function __construct(string $targetDir)
     {
         $this->targetDir = $targetDir;
     }
 
+    /**
+     * @param \VinylStore\Entity\ImageEntity $image
+     * @return string|\VinylStore\Entity\ImageEntity
+     */
     public function upload(ImageEntity $image)
     {
 //        get the actual image from the file entity
 //        and create a unique name
         $imageFile = $image->getImage();
+
         $this->fileName = md5(uniqid()).'.'.$imageFile->guessExtension();
 //        check if the file exists
         if (file_exists($this->targetDir.'/'.$this->fileName)) {
@@ -40,10 +49,17 @@ class ImageUploader
         return $image;
     }
 
+    /**
+     * @return string
+     */
     public function getTargetDir()
     {
         return $this->targetDir;
     }
+
+    /**
+     * @return string
+     */
     public function getFileName()
     {
         return $this->fileName;

@@ -13,7 +13,6 @@
                                 {% for image in images %}
                                     {% if release.id == image.release_id %}
                                         <span class="new badge blue" data-badge-caption="Got image"></span>
-
                                     {% endif %}
                                 {% endfor %}
                             </p>
@@ -47,7 +46,7 @@
                     <div class="backend card">
                         <div class="card-content">
                             <div class="card-image">
-                                <img src="/uploads/{{ image.image|raw }}" alt="{{ release.title|replace({' ':'_'}) }}_pic">
+                                <img src="/uploads/{{ image.image|raw }}">
                             </div>
                             <p>id: {{ image.image_id }}</p>
                         </div>
