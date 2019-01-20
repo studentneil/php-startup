@@ -13,4 +13,4 @@ phpunit.phar
 public/uploads/
 phpunit.xml
 public/images/Thumbs.db
-public/json/release.json
+public/json/
