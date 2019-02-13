@@ -2,14 +2,17 @@
 
 namespace VinylStore\Repository;
 
+use Doctrine\DBAL\Connection;
+use VinylStore\Entity\EntityInterface;
+
 abstract class AbstractRepository
 {
     const TABLE = '';
 
-    /** @var \Doctrine\DBAL\Connection */
+    /** @var Connection */
     protected $connection;
 
-    public function __construct(\Doctrine\DBAL\Connection $connection)
+    public function __construct(Connection $connection)
     {
         $this->connection = $connection;
     }
