@@ -50,6 +50,9 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), array(
     'db.options' => $app['config']['database']
     )
 );
+$app['vinyl.repository'] = function () use ($app) {
+    return new VinylRepository($app['db']);
+};
 $app->register(new Silex\Provider\SecurityServiceProvider(), array(
     'security.firewalls' => array(
         'admin' => array(
