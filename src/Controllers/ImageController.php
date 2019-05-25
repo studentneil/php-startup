@@ -80,7 +80,7 @@ class ImageController
      * This will be done through an ajax call
      *
      * @param Application $app
-     * @param $id . The image id
+     * @param int $id
      *
      * @return string
      */
@@ -106,7 +106,7 @@ class ImageController
             }
         }
         $count = $app['image.repository']->deleteOneById($safeId);
-        if (!$count === 1) {
+        if ($count !== 1) {
             $response .= 'Theres a problem with the response.';
 
             return $response;
@@ -118,20 +118,15 @@ class ImageController
     }
 
     /**
-     * Attach an image to a release.
-     *
-     * Another ajax call.
-     * Gets the imageId and the releaseId from the template and updates the
-     * image table with the releaseId.
-     *
-     * @param Application $app
-     * @param $imageId
-     * @param $releaseId
+     * @param \Silex\Application $app
+     * @param int $imageId
+     * @param int $releaseId
+     * @return string
      */
     public function attachImageAction(Application $app, $imageId, $releaseId)
     {
         $count = $app['image.repository']->attachImageToRelease($imageId, $releaseId);
-        if (!$count === 1) {
+        if ($count !== 1) {
             $response = 'Theres a problem with the response';
 
             return $response;

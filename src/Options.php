@@ -1,26 +1,26 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 07/04/2017
- * Time: 23:21.
- */
+declare(strict_types=1);
 
 namespace VinylStore;
 
 class Options
 {
+    /** @var array */
     private $choices = array();
+
+    /** @var array*/
     private $mergedChoicesArray;
+
+    /**
+     * @param array $choices
+     */
     public function __construct(array $choices)
     {
         $this->choices = $choices;
     }
 
     /**
-     * @param $choices
-     *
-     * @return mixed
+     * @return array
      */
     public function mergeChoices()
     {

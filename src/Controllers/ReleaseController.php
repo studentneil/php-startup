@@ -55,7 +55,7 @@ class ReleaseController
     /**
      * @param \Symfony\Component\HttpFoundation\Request $request
      * @param \Silex\Application $app
-     * @param $id
+     * @param int $id
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function editReleaseAction(Request $request, Application $app, $id)

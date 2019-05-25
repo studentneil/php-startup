@@ -60,7 +60,7 @@ class PricingController
     /**
      * @param \Symfony\Component\HttpFoundation\Request $request
      * @param \Silex\Application $app
-     * @param $id
+     * @param int $id
      * @return mixed
      */
     public function editPricingAction(Request $request, Application $app, $id)

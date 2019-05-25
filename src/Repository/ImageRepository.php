@@ -42,6 +42,11 @@ class ImageRepository extends AbstractRepository
         return $image;
     }
 
+    /**
+     * @param int $id
+     * @return int
+     * @throws \Doctrine\DBAL\Exception\InvalidArgumentException
+     */
     public function deleteOneById($id)
     {
         $count = $this->connection->delete('images', array('image_id' => $id));

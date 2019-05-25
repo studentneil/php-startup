@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 05/05/2017
- * Time: 23:10.
- */
+declare(strict_types=1);
 
 namespace VinylStore\Controllers;
 
@@ -12,6 +7,12 @@ use Silex\Application;
 
 class TracklistController
 {
+    /**
+     * @param \Silex\Application $app
+     * @param int $catno
+     * @param string $title
+     * @return mixed
+     */
     public function getTracklistAction(Application $app, $catno, $title)
     {
         $curl = curl_init();
@@ -29,7 +30,7 @@ class TracklistController
         }
         curl_setopt_array($curl, array(
             CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL => 'https://api.discogs.com/releases/'.urlencode($id).'?token='.$app['config']['discogs']['token'],
+            CURLOPT_URL => 'https://api.discogs.com/releases/'.urlencode((string)$id).'?token='.$app['config']['discogs']['token'],
             CURLOPT_USERAGENT => 'Vinyl rug',
         ));
 //      get the response, decode it and re-encode it to make it readable in the release.json file
