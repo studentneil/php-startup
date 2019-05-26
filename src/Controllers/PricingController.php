@@ -67,7 +67,7 @@ class PricingController
     {
         $pricingData = $app['pricing.repository']->findOneById($id);
         $form = $app['form.factory']
-            ->createBuilder(AddPricingDataType::class, $pricingData, array('choices' => array($id)))
+            ->createBuilder(AddPricingDataType::class, $pricingData, array('choices' => [$id]))
             ->getForm();
         $form->handleRequest($request);
         if ($form->isValid()) {

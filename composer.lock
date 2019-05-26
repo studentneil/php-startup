@@ -1477,16 +1477,16 @@
         },
         {
             "name": "ricbra/php-discogs-api",
-            "version": "1.2.0",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ricbra/php-discogs-api.git",
-                "reference": "7b63ed2d90fb2dfc7acbe480a219a680968f550e"
+                "reference": "9e7d3484b7f66b0abd39837e815e8c976e76b69c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ricbra/php-discogs-api/zipball/7b63ed2d90fb2dfc7acbe480a219a680968f550e",
-                "reference": "7b63ed2d90fb2dfc7acbe480a219a680968f550e",
+                "url": "https://api.github.com/repos/ricbra/php-discogs-api/zipball/9e7d3484b7f66b0abd39837e815e8c976e76b69c",
+                "reference": "9e7d3484b7f66b0abd39837e815e8c976e76b69c",
                 "shasum": ""
             },
             "require": {
@@ -1527,7 +1527,7 @@
                 "api",
                 "discogs"
             ],
-            "time": "2016-03-18T11:22:47+00:00"
+            "time": "2018-03-09T07:10:37+00:00"
         },
         {
             "name": "silex/silex",
@@ -4797,6 +4797,7 @@
                 "testing",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2017-02-03T08:50:36+00:00"
         },
         {
