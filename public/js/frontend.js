@@ -93,18 +93,32 @@ $(document).ready(function () {
     });
 
     $('.details').on('click', function () {
-
-        var item = $(this).closest('.details').attr('href');
+        var link = $(this).closest('.details').attr('href');
         var title = $(this).closest('a').data('title');
-        sessionStorage.setItem('link', item);
-        sessionStorage.setItem('anchor', title);
+        var item = {};
+        item.title = title;
+        item.link = link;
+        let x = getStorageArray();
+        x.push(item);
+        sessionStorage.setItem('last-viewed-items', JSON.stringify(x));
     });
 
-    $('.recent-item').html($('<a>', {
-        href: sessionStorage.getItem('link'),
-        text: sessionStorage.getItem('anchor'),
-        class: 'collection-item'
-    }));
+    var fetchArrayObject = sessionStorage.getItem('last-viewed-items');
+    var thisArray = JSON.parse(fetchArrayObject);
+    thisArray.forEach(function (item) {
+        let y = $('<a>', {
+            href: item.link,
+            text: item.title,
+            class: 'collection-item'
+        }).appendTo($('.recent-item'));
+    });
+    function getStorageArray() {
+        let x = [];
+        let fetchArrayObject = sessionStorage.getItem('last-viewed-items');
+        x = JSON.parse(fetchArrayObject);
+
+        return x;
+    }
 
     var barcode = $('#barcode').text();
     // console.log(barcode);
