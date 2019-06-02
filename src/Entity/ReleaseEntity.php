@@ -2,30 +2,31 @@
 
 namespace VinylStore\Entity;
 
-use Symfony\Component\Validator\Constraints\Date;
-
-class ReleaseEntity implements EntityInterface
+class ReleaseEntity
 {
-    /** @var string */
-    private $catalogueNumber;
-
-    /** @var string */
-    private $title;
+    /** @var int */
+    private $id;
 
     /** @var string */
     private $artist;
 
     /** @var string */
-    private $format;
+    private $title;
+
+    /** @var string */
+    private $catalogNumber;
 
     /** @var string */
     private $label;
 
-    /** @var Date */
-    private $releasedOn;
+    /** @var string */
+    private $format;
 
-    /** @var Date */
-    private $dateAdded;
+    /** @var \DateTime */
+    private $released;
+
+    /** @var \DateTime*/
+    private $added;
 
     /** @var string */
     private $mediaCondition;
@@ -45,43 +46,20 @@ class ReleaseEntity implements EntityInterface
     /** @var int */
     private $barcode;
 
-
-    /** @inheritdoc */
-    public function getName()
+    /**
+     * @return int
+     */
+    public function getId(): int
     {
-        return 'ReleaseEntity';
+        return $this->id;
     }
 
     /**
-     * @return string
+     * @param int $id
      */
-    public function getCatalogueNumber(): string
+    public function setId(int $id): void
     {
-        return $this->catalogueNumber;
-    }
-
-    /**
-     * @param string $catalogueNumber
-     */
-    public function setCatalogueNumber(string $catalogueNumber)
-    {
-        $this->catalogueNumber = $catalogueNumber;
-    }
-
-    /**
-     * @return string
-     */
-    public function getTitle(): string
-    {
-        return $this->title;
-    }
-
-    /**
-     * @param string $title
-     */
-    public function setTitle(string $title)
-    {
-        $this->title = $title;
+        $this->id = $id;
     }
 
     /**
@@ -95,7 +73,7 @@ class ReleaseEntity implements EntityInterface
     /**
      * @param string $artist
      */
-    public function setArtist(string $artist)
+    public function setArtist(string $artist): void
     {
         $this->artist = $artist;
     }
@@ -103,17 +81,33 @@ class ReleaseEntity implements EntityInterface
     /**
      * @return string
      */
-    public function getFormat(): string
+    public function getTitle(): string
     {
-        return $this->format;
+        return $this->title;
     }
 
     /**
-     * @param string $format
+     * @param string $title
      */
-    public function setFormat(string $format)
+    public function setTitle(string $title): void
     {
-        $this->format = $format;
+        $this->title = $title;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCatalogNumber(): string
+    {
+        return $this->catalogNumber;
+    }
+
+    /**
+     * @param string $catalogNumber
+     */
+    public function setCatalogNumber(string $catalogNumber): void
+    {
+        $this->catalogNumber = $catalogNumber;
     }
 
     /**
@@ -127,41 +121,57 @@ class ReleaseEntity implements EntityInterface
     /**
      * @param string $label
      */
-    public function setLabel(string $label)
+    public function setLabel(string $label): void
     {
         $this->label = $label;
     }
 
     /**
-     * @return Date
+     * @return string
      */
-    public function getReleasedOn(): Date
+    public function getFormat(): string
     {
-        return $this->releasedOn;
+        return $this->format;
     }
 
     /**
-     * @param Date $releasedOn
+     * @param string $format
      */
-    public function setReleasedOn(Date $releasedOn)
+    public function setFormat(string $format): void
     {
-        $this->releasedOn = $releasedOn;
+        $this->format = $format;
     }
 
     /**
-     * @return Date
+     * @return \DateTime
      */
-    public function getDateAdded(): Date
+    public function getReleased(): \DateTime
     {
-        return $this->dateAdded;
+        return $this->released;
     }
 
     /**
-     * @param Date $dateAdded
+     * @param \DateTime $released
      */
-    public function setDateAdded(Date $dateAdded)
+    public function setReleased(\DateTime $released): void
     {
-        $this->dateAdded = $dateAdded;
+        $this->released = $released;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getAdded(): \DateTime
+    {
+        return $this->added;
+    }
+
+    /**
+     * @param \DateTime $added
+     */
+    public function setAdded(\DateTime $added): void
+    {
+        $this->added = $added;
     }
 
     /**
@@ -175,7 +185,7 @@ class ReleaseEntity implements EntityInterface
     /**
      * @param string $mediaCondition
      */
-    public function setMediaCondition(string $mediaCondition)
+    public function setMediaCondition(string $mediaCondition): void
     {
         $this->mediaCondition = $mediaCondition;
     }
@@ -191,7 +201,7 @@ class ReleaseEntity implements EntityInterface
     /**
      * @param string $sleeveCondition
      */
-    public function setSleeveCondition(string $sleeveCondition)
+    public function setSleeveCondition(string $sleeveCondition): void
     {
         $this->sleeveCondition = $sleeveCondition;
     }
@@ -207,7 +217,7 @@ class ReleaseEntity implements EntityInterface
     /**
      * @param string $notes
      */
-    public function setNotes(string $notes)
+    public function setNotes(string $notes): void
     {
         $this->notes = $notes;
     }
@@ -223,7 +233,7 @@ class ReleaseEntity implements EntityInterface
     /**
      * @param string $genre
      */
-    public function setGenre(string $genre)
+    public function setGenre(string $genre): void
     {
         $this->genre = $genre;
     }
@@ -239,7 +249,7 @@ class ReleaseEntity implements EntityInterface
     /**
      * @param int $quantity
      */
-    public function setQuantity(int $quantity)
+    public function setQuantity(int $quantity): void
     {
         $this->quantity = $quantity;
     }
@@ -255,7 +265,7 @@ class ReleaseEntity implements EntityInterface
     /**
      * @param int $barcode
      */
-    public function setBarcode(int $barcode)
+    public function setBarcode(int $barcode): void
     {
         $this->barcode = $barcode;
     }

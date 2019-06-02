@@ -2,31 +2,27 @@
 
 use Silex\Application;
 use Silex\Provider\AssetServiceProvider;
+use Silex\Provider\FormServiceProvider;
 use Silex\Provider\HttpFragmentServiceProvider;
 use Silex\Provider\ServiceControllerServiceProvider;
-use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\SessionServiceProvider;
-use Silex\Provider\FormServiceProvider;
-
+use Silex\Provider\TwigServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-
-use VinylStore\Controllers\MainController;
-use VinylStore\Repository\VinylRepository;
-use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
-use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
-use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;
-use VinylStore\ServiceProviders\UploadServiceProvider;
-use VinylStore\ServiceProviders\MessageServiceProvider;
 use VinylStore\ServiceProviders\ConfigServiceProvider;
-use VinylStore\ServiceProviders\ShippingRatesServiceProvider;
 use VinylStore\ServiceProviders\EventsRepositoryServiceProvider;
+use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
+use VinylStore\ServiceProviders\MessageServiceProvider;
+use VinylStore\ServiceProviders\PricingRepositoryServiceProvider;
+use VinylStore\ServiceProviders\ShippingRatesServiceProvider;
+use VinylStore\ServiceProviders\UploadServiceProvider;
+use VinylStore\ServiceProviders\VinylRepositoryServiceProvider;
 use VinylStore\UserProvider;
 
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
-$app['env'] = 'dev';
+$app['env'] = 'prod';
 
 $app->register(new ConfigServiceProvider());
 $app->register(new TwigServiceProvider());

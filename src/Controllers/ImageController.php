@@ -1,23 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 10/01/2017
- * Time: 22:30.
- */
+declare(strict_types=1);
 
 namespace VinylStore\Controllers;
 
-use Symfony\Component\Filesystem\Exception\IOException;
-use Symfony\Component\HttpFoundation\Request;
 use Silex\Application;
-use Symfony\Component\Filesystem\Filesystem;
-use VinylStore\Forms\ImageUploadType;
-use VinylStore\Entity\ImageEntity;
-use VinylStore\Options;
-use Symfony\Component\HttpKernel\KernelEvents;
 use Spatie\Image\Image;
 use Spatie\Image\Manipulations;
+use Symfony\Component\Filesystem\Exception\IOException;
+use Symfony\Component\Filesystem\Filesystem;
+use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpKernel\KernelEvents;
+use VinylStore\Entity\ImageEntity;
+use VinylStore\Forms\ImageUploadType;
+use VinylStore\Options;
 
 class ImageController
 {
@@ -85,7 +80,7 @@ class ImageController
      * This will be done through an ajax call
      *
      * @param Application $app
-     * @param $id . The image id
+     * @param int $id
      *
      * @return string
      */
@@ -111,7 +106,7 @@ class ImageController
             }
         }
         $count = $app['image.repository']->deleteOneById($safeId);
-        if (!$count === 1) {
+        if ($count !== 1) {
             $response .= 'Theres a problem with the response.';
 
             return $response;
@@ -123,20 +118,15 @@ class ImageController
     }
 
     /**
-     * Attach an image to a release.
-     *
-     * Another ajax call.
-     * Gets the imageId and the releaseId from the template and updates the
-     * image table with the releaseId.
-     *
-     * @param Application $app
-     * @param $imageId
-     * @param $releaseId
+     * @param \Silex\Application $app
+     * @param int $imageId
+     * @param int $releaseId
+     * @return string
      */
     public function attachImageAction(Application $app, $imageId, $releaseId)
     {
         $count = $app['image.repository']->attachImageToRelease($imageId, $releaseId);
-        if (!$count === 1) {
+        if ($count !== 1) {
             $response = 'Theres a problem with the response';
 
             return $response;

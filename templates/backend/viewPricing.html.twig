@@ -3,29 +3,18 @@
 
 {% block content %}
     <div class="row">
-
         {% for pricing in allPricing %}
             <div class="col s12 m3 l4">
                 <div class="backend card">
                     <div class="card-content">
-                        <p>{{ pricing.release_name}}
-
-                        </p>
-                        <p>{{ pricing.price }}
-
-                        </p>
-                        <p>{{ pricing.url }}</p>
-                       <p>{{ pricing.description }}</p>
+                        <p>{{ pricing.price }}</p>
+                        <p>{{ pricing.description }}</p>
                         <hr>
-
                         <a class="waves-effect waves-light links" href="/admin/edit-pricing/{{ pricing.release_id }}">Edit</a>
                         <a class="waves-effect waves-light links" href="">Delete</a>
-
-
                     </div>
                 </div>
             </div>
         {% endfor %}
-
     </div>
 {% endblock %}

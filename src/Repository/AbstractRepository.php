@@ -25,9 +25,9 @@ abstract class AbstractRepository
      * @return array
      * @throws \Doctrine\DBAL\DBALException
      */
-    protected function findAll()
+    public function findAll()
     {
-        $stmt = $this->connection->prepare(sprintf('SELECT * FROM %s', self::TABLE));
+        $stmt = $this->connection->prepare(sprintf('SELECT * FROM %s', static::TABLE));
         $stmt->execute();
         $collection = $stmt->fetchAll();
 

@@ -60,14 +60,14 @@ class PricingController
     /**
      * @param \Symfony\Component\HttpFoundation\Request $request
      * @param \Silex\Application $app
-     * @param $id
+     * @param int $id
      * @return mixed
      */
     public function editPricingAction(Request $request, Application $app, $id)
     {
         $pricingData = $app['pricing.repository']->findOneById($id);
         $form = $app['form.factory']
-            ->createBuilder(AddPricingDataType::class, $pricingData, array('choices' => array($id)))
+            ->createBuilder(AddPricingDataType::class, $pricingData, array('choices' => [$pricingData['release_id'] => $id]))
             ->getForm();
         $form->handleRequest($request);
         if ($form->isValid()) {

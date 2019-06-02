@@ -79,9 +79,9 @@ class VinylRepository extends AbstractRepository
     }
 
     /**
-     * @param $genre
-     * @param $limit
-     * @param $offset
+     * @param string $genre
+     * @param int $limit
+     * @param int $offset
      * @return array
      */
     public function getReleasesByGenre($genre, $limit, $offset)
@@ -143,7 +143,7 @@ LIMIT 1 ');
     }
 
     /**
-     * @param $limit
+     * @param int $limit
      * @param int $offset
      * @return array
      */
@@ -161,8 +161,8 @@ LIMIT 1 ');
     }
 
     /**
-     * @param $limit
-     * @param $offset
+     * @param int $limit
+     * @param int $offset
      * @return array
      */
     public function paginate($limit, $offset)
@@ -213,7 +213,7 @@ LIMIT 1 ');
     }
 
     /**
-     * @param $id
+     * @param int $id
      * @return mixed
      */
     public function findReleaseForEdit($id)
@@ -232,7 +232,7 @@ LIMIT 1 ');
 
     /**
      * @param array $releaseData
-     * @param $id
+     * @param int $id
      * @return int
      */
     public function editRelease(array $releaseData, $id)
@@ -243,7 +243,7 @@ LIMIT 1 ');
     }
 
     /**
-     * @param $id
+     * @param int $id
      * @return int
      * @throws \Doctrine\DBAL\DBALException
      */

@@ -103,6 +103,7 @@ class MainController
      */
     public function refineAction(Request $request, Application $app)
     {
+        $refinedResults = '';
         $refineFormData = array();
         $form = $app['form.factory']
             ->createBuilder(RefineType::class, $refineFormData)

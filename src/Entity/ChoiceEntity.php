@@ -1,20 +1,18 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 18/01/2017
- * Time: 23:57.
- */
+declare(strict_types=1);
 
 namespace VinylStore\Entity;
 
 class ChoiceEntity
 {
+    /** @var int */
     private $id;
+
+    /** @var string */
     private $title;
 
     /**
-     * @return mixed
+     * @return int
      */
     public function getId()
     {
@@ -22,7 +20,7 @@ class ChoiceEntity
     }
 
     /**
-     * @param mixed $id
+     * @param int $id
      */
     public function setId($id)
     {
@@ -30,7 +28,7 @@ class ChoiceEntity
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getTitle()
     {
@@ -38,7 +36,7 @@ class ChoiceEntity
     }
 
     /**
-     * @param mixed $title
+     * @param string $title
      */
     public function setTitle($title)
     {

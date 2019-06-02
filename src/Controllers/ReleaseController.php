@@ -8,7 +8,11 @@ use VinylStore\Forms\CreateNewReleaseType;
 
 class ReleaseController
 {
-    public function getReleasesAction(Request $request, Application $app)
+    /**
+     * @param \Silex\Application $app
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
+    public function getReleasesAction(Application $app)
     {
         $releases = $app['vinyl.repository']->findAll();
         $template = 'backend/releases';
@@ -19,11 +23,9 @@ class ReleaseController
     }
 
     /**
-     * Create a new release and save to the db.
-     *
-     * @param Request $request
-     * @param Application $app
-     * @return template: releaseForm.html.twig
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \Silex\Application $app
+     * @return \Symfony\Component\HttpFoundation\Response
      */
     public function createReleaseAction(Request $request, Application $app)
     {
@@ -50,7 +52,12 @@ class ReleaseController
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
-
+    /**
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \Silex\Application $app
+     * @param int $id
+     * @return \Symfony\Component\HttpFoundation\Response
+     */
     public function editReleaseAction(Request $request, Application $app, $id)
     {
         $releaseData = $app['vinyl.repository']->findReleaseForEdit($id);
