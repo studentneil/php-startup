@@ -282,7 +282,7 @@ h1,h2 {
     top: 0;
 }
 
-a.disabled {
+.disabled {
     pointer-events: none;
     cursor: default;
 }
