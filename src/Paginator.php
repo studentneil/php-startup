@@ -105,10 +105,10 @@ class Paginator
     }
 
     /**
-     * @param int $currentPage
+     * @param string $currentPage
      */
-    public function setCurrentPage(int $currentPage = 1)
+    public function setCurrentPage(string $currentPage = '1')
     {
-        $this->currentPage = $currentPage;
+        $this->currentPage = (int) $currentPage;
     }
 }
