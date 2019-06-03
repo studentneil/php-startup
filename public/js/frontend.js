@@ -93,31 +93,45 @@ $(document).ready(function () {
     });
 
     $('.details').on('click', function () {
-        var link = $(this).closest('.details').attr('href');
-        var title = $(this).closest('a').data('title');
-        var item = {};
-        item.title = title;
-        item.link = link;
-        let x = getStorageArray();
-        x.push(item);
-        sessionStorage.setItem('last-viewed-items', JSON.stringify(x));
+        let item = {};
+        item.link = $(this).closest('.details').attr('href');
+        item.title = $(this).closest('a').data('title');
+
+        let storageArray = getStorageArray();
+        storageArray.push(item);
+        sessionStorage.setItem('last-viewed-items', JSON.stringify(storageArray));
     });
 
-    var fetchArrayObject = sessionStorage.getItem('last-viewed-items');
-    var thisArray = JSON.parse(fetchArrayObject);
-    thisArray.forEach(function (item) {
-        let y = $('<a>', {
-            href: item.link,
-            text: item.title,
-            class: 'collection-item'
+    let recentItemsObject = sessionStorage.getItem('last-viewed-items');
+    let recentItemsArray = new Array();
+    if (recentItemsObject === null) {
+        $('<a>', {
+            text: 'You have no recently viewed Items',
+            class: 'collection-item disabled'
         }).appendTo($('.recent-item'));
-    });
-    function getStorageArray() {
-        let x = [];
-        let fetchArrayObject = sessionStorage.getItem('last-viewed-items');
-        x = JSON.parse(fetchArrayObject);
+    } else {
+        recentItemsArray = JSON.parse(recentItemsObject);
+    }
 
-        return x;
+    if (recentItemsArray.length > 0) {
+        recentItemsArray.forEach(function (item) {
+            $('<a>', {
+                href: item.link,
+                text: item.title,
+                class: 'collection-item'
+            }).appendTo($('.recent-item'));
+        });
+    }
+
+    function getStorageArray() {
+        let storageArray = new Array();
+        let fetchArrayObject = sessionStorage.getItem('last-viewed-items');
+        if (fetchArrayObject === null) {
+            return storageArray;
+        }
+        storageArray = JSON.parse(fetchArrayObject);
+
+        return storageArray;
     }
 
     var barcode = $('#barcode').text();
