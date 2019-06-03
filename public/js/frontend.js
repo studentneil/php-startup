@@ -93,18 +93,46 @@ $(document).ready(function () {
     });
 
     $('.details').on('click', function () {
+        let item = {};
+        item.link = $(this).closest('.details').attr('href');
+        item.title = $(this).closest('a').data('title');
 
-        var item = $(this).closest('.details').attr('href');
-        var title = $(this).closest('a').data('title');
-        sessionStorage.setItem('link', item);
-        sessionStorage.setItem('anchor', title);
+        let storageArray = getStorageArray();
+        storageArray.push(item);
+        sessionStorage.setItem('last-viewed-items', JSON.stringify(storageArray));
     });
 
-    $('.recent-item').html($('<a>', {
-        href: sessionStorage.getItem('link'),
-        text: sessionStorage.getItem('anchor'),
-        class: 'collection-item'
-    }));
+    let recentItemsObject = sessionStorage.getItem('last-viewed-items');
+    let recentItemsArray = new Array();
+    if (recentItemsObject === null) {
+        $('<a>', {
+            text: 'You have no recently viewed Items',
+            class: 'collection-item disabled'
+        }).appendTo($('.recent-item'));
+    } else {
+        recentItemsArray = JSON.parse(recentItemsObject);
+    }
+
+    if (recentItemsArray.length > 0) {
+        recentItemsArray.forEach(function (item) {
+            $('<a>', {
+                href: item.link,
+                text: item.title,
+                class: 'collection-item'
+            }).appendTo($('.recent-item'));
+        });
+    }
+
+    function getStorageArray() {
+        let storageArray = new Array();
+        let fetchArrayObject = sessionStorage.getItem('last-viewed-items');
+        if (fetchArrayObject === null) {
+            return storageArray;
+        }
+        storageArray = JSON.parse(fetchArrayObject);
+
+        return storageArray;
+    }
 
     var barcode = $('#barcode').text();
     // console.log(barcode);
