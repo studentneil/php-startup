@@ -105,9 +105,9 @@ class Paginator
     }
 
     /**
-     * @param string $currentPage
+     * @param string|int $currentPage
      */
-    public function setCurrentPage(string $currentPage = '1')
+    public function setCurrentPage($currentPage)
     {
         $this->currentPage = (int) $currentPage;
     }
