@@ -1,11 +1,12 @@
 {% extends 'backend/base.html.twig' %}
+{% set active_page = 'search' %}
 {% block content %}
     <div class="row">
         <div class="col s12 m12">
             <h5>Search Discogs API for releases</h5>
         </div>
     </div>
-    {{ form_start(form, {'method': 'GET'}) }}
+    {{ form_start(form) }}
     <div class="row">
         <div class="input-field col m6 s12">
             {{ form_widget(form.catalogue_number) }}

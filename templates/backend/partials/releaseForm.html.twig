@@ -1,0 +1,110 @@
+
+<form class="col s12 m6" action="" method="post">
+
+    {{ form_errors(form) }}
+    <div class="row">
+
+        <div class="input-field col m6 s12">
+            {{ form_label(form.catno, 'catalog no.::') }}
+            {{ form_widget(form.catno) }}
+            {{ form_errors(form.catno) }}
+        </div>
+
+
+        <div class="input-field col m6 s12">
+            {{ form_label(form.artist, 'artist::') }}
+            {{ form_widget(form.artist) }}
+            {{ form_errors(form.artist) }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col m6 s12">
+            {{ form_label(form.title, 'title::') }}
+            {{ form_widget(form.title) }}
+            {{ form_errors(form.title) }}
+        </div>
+
+
+        <div class="input-field col m6 s12">
+            {{ form_label(form.label, 'label::') }}
+            {{ form_errors(form.label) }}
+            {{ form_widget(form.label) }}
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="input-field col m6 s12">
+            {{ form_errors(form.format) }}
+            {{ form_widget(form.format) }}
+            {{ form_label(form.format, 'Format::') }}
+        </div>
+
+
+        <div class="input-field col m6 s12">
+            {{ form_label(form.released_on, 'Released::') }}
+            {{ form_errors(form.released_on) }}
+            {{ form_widget(form.released_on) }}
+
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="input-field col m6 s12">
+            {{ form_label(form.date_added, 'date added::') }}
+            {{ form_errors(form.date_added) }}
+            {{ form_widget(form.date_added) }}
+        </div>
+
+
+        <div class="input-field col m6 s12">
+            {{ form_errors(form.media_condition) }}
+            {{ form_widget(form.media_condition) }}
+            {{ form_label(form.media_condition, 'media condition::') }}
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="input-field col m6 s12">
+            {{ form_errors(form.sleeve_condition) }}
+            {{ form_widget(form.sleeve_condition) }}
+            {{ form_label(form.sleeve_condition, 'sleeve condition::') }}
+        </div>
+
+
+        <div class="input-field col m6 s12">
+            {{ form_label(form.notes, 'notes::') }}
+            {{ form_errors(form.notes) }}
+            {{ form_widget(form.notes) }}
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="input-field col m6 s12">
+
+            {{ form_errors(form.genre) }}
+            {{ form_widget(form.genre) }}
+            {{ form_label(form.genre, 'genre::') }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col m6 s12">
+
+            {{ form_errors(form.quantity) }}
+            {{ form_widget(form.quantity) }}
+            {{ form_label(form.quantity, 'quantity::') }}
+        </div>
+    </div>
+    <div class="row">
+        <div class="input-field col m6 s12">
+            {{ form_label(form.barcode, 'barcode::') }}
+            {{ form_errors(form.barcode) }}
+            {{ form_widget(form.barcode) }}
+        </div>
+    </div>
+
+
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit</button>
+
+
+    {{ form_rest(form) }}
+</form>

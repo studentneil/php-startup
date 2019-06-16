@@ -30,4 +30,5 @@ $app->match('/admin/edit-pricing/{id}', 'VinylStore\\Controllers\\PricingControl
 $app->get('/admin/view-shippingRates', 'VinylStore\\Controllers\\ShippingController::viewShippingRatesAction');
 $app->match('/admin/shippingRates', 'VinylStore\\Controllers\\ShippingController::shippingRatesAction');
 $app->match('/admin/edit-shippingRates/{quantity}', 'VinylStore\\Controllers\\ShippingController::editShippingRatesAction');
-$app->get('/admin/search', 'VinylStore\\Controllers\\SearchDiscogsController::searchFormAction');
+$app->match('/admin/search', 'VinylStore\\Controllers\\SearchDiscogsController::searchFormAction');
+$app->get('/admin/discogs-result/{id}', 'VinylStore\\Controllers\\SearchDiscogsController::resultAction');

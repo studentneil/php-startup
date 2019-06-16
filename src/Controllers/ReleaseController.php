@@ -42,7 +42,7 @@ class ReleaseController
             $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseCreated());
         }
 
-        $templateName = 'backend/releaseForm';
+        $templateName = 'backend/createReleaseForm';
         $args_array = array(
             'user' => $app['session']->get('user'),
             'form' => $form->createView(),
@@ -73,7 +73,32 @@ class ReleaseController
             $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseEdited());
         }
 
-        $templateName = 'backend/releaseForm';
+        $templateName = 'backend/createReleaseForm';
+        $args_array = array(
+            'user' => $app['session']->get('user'),
+            'form' => $form->createView(),
+
+        );
+
+        return $app['twig']->render($templateName.'.html.twig', $args_array);
+    }
+
+    public function createEmbeddedReleaseAction(Request $request, Application $app)
+    {
+        $data = array();
+        $form = $app['form.factory']
+            ->createBuilder(CreateNewReleaseType::class, $data)
+            ->getForm();
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $data = $form->getData();
+            if (!$app['vinyl.repository']->save($data)) {
+                $app['session']->getFlashBag()->add('failure', $app['message.service']->getReleaseNotCreated());
+            }
+            $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseCreated());
+        }
+
+        $templateName = 'backend/partials/releaseForm';
         $args_array = array(
             'user' => $app['session']->get('user'),
             'form' => $form->createView(),

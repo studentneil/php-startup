@@ -1,0 +1,44 @@
+{% extends 'backend/base.html.twig' %}
+{% set active_page = 'search' %}
+{% block content %}
+    {% if discogsResults is empty %}
+        <h2>No Results</h2>
+    {% else %}
+        {% for result in discogsResults %}
+            <div class="row">
+                <div class="col s12 m12 l12">
+                    <div class="card horizontal">
+                        <div class="card-image">
+                            <img src="{{ result.cover_image }}">
+                        </div>
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <span class="card-title">{{ result.title }}</span>
+                                <p>Barcodes : {{ result.barcode|join('--') }}</p>
+                                <br>
+                                <p>Format : {{ result.format|join('--') }}</p>
+                                <br>
+                                {% if result.label is defined %}
+                                    <p>Record Labels: {{ result.label|join(', ') }}</p>
+                                {% endif %}
+                                <br>
+                                {% if result.year is defined %}
+                                    <p>Year: {{ result.year|join(', ') }}</p>
+                                {% endif %}
+                                <br>
+                                {% if result.country is defined %}
+                                    <p>Country: {{ result.country|join(', ') }}</p>
+                                {% endif %}
+                            </div>
+                            <div class="card-action">
+                                <a href="https://discogs.com{{ result.uri }}" target="_blank">Open in discogs</a>
+                                <a href="/admin/discogs-result/{{ result.id }}">More info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+    <a href="/admin/search">Back to Search</a>
+{% endblock %}

@@ -23,7 +23,7 @@ use VinylStore\UserProvider;
 require_once __DIR__.'/../vendor/autoload.php';
 
 $app = new Application();
-$app['env'] = 'prod';
+$app['env'] = 'dev';
 
 $app->register(new ConfigServiceProvider());
 $app->register(new TwigServiceProvider());
