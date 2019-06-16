@@ -9,6 +9,7 @@ use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use VinylStore\Forms\SearchFormType;
 use VinylStore\ServiceProviders\ConfigServiceProvider;
 use VinylStore\ServiceProviders\EventsRepositoryServiceProvider;
 use VinylStore\ServiceProviders\ImageRepositoryServiceProvider;
@@ -101,6 +102,13 @@ $app->extend('form.types', function ($types) {
 
     return $types;
 });
+// Search discogs form
+$app->extend('form.types', function ($types) {
+    $types[] = new SearchFormType();
+
+    return $types;
+});
+
 // register the custom service providers with $app
 $app->register(new VinylRepositoryServiceProvider());
 $app->register(new ImageRepositoryServiceProvider());

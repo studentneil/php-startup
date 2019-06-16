@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: neil
- * Date: 17/04/2017
- * Time: 00:13.
- */
 
 namespace VinylStore\Forms;
 
