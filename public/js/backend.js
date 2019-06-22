@@ -1,14 +1,12 @@
 // backend js for various materialize components
 $(document).ready(function() {
     $(".button-collapse").sideNav({
-        closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
-        draggable: true // Choose whether you can drag to open on touch screens
+        closeOnClick: true,
+        draggable: true
     });
     $('.close-menu').on('click', function(){
         $(this).sideNav('hide');
     });
-
-    // $('.collapsible').collapsible();
 
     $('.dropdown-button').dropdown({
             inDuration: 300,
@@ -24,21 +22,24 @@ $(document).ready(function() {
     $('select').material_select();
 
     $('[data-toggle="datepicker"]').datepicker({
-
         format: 'yyyy-mm-dd',
-
     });
-    // var selector = 'ul .collapsible ul > li';
-    // $(selector).on('click', function(e){
-    //     // e.preventDefault();
-    //     // $(selector).removeClass('active')
-    //     $(this).addClass('active');
-    //     $(this).parent().addClass('active');
-    // });
 
-    // // Will only work if string in href matches with location
-    // if ($('div .collapsible-body ul > li > a[href^="/' + location.pathname.split("/")[1] + '"]') === window.location) {
-    //     $('ul .collapsible ul > li > a').addClass('active');
-    // }
+    $('#createReleaseFromDiscogs').on('click', function(event) {
+        event.preventDefault();
+        let artist = $(this).data('artist');
+        let title = $(this).data('title');
+        let released = $(this).data('released');
+        let label = $(this).data('label');
+        let catalogueNumber = $(this).data('catalogueNumber');
+        let barcode = $(this).data('barcode');
 
+        $('#create_new_release_catno').val(catalogueNumber);
+        $('#create_new_release_artist').val(artist);
+        $('#create_new_release_title').val(title);
+        $('#create_new_release_released_on').focus();
+        $('#create_new_release_released_on').val(released);
+        $('#create_new_release_label').val(label);
+        $('#create_new_release_barcode').val(barcode);
+    });
 });

@@ -15,15 +15,17 @@
                     <p>Genre : {{ result.genres[0] }}</p>
                     <p>Label : {{ result.labels[0].name }}</p>
                     <p>Catalogue Number : {{ result.labels[0].catno }}</p>
+                    <p>Barcode : {{ result.identifiers[0]['value'] }}</p>
                 </div>
                 <div class="card-action">
-                    <a href="/admin/create-release"
+                    <a href="/admin/create-release" id="createReleaseFromDiscogs"
                        data-artist="{{ result.artists[0].name }}"
                        data-title="{{ result.title }}"
                        data-released="{{ result.released }}"
                        data-genre="{{ result.genres[0] }}"
                        data-label="{{ result.labels[0].name }}"
-                       data-catalogue-number="{{ result.labels[0].catno }}">Create A release</a>
+                       data-catalogue-number="{{ result.labels[0].catno|replace({' ': ''}) }}"
+                       data-barcode="{{ result.identifiers[0]['value'] }}">Create A release</a>
                 </div>
             </div>
         </div>

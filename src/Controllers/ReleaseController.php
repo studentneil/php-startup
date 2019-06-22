@@ -30,17 +30,7 @@ class ReleaseController
     public function createReleaseAction(Request $request, Application $app)
     {
         $data = array();
-        $form = $app['form.factory']
-            ->createBuilder(CreateNewReleaseType::class, $data)
-            ->getForm();
-        $form->handleRequest($request);
-        if ($form->isValid()) {
-            $data = $form->getData();
-            if (!$app['vinyl.repository']->save($data)) {
-                $app['session']->getFlashBag()->add('failure', $app['message.service']->getReleaseNotCreated());
-            }
-            $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseCreated());
-        }
+        $form = $this->getReleaseForm($request, $app, $data);
 
         $templateName = 'backend/createReleaseForm';
         $args_array = array(
@@ -86,6 +76,26 @@ class ReleaseController
     public function createEmbeddedReleaseAction(Request $request, Application $app)
     {
         $data = array();
+        $form = $this->getReleaseForm($request, $app, $data);
+
+        $templateName = 'backend/partials/releaseForm';
+        $args_array = array(
+            'user' => $app['session']->get('user'),
+            'form' => $form->createView(),
+
+        );
+
+        return $app['twig']->render($templateName.'.html.twig', $args_array);
+    }
+
+    /**
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \Silex\Application $app
+     * @param array $data
+     * @return \Symfony\Component\Form\Form
+     */
+    private function getReleaseForm(Request $request, Application $app, array $data)
+    {
         $form = $app['form.factory']
             ->createBuilder(CreateNewReleaseType::class, $data)
             ->getForm();
@@ -98,13 +108,6 @@ class ReleaseController
             $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseCreated());
         }
 
-        $templateName = 'backend/partials/releaseForm';
-        $args_array = array(
-            'user' => $app['session']->get('user'),
-            'form' => $form->createView(),
-
-        );
-
-        return $app['twig']->render($templateName.'.html.twig', $args_array);
+        return $form;
     }
 }

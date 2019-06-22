@@ -32,3 +32,4 @@ $app->match('/admin/shippingRates', 'VinylStore\\Controllers\\ShippingController
 $app->match('/admin/edit-shippingRates/{quantity}', 'VinylStore\\Controllers\\ShippingController::editShippingRatesAction');
 $app->match('/admin/search', 'VinylStore\\Controllers\\SearchDiscogsController::searchFormAction');
 $app->get('/admin/discogs-result/{id}', 'VinylStore\\Controllers\\SearchDiscogsController::resultAction');
+$app->post('/admin/discogs-result/{id}', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
