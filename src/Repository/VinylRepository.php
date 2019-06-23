@@ -3,19 +3,28 @@ declare(strict_types=1);
 
 namespace VinylStore\Repository;
 
+use Doctrine\DBAL\DBALException;
+use Exception;
+
 class VinylRepository extends AbstractRepository
 {
     const TABLE = 'releases';
 
+
     /**
-     * @param array $data
-     * @return int
+     * @param $data
+     * @return mixed
+     * @throws \Exception
      */
     public function save($data)
     {
-        $count = $this->connection->insert(self::TABLE, $data);
+        try {
+            $this->connection->insert(self::TABLE, $data);
+        } catch (DBALException $e) {
+            throw new Exception('Problem Creating the release');
+        }
 
-        return $count;
+        return true;
     }
 
     /**

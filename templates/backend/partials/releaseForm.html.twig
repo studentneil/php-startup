@@ -1,4 +1,11 @@
-
+{% set alertTypeAvailable = ['success', 'failure'] %}
+    {% for alert in alertTypeAvailable %}
+        {% for message in app.session.getFlashBag.get(alert) %}
+            <div class="card-panel teal lighten-2">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
 <form class="col s12 m6" action="" method="post">
 
     {{ form_errors(form) }}

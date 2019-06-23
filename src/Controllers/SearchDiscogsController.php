@@ -43,7 +43,7 @@ class SearchDiscogsController
                 [
                     'type' => 'release',
                     'release_title' => $formData['title'],
-                    'catalogueNumber' => $formData,
+                    'catalogueNumber' => $formData['catalogue_number'],
                     'format' => 'vinyl'
                 ]);
 

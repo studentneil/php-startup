@@ -18,7 +18,8 @@ $app->post('/events/item-added', 'VinylStore\\Controllers\\SnipCartController::e
 $app->get('/tracklist', 'VinylStore\\Controllers\\TracklistController::getTracklistAction');
 $app->get('/admin/dashboard', 'VinylStore\\Controllers\\LoginController::dashboardAction');
 $app->get('/admin/view-releases', 'VinylStore\\Controllers\\ReleaseController::getReleasesAction');
-$app->match('/admin/create-release', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
+$app->get('/admin/show-release-form', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
+$app->post('/admin/submit-release-form', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
 $app->match('/admin/edit-release/{id}', 'VinylStore\\Controllers\\ReleaseController::editReleaseAction');
 $app->match('/admin/upload-image', 'VinylStore\\Controllers\\ImageController::uploadImageAction');
 $app->get('/admin/view-images', 'VinylStore\\Controllers\\ImageController::viewImagesAction');

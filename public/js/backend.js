@@ -40,6 +40,7 @@ $(document).ready(function() {
         $('#create_new_release_released_on').focus();
         $('#create_new_release_released_on').val(released);
         $('#create_new_release_label').val(label);
+        $('#create_new_release_barcode').focus();
         $('#create_new_release_barcode').val(barcode);
     });
 });
