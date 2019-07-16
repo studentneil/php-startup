@@ -17,7 +17,7 @@
                             <a href="/admin/dashboard" class="collapsible-header">Dashboard</a>
                         </li>
                         <li>
-                            <a {% if active_page in ['view-releases', 'create-release'] %}class="collapsible-header active"{% else
+                            <a {% if active_page in ['view-releases', 'create-release'] %}class="collapsible-header active" {% else
                             %}class="collapsible-header"{% endif %}>Releases</a>
                             <div class="collapsible-body">
                                 <ul>
@@ -86,10 +86,11 @@
                         </li>
                     </ul>
                 </li>
-
+                <li>
+                    <a class="waves-effect waves-light btn blue darken-3" href="/admin/search">Search Discogs</a>
+                </li>
                 <li>
                     <a class="waves-effect waves-light btn grey darken-4" href="{{ path('admin_logout') }}">Log-out</a>
-                </li>
                 </li>
             </ul>
         </div>

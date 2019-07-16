@@ -18,7 +18,8 @@ $app->post('/events/item-added', 'VinylStore\\Controllers\\SnipCartController::e
 $app->get('/tracklist', 'VinylStore\\Controllers\\TracklistController::getTracklistAction');
 $app->get('/admin/dashboard', 'VinylStore\\Controllers\\LoginController::dashboardAction');
 $app->get('/admin/view-releases', 'VinylStore\\Controllers\\ReleaseController::getReleasesAction');
-$app->match('/admin/create-release', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
+$app->get('/admin/show-release-form', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
+$app->post('/admin/submit-release-form', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');
 $app->match('/admin/edit-release/{id}', 'VinylStore\\Controllers\\ReleaseController::editReleaseAction');
 $app->match('/admin/upload-image', 'VinylStore\\Controllers\\ImageController::uploadImageAction');
 $app->get('/admin/view-images', 'VinylStore\\Controllers\\ImageController::viewImagesAction');
@@ -30,3 +31,6 @@ $app->match('/admin/edit-pricing/{id}', 'VinylStore\\Controllers\\PricingControl
 $app->get('/admin/view-shippingRates', 'VinylStore\\Controllers\\ShippingController::viewShippingRatesAction');
 $app->match('/admin/shippingRates', 'VinylStore\\Controllers\\ShippingController::shippingRatesAction');
 $app->match('/admin/edit-shippingRates/{quantity}', 'VinylStore\\Controllers\\ShippingController::editShippingRatesAction');
+$app->match('/admin/search', 'VinylStore\\Controllers\\SearchDiscogsController::searchFormAction');
+$app->get('/admin/discogs-result/{id}', 'VinylStore\\Controllers\\SearchDiscogsController::resultAction');
+$app->post('/admin/discogs-result/{id}', 'VinylStore\\Controllers\\ReleaseController::createReleaseAction');

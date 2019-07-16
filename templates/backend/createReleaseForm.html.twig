@@ -1,0 +1,14 @@
+{% extends 'backend/base.html.twig' %}
+{% set active_page = 'create-release' %}
+{% block content %}
+    {% set alertTypeAvailable = ['success', 'failure'] %}
+    {% for alert in alertTypeAvailable %}
+        {% for message in app.session.getFlashBag.get(alert) %}
+            <div class="card-panel teal lighten-2">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endfor %}
+    <div class="divider"></div>
+    {{ render(controller('VinylStore\\Controllers\\ReleaseController::showReleaseFormAction')) }}
+{% endblock %}

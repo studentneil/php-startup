@@ -2,6 +2,7 @@
 
 namespace VinylStore\Controllers;
 
+use Exception;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use VinylStore\Forms\CreateNewReleaseType;
@@ -29,20 +30,9 @@ class ReleaseController
      */
     public function createReleaseAction(Request $request, Application $app)
     {
-        $data = array();
-        $form = $app['form.factory']
-            ->createBuilder(CreateNewReleaseType::class, $data)
-            ->getForm();
-        $form->handleRequest($request);
-        if ($form->isValid()) {
-            $data = $form->getData();
-            if (!$app['vinyl.repository']->save($data)) {
-                $app['session']->getFlashBag()->add('failure', $app['message.service']->getReleaseNotCreated());
-            }
-            $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseCreated());
-        }
+        $form = $this->submitReleaseForm($request, $app);
 
-        $templateName = 'backend/releaseForm';
+        $templateName = 'backend/partials/releaseForm';
         $args_array = array(
             'user' => $app['session']->get('user'),
             'form' => $form->createView(),
@@ -73,7 +63,7 @@ class ReleaseController
             $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseEdited());
         }
 
-        $templateName = 'backend/releaseForm';
+        $templateName = 'backend/createReleaseForm';
         $args_array = array(
             'user' => $app['session']->get('user'),
             'form' => $form->createView(),
@@ -81,5 +71,59 @@ class ReleaseController
         );
 
         return $app['twig']->render($templateName.'.html.twig', $args_array);
+    }
+
+    /**
+     * @param \Symfony\Component\HttpFoundation\Request $request
+     * @param \Silex\Application $app
+     * @return \Symfony\Component\Form\Form
+     */
+    public function submitReleaseForm(Request $request, Application $app)
+    {
+        $repository = $app['vinyl.repository'];
+        $form = $this->getReleaseForm($app, []);
+        $form->handleRequest($request);
+        if ($form->isValid()) {
+            $data = $form->getData();
+            try {
+                /** @var \VinylStore\Repository\VinylRepository $repository */
+                $repository->save($data);
+                $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseCreated());
+            } catch (Exception $e) {
+                $app['session']->getFlashBag()->add('failure', $app['message.service']->getReleaseNotCreated());
+            }
+        }
+
+        return $form;
+    }
+
+    /**
+     * @param \Silex\Application $app
+     * @return mixed
+     */
+    public function showReleaseFormAction(Application $app)
+    {
+        $form = $this->getReleaseForm($app, []);
+
+        return $app['twig']->render('backend/partials/releaseForm.html.twig',
+            [
+                'user' => $app['session']->get('user'),
+                'form' => $form->createView(),
+            ]
+        );
+    }
+
+    /**
+     * @param \Silex\Application $app
+     * @param array $data
+     * @return mixed
+     */
+    private function getReleaseForm(Application $app, array $data)
+    {
+        $form = $app['form.factory']
+            ->createBuilder(CreateNewReleaseType::class, $data)
+            ->getForm();
+
+        return $form;
     }
 }
