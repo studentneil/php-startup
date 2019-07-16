@@ -63,14 +63,12 @@ class ReleaseController
             $app['session']->getFlashBag()->add('success', $app['message.service']->getReleaseEdited());
         }
 
-        $templateName = 'backend/createReleaseForm';
-        $args_array = array(
-            'user' => $app['session']->get('user'),
-            'form' => $form->createView(),
-
+        return $app['twig']->render('backend/partials/releaseForm.html.twig',
+            [
+                'user' => $app['session']->get('user'),
+                'form' => $form->createView(),
+            ]
         );
-
-        return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
     /**
