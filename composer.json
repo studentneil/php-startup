@@ -18,7 +18,8 @@
     "spatie/image": "^1.1",
     "cocur/slugify": "^2.5",
     "vlucas/phpdotenv": "^2.4",
-    "swiftmailer/swiftmailer": "^6.0"
+    "swiftmailer/swiftmailer": "^6.0",
+    "google/recaptcha": "^1.2"
   },
   "autoload": {
     "psr-4": {

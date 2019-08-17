@@ -1,11 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * Date: 18/06/2017
- */
+declare(strict_types=1);
 
 namespace VinylStore\Controllers;
 
+use ReCaptcha\ReCaptcha;
 use Silex\Application;
 use Symfony\Component\HttpFoundation\Request;
 use VinylStore\Forms\ContactFormType;
@@ -14,26 +12,37 @@ class ContactFormController
 {
     public function contactFormAction(Application $app)
     {
-
         $contactFormData = array();
         $form = $app['form.factory']
             ->createBuilder(ContactFormType::class, $contactFormData)
             ->getForm();
         $templateName = 'frontend/contact';
         $args_array = array(
-            'form' => $form->createView()
+            'form' => $form->createView(),
+            'siteKey' => $app['config']['recaptcha']['siteKey']
         );
         return $app['twig']->render($templateName.'.html.twig', $args_array);
     }
 
     public function sendContactFormAction(Request $request, Application $app)
     {
+        $recaptcha = new ReCaptcha($app['config']['recaptcha']['secretKey']);
+
         $data = array();
         $form = $app['form.factory']
             ->createBuilder(ContactFormType::class, $data)
             ->getForm();
         $form = $form->handleRequest($request);
+
         if ($form->isValid()) {
+            $post = $request->get('g-recaptcha-response') ?: null;
+            $response = $recaptcha->verify($post, $_SERVER['REMOTE_ADDR']);
+            if (!$response->isSuccess()) {
+                $response = 'You must submit the recaptcha.';
+
+                return $response;
+            }
+
             $data = $form->getData();
             $transport = (new \Swift_SmtpTransport($app['config']['email']['host'], 587, 'tls'))
                 ->setUsername($app['config']['email']['username'])
@@ -57,12 +66,13 @@ class ContactFormController
 
             if ($result === 0) {
                 $response = 'oops, theres a problem with your email system.';
+
                 return $response;
-            }else{
+            } else {
                 $response = 'Thanks for getting in touch. Ill get back to you as soon as humanly possible.';
+
                 return $response;
             }
         }
-
     }
 }
