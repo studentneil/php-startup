@@ -13,21 +13,6 @@ use VinylStore\Forms\SearchFormType;
 
 class SearchDiscogsController
 {
-    public function searchAction(Request $request, Application $app)
-    {
-
-        $response = $this->client->search(
-            [
-                'type' => 'release',
-                'release_title' => 'nevermind',
-                'catno' => 'DGC 24425'
-            ]);
-
-        foreach ($response['results'] as $result) {
-            var_dump($result['id']);
-        }
-    }
-
     public function searchFormAction(Request $request, Application $app)
     {
         $data = [];

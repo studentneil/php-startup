@@ -4,7 +4,7 @@ namespace VinylStore;
 
 class Config
 {
-    /** @var */
+    /** @var string */
     protected $file;
 
     /**
