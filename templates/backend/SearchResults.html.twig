@@ -9,18 +9,12 @@
                 <div class="col s12 m12 l12">
                     <div class="card horizontal">
                         <div class="card-image">
-                            <img src="{{ result.cover_image }}">
+                            <img src="{{ result.cover_image }}" height="350px" width="350px">
                         </div>
                         <div class="card-stacked">
                             <div class="card-content">
                                 <span class="card-title">{{ result.title }}</span>
-                                <p>Barcodes : {{ result.barcode|join('--') }}</p>
-                                <br>
-                                <p>Format : {{ result.format|join('--') }}</p>
-                                <br>
-                                {% if result.label is defined %}
-                                    <p>Record Labels: {{ result.label|join(', ') }}</p>
-                                {% endif %}
+                                <p>Format : {% for format in result.format %}<span class="new badge blue" data-badge-caption="{{ format }}"></span>{% endfor %}</p>
                                 <br>
                                 {% if result.year is defined %}
                                     <p>Year: {{ result.year|join(', ') }}</p>
@@ -28,6 +22,20 @@
                                 <br>
                                 {% if result.country is defined %}
                                     <p>Country: {{ result.country|join(', ') }}</p>
+                                {% endif %}
+                                <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons">audiotrack</i>Barcodes</div>
+                                        {% for barcode in result.barcode %}<div class="collapsible-body"><span>{{ barcode }}</span></div>{% endfor %}
+                                    </li>
+                                </ul>
+                                {% if result.label is defined %}
+                                <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                        <div class="collapsible-header"><i class="material-icons">audiotrack</i>Record Labels</div>
+                                        {% for label in result.label %}<div class="collapsible-body"><span>{{ label }}</span></div>{% endfor %}
+                                    </li>
+                                </ul>
                                 {% endif %}
                             </div>
                             <div class="card-action">
