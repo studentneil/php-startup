@@ -1,17 +1,22 @@
 <?php
-// ini_set('display_errors', 0);
 
-//require_once __DIR__.'/../vendor/autoload.php';
-$app = require __DIR__.'/../src/app.php';
+use App\Kernel;
+use Symfony\Component\Dotenv\Dotenv;
+use Symfony\Component\ErrorHandler\Debug;
+use Symfony\Component\HttpFoundation\Request;
 
-if ($app['env'] === 'prod') {
-    require __DIR__.'/../config/prod.php';
-    require __DIR__.'/../src/routes.php';
+require dirname(__DIR__).'/vendor/autoload.php';
 
-    $app->run();
-} else {
-    require __DIR__.'/../config/dev.php';
-    require __DIR__.'/../src/routes.php';
+(new Dotenv())->bootEnv(dirname(__DIR__).'/.env');
 
-    $app->run();
+if ($_SERVER['APP_DEBUG']) {
+    umask(0000);
+
+    Debug::enable();
 }
+
+$kernel = new Kernel($_SERVER['APP_ENV'], (bool) $_SERVER['APP_DEBUG']);
+$request = Request::createFromGlobals();
+$response = $kernel->handle($request);
+$response->send();
+$kernel->terminate($request, $response);
