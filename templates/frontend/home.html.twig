@@ -95,8 +95,8 @@
             <h2 class="flow-text">Electronic</h2>
         </div>
 
-        {% if elec_releases is defined %}
-            {% for release in elec_releases %}
+        {% if electronic_releases is defined %}
+            {% for release in electronic_releases %}
                 <div class="col m6 s6">
                     {% include 'frontend/partials/releaseView.html.twig' %}
                 </div>
@@ -138,7 +138,7 @@
         {#{% if random_release is defined %}#}
         {#{% for release in random_release %}#}
         <div class="col m6 s6">
-            {{ render(controller('VinylStore\\Controllers\\RandomiseController::randomiseAction')) }}
+
             {#{% include 'frontend/partials/releaseView.html.twig' %}#}
         </div>
         {#{% endfor %}#}

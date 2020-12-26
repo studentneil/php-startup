@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -33,6 +35,16 @@ class User implements UserInterface
      * @ORM\Column(type="string")
      */
     private $password;
+
+    /**
+     * @ORM\OneToMany(targetEntity=Release::class, mappedBy="user", orphanRemoval=true)
+     */
+    private $releases;
+
+    public function __construct()
+    {
+        $this->releases = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -110,5 +122,35 @@ class User implements UserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    /**
+     * @return Collection|Release[]
+     */
+    public function getReleases(): Collection
+    {
+        return $this->releases;
+    }
+
+    public function addRelease(Release $release): self
+    {
+        if (!$this->releases->contains($release)) {
+            $this->releases[] = $release;
+            $release->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeRelease(Release $release): self
+    {
+        if ($this->releases->removeElement($release)) {
+            // set the owning side to null (unless already changed)
+            if ($release->getUser() === $this) {
+                $release->setUser(null);
+            }
+        }
+
+        return $this;
     }
 }

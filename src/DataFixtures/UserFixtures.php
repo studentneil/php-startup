@@ -3,13 +3,15 @@ declare(strict_types=1);
 namespace App\DataFixtures;
 
 use Doctrine\Bundle\FixturesBundle\Fixture;
+use Doctrine\Common\DataFixtures\DependentFixtureInterface;
 use Doctrine\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 use App\Entity\User;
 
 class UserFixtures extends Fixture
 {
-	private $encoder;
+    const REFERENCE = 'ref';
+    private $encoder;
 
 	public function __construct(UserPasswordEncoderInterface $encoder)
 	{
@@ -25,8 +27,11 @@ class UserFixtures extends Fixture
             $user,
              'password'
         ));
+
         $manager->persist($user);
 
         $manager->flush();
+
+        $this->addReference(self::REFERENCE, $user);
     }
 }
