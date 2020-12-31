@@ -15,7 +15,7 @@ class SearchController extends AbstractController
     /**
      * @Route("/admin/search", name="search")
      */
-    public function index(Request $request): Response
+    public function index(Request $request) : Response
     {
         $search = new Search();
         $form = $this->createForm(SearchFormType::class, $search);
@@ -40,6 +40,22 @@ class SearchController extends AbstractController
         return $this->render('backend/SearchForm.html.twig', [
             'controller_name' => 'SearchController',
             'form' => $form->createView()
+        ]);
+    }
+
+    /**
+     * @Route("/admin/result/{id}", name="search_result")
+     */
+    public function resultAction(int $id) : Response
+    {
+        $discogsClient = $this->getDiscogsClient();
+        $response = $discogsClient->getRelease(
+            [
+                'id' => $id
+            ]);
+
+        return $this->render('backend/discogsResult.html.twig', [
+            'result' => $response
         ]);
     }
 
