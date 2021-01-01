@@ -49,8 +49,7 @@ class SearchController extends AbstractController
     public function resultAction(int $id) : Response
     {
         $discogsClient = $this->getDiscogsClient();
-        $response = $discogsClient->getRelease(
-            [
+        $response = $discogsClient->getRelease([
                 'id' => $id
             ]);
 

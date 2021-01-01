@@ -1,0 +1,59 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Release index{% endblock %}
+
+{% block body %}
+    <h1>Release index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Artist</th>
+                <th>Title</th>
+                <th>CatalogNumber</th>
+                <th>Label</th>
+                <th>Format</th>
+                <th>MediaCondition</th>
+                <th>SleeveCondition</th>
+                <th>Notes</th>
+                <th>Genre</th>
+                <th>Quantity</th>
+                <th>Barcode</th>
+                <th>ReleaseDate</th>
+                <th>AddedDate</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for release in releases %}
+            <tr>
+                <td>{{ release.id }}</td>
+                <td>{{ release.artist }}</td>
+                <td>{{ release.title }}</td>
+                <td>{{ release.catalogNumber }}</td>
+                <td>{{ release.label }}</td>
+                <td>{{ release.format }}</td>
+                <td>{{ release.mediaCondition }}</td>
+                <td>{{ release.sleeveCondition }}</td>
+                <td>{{ release.notes }}</td>
+                <td>{{ release.genre }}</td>
+                <td>{{ release.quantity }}</td>
+                <td>{{ release.barcode }}</td>
+                <td>{{ release.releaseDate ? release.releaseDate|date('Y-m-d') : '' }}</td>
+                <td>{{ release.addedDate ? release.addedDate|date('Y-m-d') : '' }}</td>
+                <td>
+                    <a href="{{ path('release_show', {'id': release.id}) }}">show</a>
+                    <a href="{{ path('release_edit', {'id': release.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="15">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('release_new') }}">Create new</a>
+{% endblock %}

@@ -1,0 +1,74 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Release{% endblock %}
+
+{% block body %}
+    <h1>Release</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ release.id }}</td>
+            </tr>
+            <tr>
+                <th>Artist</th>
+                <td>{{ release.artist }}</td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <td>{{ release.title }}</td>
+            </tr>
+            <tr>
+                <th>CatalogNumber</th>
+                <td>{{ release.catalogNumber }}</td>
+            </tr>
+            <tr>
+                <th>Label</th>
+                <td>{{ release.label }}</td>
+            </tr>
+            <tr>
+                <th>Format</th>
+                <td>{{ release.format }}</td>
+            </tr>
+            <tr>
+                <th>MediaCondition</th>
+                <td>{{ release.mediaCondition }}</td>
+            </tr>
+            <tr>
+                <th>SleeveCondition</th>
+                <td>{{ release.sleeveCondition }}</td>
+            </tr>
+            <tr>
+                <th>Notes</th>
+                <td>{{ release.notes }}</td>
+            </tr>
+            <tr>
+                <th>Genre</th>
+                <td>{{ release.genre }}</td>
+            </tr>
+            <tr>
+                <th>Quantity</th>
+                <td>{{ release.quantity }}</td>
+            </tr>
+            <tr>
+                <th>Barcode</th>
+                <td>{{ release.barcode }}</td>
+            </tr>
+            <tr>
+                <th>ReleaseDate</th>
+                <td>{{ release.releaseDate ? release.releaseDate|date('Y-m-d') : '' }}</td>
+            </tr>
+            <tr>
+                <th>AddedDate</th>
+                <td>{{ release.addedDate ? release.addedDate|date('Y-m-d') : '' }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('release_index') }}">back to list</a>
+
+    <a href="{{ path('release_edit', {'id': release.id}) }}">edit</a>
+
+    {{ include('release/_delete_form.html.twig') }}
+{% endblock %}

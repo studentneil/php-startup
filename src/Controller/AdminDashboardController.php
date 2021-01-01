@@ -13,7 +13,7 @@ class AdminDashboardController extends AbstractController
     /**
      * @Route("/admin/dashboard", name="admin_dashboard")
      */
-    public function index(ReleaseRepository $releaseRepository): Response
+    public function index(): Response
     {
         /** @var User $user */
         $user = $this->getUser();

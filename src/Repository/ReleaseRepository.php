@@ -22,7 +22,7 @@ class ReleaseRepository extends ServiceEntityRepository
     /**
      * @return Release[] Returns an array of Release objects
      */
-    public function findByReleasesByGenre(string $genre)
+    public function findReleasesByGenre(string $genre)
     {
         return $this->createQueryBuilder('r')
             ->andWhere('r.genre = :val')

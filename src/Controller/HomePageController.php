@@ -15,11 +15,13 @@ class HomePageController extends AbstractController
      */
     public function index(ReleaseRepository $releaseRepository): Response
     {
-        $electronicReleases = $releaseRepository->findByReleasesByGenre(Genre::ELECTRONIC);
+        $electronicReleases = $releaseRepository->findReleasesByGenre(Genre::ELECTRONIC);
+        $rockReleases = $releaseRepository->findReleasesByGenre(Genre::ROCK);
 
         return $this->render('frontend/home.html.twig', [
             'controller_name' => 'HomePageController',
-            'electronic_releases' => $electronicReleases
+            'electronic_releases' => $electronicReleases,
+            'rock_releases' => $rockReleases
         ]);
     }
 }
