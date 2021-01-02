@@ -30,25 +30,21 @@ class ReleaseController extends AbstractController
      */
     public function new(Request $request): Response
     {
+//        var_dump($request->get('format'));die();
         $release = new Release();
-        if ($request->get('title')) {
-            $release->setTitle($request->get('title'));
-        }
-        if ($request->get('catalogNumber')) {
-            $release->setCatalogNumber($request->get('catalogNumber'));
-        }
-        if ($request->get('barcode')) {
-            $release->setBarcode($request->get('barcode'));
-        }
-        if ($request->get('genre')) {
-            $release->setGenre($request->get('genre'));
-        }
-        if ($request->get('released')) {
-            $release->setReleaseDate(new \DateTime($request->get('released')));
-        }
-        if ($request->get('artist')) {
-            $release->setReleaseDate($request->get('artist'));
-        }
+        $release->setTitle($request->get('title') ?: null);
+        $release->setBarcode($request->get('barcode') ?: null);
+        $release->setGenre($request->get('genre') ?: null);
+        $release->setReleaseDate(
+            $request->get('released') != '__BLANK__'
+                ? new \DateTime($request->get('released'))
+                : null
+        );
+        $release->setArtist($request->get('artist') ?: null);
+        $release->setCatalogNumber($request->get('catalogNumber') ?: null);
+        $release->setLabel($request->get('label') ?: null);
+        $release->setFormat($request->get('format') ?: null);
+
         $form = $this->createForm(ReleaseType::class, $release);
         $form->handleRequest($request);
 
@@ -59,7 +55,7 @@ class ReleaseController extends AbstractController
             $entityManager->persist($release);
             $entityManager->flush();
 
-            return $this->redirectToRoute('release_index');
+            return $this->redirectToRoute('admin_dashboard');
         }
 
         return $this->render('release/new.html.twig', [
@@ -89,7 +85,7 @@ class ReleaseController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $this->getDoctrine()->getManager()->flush();
 
-            return $this->redirectToRoute('release_index');
+            return $this->redirectToRoute('admin_dashboard');
         }
 
         return $this->render('release/edit.html.twig', [

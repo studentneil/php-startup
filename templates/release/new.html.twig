@@ -1,11 +1,7 @@
-{% extends 'base.html.twig' %}
+{% extends 'backend/base.html.twig' %}
 
 {% block title %}New Release{% endblock %}
 
-{% block body %}
-    <h1>Create new Release</h1>
-
+{% block content %}
     {{ include('release/_form.html.twig') }}
-
-    <a href="{{ path('release_index') }}">back to list</a>
 {% endblock %}

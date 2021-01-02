@@ -1,5 +1,6 @@
 {% extends 'backend/base.html.twig' %}
 {% set active_page = 'search' %}
+{% set mystring = result.released |default('__BLANK__') %}
 {% block content %}
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div class="bg-white shadow overflow-hidden sm:rounded-lg">
@@ -12,9 +13,20 @@
                     Artist : {{ result.artists[0].name }}
                 </p>
             </div>
+
             <div class="flex-row px-4 py-5 sm:px-6">
-                <a href="{{ path('release_new', {'title': result.title, 'genre': result.genres[0], 'label': result.labels[0].name, 'catalogNumber': result.labels[0].catno, 'barcode': result.identifiers[0]['value'], 'released': result.released, 'artist': result.artists[0].name }}
-                ) }}">
+                <a href="{{ path('release_new',
+                    {
+                        'title': result.title,
+                        'genre': result.genres[0],
+                        'label': result.labels[0].name,
+                        'catalogNumber': result.labels[0].catno,
+                        'barcode': (result.identifiers ? result.identifiers[0]['value'] : 'N/A'),
+                        'released': (mystring),
+                        'artist': result.artists[0].name,
+                        'format': result.formats[0].name,
+                    })
+                }}">
                 <button type="button"
                         class="flex-none inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     Publish
@@ -54,7 +66,9 @@
                     Barcode
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    {{ result.identifiers[0]['value'] }}
+                    {% if result.identifiers is not empty %}
+                        {{ result.identifiers[0]['value'] }}
+                        {% endif %}
                 </dd>
             </div>
             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -62,7 +76,15 @@
                     Released
                 </dt>
                 <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-                    {{ result.released }}
+                    {{ mystring }}
+                </dd>
+            </div>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Format
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    {{ result.formats[0].name }}
                 </dd>
             </div>
             <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
@@ -106,6 +128,5 @@
             </div>
 
         </dl>
-    </div>
     </div>
 {% endblock %}

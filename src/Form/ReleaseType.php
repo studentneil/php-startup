@@ -24,7 +24,10 @@ class ReleaseType extends AbstractType
             ->add('genre')
             ->add('quantity')
             ->add('barcode')
-            ->add('releaseDate', DateType::class)
+            ->add('releaseDate', DateType::class, [
+                // renders it as a single text box
+                'widget' => 'single_text'
+            ])
         ;
     }
 
