@@ -14,7 +14,7 @@
 
                 {% for item in navbar %}
                     <li{% if item[0]==active_page %} class="active" {% endif %} data-hover="{{ item[1] }}">
-                        <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }} </a>
+                        <a href="/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }} </a>
                     </li>
                 {% endfor %}
 
@@ -34,7 +34,7 @@
     <li><div class="divider"></div></li>
     {% for item in navbar %}
         <li{% if item[0]==active_page %} class="active" {% endif %}>
-            <a href="{{ global.request.basepath }}/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }}</a>
+            <a href="/{{ (item[0]) }}" class="black-text">{{ item[1]|upper }}</a>
         </li>
 
     {% endfor %}

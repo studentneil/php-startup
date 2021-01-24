@@ -8,11 +8,13 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
-    <link  href="{{ asset('/css/datepicker.min.css') }}" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="{{ asset('/css/backend.css') }}">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">
-
+    {#<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">#}
+    {#<link  href="{{ asset('/css/datepicker.min.css') }}" rel="stylesheet">#}
+    {#<link type="text/css" rel="stylesheet" href="{{ asset('/css/backend.css') }}">#}
+    {#<link href="https://fonts.googleapis.com/css?family=Catamaran" rel="stylesheet">#}
+    {% block stylesheets %}
+        {{ encore_entry_link_tags('app') }}
+    {% endblock %}
 </head>
 
 
@@ -45,7 +47,14 @@
             src="{{ asset('/js/backend.js') }}">
     </script>
 
-    {% block javascript %}{% endblock %}
+    {% block javascript %}
+
+            {{ encore_entry_script_tags('app') }}
+
+            <!-- Renders app.js & a webpack runtime.js file
+                <script src="/build/runtime.js"></script>
+                <script src="/build/app.js"></script> -->
+        {% endblock %}
 </body>
 
 

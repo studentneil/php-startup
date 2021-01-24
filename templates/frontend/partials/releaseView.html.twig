@@ -1,12 +1,12 @@
 
     <div class="card sticky-action">
         <div class="card-image">
-            <img class="activator" src="{{ global.request.basePath }}/uploads/{{ release.image }}" alt="{{ release.title }} cover">
+            {#<img class="activator" src="/uploads/" alt="{{ release.title }} cover">#}
         </div>
         <div class="card-content">
             <p class="truncate">{{ release.artist|title }}</p>
             <p class="truncate">{{ release.title }}</p>
-            <p>&euro;{{ release.price }}</p>
+            {#<p>&euro;{{ release.price }}</p>#}
         </div>
         <div class="card-action">
             <a class="waves-effect waves-light details" href="/vinyl/{{ release.genre }}/{{ release.artist|slugify }}/{{ release.title|slugify }}/{{ release.id }}"
@@ -20,8 +20,8 @@
                                 </span>
             <div class="card-content white-text">
                 <p>{{ release.format }}</p>
-                <p>Media : {{ release.media_condition }}</p>
-                <p>Sleeve : {{ release.sleeve_condition }}</p>
+                <p>Media : {{ release.mediaCondition }}</p>
+                <p>Sleeve : {{ release.sleeveCondition }}</p>
             </div>
         </div>
     </div>

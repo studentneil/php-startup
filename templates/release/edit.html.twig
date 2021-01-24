@@ -1,0 +1,13 @@
+{% extends 'backend/base.html.twig' %}
+
+{% block title %}Edit Release{% endblock %}
+
+{% block content %}
+
+
+    {{ include('release/_form.html.twig', {'button_label': 'Update'}) }}
+
+
+
+    {#{{ include('release/_delete_form.html.twig') }}#}
+{% endblock %}

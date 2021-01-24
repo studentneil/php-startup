@@ -1,34 +1,132 @@
 {% extends 'backend/base.html.twig' %}
 {% set active_page = 'search' %}
+{% set mystring = result.released |default('__BLANK__') %}
 {% block content %}
-    <div class="col s12 m12 l12">
-        <h4 class="header">Release Info</h4>
-        <div class="card horizontal">
-            <div class="card-image">
-                <img src="{{ result.artists[0].thumbnail_url }}">
+    <!-- This example requires Tailwind CSS v2.0+ -->
+    <div class="bg-white shadow overflow-hidden sm:rounded-lg">
+        <div class="flex justify-center">
+            <div class="flex-col px-4 py-5 sm:px-6">
+                <h3 class="text-lg leading-6 font-medium text-gray-900">
+                    {{ result.title }}
+                </h3>
+                <p class="mt-1 max-w-2xl text-sm text-gray-500">
+                    Artist : {{ result.artists[0].name }}
+                </p>
             </div>
-            <div class="card-stacked">
-                <div class="card-content">
-                    <span class="card-title">{{ result.title }}</span>
-                    <p>Artist : {{ result.artists[0].name }}</p>
-                    <p>Released : {{ result.released }}</p>
-                    <p>Genre : {{ result.genres[0] }}</p>
-                    <p>Label : {{ result.labels[0].name }}</p>
-                    <p>Catalogue Number : {{ result.labels[0].catno }}</p>
-                    <p>Barcode : {{ result.identifiers[0]['value'] }}</p>
-                </div>
-                <div class="card-action">
-                    <a href="/admin/create-release" id="createReleaseFromDiscogs"
-                       data-artist="{{ result.artists[0].name }}"
-                       data-title="{{ result.title }}"
-                       data-released="{{ result.released }}"
-                       data-genre="{{ result.genres[0] }}"
-                       data-label="{{ result.labels[0].name }}"
-                       data-catalogue-number="{{ result.labels[0].catno|replace({' ': ''}) }}"
-                       data-barcode="{{ result.identifiers[0]['value'] }}">Create A release</a>
-                </div>
+
+            <div class="flex-row px-4 py-5 sm:px-6">
+                <a href="{{ path('release_new',
+                    {
+                        'title': result.title,
+                        'genre': result.genres[0],
+                        'label': result.labels[0].name,
+                        'catalogNumber': result.labels[0].catno,
+                        'barcode': (result.identifiers ? result.identifiers[0]['value'] : 'N/A'),
+                        'released': (mystring),
+                        'artist': result.artists[0].name,
+                        'format': result.formats[0].name,
+                    })
+                }}">
+                <button type="button"
+                        class="flex-none inline-flex items-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                    Publish
+                </button>
+                </a>
             </div>
         </div>
     </div>
-    {{ render(controller('VinylStore\\Controllers\\ReleaseController::showReleaseFormAction')) }}
+    <div class="border-t border-gray-200">
+        <dl>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Genre
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    {{ result.genres[0] }}
+                </dd>
+            </div>
+            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Label
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    {{ result.labels[0].name }}
+                </dd>
+            </div>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Catalogue Number
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    {{ result.labels[0].catno }}
+                </dd>
+            </div>
+            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Barcode
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    {% if result.identifiers is not empty %}
+                        {{ result.identifiers[0]['value'] }}
+                        {% endif %}
+                </dd>
+            </div>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Released
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    {{ mystring }}
+                </dd>
+            </div>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Format
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    {{ result.formats[0].name }}
+                </dd>
+            </div>
+            <div class="bg-gray-50 px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Notes
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    {{ result.notes }}
+                </dd>
+            </div>
+            <div class="bg-white px-4 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+                <dt class="text-sm font-medium text-gray-500">
+                    Attachments
+                </dt>
+                <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+                    <ul class="border border-gray-200 rounded-md divide-y divide-gray-200">
+                        <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+                            <div class="w-0 flex-1 flex items-center">
+                                <!-- Heroicon name: paper-clip -->
+                                <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                    <path fill-rule="evenodd"
+                                          d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z"
+                                          clip-rule="evenodd"/>
+                                </svg>
+                                <span class="ml-2 flex-1 w-0 truncate">
+                  <img src="{{ result.images[0].uri150 }}" class="h-20 w-20">
+                </span>
+                            </div>
+                            <div class="ml-4 flex-shrink-0">
+                                <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">
+                                    Download
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </dd>
+            </div>
+            <div class="flex px-4 py-5 sm:px-6">
+
+            </div>
+
+        </dl>
+    </div>
 {% endblock %}

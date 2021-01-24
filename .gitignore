@@ -13,3 +13,12 @@ phpunit.phar
 public/uploads/
 phpunit.xml
 public/images/Thumbs.db
+.env
+htdocs
+
+###> symfony/webpack-encore-bundle ###
+/node_modules/
+/public/build/
+npm-debug.log
+yarn-error.log
+###< symfony/webpack-encore-bundle ###
